@@ -33,6 +33,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
 
     # Build sequences of 3 non-overlapping actions; collect (sequence_start, sequence_end, objects, frame_ids)
     sequences = []
+    sequence_index = 1
     prev_stop = None
     objects_in_sequence = []
     sequence_start_time = None
@@ -48,21 +49,10 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
             start_timestamp = hhmmss_to_seconds(row["start_timestamp"])
             stop_timestamp = hhmmss_to_seconds(row["stop_timestamp"])
 
-            start_frame = floor(start_timestamp * fps)
-            stop_frame = ceil(stop_timestamp * fps)
-
-            frames_in_range = [frame for frame in visor_annotations if start_frame <= frame["frame_id"] <= stop_frame]
-            objects_in_range = set(sum([frame["objects"] for frame in frames_in_range], []))
-
             # Write one block per narration
             txt_file.write(f"Start timestamp: {start_timestamp}, Stop timestamp: {stop_timestamp}\n")
-            txt_file.write(f"Start frame: {start_frame}, Stop frame: {stop_frame}\n")
             txt_file.write(f"Narration: {row['narration']}\n")
-            txt_file.write(f"Frames in range: {[f['image']['name'] for f in frames_in_range]}\n")
-            txt_file.write(f"{objects_in_range}\n")
             txt_file.write("------\n")
-
-            objects_in_sequence.extend(objects_in_range)
 
             # Count non-overlapping narrations; each sequence = 3 non-overlapping actions
             if prev_stop is None or start_timestamp >= prev_stop:
@@ -74,23 +64,30 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
                 if non_overlapping_count > 3:
                     # Sequence complete: [sequence_start_time, sequence_end_time] with 3 actions
                     txt_file.write("************\n")
-                    seq_start_frame = floor(sequence_start_time * fps)
-                    seq_end_frame = ceil(sequence_end_time * fps)
                     frames_in_sequence = [
                         frame for frame in visor_annotations
-                        if seq_start_frame <= frame["frame_id"] <= seq_end_frame
+                        if int(frame["image"]["subsequence"].split("_")[-1]) == sequence_index
                     ]
+                    objects_in_sequence = list(set(sum([f["objects"] for f in frames_in_sequence], [])))
+                    if "left hand" in objects_in_sequence:
+                        objects_in_sequence.remove("left hand")
+                    if "right hand" in objects_in_sequence:
+                        objects_in_sequence.remove("right hand")
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
+                    txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
+                    txt_file.write(f"Objects in sequence: {objects_in_sequence}\n")
+                    txt_file.write("************\n")
 
-                    objects_in_sequence = sorted(set([o for o in objects_in_sequence if o not in ["left hand", "right hand"]]))
                     sequences.append({
                         "start_time": sequence_start_time,
                         "end_time": sequence_end_time,
-                        "objects_in_sequence": sorted(set(objects_in_sequence)),
+                        "objects_in_sequence": sorted(objects_in_sequence),
                         "frame_ids": frame_ids_in_sequence,
                     })
+                    ## Reset objects_in_sequence and non-overlapping count
                     objects_in_sequence = []
                     non_overlapping_count = 1
+                    sequence_index += 1
                 prev_stop = stop_timestamp
 
     with open(json_path, "w") as f:
@@ -113,6 +110,9 @@ def main():
     for row in video_info:
         print(f"Processing video {row['video_id']}")
         save_active_objects(row["video_id"], video_info, narration_low_level_df, output_dir="active_objects")
+    
+    # ## DEBUG
+    # save_active_objects("P37_101", video_info, narration_low_level_df, output_dir="active_objects")
 
 
 if __name__ == "__main__":
