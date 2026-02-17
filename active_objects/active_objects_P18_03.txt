@@ -15,7 +15,8 @@ Narration: put plate on counter
 ------
 ************
 Frame IDs in sequence: [224, 319, 414, 490, 665, 698]
-Objects in sequence: ['plate', 'cup']
+Objects in sequence: ['cup', 'plate']
+Verb-noun pairs in sequence: ['take;cup;3.5;4.47', 'drink;water;4.23;7.05', 'put-down;cup;6.17;9.03', 'take;plate;8.92;10.69']
 ************
 Start timestamp: 12.43, Stop timestamp: 14.09
 Narration: take coffee pot
@@ -31,7 +32,8 @@ Narration: put pot in coffee machine
 ------
 ************
 Frame IDs in sequence: [769, 811, 865, 939, 1013, 1065]
-Objects in sequence: ['coffee pot', 'lid', 'coffee machine']
+Objects in sequence: ['coffee pot', 'coffee machine', 'lid']
+Verb-noun pairs in sequence: ['take;pot:coffee;12.43;14.09', 'take;lid;14.19;15.07', 'put-on;lid;14.88;16.05']
 ************
 Start timestamp: 18.63, Stop timestamp: 20.7
 Narration: take knife and spoon
@@ -44,7 +46,8 @@ Narration: take cup
 ------
 ************
 Frame IDs in sequence: [1159, 1222, 1263, 1305, 1341, 1403]
-Objects in sequence: ['knife', 'mug', 'cup', 'container', 'spoon']
+Objects in sequence: ['container', 'cup', 'knife', 'spoon', 'mug']
+Verb-noun pairs in sequence: ['take;knife;18.63;20.7', 'take;mug;21.52;22.61']
 ************
 Start timestamp: 25.77, Stop timestamp: 27.5
 Narration: open cupboard
@@ -57,7 +60,8 @@ Narration: put mug in cupboard
 ------
 ************
 Frame IDs in sequence: [1584, 1634, 1700, 1736, 1804, 1840]
-Objects in sequence: ['mug', 'cupboard', 'cup', 'spoon']
+Objects in sequence: ['cup', 'cupboard', 'spoon', 'mug']
+Verb-noun pairs in sequence: ['open;cupboard;25.77;27.5', 'put;cup;28.04;29.17']
 ************
 Start timestamp: 31.39, Stop timestamp: 32.49
 Narration: close cupboard
@@ -70,7 +74,8 @@ Narration: put knife and spoon in drawer
 ------
 ************
 Frame IDs in sequence: [1893, 1938, 2008, 2068, 2128, 2160]
-Objects in sequence: ['cloth', 'knife', 'drawer', 'cupboard', 'fork', 'spoon']
+Objects in sequence: ['drawer', 'fork', 'cloth', 'cupboard', 'knife', 'spoon']
+Verb-noun pairs in sequence: ['close;cupboard;31.39;32.49', 'open;drawer;33.16;34.28']
 ************
 Start timestamp: 36.14, Stop timestamp: 39.15
 Narration: take knife and fork out of drawer
@@ -83,7 +88,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [2214, 2296, 2549, 2597, 2703, 2737]
-Objects in sequence: ['knife', 'plate', 'drawer', 'fork']
+Objects in sequence: ['drawer', 'fork', 'knife', 'plate']
+Verb-noun pairs in sequence: ['take;knife;36.14;39.15', 'put-on;plate;42.16;43.5']
 ************
 Start timestamp: 47.09, Stop timestamp: 50.0
 Narration: take bowl
@@ -99,7 +105,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [2875, 2971, 3065, 3095, 3361, 3401]
-Objects in sequence: ['fridge', 'cupboard', 'bowl']
+Objects in sequence: ['bowl', 'fridge', 'cupboard']
+Verb-noun pairs in sequence: ['take;bowl;47.09;50.0', 'put-on;counter;50.79;51.81', 'close;cupboard;51.8;53.8']
 ************
 Start timestamp: 58.04, Stop timestamp: 60.41
 Narration: take tupperware
@@ -112,7 +119,8 @@ Narration: take cucumber
 ------
 ************
 Frame IDs in sequence: [3514, 3590, 3657, 3686, 3807, 3835]
-Objects in sequence: ['fridge', 'cucumber', 'tupperware']
+Objects in sequence: ['cucumber', 'fridge', 'tupperware']
+Verb-noun pairs in sequence: ['take;tupperware;58.04;60.41', 'put-on;counter;60.47;61.84']
 ************
 Start timestamp: 64.83, Stop timestamp: 66.44
 Narration: take salad
@@ -125,7 +133,8 @@ Narration: put salad and cucumber on counter
 ------
 ************
 Frame IDs in sequence: [3921, 3958, 4068, 4145, 4259, 4322]
-Objects in sequence: ['fridge', 'cucumber', 'tupperware', 'salad bag']
+Objects in sequence: ['cucumber', 'salad bag', 'fridge', 'tupperware']
+Verb-noun pairs in sequence: ['take;salad;64.83;66.44', 'close;fridge;67.44;69.59']
 ************
 Start timestamp: 74.47, Stop timestamp: 78.47
 Narration: open lid of tupperware
@@ -138,7 +147,8 @@ Narration: put tupperware in oven
 ------
 ************
 Frame IDs in sequence: [4533, 4649, 4719, 4777, 4990, 5057]
-Objects in sequence: ['tap', 'sink', 'tupperware lid', 'pasta', 'tupperware', 'oven']
+Objects in sequence: ['sink', 'oven', 'tap', 'tupperware lid', 'pasta', 'tupperware']
+Verb-noun pairs in sequence: ['open;lid:tupperware;74.47;78.47', 'put-in;lid;78.57;80.0']
 ************
 Start timestamp: 84.95, Stop timestamp: 86.28
 Narration: close oven
@@ -152,6 +162,7 @@ Narration: open salad bag
 ************
 Frame IDs in sequence: [5113, 5169, 5271, 5305, 5435, 5614]
 Objects in sequence: ['oven', 'salad bag']
+Verb-noun pairs in sequence: ['close;oven;84.95;86.28', 'take;salad;87.51;88.78']
 ************
 Start timestamp: 95.72999999999999, Stop timestamp: 103.59
 Narration: pour salad in bowl
@@ -164,7 +175,8 @@ Narration: take elastic
 ------
 ************
 Frame IDs in sequence: [5810, 5971, 6132, 6326, 6547, 6823]
-Objects in sequence: ['salad', 'bowl', 'container', 'salad bag']
+Objects in sequence: ['bowl', 'salad', 'container', 'salad bag']
+Verb-noun pairs in sequence: ['pour-in;salad;95.72999999999999;103.59', 'close;bag:salad;103.69;111.05']
 ************
 Start timestamp: 114.36, Stop timestamp: 117.18
 Narration: put over salad
@@ -177,7 +189,8 @@ Narration: put salad in fridge
 ------
 ************
 Frame IDs in sequence: [6909, 7007, 7083, 7141, 7223, 7358]
-Objects in sequence: ['salad bag', 'fridge']
+Objects in sequence: ['fridge', 'salad bag']
+Verb-noun pairs in sequence: ['put-over;salad;114.36;117.18', 'open;fridge;117.66;119.58']
 ************
 Start timestamp: 120.88, Stop timestamp: 126.25
 Narration: take out bag
@@ -193,7 +206,8 @@ Narration: put raisins in salad
 ------
 ************
 Frame IDs in sequence: [7941, 7997, 8121, 8193, 8379, 8536]
-Objects in sequence: ['salad', 'raisin', 'bag', 'bag clip', 'bowl']
+Objects in sequence: ['bowl', 'bag', 'salad', 'raisin', 'bag clip']
+Verb-noun pairs in sequence: ['open;bag;132.03;133.72', 'take-out;raisin;134.14;137.23']
 ************
 Start timestamp: 143.09, Stop timestamp: 147.22
 Narration: put raisins back in bag
@@ -212,7 +226,8 @@ Narration: put bag in fridge
 ------
 ************
 Frame IDs in sequence: [8860, 8914, 8987, 9062, 9190, 9234]
-Objects in sequence: ['fridge', 'bag', 'bag clip']
+Objects in sequence: ['bag', 'fridge', 'bag clip']
+Verb-noun pairs in sequence: ['close;bag;147.2;149.21', 'seal;bag;149.31;151.57', 'open;fridge;151.56;153.13']
 ************
 Start timestamp: 154.4, Stop timestamp: 156.77
 Narration: close fridge
@@ -225,7 +240,8 @@ Narration: take knife
 ------
 ************
 Frame IDs in sequence: [9286, 9387, 9443, 9501, 9741, 9779]
-Objects in sequence: ['knife', 'plate', 'fridge', 'fork', 'cucumber']
+Objects in sequence: ['cucumber', 'fork', 'fridge', 'knife', 'plate']
+Verb-noun pairs in sequence: ['close;fridge;154.4;156.77', 'take;cucumber;156.93;158.97']
 ************
 Start timestamp: 163.1, Stop timestamp: 166.36
 Narration: cut cucumber
@@ -241,7 +257,8 @@ Narration: throw out the plastic wrap
 ------
 ************
 Frame IDs in sequence: [10103, 10197, 10339, 10524, 10714, 10782]
-Objects in sequence: ['plastic wrap', 'knife', 'cupboard', 'cucumber']
+Objects in sequence: ['cucumber', 'cupboard', 'knife', 'plastic wrap']
+Verb-noun pairs in sequence: ['cut-off;cucumber;167.6;170.39', 'take-off;wrap:plastic;170.93;177.63']
 ************
 Start timestamp: 183.43, Stop timestamp: 185.04
 Narration: open fridge
@@ -254,7 +271,8 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [11028, 11082, 11142, 11178, 11214, 11250]
-Objects in sequence: ['cucumber', 'fridge']
+Objects in sequence: ['fridge', 'cucumber']
+Verb-noun pairs in sequence: ['open;fridge;183.43;185.04', 'put-in;cucumber;185.21;186.97']
 ************
 Start timestamp: 188.69, Stop timestamp: 190.33
 Narration: open tap
@@ -267,7 +285,8 @@ Narration: wash hands
 ------
 ************
 Frame IDs in sequence: [11342, 11398, 11472, 11533, 11743, 11979]
-Objects in sequence: ['tap', 'knife', 'sink', 'soap dispenser', 'water']
+Objects in sequence: ['sink', 'tap', 'knife', 'soap dispenser', 'water']
+Verb-noun pairs in sequence: ['turn-on;tap;188.69;190.33', 'put-on;soap;190.98;193.08']
 ************
 Start timestamp: 205.56, Stop timestamp: 208.6
 Narration: wash knife
@@ -280,7 +299,8 @@ Narration: wash knife
 ------
 ************
 Frame IDs in sequence: [12373, 12463, 12782, 12862, 13002, 13110]
-Objects in sequence: ['tap', 'sponge', 'sink', 'knife', 'soap dispenser', 'water']
+Objects in sequence: ['sink', 'sponge', 'tap', 'knife', 'soap dispenser', 'water']
+Verb-noun pairs in sequence: ['wash;knife;205.56;208.6', 'put-on;soap:more;212.68;214.93']
 ************
 Start timestamp: 227.2, Stop timestamp: 238.19
 Narration: wash plate
@@ -293,7 +313,8 @@ Narration: rinse hands
 ------
 ************
 Frame IDs in sequence: [13751, 14115, 14558, 15016, 15891, 16061]
-Objects in sequence: ['tap', 'sponge', 'sink', 'plate', 'lid', 'drainer', 'cucumber', 'tupperware', 'water']
+Objects in sequence: ['sink', 'cucumber', 'sponge', 'tap', 'drainer', 'tupperware', 'lid', 'plate', 'water']
+Verb-noun pairs in sequence: ['wash;plate;227.2;238.19', 'wash;lid;240.27;254.93']
 ************
 Start timestamp: 263.31, Stop timestamp: 264.31
 Narration: take cucumber
@@ -312,7 +333,8 @@ Narration: dry cucumber with towel
 ------
 ************
 Frame IDs in sequence: [16221, 16277, 16495, 16594, 16798, 16874]
-Objects in sequence: ['tap', 'towel', 'sink', 'plate', 'cucumber', 'oven', 'water']
+Objects in sequence: ['towel', 'sink', 'oven', 'cucumber', 'tap', 'plate', 'water']
+Verb-noun pairs in sequence: ['turn-off;tap;269.88;271.86', 'dry-with;hand;274.04;277.9']
 ************
 Start timestamp: 282.68, Stop timestamp: 283.78
 Narration: take knife
@@ -325,7 +347,8 @@ Narration: cut cucumber
 ------
 ************
 Frame IDs in sequence: [16986, 17047, 17108, 17208, 17328, 17394]
-Objects in sequence: ['knife', 'plate', 'drainer', 'fork', 'cucumber', 'cutlery bowl']
+Objects in sequence: ['cucumber', 'fork', 'drainer', 'cutlery bowl', 'knife', 'plate']
+Verb-noun pairs in sequence: ['take;knife;282.68;283.78', 'put-in;fork;284.09000000000003;287.61']
 ************
 Start timestamp: 289.8, Stop timestamp: 292.43
 Narration: eat cucumber
@@ -347,7 +370,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [17651, 18029, 18499, 18788, 19164, 19310]
-Objects in sequence: ['knife', 'salad', 'fork', 'cucumber', 'bowl']
+Objects in sequence: ['bowl', 'salad', 'cucumber', 'fork', 'knife']
+Verb-noun pairs in sequence: ['cut;cucumber;292.44;302.59', 'put;cucumber:cut;303.62;318.23', 'put;cucumber:cut;304.72;307.32', 'cut;cucumber;310.01;314.92']
 ************
 Start timestamp: 323.23, Stop timestamp: 326.46
 Narration: take out oregano
@@ -360,7 +384,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [19420, 19520, 20073, 20099, 20177, 20277]
-Objects in sequence: ['tap', 'sink', 'cupboard', 'water', 'oregano']
+Objects in sequence: ['sink', 'tap', 'cupboard', 'oregano', 'water']
+Verb-noun pairs in sequence: ['take-out;oregano;323.23;326.46', 'put-in;oregano;326.46;334.01']
 ************
 Start timestamp: 335.45, Stop timestamp: 338.27
 Narration: rinse hands
@@ -376,7 +401,8 @@ Narration: close tupperware of oregano
 ------
 ************
 Frame IDs in sequence: [20315, 20542, 20616, 20741, 20866, 20951]
-Objects in sequence: ['tap', 'oregano tupperware', 'sink', 'tupperware lid', 'cupboard', 'water']
+Objects in sequence: ['sink', 'tap', 'tupperware lid', 'oregano tupperware', 'cupboard', 'water']
+Verb-noun pairs in sequence: ['rinse;hand;335.45;338.27', 'turn-off;tap;338.37;339.15999999999997', 'dry;hand;339.12;341.81']
 ************
 Start timestamp: 347.15, Stop timestamp: 350.05
 Narration: put tupperware of oregano in cupboard
@@ -389,7 +415,8 @@ Narration: take off the cap of salt
 ------
 ************
 Frame IDs in sequence: [21082, 21112, 21198, 21288, 21402, 21482]
-Objects in sequence: ['salad', 'tupperware lid', 'salt bottle', 'cupboard', 'fork', 'salt cap', 'bowl']
+Objects in sequence: ['bowl', 'salad', 'fork', 'tupperware lid', 'salt bottle', 'cupboard', 'salt cap']
+Verb-noun pairs in sequence: ['put-of;tupperware:oregano;347.15;350.05', 'take;salt;351.23;352.18']
 ************
 Start timestamp: 355.74, Stop timestamp: 358.79
 Narration: put salt in salad
@@ -405,7 +432,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [21695, 21723, 21847, 21875, 22065, 22119]
-Objects in sequence: ['olive oil bottle', 'salad', 'cupboard', 'fork', 'olive oil cap', 'bowl']
+Objects in sequence: ['bowl', 'salad', 'olive oil cap', 'fork', 'cupboard', 'olive oil bottle']
+Verb-noun pairs in sequence: ['put-in;salt;355.74;358.79', 'put;cap;358.61;360.74', 'put-in;salt;361.24;362.12']
 ************
 Start timestamp: 367.61, Stop timestamp: 368.74
 Narration: untwist cap of olive oil
@@ -418,7 +446,8 @@ Narration: close olive oil
 ------
 ************
 Frame IDs in sequence: [22253, 22355, 22563, 22620, 22734, 22804]
-Objects in sequence: ['olive oil bottle', 'vinegar cap', 'salad', 'vinegar', 'fork', 'vinegar bottle', 'olive oil cap', 'bowl']
+Objects in sequence: ['bowl', 'vinegar', 'salad', 'olive oil cap', 'fork', 'vinegar bottle', 'olive oil bottle', 'vinegar cap']
+Verb-noun pairs in sequence: ['untwist;cap:olive:oil;367.61;368.74', 'pour-on;oil:olive;369.35;373.91']
 ************
 Start timestamp: 375.86, Stop timestamp: 377.16
 Narration: untwist cap of vinegar
@@ -431,7 +460,8 @@ Narration: close vinegar
 ------
 ************
 Frame IDs in sequence: [22914, 22962, 23244, 23727, 24073, 24205]
-Objects in sequence: ['vinegar cap', 'salad', 'fork', 'oven', 'vinegar bottle', 'spoon', 'bowl']
+Objects in sequence: ['bowl', 'salad', 'oven', 'fork', 'vinegar bottle', 'vinegar cap', 'spoon']
+Verb-noun pairs in sequence: ['untwist;cap:vinegar;375.86;377.16', 'pour-on;vinegar;378.06;381.27']
 ************
 Start timestamp: 383.91, Stop timestamp: 399.11
 Narration: stir salad
@@ -444,7 +474,8 @@ Narration: take oven mittens
 ------
 ************
 Frame IDs in sequence: [24566, 24718, 24767, 24866, 24961]
-Objects in sequence: ['oven', 'pasta', 'tupperware', 'oven mitten']
+Objects in sequence: ['oven', 'oven mitten', 'pasta', 'tupperware']
+Verb-noun pairs in sequence: ['stir;salad;383.91;399.11', 'open;oven;400.09000000000003;404.19']
 ************
 Start timestamp: 411.45, Stop timestamp: 413.25
 Narration: open oven again
@@ -458,6 +489,7 @@ Narration: turn off oven
 ************
 Frame IDs in sequence: [25230, 25306, 25376, 25406]
 Objects in sequence: ['switch', 'mitten', 'hob']
+Verb-noun pairs in sequence: ['open;oven;411.45;413.25', 'take-out;tupperware;413.35;416.73']
 ************
 Start timestamp: 422.61, Stop timestamp: 423.93
 Narration: take off mitten

@@ -9,7 +9,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [203, 314, 409, 442, 534, 626]
-Objects in sequence: ['pan', 'drainer', 'fridge', 'hob']
+Objects in sequence: ['pan', 'fridge', 'drainer', 'hob']
+Verb-noun pairs in sequence: ['pick-up;pan;3.13;6.86', 'put-on;pan;7.89;9.26']
 ************
 Start timestamp: 13.16, Stop timestamp: 15.39
 Narration: pick up tupperware from fridge
@@ -22,7 +23,8 @@ Narration: put down tupperware
 ------
 ************
 Frame IDs in sequence: [688, 740, 816, 892, 1031, 1081]
-Objects in sequence: ['pan', 'fridge', 'tupperware', 'hob']
+Objects in sequence: ['pan', 'fridge', 'hob', 'tupperware']
+Verb-noun pairs in sequence: ['pick-up;tupperware;13.16;15.39', 'close;fridge;17.85;18.29']
 ************
 Start timestamp: 21.75, Stop timestamp: 22.68
 Narration: open tupperware
@@ -41,7 +43,8 @@ Narration: pick up pie from tupperware
 ------
 ************
 Frame IDs in sequence: [1142, 1217, 1276, 1328, 1380, 1467]
-Objects in sequence: ['pan lid', 'pie', 'pan', 'tupperware lid', 'tupperware', 'hob']
+Objects in sequence: ['pan', 'tupperware lid', 'pan lid', 'pie', 'hob', 'tupperware']
+Verb-noun pairs in sequence: ['put-down;lid;22.77;23.66', 'pick-up;pie;23.76;26.07', 'put-in;pie;25.85;26.66']
 ************
 Start timestamp: 30.37, Stop timestamp: 31.16
 Narration: put pie in pan
@@ -57,7 +60,8 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [1538, 1605, 1642, 1679, 1717, 1792]
-Objects in sequence: ['pan lid', 'pie', 'pan', 'tupperware', 'hob']
+Objects in sequence: ['pan', 'pan lid', 'pie', 'hob', 'tupperware']
+Verb-noun pairs in sequence: ['put-in;pie;30.37;31.16', 'turn-on;hob;31.38;33.33', 'adjust;heat;33.32;35.41']
 ************
 Start timestamp: 36.3, Stop timestamp: 37.99
 Narration: cover pan with lid
@@ -70,7 +74,8 @@ Narration: close tupperware
 ------
 ************
 Frame IDs in sequence: [1846, 1886, 1926, 1957, 1988, 2021]
-Objects in sequence: ['pan lid', 'pan', 'tupperware lid', 'tupperware', 'hob']
+Objects in sequence: ['pan', 'tupperware lid', 'pan lid', 'hob', 'tupperware']
+Verb-noun pairs in sequence: ['cover-with;pan;36.3;37.99', 'pick-up;lid:tupperware;38.26;38.95']
 ************
 Start timestamp: 40.79, Stop timestamp: 41.71
 Narration: pick up tupperware
@@ -83,7 +88,8 @@ Narration: put tupperware in fridge
 ------
 ************
 Frame IDs in sequence: [2049, 2147, 2196, 2246, 2289, 2326]
-Objects in sequence: ['pan lid', 'tupperware lid', 'fridge', 'hob']
+Objects in sequence: ['tupperware lid', 'fridge', 'pan lid', 'hob']
+Verb-noun pairs in sequence: ['pick-up;tupperware;40.79;41.71', 'open;fridge;44.8;45.83']
 ************
 Start timestamp: 47.41, Stop timestamp: 49.79
 Narration: pick up foiled paper covered chocolate dessert
@@ -97,6 +103,7 @@ Narration: move water filter
 ************
 Frame IDs in sequence: [2400, 2455, 2505, 2555, 2630, 2663]
 Objects in sequence: ['foiled dessert', 'fridge', 'water filter']
+Verb-noun pairs in sequence: ['pick-up;paper:foiled;47.41;49.79', 'close;fridge;49.99;51.59']
 ************
 Start timestamp: 53.66, Stop timestamp: 54.74
 Narration: put down cylinder covered with foil paper
@@ -109,7 +116,8 @@ Narration: pick up chopping board from drainer
 ------
 ************
 Frame IDs in sequence: [2701, 2761, 2843, 2884, 2926, 2963]
-Objects in sequence: ['chopping blade', 'foiled dessert', 'chopping board', 'cylinder', 'drainer']
+Objects in sequence: ['cylinder', 'foiled dessert', 'drainer', 'chopping board', 'chopping blade']
+Verb-noun pairs in sequence: ['put-down;cylinder;53.66;54.74', 'move;cover:plastic;54.84;55.74']
 ************
 Start timestamp: 62.61, Stop timestamp: 63.67
 Narration: pick up knife from stand
@@ -125,7 +133,8 @@ Narration: pick up chopping board
 ------
 ************
 Frame IDs in sequence: [3155, 3198, 3242, 3286, 3330, 3401]
-Objects in sequence: ['knife', 'chopping board', 'glass', 'stand']
+Objects in sequence: ['stand', 'glass', 'chopping board', 'knife']
+Verb-noun pairs in sequence: ['pick-up;knife;62.61;63.67', 'move;glass;66.29;67.09', 'put-down;board:chopping;66.44;67.56']
 ************
 Start timestamp: 68.38, Stop timestamp: 69.26
 Narration: put down knife
@@ -141,7 +150,8 @@ Narration: pick up knife
 ------
 ************
 Frame IDs in sequence: [3526, 3567, 3648, 3701, 3767, 3834]
-Objects in sequence: ['knife', 'sink', 'chopping board', 'drainer']
+Objects in sequence: ['sink', 'drainer', 'chopping board', 'knife']
+Verb-noun pairs in sequence: ['put-in;board:chopping;70.34;71.7', 'pick-up;board:chopping;72.05;74.55']
 ************
 Start timestamp: 77.15, Stop timestamp: 77.81
 Narration: put down chopping board
@@ -154,7 +164,8 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [3857, 3871, 3886, 3900, 3915, 3944]
-Objects in sequence: ['knife', 'foiled dessert', 'chopping board']
+Objects in sequence: ['foiled dessert', 'chopping board', 'knife']
+Verb-noun pairs in sequence: ['put-down;board:chopping;77.15;77.81', 'pick-up;cylinder:paper;77.86;78.71000000000001']
 ************
 Start timestamp: 79.26, Stop timestamp: 81.09
 Narration: put down foiled paper cylinder
@@ -170,7 +181,8 @@ Narration: cut chocolate piece
 ------
 ************
 Frame IDs in sequence: [3986, 4042, 4263, 4290, 4388, 4530]
-Objects in sequence: ['foil paper', 'knife', 'foiled dessert', 'chopping board', 'chocolate dessert']
+Objects in sequence: ['foiled dessert', 'chopping board', 'foil paper', 'knife', 'chocolate dessert']
+Verb-noun pairs in sequence: ['put-down;cylinder:paper;79.26;81.09', 'unfold;paper:foil;79.51;82.58', 'pick-up;knife;85.4;85.78']
 ************
 Start timestamp: 91.48, Stop timestamp: 96.00999999999999
 Narration: cut chocolate piece
@@ -186,7 +198,8 @@ Narration: cut chocolate piece
 ------
 ************
 Frame IDs in sequence: [4644, 4759, 5076, 5163, 5280, 5398]
-Objects in sequence: ['foil paper', 'knife', 'chopping board', 'chocolate dessert']
+Objects in sequence: ['chopping board', 'foil paper', 'knife', 'chocolate dessert']
+Verb-noun pairs in sequence: ['cut;piece:chocolate;91.48;96.00999999999999', 'cut;piece:chocolate;95.95;100.44', 'cut;piece:chocolate;100.31;104.28999999999999']
 ************
 Start timestamp: 109.00999999999999, Stop timestamp: 113.1
 Narration: cut chocolate piece
@@ -199,7 +212,8 @@ Narration: cut chocolate piece
 ------
 ************
 Frame IDs in sequence: [5510, 5584, 5771, 5869, 6026, 6169]
-Objects in sequence: ['foil paper', 'knife', 'chopping board', 'chocolate dessert']
+Objects in sequence: ['chopping board', 'foil paper', 'knife', 'chocolate dessert']
+Verb-noun pairs in sequence: ['cut;piece:chocolate;109.00999999999999;113.1', 'cut;piece:chocolate;114.25;118.28999999999999']
 ************
 Start timestamp: 124.92, Stop timestamp: 126.36
 Narration: slide cylinder
@@ -215,7 +229,8 @@ Narration: cut chocolate piece
 ------
 ************
 Frame IDs in sequence: [6276, 6301, 6401, 6549, 6842, 6926]
-Objects in sequence: ['foil paper', 'knife', 'chopping board', 'chocolate dessert']
+Objects in sequence: ['chopping board', 'foil paper', 'knife', 'chocolate dessert']
+Verb-noun pairs in sequence: ['slide;cylinder;124.92;126.36', 'cut;piece:chocolate;126.46;131.95', 'cut;piece:chocolate;129.69;135.29']
 ************
 Start timestamp: 139.62, Stop timestamp: 144.35
 Narration: cut chocolate piece
@@ -234,7 +249,8 @@ Narration: return envelope
 ------
 ************
 Frame IDs in sequence: [7242, 7325, 7409, 7457, 7505, 7535]
-Objects in sequence: ['foil paper', 'envelope', 'knife', 'drawer', 'chocolate dessert']
+Objects in sequence: ['drawer', 'foil paper', 'knife', 'envelope', 'chocolate dessert']
+Verb-noun pairs in sequence: ['put-down;knife;144.54;145.1', 'open;drawer;147.92000000000002;148.53', 'move;envelope;148.44;150.04']
 ************
 Start timestamp: 151.04, Stop timestamp: 151.98
 Narration: close drawer
@@ -247,7 +263,8 @@ Narration: pick up tupperware from cupboard
 ------
 ************
 Frame IDs in sequence: [7556, 7594, 7636, 7713, 7788, 7821]
-Objects in sequence: ['envelope', 'drawer', 'cupboard']
+Objects in sequence: ['drawer', 'cupboard', 'envelope']
+Verb-noun pairs in sequence: ['close;drawer;151.04;151.98', 'open;cupboard;152.0;155.16']
 ************
 Start timestamp: 157.05, Stop timestamp: 158.56
 Narration: pick up lid from cupboard
@@ -260,7 +277,8 @@ Narration: put down lid
 ------
 ************
 Frame IDs in sequence: [7867, 7918, 7976, 8002, 8192]
-Objects in sequence: ['foil paper', 'tupperware lid', 'cupboard', 'chocolate dessert', 'tupperware']
+Objects in sequence: ['tupperware lid', 'cupboard', 'foil paper', 'tupperware', 'chocolate dessert']
+Verb-noun pairs in sequence: ['pick-up;lid;157.05;158.56', 'close;cupboard;158.97;160.78']
 ************
 Start timestamp: 163.76, Stop timestamp: 165.94
 Narration: move glass
@@ -276,7 +294,8 @@ Narration: put chocolate pieces in tupperware
 ------
 ************
 Frame IDs in sequence: [8271, 8305, 8347, 8390, 8418, 8446]
-Objects in sequence: ['foil paper', 'glass', 'chocolate dessert', 'tupperware']
+Objects in sequence: ['glass', 'foil paper', 'tupperware', 'chocolate dessert']
+Verb-noun pairs in sequence: ['put-down;tupperware;165.47;166.02', 'pick-up;piece:chocolate;166.12;168.35']
 ************
 Start timestamp: 169.74, Stop timestamp: 173.34
 Narration: pick up chocolate pieces
@@ -295,7 +314,8 @@ Narration: pick up chocolate crumbles
 ------
 ************
 Frame IDs in sequence: [8526, 8626, 8892, 8950, 9151, 9246]
-Objects in sequence: ['foil paper', 'chocolate dessert', 'tupperware']
+Objects in sequence: ['foil paper', 'tupperware', 'chocolate dessert']
+Verb-noun pairs in sequence: ['pick-up;piece:chocolate;169.74;173.34', 'put-in;piece:chocolate;172.64;177.5', 'pick-up;piece:chocolate;177.56;179.22', 'put-in;piece:chocolate;179.13;180.37']
 ************
 Start timestamp: 186.36, Stop timestamp: 191.51
 Narration: eat chocolate crumbles
@@ -311,7 +331,8 @@ Narration: open bin
 ------
 ************
 Frame IDs in sequence: [9401, 9501, 9657, 9813, 9851, 10025]
-Objects in sequence: ['foil paper', 'chopping board', 'chocolate dessert', 'tupperware', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'foil paper', 'chopping board', 'tupperware', 'chocolate dessert']
+Verb-noun pairs in sequence: ['eat;crumbles:chocolate;186.36;191.51', 'fold;paper:foil;191.44;196.02', 'pick-up;paper:foil;196.13;197.37']
 ************
 Start timestamp: 201.09, Stop timestamp: 201.5
 Narration: throw foil paper
@@ -324,7 +345,8 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [10051, 10094, 10117, 10140, 10163, 10187]
-Objects in sequence: ['foil paper', 'tupperware lid', 'tupperware', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'tupperware lid', 'foil paper', 'tupperware']
+Verb-noun pairs in sequence: ['throw;paper:foil;201.09;201.5', 'close;bin;201.56;202.37']
 ************
 Start timestamp: 204.19, Stop timestamp: 207.72
 Narration: close tupperware
@@ -340,7 +362,8 @@ Narration: put tupperware in fridge
 ------
 ************
 Frame IDs in sequence: [10387, 10448, 10509, 10540, 10580, 10630]
-Objects in sequence: ['fridge', 'tupperware lid', 'tupperware']
+Objects in sequence: ['tupperware lid', 'fridge', 'tupperware']
+Verb-noun pairs in sequence: ['pick-up;tupperware;207.84;208.32', 'open;fridge;209.88;210.99']
 ************
 Start timestamp: 213.17000000000002, Stop timestamp: 214.93
 Narration: close fridge
@@ -353,7 +376,8 @@ Narration: pick up lid from pan
 ------
 ************
 Frame IDs in sequence: [10684, 10726, 10827, 11075, 11103]
-Objects in sequence: ['pan lid', 'pan', 'drawer', 'fridge', 'hob']
+Objects in sequence: ['pan', 'drawer', 'fridge', 'pan lid', 'hob']
+Verb-noun pairs in sequence: ['close;fridge;213.17000000000002;214.93', 'close;drawer;216.4;217.3']
 ************
 Start timestamp: 222.38, Stop timestamp: 223.9
 Narration: check temperature of pie

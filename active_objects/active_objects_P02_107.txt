@@ -12,7 +12,8 @@ Narration: turn on coffee machine
 ------
 ************
 Frame IDs in sequence: [201, 238, 269, 301, 351, 376]
-Objects in sequence: ['coffee machine', 'mug']
+Objects in sequence: ['mug', 'coffee machine']
+Verb-noun pairs in sequence: ['pick-up;mug;3.55;5.1', 'put-down;mug;5.81;7.24', 'pick-up;filter:water;6.66;11.42']
 ************
 Start timestamp: 12.89, Stop timestamp: 13.43
 Narration: open coffee machine
@@ -25,7 +26,8 @@ Narration: close coffee machine lid
 ------
 ************
 Frame IDs in sequence: [651, 776, 901, 926, 955, 1001]
-Objects in sequence: ['coffee machine lid', 'mug', 'water filter', 'coffee machine']
+Objects in sequence: ['coffee machine lid', 'coffee machine', 'water filter', 'mug']
+Verb-noun pairs in sequence: ['open;machine:coffee;12.89;13.43', 'pour-from;water;13.43;17.71']
 ************
 Start timestamp: 18.93, Stop timestamp: 20.43
 Narration: put down water filter
@@ -41,7 +43,8 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [1244, 1292, 1341, 1521, 1626]
-Objects in sequence: ['milk bottle', 'mug', 'fridge', 'water filter', 'milk', 'coffee machine']
+Objects in sequence: ['fridge', 'milk bottle', 'coffee machine', 'water filter', 'mug', 'milk']
+Verb-noun pairs in sequence: ['put-down;filter:water;18.93;20.43', 'open;fridge;24.59;26.05', 'pick-up;milk;25.28;26.53']
 ************
 Start timestamp: 27.13, Stop timestamp: 30.83
 Narration: open milk bottle
@@ -60,7 +63,8 @@ Narration: turn off coffee machine
 ------
 ************
 Frame IDs in sequence: [1676, 1726, 1813, 1901, 1926, 1967]
-Objects in sequence: ['milk bottle', 'mug', 'water filter', 'milk', 'coffee machine']
+Objects in sequence: ['coffee machine', 'milk bottle', 'water filter', 'mug', 'milk']
+Verb-noun pairs in sequence: ['pour-into;milk;29.8;32.91', 'close;bottle:milk;33.09;34.79', 'turn-on;machine:coffee;34.74;36.1']
 ************
 Start timestamp: 39.1, Stop timestamp: 39.84
 Narration: put down milk bottle
@@ -73,7 +77,8 @@ Narration: open coffee machine
 ------
 ************
 Frame IDs in sequence: [2005, 2028, 2051, 2076, 2096, 2117]
-Objects in sequence: ['milk bottle', 'coffee pod', 'mug', 'water filter', 'coffee machine']
+Objects in sequence: ['coffee pod', 'coffee machine', 'water filter', 'milk bottle', 'mug']
+Verb-noun pairs in sequence: ['put-down;bottle:milk;39.1;39.84', 'pick-up;pod:coffee;39.91;41.14']
 ************
 Start timestamp: 42.19, Stop timestamp: 42.59
 Narration: put coffee pod into machine
@@ -89,7 +94,8 @@ Narration: open coffee machine drawer
 ------
 ************
 Frame IDs in sequence: [2201, 2251, 2276, 2301, 2403, 2505]
-Objects in sequence: ['milk bottle', 'coffee pod', 'pod container', 'mug', 'water filter', 'coffee machine', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'coffee pod', 'coffee machine', 'water filter', 'milk bottle', 'pod container', 'mug']
+Verb-noun pairs in sequence: ['put-into;pod:coffee;42.19;42.59', 'move;mug;43.85;45.31', 'remove;container:pod;45.0;48.9']
 ************
 Start timestamp: 49.71, Stop timestamp: 50.6
 Narration: open bin
@@ -105,7 +111,8 @@ Narration: return compartment into drawer of coffee machine
 ------
 ************
 Frame IDs in sequence: [2551, 2598, 2646, 2700, 2767, 2826]
-Objects in sequence: ['milk bottle', 'pod container', 'mug', 'coffee machine', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'coffee machine', 'milk bottle', 'pod container', 'mug']
+Verb-noun pairs in sequence: ['open;bin;49.71;50.6', 'empty;pod;50.62;51.73', 'close;bin;51.64;52.31']
 ************
 Start timestamp: 54.21, Stop timestamp: 55.17
 Narration: slide back drawer
@@ -124,7 +131,8 @@ Narration: pick up milk bottle
 ------
 ************
 Frame IDs in sequence: [2905, 2946, 3069, 3192, 3276, 3378]
-Objects in sequence: ['milk bottle', 'mug', 'fridge', 'water filter', 'coffee machine']
+Objects in sequence: ['fridge', 'coffee machine', 'milk bottle', 'water filter', 'mug']
+Verb-noun pairs in sequence: ['close;machine:coffee;55.07;56.7', 'put-back;mug;56.42;58.01', 'turn-on;machine:coffee;58.09;58.92']
 ************
 Start timestamp: 65.09, Stop timestamp: 66.03
 Narration: open fridge
@@ -143,7 +151,8 @@ Narration: stir coffee
 ------
 ************
 Frame IDs in sequence: [3526, 3576, 3676, 3801, 4148, 4496]
-Objects in sequence: ['mug', 'stirrer', 'coffee', 'water filter', 'coffee machine']
+Objects in sequence: ['coffee machine', 'water filter', 'stirrer', 'mug', 'coffee']
+Verb-noun pairs in sequence: ['close;fridge;67.11;68.02', 'pick-up;stirrer;69.8;72.09']
 ************
 Start timestamp: 89.68, Stop timestamp: 90.6
 Narration: pick up water filter
@@ -159,7 +168,8 @@ Narration: close tap
 ------
 ************
 Frame IDs in sequence: [4663, 4701, 4809, 4873, 4938, 5001]
-Objects in sequence: ['tap', 'sink', 'mug', 'coffee', 'water filter', 'coffee machine']
+Objects in sequence: ['sink', 'tap', 'water filter', 'coffee machine', 'mug', 'coffee']
+Verb-noun pairs in sequence: ['pick-up;filter:water;89.68;90.6', 'turn-on;tap;92.5;94.36', 'fill;filter:water;94.02000000000001;96.22999999999999']
 ************
 Start timestamp: 98.28999999999999, Stop timestamp: 100.66
 Narration: put down water filter
@@ -175,7 +185,8 @@ Narration: turn off coffee machine
 ------
 ************
 Frame IDs in sequence: [5192, 5421, 5536, 5651, 5676, 5705]
-Objects in sequence: ['mug', 'stirrer', 'coffee', 'coffee machine']
+Objects in sequence: ['coffee machine', 'stirrer', 'mug', 'coffee']
+Verb-noun pairs in sequence: ['put-down;filter:water;98.28999999999999;100.66', 'turn-off;machine:coffee;103.46000000000001;104.34', 'turn-on;machine:coffee;104.22999999999999;105.86']
 ************
 Start timestamp: 114.11, Stop timestamp: 114.91
 Narration: stir coffee
@@ -188,7 +199,8 @@ Narration: stir coffee
 ------
 ************
 Frame IDs in sequence: [5751, 5780, 5809, 5867, 5899, 5932]
-Objects in sequence: ['mug', 'stirrer', 'coffee', 'coffee machine', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'coffee machine', 'stirrer', 'mug', 'coffee']
+Verb-noun pairs in sequence: ['stir;coffee;114.11;114.91', 'pick-up;mug;115.00999999999999;115.57']
 ************
 Start timestamp: 117.57, Stop timestamp: 118.18
 Narration: shake stirrer

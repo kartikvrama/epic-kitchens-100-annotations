@@ -16,6 +16,7 @@ Narration: put down water filter
 ************
 Frame IDs in sequence: [190, 226, 271, 317, 355, 426]
 Objects in sequence: ['glass', 'water filter', 'water']
+Verb-noun pairs in sequence: ['pick-up;filter:water;3.2;5.02', 'pick-up;glass;3.78;4.63', 'pour-from;water;4.59;6.29', 'drink;water;6.35;7.13']
 ************
 Start timestamp: 11.99, Stop timestamp: 12.99
 Narration: put down glass
@@ -34,7 +35,8 @@ Narration: close tap
 ------
 ************
 Frame IDs in sequence: [613, 701, 745, 790, 869]
-Objects in sequence: ['tap', 'sink', 'pan', 'glass']
+Objects in sequence: ['pan', 'sink', 'tap', 'glass']
+Verb-noun pairs in sequence: ['put-down;glass;11.99;12.99', 'pick-up;pan;15.37;16.25', 'rinse;pan;16.0;18.0', 'turn-on;tap;16.18;16.65']
 ************
 Start timestamp: 17.95, Stop timestamp: 18.3
 Narration: pick up sponge
@@ -50,7 +52,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [892, 1041, 1190, 1339, 1488, 1551]
-Objects in sequence: ['tap', 'sponge', 'sink', 'pan']
+Objects in sequence: ['pan', 'sink', 'sponge', 'tap']
+Verb-noun pairs in sequence: ['pick-up;sponge;17.95;18.3', 'sponge;pan;18.1;29.75', 'put-down;sponge;29.74;30.52']
 ************
 Start timestamp: 31.63, Stop timestamp: 37.92
 Narration: rinse pan
@@ -66,7 +69,8 @@ Narration: put down sponge
 ------
 ************
 Frame IDs in sequence: [1907, 1984, 2015, 2071, 2123, 2176]
-Objects in sequence: ['tap', 'sponge', 'sink', 'pan']
+Objects in sequence: ['pan', 'sink', 'sponge', 'tap']
+Verb-noun pairs in sequence: ['rinse;pan;31.63;37.92', 'pick-up;sponge;37.92;38.43', 'sponge;pan;38.09;39.8']
 ************
 Start timestamp: 40.29, Stop timestamp: 43.96
 Narration: rinse pan
@@ -82,7 +86,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [2201, 2259, 2289, 2319, 2372, 2425]
-Objects in sequence: ['tap', 'sink', 'pan', 'drainer']
+Objects in sequence: ['pan', 'sink', 'tap', 'drainer']
+Verb-noun pairs in sequence: ['rinse;pan;40.29;43.96', 'turn-off;tap;43.96;44.7', 'rinse;pan;44.0;44.2']
 ************
 Start timestamp: 46.92, Stop timestamp: 47.42
 Narration: close tap
@@ -98,7 +103,8 @@ Narration: dry hands using towel
 ------
 ************
 Frame IDs in sequence: [2576, 2701, 2875, 2905, 3217]
-Objects in sequence: ['tap', 'towel', 'sink', 'cupboard']
+Objects in sequence: ['towel', 'sink', 'tap', 'cupboard']
+Verb-noun pairs in sequence: ['put-in;pan;47.85;49.35', 'empty;sink;49.7;55.25']
 ************
 Start timestamp: 64.12, Stop timestamp: 64.75
 Narration: open cupboard
@@ -111,7 +117,8 @@ Narration: return bowls
 ------
 ************
 Frame IDs in sequence: [3263, 3298, 3343, 3389, 3414, 3440]
-Objects in sequence: ['cupboard', 'bowl']
+Objects in sequence: ['bowl', 'cupboard']
+Verb-noun pairs in sequence: ['open;cupboard;64.12;64.75', 'pick-up;bowl;64.89;66.3']
 ************
 Start timestamp: 68.77, Stop timestamp: 69.39
 Narration: close cupboard
@@ -127,7 +134,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [3576, 3626, 3676, 3740, 3805, 3869]
-Objects in sequence: ['glass', 'cupboard', 'water filter', 'bowl']
+Objects in sequence: ['bowl', 'glass', 'cupboard', 'water filter']
+Verb-noun pairs in sequence: ['close;cupboard;68.77;69.39', 'move;filter:water;71.19;73.94', 'put-down;bowl;72.34;74.21000000000001']
 ************
 Start timestamp: 77.23, Stop timestamp: 78.05
 Narration: pick up glass from cupboard
@@ -140,7 +148,8 @@ Narration: put glass down inside bowl
 ------
 ************
 Frame IDs in sequence: [3919, 3972, 4026, 4061, 4092, 4146]
-Objects in sequence: ['drawer', 'glass', 'bowl']
+Objects in sequence: ['bowl', 'drawer', 'glass']
+Verb-noun pairs in sequence: ['pick-up;glass;77.23;78.05', 'close;cupboard;78.08;78.93']
 ************
 Start timestamp: 81.77, Stop timestamp: 83.26
 Narration: open drawer
@@ -156,7 +165,8 @@ Narration: pick up glass
 ------
 ************
 Frame IDs in sequence: [4226, 4255, 4301, 4326, 4351, 4401]
-Objects in sequence: ['biscuit powder', 'drawer', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'drawer', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['open;drawer;81.77;83.26', 'pick-up;spoon;83.22;84.22', 'close;drawer;84.28999999999999;85.28999999999999']
 ************
 Start timestamp: 86.53, Stop timestamp: 88.85
 Narration: scoop biscuit powder from food processor into glass using spoon
@@ -175,7 +185,8 @@ Narration: scoop biscuit powder from food processor into glass using spoon
 ------
 ************
 Frame IDs in sequence: [4601, 4701, 4826, 4951, 5284, 5351]
-Objects in sequence: ['chopping blade', 'biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon', 'chopping blade']
+Verb-noun pairs in sequence: ['scoop-from;powder:biscuit;86.53;88.85', 'scoop-from;powder:biscuit;88.7;90.99', 'scoop-from;powder:biscuit;88.78999999999999;90.7', 'scoop-from;powder:biscuit;91.05;95.12']
 ************
 Start timestamp: 104.99000000000001, Stop timestamp: 107.53999999999999
 Narration: remove food processor chopping blades
@@ -188,7 +199,8 @@ Narration: scoop biscuit powder from food processor into glass using spoon
 ------
 ************
 Frame IDs in sequence: [5451, 5501, 5571, 5613, 5676, 5751]
-Objects in sequence: ['chopping blade', 'biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon', 'chopping blade']
+Verb-noun pairs in sequence: ['remove;blade:food:processor:chopping;104.99000000000001;107.53999999999999', 'put-down;blade:chopping;108.85;110.35']
 ************
 Start timestamp: 113.05, Stop timestamp: 115.55
 Narration: scoop biscuits from food processor into glass using spoon
@@ -201,7 +213,8 @@ Narration: put glass down inside bowl
 ------
 ************
 Frame IDs in sequence: [5821, 5876, 6057, 6084, 6121, 6151]
-Objects in sequence: ['biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['scoop;biscuit;113.05;115.55', 'scoop;biscuit;115.59;118.4']
 ************
 Start timestamp: 121.99, Stop timestamp: 123.24
 Narration: remove biscuit piece
@@ -217,7 +230,8 @@ Narration: pour biscuits from food processor into glass
 ------
 ************
 Frame IDs in sequence: [6271, 6326, 6701, 6776, 6951, 7026]
-Objects in sequence: ['biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'glass', 'biscuit powder', 'spoon']
+Verb-noun pairs in sequence: ['remove;piece:biscuit;121.99;123.24', 'put-down;piece:biscuit;123.11;124.73', 'pick-up;bowl:food:processor;124.8;127.55']
 ************
 Start timestamp: 133.09, Stop timestamp: 136.52
 Narration: pour biscuits from glass into bowl
@@ -233,7 +247,8 @@ Narration: put down food processor bowl
 ------
 ************
 Frame IDs in sequence: [7076, 7101, 7176, 7246, 7285, 7325]
-Objects in sequence: ['biscuit packaging', 'biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit packaging', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['pour-from;biscuit;133.09;136.52', 'put-down;glass;136.32999999999998;138.29', 'pour-from;biscuit;138.35;141.24']
 ************
 Start timestamp: 142.4, Stop timestamp: 143.31
 Narration: lock food processor
@@ -252,7 +267,8 @@ Narration: open bin
 ------
 ************
 Frame IDs in sequence: [7358, 7384, 7417, 7453, 7561]
-Objects in sequence: ['biscuit packaging', 'biscuit powder', 'glass', 'spoon', 'bowl', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bowl', 'bin/garbage can/recycling bin', 'biscuit packaging', 'glass', 'biscuit powder', 'spoon']
+Verb-noun pairs in sequence: ['put;piece:biscuit;143.41;144.45', 'pick-up;packaging:biscuit;144.43;144.99', 'crumble;packaging;144.64;146.77']
 ************
 Start timestamp: 147.91, Stop timestamp: 148.27
 Narration: throw packaging inside bin
@@ -269,6 +285,7 @@ Narration: pick up ladder
 ************
 Frame IDs in sequence: [7692, 7736, 7806, 7876, 7991]
 Objects in sequence: ['cupboard', 'ladder']
+Verb-noun pairs in sequence: ['throw-inside;packaging;147.91;148.27', 'close;bin;148.24;148.7', 'put-down;spoon;150.82999999999998;151.7']
 ************
 Start timestamp: 154.86, Stop timestamp: 157.12
 Narration: open ladder
@@ -287,7 +304,8 @@ Narration: pick up biscuits
 ------
 ************
 Frame IDs in sequence: [8090, 8117, 8162, 8198, 8269, 8300]
-Objects in sequence: ['biscuit packaging', 'cupboard', 'cocoa powder tin']
+Objects in sequence: ['cocoa powder tin', 'biscuit packaging', 'cupboard']
+Verb-noun pairs in sequence: ['step-on;ladder;157.22;158.85', 'open;cupboard;159.45;160.45', 'pick-up;biscuit;160.3;161.07999999999998']
 ************
 Start timestamp: 162.95, Stop timestamp: 164.1
 Narration: pick up cocoa powder tin
@@ -300,7 +318,8 @@ Narration: pick up condensed milk tin
 ------
 ************
 Frame IDs in sequence: [8346, 8375, 8405, 8436, 8464, 8492]
-Objects in sequence: ['biscuit packaging', 'condensed milk tin', 'cupboard']
+Objects in sequence: ['biscuit packaging', 'cupboard', 'condensed milk tin']
+Verb-noun pairs in sequence: ['pick-up;tin:cocoa:powder;162.95;164.1', 'move;biscuit;165.0;166.17000000000002']
 ************
 Start timestamp: 168.04, Stop timestamp: 169.1
 Narration: close cupboard
@@ -313,7 +332,8 @@ Narration: put down cocoa powder tin
 ------
 ************
 Frame IDs in sequence: [8559, 8626, 8663, 8769, 8876, 9063]
-Objects in sequence: ['biscuit packaging', 'biscuit powder', 'food processor bowl', 'bowl', 'glass', 'spoon', 'cocoa powder tin', 'ladder']
+Objects in sequence: ['cocoa powder tin', 'bowl', 'food processor bowl', 'biscuit packaging', 'ladder', 'glass', 'biscuit powder', 'spoon']
+Verb-noun pairs in sequence: ['close;cupboard;168.04;169.1', 'put-down;tin:condensed:milk;169.55;170.35']
 ************
 Start timestamp: 172.22, Stop timestamp: 173.62
 Narration: step off ladder
@@ -329,7 +349,8 @@ Narration: put biscuits inside food processor
 ------
 ************
 Frame IDs in sequence: [9188, 9226, 9280, 9330, 9451, 9484]
-Objects in sequence: ['biscuit packaging', 'chopping blade', 'food processor bowl', 'biscuit']
+Objects in sequence: ['food processor bowl', 'biscuit packaging', 'biscuit', 'chopping blade']
+Verb-noun pairs in sequence: ['step-off;ladder;172.22;173.62', 'put-down;biscuit;173.6;176.47', 'open;packaging:biscuit;176.27;182.21']
 ************
 Start timestamp: 185.33, Stop timestamp: 187.1
 Narration: pick up biscuits from food processor
@@ -345,7 +366,8 @@ Narration: put biscuits inside food processor
 ------
 ************
 Frame IDs in sequence: [9530, 9703, 9876, 9938, 10073, 10101]
-Objects in sequence: ['biscuit packaging', 'food processor bowl', 'bin/garbage can/recycling bin', 'biscuit']
+Objects in sequence: ['bin/garbage can/recycling bin', 'food processor bowl', 'biscuit packaging', 'biscuit']
+Verb-noun pairs in sequence: ['pick-up;biscuit;185.33;187.1', 'pick-up;blade:food:processor:chopping;186.9;188.76', 'put;blade:chopping;188.79;190.29']
 ************
 Start timestamp: 190.88, Stop timestamp: 196.78
 Narration: pour biscuits from packaging into food processor
@@ -364,7 +386,8 @@ Narration: close bin
 ------
 ************
 Frame IDs in sequence: [10119, 10172, 10226, 10301, 10396, 10492]
-Objects in sequence: ['food processor bowl', 'food processor cover', 'bin/garbage can/recycling bin', 'biscuit']
+Objects in sequence: ['bin/garbage can/recycling bin', 'food processor bowl', 'biscuit', 'food processor cover']
+Verb-noun pairs in sequence: ['crumble;packaging;196.63;199.57999999999998', 'open;bin;201.41;201.95', 'throw;packaging;201.85;202.25']
 ************
 Start timestamp: 204.15, Stop timestamp: 205.01
 Narration: pick up food processor cover
@@ -380,7 +403,8 @@ Narration: turn on food processor
 ------
 ************
 Frame IDs in sequence: [10726, 10951, 11140, 11330, 11388, 11430]
-Objects in sequence: ['biscuit powder', 'food processor bowl', 'food processor cover', 'food processor engine']
+Objects in sequence: ['food processor bowl', 'biscuit powder', 'food processor engine', 'food processor cover']
+Verb-noun pairs in sequence: ['pick-up;cover:food:processor;204.15;205.01', 'cover;processor:food;205.05;211.15', 'lock;cover:food:processor;211.13;212.32999999999998']
 ************
 Start timestamp: 220.79, Stop timestamp: 225.64
 Narration: turn off food processor
@@ -396,7 +420,8 @@ Narration: remove chopping blades
 ------
 ************
 Frame IDs in sequence: [11651, 11676, 11701, 11726, 11763, 11801]
-Objects in sequence: ['chopping blade', 'biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon', 'chopping blade']
+Verb-noun pairs in sequence: ['open;cover:food:processor;226.29;227.99', 'put-down;cover;228.05;229.1']
 ************
 Start timestamp: 232.8, Stop timestamp: 233.92000000000002
 Narration: put down chopping blades
@@ -409,7 +434,8 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [11901, 12171, 12373, 12576, 12630, 12921]
-Objects in sequence: ['biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['put-down;blade:chopping;232.8;233.92000000000002', 'pick-up;bowl:food:processor;234.22;235.79']
 ************
 Start timestamp: 236.43, Stop timestamp: 246.48
 Narration: pour biscuit powder from food processor bowl into glass
@@ -428,7 +454,8 @@ Narration: put down food processor bowl
 ------
 ************
 Frame IDs in sequence: [12988, 13026, 13073, 13121, 13151, 13207]
-Objects in sequence: ['biscuit packaging', 'chopping blade', 'biscuit powder', 'glass', 'spoon', 'food processor bowl']
+Objects in sequence: ['food processor bowl', 'biscuit packaging', 'glass', 'biscuit powder', 'spoon', 'chopping blade']
+Verb-noun pairs in sequence: ['pour;powder:biscuit;236.43;246.48', 'pour-from;biscuit;239.2;246.6', 'put-down;glass;250.97;253.47', 'pour-from;biscuit;253.41;257.94']
 ************
 Start timestamp: 258.57, Stop timestamp: 259.54
 Narration: lock bowl
@@ -447,7 +474,8 @@ Narration: pick up biscuits
 ------
 ************
 Frame IDs in sequence: [13284, 13336, 13388, 13451, 13476, 13513]
-Objects in sequence: ['biscuit packaging', 'chopping blade', 'food processor bowl', 'biscuit']
+Objects in sequence: ['food processor bowl', 'biscuit packaging', 'biscuit', 'chopping blade']
+Verb-noun pairs in sequence: ['pick-up;blade:chopping;259.64;260.56', 'insert;blade:chopping;260.39;262.48', 'put-inside;spoon;262.06;263.58']
 ************
 Start timestamp: 264.75, Stop timestamp: 268.86
 Narration: open biscuit packaging
@@ -460,7 +488,8 @@ Narration: throw biscuits in food processor
 ------
 ************
 Frame IDs in sequence: [13601, 13638, 13676, 13751, 13776, 13805]
-Objects in sequence: ['packaging', 'food processor bowl', 'biscuit']
+Objects in sequence: ['food processor bowl', 'biscuit', 'packaging']
+Verb-noun pairs in sequence: ['open;packaging:biscuit;264.75;268.86', 'get-from;biscuit;269.05;269.67']
 ************
 Start timestamp: 271.23, Stop timestamp: 274.65
 Narration: get biscuits from packaging
@@ -473,7 +502,8 @@ Narration: get biscuits from packaging
 ------
 ************
 Frame IDs in sequence: [13876, 13913, 13961, 14009, 14084, 14126]
-Objects in sequence: ['food processor engine', 'food processor bowl', 'packaging', 'food processor cover', 'biscuit']
+Objects in sequence: ['food processor bowl', 'biscuit', 'packaging', 'food processor engine', 'food processor cover']
+Verb-noun pairs in sequence: ['get-from;biscuit;271.23;274.65', 'throw-in;biscuit;274.74;275.34000000000003']
 ************
 Start timestamp: 276.35, Stop timestamp: 276.79
 Narration: throw biscuits in food processor
@@ -495,7 +525,8 @@ Narration: cover food processor
 ------
 ************
 Frame IDs in sequence: [14151, 14201, 14676, 14876, 15067, 15126]
-Objects in sequence: ['chopping blade', 'biscuit powder', 'food processor bowl', 'food processor cover', 'food processor engine']
+Objects in sequence: ['food processor bowl', 'biscuit powder', 'food processor engine', 'food processor cover', 'chopping blade']
+Verb-noun pairs in sequence: ['get;biscuit;276.75;279.25', 'throw-in;biscuit;279.12;279.71', 'put-down;biscuit;279.75;281.1', 'pick-up;cover:food:processor;280.95;281.63']
 ************
 Start timestamp: 282.88, Stop timestamp: 284.76
 Narration: lock food processor
@@ -514,7 +545,8 @@ Narration: put down cover
 ------
 ************
 Frame IDs in sequence: [15192, 15234, 15276, 15326, 15369, 15396]
-Objects in sequence: ['chopping blade', 'biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'glass', 'biscuit powder', 'spoon', 'chopping blade']
+Verb-noun pairs in sequence: ['lock;processor:food;282.88;284.76', 'turn-on;processor:food;284.73;286.04', 'turn-off;processor:food;292.15999999999997;299.27', 'open;processor:food;299.14;300.03']
 ************
 Start timestamp: 303.6, Stop timestamp: 304.35
 Narration: pick up chopping blades
@@ -530,7 +562,8 @@ Narration: pick up food processor bowl
 ------
 ************
 Frame IDs in sequence: [15413, 15565, 15717, 15771, 15825, 15851]
-Objects in sequence: ['biscuit powder', 'glass', 'spoon', 'food processor bowl', 'bowl']
+Objects in sequence: ['bowl', 'food processor bowl', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['pick-up;blade:chopping;303.6;304.35', 'put-down;blade:chopping;305.1;306.79', 'unlock;processor:food;306.63;307.59']
 ************
 Start timestamp: 308.1, Stop timestamp: 308.76
 Narration: pick up spoon
@@ -546,7 +579,8 @@ Narration: put down food processor bowl
 ------
 ************
 Frame IDs in sequence: [15926, 15963, 16026, 16076, 16201, 16326]
-Objects in sequence: ['biscuit powder', 'glass', 'spoon', 'bowl']
+Objects in sequence: ['bowl', 'biscuit powder', 'glass', 'spoon']
+Verb-noun pairs in sequence: ['pick-up;spoon;308.1;308.76', 'pour-into;powder:biscuit;308.64;313.81', 'shake;bowl:food:processor;313.85;315.76']
 ************
 Start timestamp: 318.09, Stop timestamp: 319.93
 Narration: pour biscuits powder from glass into bowl
@@ -562,7 +596,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [16476, 16530, 16585, 16646, 16730, 16776]
-Objects in sequence: ['oven tray', 'apron', 'ladder', 'floor']
+Objects in sequence: ['ladder', 'floor', 'apron', 'oven tray']
+Verb-noun pairs in sequence: ['pour-into;powder:biscuit;318.09;319.93', 'put-down;glass;320.32;321.61', 'stir;powder:biscuit;321.58;326.86']
 ************
 Start timestamp: 329.33, Stop timestamp: 330.76
 Narration: remove ladder
@@ -581,7 +616,8 @@ Narration: pick up oven tray
 ------
 ************
 Frame IDs in sequence: [16823, 16857, 16948, 16984, 17042, 17101]
-Objects in sequence: ['oven', 'oven tray', 'apron', 'ladder', 'wall']
+Objects in sequence: ['ladder', 'oven', 'apron', 'wall', 'oven tray']
+Verb-noun pairs in sequence: ['remove;ladder;329.33;330.76', 'close;ladder;330.14;331.32', 'pick-up;apron;331.28;333.01', 'put-on;apron;332.88;333.81']
 ************
 Start timestamp: 336.15, Stop timestamp: 337.74
 Narration: put ladder next to wall
@@ -597,7 +633,8 @@ Narration: close oven
 ------
 ************
 Frame IDs in sequence: [17330, 17592, 17726, 17861, 18130]
-Objects in sequence: ['pan', 'drainer', 'roll', 'kitchen towel', 'hob']
+Objects in sequence: ['pan', 'drainer', 'kitchen towel', 'hob', 'roll']
+Verb-noun pairs in sequence: ['put-to;ladder;336.15;337.74', 'open;oven;338.69;340.19', 'slide-inside;tray;339.69;341.53']
 ************
 Start timestamp: 345.0, Stop timestamp: 347.52
 Narration: unroll kitchen towels from stand
@@ -617,6 +654,7 @@ Narration: put pan on hob
 ************
 Frame IDs in sequence: [18283, 18328, 18376, 18514, 18653, 18688]
 Objects in sequence: ['bin/garbage can/recycling bin', 'fridge']
+Verb-noun pairs in sequence: ['unroll-from;towel:kitchen;345.0;347.52', 'tear-from;towel:kitchen;347.36;348.49', 'pick-up;pan;351.51;352.42', 'dry;pan;352.4;362.03']
 ************
 Start timestamp: 365.33, Stop timestamp: 365.89
 Narration: open bin
@@ -632,7 +670,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [18776, 18801, 18858, 18915, 18945, 18976]
-Objects in sequence: ['knife', 'butter', 'drawer', 'fridge']
+Objects in sequence: ['drawer', 'fridge', 'butter', 'knife']
+Verb-noun pairs in sequence: ['open;bin;365.33;365.89', 'throw;towel:kitchen;365.88;366.3', 'close;bin;366.4;367.6']
 ************
 Start timestamp: 374.97, Stop timestamp: 376.55
 Narration: pick up butter
@@ -648,7 +687,8 @@ Narration: pick up knife
 ------
 ************
 Frame IDs in sequence: [19163, 19190, 19217, 19234, 19251, 19281]
-Objects in sequence: ['condensed milk tin', 'knife', 'butter', 'cocoa powder', 'grater']
+Objects in sequence: ['cocoa powder', 'condensed milk tin', 'grater', 'butter', 'knife']
+Verb-noun pairs in sequence: ['pick-up;butter;374.97;376.55', 'close;fridge;376.41;377.65', 'open;drawer;377.89;378.84']
 ************
 Start timestamp: 379.91, Stop timestamp: 380.5
 Narration: close drawer
@@ -664,7 +704,8 @@ Narration: move grater
 ------
 ************
 Frame IDs in sequence: [19338, 19384, 19792, 19944, 20071, 20122]
-Objects in sequence: ['knife', 'butter', 'pan', 'butter packaging']
+Objects in sequence: ['pan', 'butter', 'knife', 'butter packaging']
+Verb-noun pairs in sequence: ['move;tin:condensed:milk;382.93;383.93', 'move;tin;384.01;384.7']
 ************
 Start timestamp: 386.41, Stop timestamp: 388.23
 Narration: put down butter
@@ -683,7 +724,8 @@ Narration: put butter piece inside pan
 ------
 ************
 Frame IDs in sequence: [20217, 20244, 20301, 20380, 20422, 20465]
-Objects in sequence: ['butter', 'pan', 'butter packaging', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'butter', 'butter packaging']
+Verb-noun pairs in sequence: ['put-down;butter;386.41;388.23', 'open;packaging:butter;388.06;394.68', 'cut;butter;395.21;400.28', 'pick-up;butter;398.75;400.4']
 ************
 Start timestamp: 402.81, Stop timestamp: 403.92
 Narration: put down knife
@@ -702,7 +744,8 @@ Narration: close butter packaging
 ------
 ************
 Frame IDs in sequence: [20688, 20778, 20870, 20916, 20963]
-Objects in sequence: ['drawer', 'fridge']
+Objects in sequence: ['fridge', 'drawer']
+Verb-noun pairs in sequence: ['turn;piece:butter;403.95;405.01', 'turn-on;hob;404.6;405.49', 'adjust;heat;405.55;408.1']
 ************
 Start timestamp: 413.6, Stop timestamp: 414.6
 Narration: open fridge
@@ -718,7 +761,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [21059, 21098, 21138, 21192, 21233, 21270]
-Objects in sequence: ['condensed milk tin', 'wooden spoon', 'butter', 'pan', 'drawer']
+Objects in sequence: ['condensed milk tin', 'drawer', 'pan', 'butter', 'wooden spoon']
+Verb-noun pairs in sequence: ['open;fridge;413.6;414.6', 'put-in;butter;414.44;415.48', 'close;fridge;415.47;416.36']
 ************
 Start timestamp: 419.76, Stop timestamp: 420.77
 Narration: pick up wooden spoon
@@ -737,7 +781,8 @@ Narration: pick up condensed milk tin
 ------
 ************
 Frame IDs in sequence: [21380, 21423, 21549, 21676, 21715, 21901]
-Objects in sequence: ['condensed milk tin', 'chopping blade', 'drawer', 'can opener', 'food processor']
+Objects in sequence: ['condensed milk tin', 'drawer', 'can opener', 'food processor', 'chopping blade']
+Verb-noun pairs in sequence: ['close;drawer;420.87;421.35', 'move;butter;421.35;422.68', 'put-down;spoon:wooden;422.61;424.28']
 ************
 Start timestamp: 427.22, Stop timestamp: 428.66
 Narration: open drawer
@@ -750,7 +795,8 @@ Narration: put down tin
 ------
 ************
 Frame IDs in sequence: [21976, 22001, 22026, 22053, 22080, 22109]
-Objects in sequence: ['condensed milk tin', 'chopping blade', 'food processor bowl', 'can opener']
+Objects in sequence: ['food processor bowl', 'condensed milk tin', 'can opener', 'chopping blade']
+Verb-noun pairs in sequence: ['open;drawer;427.22;428.66', 'pick-up;opener:can;428.66;431.07']
 ************
 Start timestamp: 434.39, Stop timestamp: 437.75
 Narration: move food processor
@@ -763,7 +809,8 @@ Narration: insert chopping blades in food processor
 ------
 ************
 Frame IDs in sequence: [22151, 22184, 22294, 22405, 22626, 22663]
-Objects in sequence: ['condensed milk tin', 'can opener']
+Objects in sequence: ['can opener', 'condensed milk tin']
+Verb-noun pairs in sequence: ['move;processor:food;434.39;437.75', 'pick-up;blade:chopping;437.87;439.16']
 ************
 Start timestamp: 440.3, Stop timestamp: 440.99
 Narration: move plastic cover
@@ -776,7 +823,8 @@ Narration: attach can opener to tin
 ------
 ************
 Frame IDs in sequence: [22801, 22832, 22951, 23071, 23201, 23434]
-Objects in sequence: ['condensed milk tin', 'knife', 'condensed milk', 'tin cover', 'can opener', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'condensed milk tin', 'condensed milk', 'can opener', 'knife', 'tin cover']
+Verb-noun pairs in sequence: ['move;cover:plastic;440.3;440.99', 'move;tin;441.72;442.09']
 ************
 Start timestamp: 444.24, Stop timestamp: 452.43
 Narration: rotate can opener
@@ -795,7 +843,8 @@ Narration: pick up knife
 ------
 ************
 Frame IDs in sequence: [23630, 23694, 23759, 23788, 23910, 23938]
-Objects in sequence: ['condensed milk tin', 'knife', 'wooden spoon', 'butter', 'pan', 'condensed milk', 'hob/cooktop/stovetop', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'condensed milk tin', 'pan', 'condensed milk', 'hob/cooktop/stovetop', 'butter', 'knife', 'wooden spoon']
+Verb-noun pairs in sequence: ['remove;opener:can;452.24;452.97', 'put-down;opener:can;453.07;454.33', 'open;drawer;454.28;455.14']
 ************
 Start timestamp: 459.88, Stop timestamp: 465.93
 Narration: remove tin cover using knife
@@ -811,7 +860,8 @@ Narration: close bin
 ------
 ************
 Frame IDs in sequence: [24101, 24233, 24409, 24526]
-Objects in sequence: ['wooden spoon', 'butter', 'pan', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'butter', 'wooden spoon']
+Verb-noun pairs in sequence: ['remove;cover:tin;459.88;465.93', 'open;bin;468.57;469.22', 'throw;cover:tin;469.06;472.6']
 ************
 Start timestamp: 474.72, Stop timestamp: 476.13
 Narration: put knife inside tin
@@ -827,7 +877,8 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [24773, 24876, 25051, 25181, 25311, 25571]
-Objects in sequence: ['wooden spoon', 'butter', 'pan', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'butter', 'wooden spoon']
+Verb-noun pairs in sequence: ['put-inside;knife;474.72;476.13', 'pick-up;spoon:wooden;478.27;479.1', 'move;butter;479.0;481.68']
 ************
 Start timestamp: 483.87, Stop timestamp: 486.19
 Narration: turn on light
@@ -843,7 +894,8 @@ Narration: pick up wooden spoon
 ------
 ************
 Frame IDs in sequence: [25876, 25905, 26221, 26276, 26435, 26594]
-Objects in sequence: ['wooden spoon', 'butter', 'pan', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'butter', 'wooden spoon']
+Verb-noun pairs in sequence: ['turn-on;light;483.87;486.19', 'pick-up;spoon;490.33;491.39', 'hit-on;spoon;491.0;492.46']
 ************
 Start timestamp: 495.85, Stop timestamp: 502.37
 Narration: move butter inside pan
@@ -862,7 +914,8 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [28176, 28217, 28299, 28382, 28441, 28501]
-Objects in sequence: ['wooden spoon', 'cocoa powder', 'butter', 'pan', 'hob/cooktop/stovetop', 'spoon', 'lid']
+Objects in sequence: ['cocoa powder', 'pan', 'hob/cooktop/stovetop', 'butter', 'wooden spoon', 'spoon', 'lid']
+Verb-noun pairs in sequence: ['move;butter;495.85;502.37', 'put-down;spoon:wooden;501.88;502.88', 'pick-up;spoon:wooden;511.06;511.75', 'move;butter;511.63;517.2']
 ************
 Start timestamp: 523.04, Stop timestamp: 526.94
 Narration: adjust heat
@@ -878,7 +931,8 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [28580, 28635, 28690, 28751, 28805, 28851]
-Objects in sequence: ['can cover', 'cocoa powder', 'can', 'spoon', 'bin/garbage can/recycling bin']
+Objects in sequence: ['cocoa powder', 'bin/garbage can/recycling bin', 'can cover', 'can', 'spoon']
+Verb-noun pairs in sequence: ['adjust;heat;523.04;526.94', 'pick-up;spoon:wooden;531.7;532.38', 'move;butter;532.12;542.26']
 ************
 Start timestamp: 567.26, Stop timestamp: 568.23
 Narration: pick up cocoa powder can
@@ -894,7 +948,8 @@ Narration: open cover of can
 ------
 ************
 Frame IDs in sequence: [28870, 28915, 28961, 29001, 29041, 29121]
-Objects in sequence: ['wooden spoon', 'cocoa powder', 'butter', 'pan', 'can', 'hob/cooktop/stovetop', 'spoon', 'bin/garbage can/recycling bin']
+Objects in sequence: ['cocoa powder', 'bin/garbage can/recycling bin', 'pan', 'can', 'hob/cooktop/stovetop', 'butter', 'wooden spoon', 'spoon']
+Verb-noun pairs in sequence: ['pick-up;powder:cocoa;567.26;568.23', 'open;can;568.2;569.77', 'put-down;lid;569.87;570.53']
 ************
 Start timestamp: 574.72, Stop timestamp: 576.46
 Narration: crumble cover
@@ -910,7 +965,8 @@ Narration: close bin
 ------
 ************
 Frame IDs in sequence: [29186, 29226, 29306, 29386, 29451, 29492]
-Objects in sequence: ['wooden spoon', 'cocoa powder', 'butter', 'pan', 'can', 'hob/cooktop/stovetop', 'spoon']
+Objects in sequence: ['cocoa powder', 'pan', 'can', 'hob/cooktop/stovetop', 'butter', 'wooden spoon', 'spoon']
+Verb-noun pairs in sequence: ['crumble;cover;574.72;576.46', 'open;bin;576.44;576.99', 'throw;cover;576.86;577.45']
 ************
 Start timestamp: 579.18, Stop timestamp: 580.04
 Narration: pick up cocoa powder can
@@ -926,7 +982,8 @@ Narration: scoop cocoa powder from can
 ------
 ************
 Frame IDs in sequence: [29517, 29596, 29626, 29759, 29842, 29926]
-Objects in sequence: ['wooden spoon', 'cocoa powder', 'butter', 'pan', 'hob/cooktop/stovetop']
+Objects in sequence: ['cocoa powder', 'pan', 'hob/cooktop/stovetop', 'butter', 'wooden spoon']
+Verb-noun pairs in sequence: ['pick-up;powder:cocoa;579.18;580.04', 'scoop;powder:cocoa;579.91;581.86', 'pour-into;powder:cocoa;581.96;583.17']
 ************
 Start timestamp: 584.91, Stop timestamp: 586.63
 Narration: pour cocoa powder into pan using spoon
@@ -945,7 +1002,8 @@ Narration: move butter and cocoa powder inside pan
 ------
 ************
 Frame IDs in sequence: [32926, 33101, 33151, 33201, 33265]
-Objects in sequence: ['condensed milk tin', 'knife', 'wooden spoon', 'pan', 'condensed milk', 'mixture', 'hob/cooktop/stovetop']
+Objects in sequence: ['condensed milk tin', 'pan', 'condensed milk', 'hob/cooktop/stovetop', 'knife', 'wooden spoon', 'mixture']
+Verb-noun pairs in sequence: ['put-down;can;587.31;588.37', 'put-down;spoon;588.28;588.69', 'pick-up;spoon:wooden;589.0;589.89']
 ************
 Start timestamp: 591.91, Stop timestamp: 592.54
 Narration: hold pan
@@ -958,7 +1016,8 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [33409, 33601, 34151, 34751, 35246, 35276]
-Objects in sequence: ['condensed milk tin', 'knife', 'wooden spoon', 'pan', 'condensed milk', 'hob/cooktop/stovetop']
+Objects in sequence: ['condensed milk tin', 'pan', 'condensed milk', 'hob/cooktop/stovetop', 'knife', 'wooden spoon']
+Verb-noun pairs in sequence: ['hold;pan;591.91;592.54', 'stir;butter;592.57;600.5']
 ************
 Start timestamp: 661.32, Stop timestamp: 663.41
 Narration: pick up condensed milk tin
@@ -971,7 +1030,8 @@ Narration: pour condensed milk from tin into pan
 ------
 ************
 Frame IDs in sequence: [35442, 35471, 36163, 37039, 37915, 38984]
-Objects in sequence: ['condensed milk tin', 'knife', 'wooden spoon', 'pan', 'condensed milk', 'mixture', 'hob/cooktop/stovetop']
+Objects in sequence: ['condensed milk tin', 'pan', 'condensed milk', 'hob/cooktop/stovetop', 'knife', 'wooden spoon', 'mixture']
+Verb-noun pairs in sequence: ['pick-up;tin:condensed:milk;661.32;663.41', 'remove-from;knife;663.48;665.45']
 ************
 Start timestamp: 673.63, Stop timestamp: 702.26
 Narration: scrape condensed milk from tin using knife
@@ -990,7 +1050,8 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [39057, 39271, 39692, 39909, 40126, 40296]
-Objects in sequence: ['wooden spoon', 'pan', 'mixture', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'wooden spoon', 'mixture']
+Verb-noun pairs in sequence: ['scrape;milk:condensed;673.63;702.26', 'put-down;tin:empty;702.06;704.2', 'pick-up;spoon:wooden;704.3;705.76', 'slide-from;milk:condensed;705.48;708.34']
 ************
 Start timestamp: 709.85, Stop timestamp: 719.6
 Narration: stir mixture in pan
@@ -1009,7 +1070,8 @@ Narration: pick up wooden spoon
 ------
 ************
 Frame IDs in sequence: [40755, 41090, 41426, 42026, 42296, 42563]
-Objects in sequence: ['wooden spoon', 'pan', 'mixture', 'hob/cooktop/stovetop']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'wooden spoon', 'mixture']
+Verb-noun pairs in sequence: ['hold;pan;713.19;779.0', 'put-down;spoon:wooden;778.18;779.16', 'adjust;heat;779.16;780.23']
 ************
 Start timestamp: 781.57, Stop timestamp: 800.31
 Narration: stir mixture in pan
@@ -1025,7 +1087,8 @@ Narration: hold pan
 ------
 ************
 Frame IDs in sequence: [43317, 43446, 43526, 43676, 43826, 43884]
-Objects in sequence: ['wooden spoon', 'pan', 'chocolate mixture', 'biscuit', 'bowl', 'hob']
+Objects in sequence: ['bowl', 'pan', 'chocolate mixture', 'biscuit', 'hob', 'wooden spoon']
+Verb-noun pairs in sequence: ['stir;mixture;781.57;800.31', 'hold;spoon:wooden;800.97;807.85', 'stir;mixture;807.79;811.26']
 ************
 Start timestamp: 825.15, Stop timestamp: 844.14
 Narration: hold wooden spoon
@@ -1041,7 +1104,8 @@ Narration: hold wooden spoon
 ------
 ************
 Frame IDs in sequence: [45067, 45126, 45201, 45271, 45365, 45476]
-Objects in sequence: ['wooden spoon', 'pan', 'hop', 'chocolate mixture', 'bowl']
+Objects in sequence: ['bowl', 'hop', 'pan', 'chocolate mixture', 'wooden spoon']
+Verb-noun pairs in sequence: ['hold;spoon:wooden;825.15;844.14', 'stir;mixture;844.24;853.83', 'hold;pan;845.0;865.48']
 ************
 Start timestamp: 869.55, Stop timestamp: 870.29
 Narration: put down wooden spoon
@@ -1063,7 +1127,8 @@ Narration: put wooden spoon inside bowl
 ------
 ************
 Frame IDs in sequence: [45626, 45688, 47301, 47376, 49042, 49076]
-Objects in sequence: ['wooden spoon', 'chocolate mixture', 'bowl']
+Objects in sequence: ['bowl', 'chocolate mixture', 'wooden spoon']
+Verb-noun pairs in sequence: ['turn-off;hob;870.21;871.36', 'pick-up;pan;871.3;876.3', 'pour-from;mixture:chocolate;875.61;878.83', 'scrape;pan;878.7;902.55']
 ************
 Start timestamp: 903.22, Stop timestamp: 906.21
 Narration: put pan on hop
@@ -1079,7 +1144,8 @@ Narration: hold bowl
 ------
 ************
 Frame IDs in sequence: [49119, 49180, 49237, 49294, 49326, 49369]
-Objects in sequence: ['tap', 'sponge', 'sink', 'can opener']
+Objects in sequence: ['sink', 'sponge', 'tap', 'can opener']
+Verb-noun pairs in sequence: ['put-on;pan;903.22;906.21', 'pick-up;spoon:wooden;906.31;910.05', 'mix-with;mixture:chocolate;908.16;944.58']
 ************
 Start timestamp: 945.44, Stop timestamp: 948.27
 Narration: hit wooden spoon on side of bowl
@@ -1095,7 +1161,8 @@ Narration: pick up can opener
 ------
 ************
 Frame IDs in sequence: [49426, 49455, 49567, 49592, 49632, 49682]
-Objects in sequence: ['tap', 'sink', 'drainer', 'water', 'can opener']
+Objects in sequence: ['sink', 'tap', 'can opener', 'drainer', 'water']
+Verb-noun pairs in sequence: ['hit-on;spoon:wooden;945.44;948.27', 'mix-with;mixture:chocolate;948.22;980.77', 'leave-in;spoon:wooden;980.8;981.55']
 ************
 Start timestamp: 984.39, Stop timestamp: 985.19
 Narration: pick up sponge
@@ -1111,7 +1178,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [49709, 49733, 49757, 49789, 49821, 49855]
-Objects in sequence: ['tap', 'sink', 'water']
+Objects in sequence: ['sink', 'tap', 'water']
+Verb-noun pairs in sequence: ['sponge;can;985.29;987.31', 'put-down;sponge;987.39;987.96']
 ************
 Start timestamp: 988.54, Stop timestamp: 991.29
 Narration: rinse can opener
@@ -1127,7 +1195,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [49982, 50029, 50076, 50103, 50130, 50162]
-Objects in sequence: ['tap', 'towel', 'sink', 'pan', 'hop']
+Objects in sequence: ['hop', 'towel', 'pan', 'sink', 'tap']
+Verb-noun pairs in sequence: ['turn-off;tap;991.39;992.11', 'put;opener:can;992.39;993.74']
 ************
 Start timestamp: 994.89, Stop timestamp: 996.99
 Narration: rinse hand
@@ -1140,7 +1209,8 @@ Narration: dry hands with towel
 ------
 ************
 Frame IDs in sequence: [50200, 50242, 50284, 50311, 50339, 50394]
-Objects in sequence: ['water', 'tap', 'knife', 'sink', 'pan', 'spoon', 'tin']
+Objects in sequence: ['pan', 'sink', 'tap', 'tin', 'knife', 'spoon', 'water']
+Verb-noun pairs in sequence: ['rinse;hand;994.89;996.99', 'turn-off;tap;997.15;997.63']
 ************
 Start timestamp: 1002.03, Stop timestamp: 1002.59
 Narration: pick up pan
@@ -1156,7 +1226,8 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [50451, 50483, 50515, 50544, 50562, 50580]
-Objects in sequence: ['water', 'tap', 'knife', 'sink', 'pan', 'spoon', 'tin']
+Objects in sequence: ['sink', 'pan', 'tap', 'tin', 'knife', 'spoon', 'water']
+Verb-noun pairs in sequence: ['pick-up;pan;1002.03;1002.59', 'put-in;pan;1002.89;1003.44', 'soak;pan;1003.23;1005.1']
 ************
 Start timestamp: 1005.35, Stop timestamp: 1006.1
 Narration: pick up spoon from cocoa powder can
@@ -1169,7 +1240,8 @@ Narration: pick up knife and tin
 ------
 ************
 Frame IDs in sequence: [50630, 50662, 50688, 50708, 50729, 50755]
-Objects in sequence: ['knife', 'sink', 'pan', 'tin', 'spoon', 'lid']
+Objects in sequence: ['sink', 'pan', 'tin', 'knife', 'spoon', 'lid']
+Verb-noun pairs in sequence: ['pick-up;spoon;1005.35;1006.1', 'put-in;spoon;1007.45;1008.35']
 ************
 Start timestamp: 1010.03, Stop timestamp: 1010.8
 Narration: put knife in sink
@@ -1182,7 +1254,8 @@ Narration: pick up knife
 ------
 ************
 Frame IDs in sequence: [50834, 50859, 50884, 50907, 50930, 50976]
-Objects in sequence: ['sink', 'pan', 'empty tin', 'spoon']
+Objects in sequence: ['sink', 'empty tin', 'pan', 'spoon']
+Verb-noun pairs in sequence: ['put-in;knife;1010.03;1010.8', 'turn-off;tap;1010.86;1011.67']
 ************
 Start timestamp: 1013.43, Stop timestamp: 1013.99
 Narration: put knife in sink
@@ -1198,7 +1271,8 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [51001, 51026, 51065, 51099, 51134]
-Objects in sequence: ['wooden spoon', 'empty tin', 'chocolate mixture', 'bowl', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bowl', 'bin/garbage can/recycling bin', 'empty tin', 'chocolate mixture', 'wooden spoon']
+Verb-noun pairs in sequence: ['put-in;knife;1013.43;1013.99', 'pick-up;lid;1014.26;1015.18', 'close;powder:cocoa;1015.12;1016.27']
 ************
 Start timestamp: 1017.37, Stop timestamp: 1018.17
 Narration: put spoon in sink
@@ -1211,7 +1285,8 @@ Narration: throw empty tin
 ------
 ************
 Frame IDs in sequence: [51176, 51267, 51451, 51615, 51780, 51853]
-Objects in sequence: ['wooden spoon', 'tray', 'cupboard', 'chocolate mixture', 'bowl']
+Objects in sequence: ['bowl', 'chocolate mixture', 'tray', 'cupboard', 'wooden spoon']
+Verb-noun pairs in sequence: ['put-in;spoon;1017.37;1018.17', 'open;bin;1019.27;1019.83']
 ************
 Start timestamp: 1020.56, Stop timestamp: 1021.24
 Narration: close bin
@@ -1224,7 +1299,8 @@ Narration: mix biscuits and chocolate
 ------
 ************
 Frame IDs in sequence: [51913, 51938, 52030, 52110, 52255, 52323]
-Objects in sequence: ['foil paper', 'plastic bowl', 'tray', 'cupboard', 'plastic bag']
+Objects in sequence: ['tray', 'plastic bowl', 'cupboard', 'foil paper', 'plastic bag']
+Verb-noun pairs in sequence: ['close;bin;1020.56;1021.24', 'hold;bowl;1022.46;1023.04']
 ************
 Start timestamp: 1023.14, Stop timestamp: 1023.74
 Narration: pick up wooden spoon
@@ -1240,7 +1316,8 @@ Narration: remove trays from cupboard
 ------
 ************
 Frame IDs in sequence: [52428, 52514, 52601, 52701, 52776, 52851]
-Objects in sequence: ['foil paper', 'cupboard', 'dust bin', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'cupboard', 'foil paper', 'dust bin']
+Verb-noun pairs in sequence: ['leave;spoon:wooden;1025.82;1026.38', 'open;cupboard;1028.66;1029.51']
 ************
 Start timestamp: 1038.11, Stop timestamp: 1039.02
 Narration: remove tupperware from cupboard
@@ -1256,7 +1333,8 @@ Narration: pick up plastic bags from floor
 ------
 ************
 Frame IDs in sequence: [52911, 52946, 52981, 53051, 53076, 53101]
-Objects in sequence: ['foil paper', 'mixer lid', 'dust bin', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'foil paper', 'dust bin', 'mixer lid']
+Verb-noun pairs in sequence: ['remove-from;tupperware;1038.11;1039.02', 'pick-up;paper:foil;1039.89;1042.79', 'return;tray;1042.45;1044.2']
 ************
 Start timestamp: 1046.71, Stop timestamp: 1048.02
 Narration: return plastic bags to cupboard
@@ -1275,7 +1353,8 @@ Narration: crumple foil paper
 ------
 ************
 Frame IDs in sequence: [53592, 53626, 53726, 53751, 53776, 53805]
-Objects in sequence: ['foil paper', 'mixer lid', 'packet']
+Objects in sequence: ['packet', 'foil paper', 'mixer lid']
+Verb-noun pairs in sequence: ['close;cupboard;1048.08;1049.55', 'unroll;paper:foil;1048.82;1050.88', 'tear;paper:foil;1050.81;1055.24']
 ************
 Start timestamp: 1057.53, Stop timestamp: 1058.13
 Narration: open bin
@@ -1295,6 +1374,7 @@ Narration: move biscuits
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
+Verb-noun pairs in sequence: ['throw-in;paper;1058.15;1058.74', 'close;bin;1058.7;1059.25', 'move;cover;1060.69;1061.87']
 ************
 Start timestamp: 1062.62, Stop timestamp: 1070.6
 Narration: unroll foil paper
@@ -1314,4 +1394,5 @@ Narration: unroll foil paper
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
+Verb-noun pairs in sequence: ['pick-up;cover:plastic;1071.43;1072.8', 'put-on;cover:plastic;1072.72;1074.41', 'move;biscuit;1074.46;1075.29']
 ************

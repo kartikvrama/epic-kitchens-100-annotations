@@ -12,7 +12,8 @@ Narration: adjust lights
 ------
 ************
 Frame IDs in sequence: [45, 241, 324, 422, 481]
-Objects in sequence: ['switch', 'door']
+Objects in sequence: ['door', 'switch']
+Verb-noun pairs in sequence: ['open;door;0.27;2.11', 'close;door;3.25;5.88', 'switch-on;light;4.88;6.04']
 ************
 Start timestamp: 11.61, Stop timestamp: 13.12
 Narration: open fridge
@@ -25,7 +26,8 @@ Narration: take container
 ------
 ************
 Frame IDs in sequence: [711, 769, 821, 865, 892, 931]
-Objects in sequence: ['fridge', 'container', 'soy milk']
+Objects in sequence: ['soy milk', 'container', 'fridge']
+Verb-noun pairs in sequence: ['open;fridge;11.61;13.12', 'take;milk:soy;13.57;14.56']
 ************
 Start timestamp: 16.87, Stop timestamp: 17.98
 Narration: put back container
@@ -38,7 +40,8 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [1027, 1071, 1119, 1147, 1227, 1311]
-Objects in sequence: ['container', 'fridge']
+Objects in sequence: ['fridge', 'container']
+Verb-noun pairs in sequence: ['put-back;container;16.87;17.98', 'take;container;18.54;19.25']
 ************
 Start timestamp: 24.77, Stop timestamp: 25.93
 Narration: put down container
@@ -54,7 +57,8 @@ Narration: move bottle
 ------
 ************
 Frame IDs in sequence: [1502, 1529, 1670, 1713, 1862, 1953]
-Objects in sequence: ['glass', 'bottle', 'container', 'bin', 'soy milk']
+Objects in sequence: ['soy milk', 'bottle', 'container', 'glass', 'bin']
+Verb-noun pairs in sequence: ['put-down;container;24.77;25.93', 'put-down;milk:soy;24.93;25.87', 'take;cloth:table;27.36;28.98']
 ************
 Start timestamp: 32.98, Stop timestamp: 34.46
 Narration: move glass
@@ -74,6 +78,7 @@ Narration: take cup
 ************
 Frame IDs in sequence: [2199, 2297, 2764, 2829, 2897]
 Objects in sequence: ['cupboard', 'table cloth']
+Verb-noun pairs in sequence: ['unfold;tablecloth;35.74;39.04', 'pull-down;tablecloth;38.09;42.42', 'open;cupboard;45.67;47.7']
 ************
 Start timestamp: 50.75, Stop timestamp: 51.6
 Narration: put down cup
@@ -86,7 +91,8 @@ Narration: shake soy milk
 ------
 ************
 Frame IDs in sequence: [3060, 3094, 3124, 3154, 3221, 3304]
-Objects in sequence: ['soy milk', 'table cloth', 'cup']
+Objects in sequence: ['cup', 'soy milk', 'table cloth']
+Verb-noun pairs in sequence: ['put-down;cup;50.75;51.6', 'take;milk:soy;51.7;52.95']
 ************
 Start timestamp: 55.68, Stop timestamp: 57.63
 Narration: open soy milk
@@ -102,7 +108,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [3605, 3755, 3906, 3965, 4212, 4245]
-Objects in sequence: ['soy milk bottle', 'fridge', 'cup', 'lid', 'soy milk']
+Objects in sequence: ['soy milk', 'fridge', 'cup', 'soy milk bottle', 'lid']
+Verb-noun pairs in sequence: ['pour;milk:soy;57.87;64.78', 'close;milk:soy;64.87;66.48']
 ************
 Start timestamp: 71.27, Stop timestamp: 72.11
 Narration: put down the soy milk
@@ -115,7 +122,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [4293, 4355, 4385, 4488, 4591, 4622]
-Objects in sequence: ['soy milk bottle', 'drawer', 'fridge', 'lid']
+Objects in sequence: ['drawer', 'fridge', 'soy milk bottle', 'lid']
+Verb-noun pairs in sequence: ['put-down;milk:soy;71.27;72.11', 'close;fridge;72.14;73.46000000000001']
 ************
 Start timestamp: 78.34, Stop timestamp: 79.35
 Narration: take spoon
@@ -128,7 +136,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [4719, 4747, 4776, 4914]
-Objects in sequence: ['spoon', 'drawer']
+Objects in sequence: ['drawer', 'spoon']
+Verb-noun pairs in sequence: ['take;spoon;78.34;79.35', 'close;drawer;79.45;80.45']
 ************
 Start timestamp: 83.34, Stop timestamp: 84.22
 Narration: open cupboard
@@ -141,7 +150,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [5016, 5046, 5141, 5199, 5277]
-Objects in sequence: ['cupboard', 'cereal box']
+Objects in sequence: ['cereal box', 'cupboard']
+Verb-noun pairs in sequence: ['open;cupboard;83.34;84.22', 'take;cereal;85.24;87.39']
 ************
 Start timestamp: 92.35, Stop timestamp: 95.00999999999999
 Narration: put down cereals
@@ -154,7 +164,8 @@ Narration: extract bag
 ------
 ************
 Frame IDs in sequence: [5578, 5664, 5882, 5918, 6058, 6122]
-Objects in sequence: ['cereal', 'cereal bag', 'cereal box']
+Objects in sequence: ['cereal bag', 'cereal', 'cereal box']
+Verb-noun pairs in sequence: ['put-down;cereal;92.35;95.00999999999999', 'open;bag:cereal;95.00999999999999;97.28']
 ************
 Start timestamp: 100.11, Stop timestamp: 102.44
 Narration: unfold bag
@@ -171,4 +182,5 @@ Narration: put down bag
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
+Verb-noun pairs in sequence: ['unfold;bag;100.11;102.44', 'pour;cereal;103.84;108.85', 'pour;cereal;107.66;112.7']
 ************

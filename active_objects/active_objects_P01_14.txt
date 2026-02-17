@@ -10,6 +10,7 @@ Narration: take bag
 ************
 Frame IDs in sequence: [182, 260, 334, 362, 525, 555]
 Objects in sequence: ['bag', 'bin/garbage can/recycling bin']
+Verb-noun pairs in sequence: ['take;bin;2.54;4.58', 'put-down;bin;5.18;6.56']
 ************
 Start timestamp: 9.24, Stop timestamp: 11.53
 Narration: unroll bag
@@ -28,7 +29,8 @@ Narration: take banana skin
 ------
 ************
 Frame IDs in sequence: [1329, 1534, 2166, 2224, 2308, 2343]
-Objects in sequence: ['banana skin', 'bag', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'bag', 'banana skin']
+Verb-noun pairs in sequence: ['open;bag;19.39;27.22', 'open;bag;23.02;33.24', 'open;bin;35.89;37.77']
 ************
 Start timestamp: 39.58, Stop timestamp: 40.95
 Narration: put banana skin into bag
@@ -41,7 +43,8 @@ Narration: close bin
 ------
 ************
 Frame IDs in sequence: [2382, 2433, 2559, 2719, 2849, 2901]
-Objects in sequence: ['bag', 'banana skin', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'bag', 'banana skin']
+Verb-noun pairs in sequence: ['put-into;skin:banana;39.58;40.95', 'put-in;bag;41.05;46.94']
 ************
 Start timestamp: 48.74, Stop timestamp: 49.99
 Narration: move bin
@@ -63,7 +66,8 @@ Narration: take soy milk
 ------
 ************
 Frame IDs in sequence: [2947, 2974, 3143, 3315, 3814, 3866]
-Objects in sequence: ['soy milk', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'soy milk']
+Verb-noun pairs in sequence: ['move;bin;48.74;49.99', 'lift;bin;51.08;56.0', 'take;bin;51.71;55.98', 'move;bin;54.19;63.05', 'put-down;bin;55.96;57.61']
 ************
 Start timestamp: 64.89, Stop timestamp: 68.64
 Narration: crush soy milk
@@ -76,7 +80,8 @@ Narration: take can and paper
 ------
 ************
 Frame IDs in sequence: [3948, 4084, 4300, 4338, 4553, 4597]
-Objects in sequence: ['soy milk', 'can', 'bin', 'paper']
+Objects in sequence: ['soy milk', 'paper', 'can', 'bin']
+Verb-noun pairs in sequence: ['crush;milk:soy;64.89;68.64', 'put-into;milk:soy;71.56;72.71000000000001']
 ************
 Start timestamp: 77.57, Stop timestamp: 80.01
 Narration: crush can
@@ -95,7 +100,8 @@ Narration: take cup and spoon
 ------
 ************
 Frame IDs in sequence: [4679, 4771, 4891, 4997, 5353, 5406]
-Objects in sequence: ['can', 'cup', 'spoon', 'bin', 'paper']
+Objects in sequence: ['paper', 'can', 'cup', 'bin', 'spoon']
+Verb-noun pairs in sequence: ['crush;can;77.57;80.01', 'put-into;bin;79.75;80.66', 'tear;paper;80.72;84.48', 'put-into;paper;83.92;84.78']
 ************
 Start timestamp: 91.09, Stop timestamp: 92.31
 Narration: open cupboard
@@ -112,6 +118,7 @@ Narration: open drawer
 ************
 Frame IDs in sequence: [5472, 5509, 5565, 5597, 5679, 5761]
 Objects in sequence: ['drawer', 'cupboard', 'cup', 'spoon']
+Verb-noun pairs in sequence: ['open;cupboard;91.09;92.31', 'put-into;cup;91.87;93.00999999999999', 'close;cupboard;92.63;93.58']
 ************
 Start timestamp: 96.46000000000001, Stop timestamp: 97.00999999999999
 Narration: put spoon into drawer
@@ -127,7 +134,8 @@ Narration: take plate
 ------
 ************
 Frame IDs in sequence: [5837, 5947, 6057, 6127, 6187, 6269]
-Objects in sequence: ['plate', 'drawer', 'fridge', 'spoon']
+Objects in sequence: ['drawer', 'fridge', 'spoon', 'plate']
+Verb-noun pairs in sequence: ['close;drawer;97.11;98.03999999999999', 'open;fridge;100.41;102.34']
 ************
 Start timestamp: 105.1, Stop timestamp: 106.68
 Narration: put down plate
@@ -143,7 +151,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [6323, 6367, 6638, 6667, 6922, 6968]
-Objects in sequence: ['mushroom package', 'plate', 'drawer', 'fridge', 'container']
+Objects in sequence: ['drawer', 'container', 'fridge', 'plate', 'mushroom package']
+Verb-noun pairs in sequence: ['put-down;plate;105.1;106.68', 'take;mushroom;110.25;111.5', 'put-down;mushroom;111.19;111.83']
 ************
 Start timestamp: 116.18, Stop timestamp: 118.82
 Narration: looking for something
@@ -159,7 +168,8 @@ Narration: take mushrooms
 ------
 ************
 Frame IDs in sequence: [7132, 7200, 7268, 7320, 7380, 7432]
-Objects in sequence: ['mushroom package', 'drawer', 'fridge', 'container']
+Objects in sequence: ['drawer', 'container', 'fridge', 'mushroom package']
+Verb-noun pairs in sequence: ['close;drawer;118.53;119.43', 'take;container;120.76;122.09']
 ************
 Start timestamp: 124.86, Stop timestamp: 126.05
 Narration: put down mushrooms and container
@@ -172,7 +182,8 @@ Narration: put down bowl
 ------
 ************
 Frame IDs in sequence: [7508, 7541, 7599, 7629, 7869, 7949]
-Objects in sequence: ['mushroom package', 'mushroom', 'fridge', 'pasta', 'container', 'bowl']
+Objects in sequence: ['bowl', 'container', 'fridge', 'mushroom', 'pasta', 'mushroom package']
+Verb-noun pairs in sequence: ['put-down;mushroom;124.86;126.05', 'take;bowl;126.39;127.47']
 ************
 Start timestamp: 133.69, Stop timestamp: 135.18
 Narration: take container
@@ -185,7 +196,8 @@ Narration: close container
 ------
 ************
 Frame IDs in sequence: [8049, 8079, 8119, 8159, 8189, 8217]
-Objects in sequence: ['mushroom package', 'fridge', 'pasta', 'container']
+Objects in sequence: ['container', 'fridge', 'pasta', 'mushroom package']
+Verb-noun pairs in sequence: ['take;container;133.69;135.18', 'open;container;135.79;136.38']
 ************
 Start timestamp: 139.49, Stop timestamp: 142.24
 Narration: put down pasta
@@ -201,7 +213,8 @@ Narration: put down mushroom
 ------
 ************
 Frame IDs in sequence: [8415, 8489, 8826, 8870, 8912, 8938]
-Objects in sequence: ['mushroom package', 'fridge', 'pasta', 'container']
+Objects in sequence: ['container', 'fridge', 'pasta', 'mushroom package']
+Verb-noun pairs in sequence: ['put-down;pasta;139.49;142.24', 'pull-down;container;142.13;142.76', 'take;mushroom;146.62;148.23']
 ************
 Start timestamp: 149.57999999999998, Stop timestamp: 150.07999999999998
 Narration: open container
@@ -214,7 +227,8 @@ Narration: take aubergine and celery
 ------
 ************
 Frame IDs in sequence: [8980, 9040, 9100, 9154, 9202, 9286]
-Objects in sequence: ['mushroom package', 'celery package', 'aubergine', 'fridge', 'container']
+Objects in sequence: ['container', 'fridge', 'celery package', 'aubergine', 'mushroom package']
+Verb-noun pairs in sequence: ['open;container;149.57999999999998;150.07999999999998', 'put-into;container;151.32;153.03']
 ************
 Start timestamp: 155.95, Stop timestamp: 157.88
 Narration: put down celery
@@ -227,7 +241,8 @@ Narration: move mushrooms
 ------
 ************
 Frame IDs in sequence: [9400, 9444, 9641, 9705, 9761, 9799]
-Objects in sequence: ['mozzarella', 'celery package', 'aubergine', 'fridge']
+Objects in sequence: ['fridge', 'celery package', 'mozzarella', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;celery;155.95;157.88', 'take;mozzarella;160.27;162.31']
 ************
 Start timestamp: 163.25, Stop timestamp: 166.11
 Narration: take pasta
@@ -243,7 +258,8 @@ Narration: take container
 ------
 ************
 Frame IDs in sequence: [9971, 10075, 10179, 10327, 10513, 10602]
-Objects in sequence: ['mozzarella', 'drawer', 'aubergine', 'fridge', 'container']
+Objects in sequence: ['drawer', 'container', 'fridge', 'mozzarella', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;pasta;165.98;166.48', 'look-for;board:chopping;168.5;173.27']
 ************
 Start timestamp: 176.22, Stop timestamp: 177.47
 Narration: put down mozzarella
@@ -265,7 +281,8 @@ Narration: take tomato sauce
 ------
 ************
 Frame IDs in sequence: [10746, 10802, 10860, 10904, 10948, 10992]
-Objects in sequence: ['mozzarella', 'tomato sauce', 'fridge', 'mozzarella package', 'container']
+Objects in sequence: ['container', 'fridge', 'mozzarella package', 'mozzarella', 'tomato sauce']
+Verb-noun pairs in sequence: ['open;container;178.56;180.2', 'close;container;179.86;180.64', 'take;mozzarella;180.67;181.5']
 ************
 Start timestamp: 183.82, Stop timestamp: 186.96
 Narration: close fridge
@@ -278,7 +295,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [11082, 11164, 11412, 11557, 11623, 11683]
-Objects in sequence: ['mozzarella', 'tomato sauce', 'fridge', 'cupboard', 'mozzarella package', 'container']
+Objects in sequence: ['container', 'fridge', 'mozzarella package', 'cupboard', 'mozzarella', 'tomato sauce']
+Verb-noun pairs in sequence: ['close;fridge;183.82;186.96', 'put-down;mozzarella:tomato:sauce;188.62;193.25']
 ************
 Start timestamp: 195.54, Stop timestamp: 197.54
 Narration: take cutting board
@@ -294,7 +312,8 @@ Narration: put down pan
 ------
 ************
 Frame IDs in sequence: [11761, 11833, 11953, 12023, 12127, 12197]
-Objects in sequence: ['chopping board', 'pan', 'cupboard']
+Objects in sequence: ['pan', 'cupboard', 'chopping board']
+Verb-noun pairs in sequence: ['take;board:cutting;195.54;197.54', 'put-down;board:cutting;197.5;198.39', 'take;pan;198.74;201.24']
 ************
 Start timestamp: 201.84, Stop timestamp: 204.84
 Narration: close cupboard
@@ -310,7 +329,8 @@ Narration: take aubergine
 ------
 ************
 Frame IDs in sequence: [12251, 12306, 12361, 12391, 12430, 12469]
-Objects in sequence: ['chopping board', 'aubergine', 'cupboard', 'container', 'lid']
+Objects in sequence: ['container', 'cupboard', 'chopping board', 'aubergine', 'lid']
+Verb-noun pairs in sequence: ['close;cupboard;203.64;205.03', 'open;container;205.77;207.01']
 ************
 Start timestamp: 207.75, Stop timestamp: 208.38
 Narration: put down aubergine
@@ -326,7 +346,8 @@ Narration: take olive oil
 ------
 ************
 Frame IDs in sequence: [12553, 12623, 12719, 12766, 12909, 12972]
-Objects in sequence: ['olive oil bottle', 'chopping board', 'olive oil', 'aubergine', 'container', 'lid']
+Objects in sequence: ['container', 'chopping board', 'olive oil bottle', 'olive oil', 'aubergine', 'lid']
+Verb-noun pairs in sequence: ['put-down;container;209.05;210.53', 'move;board:cutting;211.43;213.61']
 ************
 Start timestamp: 216.11, Stop timestamp: 218.13
 Narration: open oil
@@ -342,7 +363,8 @@ Narration: put down oil
 ------
 ************
 Frame IDs in sequence: [13150, 13348, 13484, 13545, 13605, 13655]
-Objects in sequence: ['olive oil bottle', 'olive oil', 'pan', 'aubergine', 'bottle cap']
+Objects in sequence: ['pan', 'bottle cap', 'olive oil bottle', 'olive oil', 'aubergine']
+Verb-noun pairs in sequence: ['pour-into;oil;218.05;224.32999999999998', 'close;oil;224.62;225.94']
 ************
 Start timestamp: 228.22, Stop timestamp: 229.07999999999998
 Narration: turn on hob
@@ -355,7 +377,8 @@ Narration: take knife
 ------
 ************
 Frame IDs in sequence: [13701, 13803, 13905, 13935, 13995, 14025]
-Objects in sequence: ['knife', 'drawer', 'hob/cooktop/stovetop']
+Objects in sequence: ['drawer', 'hob/cooktop/stovetop', 'knife']
+Verb-noun pairs in sequence: ['turn-on;hob;228.22;229.07999999999998', 'open;drawer;231.53;232.41']
 ************
 Start timestamp: 234.04, Stop timestamp: 234.93
 Narration: close drawer
@@ -371,7 +394,8 @@ Narration: dicing aubergine
 ------
 ************
 Frame IDs in sequence: [14303, 14435, 14773, 15002, 15426, 15677]
-Objects in sequence: ['knife', 'chopping board', 'aubergine']
+Objects in sequence: ['chopping board', 'knife', 'aubergine']
+Verb-noun pairs in sequence: ['cut;aubergine;236.98;241.74', 'cut;aubergine;242.78;252.36']
 ************
 Start timestamp: 270.49, Stop timestamp: 279.92
 Narration: continue dicing aubergine
@@ -384,7 +408,8 @@ Narration: still dicing aubergine
 ------
 ************
 Frame IDs in sequence: [16367, 16652, 17362, 17558, 17965, 18219]
-Objects in sequence: ['knife', 'chopping board', 'aubergine']
+Objects in sequence: ['chopping board', 'knife', 'aubergine']
+Verb-noun pairs in sequence: ['dice;aubergine;270.49;279.92', 'dice;aubergine;286.98;295.35']
 ************
 Start timestamp: 309.15, Stop timestamp: 310.03
 Narration: put down knife
@@ -400,7 +425,8 @@ Narration: check oil
 ------
 ************
 Frame IDs in sequence: [18560, 18772, 18984, 19022, 19174, 19202]
-Objects in sequence: ['knife', 'chopping board', 'oil', 'pan', 'aubergine end', 'bin/garbage can/recycling bin', 'hob']
+Objects in sequence: ['bin/garbage can/recycling bin', 'pan', 'aubergine end', 'chopping board', 'knife', 'hob', 'oil']
+Verb-noun pairs in sequence: ['put-down;knife;309.15;310.03', 'open;bin;316.29;317.09', 'throw-into;end:aubergine;316.85;317.35']
 ************
 Start timestamp: 322.66, Stop timestamp: 324.19
 Narration: take kettle
@@ -413,7 +439,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [19392, 19422, 19500, 19537, 19597, 19659]
-Objects in sequence: ['tap', 'sink', 'kettle']
+Objects in sequence: ['kettle', 'sink', 'tap']
+Verb-noun pairs in sequence: ['take;kettle;322.66;324.19', 'open;kettle;324.8;325.78']
 ************
 Start timestamp: 328.44, Stop timestamp: 338.94
 Narration: pour water into kettle
@@ -432,7 +459,8 @@ Narration: turn on kettle
 ------
 ************
 Frame IDs in sequence: [19881, 20016, 20151, 20345, 20592, 20620]
-Objects in sequence: ['tap', 'sink', 'kettle', 'water']
+Objects in sequence: ['kettle', 'sink', 'tap', 'water']
+Verb-noun pairs in sequence: ['pour-into;water;328.44;338.94', 'turn-off;tap;334.43;338.89', 'close;kettle;338.97;339.81', 'put-down;kettle;339.28;342.76']
 ************
 Start timestamp: 345.73, Stop timestamp: 347.02
 Narration: open cupboard
@@ -448,7 +476,8 @@ Narration: put lid into cupboard
 ------
 ************
 Frame IDs in sequence: [20757, 20801, 20935, 21103, 21289, 21387]
-Objects in sequence: ['pot', 'cupboard', 'lid']
+Objects in sequence: ['cupboard', 'pot', 'lid']
+Verb-noun pairs in sequence: ['open;cupboard;345.73;347.02', 'take;colander;347.72;352.92', 'put-down;colander;352.02;354.08']
 ************
 Start timestamp: 357.13, Stop timestamp: 358.98
 Narration: close cupboard
@@ -464,7 +493,8 @@ Narration: put down cutting board
 ------
 ************
 Frame IDs in sequence: [21564, 21610, 21940, 22206, 22374, 22406]
-Objects in sequence: ['knife', 'pot', 'chopping board', 'pan', 'aubergine']
+Objects in sequence: ['pan', 'chopping board', 'knife', 'pot', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;pan;359.08;360.63', 'pour-into;aubergine;363.53;371.4']
 ************
 Start timestamp: 375.2, Stop timestamp: 376.38
 Narration: put down knife
@@ -477,7 +507,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [22536, 22596, 22657, 22743, 22829, 22857]
-Objects in sequence: ['spatula', 'knife', 'chopping board', 'pan', 'drawer', 'aubergine']
+Objects in sequence: ['spatula', 'drawer', 'pan', 'chopping board', 'knife', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;knife;375.2;376.38', 'open;drawer;377.38;378.02']
 ************
 Start timestamp: 381.27, Stop timestamp: 382.3
 Narration: close drawer
@@ -499,7 +530,8 @@ Narration: open salt
 ------
 ************
 Frame IDs in sequence: [23033, 23157, 23233, 23278, 23379, 23417]
-Objects in sequence: ['salt container', 'pan', 'aubergine', 'plastic spatula', 'salt package', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'salt container', 'salt package', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['stir;aubergine;383.18;387.07', 'put-down;aubergine;387.21;388.02', 'take;salt;388.0;389.08', 'pour;salt;388.0;393.01']
 ************
 Start timestamp: 392.86, Stop timestamp: 393.57
 Narration: close salt
@@ -512,7 +544,8 @@ Narration: stir aubergine
 ------
 ************
 Frame IDs in sequence: [23571, 23609, 23654, 23828, 24006, 24184]
-Objects in sequence: ['salt container', 'pan', 'aubergine', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'salt container', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['close;salt;392.86;393.57', 'put-down;salt;393.63;394.55']
 ************
 Start timestamp: 405.35, Stop timestamp: 406.74
 Narration: put down spatula
@@ -528,7 +561,8 @@ Narration: take onion
 ------
 ************
 Frame IDs in sequence: [24468, 24494, 24529, 24565, 24624, 24695]
-Objects in sequence: ['onion', 'container', 'lid']
+Objects in sequence: ['container', 'onion', 'lid']
+Verb-noun pairs in sequence: ['take;container;407.45;408.45', 'open;container;408.55;409.8']
 ************
 Start timestamp: 412.15, Stop timestamp: 412.87
 Narration: put down onion
@@ -547,7 +581,8 @@ Narration: close container
 ------
 ************
 Frame IDs in sequence: [24739, 24843, 24947, 24997, 25079, 25157]
-Objects in sequence: ['knife', 'chopping board', 'onion', 'container', 'lid']
+Objects in sequence: ['container', 'chopping board', 'onion', 'knife', 'lid']
+Verb-noun pairs in sequence: ['put-down;onion;412.15;412.87', 'cut;onion;412.51;415.44', 'take;knife;412.52;413.4', 'put-into;onion;415.54;417.18']
 ************
 Start timestamp: 421.7, Stop timestamp: 428.44
 Narration: cut onion
@@ -566,7 +601,8 @@ Narration: slice onion
 ------
 ************
 Frame IDs in sequence: [25365, 25586, 25800, 25826, 26084, 26539]
-Objects in sequence: ['knife', 'chopping board', 'onion', 'container', 'lid']
+Objects in sequence: ['container', 'chopping board', 'onion', 'knife', 'lid']
+Verb-noun pairs in sequence: ['cut;onion;421.7;428.44', 'open;container;428.16;429.66', 'put-into;onion;429.66;430.73', 'close;container;430.61;433.18']
 ************
 Start timestamp: 442.16, Stop timestamp: 455.58
 Narration: continue slicing onion
@@ -585,7 +621,8 @@ Narration: take onion bits
 ------
 ************
 Frame IDs in sequence: [27648, 27958, 28436, 28468, 28526, 28620]
-Objects in sequence: ['knife', 'onion bit', 'chopping board']
+Objects in sequence: ['onion bit', 'chopping board', 'knife']
+Verb-noun pairs in sequence: ['chop;onion;456.89;468.8', 'chop;onion;458.37;473.77', 'put-down;knife;473.73;474.93']
 ************
 Start timestamp: 477.15, Stop timestamp: 479.12
 Narration: take spatula
@@ -601,7 +638,8 @@ Narration: take container
 ------
 ************
 Frame IDs in sequence: [28815, 29043, 29233, 29423, 29552, 29582]
-Objects in sequence: ['pan', 'container', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'container', 'hob']
+Verb-noun pairs in sequence: ['stir;spatula;478.99;484.98', 'put-down;spatula;489.89;490.94']
 ************
 Start timestamp: 497.05, Stop timestamp: 498.28
 Narration: open fridge
@@ -617,7 +655,8 @@ Narration: take bottle
 ------
 ************
 Frame IDs in sequence: [29836, 29864, 29926, 29956, 30154, 30202]
-Objects in sequence: ['fridge', 'container', 'bottle']
+Objects in sequence: ['bottle', 'container', 'fridge']
+Verb-noun pairs in sequence: ['open;fridge;497.05;498.28', 'put-into;container;498.39;499.66', 'close;fridge;499.3;500.78']
 ************
 Start timestamp: 504.51, Stop timestamp: 508.91
 Narration: open bottle
@@ -630,7 +669,8 @@ Narration: take corkscrew
 ------
 ************
 Frame IDs in sequence: [30318, 30464, 30603, 30685, 30955, 31109]
-Objects in sequence: ['corkscrew', 'cork', 'drawer', 'bottle']
+Objects in sequence: ['cork', 'drawer', 'bottle', 'corkscrew']
+Verb-noun pairs in sequence: ['open;bottle;504.51;508.91', 'open;drawer;509.79;511.84']
 ************
 Start timestamp: 520.44, Stop timestamp: 541.0
 Narration: open bottle
@@ -643,7 +683,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [31572, 31866, 32160, 32616, 32851, 33075]
-Objects in sequence: ['bottle cover', 'corkscrew', 'drawer', 'cork', 'bottle']
+Objects in sequence: ['cork', 'drawer', 'bottle', 'corkscrew', 'bottle cover']
+Verb-noun pairs in sequence: ['open;bottle;520.44;541.0', 'take;cork;542.09;549.17']
 ************
 Start timestamp: 551.36, Stop timestamp: 551.86
 Narration: put down bottle opener
@@ -660,6 +701,7 @@ Narration: put down bottle
 ************
 Frame IDs in sequence: [33119, 33145, 33297, 33327, 33373, 33411]
 Objects in sequence: ['drawer', 'bottle']
+Verb-noun pairs in sequence: ['close;drawer;551.92;552.82', 'take;bottle;554.57;555.6']
 ************
 Start timestamp: 557.16, Stop timestamp: 558.11
 Narration: take cork
@@ -672,7 +714,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [33443, 33564, 33608, 33766, 33796]
-Objects in sequence: ['bottle cover', 'pan', 'cork', 'aubergine', 'plastic spatula', 'bin/garbage can/recycling bin', 'hob']
+Objects in sequence: ['plastic spatula', 'bin/garbage can/recycling bin', 'cork', 'pan', 'bottle cover', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['take;cork;557.16;558.11', 'open;bin;559.2;560.6']
 ************
 Start timestamp: 563.63, Stop timestamp: 568.45
 Narration: stir aubergine
@@ -691,7 +734,8 @@ Narration: take kettle
 ------
 ************
 Frame IDs in sequence: [33914, 34062, 34559, 35221, 35812, 35844]
-Objects in sequence: ['kettle', 'pan', 'aubergine', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'kettle', 'pan', 'hob/cooktop/stovetop', 'aubergine']
+Verb-noun pairs in sequence: ['stir;aubergine;563.63;568.45', 'adjust;hob;568.13;569.51', 'stir;aubergine;569.61;594.03', 'put-down;spatula;593.48;595.08']
 ************
 Start timestamp: 600.35, Stop timestamp: 615.25
 Narration: pour water into saucepan
@@ -704,7 +748,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [36218, 36687, 37077, 37107, 37289, 37315]
-Objects in sequence: ['plastic spatula', 'pot', 'kettle', 'pan', 'aubergine', 'hob/cooktop/stovetop', 'water']
+Objects in sequence: ['plastic spatula', 'kettle', 'pan', 'hob/cooktop/stovetop', 'pot', 'aubergine', 'water']
+Verb-noun pairs in sequence: ['pour-into;water;600.35;615.25', 'put-down;kettle;617.88;618.8']
 ************
 Start timestamp: 621.87, Stop timestamp: 633.79
 Narration: stir aubergine
@@ -723,7 +768,8 @@ Narration: adjust hob
 ------
 ************
 Frame IDs in sequence: [38078, 38164, 38438, 38470, 38563, 38609]
-Objects in sequence: ['knife', 'chopping board', 'pan', 'aubergine', 'onion', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'chopping board', 'onion', 'knife', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['take;board:cutting;633.97;636.48', 'pour-into;onion;636.08;638.98', 'put-down;board:cutting;640.08;641.58']
 ************
 Start timestamp: 644.18, Stop timestamp: 649.12
 Narration: stir food
@@ -739,7 +785,8 @@ Narration: take salt
 ------
 ************
 Frame IDs in sequence: [38711, 38889, 40222, 40270, 40342, 40386]
-Objects in sequence: ['spatula', 'salt container', 'pan', 'aubergine', 'onion', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'spatula', 'pan', 'salt container', 'onion', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['stir;food;644.18;649.12', 'stir;food;648.24;671.72', 'put-down;spatula;670.32;671.34']
 ************
 Start timestamp: 673.59, Stop timestamp: 674.91
 Narration: open salt
@@ -755,7 +802,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [40440, 40474, 40534, 40594, 40643, 40669]
-Objects in sequence: ['salt container', 'drawer', 'spoon']
+Objects in sequence: ['drawer', 'salt container', 'spoon']
+Verb-noun pairs in sequence: ['open;salt;673.59;674.91', 'open;drawer;674.69;676.01', 'take;spoon;676.49;677.49']
 ************
 Start timestamp: 679.13, Stop timestamp: 681.95
 Narration: pour salt
@@ -771,7 +819,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [40797, 40843, 40889, 40955, 41019, 41095]
-Objects in sequence: ['salt', 'pot', 'salt container', 'spoon', 'water', 'hob']
+Objects in sequence: ['salt', 'salt container', 'hob', 'pot', 'spoon', 'water']
+Verb-noun pairs in sequence: ['pour;salt;679.13;681.95', 'stir;salt;682.05;683.8', 'close;salt;683.53;684.91']
 ************
 Start timestamp: 685.76, Stop timestamp: 686.82
 Narration: put down salt
@@ -784,7 +833,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [41165, 41255, 41281, 41527, 41711, 41896]
-Objects in sequence: ['pot', 'salt container', 'pan', 'aubergine', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'salt container', 'hob', 'pot', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;salt;685.76;686.82', 'take;spatula;687.13;688.28']
 ************
 Start timestamp: 701.13, Stop timestamp: 701.64
 Narration: put down spatula
@@ -797,7 +847,8 @@ Narration: move bottle
 ------
 ************
 Frame IDs in sequence: [42074, 42130, 42176, 42290, 42404, 42460]
-Objects in sequence: ['spatula', 'pan', 'drawer', 'aubergine', 'table cloth', 'plastic spatula', 'bottle', 'hob']
+Objects in sequence: ['spatula', 'plastic spatula', 'drawer', 'bottle', 'pan', 'table cloth', 'hob', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;spatula;701.13;701.64', 'open;drawer;701.89;702.99']
 ************
 Start timestamp: 708.35, Stop timestamp: 709.42
 Narration: move glass
@@ -810,7 +861,8 @@ Narration: move plates
 ------
 ************
 Frame IDs in sequence: [42508, 42544, 42633, 42687, 42824, 42961]
-Objects in sequence: ['plate', 'glass', 'table cloth', 'container', 'bottle']
+Objects in sequence: ['bottle', 'container', 'table cloth', 'glass', 'plate']
+Verb-noun pairs in sequence: ['move;glass;708.35;709.42', 'put-down;cloth:table;709.52;712.26']
 ************
 Start timestamp: 716.97, Stop timestamp: 718.62
 Narration: move container
@@ -826,7 +878,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [43039, 43085, 43305, 43365, 43425, 43485]
-Objects in sequence: ['plate', 'glass', 'cupboard', 'table cloth', 'container', 'bottle']
+Objects in sequence: ['bottle', 'container', 'table cloth', 'glass', 'cupboard', 'plate']
+Verb-noun pairs in sequence: ['move;container;716.97;718.62', 'put-down;cloth:table;718.47;719.85', 'put-down;container;721.36;723.47']
 ************
 Start timestamp: 725.05, Stop timestamp: 727.34
 Narration: take plates
@@ -842,7 +895,8 @@ Narration: put down plates
 ------
 ************
 Frame IDs in sequence: [43543, 43606, 43674, 43742, 43876, 43948]
-Objects in sequence: ['plate', 'cupboard', 'table cloth']
+Objects in sequence: ['table cloth', 'cupboard', 'plate']
+Verb-noun pairs in sequence: ['take;plate;725.05;727.34', 'close;cupboard;727.26;728.03', 'put-down;plate;728.6;729.95']
 ************
 Start timestamp: 734.4, Stop timestamp: 735.55
 Narration: open drawer
@@ -855,7 +909,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [44078, 44124, 44238, 44384, 44530, 44683]
-Objects in sequence: ['cutlery', 'knife', 'drawer']
+Objects in sequence: ['drawer', 'cutlery', 'knife']
+Verb-noun pairs in sequence: ['open;drawer;734.4;735.55', 'take;cutlery;735.75;744.25']
 ************
 Start timestamp: 746.92, Stop timestamp: 756.88
 Narration: put down cutlery
@@ -880,7 +935,8 @@ Narration: adjust hob
 ------
 ************
 Frame IDs in sequence: [45009, 45227, 45517, 45570, 46002, 46068]
-Objects in sequence: ['cutlery', 'knife', 'pan', 'aubergine', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'hob/cooktop/stovetop', 'cutlery', 'knife', 'aubergine']
+Verb-noun pairs in sequence: ['put-down;cutlery;746.92;756.88', 'move;chair;749.5;751.25', 'move;chair;751.35;752.6', 'put-down;cutlery;754.83;757.07', 'take;spatula;758.3;759.74', 'stir;food;759.4;766.15']
 ************
 Start timestamp: 768.1, Stop timestamp: 768.85
 Narration: put down spatula
@@ -902,7 +958,8 @@ Narration: put down sauce
 ------
 ************
 Frame IDs in sequence: [46160, 46206, 46571, 46790, 47009, 47409]
-Objects in sequence: ['pan', 'tomato sauce', 'aubergine', 'hob/cooktop/stovetop', 'tomato sauce bottle']
+Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'tomato sauce bottle', 'tomato sauce', 'aubergine']
+Verb-noun pairs in sequence: ['take;sauce:tomato;768.95;770.36', 'open;sauce;770.05;771.55', 'pour;sauce;772.04;789.57', 'pour;sauce;777.18;789.68']
 ************
 Start timestamp: 791.24, Stop timestamp: 815.19
 Narration: stir food
@@ -921,7 +978,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [47862, 48665, 49119, 49574, 49802, 49836]
-Objects in sequence: ['food', 'pan', 'drawer', 'scissors', 'pasta package', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'drawer', 'scissors', 'hob/cooktop/stovetop', 'food', 'pasta package']
+Verb-noun pairs in sequence: ['stir;food;791.24;815.19', 'stir;food;800.18;825.78', 'put-down;spatula;825.97;826.75', 'take;pasta;826.69;829.91']
 ************
 Start timestamp: 830.59, Stop timestamp: 831.57
 Narration: take scissor
@@ -937,7 +995,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [49940, 50004, 50062, 50118, 50184, 50210]
-Objects in sequence: ['drawer', 'scissors', 'plastic bag', 'pasta bag']
+Objects in sequence: ['drawer', 'scissors', 'pasta bag', 'plastic bag']
+Verb-noun pairs in sequence: ['cut;bag:pasta;831.63;834.13', 'put-into;scissor;834.23;835.48']
 ************
 Start timestamp: 836.57, Stop timestamp: 841.04
 Narration: take pasta out of the bag
@@ -953,7 +1012,8 @@ Narration: throw plastic bag into bin
 ------
 ************
 Frame IDs in sequence: [50488, 50579, 50995, 51139, 51568, 51654]
-Objects in sequence: ['pot', 'pasta', 'plastic bag', 'bin', 'hob']
+Objects in sequence: ['pasta', 'bin', 'hob', 'pot', 'plastic bag']
+Verb-noun pairs in sequence: ['pour;pasta;841.14;843.93', 'pour;pasta;849.28;853.28']
 ************
 Start timestamp: 862.48, Stop timestamp: 867.47
 Narration: open drawer
@@ -966,7 +1026,8 @@ Narration: stir pasta
 ------
 ************
 Frame IDs in sequence: [51840, 51954, 52184, 52222, 52378, 52797]
-Objects in sequence: ['pot', 'drawer', 'pasta fork', 'pasta', 'spoon', 'hob']
+Objects in sequence: ['drawer', 'pasta', 'pasta fork', 'hob', 'pot', 'spoon']
+Verb-noun pairs in sequence: ['open;drawer;862.48;867.47', 'close;drawer;869.7;870.45']
 ************
 Start timestamp: 883.56, Stop timestamp: 884.88
 Narration: put down spatula
@@ -985,7 +1046,8 @@ Narration: put down spatula
 ------
 ************
 Frame IDs in sequence: [53031, 53063, 53209, 53541, 53664, 53696]
-Objects in sequence: ['food', 'pan', 'lid', 'pasta fork', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'food', 'pasta fork', 'hob', 'lid']
+Verb-noun pairs in sequence: ['put-down;spatula;883.56;884.88', 'take;spatula;884.64;886.28', 'stir;food;885.55;894.21', 'take;lid;894.12;896.09']
 ************
 Start timestamp: 895.49, Stop timestamp: 896.13
 Narration: take bottle
@@ -998,7 +1060,8 @@ Narration: move things
 ------
 ************
 Frame IDs in sequence: [53736, 53816, 53860, 53994, 54062, 54130]
-Objects in sequence: ['chopping board', 'lid', 'tomato sauce bottle', 'strainer']
+Objects in sequence: ['strainer', 'chopping board', 'tomato sauce bottle', 'lid']
+Verb-noun pairs in sequence: ['take;bottle;895.49;896.13', 'put-down;bottle;896.56;898.16']
 ************
 Start timestamp: 903.75, Stop timestamp: 905.12
 Narration: take bottle
@@ -1011,7 +1074,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [54246, 54288, 54342, 54382, 54422, 54478]
-Objects in sequence: ['tap', 'tomato sauce lid', 'sink', 'chopping board', 'container', 'lid', 'tomato sauce bottle']
+Objects in sequence: ['sink', 'container', 'tomato sauce lid', 'tap', 'chopping board', 'tomato sauce bottle', 'lid']
+Verb-noun pairs in sequence: ['take;bottle;903.75;905.12', 'move;container;905.22;907.4']
 ************
 Start timestamp: 908.02, Stop timestamp: 914.16
 Narration: rinse bottle
@@ -1027,7 +1091,8 @@ Narration: take lid
 ------
 ************
 Frame IDs in sequence: [54666, 54736, 54792, 54848, 54924, 55000]
-Objects in sequence: ['tap', 'sink', 'lid', 'sauce', 'water', 'bottle', 'tomato sauce bottle']
+Objects in sequence: ['sink', 'bottle', 'tap', 'sauce', 'tomato sauce bottle', 'lid', 'water']
+Verb-noun pairs in sequence: ['rinse;sauce;910.03;913.61', 'turn-off;tap;913.92;914.7']
 ************
 Start timestamp: 919.33, Stop timestamp: 922.09
 Narration: put lid and bottle into bins
@@ -1040,7 +1105,8 @@ Narration: take containers
 ------
 ************
 Frame IDs in sequence: [55187, 55271, 55543, 55586, 55648, 55692]
-Objects in sequence: ['cloth', 'container', 'lid', 'bottle', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin/garbage can/recycling bin', 'bottle', 'container', 'cloth', 'lid']
+Verb-noun pairs in sequence: ['put-into;lid;919.33;922.09', 'dry;hand;925.22;926.98']
 ************
 Start timestamp: 930.27, Stop timestamp: 931.46
 Narration: take spatula
@@ -1056,7 +1122,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [55846, 55961, 56076, 56306, 56454, 56502]
-Objects in sequence: ['food', 'pan', 'cupboard', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'hob/cooktop/stovetop', 'food', 'cupboard']
+Verb-noun pairs in sequence: ['take;spatula;930.27;931.46', 'stir;food;931.21;938.08', 'put-down;spatula;938.25;939.04']
 ************
 Start timestamp: 943.56, Stop timestamp: 946.54
 Narration: take glass
@@ -1070,6 +1137,7 @@ Narration: take glass
 ************
 Frame IDs in sequence: [56679, 56759, 56851, 56909, 57073, 57121]
 Objects in sequence: ['cupboard', 'glass']
+Verb-noun pairs in sequence: ['take;glass;943.56;946.54', 'take;glass;946.64;949.2']
 ************
 Start timestamp: 952.44, Stop timestamp: 953.49
 Narration: put down glass
@@ -1083,6 +1151,7 @@ Narration: put down glass
 ************
 Frame IDs in sequence: [57149, 57201, 57317, 57433, 57509, 57586]
 Objects in sequence: ['cupboard', 'glass']
+Verb-noun pairs in sequence: ['put-down;glass;952.44;953.49', 'close;cupboard;953.49;954.87']
 ************
 Start timestamp: 959.31, Stop timestamp: 960.29
 Narration: take glasses
@@ -1096,6 +1165,7 @@ Narration: take wine bottle
 ************
 Frame IDs in sequence: [57774, 57871, 57900, 58024, 58148, 58352]
 Objects in sequence: ['glass', 'wine', 'wine bottle']
+Verb-noun pairs in sequence: ['take;glass;959.31;960.29', 'put-down;glass;962.53;963.54']
 ************
 Start timestamp: 966.62, Stop timestamp: 974.7
 Narration: pour wine into glass
@@ -1109,6 +1179,7 @@ Narration: put down bottle
 ************
 Frame IDs in sequence: [58623, 58873, 59015, 59065, 59173, 59243]
 Objects in sequence: ['glass', 'wine', 'wine bottle']
+Verb-noun pairs in sequence: ['pour-into;wine;966.62;974.7', 'pour-into;wine;975.9;982.2']
 ************
 Start timestamp: 985.43, Stop timestamp: 988.18
 Narration: move glasses
@@ -1121,7 +1192,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [59331, 59399, 59588, 59614, 59846, 60252]
-Objects in sequence: ['food', 'pan', 'glass', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'glass', 'hob/cooktop/stovetop', 'food']
+Verb-noun pairs in sequence: ['move;glass;985.43;988.18', 'move;glass;988.52;990.56']
 ************
 Start timestamp: 994.0, Stop timestamp: 1009.06
 Narration: stir food
@@ -1137,7 +1209,8 @@ Narration: stir pasta
 ------
 ************
 Frame IDs in sequence: [60813, 61225, 61788, 61868, 62114, 62226]
-Objects in sequence: ['food', 'pot', 'pan', 'pasta fork', 'pasta', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'pasta fork', 'food', 'hob', 'pot']
+Verb-noun pairs in sequence: ['stir;food;994.0;1009.06', 'put-down;spatula;1008.62;1009.46', 'take;spatula;1009.06;1009.99']
 ************
 Start timestamp: 1020.34, Stop timestamp: 1026.5
 Narration: taste pasta
@@ -1156,7 +1229,8 @@ Narration: check time
 ------
 ************
 Frame IDs in sequence: [62350, 62491, 62681, 62792, 62903, 62949]
-Objects in sequence: ['food', 'watch', 'pan', 'hob/cooktop/stovetop', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'hob/cooktop/stovetop', 'food', 'watch']
+Verb-noun pairs in sequence: ['put-down;spatula;1029.41;1032.08', 'take;spatula;1032.01;1033.72', 'stir;food;1033.78;1038.56']
 ************
 Start timestamp: 1039.93, Stop timestamp: 1046.24
 Narration: stir food
@@ -1172,7 +1246,8 @@ Narration: lift saucepan
 ------
 ************
 Frame IDs in sequence: [63215, 63263, 63307, 63403, 63489, 63575]
-Objects in sequence: ['pot', 'sink', 'pan', 'colander', 'hob/cooktop/stovetop']
+Objects in sequence: ['colander', 'pan', 'sink', 'hob/cooktop/stovetop', 'pot']
+Verb-noun pairs in sequence: ['stir;food;1039.93;1046.24', 'put-down;spatula;1045.85;1046.81', 'turn-off;hob;1047.7;1049.58']
 ************
 Start timestamp: 1054.62, Stop timestamp: 1057.48
 Narration: put down saucepan
@@ -1188,7 +1263,8 @@ Narration: take saucepan
 ------
 ************
 Frame IDs in sequence: [63787, 63835, 64060, 64206, 64976, 65362]
-Objects in sequence: ['tap', 'pot', 'sink', 'pan', 'pasta', 'colander', 'hob']
+Objects in sequence: ['colander', 'pan', 'sink', 'tap', 'pasta', 'hob', 'pot']
+Verb-noun pairs in sequence: ['put-down;saucepan;1054.62;1057.48', 'put-into;colander;1059.15;1060.29', 'take;colander;1059.16;1059.96']
 ************
 Start timestamp: 1066.95, Stop timestamp: 1070.8
 Narration: drain pasta
@@ -1204,7 +1280,8 @@ Narration: pour pasta into pan
 ------
 ************
 Frame IDs in sequence: [66082, 66154, 66278, 66318, 66418, 66458]
-Objects in sequence: ['food', 'pot', 'hob/cooktop/stovetop', 'pan', 'mozzarella bag', 'pasta', 'colander', 'mozzarella package', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'colander', 'pan', 'mozzarella bag', 'pasta', 'mozzarella package', 'hob/cooktop/stovetop', 'food', 'pot']
+Verb-noun pairs in sequence: ['drain;pasta;1066.95;1070.8', 'drain;pasta;1078.85;1091.75', 'drain;pasta;1087.4;1098.4']
 ************
 Start timestamp: 1104.41, Stop timestamp: 1105.7
 Narration: put colander into sink
@@ -1217,7 +1294,8 @@ Narration: open mozzarella bag
 ------
 ************
 Frame IDs in sequence: [66502, 66555, 66704, 66853, 66921, 66969]
-Objects in sequence: ['mozzarella', 'pan', 'pasta', 'pasta fork', 'hob/cooktop/stovetop', 'mozzarella package', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'mozzarella package', 'hob/cooktop/stovetop', 'pasta fork', 'mozzarella']
+Verb-noun pairs in sequence: ['put-into;colander;1104.41;1105.7', 'take;mozzarella;1106.49;1107.99']
 ************
 Start timestamp: 1113.82, Stop timestamp: 1115.79
 Narration: sprinkle mozzarella
@@ -1233,7 +1311,8 @@ Narration: stir pasta
 ------
 ************
 Frame IDs in sequence: [67509, 68370, 69003, 69161, 69401, 69984]
-Objects in sequence: ['mozzarella', 'pan', 'pasta fork', 'pasta', 'mozzarella package', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'mozzarella package', 'pasta fork', 'hob', 'mozzarella']
+Verb-noun pairs in sequence: ['sprinkle;mozzarella;1113.82;1115.79', 'take;spatula;1115.01;1115.77', 'take;spatula;1115.87;1116.74']
 ************
 Start timestamp: 1130.42, Stop timestamp: 1148.22
 Narration: continue stirring pasta
@@ -1255,7 +1334,8 @@ Narration: sprinkle mozzarella
 ------
 ************
 Frame IDs in sequence: [71113, 71233, 71784, 72504, 72849, 72895]
-Objects in sequence: ['plate', 'pan', 'pasta', 'pasta fork', 'mozzarella package', 'spoon', 'plastic spatula', 'hob']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'mozzarella package', 'pasta fork', 'hob', 'spoon', 'plate']
+Verb-noun pairs in sequence: ['sprinkle;mozzarella;1149.39;1153.35', 'take;spatula;1152.99;1153.93', 'stir;pasta;1153.81;1170.38', 'stir;pasta;1167.01;1183.0']
 ************
 Start timestamp: 1188.77, Stop timestamp: 1212.3
 Narration: stir pasta
@@ -1274,7 +1354,8 @@ Narration: put down spatula
 ------
 ************
 Frame IDs in sequence: [72943, 72975, 73017, 73095, 73191, 73279]
-Objects in sequence: ['plate', 'pan', 'pasta', 'pasta fork', 'spoon', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'pasta fork', 'spoon', 'plate']
+Verb-noun pairs in sequence: ['stir;pasta;1188.77;1212.3', 'stir;pasta;1197.75;1211.91', 'put-down;spatula;1212.1;1212.85', 'take;plate;1213.94;1214.94']
 ************
 Start timestamp: 1216.78, Stop timestamp: 1218.59
 Narration: put down plate
@@ -1290,7 +1371,8 @@ Narration: pour pasta onto plate
 ------
 ************
 Frame IDs in sequence: [73636, 73792, 74514, 74551, 74627, 74717]
-Objects in sequence: ['plate', 'pan', 'pasta', 'pasta fork', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'pasta fork', 'plate']
+Verb-noun pairs in sequence: ['put-down;plate;1216.78;1218.59', 'put-down;spoon;1218.01;1219.25', 'take;spatula;1219.09;1222.09']
 ************
 Start timestamp: 1241.47, Stop timestamp: 1242.83
 Narration: take plate
@@ -1306,7 +1388,8 @@ Narration: pour pasta onto plate
 ------
 ************
 Frame IDs in sequence: [75167, 75293, 75804, 76004, 76518, 76609]
-Objects in sequence: ['plate', 'pan', 'pasta fork', 'pasta', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'pasta fork', 'plate']
+Verb-noun pairs in sequence: ['take;plate;1241.47;1242.83', 'put-down;plate;1243.09;1246.13', 'move;plate;1243.39;1246.38']
 ************
 Start timestamp: 1260.63, Stop timestamp: 1269.98
 Narration: pour pasta onto plate
@@ -1322,7 +1405,8 @@ Narration: put down spatulas
 ------
 ************
 Frame IDs in sequence: [77229, 77273, 77463, 77519, 77690, 77812]
-Objects in sequence: ['plate', 'pan', 'pasta fork', 'pasta', 'plastic spatula']
+Objects in sequence: ['plastic spatula', 'pan', 'pasta', 'pasta fork', 'plate']
+Verb-noun pairs in sequence: ['pour-onto;pasta;1260.63;1269.98', 'pour-onto;pasta;1267.74;1274.32', 'put-down;saucepan;1274.76;1277.65']
 ************
 Start timestamp: 1287.34, Stop timestamp: 1290.2
 Narration: take pan and spatulas
@@ -1338,7 +1422,8 @@ Narration: open bin
 ------
 ************
 Frame IDs in sequence: [78080, 78126, 78368, 78404, 78638, 78851]
-Objects in sequence: ['water', 'tap', 'sink', 'pan', 'pasta', 'pasta fork', 'plastic spatula', 'bin/garbage can/recycling bin']
+Objects in sequence: ['plastic spatula', 'bin/garbage can/recycling bin', 'pan', 'sink', 'tap', 'pasta', 'pasta fork', 'water']
+Verb-noun pairs in sequence: ['put-down;pan;1290.69;1292.69', 'take;pasta;1293.18;1298.21']
 ************
 Start timestamp: 1301.21, Stop timestamp: 1302.7
 Narration: throw pasta into bin
@@ -1360,7 +1445,8 @@ Narration: close tap
 ------
 ************
 Frame IDs in sequence: [78921, 78951, 79071, 79146, 79183, 79217]
-Objects in sequence: ['cloth', 'tap', 'sink', 'water']
+Objects in sequence: ['sink', 'tap', 'cloth', 'water']
+Verb-noun pairs in sequence: ['turn-on;tap;1305.84;1307.06', 'wash;hand;1306.93;1309.94', 'rinse;spatula;1310.04;1315.12']
 ************
 Start timestamp: 1317.0, Stop timestamp: 1319.41
 Narration: dry hands
@@ -1373,7 +1459,8 @@ Narration: close mozzarella bag
 ------
 ************
 Frame IDs in sequence: [79281, 79341, 79552, 79822, 79964, 80106]
-Objects in sequence: ['cloth', 'drawer', 'mozzarella package', 'clip']
+Objects in sequence: ['drawer', 'clip', 'mozzarella package', 'cloth']
+Verb-noun pairs in sequence: ['dry;hand;1317.0;1319.41', 'hang;cloth;1319.49;1320.36']
 ************
 Start timestamp: 1323.01, Stop timestamp: 1332.64
 Narration: fold mozzarella bag
@@ -1395,7 +1482,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [80250, 80294, 80335, 80376, 80413, 80450]
-Objects in sequence: ['fridge', 'mozzarella package', 'clip']
+Objects in sequence: ['clip', 'fridge', 'mozzarella package']
+Verb-noun pairs in sequence: ['fold;bag:mozzarella;1323.01;1332.64', 'open;drawer;1326.72;1329.05', 'take;clip;1328.32;1332.24', 'put-on;clip;1332.34;1333.27', 'close;drawer;1334.54;1335.86']
 ************
 Start timestamp: 1339.34, Stop timestamp: 1340.25
 Narration: put mozzarella into fridge
@@ -1408,7 +1496,8 @@ Narration: take plates
 ------
 ************
 Frame IDs in sequence: [80632, 80693, 80813, 80843, 80933, 81005]
-Objects in sequence: ['plate', 'pasta']
+Objects in sequence: ['pasta', 'plate']
+Verb-noun pairs in sequence: ['put-into;mozzarella;1339.34;1340.25', 'close;fridge;1340.35;1341.62']
 ************
 Start timestamp: 1346.72, Stop timestamp: 1347.69
 Narration: put down plates
