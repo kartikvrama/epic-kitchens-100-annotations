@@ -12,8 +12,8 @@ Narration: pick up cereal
 ------
 ************
 Frame IDs in sequence: [178, 241, 301, 355, 444, 498]
-Objects in sequence: ['bowl', 'drawer', 'cereal']
-Verb-noun pairs in sequence: ['open;drawer;2.5;4.5', 'pick-up;bowl;4.85;6.35', 'close;drawer;6.1;7.35']
+Objects in sequence: ['bowl', 'cereal', 'drawer']
+Verb-noun pairs in sequence: ['open drawer;2.5;4.5', 'pick up bowl;4.85;6.35', 'close drawer;6.1;7.35']
 ************
 Start timestamp: 7.69, Stop timestamp: 10.19
 Narration: put down cereal
@@ -29,8 +29,8 @@ Narration: still opening cereal box
 ------
 ************
 Frame IDs in sequence: [583, 632, 716, 848, 979, 1282]
-Objects in sequence: ['bowl', 'cereal bag', 'cereal box']
-Verb-noun pairs in sequence: ['put-down;bowl;9.61;10.76', 'open;box:cereal;10.89;14.79']
+Objects in sequence: ['cereal bag', 'bowl', 'cereal box']
+Verb-noun pairs in sequence: ['put down bowl;9.61;10.76', 'open cereal box;10.89;14.79']
 ************
 Start timestamp: 23.49, Stop timestamp: 32.24
 Narration: pour cereal into bowl
@@ -49,8 +49,8 @@ Narration: put down cereal box
 ------
 ************
 Frame IDs in sequence: [1533, 1683, 1833, 1968, 2043, 2073]
-Objects in sequence: ['bowl', 'cereal bag', 'cereal', 'cereal box']
-Verb-noun pairs in sequence: ['pour-into;cereal;23.49;32.24', 'pour-into;cereal;23.75;28.48', 'pick-up;bowl;31.55;32.41', 'put-down;bowl;32.35;33.25']
+Objects in sequence: ['cereal bag', 'bowl', 'cereal', 'cereal box']
+Verb-noun pairs in sequence: ['pour cereal into bowl;23.49;32.24', 'still pouring cereal into bowl;23.75;28.48', 'pick up bowl;31.55;32.41', 'put down bowl;32.35;33.25']
 ************
 Start timestamp: 33.98, Stop timestamp: 37.42
 Narration: close cereal box
@@ -66,8 +66,8 @@ Narration: pick up milk
 ------
 ************
 Frame IDs in sequence: [2310, 2365, 2421, 2449, 2531, 2567]
-Objects in sequence: ['cereal', 'fridge', 'cereal box', 'cereal bowl', 'milk']
-Verb-noun pairs in sequence: ['move;box:cereal;38.29;38.95', 'open;fridge;40.36;40.91']
+Objects in sequence: ['cereal bowl', 'fridge', 'cereal', 'cereal box', 'milk']
+Verb-noun pairs in sequence: ['move cereal box;38.29;38.95', 'open fridge;40.36;40.91']
 ************
 Start timestamp: 43.87, Stop timestamp: 44.77
 Narration: close fridge
@@ -83,8 +83,8 @@ Narration: pour milk into cereal bowl
 ------
 ************
 Frame IDs in sequence: [2647, 2674, 2727, 2764, 3274, 3515]
-Objects in sequence: ['milk lid', 'fridge', 'cereal', 'milk bottle', 'cereal bowl', 'milk']
-Verb-noun pairs in sequence: ['close;fridge;43.87;44.77', 'put-down;milk;45.35;46.23', 'open;lid:milk;46.04;51.01']
+Objects in sequence: ['milk lid', 'milk bottle', 'cereal bowl', 'fridge', 'cereal', 'milk']
+Verb-noun pairs in sequence: ['close fridge;43.87;44.77', 'put down milk;45.35;46.23', 'open lid of milk;46.04;51.01']
 ************
 Start timestamp: 61.49, Stop timestamp: 63.02
 Narration: close
@@ -97,8 +97,8 @@ Narration: close milk
 ------
 ************
 Frame IDs in sequence: [3718, 3755, 3807, 3855, 3965, 4034]
-Objects in sequence: ['milk lid', 'cereal', 'milk bottle', 'cereal bowl']
-Verb-noun pairs in sequence: ['close;milk;61.49;63.02', 'drink;milk;63.15;64.54']
+Objects in sequence: ['milk lid', 'milk bottle', 'cereal bowl', 'cereal']
+Verb-noun pairs in sequence: ['close;61.49;63.02', 'drink milk;63.15;64.54']
 ************
 Start timestamp: 69.43, Stop timestamp: 71.41
 Narration: open fridge
@@ -114,8 +114,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [4192, 4252, 4373, 4445, 4742, 4773]
-Objects in sequence: ['fridge', 'cupboard', 'milk']
-Verb-noun pairs in sequence: ['open;fridge;69.43;71.41', 'put-into;milk;71.85;75.19', 'close;fridge;75.16;77.33']
+Objects in sequence: ['cupboard', 'fridge', 'milk']
+Verb-noun pairs in sequence: ['open fridge;69.43;71.41', 'put milk into fridge;71.85;75.19', 'close fridge;75.16;77.33']
 ************
 Start timestamp: 79.88, Stop timestamp: 83.41
 Narration: take bread from cupboard
@@ -128,8 +128,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [4866, 4948, 5301, 5351, 5503, 5567]
-Objects in sequence: ['counter', 'fridge', 'cupboard', 'bread']
-Verb-noun pairs in sequence: ['take-from;bread;79.88;83.41', 'put-on;bread;87.37;90.2']
+Objects in sequence: ['counter', 'cupboard', 'fridge', 'bread']
+Verb-noun pairs in sequence: ['take bread from cupboard;79.88;83.41', 'put bread on counter;87.37;90.2']
 ************
 Start timestamp: 93.09, Stop timestamp: 94.93
 Narration: pick up salami
@@ -145,8 +145,8 @@ Narration: open dishwasher
 ------
 ************
 Frame IDs in sequence: [5610, 5654, 5877, 5946, 6217, 6274]
-Objects in sequence: ['fridge', 'dishwasher', 'salami', 'bread']
-Verb-noun pairs in sequence: ['pick-up;salami;93.09;94.93', 'move;bread;97.12;100.05', 'put-down;salami;99.82;100.65']
+Objects in sequence: ['fridge', 'dishwasher', 'bread', 'salami']
+Verb-noun pairs in sequence: ['pick up salami;93.09;94.93', 'move bread;97.12;100.05', 'put down salami;99.82;100.65']
 ************
 Start timestamp: 104.95, Stop timestamp: 106.33
 Narration: open dishwasher drawer
@@ -160,7 +160,7 @@ Narration: close dishwasher
 ************
 Frame IDs in sequence: [6330, 6375, 6414, 6487, 6578]
 Objects in sequence: ['fork', 'dishwasher']
-Verb-noun pairs in sequence: ['open;drawer:dishwasher;104.95;106.33', 'pick-up;fork;106.43;109.15']
+Verb-noun pairs in sequence: ['open dishwasher drawer;104.95;106.33', 'pick up fork;106.43;109.15']
 ************
 Start timestamp: 111.94, Stop timestamp: 115.09
 Narration: put fork in bowl
@@ -176,8 +176,8 @@ Narration: sit on chair
 ------
 ************
 Frame IDs in sequence: [6770, 6848, 7162, 7218, 7358]
-Objects in sequence: ['bowl', 'fork', 'cereal', 'chair', 'milk']
-Verb-noun pairs in sequence: ['put-in;fork;111.94;115.09', 'pick-up;bowl;112.22999999999999;115.07', 'move;chair;119.15;120.64']
+Objects in sequence: ['fork', 'bowl', 'chair', 'cereal', 'milk']
+Verb-noun pairs in sequence: ['put fork in bowl;111.94;115.09', 'pick up bowl;112.22999999999999;115.07', 'move chair;119.15;120.64']
 ************
 Start timestamp: 130.7, Stop timestamp: 132.19
 Narration: pick up scissors
@@ -196,8 +196,8 @@ Narration: take a slice of bread from packaging
 ------
 ************
 Frame IDs in sequence: [7879, 8264, 8649, 9358, 10068, 10121]
-Objects in sequence: ['salami packaging', 'scissors', 'salami', 'bread packaging', 'bread slice']
-Verb-noun pairs in sequence: ['pick-up;scissors;130.7;132.19', 'cut;packaging:salami;131.68;137.68', 'put-down;salami;144.0;144.57999999999998', 'remove-from;packaging;144.43;161.66']
+Objects in sequence: ['bread packaging', 'scissors', 'bread slice', 'salami', 'salami packaging']
+Verb-noun pairs in sequence: ['pick up scissors;130.7;132.19', 'cut salami packaging with scissors;131.68;137.68', 'put down salami;144.0;144.57999999999998', 'remove salami from packaging;144.43;161.66']
 ************
 Start timestamp: 169.05, Stop timestamp: 171.4
 Narration: put salami on bread
@@ -213,8 +213,8 @@ Narration: put salami on bread
 ------
 ************
 Frame IDs in sequence: [10181, 10256, 10507, 10925, 11202, 11262]
-Objects in sequence: ['salami packaging', 'salami', 'bread packaging', 'bread slice']
-Verb-noun pairs in sequence: ['put-on;salami;169.05;171.4', 'take-from;salami;171.43;185.57', 'take-from;salami;172.23;185.58']
+Objects in sequence: ['bread packaging', 'bread slice', 'salami', 'salami packaging']
+Verb-noun pairs in sequence: ['put salami on bread;169.05;171.4', 'take salami from packaging;171.43;185.57', 'still taking salami from packaging;172.23;185.58']
 ************
 Start timestamp: 191.93, Stop timestamp: 195.89
 Narration: close bread packaging
@@ -227,8 +227,8 @@ Narration: put salami
 ------
 ************
 Frame IDs in sequence: [11587, 11698, 11881, 11974, 12063, 12110]
-Objects in sequence: ['salami packaging', 'salami', 'bread packaging', 'bread']
-Verb-noun pairs in sequence: ['close;packaging:bread;191.93;195.89', 'move;top:bread;197.23;200.56']
+Objects in sequence: ['bread packaging', 'bread', 'salami', 'salami packaging']
+Verb-noun pairs in sequence: ['close bread packaging;191.93;195.89', 'move salami on top of bread;197.23;200.56']
 ************
 Start timestamp: 203.0, Stop timestamp: 204.56
 Narration: open fridge
@@ -241,8 +241,8 @@ Narration: put salami into fridge
 ------
 ************
 Frame IDs in sequence: [12193, 12252, 12331, 12359, 12406, 12484]
-Objects in sequence: ['salami packaging', 'fridge', 'salami', 'bread']
-Verb-noun pairs in sequence: ['open;fridge;203.0;204.56', 'pick-up;salami;205.4;206.32']
+Objects in sequence: ['fridge', 'bread', 'salami', 'salami packaging']
+Verb-noun pairs in sequence: ['open fridge;203.0;204.56', 'pick up salami;205.4;206.32']
 ************
 Start timestamp: 209.01, Stop timestamp: 211.03
 Narration: close fridge

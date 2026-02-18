@@ -10,7 +10,7 @@ Narration: put down tray
 ************
 Frame IDs in sequence: [166, 216, 276, 334, 628, 681]
 Objects in sequence: ['tray', 'drawer']
-Verb-noun pairs in sequence: ['open;drawer;2.61;3.91', 'take;tray;4.09;6.09']
+Verb-noun pairs in sequence: ['open drawer;2.61;3.91', 'take tray;4.09;6.09']
 ************
 Start timestamp: 11.21, Stop timestamp: 12.96
 Narration: close drawer
@@ -30,7 +30,7 @@ Narration: take potatoes
 ************
 Frame IDs in sequence: [917, 1021, 1077, 1274, 1471, 1499]
 Objects in sequence: ['oven temperature', 'sink', 'glove', 'potato', 'strainer']
-Verb-noun pairs in sequence: ['take;glove:oven;14.79;16.04', 'put-down;glove:oven;16.14;18.49', 'turn-on;temperature:oven;17.82;21.18']
+Verb-noun pairs in sequence: ['take oven glove;14.79;16.04', 'put down oven glove;16.14;18.49', 'turn on oven temperature;17.82;21.18']
 ************
 Start timestamp: 25.27, Stop timestamp: 28.31
 Narration: strain potatoes
@@ -43,8 +43,8 @@ Narration: put down strainer
 ------
 ************
 Frame IDs in sequence: [1576, 1640, 1846, 2018, 2172, 2214]
-Objects in sequence: ['sink', 'tray', 'potato', 'strainer']
-Verb-noun pairs in sequence: ['strain;potato;25.27;28.31', 'put-in;potato;29.89;34.87']
+Objects in sequence: ['sink', 'potato', 'tray', 'strainer']
+Verb-noun pairs in sequence: ['strain potatoes;25.27;28.31', 'put potatoes in tray;29.89;34.87']
 ************
 Start timestamp: 39.06, Stop timestamp: 40.8
 Narration: take aubergine and knife
@@ -57,8 +57,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [2371, 2420, 2773, 2859, 2939, 2983]
-Objects in sequence: ['cupboard', 'knife', 'aubergine']
-Verb-noun pairs in sequence: ['take;aubergine;39.06;40.8', 'put-down;aubergine;45.54;48.24']
+Objects in sequence: ['knife', 'cupboard', 'aubergine']
+Verb-noun pairs in sequence: ['take aubergine and knife;39.06;40.8', 'put down aubergine and knife;45.54;48.24']
 ************
 Start timestamp: 50.73, Stop timestamp: 51.74
 Narration: take dish
@@ -74,8 +74,8 @@ Narration: cut courgette
 ------
 ************
 Frame IDs in sequence: [3067, 3345, 3389, 3804, 4220, 4452]
-Objects in sequence: ['plate', 'cupboard', 'chopping board', 'knife', 'vegetable', 'courgette piece', 'courgette']
-Verb-noun pairs in sequence: ['take;dish;50.73;51.74', 'put-down;dish;55.24;56.79', 'move;vegetable;56.78;69.18']
+Objects in sequence: ['chopping board', 'knife', 'courgette piece', 'plate', 'vegetable', 'cupboard', 'courgette']
+Verb-noun pairs in sequence: ['take dish;50.73;51.74', 'put down dish;55.24;56.79', 'move vegetables in dish;56.78;69.18']
 ************
 Start timestamp: 75.24, Stop timestamp: 94.81
 Narration: continue cutting courgette
@@ -94,8 +94,8 @@ Narration: put down courgette
 ------
 ************
 Frame IDs in sequence: [4871, 5487, 5812, 5870, 6549, 6589]
-Objects in sequence: ['chopping board', 'knife', 'courgette piece', 'courgette']
-Verb-noun pairs in sequence: ['cut;courgette;75.24;94.81', 'take;courgette;96.11;98.32', 'drop;piece:courgette;96.41;97.32', 'cut;courgette;97.42;104.9']
+Objects in sequence: ['courgette piece', 'knife', 'chopping board', 'courgette']
+Verb-noun pairs in sequence: ['continue cutting courgette;75.24;94.81', 'take courgette;96.11;98.32', 'dropped courgette piece;96.41;97.32', 'continue cutting courgette;97.42;104.9']
 ************
 Start timestamp: 112.39, Stop timestamp: 138.89
 Narration: cut courgette
@@ -108,8 +108,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [7225, 8066, 8352, 8422, 8586, 8677]
-Objects in sequence: ['chopping board', 'knife', 'courgette piece', 'courgette']
-Verb-noun pairs in sequence: ['cut;courgette;112.39;138.89', 'put-down;knife;139.03;140.82']
+Objects in sequence: ['courgette piece', 'knife', 'chopping board', 'courgette']
+Verb-noun pairs in sequence: ['cut courgette;112.39;138.89', 'put down knife;139.03;140.82']
 ************
 Start timestamp: 153.35, Stop timestamp: 154.37
 Narration: put down chopping board
@@ -122,8 +122,8 @@ Narration: continue cutting aubergine
 ------
 ************
 Frame IDs in sequence: [9227, 9253, 10657, 10889, 11157, 11335]
-Objects in sequence: ['aubergine piece', 'plate', 'chopping board', 'knife', 'vegetable', 'aubergine']
-Verb-noun pairs in sequence: ['put-down;board:chopping;153.35;154.37', 'cut;aubergine;175.5;183.87']
+Objects in sequence: ['chopping board', 'knife', 'vegetable', 'plate', 'aubergine piece', 'aubergine']
+Verb-noun pairs in sequence: ['put down chopping board;153.35;154.37', 'cut aubergine;175.5;183.87']
 ************
 Start timestamp: 185.51, Stop timestamp: 204.94
 Narration: continue cutting aubergine
@@ -142,8 +142,8 @@ Narration: continue cutting aubergine
 ------
 ************
 Frame IDs in sequence: [11538, 11589, 11616, 12117, 12619, 13337]
-Objects in sequence: ['aubergine piece', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['take;aubergine;192.05;193.43', 'put-down;aubergine;193.54;194.12']
+Objects in sequence: ['chopping board', 'knife', 'aubergine piece']
+Verb-noun pairs in sequence: ['take aubergine;192.05;193.43', 'put down aubergine;193.54;194.12']
 ************
 Start timestamp: 229.37, Stop timestamp: 230.79
 Narration: put down knife
@@ -162,8 +162,8 @@ Narration: take spring onions
 ------
 ************
 Frame IDs in sequence: [13868, 13894, 14208, 14238, 14460, 14498]
-Objects in sequence: ['spring onion', 'aubergine piece', 'chopping board', 'knife', 'plate']
-Verb-noun pairs in sequence: ['take;board:chopping;230.94;232.02', 'put-in;aubergine;236.81;237.32999999999998', 'put-down;board:chopping;237.1;238.84']
+Objects in sequence: ['aubergine piece', 'chopping board', 'knife', 'plate', 'spring onion']
+Verb-noun pairs in sequence: ['take chopping board;230.94;232.02', 'put aubergine in tray;236.81;237.32999999999998', 'put down chopping board;237.1;238.84']
 ************
 Start timestamp: 242.63, Stop timestamp: 243.6
 Narration: put down spring onions
@@ -179,8 +179,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [14569, 14605, 14919, 15249, 15611, 15974]
-Objects in sequence: ['spring onion', 'chopping board', 'knife', 'spring onion piece']
-Verb-noun pairs in sequence: ['put-down;onion:spring;242.63;243.6', 'chop;onion:spring;246.71;257.74', 'chop;onion:spring;253.75;265.71']
+Objects in sequence: ['chopping board', 'knife', 'spring onion piece', 'spring onion']
+Verb-noun pairs in sequence: ['put down spring onions;242.63;243.6', 'chop spring onions;246.71;257.74', 'continue chopping spring onions;253.75;265.71']
 ************
 Start timestamp: 268.42, Stop timestamp: 270.96
 Narration: put spring onions in tray
@@ -193,8 +193,8 @@ Narration: chop onion
 ------
 ************
 Frame IDs in sequence: [16136, 16210, 16374, 16708, 17043, 17451]
-Objects in sequence: ['tray', 'chopping board', 'onion', 'knife', 'spring onion piece', 'vegetable']
-Verb-noun pairs in sequence: ['put-in;onion:spring;268.42;270.96', 'put-down;board:chopping;272.59000000000003;273.34000000000003']
+Objects in sequence: ['chopping board', 'knife', 'vegetable', 'spring onion piece', 'tray', 'onion']
+Verb-noun pairs in sequence: ['put spring onions in tray;268.42;270.96', 'put down chopping board;272.59000000000003;273.34000000000003']
 ************
 Start timestamp: 336.03, Stop timestamp: 340.61
 Narration: continue chopping onion
@@ -207,8 +207,8 @@ Narration: continue chopping onion
 ------
 ************
 Frame IDs in sequence: [20218, 20384, 20819, 20865, 22370, 24897]
-Objects in sequence: ['pepper', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['chop;onion;336.03;340.61', 'chop;onion;346.83;348.06']
+Objects in sequence: ['chopping board', 'knife', 'pepper']
+Verb-noun pairs in sequence: ['continue chopping onion;336.03;340.61', 'continue chopping onion;346.83;348.06']
 ************
 Start timestamp: 425.63, Stop timestamp: 426.4
 Narration: continue chopping pepper
@@ -242,8 +242,8 @@ Narration: put onion in tray
 ------
 ************
 Frame IDs in sequence: [25886, 25928, 25970, 26065, 26160, 26244]
-Objects in sequence: ['pepper', 'tray', 'chopping board', 'knife', 'vegetable']
-Verb-noun pairs in sequence: ['put-down;knife;431.33;432.42', 'put-down;knife;432.34;432.93', 'take;board:chopping;432.67;433.41', 'take;board:chopping;433.03;435.77']
+Objects in sequence: ['chopping board', 'knife', 'vegetable', 'pepper', 'tray']
+Verb-noun pairs in sequence: ['put down knife;431.33;432.42', 'put down knife;432.34;432.93', 'take chopping board;432.67;433.41', 'take chopping board;433.03;435.77']
 ************
 Start timestamp: 435.57, Stop timestamp: 437.05
 Narration: put pepper in tray
@@ -266,7 +266,7 @@ Narration: put down pepper
 ************
 Frame IDs in sequence: [26437, 26459, 26482, 26504, 26526, 26555]
 Objects in sequence: ['chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['put-down;board:chopping;440.4;440.97', 'put-down;board:chopping;440.66;441.36', 'take;carrot;440.96;441.66', 'take;pepper;441.1;441.71']
+Verb-noun pairs in sequence: ['put down chopping board;440.4;440.97', 'put down chopping board;440.66;441.36', 'take carrot;440.96;441.66', 'take pepper;441.1;441.71']
 ************
 Start timestamp: 442.72, Stop timestamp: 443.72
 Narration: chop pepper
@@ -283,7 +283,7 @@ Narration: continue cutting carrot
 ************
 Frame IDs in sequence: [26573, 26619, 29327, 29399, 29606, 29662]
 Objects in sequence: ['chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['chop;pepper;442.72;443.72', 'put-down;carrot;488.5;490.09', 'cut;carrot;489.72;491.44']
+Verb-noun pairs in sequence: ['chop pepper;442.72;443.72', 'put down carrot;488.5;490.09', 'cut carrot;489.72;491.44']
 ************
 Start timestamp: 494.62, Stop timestamp: 497.87
 Narration: continue cutting carrot
@@ -297,7 +297,7 @@ Narration: continue cutting carrot
 ************
 Frame IDs in sequence: [29716, 29812, 30042, 30078, 30338, 30458]
 Objects in sequence: ['chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['cut;carrot;494.62;497.87', 'cut;carrot;500.39;501.73']
+Verb-noun pairs in sequence: ['continue cutting carrot;494.62;497.87', 'continue cutting carrot;500.39;501.73']
 ************
 Start timestamp: 509.42, Stop timestamp: 510.42
 Narration: put down knife
@@ -313,6 +313,6 @@ Narration: put down chopping board
 ------
 ************
 Frame IDs in sequence: [30645, 30721, 30797, 30855, 30909, 30963]
-Objects in sequence: ['tray', 'chopping board', 'knife', 'vegetable', 'carrot']
-Verb-noun pairs in sequence: ['take;board:chopping;510.46;511.33', 'put-in;carrot;512.37;514.82']
+Objects in sequence: ['chopping board', 'knife', 'vegetable', 'carrot', 'tray']
+Verb-noun pairs in sequence: ['take chopping board;510.46;511.33', 'put carrot in tray;512.37;514.82']
 ************

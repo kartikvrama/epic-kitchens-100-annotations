@@ -12,8 +12,8 @@ Narration: wash cup
 ------
 ************
 Frame IDs in sequence: [255, 301, 530, 567, 730, 926]
-Objects in sequence: ['sink', 'sponge', 'tap', 'dishwashing liquid', 'cup']
-Verb-noun pairs in sequence: ['take;sponge;4.94;6.3', 'put;liquid:dishwashing;5.02;9.32', 'damp;sponge;10.58;11.67']
+Objects in sequence: ['dishwashing liquid', 'sink', 'sponge', 'cup', 'tap']
+Verb-noun pairs in sequence: ['take sponge;4.94;6.3', 'put dishwashing liquid on sponge;5.02;9.32', 'damp sponge;10.58;11.67']
 ************
 Start timestamp: 19.92, Stop timestamp: 20.96
 Narration: put sponge
@@ -26,8 +26,8 @@ Narration: turn off tap
 ------
 ************
 Frame IDs in sequence: [1001, 1026, 1251, 1451, 1621, 1659]
-Objects in sequence: ['sink', 'sponge', 'tap', 'dishwashing liquid', 'cup', 'water']
-Verb-noun pairs in sequence: ['put;sponge;19.92;20.96', 'rinse;cup;22.47;32.27']
+Objects in sequence: ['dishwashing liquid', 'sink', 'sponge', 'water', 'cup', 'tap']
+Verb-noun pairs in sequence: ['put sponge;19.92;20.96', 'rinse cup;22.47;32.27']
 ************
 Start timestamp: 33.39, Stop timestamp: 35.61
 Narration: put cup
@@ -40,8 +40,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [1701, 1751, 1911, 1965, 2109]
-Objects in sequence: ['towel', 'sink', 'tap', 'cup', 'chopping board', 'drainer']
-Verb-noun pairs in sequence: ['put;cup;33.39;35.61', 'wipe;hand;37.71;39.82']
+Objects in sequence: ['chopping board', 'sink', 'drainer', 'towel', 'cup', 'tap']
+Verb-noun pairs in sequence: ['put cup;33.39;35.61', 'wipe hands;37.71;39.82']
 ************
 Start timestamp: 44.34, Stop timestamp: 45.09
 Narration: put chopping board
@@ -55,7 +55,7 @@ Narration: take garlic
 ************
 Frame IDs in sequence: [2234, 2261, 2288, 2342, 2384, 2426]
 Objects in sequence: ['cupboard', 'chopping board']
-Verb-noun pairs in sequence: ['put;board:chopping;44.34;45.09', 'open;cupboard;46.68;47.22']
+Verb-noun pairs in sequence: ['put chopping board;44.34;45.09', 'open cupboard;46.68;47.22']
 ************
 Start timestamp: 54.14, Stop timestamp: 57.47
 Narration: put garlic
@@ -68,8 +68,8 @@ Narration: put onion
 ------
 ************
 Frame IDs in sequence: [2726, 2851, 3013, 3117, 3344, 3571]
-Objects in sequence: ['garlic', 'cupboard', 'chopping board', 'onion', 'tupperware']
-Verb-noun pairs in sequence: ['put;garlic;54.14;57.47', 'take;onion;59.44;62.89']
+Objects in sequence: ['chopping board', 'cupboard', 'garlic', 'tupperware', 'onion']
+Verb-noun pairs in sequence: ['put garlic;54.14;57.47', 'take onion;59.44;62.89']
 ************
 Start timestamp: 73.92, Stop timestamp: 75.01
 Narration: open cupboard
@@ -83,7 +83,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [3701, 3730, 3796, 3842, 3959, 4076]
 Objects in sequence: ['cupboard', 'pot']
-Verb-noun pairs in sequence: ['open;cupboard;73.92;75.01', 'take;pot;75.19;77.71000000000001']
+Verb-noun pairs in sequence: ['open cupboard;73.92;75.01', 'take pot;75.19;77.71000000000001']
 ************
 Start timestamp: 82.53999999999999, Stop timestamp: 84.41
 Narration: put pot
@@ -96,8 +96,8 @@ Narration: take carrots
 ------
 ************
 Frame IDs in sequence: [4151, 4201, 4380, 4417, 4659, 4859]
-Objects in sequence: ['fridge', 'hob/cooktop/stovetop', 'pot']
-Verb-noun pairs in sequence: ['put;pot;82.53999999999999;84.41', 'open;fridge;87.2;88.77']
+Objects in sequence: ['hob/cooktop/stovetop', 'fridge', 'pot']
+Verb-noun pairs in sequence: ['put pot;82.53999999999999;84.41', 'open fridge;87.2;88.77']
 ************
 Start timestamp: 100.49000000000001, Stop timestamp: 108.44
 Narration: take carrots out of package
@@ -110,8 +110,8 @@ Narration: put carrots
 ------
 ************
 Frame IDs in sequence: [5126, 5238, 5351, 5436, 5521, 5680]
-Objects in sequence: ['package', 'garlic', 'fridge', 'chopping board', 'onion', 'carrot']
-Verb-noun pairs in sequence: ['take-out;carrot;100.49000000000001;108.44', 'put;carrot;110.03;111.21000000000001']
+Objects in sequence: ['chopping board', 'garlic', 'fridge', 'carrot', 'package', 'onion']
+Verb-noun pairs in sequence: ['take carrots out of package;100.49000000000001;108.44', 'put carrots;110.03;111.21000000000001']
 ************
 Start timestamp: 114.63, Stop timestamp: 115.92
 Narration: close fridge
@@ -127,8 +127,8 @@ Narration: take tupperware
 ------
 ************
 Frame IDs in sequence: [5755, 5783, 5812, 5869, 5907, 5946]
-Objects in sequence: ['drawer', 'fridge', 'tupperware']
-Verb-noun pairs in sequence: ['close;fridge;114.63;115.92', 'open;freezer;115.91;116.84', 'open;drawer;116.88;117.99000000000001']
+Objects in sequence: ['tupperware', 'fridge', 'drawer']
+Verb-noun pairs in sequence: ['close fridge;114.63;115.92', 'open freezer;115.91;116.84', 'open drawer;116.88;117.99000000000001']
 ************
 Start timestamp: 119.47999999999999, Stop timestamp: 120.07
 Narration: close drawer
@@ -144,8 +144,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [6026, 6080, 6128, 6176, 6201, 6246]
-Objects in sequence: ['fridge', 'cupboard', 'tupperware']
-Verb-noun pairs in sequence: ['close;drawer;119.47999999999999;120.07', 'close;freezer;119.88;122.19', 'put;tupperware;123.31;124.12']
+Objects in sequence: ['cupboard', 'tupperware', 'fridge']
+Verb-noun pairs in sequence: ['close drawer;119.47999999999999;120.07', 'close freezer;119.88;122.19', 'put tupperware;123.31;124.12']
 ************
 Start timestamp: 127.69, Stop timestamp: 129.17
 Narration: take potatoes
@@ -158,8 +158,8 @@ Narration: throw away plastic package
 ------
 ************
 Frame IDs in sequence: [6387, 6438, 6530, 6591, 6653, 6776]
-Objects in sequence: ['cupboard', 'bread package', 'bin', 'plastic package']
-Verb-noun pairs in sequence: ['take;potato;127.69;129.17', 'close;cupboard;130.26;131.31']
+Objects in sequence: ['bread package', 'cupboard', 'bin', 'plastic package']
+Verb-noun pairs in sequence: ['take potatoes;127.69;129.17', 'close cupboard;130.26;131.31']
 ************
 Start timestamp: 139.07, Stop timestamp: 140.15
 Narration: put potato
@@ -172,8 +172,8 @@ Narration: take peeler
 ------
 ************
 Frame IDs in sequence: [6971, 6997, 7023, 7049, 7076, 7126]
-Objects in sequence: ['drawer', 'garlic', 'peeler', 'potato', 'onion', 'chopping board', 'carrot']
-Verb-noun pairs in sequence: ['put;potato;139.07;140.15', 'open;drawer;141.02;142.05']
+Objects in sequence: ['peeler', 'chopping board', 'potato', 'garlic', 'carrot', 'drawer', 'onion']
+Verb-noun pairs in sequence: ['put potato;139.07;140.15', 'open drawer;141.02;142.05']
 ************
 Start timestamp: 150.51, Stop timestamp: 151.27
 Narration: put peeler
@@ -186,8 +186,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [7526, 7563, 7657, 7751, 7776, 7813]
-Objects in sequence: ['drawer', 'peeler', 'knife']
-Verb-noun pairs in sequence: ['put;peeler;150.51;151.27', 'close;drawer;154.87;155.94']
+Objects in sequence: ['peeler', 'knife', 'drawer']
+Verb-noun pairs in sequence: ['put peeler;150.51;151.27', 'close drawer;154.87;155.94']
 ************
 Start timestamp: 156.09, Stop timestamp: 156.59
 Narration: open drawer
@@ -203,8 +203,8 @@ Narration: take peeler
 ------
 ************
 Frame IDs in sequence: [8101, 8150, 8213, 8248, 8309, 8377]
-Objects in sequence: ['drawer', 'garlic', 'peeler', 'potato', 'chopping board', 'knife', 'onion', 'carrot']
-Verb-noun pairs in sequence: ['close;drawer;161.68;163.2', 'put;knife;163.67000000000002;165.64']
+Objects in sequence: ['peeler', 'chopping board', 'knife', 'potato', 'onion', 'carrot', 'drawer', 'garlic']
+Verb-noun pairs in sequence: ['close drawer;161.68;163.2', 'put knife;163.67000000000002;165.64']
 ************
 Start timestamp: 168.2, Stop timestamp: 168.7
 Narration: take potato
@@ -220,8 +220,8 @@ Narration: peel potato
 ------
 ************
 Frame IDs in sequence: [8425, 8684, 9221, 9701, 10017, 10334]
-Objects in sequence: ['potato peel', 'peeler', 'potato']
-Verb-noun pairs in sequence: ['take;potato;168.2;168.7', 'peel;potato;170.07;189.03', 'peel;potato;186.15;202.23']
+Objects in sequence: ['peeler', 'potato', 'potato peel']
+Verb-noun pairs in sequence: ['take potato;168.2;168.7', 'peel potato;170.07;189.03', 'peel potato;186.15;202.23']
 ************
 Start timestamp: 212.85, Stop timestamp: 214.05
 Narration: put potato
@@ -237,8 +237,8 @@ Narration: peel carrot
 ------
 ************
 Frame IDs in sequence: [10663, 10692, 10719, 10763, 11184, 11521]
-Objects in sequence: ['potato peel', 'garlic', 'peeler', 'chopping board', 'potato', 'onion', 'carrot peel', 'carrot']
-Verb-noun pairs in sequence: ['put;potato;212.85;214.05', 'take;carrot;214.12;215.48', 'peel;carrot;215.22;217.77']
+Objects in sequence: ['peeler', 'chopping board', 'potato', 'onion', 'potato peel', 'carrot', 'carrot peel', 'garlic']
+Verb-noun pairs in sequence: ['put potato;212.85;214.05', 'take carrot;214.12;215.48', 'peel carrot;215.22;217.77']
 ************
 Start timestamp: 234.44, Stop timestamp: 235.29
 Narration: put carrot
@@ -260,8 +260,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [11876, 12125, 12442, 12759, 12796, 12919]
-Objects in sequence: ['potato peel', 'sink', 'carrot', 'garlic', 'tap', 'peeler', 'potato', 'onion', 'carrot peel']
-Verb-noun pairs in sequence: ['peel;carrot;236.2;244.14', 'peel;carrot;244.1;254.72', 'put;carrot;254.82;256.04']
+Objects in sequence: ['peeler', 'sink', 'potato peel', 'potato', 'garlic', 'carrot', 'carrot peel', 'onion', 'tap']
+Verb-noun pairs in sequence: ['peel carrot;236.2;244.14', 'peel carrot;244.1;254.72', 'put carrot;254.82;256.04']
 ************
 Start timestamp: 259.38, Stop timestamp: 261.57
 Narration: rinse peeler
@@ -274,8 +274,8 @@ Narration: wash peeler
 ------
 ************
 Frame IDs in sequence: [13001, 13051, 13096, 13121, 13201, 13284]
-Objects in sequence: ['sink', 'sponge', 'tap', 'peeler', 'water']
-Verb-noun pairs in sequence: ['rinse;peeler;259.38;261.57', 'take;sponge;261.59;262.49']
+Objects in sequence: ['peeler', 'sink', 'sponge', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse peeler;259.38;261.57', 'take sponge;261.59;262.49']
 ************
 Start timestamp: 266.1, Stop timestamp: 266.77
 Narration: put sponge
@@ -294,8 +294,8 @@ Narration: take rubbish
 ------
 ************
 Frame IDs in sequence: [13376, 13476, 13551, 13588, 13726, 13871]
-Objects in sequence: ['sink', 'sponge', 'tap', 'peel', 'peeler', 'water']
-Verb-noun pairs in sequence: ['rinse;peeler;266.87;270.58', 'turn-off;tap;270.14;271.63', 'put;peeler;270.76;272.18']
+Objects in sequence: ['peeler', 'sink', 'peel', 'sponge', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse peeler;266.87;270.58', 'turn off tap;270.14;271.63', 'put peeler;270.76;272.18']
 ************
 Start timestamp: 284.24, Stop timestamp: 288.13
 Narration: throw rubbish
@@ -308,8 +308,8 @@ Narration: wipe counter
 ------
 ************
 Frame IDs in sequence: [14259, 14333, 14571, 14700, 14800]
-Objects in sequence: ['sponge', 'peel', 'bin']
-Verb-noun pairs in sequence: ['throw;rubbish;284.24;288.13', 'take;sponge;290.9;292.01']
+Objects in sequence: ['peel', 'sponge', 'bin']
+Verb-noun pairs in sequence: ['throw rubbish;284.24;288.13', 'take sponge;290.9;292.01']
 ************
 Start timestamp: 297.12, Stop timestamp: 298.22
 Narration: put sponge
@@ -322,8 +322,8 @@ Narration: clean carrot
 ------
 ************
 Frame IDs in sequence: [14880, 14909, 15076, 15117, 15176, 15301]
-Objects in sequence: ['sponge', 'garlic', 'chopping board', 'onion', 'knife', 'potato', 'carrot']
-Verb-noun pairs in sequence: ['put;sponge;297.12;298.22', 'take;knife;301.3;302.47']
+Objects in sequence: ['chopping board', 'knife', 'sponge', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['put sponge;297.12;298.22', 'take knife;301.3;302.47']
 ************
 Start timestamp: 306.71, Stop timestamp: 310.83
 Narration: clean carrot
@@ -339,8 +339,8 @@ Narration: put knife
 ------
 ************
 Frame IDs in sequence: [15376, 15488, 15688, 15726, 15938, 15976]
-Objects in sequence: ['garlic', 'chopping board', 'potato', 'knife', 'onion', 'rubbish peel', 'carrot']
-Verb-noun pairs in sequence: ['clean;carrot;306.71;310.83', 'take;rubbish;310.8;313.12', 'put;rubbish;313.54;314.92']
+Objects in sequence: ['rubbish peel', 'chopping board', 'knife', 'potato', 'onion', 'carrot', 'garlic']
+Verb-noun pairs in sequence: ['clean carrot;306.71;310.83', 'take rubbish;310.8;313.12', 'put rubbish;313.54;314.92']
 ************
 Start timestamp: 319.8, Stop timestamp: 330.02
 Narration: peel garlic
@@ -356,8 +356,8 @@ Narration: put garlic
 ------
 ************
 Frame IDs in sequence: [16575, 16776, 17076, 17376, 17851, 18176]
-Objects in sequence: ['garlic', 'chopping board', 'potato', 'knife', 'onion', 'rubbish peel', 'carrot']
-Verb-noun pairs in sequence: ['peel;garlic;330.12;337.36', 'peel;garlic;342.35;360.1']
+Objects in sequence: ['rubbish peel', 'chopping board', 'knife', 'potato', 'onion', 'carrot', 'garlic']
+Verb-noun pairs in sequence: ['peel garlic;330.12;337.36', 'peel garlic;342.35;360.1']
 ************
 Start timestamp: 364.03, Stop timestamp: 369.35
 Narration: cut garlic
@@ -376,8 +376,8 @@ Narration: peel onion
 ------
 ************
 Frame IDs in sequence: [18884, 19501, 19821, 19971, 20426, 21151]
-Objects in sequence: ['garlic', 'chopping board', 'onion', 'knife', 'potato', 'rubbish peel', 'carrot']
-Verb-noun pairs in sequence: ['clean;onion;373.59;394.34000000000003', 'peel;onion;394.45;400.95', 'peel;onion;398.5;404.62']
+Objects in sequence: ['rubbish peel', 'chopping board', 'knife', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['clean onion;373.59;394.34000000000003', 'peel onion;394.45;400.95', 'peel onion;398.5;404.62']
 ************
 Start timestamp: 429.49, Stop timestamp: 432.25
 Narration: put onion
@@ -390,8 +390,8 @@ Narration: throw rubbish
 ------
 ************
 Frame IDs in sequence: [21501, 21588, 21726, 21930, 22313, 22446]
-Objects in sequence: ['onion', 'bin', 'rubbish peel']
-Verb-noun pairs in sequence: ['put;onion;429.49;432.25', 'take;rubbish;433.04;439.75']
+Objects in sequence: ['rubbish peel', 'bin', 'onion']
+Verb-noun pairs in sequence: ['put onion;429.49;432.25', 'take rubbish;433.04;439.75']
 ************
 Start timestamp: 454.53, Stop timestamp: 455.45
 Narration: take sponge
@@ -405,7 +405,7 @@ Narration: put sponge
 ************
 Frame IDs in sequence: [22730, 22792, 22855, 22969, 23035, 23101]
 Objects in sequence: ['sink', 'sponge']
-Verb-noun pairs in sequence: ['take;sponge;454.53;455.45', 'wipe;counter;456.48;460.5']
+Verb-noun pairs in sequence: ['take sponge;454.53;455.45', 'wipe counter;456.48;460.5']
 ************
 Start timestamp: 462.56, Stop timestamp: 464.09000000000003
 Narration: take rubbish from sink
@@ -418,8 +418,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [23151, 23176, 23476, 23771, 25046, 25076]
-Objects in sequence: ['sink', 'sponge', 'tap', 'bin', 'sink plug', 'water']
-Verb-noun pairs in sequence: ['take-from;rubbish;462.56;464.09000000000003', 'throw;rubbish;467.47;477.98']
+Objects in sequence: ['sink', 'sponge', 'bin', 'sink plug', 'water', 'tap']
+Verb-noun pairs in sequence: ['take rubbish from sink;462.56;464.09000000000003', 'throw rubbish;467.47;477.98']
 ************
 Start timestamp: 501.48, Stop timestamp: 522.1
 Narration: wash hands
@@ -435,8 +435,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [26101, 26142, 26317, 26396, 26538, 26576]
-Objects in sequence: ['towel', 'sink', 'tap', 'cupboard']
-Verb-noun pairs in sequence: ['turn-off;tap;521.83;523.14', 'wipe;hand;525.79;528.75']
+Objects in sequence: ['sink', 'cupboard', 'towel', 'tap']
+Verb-noun pairs in sequence: ['turn off tap;521.83;523.14', 'wipe hands;525.79;528.75']
 ************
 Start timestamp: 531.9, Stop timestamp: 536.75
 Narration: take plate
@@ -452,8 +452,8 @@ Narration: put carrot in plate
 ------
 ************
 Frame IDs in sequence: [26863, 26967, 27676, 28409, 29021, 29184]
-Objects in sequence: ['carrot', 'garlic', 'cupboard', 'chopping board', 'onion', 'knife', 'potato', 'plate']
-Verb-noun pairs in sequence: ['put;plate;536.79;540.27', 'chop;carrot;541.27;577.37']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'cupboard', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['put plate;536.79;540.27', 'chop carrot;541.27;577.37']
 ************
 Start timestamp: 586.29, Stop timestamp: 594.76
 Narration: chop carrot
@@ -466,8 +466,8 @@ Narration: take carrot
 ------
 ************
 Frame IDs in sequence: [29392, 29626, 31001, 31101, 31213, 31251]
-Objects in sequence: ['carrot', 'garlic', 'chopping board', 'onion', 'knife', 'potato', 'plate']
-Verb-noun pairs in sequence: ['chop;carrot;586.29;594.76', 'put-in;carrot;619.0;622.86']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['chop carrot;586.29;594.76', 'put carrot in plate;619.0;622.86']
 ************
 Start timestamp: 625.28, Stop timestamp: 626.52
 Narration: put carrot in plate
@@ -486,8 +486,8 @@ Narration: put potato in plate
 ------
 ************
 Frame IDs in sequence: [31551, 32188, 33101, 33176, 33476, 33726]
-Objects in sequence: ['carrot', 'garlic', 'chopping board', 'potato', 'knife', 'onion', 'plate']
-Verb-noun pairs in sequence: ['cut;potato;626.98;650.47', 'cut;potato;632.91;653.32', 'cut;potato;660.58;664.58']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'potato', 'onion', 'carrot', 'garlic']
+Verb-noun pairs in sequence: ['cut potato;626.98;650.47', 'cut potato;632.91;653.32', 'cut potato;660.58;664.58']
 ************
 Start timestamp: 668.07, Stop timestamp: 668.83
 Narration: cut potato
@@ -509,8 +509,8 @@ Narration: chop onion
 ------
 ************
 Frame IDs in sequence: [34284, 34626, 35201, 35451, 36105, 36263]
-Objects in sequence: ['garlic', 'plate', 'chopping board', 'onion', 'potato', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['cut;potato;681.64;694.95', 'put-in;potato;694.78;702.38', 'chop;onion;702.08;711.85', 'chop;onion;704.36;718.96']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['cut potato;681.64;694.95', 'put potato in plate;694.78;702.38', 'chop onion;702.08;711.85', 'chop onion;704.36;718.96']
 ************
 Start timestamp: 730.18, Stop timestamp: 739.8
 Narration: chop onion
@@ -523,8 +523,8 @@ Narration: put onion in plate
 ------
 ************
 Frame IDs in sequence: [36596, 36863, 37101, 37284, 37826, 37901]
-Objects in sequence: ['carrot', 'garlic', 'chopping board', 'onion', 'knife', 'potato', 'plate']
-Verb-noun pairs in sequence: ['chop;onion;730.18;739.8', 'chop;onion;740.29;748.22']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'potato', 'garlic', 'carrot', 'onion']
+Verb-noun pairs in sequence: ['chop onion;730.18;739.8', 'chop onion;740.29;748.22']
 ************
 Start timestamp: 761.51, Stop timestamp: 768.83
 Narration: put onion in plate
@@ -537,8 +537,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [38201, 38334, 38511, 38688, 38751, 38984]
-Objects in sequence: ['garlic', 'cupboard', 'potato', 'onion', 'chopping board', 'plate']
-Verb-noun pairs in sequence: ['put-in;onion;761.51;768.83', 'take;plate;773.4;775.53']
+Objects in sequence: ['chopping board', 'plate', 'cupboard', 'onion', 'potato', 'garlic']
+Verb-noun pairs in sequence: ['put onion in plate;761.51;768.83', 'take plate;773.4;775.53']
 ************
 Start timestamp: 780.62, Stop timestamp: 781.68
 Narration: take oil
@@ -552,7 +552,7 @@ Narration: take pepper
 ************
 Frame IDs in sequence: [39048, 39137, 39226, 39297, 39369, 39396]
 Objects in sequence: ['cupboard', 'oil bottle']
-Verb-noun pairs in sequence: ['take;oil;780.62;781.68', 'put;oil;784.29;785.11']
+Verb-noun pairs in sequence: ['take oil;780.62;781.68', 'put oil;784.29;785.11']
 ************
 Start timestamp: 788.71, Stop timestamp: 789.29
 Narration: put pepper
@@ -565,8 +565,8 @@ Narration: put paprika
 ------
 ************
 Frame IDs in sequence: [39434, 39463, 39513, 39565, 39595, 39626]
-Objects in sequence: ['pepper', 'cupboard', 'paprika']
-Verb-noun pairs in sequence: ['put;pepper;788.71;789.29', 'take;paprika;789.67;792.04']
+Objects in sequence: ['cupboard', 'paprika', 'pepper']
+Verb-noun pairs in sequence: ['put pepper;788.71;789.29', 'take paprika;789.67;792.04']
 ************
 Start timestamp: 797.86, Stop timestamp: 798.66
 Narration: take salt
@@ -579,8 +579,8 @@ Narration: take chopped tomatoes tin
 ------
 ************
 Frame IDs in sequence: [39909, 39950, 39992, 40021, 40051, 40109]
-Objects in sequence: ['salt', 'cupboard', 'chopping board']
-Verb-noun pairs in sequence: ['take;salt;797.86;798.66', 'put;salt;799.54;800.1']
+Objects in sequence: ['chopping board', 'cupboard', 'salt']
+Verb-noun pairs in sequence: ['take salt;797.86;798.66', 'put salt;799.54;800.1']
 ************
 Start timestamp: 803.82, Stop timestamp: 805.7
 Narration: put chopped tomatoes tin
@@ -596,8 +596,8 @@ Narration: take oil
 ------
 ************
 Frame IDs in sequence: [40213, 40250, 40475, 40638]
-Objects in sequence: ['salt', 'pepper', 'paprika', 'chopped tomato tin', 'oil']
-Verb-noun pairs in sequence: ['put;tin:chopped:tomato;803.82;805.7', 'take;container;805.61;807.99', 'put;container;809.08;810.08']
+Objects in sequence: ['pepper', 'chopped tomato tin', 'salt', 'paprika', 'oil']
+Verb-noun pairs in sequence: ['put chopped tomatoes tin;803.82;805.7', 'take stuff;805.61;807.99', 'put stuff;809.08;810.08']
 ************
 Start timestamp: 813.35, Stop timestamp: 815.95
 Narration: put oil
@@ -610,8 +610,8 @@ Narration: throw away plastic
 ------
 ************
 Frame IDs in sequence: [40696, 40775, 40976, 41201, 41352, 41503]
-Objects in sequence: ['oil bottle', 'pepper', 'paprika', 'bin', 'plastic']
-Verb-noun pairs in sequence: ['put;oil;813.35;815.95', 'open;package:paprika;817.62;827.12']
+Objects in sequence: ['plastic', 'bin', 'oil bottle', 'pepper', 'paprika']
+Verb-noun pairs in sequence: ['put oil;813.35;815.95', 'open paprika package;817.62;827.12']
 ************
 Start timestamp: 832.26, Stop timestamp: 839.44
 Narration: open oil
@@ -624,8 +624,8 @@ Narration: open freezer
 ------
 ************
 Frame IDs in sequence: [41676, 41851, 42013, 42176, 42276, 42321]
-Objects in sequence: ['oil bottle', 'fridge', 'bin']
-Verb-noun pairs in sequence: ['open;oil;832.26;839.44', 'throw;plastic;843.63;844.03']
+Objects in sequence: ['bin', 'fridge', 'oil bottle']
+Verb-noun pairs in sequence: ['open oil;832.26;839.44', 'throw away plastic;843.63;844.03']
 ************
 Start timestamp: 846.61, Stop timestamp: 848.47
 Narration: open drawer
@@ -641,8 +641,8 @@ Narration: close freezer
 ------
 ************
 Frame IDs in sequence: [42351, 42401, 42463, 42545, 42632, 42667]
-Objects in sequence: ['green bean package', 'drawer', 'fridge']
-Verb-noun pairs in sequence: ['open;drawer;846.61;848.47', 'take;bean:green;848.57;851.82', 'close;drawer;851.51;852.14']
+Objects in sequence: ['green bean package', 'fridge', 'drawer']
+Verb-noun pairs in sequence: ['open drawer;846.61;848.47', 'take green beans;848.57;851.82', 'close drawer;851.51;852.14']
 ************
 Start timestamp: 854.68, Stop timestamp: 855.44
 Narration: put green beans
@@ -655,8 +655,8 @@ Narration: pour oil in pot
 ------
 ************
 Frame IDs in sequence: [42738, 43159, 43259, 43526, 43851]
-Objects in sequence: ['oil bottle', 'green bean package', 'hob/cooktop/stovetop', 'pot', 'oil']
-Verb-noun pairs in sequence: ['put;bean:green;854.68;855.44', 'open;oil;862.5;865.83']
+Objects in sequence: ['green bean package', 'pot', 'oil bottle', 'hob/cooktop/stovetop', 'oil']
+Verb-noun pairs in sequence: ['put green beans;854.68;855.44', 'open oil;862.5;865.83']
 ************
 Start timestamp: 882.23, Stop timestamp: 883.53
 Narration: throw oil bottle
@@ -669,8 +669,8 @@ Narration: pour oil in pot
 ------
 ************
 Frame IDs in sequence: [44117, 44163, 44263, 44317, 44426, 44476]
-Objects in sequence: ['oil bottle', 'rubbish bin', 'hob/cooktop/stovetop', 'pot', 'oil']
-Verb-noun pairs in sequence: ['throw;bottle:oil;882.23;883.53', 'open;oil;884.98;886.87']
+Objects in sequence: ['rubbish bin', 'hob/cooktop/stovetop', 'pot', 'oil bottle', 'oil']
+Verb-noun pairs in sequence: ['throw oil bottle;882.23;883.53', 'open oil;884.98;886.87']
 ************
 Start timestamp: 891.13, Stop timestamp: 892.35
 Narration: close oil
@@ -683,8 +683,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [44575, 44607, 44688, 44751, 44884, 45017]
-Objects in sequence: ['oil bottle', 'switch', 'drawer', 'hob/cooktop/stovetop', 'pot', 'oil']
-Verb-noun pairs in sequence: ['close;oil;891.13;892.35', 'turn-on;hob;893.11;895.87']
+Objects in sequence: ['switch', 'oil bottle', 'pot', 'drawer', 'hob/cooktop/stovetop', 'oil']
+Verb-noun pairs in sequence: ['close oil;891.13;892.35', 'turn on hob;893.11;895.87']
 ************
 Start timestamp: 901.35, Stop timestamp: 901.77
 Narration: take spatula
@@ -697,8 +697,8 @@ Narration: take tupperware
 ------
 ************
 Frame IDs in sequence: [45063, 45092, 45184, 45282, 45380, 45426]
-Objects in sequence: ['spatula', 'drawer', 'knife', 'tupperware']
-Verb-noun pairs in sequence: ['take;spatula;901.35;901.77', 'put;spatula;903.25;904.22']
+Objects in sequence: ['knife', 'tupperware', 'spatula', 'drawer']
+Verb-noun pairs in sequence: ['take spatula;901.35;901.77', 'put spatula;903.25;904.22']
 ************
 Start timestamp: 909.17, Stop timestamp: 909.9
 Narration: put tupperware
@@ -711,8 +711,8 @@ Narration: check oil temperature
 ------
 ************
 Frame IDs in sequence: [45476, 45767, 46059, 46280, 46696, 46801]
-Objects in sequence: ['bowl', 'oil bottle', 'hob/cooktop/stovetop', 'pot', 'tupperware', 'oil']
-Verb-noun pairs in sequence: ['put;tupperware;909.17;909.9', 'check;temperature:oil;918.25;928.03']
+Objects in sequence: ['hob/cooktop/stovetop', 'tupperware', 'bowl', 'pot', 'oil bottle', 'oil']
+Verb-noun pairs in sequence: ['put tupperware;909.17;909.9', 'check oil temperature;918.25;928.03']
 ************
 Start timestamp: 937.69, Stop timestamp: 939.27
 Narration: take vegetable
@@ -728,8 +728,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [47001, 47034, 47088, 47126, 47176, 47226]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'pot', 'vegetable', 'plate']
-Verb-noun pairs in sequence: ['pour-in;vegetable;939.37;941.55', 'put;plate;941.8;942.7']
+Objects in sequence: ['plate', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot']
+Verb-noun pairs in sequence: ['pour vegetable in pot;939.37;941.55', 'put plate;941.8;942.7']
 ************
 Start timestamp: 946.16, Stop timestamp: 949.17
 Narration: stir vegetable
@@ -742,8 +742,8 @@ Narration: stir vegetable
 ------
 ************
 Frame IDs in sequence: [47326, 47426, 47551, 47651, 47826, 48051]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['stir;vegetable;946.16;949.17', 'adjust;temperature;949.67;954.14']
+Objects in sequence: ['vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot']
+Verb-noun pairs in sequence: ['stir vegetable;946.16;949.17', 'adjust temperature;949.67;954.14']
 ************
 Start timestamp: 966.14, Stop timestamp: 968.38
 Narration: take green beans
@@ -756,8 +756,8 @@ Narration: throw away green beans package
 ------
 ************
 Frame IDs in sequence: [48330, 48376, 48476, 48601, 48718, 48771]
-Objects in sequence: ['green bean package', 'hob/cooktop/stovetop', 'green bean', 'bin', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['take;bean:green;966.14;968.38', 'pour-in;bean:green;968.5;973.04']
+Objects in sequence: ['green bean', 'green bean package', 'vegetable', 'bin', 'hob/cooktop/stovetop', 'pot']
+Verb-noun pairs in sequence: ['take green beans;966.14;968.38', 'pour green beans in pot;968.5;973.04']
 ************
 Start timestamp: 979.2, Stop timestamp: 981.28
 Narration: open drawer
@@ -774,7 +774,7 @@ Narration: put cup
 ************
 Frame IDs in sequence: [48980, 49051, 49101, 49151, 49207, 49263]
 Objects in sequence: ['cup', 'drawer']
-Verb-noun pairs in sequence: ['open;drawer;979.2;981.28', 'take;cup;981.38;983.41', 'close;drawer;983.36;984.26']
+Verb-noun pairs in sequence: ['open drawer;979.2;981.28', 'take cup;981.38;983.41', 'close drawer;983.36;984.26']
 ************
 Start timestamp: 987.49, Stop timestamp: 989.33
 Narration: take kettle
@@ -790,8 +790,8 @@ Narration: put kettle
 ------
 ************
 Frame IDs in sequence: [49401, 49446, 49542, 49626, 49776, 49817]
-Objects in sequence: ['kettle', 'sink', 'tap', 'water']
-Verb-noun pairs in sequence: ['take;kettle;987.49;989.33', 'fill;kettle;990.03;993.54', 'turn-off;tap;993.16;993.9']
+Objects in sequence: ['sink', 'water', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['take kettle;987.49;989.33', 'fill kettle with water;990.03;993.54', 'turn off tap;993.16;993.9']
 ************
 Start timestamp: 998.94, Stop timestamp: 999.92
 Narration: take spatula
@@ -807,8 +807,8 @@ Narration: put spatula
 ------
 ************
 Frame IDs in sequence: [49971, 50076, 50326, 51338, 51844, 52351]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['take;spatula;998.94;999.92', 'stir;vegetable;1000.02;1008.88', 'stir;vegetable;1005.74;1021.35']
+Objects in sequence: ['vegetable', 'spatula', 'pot', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['take spatula;998.94;999.92', 'stir vegetables;1000.02;1008.88', 'stir vegetables;1005.74;1021.35']
 ************
 Start timestamp: 1049.12, Stop timestamp: 1050.69
 Narration: take oven glove
@@ -821,8 +821,8 @@ Narration: put oven glove
 ------
 ************
 Frame IDs in sequence: [52465, 52506, 52677, 52751, 52826, 52871]
-Objects in sequence: ['hob/cooktop/stovetop', 'glove', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['take;glove:oven;1049.12;1050.69', 'shake;pot;1053.42;1055.31']
+Objects in sequence: ['glove', 'vegetable', 'hob/cooktop/stovetop', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['take oven glove;1049.12;1050.69', 'shake pot;1053.42;1055.31']
 ************
 Start timestamp: 1071.85, Stop timestamp: 1072.85
 Narration: take oven glove
@@ -835,8 +835,8 @@ Narration: stir vegetables
 ------
 ************
 Frame IDs in sequence: [53601, 53638, 53684, 54076, 54438, 54801]
-Objects in sequence: ['spatula', 'glove', 'hob/cooktop/stovetop', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['take;glove:oven;1071.85;1072.85', 'take;spatula;1073.45;1074.2']
+Objects in sequence: ['glove', 'vegetable', 'spatula', 'pot', 'right glove', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['take oven glove;1071.85;1072.85', 'take spatula;1073.45;1074.2']
 ************
 Start timestamp: 1094.58, Stop timestamp: 1106.62
 Narration: stir vegetables
@@ -858,8 +858,8 @@ Narration: chop garlic
 ------
 ************
 Frame IDs in sequence: [55367, 55417, 55788, 56176, 57501, 57696]
-Objects in sequence: ['spatula', 'garlic', 'glove', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['put;glove:oven;1106.25;1109.41', 'put;spatula;1109.32;1110.38', 'chop;garlic;1112.25;1126.0', 'chop;garlic;1125.68;1131.65']
+Objects in sequence: ['chopping board', 'knife', 'glove', 'spatula', 'garlic']
+Verb-noun pairs in sequence: ['put oven glove;1106.25;1109.41', 'put spatula;1109.32;1110.38', 'chop garlic;1112.25;1126.0', 'chop garlic;1125.68;1131.65']
 ************
 Start timestamp: 1162.35, Stop timestamp: 1173.53
 Narration: chop garlic
@@ -872,8 +872,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [58226, 58555, 58717, 58751, 58830, 58934]
-Objects in sequence: ['garlic', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['chop;garlic;1162.35;1173.53', 'put;knife;1174.22;1175.26']
+Objects in sequence: ['chopping board', 'knife', 'garlic']
+Verb-noun pairs in sequence: ['chop garlic;1162.35;1173.53', 'put knife;1174.22;1175.26']
 ************
 Start timestamp: 1179.1, Stop timestamp: 1182.47
 Narration: take spatula
@@ -889,8 +889,8 @@ Narration: wear oven glove
 ------
 ************
 Frame IDs in sequence: [59196, 59242, 59326, 59401, 59476, 59551]
-Objects in sequence: ['spatula', 'garlic', 'glove', 'hob/cooktop/stovetop', 'chopping board', 'right glove', 'pot', 'left glove', 'vegetable']
-Verb-noun pairs in sequence: ['take;glove:oven;1183.41;1185.3', 'move;board:chopping;1186.1;1188.49']
+Objects in sequence: ['chopping board', 'glove', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove', 'garlic', 'left glove']
+Verb-noun pairs in sequence: ['take oven glove;1183.41;1185.3', 'move chopping board;1186.1;1188.49']
 ************
 Start timestamp: 1192.55, Stop timestamp: 1214.58
 Narration: stir vegetables
@@ -906,8 +906,8 @@ Narration: put spatula
 ------
 ************
 Frame IDs in sequence: [59876, 60476, 61388, 62301, 62330, 62367]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['stir;vegetable;1192.55;1214.58', 'stir;vegetable;1212.75;1229.02', 'put;glove:oven;1246.02;1247.02']
+Objects in sequence: ['glove', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['stir vegetables;1192.55;1214.58', 'stir vegetables;1212.75;1229.02', 'put oven glove;1246.02;1247.02']
 ************
 Start timestamp: 1250.04, Stop timestamp: 1250.78
 Narration: put oven glove
@@ -920,8 +920,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [62517, 62623, 62730, 62801, 62901, 63001]
-Objects in sequence: ['sink', 'tap', 'glove', 'bin', 'plate']
-Verb-noun pairs in sequence: ['put;glove:oven;1250.04;1250.78', 'throw;rubbish;1254.46;1256.5']
+Objects in sequence: ['sink', 'glove', 'plate', 'bin', 'tap']
+Verb-noun pairs in sequence: ['put oven glove;1250.04;1250.78', 'throw rubbish;1254.46;1256.5']
 ************
 Start timestamp: 1260.92, Stop timestamp: 1262.67
 Narration: rinse plate
@@ -937,8 +937,8 @@ Narration: rinse plate
 ------
 ************
 Frame IDs in sequence: [63076, 63109, 63251, 63409, 63651, 63801]
-Objects in sequence: ['sink', 'sponge', 'tap', 'plate', 'water']
-Verb-noun pairs in sequence: ['rinse;plate;1260.92;1262.67', 'wash;plate;1263.5;1270.51', 'put;sponge;1270.24;1271.2']
+Objects in sequence: ['sink', 'sponge', 'plate', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse plate;1260.92;1262.67', 'wash plate;1263.5;1270.51', 'put sponge;1270.24;1271.2']
 ************
 Start timestamp: 1276.0, Stop timestamp: 1279.26
 Narration: turn off tap
@@ -958,7 +958,7 @@ Narration: put knife
 ************
 Frame IDs in sequence: [64173, 64199, 64225, 64250, 64276, 64321]
 Objects in sequence: ['towel', 'knife']
-Verb-noun pairs in sequence: ['wipe;hand;1283.17;1284.67', 'take;knife;1284.76;1285.48']
+Verb-noun pairs in sequence: ['wipe hands;1283.17;1284.67', 'take knife;1284.76;1285.48']
 ************
 Start timestamp: 1288.64, Stop timestamp: 1289.5
 Narration: take spatula
@@ -971,8 +971,8 @@ Narration: pour garlic in pot
 ------
 ************
 Frame IDs in sequence: [64451, 64476, 64626, 65051, 65434, 65576]
-Objects in sequence: ['spatula', 'garlic', 'hob/cooktop/stovetop', 'chopping board', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['take;spatula;1288.64;1289.5', 'stir;vegetable;1289.6;1303.84']
+Objects in sequence: ['chopping board', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'garlic']
+Verb-noun pairs in sequence: ['take spatula;1288.64;1289.5', 'stir vegetables;1289.6;1303.84']
 ************
 Start timestamp: 1312.87, Stop timestamp: 1315.49
 Narration: put chopping board
@@ -988,8 +988,8 @@ Narration: stir vegetables
 ------
 ************
 Frame IDs in sequence: [65676, 65751, 65926, 66226, 66413, 66601]
-Objects in sequence: ['spatula', 'glove', 'hob/cooktop/stovetop', 'chopping board', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['put;board:chopping;1312.87;1315.49', 'take;glove:oven;1318.14;1318.85', 'wear;glove:oven;1318.69;1321.23']
+Objects in sequence: ['chopping board', 'glove', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['put chopping board;1312.87;1315.49', 'take oven glove;1318.14;1318.85', 'wear oven glove;1318.69;1321.23']
 ************
 Start timestamp: 1336.44, Stop timestamp: 1356.05
 Narration: stir vegetables
@@ -1002,8 +1002,8 @@ Narration: put spatula
 ------
 ************
 Frame IDs in sequence: [67126, 67351, 67576, 67842, 67905, 67934]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['stir;vegetable;1336.44;1356.05', 'put;glove:oven;1356.62;1357.46']
+Objects in sequence: ['glove', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['stir vegetables;1336.44;1356.05', 'put oven glove;1356.62;1357.46']
 ************
 Start timestamp: 1359.48, Stop timestamp: 1367.77
 Narration: open chopped tomatoes tin
@@ -1016,8 +1016,8 @@ Narration: stir vegetables
 ------
 ************
 Frame IDs in sequence: [68101, 68301, 69017, 69051, 69476, 70226]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'chopped tomato', 'chopping board', 'chopped tomato tin', 'right glove', 'knife', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['open;tin:chopped:tomato;1359.48;1367.77', 'wear;glove:oven;1379.77;1381.57']
+Objects in sequence: ['chopping board', 'knife', 'glove', 'vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'chopped tomato tin', 'chopped tomato', 'right glove']
+Verb-noun pairs in sequence: ['open chopped tomatoes tin;1359.48;1367.77', 'wear oven glove;1379.77;1381.57']
 ************
 Start timestamp: 1414.4, Stop timestamp: 1415.35
 Narration: put oven glove
@@ -1030,8 +1030,8 @@ Narration: stir vegetables
 ------
 ************
 Frame IDs in sequence: [70726, 70751, 70788, 71569, 72351, 72601]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['put;glove:oven;1414.4;1415.35', 'put;spatula;1415.45;1416.62']
+Objects in sequence: ['glove', 'vegetable', 'spatula', 'pot', 'right glove', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['put oven glove;1414.4;1415.35', 'put spatula;1415.45;1416.62']
 ************
 Start timestamp: 1464.01, Stop timestamp: 1465.64
 Narration: put oven glove
@@ -1044,8 +1044,8 @@ Narration: take spatula
 ------
 ************
 Frame IDs in sequence: [73217, 73267, 73301, 73588, 73876, 73926]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['put;glove:oven;1464.01;1465.64', 'put;spatula;1465.73;1466.8']
+Objects in sequence: ['glove', 'vegetable', 'spatula', 'pot', 'right glove', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['put oven glove;1464.01;1465.64', 'put spatula;1465.73;1466.8']
 ************
 Start timestamp: 1481.04, Stop timestamp: 1481.84
 Narration: wear oven glove
@@ -1058,8 +1058,8 @@ Narration: put oven glove
 ------
 ************
 Frame IDs in sequence: [74051, 74076, 74301, 74526, 74751, 74926]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'right glove', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['wear;glove:oven;1481.04;1481.84', 'stir;vegetable;1481.94;1498.3']
+Objects in sequence: ['vegetable', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['wear oven glove;1481.04;1481.84', 'stir vegetables;1481.94;1498.3']
 ************
 Start timestamp: 1504.09, Stop timestamp: 1505.35
 Narration: take kettle
@@ -1075,8 +1075,8 @@ Narration: pour water in cup
 ------
 ************
 Frame IDs in sequence: [75226, 75267, 75534, 75626, 75876, 76042]
-Objects in sequence: ['kettle', 'cup', 'water']
-Verb-noun pairs in sequence: ['take;kettle;1504.09;1505.35', 'pour-in;water;1509.39;1514.14', 'pour-in;water;1513.98;1516.31']
+Objects in sequence: ['water', 'cup', 'kettle']
+Verb-noun pairs in sequence: ['take kettle;1504.09;1505.35', 'pour water in cup;1509.39;1514.14', 'pour water in pot;1513.98;1516.31']
 ************
 Start timestamp: 1521.79, Stop timestamp: 1524.04
 Narration: pour water in pot
@@ -1092,8 +1092,8 @@ Narration: take chopped tomatoes tin
 ------
 ************
 Frame IDs in sequence: [76251, 76288, 76326, 76401, 76463, 76501]
-Objects in sequence: ['kettle', 'hob/cooktop/stovetop', 'cup', 'chopped tomato', 'chopped tomato tin', 'pot', 'vegetable']
-Verb-noun pairs in sequence: ['put;cup;1524.06;1527.65', 'put;kettle;1527.75;1528.46']
+Objects in sequence: ['vegetable', 'hob/cooktop/stovetop', 'pot', 'chopped tomato tin', 'chopped tomato', 'cup', 'kettle']
+Verb-noun pairs in sequence: ['put cup;1524.06;1527.65', 'put kettle;1527.75;1528.46']
 ************
 Start timestamp: 1529.92, Stop timestamp: 1536.2
 Narration: pour chopped tomatoes in pot
@@ -1109,8 +1109,8 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [77126, 77163, 77251, 77338, 77465, 77501]
-Objects in sequence: ['fridge', 'chopped tomato', 'chopped tomato tin']
-Verb-noun pairs in sequence: ['open;fridge;1542.25;1543.98', 'put;tin:chopped:tomato;1544.04;1547.93']
+Objects in sequence: ['fridge', 'chopped tomato tin', 'chopped tomato']
+Verb-noun pairs in sequence: ['open fridge;1542.25;1543.98', 'put chopped tomatoes tin;1544.04;1547.93']
 ************
 Start timestamp: 1552.25, Stop timestamp: 1553.24
 Narration: take spatula
@@ -1123,8 +1123,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [77632, 77821, 77926, 78201, 78476, 78576]
-Objects in sequence: ['spatula', 'glove', 'hob/cooktop/stovetop', 'food', 'right glove', 'pot']
-Verb-noun pairs in sequence: ['take;spatula;1552.25;1553.24', 'stir;food;1553.95;1560.58']
+Objects in sequence: ['glove', 'food', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove']
+Verb-noun pairs in sequence: ['take spatula;1552.25;1553.24', 'stir food;1553.95;1560.58']
 ************
 Start timestamp: 1573.22, Stop timestamp: 1574.87
 Narration: put oven glove
@@ -1140,8 +1140,8 @@ Narration: pour parsley in pot
 ------
 ************
 Frame IDs in sequence: [78767, 78801, 78876, 78926, 79076, 79576]
-Objects in sequence: ['spatula', 'parsley', 'glove', 'hob/cooktop/stovetop', 'food', 'pot', 'tupperware']
-Verb-noun pairs in sequence: ['put;spatula;1574.61;1576.35', 'open;tupperware;1577.06;1578.67']
+Objects in sequence: ['glove', 'food', 'hob/cooktop/stovetop', 'tupperware', 'spatula', 'pot', 'parsley']
+Verb-noun pairs in sequence: ['put spatula;1574.61;1576.35', 'open tupperware;1577.06;1578.67']
 ************
 Start timestamp: 1598.61, Stop timestamp: 1601.06
 Narration: put tupperware
@@ -1154,8 +1154,8 @@ Narration: put oven glove
 ------
 ************
 Frame IDs in sequence: [79951, 80017, 80451, 80826, 81076, 81121]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'food', 'right glove', 'pot', 'tupperware']
-Verb-noun pairs in sequence: ['put;tupperware;1598.61;1601.06', 'stir;food;1605.27;1619.94']
+Objects in sequence: ['glove', 'food', 'tupperware', 'spatula', 'pot', 'right glove', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['put tupperware;1598.61;1601.06', 'stir food;1605.27;1619.94']
 ************
 Start timestamp: 1622.81, Stop timestamp: 1624.63
 Narration: put spatula
@@ -1171,8 +1171,8 @@ Narration: close oil
 ------
 ************
 Frame IDs in sequence: [81276, 81301, 81351, 81401, 81459, 81553]
-Objects in sequence: ['spatula', 'oil bottle', 'glove', 'hob/cooktop/stovetop', 'food', 'pot', 'oil']
-Verb-noun pairs in sequence: ['take;oil;1624.88;1626.66', 'pour-in;oil;1627.23;1630.38']
+Objects in sequence: ['glove', 'food', 'hob/cooktop/stovetop', 'spatula', 'oil bottle', 'pot', 'oil']
+Verb-noun pairs in sequence: ['take oil;1624.88;1626.66', 'pour oil in food;1627.23;1630.38']
 ************
 Start timestamp: 1631.72, Stop timestamp: 1632.66
 Narration: pout oil
@@ -1188,8 +1188,8 @@ Narration: put salt
 ------
 ************
 Frame IDs in sequence: [81601, 81626, 81767, 81871, 81976, 82176]
-Objects in sequence: ['oil bottle', 'salt', 'pepper', 'hob/cooktop/stovetop', 'salt container', 'food', 'pot']
-Verb-noun pairs in sequence: ['pout;oil;1631.72;1632.66', 'take;salt;1632.49;1633.1', 'pour-in;salt;1633.64;1642.39']
+Objects in sequence: ['food', 'hob/cooktop/stovetop', 'oil bottle', 'pepper', 'pot', 'salt container', 'salt']
+Verb-noun pairs in sequence: ['pout oil;1631.72;1632.66', 'take salt;1632.49;1633.1', 'pour salt in food;1633.64;1642.39']
 ************
 Start timestamp: 1644.15, Stop timestamp: 1644.81
 Narration: take pepper
@@ -1202,8 +1202,8 @@ Narration: put pepper
 ------
 ************
 Frame IDs in sequence: [82213, 82319, 82426, 82615, 82805, 82988]
-Objects in sequence: ['pepper', 'hob/cooktop/stovetop', 'food', 'pot']
-Verb-noun pairs in sequence: ['take;pepper;1644.15;1644.81', 'pour-in;pepper;1645.26;1659.24']
+Objects in sequence: ['food', 'hob/cooktop/stovetop', 'pot', 'pepper']
+Verb-noun pairs in sequence: ['take pepper;1644.15;1644.81', 'pour pepper in food;1645.26;1659.24']
 ************
 Start timestamp: 1660.73, Stop timestamp: 1661.34
 Narration: take paprika
@@ -1216,8 +1216,8 @@ Narration: pour paprika in food
 ------
 ************
 Frame IDs in sequence: [83036, 83067, 83426, 83576, 83726, 83801]
-Objects in sequence: ['hob/cooktop/stovetop', 'paprika', 'food', 'pot', 'paprika package']
-Verb-noun pairs in sequence: ['take;paprika;1660.73;1661.34', 'open;paprika;1661.35;1663.73']
+Objects in sequence: ['paprika package', 'food', 'hob/cooktop/stovetop', 'pot', 'paprika']
+Verb-noun pairs in sequence: ['take paprika;1660.73;1661.34', 'open paprika;1661.35;1663.73']
 ************
 Start timestamp: 1673.88, Stop timestamp: 1676.92
 Narration: close paprika
@@ -1230,8 +1230,8 @@ Narration: pour water in cup
 ------
 ************
 Frame IDs in sequence: [83846, 83876, 84151, 84251, 84326, 84401]
-Objects in sequence: ['kettle', 'hob/cooktop/stovetop', 'food', 'cup', 'pot', 'paprika package', 'water']
-Verb-noun pairs in sequence: ['close;paprika;1673.88;1676.92', 'put;paprika;1676.97;1677.73']
+Objects in sequence: ['food', 'paprika package', 'hob/cooktop/stovetop', 'pot', 'water', 'cup', 'kettle']
+Verb-noun pairs in sequence: ['close paprika;1673.88;1676.92', 'put paprika;1676.97;1677.73']
 ************
 Start timestamp: 1686.0, Stop timestamp: 1688.46
 Narration: pour water in food
@@ -1244,8 +1244,8 @@ Narration: put kettle
 ------
 ************
 Frame IDs in sequence: [84476, 84534, 84675, 84730, 85301, 85517]
-Objects in sequence: ['spatula', 'kettle', 'glove', 'hob/cooktop/stovetop', 'food', 'cup', 'right glove', 'pot']
-Verb-noun pairs in sequence: ['pour-in;water;1686.0;1688.46', 'put;cup;1688.91;1691.63']
+Objects in sequence: ['glove', 'food', 'spatula', 'pot', 'right glove', 'cup', 'hob/cooktop/stovetop', 'kettle']
+Verb-noun pairs in sequence: ['pour water in food;1686.0;1688.46', 'put cup;1688.91;1691.63']
 ************
 Start timestamp: 1703.34, Stop timestamp: 1712.9
 Narration: stir food
@@ -1264,8 +1264,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [86409, 86521, 86677, 86834, 86896, 87076]
-Objects in sequence: ['spatula', 'hob/cooktop/stovetop', 'glove', 'food', 'cup', 'cupboard', 'right glove', 'pot']
-Verb-noun pairs in sequence: ['stir;food;1703.34;1712.9', 'stir;food;1709.22;1727.93', 'put;glove:oven;1727.0;1732.03', 'put;spatula;1731.85;1732.81']
+Objects in sequence: ['glove', 'cupboard', 'food', 'hob/cooktop/stovetop', 'spatula', 'pot', 'right glove', 'cup']
+Verb-noun pairs in sequence: ['stir food;1703.34;1712.9', 'stir food;1709.22;1727.93', 'put oven glove;1727.0;1732.03', 'put spatula;1731.85;1732.81']
 ************
 Start timestamp: 1741.52, Stop timestamp: 1741.98
 Narration: open cupboard
@@ -1278,8 +1278,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [87448, 87571, 87742, 87776, 88026, 88226]
-Objects in sequence: ['sink', 'tap', 'cupboard', 'cup', 'pot lid', 'pot', 'water']
-Verb-noun pairs in sequence: ['open;cupboard;1741.52;1741.98', 'take;lid:pot;1747.27;1752.33']
+Objects in sequence: ['sink', 'pot lid', 'cupboard', 'pot', 'water', 'cup', 'tap']
+Verb-noun pairs in sequence: ['open cupboard;1741.52;1741.98', 'take pot lid;1747.27;1752.33']
 ************
 Start timestamp: 1757.3, Stop timestamp: 1767.01
 Narration: rinse pot lid
@@ -1296,5 +1296,5 @@ Narration: adjust temperature
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
-Verb-noun pairs in sequence: ['rinse;lid:pot;1757.3;1767.01', 'turn-off;tap;1766.93;1767.49', 'put-on;lid;1770.57;1773.08']
+Verb-noun pairs in sequence: ['rinse pot lid;1757.3;1767.01', 'turn off tap;1766.93;1767.49', 'put lid on pot;1770.57;1773.08']
 ************

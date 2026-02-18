@@ -45,7 +45,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
     json_path = f"{output_dir}/active_objects_{video_id}.json"
 
     with open(txt_path, "w") as txt_file:
-        verb_noun_pairs = []
+        narrations = []
         for _, row in narrations_low_level_filtered.iterrows():
             start_timestamp = hhmmss_to_seconds(row["start_timestamp"])
             stop_timestamp = hhmmss_to_seconds(row["stop_timestamp"])
@@ -55,13 +55,13 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
             txt_file.write(f"Narration: {row['narration']}\n")
             txt_file.write("------\n")
 
-            verb_noun_pair = f"{row['verb']};{row['noun']};{start_timestamp};{stop_timestamp}"
+            narration = f"{row['narration']};{start_timestamp};{stop_timestamp}"
 
             # Count non-overlapping narrations; each sequence = 3 non-overlapping actions
             if prev_stop is None or start_timestamp >= prev_stop:
                 if non_overlapping_count == 1:
                     sequence_start_time = start_timestamp
-                    verb_noun_pairs = []
+                    narrations = []
                 non_overlapping_count += 1
                 sequence_end_time = stop_timestamp
 
@@ -80,7 +80,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
                     txt_file.write(f"Objects in sequence: {objects_in_sequence}\n")
-                    txt_file.write(f"Verb-noun pairs in sequence: {verb_noun_pairs}\n")
+                    txt_file.write(f"Verb-noun pairs in sequence: {narrations}\n")
                     txt_file.write("************\n")
 
                     sequences.append({
@@ -89,14 +89,14 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
                         "end_time": sequence_end_time,
                         "objects_in_sequence": sorted(objects_in_sequence),
                         "frame_ids": frame_ids_in_sequence,
-                        "verb_noun_pairs": verb_noun_pairs,
+                        "narrations": narrations,
                     })
                     ## Reset objects_in_sequence and non-overlapping count
                     non_overlapping_count = 1
                     sequence_index += 1
                 prev_stop = stop_timestamp
 
-            verb_noun_pairs.append(verb_noun_pair)
+            narrations.append(narration)
 
     with open(json_path, "w") as f:
         json.dump(sequences, f, indent=2)

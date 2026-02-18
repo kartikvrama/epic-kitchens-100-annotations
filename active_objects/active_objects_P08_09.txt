@@ -12,8 +12,8 @@ Narration: turn on tap water
 ------
 ************
 Frame IDs in sequence: [99, 142, 234, 326, 446, 542]
-Objects in sequence: ['sink', 'tap', 'filter', 'mocha', 'mocha pot']
-Verb-noun pairs in sequence: ['enter;kitchen;1.1;2.75', 'get;pot:mocha;2.61;3.61', 'unscrew;pot:mocha;4.96;7.78']
+Objects in sequence: ['mocha pot', 'sink', 'filter', 'mocha', 'tap']
+Verb-noun pairs in sequence: ['enter kitchen;1.1;2.75', 'get mocha pot;2.61;3.61', 'unscrew mocha pot;4.96;7.78']
 ************
 Start timestamp: 9.66, Stop timestamp: 10.16
 Narration: clean mocha
@@ -26,8 +26,8 @@ Narration: get filter
 ------
 ************
 Frame IDs in sequence: [585, 639, 692, 782, 872, 903]
-Objects in sequence: ['sink', 'tap', 'filter', 'coffee', 'mocha', 'coffee filter', 'water']
-Verb-noun pairs in sequence: ['clean;mocha;9.66;10.16', 'pour;water;10.26;12.19']
+Objects in sequence: ['filter', 'sink', 'coffee', 'mocha', 'coffee filter', 'water', 'tap']
+Verb-noun pairs in sequence: ['clean mocha;9.66;10.16', 'pour water;10.26;12.19']
 ************
 Start timestamp: 15.88, Stop timestamp: 18.96
 Narration: throw away coffee
@@ -43,8 +43,8 @@ Narration: get kitchen towel
 ------
 ************
 Frame IDs in sequence: [999, 1101, 1334, 1592, 2073, 2133]
-Objects in sequence: ['bin/garbage can/recycling bin', 'sink', 'tap', 'filter', 'coffee filter', 'mocha', 'kitchen towel', 'water']
-Verb-noun pairs in sequence: ['throw-away;coffee;15.88;18.96', 'clean;filter:coffee;19.63;28.67', 'tap-on;water;20.06;20.56']
+Objects in sequence: ['sink', 'filter', 'bin/garbage can/recycling bin', 'mocha', 'coffee filter', 'kitchen towel', 'water', 'tap']
+Verb-noun pairs in sequence: ['throw away coffee;15.88;18.96', 'clean coffee filter;19.63;28.67', 'tap water on;20.06;20.56']
 ************
 Start timestamp: 36.22, Stop timestamp: 39.56
 Narration: wipe off filter
@@ -63,8 +63,8 @@ Narration: turn water off
 ------
 ************
 Frame IDs in sequence: [2223, 2337, 2520, 2573, 3043, 3514]
-Objects in sequence: ['sink', 'tap', 'filter', 'mocha', 'coffee filter', 'kitchen towel', 'water']
-Verb-noun pairs in sequence: ['wipe-off;filter;36.22;39.56', 'place;filter;39.54;40.73', 'turn-on;tap;41.58;43.02', 'clean;fridge;42.44;57.64']
+Objects in sequence: ['sink', 'filter', 'mocha', 'kitchen towel', 'coffee filter', 'water', 'tap']
+Verb-noun pairs in sequence: ['wipe off filter;36.22;39.56', 'place filter;39.54;40.73', 'turn water on;41.58;43.02', 'clean upper part;42.44;57.64']
 ************
 Start timestamp: 61.6, Stop timestamp: 63.19
 Narration: wipe hands
@@ -86,8 +86,8 @@ Narration: place spoon back
 ------
 ************
 Frame IDs in sequence: [3706, 3761, 3946, 4079, 4397, 4716]
-Objects in sequence: ['coffee box', 'filter', 'mocha', 'kitchen towel', 'lid', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['wipe;hand;61.6;63.19', 'open;cupboard;62.99;65.64', 'get;coffee;64.24;69.15', 'unscrew;lid;65.84;67.42', 'spoon-in;coffee;68.66;77.05']
+Objects in sequence: ['filter', 'coffee', 'lid', 'mocha', 'kitchen towel', 'spoon', 'coffee box']
+Verb-noun pairs in sequence: ['wipe hands;61.6;63.19', 'open cupboard;62.99;65.64', 'get coffee;64.24;69.15', 'unscrew lid;65.84;67.42', 'spoon coffee in mocha pot;68.66;77.05']
 ************
 Start timestamp: 79.59, Stop timestamp: 80.94
 Narration: turn lid off
@@ -100,8 +100,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [4781, 4833, 4866, 4896, 4926, 4970]
-Objects in sequence: ['coffee box', 'coffee', 'mocha', 'cupboard', 'kitchen towel', 'lid']
-Verb-noun pairs in sequence: ['turn-off;lid;79.59;80.94', 'open;cupboard;81.01;81.55']
+Objects in sequence: ['coffee', 'cupboard', 'lid', 'mocha', 'kitchen towel', 'coffee box']
+Verb-noun pairs in sequence: ['turn lid off;79.59;80.94', 'open cupboard;81.01;81.55']
 ************
 Start timestamp: 86.86, Stop timestamp: 95.11
 Narration: screw in the mocha pot
@@ -114,8 +114,8 @@ Narration: place pot on hob
 ------
 ************
 Frame IDs in sequence: [5301, 5593, 5767, 5851, 5986, 6072]
-Objects in sequence: ['cupboard', 'kitchen towel', 'hob', 'mocha pot']
-Verb-noun pairs in sequence: ['screw-in;pot:mocha;86.86;95.11', 'clean;cupboard;95.52000000000001;98.02000000000001']
+Objects in sequence: ['mocha pot', 'cupboard', 'hob', 'kitchen towel']
+Verb-noun pairs in sequence: ['screw in the mocha pot;86.86;95.11', 'clean cupboard;95.52000000000001;98.02000000000001']
 ************
 Start timestamp: 101.88, Stop timestamp: 105.88
 Narration: turn heat on
@@ -128,8 +128,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [6178, 6301, 6364, 6427, 6510, 6548]
-Objects in sequence: ['cupboard', 'kitchen towel', 'hob', 'mocha pot', 'mug']
-Verb-noun pairs in sequence: ['turn-on;heat;101.88;105.88', 'wipe;hand;106.59;108.09']
+Objects in sequence: ['mocha pot', 'cupboard', 'hob', 'kitchen towel', 'mug']
+Verb-noun pairs in sequence: ['turn heat on;101.88;105.88', 'wipe hands;106.59;108.09']
 ************
 Start timestamp: 109.53999999999999, Stop timestamp: 111.22999999999999
 Narration: get mug
@@ -145,8 +145,8 @@ Narration: get milk
 ------
 ************
 Frame IDs in sequence: [6595, 6651, 6779, 6837, 6938, 7010]
-Objects in sequence: ['fridge', 'cupboard', 'milk bottle', 'mug']
-Verb-noun pairs in sequence: ['get;mug;109.53999999999999;111.22999999999999', 'place-on;mug;112.63;114.14', 'open;fridge;113.99000000000001;114.99000000000001']
+Objects in sequence: ['milk bottle', 'cupboard', 'fridge', 'mug']
+Verb-noun pairs in sequence: ['get mug;109.53999999999999;111.22999999999999', 'place mug on counter;112.63;114.14', 'open fridge;113.99000000000001;114.99000000000001']
 ************
 Start timestamp: 118.05, Stop timestamp: 119.78999999999999
 Narration: unscrew lid
@@ -162,8 +162,8 @@ Narration: place milk
 ------
 ************
 Frame IDs in sequence: [7121, 7166, 7253, 7418, 7528, 7638]
-Objects in sequence: ['milk bottle', 'milk', 'mug', 'lid']
-Verb-noun pairs in sequence: ['unscrew;lid;118.05;119.78999999999999', 'pour-in;milk;119.81;124.64', 'screw;lid;124.44;126.74']
+Objects in sequence: ['milk bottle', 'lid', 'mug', 'milk']
+Verb-noun pairs in sequence: ['unscrew lid;118.05;119.78999999999999', 'pour milk in mug;119.81;124.64', 'screw lid back;124.44;126.74']
 ************
 Start timestamp: 128.97, Stop timestamp: 130.07
 Narration: open fridge
@@ -176,8 +176,8 @@ Narration: get cheese
 ------
 ************
 Frame IDs in sequence: [7760, 7795, 7853, 7933, 8158, 8350]
-Objects in sequence: ['fridge', 'milk bottle', 'cheese package', 'plastic bag', 'mug', 'milk']
-Verb-noun pairs in sequence: ['open;fridge;128.97;130.07', 'get;bread;130.3;133.34']
+Objects in sequence: ['milk bottle', 'fridge', 'mug', 'plastic bag', 'cheese package', 'milk']
+Verb-noun pairs in sequence: ['open fridge;128.97;130.07', 'get bread;130.3;133.34']
 ************
 Start timestamp: 141.36, Stop timestamp: 144.7
 Narration: close fridge
@@ -190,8 +190,8 @@ Narration: get tomatoes
 ------
 ************
 Frame IDs in sequence: [8539, 8641, 8761, 8950, 9707, 9768]
-Objects in sequence: ['cheese package', 'bin/garbage can/recycling bin', 'cheese container', 'fridge', 'tomato', 'roots', 'plastic bag', 'tomato container']
-Verb-noun pairs in sequence: ['close;fridge;141.36;144.7', 'get;tomato;145.02;151.01']
+Objects in sequence: ['bin/garbage can/recycling bin', 'fridge', 'cheese container', 'plastic bag', 'cheese package', 'tomato container', 'roots', 'tomato']
+Verb-noun pairs in sequence: ['close fridge;141.36;144.7', 'get tomatoes;145.02;151.01']
 ************
 Start timestamp: 160.82999999999998, Stop timestamp: 163.99
 Narration: throw away bits
@@ -207,8 +207,8 @@ Narration: turn water off
 ------
 ************
 Frame IDs in sequence: [9894, 9941, 10121, 10151, 10326, 10368]
-Objects in sequence: ['sink', 'tap', 'tomato', 'chopping board', 'kitchen towel', 'water']
-Verb-noun pairs in sequence: ['throw;tomato;160.82999999999998;163.99', 'turn-on;tap;164.64;166.05', 'wash;tomato;165.85;168.25']
+Objects in sequence: ['chopping board', 'sink', 'tap', 'kitchen towel', 'water', 'tomato']
+Verb-noun pairs in sequence: ['throw away bits;160.82999999999998;163.99', 'turn the water on;164.64;166.05', 'wash tomatoes;165.85;168.25']
 ************
 Start timestamp: 168.75, Stop timestamp: 171.18
 Narration: squeeze water
@@ -224,8 +224,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [10662, 10716, 10771, 10843, 10916, 10965]
-Objects in sequence: ['tomato', 'cupboard', 'chopping board', 'kitchen towel']
-Verb-noun pairs in sequence: ['get;board:chopping;171.89;173.01', 'place-on;board:chopping;177.42000000000002;178.11']
+Objects in sequence: ['chopping board', 'cupboard', 'kitchen towel', 'tomato']
+Verb-noun pairs in sequence: ['get chopping board;171.89;173.01', 'place chopping board on top;177.42000000000002;178.11']
 ************
 Start timestamp: 181.14, Stop timestamp: 183.58
 Narration: get plate
@@ -238,8 +238,8 @@ Narration: place plate
 ------
 ************
 Frame IDs in sequence: [11082, 11132, 11199, 11259, 11563, 11797]
-Objects in sequence: ['avocado', 'tomato', 'cupboard', 'chopping board', 'kitchen towel', 'plate']
-Verb-noun pairs in sequence: ['get;plate;181.14;183.58', 'close;cupboard;184.55;185.7']
+Objects in sequence: ['chopping board', 'plate', 'cupboard', 'kitchen towel', 'avocado', 'tomato']
+Verb-noun pairs in sequence: ['get plate;181.14;183.58', 'close cupboard;184.55;185.7']
 ************
 Start timestamp: 191.56, Stop timestamp: 198.38
 Narration: choose avocado
@@ -255,8 +255,8 @@ Narration: get fork
 ------
 ************
 Frame IDs in sequence: [11995, 12043, 12223, 12274, 12456, 12639]
-Objects in sequence: ['drawer', 'avocado', 'fork', 'knife']
-Verb-noun pairs in sequence: ['choose;avocado;191.56;198.38', 'open;drawer;199.71;200.77', 'get;knife;200.5;210.25']
+Objects in sequence: ['knife', 'fork', 'avocado', 'drawer']
+Verb-noun pairs in sequence: ['choose avocado;191.56;198.38', 'open drawer;199.71;200.77', 'get knife;200.5;210.25']
 ************
 Start timestamp: 210.35, Stop timestamp: 211.1
 Narration: close drawer
@@ -269,8 +269,8 @@ Narration: take out pip part
 ------
 ************
 Frame IDs in sequence: [12854, 13064, 13227, 13305, 13665, 13938]
-Objects in sequence: ['avocado', 'chopping board', 'knife', 'plate']
-Verb-noun pairs in sequence: ['close;drawer;210.35;211.1', 'cut;avocado;212.19;219.07']
+Objects in sequence: ['chopping board', 'knife', 'plate', 'avocado']
+Verb-noun pairs in sequence: ['close drawer;210.35;211.1', 'cut avocado;212.19;219.07']
 ************
 Start timestamp: 223.59, Stop timestamp: 236.34
 Narration: spoon avocado
@@ -284,7 +284,7 @@ Narration: get loaf of bread
 ************
 Frame IDs in sequence: [14254, 14339, 14492, 14524, 15046, 15240]
 Objects in sequence: ['clip', 'bread package', 'bread', 'plastic bag']
-Verb-noun pairs in sequence: ['spoon;avocado;223.59;236.34', 'get;bag:plastic;236.75;239.59']
+Verb-noun pairs in sequence: ['spoon avocado;223.59;236.34', 'get plastic bag;236.75;239.59']
 ************
 Start timestamp: 248.04, Stop timestamp: 256.28
 Narration: close plastic bag
@@ -297,8 +297,8 @@ Narration: get frying pan
 ------
 ************
 Frame IDs in sequence: [15724, 15754, 15887, 15981, 16168, 16253]
-Objects in sequence: ['hob/cooktop/stovetop', 'cupboard', 'frying pan']
-Verb-noun pairs in sequence: ['close;bag:plastic;248.04;256.28', 'open;cupboard;261.79;262.87']
+Objects in sequence: ['cupboard', 'frying pan', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['close plastic bag;248.04;256.28', 'open cupboard;261.79;262.87']
 ************
 Start timestamp: 269.24, Stop timestamp: 271.45
 Narration: place pan on
@@ -314,8 +314,8 @@ Narration: place bread on pan
 ------
 ************
 Frame IDs in sequence: [16465, 16560, 16713, 16776, 17035, 17118]
-Objects in sequence: ['drawer', 'hob/cooktop/stovetop', 'chopping board', 'knife', 'bread', 'plastic bag', 'frying pan']
-Verb-noun pairs in sequence: ['place-on;pan;269.24;271.45', 'turn-on;heat;271.35;273.48', 'adjust;heat;273.44;276.69']
+Objects in sequence: ['chopping board', 'knife', 'hob/cooktop/stovetop', 'frying pan', 'bread', 'drawer', 'plastic bag']
+Verb-noun pairs in sequence: ['place pan on;269.24;271.45', 'turn on heat;271.35;273.48', 'adjust heat;273.44;276.69']
 ************
 Start timestamp: 283.43, Stop timestamp: 285.99
 Narration: get knife
@@ -328,8 +328,8 @@ Narration: get tomato
 ------
 ************
 Frame IDs in sequence: [17249, 17494, 17576, 17605, 17682, 17779]
-Objects in sequence: ['tomato', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['get;knife;283.43;285.99', 'cut;tomato;286.44;292.56']
+Objects in sequence: ['chopping board', 'knife', 'tomato']
+Verb-noun pairs in sequence: ['get knife;283.43;285.99', 'cut tomato;286.44;292.56']
 ************
 Start timestamp: 293.64, Stop timestamp: 297.54
 Narration: cut tomato
@@ -345,8 +345,8 @@ Narration: throw away avocado skin
 ------
 ************
 Frame IDs in sequence: [17880, 17907, 18774, 18850, 19160, 19460]
-Objects in sequence: ['cheese package', 'bin/garbage can/recycling bin', 'avocado skin', 'tomato', 'knife']
-Verb-noun pairs in sequence: ['cut;tomato;293.64;297.54', 'get;tomato;297.82;298.86', 'cut;tomato;298.59000000000003;301.5']
+Objects in sequence: ['avocado skin', 'knife', 'bin/garbage can/recycling bin', 'cheese package', 'tomato']
+Verb-noun pairs in sequence: ['cut tomato;293.64;297.54', 'get tomato;297.82;298.86', 'cut tomato;298.59000000000003;301.5']
 ************
 Start timestamp: 317.24, Stop timestamp: 325.63
 Narration: open cheese
@@ -359,8 +359,8 @@ Narration: wipe off hands
 ------
 ************
 Frame IDs in sequence: [19716, 19826, 19955, 20031, 20679, 20745]
-Objects in sequence: ['hob/cooktop/stovetop', 'kitchen towel', 'bread', 'frying pan']
-Verb-noun pairs in sequence: ['open;cheese;317.24;325.63', 'check;coffee;328.2;331.43']
+Objects in sequence: ['hob/cooktop/stovetop', 'frying pan', 'kitchen towel', 'bread']
+Verb-noun pairs in sequence: ['open cheese;317.24;325.63', 'check the coffee;328.2;331.43']
 ************
 Start timestamp: 343.94, Stop timestamp: 346.43
 Narration: turn loaf of bread in pan
@@ -373,8 +373,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [20909, 21022, 21212, 21280, 21356, 21417]
-Objects in sequence: ['salt bottle', 'cupboard', 'kitchen towel']
-Verb-noun pairs in sequence: ['turn-in;loaf:bread;343.94;346.43', 'wipe-off;hand;347.78;351.51']
+Objects in sequence: ['cupboard', 'salt bottle', 'kitchen towel']
+Verb-noun pairs in sequence: ['turn loaf of bread in pan;343.94;346.43', 'wipe off hands;347.78;351.51']
 ************
 Start timestamp: 355.45, Stop timestamp: 357.58
 Narration: get salt
@@ -390,8 +390,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [21542, 21606, 21721, 21767, 22236, 22343]
-Objects in sequence: ['avocado', 'chilli bottle', 'salt bottle', 'cupboard', 'knife', 'plate']
-Verb-noun pairs in sequence: ['get;salt;355.45;357.58', 'cut;avocado;356.0;369.39', 'get;chilli;358.33;361.07']
+Objects in sequence: ['knife', 'chilli bottle', 'plate', 'cupboard', 'salt bottle', 'avocado']
+Verb-noun pairs in sequence: ['get salt;355.45;357.58', 'cut avocado;356.0;369.39', 'get chilli;358.33;361.07']
 ************
 Start timestamp: 369.49, Stop timestamp: 373.36
 Narration: salt an avocado
@@ -404,8 +404,8 @@ Narration: close lid
 ------
 ************
 Frame IDs in sequence: [22478, 22698, 22823, 22857, 22944, 23034]
-Objects in sequence: ['avocado', 'chilli', 'chilli bottle', 'hob/cooktop/stovetop', 'mocha pot', 'lid']
-Verb-noun pairs in sequence: ['salt;avocado;369.49;373.36', 'put-on;chilli;373.47;380.01']
+Objects in sequence: ['mocha pot', 'chilli bottle', 'lid', 'avocado', 'hob/cooktop/stovetop', 'chilli']
+Verb-noun pairs in sequence: ['salt an avocado;369.49;373.36', 'put chilli on avocado;373.47;380.01']
 ************
 Start timestamp: 381.6, Stop timestamp: 384.62
 Narration: check on coffee
@@ -421,8 +421,8 @@ Narration: move pan
 ------
 ************
 Frame IDs in sequence: [23244, 23439, 23605, 23701, 23803, 23845]
-Objects in sequence: ['coffee', 'hob/cooktop/stovetop', 'mocha pot', 'mug', 'frying pan']
-Verb-noun pairs in sequence: ['check-on;coffee;381.6;384.62', 'close;hob;384.58;385.62', 'pour-in;coffee;385.72;392.38']
+Objects in sequence: ['mocha pot', 'coffee', 'frying pan', 'mug', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['check on coffee;381.6;384.62', 'close hob;384.58;385.62', 'pour coffee in mug;385.72;392.38']
 ************
 Start timestamp: 396.38, Stop timestamp: 397.51
 Narration: place pot
@@ -435,8 +435,8 @@ Narration: move mug
 ------
 ************
 Frame IDs in sequence: [23905, 23965, 24857, 24986, 25212, 25245]
-Objects in sequence: ['microwave', 'hob/cooktop/stovetop', 'bread', 'plastic bag', 'mug', 'frying pan']
-Verb-noun pairs in sequence: ['place;pot;396.38;397.51', 'turn;loaf:bread;397.61;399.7']
+Objects in sequence: ['hob/cooktop/stovetop', 'frying pan', 'bread', 'mug', 'plastic bag', 'microwave']
+Verb-noun pairs in sequence: ['place pot;396.38;397.51', 'turn loaf of bread;397.61;399.7']
 ************
 Start timestamp: 417.67, Stop timestamp: 419.99
 Narration: open microwave
@@ -452,8 +452,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [25310, 25400, 25531, 25608, 25685, 25735]
-Objects in sequence: ['microwave', 'fridge', 'milk bottle', 'bread', 'plastic bag']
-Verb-noun pairs in sequence: ['place;mug;419.58;421.31', 'turn-on;microwave;421.59;424.44']
+Objects in sequence: ['milk bottle', 'fridge', 'bread', 'plastic bag', 'microwave']
+Verb-noun pairs in sequence: ['place mug;419.58;421.31', 'turn on microwave;421.59;424.44']
 ************
 Start timestamp: 426.07, Stop timestamp: 428.06
 Narration: place bread
@@ -469,8 +469,8 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [25767, 25864, 25917, 25974, 26086, 26157]
-Objects in sequence: ['fridge', 'hob/cooktop/stovetop', 'milk bottle', 'bread', 'plastic bag', 'frying pan']
-Verb-noun pairs in sequence: ['close;bread;427.81;428.96', 'place;milk;429.06;431.59']
+Objects in sequence: ['milk bottle', 'frying pan', 'fridge', 'bread', 'plastic bag', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['close;427.81;428.96', 'place milk;429.06;431.59']
 ************
 Start timestamp: 433.8, Stop timestamp: 436.52
 Narration: turn bread
@@ -483,8 +483,8 @@ Narration: turn off of bread
 ------
 ************
 Frame IDs in sequence: [26848, 26979, 27165, 27226, 27289, 27335]
-Objects in sequence: ['hob/cooktop/stovetop', 'knife', 'kitchen towel', 'bread', 'frying pan']
-Verb-noun pairs in sequence: ['turn;bread;433.8;436.52', 'clean;knife;446.45;450.77']
+Objects in sequence: ['knife', 'hob/cooktop/stovetop', 'frying pan', 'kitchen towel', 'bread']
+Verb-noun pairs in sequence: ['turn bread;433.8;436.52', 'clean knife;446.45;450.77']
 ************
 Start timestamp: 454.43, Stop timestamp: 456.1
 Narration: turn off hob
@@ -497,8 +497,8 @@ Narration: place on plate
 ------
 ************
 Frame IDs in sequence: [27549, 27663, 27749, 27787, 27929, 27989]
-Objects in sequence: ['fork', 'cheese', 'hob/cooktop/stovetop', 'knife', 'bread', 'plate', 'frying pan']
-Verb-noun pairs in sequence: ['turn-off;hob;454.43;456.1', 'take;bread;458.1;461.73']
+Objects in sequence: ['knife', 'plate', 'hob/cooktop/stovetop', 'fork', 'cheese', 'frying pan', 'bread']
+Verb-noun pairs in sequence: ['turn off hob;454.43;456.1', 'take the bread;458.1;461.73']
 ************
 Start timestamp: 465.2, Stop timestamp: 466.81
 Narration: get cheese on knife
@@ -514,8 +514,8 @@ Narration: spread cheese on bread
 ------
 ************
 Frame IDs in sequence: [28189, 28224, 28822, 29547, 30481, 30521]
-Objects in sequence: ['avocado', 'fork', 'cheese', 'knife', 'bread']
-Verb-noun pairs in sequence: ['get-on;cheese;465.2;466.81', 'put-on;cheese;466.8;469.3', 'get-on;cheese;469.46;471.0']
+Objects in sequence: ['knife', 'fork', 'cheese', 'bread', 'avocado']
+Verb-noun pairs in sequence: ['get cheese on knife;465.2;466.81', 'put cheese on bread;466.8;469.3', 'get cheese on knife;469.46;471.0']
 ************
 Start timestamp: 481.87, Stop timestamp: 507.02
 Narration: still spread cheese on bread
@@ -531,8 +531,8 @@ Narration: get avocado
 ------
 ************
 Frame IDs in sequence: [30608, 30672, 30736, 30782, 31112, 31494]
-Objects in sequence: ['avocado', 'fork', 'knife', 'bread']
-Verb-noun pairs in sequence: ['get;fork;507.73;509.08', 'place-on;avocado;509.63;511.8']
+Objects in sequence: ['knife', 'fork', 'bread', 'avocado']
+Verb-noun pairs in sequence: ['get fork;507.73;509.08', 'place avocado on bread;509.63;511.8']
 ************
 Start timestamp: 515.56, Stop timestamp: 526.8
 Narration: place avocado on bread
@@ -548,8 +548,8 @@ Narration: place chilli on avocado
 ------
 ************
 Frame IDs in sequence: [32695, 32753, 32914, 33087, 33274, 33484]
-Objects in sequence: ['avocado', 'chilli', 'pepper', 'chilli bottle', 'lid']
-Verb-noun pairs in sequence: ['place-on;avocado;515.56;526.8', 'arrange;avocado;526.11;543.67', 'open;lid;544.51;546.12']
+Objects in sequence: ['chilli bottle', 'lid', 'pepper', 'avocado', 'chilli']
+Verb-noun pairs in sequence: ['place avocado on bread;515.56;526.8', 'arrange avocado;526.11;543.67', 'open lid;544.51;546.12']
 ************
 Start timestamp: 551.5, Stop timestamp: 553.05
 Narration: turn lid on
@@ -565,8 +565,8 @@ Narration: move knives
 ------
 ************
 Frame IDs in sequence: [33725, 33855, 34033, 34110, 34173, 34265]
-Objects in sequence: ['avocado', 'avocado toast', 'tomato', 'chilli bottle', 'chopping board', 'knife', 'lid']
-Verb-noun pairs in sequence: ['press;pepper;553.0;559.76', 'throw;lid;561.1;565.35']
+Objects in sequence: ['avocado toast', 'chopping board', 'knife', 'chilli bottle', 'lid', 'avocado', 'tomato']
+Verb-noun pairs in sequence: ['press pepper;553.0;559.76', 'throw away lids;561.1;565.35']
 ************
 Start timestamp: 568.9, Stop timestamp: 571.4
 Narration: pour tomatoes on avocado bread
@@ -579,8 +579,8 @@ Narration: open microwave
 ------
 ************
 Frame IDs in sequence: [34603, 34634, 34716, 34775, 34850, 34886]
-Objects in sequence: ['microwave', 'kitchen towel', 'mug']
-Verb-noun pairs in sequence: ['pour-on;tomato;568.9;571.4', 'wipe-off;hand;576.15;577.78']
+Objects in sequence: ['kitchen towel', 'mug', 'microwave']
+Verb-noun pairs in sequence: ['pour tomatoes on avocado bread;568.9;571.4', 'wipe off hands;576.15;577.78']
 ************
 Start timestamp: 579.1, Stop timestamp: 580.6
 Narration: get mug
@@ -599,8 +599,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [35065, 35196, 35370, 35398, 35601, 35643]
-Objects in sequence: ['fridge', 'cheese container']
-Verb-noun pairs in sequence: ['close;oven:microwave;580.55;581.8', 'close;container:cheese;582.61;588.52', 'place;cheese;588.5;592.78']
+Objects in sequence: ['cheese container', 'fridge']
+Verb-noun pairs in sequence: ['close microwave oven;580.55;581.8', 'close cheese container;582.61;588.52', 'place cheese;588.5;592.78']
 ************
 Start timestamp: 592.88, Stop timestamp: 594.62
 Narration: close fridge
@@ -613,8 +613,8 @@ Narration: get fork
 ------
 ************
 Frame IDs in sequence: [35804, 35892, 36004, 36116, 36180, 36255]
-Objects in sequence: ['fork', 'cupboard', 'knife', 'plate']
-Verb-noun pairs in sequence: ['close;fridge;592.88;594.62', 'get;plate;596.35;599.12']
+Objects in sequence: ['knife', 'plate', 'cupboard', 'fork']
+Verb-noun pairs in sequence: ['close fridge;592.88;594.62', 'get plate;596.35;599.12']
 ************
 Start timestamp: 603.84, Stop timestamp: 604.88
 Narration: open cupboard
@@ -627,8 +627,8 @@ Narration: place salt
 ------
 ************
 Frame IDs in sequence: [36324, 36367, 36438, 36475, 36531, 36563]
-Objects in sequence: ['salt bottle', 'spice', 'cupboard', 'kitchen towel']
-Verb-noun pairs in sequence: ['open;cupboard;603.84;604.88', 'place;spice;604.94;606.69']
+Objects in sequence: ['cupboard', 'salt bottle', 'kitchen towel', 'spice']
+Verb-noun pairs in sequence: ['open cupboard;603.84;604.88', 'place spice;604.94;606.69']
 ************
 Start timestamp: 608.54, Stop timestamp: 609.54
 Narration: close cupboard

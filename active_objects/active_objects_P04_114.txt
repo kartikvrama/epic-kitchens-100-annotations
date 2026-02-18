@@ -9,8 +9,8 @@ Narration: turn off switch
 ------
 ************
 Frame IDs in sequence: [65, 127, 195, 263, 329, 396]
-Objects in sequence: ['switch', 'glove', 'oven door']
-Verb-noun pairs in sequence: ['move-on;glove:oven;0.91;2.17', 'look-in;oven;2.25;3.59']
+Objects in sequence: ['switch', 'oven door', 'glove']
+Verb-noun pairs in sequence: ['move oven gloves on oven door;0.91;2.17', 'look in oven;2.25;3.59']
 ************
 Start timestamp: 9.39, Stop timestamp: 11.37
 Narration: lift lid off rice cooker
@@ -23,8 +23,8 @@ Narration: wipe water with tea towel
 ------
 ************
 Frame IDs in sequence: [491, 546, 757, 866, 976, 1067]
-Objects in sequence: ['rice cooker lid', 'tea towel', 'rice cooker', 'hob', 'water']
-Verb-noun pairs in sequence: ['lift-off;lid;9.39;11.37', 'put-down;lid:rice:cooker;14.79;16.07']
+Objects in sequence: ['rice cooker lid', 'tea towel', 'hob', 'water', 'rice cooker']
+Verb-noun pairs in sequence: ['lift lid off rice cooker;9.39;11.37', 'put down rice cooker lid;14.79;16.07']
 ************
 Start timestamp: 22.31, Stop timestamp: 23.16
 Narration: pick up kettle
@@ -38,7 +38,7 @@ Narration: turn on kettle
 ************
 Frame IDs in sequence: [1117, 1125, 1134, 1151, 1167, 1184]
 Objects in sequence: ['kettle']
-Verb-noun pairs in sequence: ['pick-up;kettle;22.31;23.16', 'put-down;kettle;23.23;23.64']
+Verb-noun pairs in sequence: ['pick up kettle;22.31;23.16', 'put down kettle;23.23;23.64']
 ************
 Start timestamp: 26.47, Stop timestamp: 27.98
 Narration: pick up mug
@@ -51,8 +51,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [1344, 1376, 1407, 1438, 1463, 1513]
-Objects in sequence: ['sink', 'tap', 'aeropress', 'water', 'mug', 'coffee']
-Verb-noun pairs in sequence: ['pick-up;mug;26.47;27.98', 'empty;mug;28.61;29.4']
+Objects in sequence: ['sink', 'coffee', 'aeropress', 'water', 'mug', 'tap']
+Verb-noun pairs in sequence: ['pick up mug;26.47;27.98', 'empty mug into sink;28.61;29.4']
 ************
 Start timestamp: 30.0, Stop timestamp: 30.63
 Narration: shake mug
@@ -71,8 +71,8 @@ Narration: pick up aeropress
 ------
 ************
 Frame IDs in sequence: [1550, 1592, 1636, 1680, 1755, 1796]
-Objects in sequence: ['sink', 'tap', 'aeropress', 'aeropress filter', 'mug', 'water']
-Verb-noun pairs in sequence: ['rinse;mug;30.37;32.41', 'turn-off;tap;31.52;33.22', 'put-down;mug;33.24;34.37']
+Objects in sequence: ['sink', 'aeropress filter', 'aeropress', 'water', 'mug', 'tap']
+Verb-noun pairs in sequence: ['rinse mug;30.37;32.41', 'turn off tap;31.52;33.22', 'put down mug;33.24;34.37']
 ************
 Start timestamp: 35.84, Stop timestamp: 36.68
 Narration: put down aeropress filter
@@ -91,8 +91,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [1876, 1901, 1959, 2011, 2146, 2180]
-Objects in sequence: ['sink', 'tap', 'aeropress', 'cup', 'cupboard']
-Verb-noun pairs in sequence: ['flick;aeropress;37.25;38.05', 'pull-out;aeropress;38.58;40.87', 'put-down;aeropress;40.55;41.85']
+Objects in sequence: ['sink', 'cupboard', 'aeropress', 'cup', 'tap']
+Verb-noun pairs in sequence: ['flick bit off aeropress;37.25;38.05', 'pull out aeropress presser;38.58;40.87', 'put down aeropress;40.55;41.85']
 ************
 Start timestamp: 44.02, Stop timestamp: 45.58
 Narration: pick up coffee
@@ -105,8 +105,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [2223, 2255, 2376, 2433, 2490]
-Objects in sequence: ['drawer', 'cupboard', 'coffee bag']
-Verb-noun pairs in sequence: ['pick-up;coffee;44.02;45.58', 'open;bag:coffee;45.93;48.08']
+Objects in sequence: ['coffee bag', 'cupboard', 'drawer']
+Verb-noun pairs in sequence: ['pick up coffee;44.02;45.58', 'open coffee bag;45.93;48.08']
 ************
 Start timestamp: 50.11, Stop timestamp: 51.21
 Narration: pick up spoon
@@ -122,8 +122,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [2580, 2673, 2720, 2767, 2801, 2851]
-Objects in sequence: ['drawer', 'aeropress', 'hob', 'coffee bag', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['spoon-into;coffee;51.17;52.2', 'tap-on;spoon;54.94;56.69']
+Objects in sequence: ['coffee bag', 'coffee', 'hob', 'aeropress', 'spoon', 'drawer']
+Verb-noun pairs in sequence: ['spoon coffee into aeropress;51.17;52.2', 'tap spoon on aeropress;54.94;56.69']
 ************
 Start timestamp: 58.14, Stop timestamp: 59.39
 Narration: fold up coffee bag
@@ -136,8 +136,8 @@ Narration: put coffee in cupboard
 ------
 ************
 Frame IDs in sequence: [2930, 2957, 2984, 3001, 3019, 3048]
-Objects in sequence: ['coffee bag', 'cupboard']
-Verb-noun pairs in sequence: ['fold-up;bag:coffee;58.14;59.39', 'open;cupboard;59.65;60.4']
+Objects in sequence: ['cupboard', 'coffee bag']
+Verb-noun pairs in sequence: ['fold up coffee bag;58.14;59.39', 'open cupboard;59.65;60.4']
 ************
 Start timestamp: 61.16, Stop timestamp: 62.51
 Narration: close cupboard
@@ -153,8 +153,8 @@ Narration: put down kettle
 ------
 ************
 Frame IDs in sequence: [3136, 3167, 3276, 3426, 3546, 3574]
-Objects in sequence: ['kettle', 'aeropress', 'coffee', 'hob', 'spoon', 'water']
-Verb-noun pairs in sequence: ['pick-up;kettle;62.54;63.49', 'pour-from;water;64.09;69.87']
+Objects in sequence: ['coffee', 'hob', 'aeropress', 'water', 'spoon', 'kettle']
+Verb-noun pairs in sequence: ['pick up kettle;62.54;63.49', 'pour water from kettle into aeropress;64.09;69.87']
 ************
 Start timestamp: 72.15, Stop timestamp: 73.55
 Narration: pick up spoon
@@ -167,8 +167,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [3615, 3671, 3751, 3842, 3980, 4026]
-Objects in sequence: ['sink', 'tap', 'aeropress', 'water', 'hob', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['pick-up;spoon;72.15;73.55', 'stir-in;coffee;74.01;77.87']
+Objects in sequence: ['sink', 'coffee', 'hob', 'aeropress', 'water', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['pick up spoon;72.15;73.55', 'stir coffee in aeropress with spoon handle;74.01;77.87']
 ************
 Start timestamp: 80.72, Stop timestamp: 81.26
 Narration: rinse spoon handle
@@ -187,8 +187,8 @@ Narration: pick up aeropress filter
 ------
 ************
 Frame IDs in sequence: [4084, 4151, 4176, 4216, 4257, 4313]
-Objects in sequence: ['sink', 'aeropress', 'tea towel', 'hob', 'spoon', 'aeropress filter', 'coffee']
-Verb-noun pairs in sequence: ['turn-off;tap;81.39;81.78', 'pick-up;towel:tea;82.94;83.72', 'dry;spoon;83.4;84.6']
+Objects in sequence: ['sink', 'aeropress filter', 'coffee', 'tea towel', 'hob', 'aeropress', 'spoon']
+Verb-noun pairs in sequence: ['turn off tap;81.39;81.78', 'pick up tea towel;82.94;83.72', 'dry spoon with tea towel;83.4;84.6']
 ************
 Start timestamp: 84.51, Stop timestamp: 85.3
 Narration: put down spoon
@@ -210,8 +210,8 @@ Narration: turn over aeropress
 ------
 ************
 Frame IDs in sequence: [4351, 4384, 4463, 4509, 4676, 4713]
-Objects in sequence: ['aeropress', 'mug', 'hob', 'aeropress filter', 'coffee']
-Verb-noun pairs in sequence: ['wipe;filter:aeropress;86.89;87.7', 'put-on;filter;87.64;89.06', 'lock-on;filter;89.05;90.64', 'push-down;aeropress;90.62;93.17']
+Objects in sequence: ['aeropress filter', 'coffee', 'hob', 'aeropress', 'mug']
+Verb-noun pairs in sequence: ['wipe bit off aeropress filter;86.89;87.7', 'put filter on aeropress;87.64;89.06', 'lock filter on aeropress;89.05;90.64', 'push down aeropress;90.62;93.17']
 ************
 Start timestamp: 94.95, Stop timestamp: 96.11
 Narration: put aeropress on mug
@@ -227,8 +227,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [4751, 4800, 5030, 5063, 5126, 5159]
-Objects in sequence: ['drawer', 'aeropress', 'knife', 'mug']
-Verb-noun pairs in sequence: ['put-on;aeropress;94.95;96.11', 'press-down;aeropress;95.87;100.14', 'pick-up;knife;100.39;101.39']
+Objects in sequence: ['knife', 'drawer', 'aeropress', 'mug']
+Verb-noun pairs in sequence: ['put aeropress on mug;94.95;96.11', 'press down on aeropress;95.87;100.14', 'pick up knife;100.39;101.39']
 ************
 Start timestamp: 103.78999999999999, Stop timestamp: 104.71000000000001
 Narration: take sheath off knife
@@ -244,8 +244,8 @@ Narration: put knife in drawer
 ------
 ************
 Frame IDs in sequence: [5201, 5226, 5276, 5307, 5338, 5388]
-Objects in sequence: ['drawer', 'sheath', 'knife']
-Verb-noun pairs in sequence: ['take-off;sheath;103.78999999999999;104.71000000000001', 'turn-over;sheath;104.53999999999999;105.03999999999999', 'sheath;knife;105.14;107.14']
+Objects in sequence: ['knife', 'drawer', 'sheath']
+Verb-noun pairs in sequence: ['take sheath off knife;103.78999999999999;104.71000000000001', 'turn over sheath;104.53999999999999;105.03999999999999', 'sheath knife;105.14;107.14']
 ************
 Start timestamp: 107.84, Stop timestamp: 108.71000000000001
 Narration: close drawer
@@ -261,8 +261,8 @@ Narration: unscrew filter from aeropress
 ------
 ************
 Frame IDs in sequence: [5621, 6026, 6261, 6317, 6394, 6446]
-Objects in sequence: ['sink', 'aeropress', 'aeropress filter', 'mug']
-Verb-noun pairs in sequence: ['press-down;aeropress;110.11;124.94', 'take-off;aeropress;125.04;126.54']
+Objects in sequence: ['sink', 'aeropress filter', 'aeropress', 'mug']
+Verb-noun pairs in sequence: ['press down on aeropress;110.11;124.94', 'take aeropress off mug;125.04;126.54']
 ************
 Start timestamp: 129.22, Stop timestamp: 130.24
 Narration: shake hand
@@ -281,8 +281,8 @@ Narration: put down filter
 ------
 ************
 Frame IDs in sequence: [6565, 6580, 6596, 6619, 6642, 6671]
-Objects in sequence: ['sink', 'filter holder', 'aeropress', 'aeropress filter']
-Verb-noun pairs in sequence: ['put-down;holder:filter;131.35;132.19', 'pull-off;filter;131.71;132.56', 'take-off;filter;132.7;133.08']
+Objects in sequence: ['sink', 'aeropress filter', 'aeropress', 'filter holder']
+Verb-noun pairs in sequence: ['put down filter holder;131.35;132.19', 'pull filter off aeropress;131.71;132.56', 'take filter off aeropress;132.7;133.08']
 ************
 Start timestamp: 133.93, Stop timestamp: 134.81
 Narration: pick up sponge
@@ -298,8 +298,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [6701, 6728, 6752, 6777, 6801, 6826]
-Objects in sequence: ['sink', 'sponge', 'tap', 'filter holder', 'aeropress', 'aeropress filter']
-Verb-noun pairs in sequence: ['pick-up;sponge;133.93;134.81', 'drop;sponge;134.75;135.0', 'push-down;aeropress;135.19;135.95']
+Objects in sequence: ['sink', 'sponge', 'aeropress filter', 'aeropress', 'filter holder', 'tap']
+Verb-noun pairs in sequence: ['pick up sponge;133.93;134.81', 'drop sponge;134.75;135.0', 'push down on aeropress;135.19;135.95']
 ************
 Start timestamp: 136.85, Stop timestamp: 137.35
 Narration: rinse fingers under tap
@@ -318,8 +318,8 @@ Narration: rinse filter under tap
 ------
 ************
 Frame IDs in sequence: [6917, 7001, 7072, 7149, 7226, 7301]
-Objects in sequence: ['sink', 'tap', 'filter holder', 'filter', 'aeropress', 'aeropress filter', 'water']
-Verb-noun pairs in sequence: ['rinse-under;bottom:aeropress;137.65;140.5', 'put-down;aeropress;140.8;142.4', 'pick-up;filter;142.34;143.6']
+Objects in sequence: ['sink', 'filter', 'aeropress filter', 'aeropress', 'filter holder', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse bottom of aeropress under tap;137.65;140.5', 'put down aeropress;140.8;142.4', 'pick up filter and filter holder;142.34;143.6']
 ************
 Start timestamp: 146.34, Stop timestamp: 147.88
 Narration: wipe coffee off filter
@@ -335,8 +335,8 @@ Narration: put filter on aeropress
 ------
 ************
 Frame IDs in sequence: [7391, 7421, 7477, 7534, 7567, 7601]
-Objects in sequence: ['sink', 'tap', 'filter holder', 'tea towel', 'aeropress filter', 'water']
-Verb-noun pairs in sequence: ['turn-off;tap;147.48;148.41', 'shake;filter;148.49;149.0']
+Objects in sequence: ['sink', 'aeropress filter', 'tea towel', 'filter holder', 'water', 'tap']
+Verb-noun pairs in sequence: ['turn off tap;147.48;148.41', 'shake filter;148.49;149.0']
 ************
 Start timestamp: 150.15, Stop timestamp: 152.35
 Narration: pick up tea towel
@@ -353,5 +353,5 @@ Narration: look in oven
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
-Verb-noun pairs in sequence: ['pick-up;towel:tea;150.15;152.35', 'dry-with;hand;152.45;153.7', 'put-on;towel:tea;153.54;154.79']
+Verb-noun pairs in sequence: ['pick up tea towel;150.15;152.35', 'dry hands with tea towel;152.45;153.7', 'put tea towel on oven door;153.54;154.79']
 ************

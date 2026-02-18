@@ -13,7 +13,7 @@ Narration: put down plates
 ************
 Frame IDs in sequence: [263, 332, 369, 407, 467, 528]
 Objects in sequence: ['cupboard', 'plate']
-Verb-noun pairs in sequence: ['open;cupboard;4.79;5.99', 'pick-up;plate;6.13;8.78', 'put-down;plate;8.5;10.09']
+Verb-noun pairs in sequence: ['open cupboard;4.79;5.99', 'pick up plate;6.13;8.78', 'put down plate;8.5;10.09']
 ************
 Start timestamp: 11.45, Stop timestamp: 12.2
 Narration: close cupboard
@@ -26,8 +26,8 @@ Narration: take out tray
 ------
 ************
 Frame IDs in sequence: [568, 613, 667, 747, 793, 840]
-Objects in sequence: ['oven', 'tray', 'glove', 'pizza', 'plate']
-Verb-noun pairs in sequence: ['close;cupboard;11.45;12.2', 'open;oven;12.46;13.34']
+Objects in sequence: ['glove', 'plate', 'tray', 'oven', 'pizza']
+Verb-noun pairs in sequence: ['close cupboard;11.45;12.2', 'open oven;12.46;13.34']
 ************
 Start timestamp: 18.16, Stop timestamp: 19.01
 Narration: put down pizza
@@ -43,8 +43,8 @@ Narration: put down pizza
 ------
 ************
 Frame IDs in sequence: [923, 1069, 1216, 1282, 1309, 1337]
-Objects in sequence: ['oven', 'tray', 'glove', 'pizza', 'right glove', 'left glove', 'plate']
-Verb-noun pairs in sequence: ['put-down;pizza;18.16;19.01', 'put-back;tray;18.85;23.17', 'take-out;tray;24.19;25.84']
+Objects in sequence: ['glove', 'plate', 'right glove', 'tray', 'oven', 'left glove', 'pizza']
+Verb-noun pairs in sequence: ['put down pizza;18.16;19.01', 'put back tray;18.85;23.17', 'take out tray;24.19;25.84']
 ************
 Start timestamp: 28.28, Stop timestamp: 30.39
 Narration: put back tray
@@ -60,8 +60,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [1440, 1500, 1601, 1644, 1729, 1769]
-Objects in sequence: ['drawer', 'oven', 'tray', 'glove', 'right glove']
-Verb-noun pairs in sequence: ['put-back;tray;28.28;30.39', 'close;door:oven;29.73;31.31', 'put-down;glove:oven;31.68;33.08']
+Objects in sequence: ['glove', 'right glove', 'drawer', 'tray', 'oven']
+Verb-noun pairs in sequence: ['put back tray;28.28;30.39', 'close oven door;29.73;31.31', 'put down oven gloves;31.68;33.08']
 ************
 Start timestamp: 36.13, Stop timestamp: 38.74
 Narration: pick up scissors
@@ -74,8 +74,8 @@ Narration: continue cutting pizza
 ------
 ************
 Frame IDs in sequence: [1837, 1909, 2101, 2209, 2317, 2417]
-Objects in sequence: ['drawer', 'scissors', 'pizza', 'plate']
-Verb-noun pairs in sequence: ['pick-up;scissors;36.13;38.74', 'cut;pizza;40.62;45.77']
+Objects in sequence: ['plate', 'scissors', 'drawer', 'pizza']
+Verb-noun pairs in sequence: ['pick up scissors;36.13;38.74', 'cut pizza;40.62;45.77']
 ************
 Start timestamp: 50.84, Stop timestamp: 58.49
 Narration: cut pizza
@@ -88,8 +88,8 @@ Narration: cut pizza
 ------
 ************
 Frame IDs in sequence: [2630, 2863, 3301, 3517, 3701, 3876]
-Objects in sequence: ['scissors', 'pizza', 'plate']
-Verb-noun pairs in sequence: ['cut;pizza;50.84;58.49', 'cut;pizza;64.39;71.63']
+Objects in sequence: ['plate', 'scissors', 'pizza']
+Verb-noun pairs in sequence: ['cut pizza;50.84;58.49', 'cut pizza;64.39;71.63']
 ************
 Start timestamp: 81.39, Stop timestamp: 90.01
 Narration: cut pizza
@@ -102,8 +102,8 @@ Narration: put down scissors in dishwasher
 ------
 ************
 Frame IDs in sequence: [4167, 4300, 4434, 4680, 4705, 4740]
-Objects in sequence: ['sink', 'scissors', 'dishwasher', 'pizza']
-Verb-noun pairs in sequence: ['cut;pizza;81.39;90.01', 'open;dishwasher;93.45;94.24000000000001']
+Objects in sequence: ['sink', 'dishwasher', 'scissors', 'pizza']
+Verb-noun pairs in sequence: ['cut pizza;81.39;90.01', 'open dishwasher;93.45;94.24000000000001']
 ************
 Start timestamp: 96.4, Stop timestamp: 97.06
 Narration: turn on tap
@@ -116,8 +116,8 @@ Narration: pick up fork
 ------
 ************
 Frame IDs in sequence: [4830, 4857, 4884, 5092]
-Objects in sequence: ['tissue paper', 'sink', 'fork', 'tap']
-Verb-noun pairs in sequence: ['turn-on;tap;96.4;97.06', 'rinse;hand;97.11;97.97']
+Objects in sequence: ['sink', 'fork', 'tissue paper', 'tap']
+Verb-noun pairs in sequence: ['turn on tap;96.4;97.06', 'rinse hands;97.11;97.97']
 ************
 Start timestamp: 102.53, Stop timestamp: 107.18
 Narration: pick up tissue paper
@@ -133,8 +133,8 @@ Narration: pick up pizzas
 ------
 ************
 Frame IDs in sequence: [5375, 5430, 5643, 5672, 5846, 5900]
-Objects in sequence: ['tissue paper', 'fork', 'dishwasher', 'pizza', 'bin', 'plate']
-Verb-noun pairs in sequence: ['throw-in;paper:toilet;106.66;109.17', 'put-in;fork;112.78;113.88']
+Objects in sequence: ['plate', 'bin', 'fork', 'dishwasher', 'tissue paper', 'pizza']
+Verb-noun pairs in sequence: ['throw toilet paper in bin;106.66;109.17', 'put fork in dishwasher;112.78;113.88']
 ************
 Start timestamp: 121.32, Stop timestamp: 122.33
 Narration: put down pizzas

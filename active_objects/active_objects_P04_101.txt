@@ -12,8 +12,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [84, 123, 192, 217, 370, 421]
-Objects in sequence: ['cling film', 'drawer', 'tub', 'mixture']
-Verb-noun pairs in sequence: ['pick-up;film:cling;1.37;2.68', 'pick-up;tub;3.69;4.81', 'smell;starter;4.68;5.87']
+Objects in sequence: ['mixture', 'tub', 'drawer', 'cling film']
+Verb-noun pairs in sequence: ['pick up cling film;1.37;2.68', 'pick up tub;3.69;4.81', 'smell starter;4.68;5.87']
 ************
 Start timestamp: 9.11, Stop timestamp: 10.2
 Narration: pick up spoon
@@ -26,8 +26,8 @@ Narration: put down starter
 ------
 ************
 Frame IDs in sequence: [471, 500, 530, 565, 583, 601]
-Objects in sequence: ['drawer', 'tub', 'cupboard', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['pick-up;spoon;9.11;10.2', 'close;drawer;10.26;11.19']
+Objects in sequence: ['mixture', 'cupboard', 'tub', 'spoon', 'drawer']
+Verb-noun pairs in sequence: ['pick up spoon;9.11;10.2', 'close drawer;10.26;11.19']
 ************
 Start timestamp: 12.98, Stop timestamp: 14.03
 Narration: open cupboard
@@ -40,8 +40,8 @@ Narration: pick up tub
 ------
 ************
 Frame IDs in sequence: [671, 713, 755, 826, 905, 976]
-Objects in sequence: ['tub', 'cupboard', 'spoon']
-Verb-noun pairs in sequence: ['open;cupboard;12.98;14.03', 'look-for;tub;14.21;17.07']
+Objects in sequence: ['cupboard', 'tub', 'spoon']
+Verb-noun pairs in sequence: ['open cupboard;12.98;14.03', 'look for tub;14.21;17.07']
 ************
 Start timestamp: 20.0, Stop timestamp: 23.25
 Narration: move bowl
@@ -58,7 +58,7 @@ Narration: move bowl
 ************
 Frame IDs in sequence: [1080, 1126, 1172, 1217, 1247, 1284]
 Objects in sequence: ['cupboard', 'tub']
-Verb-noun pairs in sequence: ['put-down;tub;21.43;23.09', 'move;bowl;23.35;24.6']
+Verb-noun pairs in sequence: ['put down tub;21.43;23.09', 'move bowl;23.35;24.6']
 ************
 Start timestamp: 25.94, Stop timestamp: 30.34
 Narration: pick up tub
@@ -77,8 +77,8 @@ Narration: open lid
 ------
 ************
 Frame IDs in sequence: [1516, 1560, 1623, 1674, 1726, 1755]
-Objects in sequence: ['bowl', 'container', 'tub', 'starter', 'cupboard', 'spoon', 'lid']
-Verb-noun pairs in sequence: ['push;bowl;30.36;31.04', 'close;cupboard;31.1;32.74', 'put-down;tub;32.5;35.5']
+Objects in sequence: ['container', 'cupboard', 'tub', 'starter', 'lid', 'bowl', 'spoon']
+Verb-noun pairs in sequence: ['push bowl;30.36;31.04', 'close cupboard;31.1;32.74', 'put down tub;32.5;35.5']
 ************
 Start timestamp: 35.36, Stop timestamp: 36.02
 Narration: put down lid
@@ -97,8 +97,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [1815, 1855, 1896, 1951, 1996, 2032]
-Objects in sequence: ['bowl', 'drawer', 'tub', 'starter', 'spoon', 'scale', 'lid']
-Verb-noun pairs in sequence: ['turn-on;scale;36.0;38.56', 'open;drawer;37.53;40.0', 'pick-up;scale;39.1;39.72']
+Objects in sequence: ['tub', 'starter', 'lid', 'bowl', 'spoon', 'drawer', 'scale']
+Verb-noun pairs in sequence: ['turn on scales;36.0;38.56', 'open drawer;37.53;40.0', 'pick up scales;39.1;39.72']
 ************
 Start timestamp: 40.59, Stop timestamp: 42.11
 Narration: move lid
@@ -117,8 +117,8 @@ Narration: transfer spoon to other hand
 ------
 ************
 Frame IDs in sequence: [2125, 2165, 2186, 2207, 2249, 2276]
-Objects in sequence: ['bowl', 'tub', 'starter', 'button', 'spoon', 'scale', 'lid']
-Verb-noun pairs in sequence: ['move;tub;42.16;42.91', 'put-down;scale;43.0;43.68', 'put-down;tub;43.6;44.62']
+Objects in sequence: ['tub', 'starter', 'lid', 'bowl', 'button', 'spoon', 'scale']
+Verb-noun pairs in sequence: ['move tub;42.16;42.91', 'put down scales;43.0;43.68', 'put down tub;43.6;44.62']
 ************
 Start timestamp: 45.5, Stop timestamp: 46.54
 Narration: press button on scales
@@ -137,8 +137,8 @@ Narration: pick up tub
 ------
 ************
 Frame IDs in sequence: [2376, 2476, 2527, 2578, 2680, 2717]
-Objects in sequence: ['bowl', 'tub', 'starter', 'button', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['press;button;46.49;50.27', 'press;button;48.77;50.67', 'transfer-to;spoon;53.68;54.37']
+Objects in sequence: ['tub', 'starter', 'button', 'bowl', 'spoon', 'scale']
+Verb-noun pairs in sequence: ['press button on scales;46.49;50.27', 'press button on scale;48.77;50.67', 'transfer spoon to other hand;53.68;54.37']
 ************
 Start timestamp: 55.23, Stop timestamp: 55.9
 Narration: spoon starter into tub
@@ -154,8 +154,8 @@ Narration: put down tub
 ------
 ************
 Frame IDs in sequence: [2842, 2867, 3146, 3301, 3363, 3392]
-Objects in sequence: ['bowl', 'tub', 'mixture', 'starter', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['spoon;starter;56.63;57.44', 'shake;spoon;61.49;66.95']
+Objects in sequence: ['mixture', 'tub', 'starter', 'bowl', 'spoon', 'scale']
+Verb-noun pairs in sequence: ['spoon starter into tub;56.63;57.44', 'shake spoon;61.49;66.95']
 ************
 Start timestamp: 68.28, Stop timestamp: 69.06
 Narration: put down spoon
@@ -171,8 +171,8 @@ Narration: open flour
 ------
 ************
 Frame IDs in sequence: [3413, 3451, 3546, 3595, 3717, 3776]
-Objects in sequence: ['bowl', 'drawer', 'flour bag', 'tub', 'starter', 'scale', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['put-down;spoon;68.28;69.06', 'open;drawer;70.57;72.03999999999999', 'pick-up;spoon;71.96000000000001;72.74']
+Objects in sequence: ['mixture', 'tub', 'starter', 'flour bag', 'bowl', 'spoon', 'drawer', 'scale']
+Verb-noun pairs in sequence: ['put down spoon;68.28;69.06', 'open drawer;70.57;72.03999999999999', 'pick up spoon;71.96000000000001;72.74']
 ************
 Start timestamp: 76.18, Stop timestamp: 79.84
 Narration: spoon flour into tub
@@ -191,8 +191,8 @@ Narration: shake spoon
 ------
 ************
 Frame IDs in sequence: [4026, 4126, 4351, 4384, 4450, 4501]
-Objects in sequence: ['bowl', 'flour bag', 'tub', 'mixture', 'starter', 'flour', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['spoon-into;flour;79.28;83.38', 'spoon-into;flour;83.22;86.44', 'spoon-into;flour;86.53999999999999;88.26']
+Objects in sequence: ['mixture', 'tub', 'starter', 'flour bag', 'bowl', 'spoon', 'flour', 'scale']
+Verb-noun pairs in sequence: ['spoon flour into tub;79.28;83.38', 'spoon flour into tub;83.22;86.44', 'spoon flour into tub;86.53999999999999;88.26']
 ************
 Start timestamp: 92.55, Stop timestamp: 94.3
 Narration: spoon flour into tub
@@ -211,8 +211,8 @@ Narration: shake spoon
 ------
 ************
 Frame IDs in sequence: [4651, 4700, 4775, 4851, 4926, 4976]
-Objects in sequence: ['bowl', 'flour bag', 'tub', 'mixture', 'starter', 'flour', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['spoon-into;flour;92.55;94.3', 'spoon-into;flour;93.94;98.39', 'shake;spoon;96.72999999999999;97.47', 'empty;spoon;97.0;100.28999999999999']
+Objects in sequence: ['mixture', 'tub', 'starter', 'flour bag', 'bowl', 'spoon', 'flour', 'scale']
+Verb-noun pairs in sequence: ['spoon flour into tub;92.55;94.3', 'spoon flour into tub;93.94;98.39', 'shake spoon;96.72999999999999;97.47', 'empty spoon;97.0;100.28999999999999']
 ************
 Start timestamp: 100.13, Stop timestamp: 100.87
 Narration: put down spoon
@@ -225,8 +225,8 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [5017, 5071, 5126, 5157, 5192, 5225]
-Objects in sequence: ['bowl', 'flour bag', 'drawer', 'tub', 'sink', 'tap', 'starter', 'scale', 'flour', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['put-down;spoon;100.13;100.87', 'open;drawer;102.47;103.22999999999999']
+Objects in sequence: ['sink', 'mixture', 'tub', 'starter', 'flour bag', 'bowl', 'tap', 'spoon', 'drawer', 'flour', 'scale']
+Verb-noun pairs in sequence: ['put down spoon;100.13;100.87', 'open drawer;102.47;103.22999999999999']
 ************
 Start timestamp: 104.52000000000001, Stop timestamp: 104.83
 Narration: close drawer
@@ -239,8 +239,8 @@ Narration: fill spoon with water
 ------
 ************
 Frame IDs in sequence: [5226, 5253, 5281, 5326, 5355, 5384]
-Objects in sequence: ['bowl', 'sink', 'drawer', 'tub', 'flour bag', 'tap', 'mixture', 'starter', 'flour', 'spoon', 'scale', 'water']
-Verb-noun pairs in sequence: ['close;drawer;104.52000000000001;104.83', 'turn-on;tap;104.93;105.78999999999999']
+Objects in sequence: ['sink', 'mixture', 'tub', 'starter', 'flour bag', 'bowl', 'scale', 'water', 'spoon', 'drawer', 'flour', 'tap']
+Verb-noun pairs in sequence: ['close drawer;104.52000000000001;104.83', 'turn on tap;104.93;105.78999999999999']
 ************
 Start timestamp: 108.89, Stop timestamp: 110.18
 Narration: smell water
@@ -256,8 +256,8 @@ Narration: fill spoon with water
 ------
 ************
 Frame IDs in sequence: [5463, 5492, 5521, 5548, 5576, 5617]
-Objects in sequence: ['sink', 'tub', 'tap', 'starter', 'spoon', 'water']
-Verb-noun pairs in sequence: ['smell;water;108.89;110.18', 'empty;spoon;110.31;110.99000000000001', 'test;water;110.94;111.86']
+Objects in sequence: ['sink', 'tub', 'starter', 'water', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['smell water;108.89;110.18', 'empty spoon;110.31;110.99000000000001', 'test water;110.94;111.86']
 ************
 Start timestamp: 112.44, Stop timestamp: 113.96000000000001
 Narration: turn off tap
@@ -273,8 +273,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [5846, 5948, 6051, 6113, 6176, 6226]
-Objects in sequence: ['bowl', 'sink', 'flour bag', 'tub', 'starter', 'scale', 'flour', 'spoon', 'mixture', 'water']
-Verb-noun pairs in sequence: ['empty;water;115.39;122.5', 'empty;water;123.09;124.13']
+Objects in sequence: ['sink', 'mixture', 'tub', 'starter', 'flour bag', 'bowl', 'water', 'spoon', 'flour', 'scale']
+Verb-noun pairs in sequence: ['empty water into tub;115.39;122.5', 'empty water into sink;123.09;124.13']
 ************
 Start timestamp: 125.27, Stop timestamp: 126.44
 Narration: pick up spoon
@@ -290,8 +290,8 @@ Narration: check time
 ------
 ************
 Frame IDs in sequence: [6276, 6321, 6676, 6701, 7160, 7217]
-Objects in sequence: ['bowl', 'flour bag', 'tub', 'starter', 'scale', 'flour', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['pick-up;spoon;125.27;126.44', 'stir;mixture;126.28;141.65', 'hold;tub;133.37;134.16']
+Objects in sequence: ['mixture', 'tub', 'starter', 'flour bag', 'bowl', 'spoon', 'flour', 'scale']
+Verb-noun pairs in sequence: ['pick up spoon;125.27;126.44', 'stir mixture;126.28;141.65', 'hold tub;133.37;134.16']
 ************
 Start timestamp: 144.6, Stop timestamp: 174.41
 Narration: hold tub
@@ -307,8 +307,8 @@ Narration: put water in tub
 ------
 ************
 Frame IDs in sequence: [7326, 7651, 8244, 8838, 8901, 8930]
-Objects in sequence: ['bowl', 'sink', 'flour bag', 'tub', 'tap', 'starter', 'scale', 'spoon', 'mixture', 'water']
-Verb-noun pairs in sequence: ['stir;mixture;144.66;154.99', 'turn-on;tap;176.19;177.56']
+Objects in sequence: ['sink', 'mixture', 'tub', 'starter', 'flour bag', 'bowl', 'tap', 'water', 'spoon', 'scale']
+Verb-noun pairs in sequence: ['stir mixture;144.66;154.99', 'turn on tap;176.19;177.56']
 ************
 Start timestamp: 178.68, Stop timestamp: 179.39
 Narration: turn off tap
@@ -324,8 +324,8 @@ Narration: flatten mixture
 ------
 ************
 Frame IDs in sequence: [9001, 9038, 9076, 9130, 9476, 9584]
-Objects in sequence: ['bowl', 'tub', 'starter', 'scale', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['stir;mixture;179.7;181.06', 'put-down;tub;181.13;182.8']
+Objects in sequence: ['mixture', 'tub', 'starter', 'bowl', 'spoon', 'scale']
+Verb-noun pairs in sequence: ['stir mixture;179.7;181.06', 'put down tub;181.13;182.8']
 ************
 Start timestamp: 193.24, Stop timestamp: 194.25
 Narration: put down tub
@@ -350,8 +350,8 @@ Narration: open dishwasher
 ------
 ************
 Frame IDs in sequence: [9817, 9846, 9955, 10017, 10080, 10126]
-Objects in sequence: ['bowl', 'cling film', 'tub', 'dishwasher', 'starter', 'scale', 'spoon', 'mixture']
-Verb-noun pairs in sequence: ['pick-up;film:cling;195.85;197.12', 'pick-up;tub;196.0;198.8', 'put-on;film:cling;196.85;198.71', 'put-down;tub;198.85;199.67000000000002', 'shake;spoon;199.65;201.59']
+Objects in sequence: ['mixture', 'tub', 'starter', 'bowl', 'dishwasher', 'spoon', 'cling film', 'scale']
+Verb-noun pairs in sequence: ['pick up cling film;195.85;197.12', 'pick up tub;196.0;198.8', 'put cling film on tub;196.85;198.71', 'put down tub;198.85;199.67000000000002', 'shake spoon;199.65;201.59']
 ************
 Start timestamp: 202.97, Stop timestamp: 206.14
 Narration: pull out tray
@@ -364,8 +364,8 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [10178, 10222, 10267, 10319, 10351, 10384]
-Objects in sequence: ['tub', 'dishwasher', 'starter', 'spoon']
-Verb-noun pairs in sequence: ['pull-out;tray;202.97;206.14', 'put-down;spoon;206.27;206.95']
+Objects in sequence: ['tub', 'starter', 'dishwasher', 'spoon']
+Verb-noun pairs in sequence: ['pull out tray;202.97;206.14', 'put down spoon;206.27;206.95']
 ************
 Start timestamp: 208.0, Stop timestamp: 208.77
 Narration: pick up tub
@@ -378,8 +378,8 @@ Narration: sniff starter
 ------
 ************
 Frame IDs in sequence: [10409, 10434, 10459, 10509, 10538, 10567]
-Objects in sequence: ['tub', 'food bin', 'starter', 'spoon']
-Verb-noun pairs in sequence: ['pick-up;tub;208.0;208.77', 'open;bin:food;210.2;210.86']
+Objects in sequence: ['tub', 'starter', 'spoon', 'food bin']
+Verb-noun pairs in sequence: ['pick up tub;208.0;208.77', 'open food bin;210.2;210.86']
 ************
 Start timestamp: 214.52, Stop timestamp: 215.87
 Narration: pick up starter
@@ -395,8 +395,8 @@ Narration: put down starter
 ------
 ************
 Frame IDs in sequence: [10751, 10809, 10873, 10938, 10971, 11005]
-Objects in sequence: ['cling film', 'tub', 'starter', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['pick-up;starter;214.52;215.87', 'sniff;starter;215.91;216.96', 'put-down;starter;216.81;218.27']
+Objects in sequence: ['tub', 'starter', 'spoon', 'cling film', 'scale']
+Verb-noun pairs in sequence: ['pick up starter;214.52;215.87', 'sniff starter;215.91;216.96', 'put down starter;216.81;218.27']
 ************
 Start timestamp: 219.38, Stop timestamp: 224.45
 Narration: turn off scales
@@ -415,8 +415,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [11251, 11297, 11344, 11376, 11413, 11459]
-Objects in sequence: ['drawer', 'tub', 'dishwasher', 'starter', 'spoon', 'scale']
-Verb-noun pairs in sequence: ['pick-up;scale;224.64;225.7', 'open;drawer;226.52;227.84', 'put-down;scale;227.39;228.34']
+Objects in sequence: ['tub', 'starter', 'dishwasher', 'spoon', 'drawer', 'scale']
+Verb-noun pairs in sequence: ['pick up scales;224.64;225.7', 'open drawer;226.52;227.84', 'put down scales;227.39;228.34']
 ************
 Start timestamp: 232.35, Stop timestamp: 233.55
 Narration: open cupboard
@@ -429,8 +429,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [11617, 11675, 11713, 11744, 11803, 11863]
-Objects in sequence: ['bowl', 'cling film', 'fridge', 'cupboard']
-Verb-noun pairs in sequence: ['open;cupboard;232.35;233.55', 'pick-up;bowl;234.31;234.89']
+Objects in sequence: ['cupboard', 'fridge', 'bowl', 'cling film']
+Verb-noun pairs in sequence: ['open cupboard;232.35;233.55', 'pick up bowl;234.31;234.89']
 ************
 Start timestamp: 237.89, Stop timestamp: 239.39
 Narration: look for something
@@ -447,7 +447,7 @@ Narration: pick up yoghurt
 ************
 Frame IDs in sequence: [11919, 11951, 11976, 12026, 12076, 12109]
 Objects in sequence: ['yoghurt', 'fridge']
-Verb-noun pairs in sequence: ['look-for;fridge;237.89;239.39', 'pick-up;yoghurt;239.43;240.17', 'pick-up;tiramisu;240.14;241.24']
+Verb-noun pairs in sequence: ['look for something;237.89;239.39', 'pick up yoghurt;239.43;240.17', 'pick up tiramisu;240.14;241.24']
 ************
 Start timestamp: 243.63, Stop timestamp: 244.52
 Narration: close fridge
@@ -460,8 +460,8 @@ Narration: look for something
 ------
 ************
 Frame IDs in sequence: [12190, 12247, 12305, 12346, 12371, 12400]
-Objects in sequence: ['drawer', 'tub', 'fridge', 'starter', 'spoon']
-Verb-noun pairs in sequence: ['close;fridge;243.63;244.52', 'open;drawer;245.8;247.05']
+Objects in sequence: ['tub', 'starter', 'fridge', 'spoon', 'drawer']
+Verb-noun pairs in sequence: ['close fridge;243.63;244.52', 'open drawer;245.8;247.05']
 ************
 Start timestamp: 251.9, Stop timestamp: 252.73
 Narration: pick up spoon
@@ -474,8 +474,8 @@ Narration: open yoghurt
 ------
 ************
 Frame IDs in sequence: [12613, 12638, 12663, 12696, 12730, 12763]
-Objects in sequence: ['bowl', 'yoghurt', 'drawer', 'tub', 'yoghurt tub', 'starter', 'spoon', 'yoghurt lid']
-Verb-noun pairs in sequence: ['pick-up;spoon;251.9;252.73', 'close;drawer;253.0;254.01']
+Objects in sequence: ['yoghurt tub', 'tub', 'starter', 'yoghurt lid', 'bowl', 'spoon', 'drawer', 'yoghurt']
+Verb-noun pairs in sequence: ['pick up spoon;251.9;252.73', 'close drawer;253.0;254.01']
 ************
 Start timestamp: 255.3, Stop timestamp: 255.96
 Narration: put down lid
@@ -491,8 +491,8 @@ Narration: put yoghurt in bowl
 ------
 ************
 Frame IDs in sequence: [12830, 12853, 12876, 12901, 12926, 12951]
-Objects in sequence: ['bowl', 'yoghurt', 'yoghurt tub', 'spoon', 'yoghurt lid']
-Verb-noun pairs in sequence: ['smell;yoghurt;256.25;257.05', 'scoop-with;yoghurt;257.13;258.3']
+Objects in sequence: ['yoghurt tub', 'yoghurt lid', 'bowl', 'spoon', 'yoghurt']
+Verb-noun pairs in sequence: ['smell yoghurt;256.25;257.05', 'scoop yoghurt with spoon;257.13;258.3']
 ************
 Start timestamp: 260.62, Stop timestamp: 261.55
 Narration: spoon yoghurt into bowl
@@ -505,8 +505,8 @@ Narration: spoon yoghurt into bowl
 ------
 ************
 Frame IDs in sequence: [13051, 13113, 13144, 13176, 13238, 13301]
-Objects in sequence: ['bowl', 'yoghurt', 'yoghurt tub', 'spoon', 'yoghurt lid']
-Verb-noun pairs in sequence: ['spoon-into;yoghurt;260.62;261.55', 'spoon-into;yoghurt;263.27;264.3']
+Objects in sequence: ['yoghurt tub', 'yoghurt lid', 'bowl', 'spoon', 'yoghurt']
+Verb-noun pairs in sequence: ['spoon yoghurt into bowl;260.62;261.55', 'spoon yoghurt into bowl;263.27;264.3']
 ************
 Start timestamp: 267.0, Stop timestamp: 271.13
 Narration: spoon yoghurt into bowl
@@ -528,8 +528,8 @@ Narration: put lid on yoghurt
 ------
 ************
 Frame IDs in sequence: [13423, 13526, 13626, 13651, 13725, 13751]
-Objects in sequence: ['bowl', 'yoghurt', 'yoghurt tub', 'spoon', 'yoghurt lid']
-Verb-noun pairs in sequence: ['spoon-into;yoghurt;267.0;271.13', 'stir;yoghurt;267.63;269.59', 'shake;spoon;270.79;271.63', 'put-down;yoghurt;272.49;273.28', 'pick-up;lid;273.04;273.97']
+Objects in sequence: ['yoghurt tub', 'yoghurt lid', 'bowl', 'spoon', 'yoghurt']
+Verb-noun pairs in sequence: ['spoon yoghurt into bowl;267.0;271.13', 'stir yoghurt;267.63;269.59', 'shake spoon;270.79;271.63', 'put down yoghurt;272.49;273.28', 'pick up lid;273.04;273.97']
 ************
 Start timestamp: 279.02, Stop timestamp: 279.53
 Narration: pick up kettle
@@ -545,8 +545,8 @@ Narration: put water in kettle
 ------
 ************
 Frame IDs in sequence: [13946, 13986, 14026, 14051, 14126, 14162]
-Objects in sequence: ['kettle', 'bowl', 'yoghurt', 'sink', 'tub', 'tap', 'kettle lid']
-Verb-noun pairs in sequence: ['pick-up;kettle;279.02;279.53', 'open;kettle;280.42;281.05', 'turn-on;tap;280.95;282.2']
+Objects in sequence: ['sink', 'kettle lid', 'tub', 'bowl', 'yoghurt', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['pick up kettle;279.02;279.53', 'open kettle;280.42;281.05', 'turn on tap;280.95;282.2']
 ************
 Start timestamp: 282.89, Stop timestamp: 284.99
 Narration: turn off tap
@@ -565,8 +565,8 @@ Narration: touch fridge
 ------
 ************
 Frame IDs in sequence: [14251, 14283, 14309, 14342, 14396, 14451]
-Objects in sequence: ['kettle', 'bowl', 'sink', 'yoghurt', 'tap', 'fridge', 'spoon']
-Verb-noun pairs in sequence: ['close;lid:kettle;285.04;285.7', 'put-down;kettle;286.0;287.25', 'turn-on;kettle;287.2;287.85']
+Objects in sequence: ['sink', 'fridge', 'bowl', 'spoon', 'yoghurt', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['close kettle lid;285.04;285.7', 'put down kettle;286.0;287.25', 'turn on kettle;287.2;287.85']
 ************
 Start timestamp: 290.76, Stop timestamp: 291.65
 Narration: pick up yoghurt
@@ -579,8 +579,8 @@ Narration: put yoghurt in fridge
 ------
 ************
 Frame IDs in sequence: [14538, 14576, 14601, 14634, 14675, 14701]
-Objects in sequence: ['bowl', 'yoghurt', 'fridge', 'yoghurt package', 'spoon']
-Verb-noun pairs in sequence: ['pick-up;yoghurt;290.76;291.65', 'open;fridge;292.05;292.7']
+Objects in sequence: ['yoghurt package', 'fridge', 'bowl', 'spoon', 'yoghurt']
+Verb-noun pairs in sequence: ['pick up yoghurt;290.76;291.65', 'open fridge;292.05;292.7']
 ************
 Start timestamp: 294.78, Stop timestamp: 296.44
 Narration: close fridge
@@ -593,8 +593,8 @@ Narration: look for something
 ------
 ************
 Frame IDs in sequence: [14746, 14809, 14851, 14880, 14919, 14980]
-Objects in sequence: ['fridge', 'yoghurt package', 'cupboard']
-Verb-noun pairs in sequence: ['close;fridge;294.78;296.44', 'open;cupboard;296.94;298.02']
+Objects in sequence: ['yoghurt package', 'cupboard', 'fridge']
+Verb-noun pairs in sequence: ['close fridge;294.78;296.44', 'open cupboard;296.94;298.02']
 ************
 Start timestamp: 300.17, Stop timestamp: 301.92
 Narration: pick up granola
@@ -607,8 +607,8 @@ Narration: smell granola
 ------
 ************
 Frame IDs in sequence: [15221, 15261, 15317, 15354, 15419, 15476]
-Objects in sequence: ['bowl', 'kettle', 'yoghurt', 'granola', 'granola package', 'spoon']
-Verb-noun pairs in sequence: ['pick-up;granola;300.17;301.92', 'open;granola;304.17;305.7']
+Objects in sequence: ['granola package', 'bowl', 'spoon', 'yoghurt', 'granola', 'kettle']
+Verb-noun pairs in sequence: ['pick up granola;300.17;301.92', 'open granola;304.17;305.7']
 ************
 Start timestamp: 307.22, Stop timestamp: 310.36
 Narration: pour granola into bowl
@@ -621,8 +621,8 @@ Narration: stir granola in bowl
 ------
 ************
 Frame IDs in sequence: [15527, 15559, 15642, 15796, 15840, 15876]
-Objects in sequence: ['bowl', 'kettle', 'yoghurt', 'granola', 'granola package', 'spoon']
-Verb-noun pairs in sequence: ['pour-into;granola;307.22;310.36', 'put-down;granola;310.43;311.43']
+Objects in sequence: ['granola package', 'bowl', 'spoon', 'yoghurt', 'granola', 'kettle']
+Verb-noun pairs in sequence: ['pour granola into bowl;307.22;310.36', 'put down granola;310.43;311.43']
 ************
 Start timestamp: 316.87, Stop timestamp: 317.69
 Narration: close granola
@@ -635,8 +635,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [15896, 15946, 16013, 16080, 16121, 16151]
-Objects in sequence: ['bowl', 'yoghurt', 'drawer', 'granola package', 'cupboard', 'spoon']
-Verb-noun pairs in sequence: ['close;granola;316.87;317.69', 'pick-up;granola;317.79;318.97']
+Objects in sequence: ['granola package', 'cupboard', 'bowl', 'spoon', 'drawer', 'yoghurt']
+Verb-noun pairs in sequence: ['close granola;316.87;317.69', 'pick up granola;317.79;318.97']
 ************
 Start timestamp: 322.27, Stop timestamp: 323.39
 Narration: put granola in cupboard
@@ -649,8 +649,8 @@ Narration: pick up honey
 ------
 ************
 Frame IDs in sequence: [16226, 16282, 16353, 16393, 16433, 16513]
-Objects in sequence: ['bowl', 'granola package', 'cupboard', 'honey', 'spoon']
-Verb-noun pairs in sequence: ['put-in;granola;322.27;323.39', 'push;pasta;324.15;325.97']
+Objects in sequence: ['granola package', 'honey', 'cupboard', 'bowl', 'spoon']
+Verb-noun pairs in sequence: ['put granola in cupboard;322.27;323.39', 'push pasta;324.15;325.97']
 ************
 Start timestamp: 329.7, Stop timestamp: 330.95
 Narration: squeeze honey into bowl
@@ -663,8 +663,8 @@ Narration: close flour
 ------
 ************
 Frame IDs in sequence: [16590, 16659, 16838, 16926, 17057, 17100]
-Objects in sequence: ['cupboard', 'honey', 'flour']
-Verb-noun pairs in sequence: ['squeeze-into;honey;329.7;330.95', 'put-in;honey;331.51;333.55']
+Objects in sequence: ['honey', 'cupboard', 'flour']
+Verb-noun pairs in sequence: ['squeeze honey into bowl;329.7;330.95', 'put honey in cupboard;331.51;333.55']
 ************
 Start timestamp: 341.03, Stop timestamp: 342.1
 Narration: open cupboard
@@ -677,8 +677,8 @@ Narration: pick up aeropress
 ------
 ************
 Frame IDs in sequence: [17151, 17188, 17232, 17276, 17317, 17351]
-Objects in sequence: ['aeropress', 'cupboard', 'flour', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['open;cupboard;341.03;342.1', 'pick-up;coffee;342.67;344.08']
+Objects in sequence: ['coffee', 'cupboard', 'aeropress', 'spoon', 'flour']
+Verb-noun pairs in sequence: ['open cupboard;341.03;342.1', 'pick up coffee;342.67;344.08']
 ************
 Start timestamp: 346.7, Stop timestamp: 347.44
 Narration: put down aeropress lid
@@ -697,8 +697,8 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [17459, 17551, 17740, 17774, 17880, 17930]
-Objects in sequence: ['bowl', 'drawer', 'aeropress', 'flour', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['put-down;lid:aeropress;346.7;347.44', 'pull;aeropress;347.3;350.03', 'put-down;aeropress;348.0;351.52', 'straighten;aeropress;351.17;352.92']
+Objects in sequence: ['coffee', 'aeropress', 'bowl', 'spoon', 'drawer', 'flour']
+Verb-noun pairs in sequence: ['put down aeropress lid;346.7;347.44', 'pull aeropress;347.3;350.03', 'put down aeropress;348.0;351.52', 'straighten aeropress;351.17;352.92']
 ************
 Start timestamp: 357.62, Stop timestamp: 358.61
 Narration: pick up coffee
@@ -714,8 +714,8 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [18088, 18251, 18363, 18398, 18496, 18620]
-Objects in sequence: ['bowl', 'aeropress', 'cupboard', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['pick-up;coffee;357.62;358.61', 'open;coffee;358.21;362.32', 'spoon-into;coffee;359.77;366.16']
+Objects in sequence: ['coffee', 'cupboard', 'aeropress', 'bowl', 'spoon']
+Verb-noun pairs in sequence: ['pick up coffee;357.62;358.61', 'open coffee;358.21;362.32', 'spoon coffee into aeropress;359.77;366.16']
 ************
 Start timestamp: 366.97, Stop timestamp: 368.2
 Narration: put down coffee
@@ -728,8 +728,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [18729, 18821, 18913, 19011, 19236]
-Objects in sequence: ['bowl', 'cupboard', 'spoon', 'mug']
-Verb-noun pairs in sequence: ['put-down;coffee;366.97;368.2', 'open;cupboard;368.3;374.3']
+Objects in sequence: ['cupboard', 'bowl', 'spoon', 'mug']
+Verb-noun pairs in sequence: ['put down coffee;366.97;368.2', 'open cupboard;368.3;374.3']
 ************
 Start timestamp: 377.0, Stop timestamp: 381.07
 Narration: pick up mug
@@ -742,8 +742,8 @@ Narration: pick up washing up liquid
 ------
 ************
 Frame IDs in sequence: [19336, 19354, 19373, 19401, 19438, 19471]
-Objects in sequence: ['sink', 'tap', 'washing up liquid', 'mug']
-Verb-noun pairs in sequence: ['pick-up;mug;377.0;381.07', 'smell;mug;381.17;386.69']
+Objects in sequence: ['sink', 'mug', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['pick up mug;377.0;381.07', 'smell mug;381.17;386.69']
 ************
 Start timestamp: 387.67, Stop timestamp: 389.09
 Narration: squirt washing up liquid into mug
@@ -756,8 +756,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [19513, 19555, 19600, 19630, 19701, 19751]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up liquid', 'mug', 'water']
-Verb-noun pairs in sequence: ['squirt;washing;387.67;389.09', 'put-down;liquid:washing:up;389.19;389.79']
+Objects in sequence: ['sink', 'sponge', 'water', 'mug', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['squirt washing up liquid into mug;387.67;389.09', 'put down washing up liquid;389.19;389.79']
 ************
 Start timestamp: 391.49, Stop timestamp: 392.95
 Narration: pick up sponge
@@ -773,8 +773,8 @@ Narration: wash mug
 ------
 ************
 Frame IDs in sequence: [19851, 19917, 19964, 20001, 20180, 20484]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up liquid', 'mug', 'water']
-Verb-noun pairs in sequence: ['pick-up;sponge;391.49;392.95', 'squeeze;sponge;392.76;395.08', 'wet;sponge;393.6;395.59000000000003']
+Objects in sequence: ['sink', 'sponge', 'water', 'mug', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['pick up sponge;391.49;392.95', 'squeeze sponge;392.76;395.08', 'wet sponge;393.6;395.59000000000003']
 ************
 Start timestamp: 399.15, Stop timestamp: 400.27
 Narration: turn off tap
@@ -790,8 +790,8 @@ Narration: rinse mug
 ------
 ************
 Frame IDs in sequence: [20692, 20742, 20796, 20851, 20934, 21003]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up liquid', 'mug', 'water']
-Verb-noun pairs in sequence: ['turn-off;tap;399.15;400.27', 'turn-on;tap;400.25;401.6', 'wash;mug;401.35;411.69']
+Objects in sequence: ['sink', 'sponge', 'water', 'mug', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['turn off tap;399.15;400.27', 'turn on tap;400.25;401.6', 'wash mug;401.35;411.69']
 ************
 Start timestamp: 413.2, Stop timestamp: 415.42
 Narration: wash mug
@@ -810,8 +810,8 @@ Narration: empty mug
 ------
 ************
 Frame IDs in sequence: [21308, 21492, 21676, 21817, 21955, 21995]
-Objects in sequence: ['bowl', 'towel', 'container', 'tub', 'fridge', 'starter', 'spoon', 'mug']
-Verb-noun pairs in sequence: ['put-down;sponge;415.38;415.81', 'rinse;mug;416.05;419.37', 'turn-off;tap;419.06;420.21']
+Objects in sequence: ['container', 'tub', 'starter', 'fridge', 'bowl', 'spoon', 'mug', 'towel']
+Verb-noun pairs in sequence: ['put down sponge;415.38;415.81', 'rinse mug;416.05;419.37', 'turn off tap;419.06;420.21']
 ************
 Start timestamp: 420.71, Stop timestamp: 423.22
 Narration: pick up towel
@@ -827,8 +827,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [22069, 22101, 22171, 22238, 22286, 22334]
-Objects in sequence: ['container', 'fridge', 'starter']
-Verb-noun pairs in sequence: ['dry;mug;422.95;435.89', 'put-down;mug;435.99;437.14']
+Objects in sequence: ['container', 'starter', 'fridge']
+Verb-noun pairs in sequence: ['dry mug;422.95;435.89', 'put down mug;435.99;437.14']
 ************
 Start timestamp: 440.65, Stop timestamp: 442.5
 Narration: pick up starter
@@ -841,8 +841,8 @@ Narration: put down starter
 ------
 ************
 Frame IDs in sequence: [22471, 22510, 22550, 22602, 22655, 22701]
-Objects in sequence: ['drawer', 'container', 'fridge']
-Verb-noun pairs in sequence: ['pick-up;starter;440.65;442.5', 'smell;starter;443.25;445.25']
+Objects in sequence: ['container', 'fridge', 'drawer']
+Verb-noun pairs in sequence: ['pick up starter;440.65;442.5', 'smell starter;443.25;445.25']
 ************
 Start timestamp: 447.45, Stop timestamp: 449.15
 Narration: pick up tub
@@ -858,8 +858,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [22746, 22764, 22782, 22799, 22817, 22851]
-Objects in sequence: ['drawer', 'container', 'fridge', 'starter']
-Verb-noun pairs in sequence: ['look-at;tub;449.5;450.05', 'put-down;tub;450.5;451.54']
+Objects in sequence: ['container', 'starter', 'fridge', 'drawer']
+Verb-noun pairs in sequence: ['look at tub;449.5;450.05', 'put down tub;450.5;451.54']
 ************
 Start timestamp: 454.97, Stop timestamp: 455.64
 Narration: close drawer
@@ -872,8 +872,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [23001, 23051, 24076, 24101, 24209, 24351]
-Objects in sequence: ['kettle', 'bowl', 'drawer', 'container', 'fridge', 'aeropress', 'coffee package', 'water', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['close;drawer;454.97;455.64', 'open;drawer;455.73;456.47']
+Objects in sequence: ['container', 'coffee', 'aeropress', 'fridge', 'bowl', 'coffee package', 'water', 'spoon', 'drawer', 'kettle']
+Verb-noun pairs in sequence: ['close drawer;454.97;455.64', 'open drawer;455.73;456.47']
 ************
 Start timestamp: 459.65999999999997, Stop timestamp: 461.5
 Narration: close fridge
@@ -886,8 +886,8 @@ Narration: pour water into aeropress
 ------
 ************
 Frame IDs in sequence: [24446, 24492, 24523, 24551, 24626, 24676]
-Objects in sequence: ['kettle', 'bowl', 'aeropress', 'coffee package', 'lid', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['close;fridge;459.65999999999997;461.5', 'pick-up;kettle;481.15;482.48']
+Objects in sequence: ['coffee', 'aeropress', 'lid', 'bowl', 'coffee package', 'spoon', 'kettle']
+Verb-noun pairs in sequence: ['close fridge;459.65999999999997;461.5', 'pick up kettle;481.15;482.48']
 ************
 Start timestamp: 488.47, Stop timestamp: 490.19
 Narration: put down kettle
@@ -900,8 +900,8 @@ Narration: stir coffee in aeropress
 ------
 ************
 Frame IDs in sequence: [24785, 24840, 24876, 24901, 24951, 25001]
-Objects in sequence: ['bowl', 'sink', 'tub', 'tap', 'aeropress', 'coffee package', 'lid', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['put-down;kettle;488.47;490.19', 'pick-up;spoon;490.28;491.16']
+Objects in sequence: ['sink', 'coffee', 'tub', 'aeropress', 'lid', 'bowl', 'coffee package', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['put down kettle;488.47;490.19', 'pick up spoon;490.28;491.16']
 ************
 Start timestamp: 495.56, Stop timestamp: 497.29
 Narration: turn on tap
@@ -923,8 +923,8 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [25078, 25126, 25196, 25238, 25280, 25317]
-Objects in sequence: ['bowl', 'kettle', 'aeropress', 'spoon', 'mug', 'lid']
-Verb-noun pairs in sequence: ['turn-on;tap;495.56;497.29', 'rinse;spoon;495.73;497.28', 'shake;spoon;497.2;497.65', 'turn-off;tap;497.27;497.61', 'put-down;spoon;497.56;498.17']
+Objects in sequence: ['aeropress', 'lid', 'bowl', 'spoon', 'mug', 'kettle']
+Verb-noun pairs in sequence: ['turn on tap;495.56;497.29', 'rinse spoon;495.73;497.28', 'shake spoon;497.2;497.65', 'turn off tap;497.27;497.61', 'put down spoon;497.56;498.17']
 ************
 Start timestamp: 500.11, Stop timestamp: 501.3
 Narration: screw in lid
@@ -946,8 +946,8 @@ Narration: put aeropress on mug
 ------
 ************
 Frame IDs in sequence: [26196, 26229, 26326, 26384, 26426, 26455]
-Objects in sequence: ['bowl', 'kettle', 'sink', 'tub', 'tap', 'filter', 'aeropress', 'spoon', 'mug', 'lid']
-Verb-noun pairs in sequence: ['squeeze;aeropress;501.4;502.77', 'pick-up;aeropress;503.89;504.62', 'turn;aeropress;504.39;508.95']
+Objects in sequence: ['sink', 'filter', 'tub', 'aeropress', 'lid', 'bowl', 'spoon', 'mug', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['squeeze aeropress;501.4;502.77', 'pick up aeropress;503.89;504.62', 'turn aeropress upside down;504.39;508.95']
 ************
 Start timestamp: 506.53, Stop timestamp: 523.74
 Narration: push down on aeropress
@@ -963,8 +963,8 @@ Narration: put down lid
 ------
 ************
 Frame IDs in sequence: [26476, 26509, 26566, 26608, 26651, 26680]
-Objects in sequence: ['sink', 'sponge', 'tap', 'filter', 'aeropress', 'washing up liquid', 'water']
-Verb-noun pairs in sequence: ['pick-up;aeropress;523.7;525.05', 'screw-off;lid;526.01;528.24']
+Objects in sequence: ['sink', 'filter', 'sponge', 'aeropress', 'water', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['pick up aeropress;523.7;525.05', 'screw off lid;526.01;528.24']
 ************
 Start timestamp: 528.96, Stop timestamp: 529.63
 Narration: pick up filter
@@ -983,8 +983,8 @@ Narration: wash aeropress
 ------
 ************
 Frame IDs in sequence: [26732, 26754, 26776, 26801, 26834, 26867]
-Objects in sequence: ['sink', 'sponge', 'tap', 'filter', 'aeropress', 'washing up liquid']
-Verb-noun pairs in sequence: ['put-down;filter;529.6;529.97', 'push;aeropress;530.03;531.61', 'turn-on;tap;531.45;532.59']
+Objects in sequence: ['sink', 'filter', 'sponge', 'aeropress', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['put down filter;529.6;529.97', 'push aeropress;530.03;531.61', 'turn on tap;531.45;532.59']
 ************
 Start timestamp: 533.66, Stop timestamp: 534.4
 Narration: turn off tap
@@ -1000,8 +1000,8 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [26942, 26980, 27028, 27076, 27102, 27128]
-Objects in sequence: ['sink', 'sponge', 'tap', 'filter', 'washing up liquid', 'water']
-Verb-noun pairs in sequence: ['shake;aeropress;534.35;535.08', 'put-down;aeropress;535.18;536.31']
+Objects in sequence: ['sink', 'filter', 'sponge', 'water', 'washing up liquid', 'tap']
+Verb-noun pairs in sequence: ['shake aeropress;534.35;535.08', 'put down aeropress;535.18;536.31']
 ************
 Start timestamp: 538.39, Stop timestamp: 539.87
 Narration: rinse filter
@@ -1015,7 +1015,7 @@ Narration: shake filter
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
-Verb-noun pairs in sequence: ['rinse;filter;538.39;539.87', 'turn-off;tap;541.55;542.02']
+Verb-noun pairs in sequence: ['rinse filter;538.39;539.87', 'turn off tap;541.55;542.02']
 ************
 Start timestamp: 542.48, Stop timestamp: 543.09
 Narration: put down filter

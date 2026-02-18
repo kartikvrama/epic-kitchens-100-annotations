@@ -12,8 +12,8 @@ Narration: put yoghurt down
 ------
 ************
 Frame IDs in sequence: [180, 203, 226, 271, 296, 321]
-Objects in sequence: ['bag', 'yoghurt', 'bread bag', 'glass']
-Verb-noun pairs in sequence: ['put;bag;3.16;4.76', 'open;bag;4.22;5.16', 'pick-up;yoghurt;5.26;6.05']
+Objects in sequence: ['glass', 'bread bag', 'bag', 'yoghurt']
+Verb-noun pairs in sequence: ['put bag;3.16;4.76', 'open bag;4.22;5.16', 'pick up yoghurt;5.26;6.05']
 ************
 Start timestamp: 7.02, Stop timestamp: 7.84
 Narration: move glass
@@ -29,8 +29,8 @@ Narration: pick up eggs
 ------
 ************
 Frame IDs in sequence: [354, 388, 419, 451, 476, 501]
-Objects in sequence: ['bag', 'glass', 'egg', 'lemon']
-Verb-noun pairs in sequence: ['move;glass;7.02;7.84', 'pick-up;lemon;7.76;8.54', 'put;lemon;8.71;9.58']
+Objects in sequence: ['lemon', 'egg', 'glass', 'bag']
+Verb-noun pairs in sequence: ['move glass;7.02;7.84', 'pick up lemons;7.76;8.54', 'put lemons down;8.71;9.58']
 ************
 Start timestamp: 10.83, Stop timestamp: 12.17
 Narration: put eggs down
@@ -43,8 +43,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [551, 584, 634, 676, 730, 784]
-Objects in sequence: ['bag', 'yoghurt', 'fridge', 'egg', 'lemon', 'milk']
-Verb-noun pairs in sequence: ['put;egg;10.83;12.17', 'pick-up;milk;12.27;13.74']
+Objects in sequence: ['lemon', 'fridge', 'egg', 'bag', 'yoghurt', 'milk']
+Verb-noun pairs in sequence: ['put eggs down;10.83;12.17', 'pick up milk;12.27;13.74']
 ************
 Start timestamp: 16.41, Stop timestamp: 18.49
 Narration: put milk in fridge
@@ -57,8 +57,8 @@ Narration: pick up yoghurt
 ------
 ************
 Frame IDs in sequence: [829, 866, 903, 937, 971, 1028]
-Objects in sequence: ['yoghurt', 'bag', 'fridge', 'egg', 'lemon', 'milk']
-Verb-noun pairs in sequence: ['put-in;milk;16.41;18.49', 'close;fridge;19.16;19.79']
+Objects in sequence: ['lemon', 'fridge', 'egg', 'bag', 'yoghurt', 'milk']
+Verb-noun pairs in sequence: ['put milk in fridge;16.41;18.49', 'close fridge;19.16;19.79']
 ************
 Start timestamp: 20.66, Stop timestamp: 21.61
 Narration: pick up eggs
@@ -74,8 +74,8 @@ Narration: put yoghurt in fridge
 ------
 ************
 Frame IDs in sequence: [1134, 1172, 1210, 1253, 1296, 1361]
-Objects in sequence: ['yoghurt', 'fridge', 'egg']
-Verb-noun pairs in sequence: ['open;fridge;22.53;23.6', 'put-in;egg;23.68;25.22']
+Objects in sequence: ['fridge', 'egg', 'yoghurt']
+Verb-noun pairs in sequence: ['open fridge;22.53;23.6', 'put eggs in fridge;23.68;25.22']
 ************
 Start timestamp: 30.02, Stop timestamp: 31.21
 Narration: pick up lemons
@@ -91,8 +91,8 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [1513, 1538, 1639, 1700, 1727, 1770]
-Objects in sequence: ['bag', 'drawer', 'fridge', 'lemon']
-Verb-noun pairs in sequence: ['pick-up;lemon;30.02;31.21', 'put-in;lemon;32.51;34.43', 'open;drawer;33.09;33.87']
+Objects in sequence: ['lemon', 'fridge', 'bag', 'drawer']
+Verb-noun pairs in sequence: ['pick up lemons;30.02;31.21', 'put lemon in drawer;32.51;34.43', 'open drawer;33.09;33.87']
 ************
 Start timestamp: 35.29, Stop timestamp: 37.11
 Narration: close fridge
@@ -109,7 +109,7 @@ Narration: pick up bag
 ************
 Frame IDs in sequence: [1942, 1954, 1966, 1990, 2008, 2026]
 Objects in sequence: ['bag', 'pistachio bag']
-Verb-noun pairs in sequence: ['pick-up;bag;38.49;39.51', 'put-down;bag;39.52;40.13']
+Verb-noun pairs in sequence: ['pick up bag;38.49;39.51', 'put down bag;39.52;40.13']
 ************
 Start timestamp: 40.6, Stop timestamp: 41.41
 Narration: put down bag
@@ -128,8 +128,8 @@ Narration: pick up bag
 ------
 ************
 Frame IDs in sequence: [2076, 2101, 2118, 2136, 2159, 2182]
-Objects in sequence: ['bag', 'box', 'pistachio bag']
-Verb-noun pairs in sequence: ['pick-up;box;41.36;42.32', 'put-down;bag;42.0;44.82', 'put-down;box;42.42;43.04']
+Objects in sequence: ['pistachio bag', 'bag', 'box']
+Verb-noun pairs in sequence: ['pick up box;41.36;42.32', 'put down bag;42.0;44.82', 'put down box;42.42;43.04']
 ************
 Start timestamp: 44.72, Stop timestamp: 45.66
 Narration: pick up box
@@ -145,8 +145,8 @@ Narration: put down bread bag
 ------
 ************
 Frame IDs in sequence: [2238, 2267, 2326, 2386, 2446, 2513]
-Objects in sequence: ['package', 'bread bag', 'box', 'pistachio bag']
-Verb-noun pairs in sequence: ['pick-up;box;44.72;45.66', 'put-down;box;45.69;46.87', 'pick-up;bag:bread;46.79;48.45']
+Objects in sequence: ['pistachio bag', 'bread bag', 'box', 'package']
+Verb-noun pairs in sequence: ['pick up box;44.72;45.66', 'put down box;45.69;46.87', 'pick up bread bag;46.79;48.45']
 ************
 Start timestamp: 50.87, Stop timestamp: 53.61
 Narration: pick up bag
@@ -162,8 +162,8 @@ Narration: put bag in drawer
 ------
 ************
 Frame IDs in sequence: [2588, 2646, 2757, 2868, 2921, 2984]
-Objects in sequence: ['bag', 'drawer', 'freezer', 'box', 'pistachio bag', 'potato bag']
-Verb-noun pairs in sequence: ['pick-up;bag;50.87;53.61', 'open;freezer;53.58;56.97', 'open;drawer;57.07;57.89']
+Objects in sequence: ['pistachio bag', 'potato bag', 'bag', 'box', 'freezer', 'drawer']
+Verb-noun pairs in sequence: ['pick up bag;50.87;53.61', 'open freezer;53.58;56.97', 'open drawer;57.07;57.89']
 ************
 Start timestamp: 59.75, Stop timestamp: 61.97
 Narration: close drawer
@@ -182,8 +182,8 @@ Narration: put down bag
 ------
 ************
 Frame IDs in sequence: [3114, 3151, 3211, 3271, 3334, 3411]
-Objects in sequence: ['bag', 'freezer', 'cheese', 'pistachio bag']
-Verb-noun pairs in sequence: ['close;freezer;61.88;63.4', 'pick-up;cheese;64.78;66.9', 'pick-up;bag;66.82;67.98']
+Objects in sequence: ['pistachio bag', 'cheese', 'freezer', 'bag']
+Verb-noun pairs in sequence: ['close freezer;61.88;63.4', 'pick up cheese;64.78;66.9', 'pick up bag;66.82;67.98']
 ************
 Start timestamp: 68.66, Stop timestamp: 70.05
 Narration: pick up bag
@@ -196,8 +196,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [3459, 3488, 3517, 3571, 3598, 3626]
-Objects in sequence: ['bag', 'fridge', 'cheese', 'pistachio bag']
-Verb-noun pairs in sequence: ['pick-up;bag;68.66;70.05', 'put-down;bag;70.11;70.66']
+Objects in sequence: ['pistachio bag', 'cheese', 'fridge', 'bag']
+Verb-noun pairs in sequence: ['pick up bag;68.66;70.05', 'put down bag;70.11;70.66']
 ************
 Start timestamp: 73.44, Stop timestamp: 75.81
 Narration: put cheese in fridge
@@ -210,8 +210,8 @@ Narration: put down meat box
 ------
 ************
 Frame IDs in sequence: [3700, 3767, 3821, 3875, 3906, 3976]
-Objects in sequence: ['bag', 'fridge', 'cheese', 'box', 'meat']
-Verb-noun pairs in sequence: ['put-in;cheese;73.44;75.81', 'pick-up;box;77.16;78.17']
+Objects in sequence: ['cheese', 'fridge', 'bag', 'box', 'meat']
+Verb-noun pairs in sequence: ['put cheese in fridge;73.44;75.81', 'pick up boxes;77.16;78.17']
 ************
 Start timestamp: 79.92, Stop timestamp: 80.55
 Narration: pick up box
@@ -227,8 +227,8 @@ Narration: put box in fridge
 ------
 ************
 Frame IDs in sequence: [4042, 4090, 4138, 4174, 4211, 4296]
-Objects in sequence: ['fridge', 'box', 'food']
-Verb-noun pairs in sequence: ['open;fridge;80.65;82.15', 'put-in;box;82.24;83.78999999999999']
+Objects in sequence: ['food', 'fridge', 'box']
+Verb-noun pairs in sequence: ['open fridge;80.65;82.15', 'put box in fridge;82.24;83.78999999999999']
 ************
 Start timestamp: 86.31, Stop timestamp: 87.97
 Narration: close fridge
@@ -244,8 +244,8 @@ Narration: put down meat box
 ------
 ************
 Frame IDs in sequence: [4336, 4392, 4496, 4580, 4659, 4726]
-Objects in sequence: ['fridge', 'meat', 'bag']
-Verb-noun pairs in sequence: ['close;fridge;86.31;87.97', 'pick-up;meat;87.63;89.18', 'put-on;light;89.21000000000001;92.5']
+Objects in sequence: ['bag', 'meat', 'fridge']
+Verb-noun pairs in sequence: ['close fridge;86.31;87.97', 'pick up meat;87.63;89.18', 'put light on;89.21000000000001;92.5']
 ************
 Start timestamp: 94.89, Stop timestamp: 96.34
 Narration: pick up tupperware
@@ -261,8 +261,8 @@ Narration: pick up oil
 ------
 ************
 Frame IDs in sequence: [4769, 4796, 4855, 5060, 5265, 5295]
-Objects in sequence: ['oil bottle', 'cupboard', 'meat', 'tupperware']
-Verb-noun pairs in sequence: ['pick-up;tupperware;94.89;96.34', 'open;cupboard;96.0;99.32', 'put;tupperware;96.44;98.22']
+Objects in sequence: ['cupboard', 'tupperware', 'oil bottle', 'meat']
+Verb-noun pairs in sequence: ['pick up tupperware;94.89;96.34', 'open cupboard;96.0;99.32', 'put tupperware down;96.44;98.22']
 ************
 Start timestamp: 107.49000000000001, Stop timestamp: 108.72
 Narration: pick up oil
@@ -278,8 +278,8 @@ Narration: open oil bottle
 ------
 ************
 Frame IDs in sequence: [5386, 5428, 5486, 5551, 5626, 5663]
-Objects in sequence: ['oil bottle', 'cupboard', 'meat', 'tupperware']
-Verb-noun pairs in sequence: ['pick-up;oil;107.49000000000001;108.72', 'put;oil;108.46000000000001;109.68', 'close;cupboard;109.44;111.12']
+Objects in sequence: ['cupboard', 'tupperware', 'oil bottle', 'meat']
+Verb-noun pairs in sequence: ['pick up oil;107.49000000000001;108.72', 'put oil back;108.46000000000001;109.68', 'close cupboard;109.44;111.12']
 ************
 Start timestamp: 113.97, Stop timestamp: 116.27000000000001
 Narration: pour oil in tupperware
@@ -292,8 +292,8 @@ Narration: put oil bottle down
 ------
 ************
 Frame IDs in sequence: [5726, 5788, 5819, 5851, 5909, 5963]
-Objects in sequence: ['oil bottle', 'meat', 'tupperware', 'oil']
-Verb-noun pairs in sequence: ['pour-in;oil;113.97;116.27000000000001', 'close;bottle:oil;116.59;118.78']
+Objects in sequence: ['tupperware', 'oil bottle', 'meat', 'oil']
+Verb-noun pairs in sequence: ['pour oil in tupperware;113.97;116.27000000000001', 'close oil bottle;116.59;118.78']
 ************
 Start timestamp: 123.21, Stop timestamp: 124.47
 Narration: open fridge
@@ -309,8 +309,8 @@ Narration: open sauce bottle
 ------
 ************
 Frame IDs in sequence: [6161, 6213, 6292, 6334, 6434, 6551]
-Objects in sequence: ['sauce bottle', 'fridge', 'meat', 'tupperware', 'oil']
-Verb-noun pairs in sequence: ['open;fridge;123.21;124.47', 'pick-up;bottle:sauce;124.36;126.29', 'close;fridge;125.66;126.71']
+Objects in sequence: ['sauce bottle', 'tupperware', 'fridge', 'meat', 'oil']
+Verb-noun pairs in sequence: ['open fridge;123.21;124.47', 'pick up sauce bottle;124.36;126.29', 'close fridge;125.66;126.71']
 ************
 Start timestamp: 132.45, Stop timestamp: 136.7
 Narration: shake sauce bottle
@@ -329,8 +329,8 @@ Narration: put sauce bottle down upside down
 ------
 ************
 Frame IDs in sequence: [6680, 6755, 7001, 7155, 7380, 7498]
-Objects in sequence: ['sauce bottle', 'meat', 'tupperware', 'oil']
-Verb-noun pairs in sequence: ['shake;bottle:sauce;132.45;136.7', 'pour-from;sauce;138.49;144.99', 'shake;bottle;139.39;144.89', 'close;bottle:sauce;144.56;147.94']
+Objects in sequence: ['sauce bottle', 'tupperware', 'meat', 'oil']
+Verb-noun pairs in sequence: ['shake sauce bottle;132.45;136.7', 'pour sauce from bottle;138.49;144.99', 'shake bottle;139.39;144.89', 'close sauce bottle;144.56;147.94']
 ************
 Start timestamp: 152.34, Stop timestamp: 154.17000000000002
 Narration: open cupboard
@@ -350,7 +350,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [7641, 7692, 7832, 7926, 7986, 8039]
 Objects in sequence: ['cupboard', 'meat']
-Verb-noun pairs in sequence: ['open;cupboard;152.34;154.17000000000002', 'pick-up;jar;153.0;156.25', 'move;box;153.66;157.45', 'pick-up;spice;156.35;159.12']
+Verb-noun pairs in sequence: ['open cupboard;152.34;154.17000000000002', 'pick up jar;153.0;156.25', 'move box;153.66;157.45', 'pick up spice;156.35;159.12']
 ************
 Start timestamp: 160.49, Stop timestamp: 161.95
 Narration: put down spice
@@ -366,8 +366,8 @@ Narration: pour spice from lid to tupperware
 ------
 ************
 Frame IDs in sequence: [8126, 8161, 8201, 8238, 8276, 8305]
-Objects in sequence: ['sauce bottle', 'spice', 'meat', 'spice jar', 'tupperware', 'lid']
-Verb-noun pairs in sequence: ['open;jar:spice;162.03;163.25', 'pour-into;spice;163.35;165.07']
+Objects in sequence: ['sauce bottle', 'tupperware', 'lid', 'spice', 'meat', 'spice jar']
+Verb-noun pairs in sequence: ['open spice jar;162.03;163.25', 'pour spice into lid;163.35;165.07']
 ************
 Start timestamp: 166.28, Stop timestamp: 167.8
 Narration: close spice jar
@@ -383,8 +383,8 @@ Narration: pour thyme spice into lid
 ------
 ************
 Frame IDs in sequence: [8392, 8417, 8442, 8467, 8509, 8546]
-Objects in sequence: ['sauce bottle', 'thyme spice', 'meat', 'spice jar', 'tupperware', 'spice bottle', 'lid']
-Verb-noun pairs in sequence: ['put-down;jar;167.78;168.42000000000002', 'open;bottle:spice;168.85;169.38']
+Objects in sequence: ['spice bottle', 'sauce bottle', 'tupperware', 'lid', 'meat', 'spice jar', 'thyme spice']
+Verb-noun pairs in sequence: ['put jar down;167.78;168.42000000000002', 'open spice bottle;168.85;169.38']
 ************
 Start timestamp: 171.15, Stop timestamp: 172.3
 Narration: pour thyme spice from lid to tupperware
@@ -403,8 +403,8 @@ Narration: shake bottle
 ------
 ************
 Frame IDs in sequence: [8650, 8700, 8821, 8888, 8923, 8957]
-Objects in sequence: ['sauce bottle', 'meat', 'spice jar', 'tupperware']
-Verb-noun pairs in sequence: ['close;jar:spice;172.4;174.34', 'put-down;jar:spice;174.15;175.14', 'pick-up;bottle:sauce;174.34;175.36']
+Objects in sequence: ['sauce bottle', 'tupperware', 'meat', 'spice jar']
+Verb-noun pairs in sequence: ['close spice jar;172.4;174.34', 'put down spice jar;174.15;175.14', 'pick up sauce bottle;174.34;175.36']
 ************
 Start timestamp: 178.02, Stop timestamp: 179.29
 Narration: hit bottle
@@ -420,8 +420,8 @@ Narration: open sauce bottle
 ------
 ************
 Frame IDs in sequence: [9036, 9251, 9517, 9607, 9929, 10251]
-Objects in sequence: ['sauce bottle', 'sink', 'tap', 'meat', 'tupperware']
-Verb-noun pairs in sequence: ['hit;bottle;178.02;179.29', 'shake;bottle;179.39;186.06', 'hit;bottle;186.05;189.11']
+Objects in sequence: ['sink', 'sauce bottle', 'tupperware', 'meat', 'tap']
+Verb-noun pairs in sequence: ['hit bottle;178.02;179.29', 'shake bottle;179.39;186.06', 'hit bottle;186.05;189.11']
 ************
 Start timestamp: 192.75, Stop timestamp: 198.75
 Narration: shake bottle
@@ -440,8 +440,8 @@ Narration: shake bottle
 ------
 ************
 Frame IDs in sequence: [10321, 10345, 10369, 10401, 10426, 10451]
-Objects in sequence: ['sauce bottle', 'sink', 'tap', 'sauce', 'meat', 'tupperware']
-Verb-noun pairs in sequence: ['turn-on;tap;204.45;206.05', 'pour-into;water;206.2;206.94', 'turn-off;tap;206.75;207.3']
+Objects in sequence: ['sink', 'sauce', 'sauce bottle', 'tupperware', 'meat', 'tap']
+Verb-noun pairs in sequence: ['open tap;204.45;206.05', 'pour water into bottle;206.2;206.94', 'close tap;206.75;207.3']
 ************
 Start timestamp: 208.62, Stop timestamp: 209.73
 Narration: pour sauce from bottle to tupperware
@@ -461,5 +461,5 @@ Narration: put sauce bottle down
 ************
 Frame IDs in sequence: []
 Objects in sequence: []
-Verb-noun pairs in sequence: ['pour-from;sauce;208.62;209.73', 'hit;bottle;209.7;210.63', 'shake;bottle;210.92000000000002;219.39', 'close;bottle:sauce;219.35;222.78']
+Verb-noun pairs in sequence: ['pour sauce from bottle to tupperware;208.62;209.73', 'hit bottle;209.7;210.63', 'shake bottle;210.92000000000002;219.39', 'close sauce bottle;219.35;222.78']
 ************

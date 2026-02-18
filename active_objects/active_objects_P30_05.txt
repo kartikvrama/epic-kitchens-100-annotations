@@ -10,7 +10,7 @@ Narration: put v60
 ************
 Frame IDs in sequence: [332, 386, 422, 466, 537, 587]
 Objects in sequence: ['bin/garbage can/recycling bin', 'v60', 'coffee grind']
-Verb-noun pairs in sequence: ['open;bin;5.39;6.87', 'put-in;grind:coffee;6.97;7.82']
+Verb-noun pairs in sequence: ['open bin;5.39;6.87', 'put coffee grinds in bin;6.97;7.82']
 ************
 Start timestamp: 10.49, Stop timestamp: 12.66
 Narration: take mug and plate
@@ -23,8 +23,8 @@ Narration: put onion in bin
 ------
 ************
 Frame IDs in sequence: [669, 723, 795, 835, 1127, 1281]
-Objects in sequence: ['bin/garbage can/recycling bin', 'plate', 'onion', 'mug']
-Verb-noun pairs in sequence: ['take;mug;10.49;12.66', 'put;mug;12.76;14.72']
+Objects in sequence: ['plate', 'bin/garbage can/recycling bin', 'mug', 'onion']
+Verb-noun pairs in sequence: ['take mug and plate;10.49;12.66', 'put mug and plate;12.76;14.72']
 ************
 Start timestamp: 25.85, Stop timestamp: 27.45
 Narration: take box
@@ -40,8 +40,8 @@ Narration: take lime and garlic
 ------
 ************
 Frame IDs in sequence: [1572, 1626, 1809, 1850, 2038, 2076]
-Objects in sequence: ['bag', 'box', 'can', 'lime', 'coconut bag', 'garlic bag']
-Verb-noun pairs in sequence: ['take;box;25.85;27.45', 'put;box;27.4;28.72', 'take;coconut;30.14;30.89']
+Objects in sequence: ['lime', 'can', 'bag', 'box', 'coconut bag', 'garlic bag']
+Verb-noun pairs in sequence: ['take box;25.85;27.45', 'put box;27.4;28.72', 'take coconut;30.14;30.89']
 ************
 Start timestamp: 36.03, Stop timestamp: 37.2
 Narration: take coconut milk and lime
@@ -54,8 +54,8 @@ Narration: take bag
 ------
 ************
 Frame IDs in sequence: [2184, 2226, 2288, 2344, 2482, 2525]
-Objects in sequence: ['bag', 'can', 'coconut bag', 'lime']
-Verb-noun pairs in sequence: ['take;milk:coconut;36.03;37.2', 'take;carrot;38.01;39.35']
+Objects in sequence: ['can', 'lime', 'bag', 'coconut bag']
+Verb-noun pairs in sequence: ['take coconut milk and lime;36.03;37.2', 'take carrots;38.01;39.35']
 ************
 Start timestamp: 44.25, Stop timestamp: 45.45
 Narration: put bag
@@ -74,8 +74,8 @@ Narration: clean chopping board
 ------
 ************
 Frame IDs in sequence: [2675, 2704, 3253, 3415, 3608, 3708]
-Objects in sequence: ['bag', 'box', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['put;bag;44.25;45.45', 'move;food;53.39;57.87', 'take;jug;56.24;57.43', 'put;jug;57.53;58.97']
+Objects in sequence: ['chopping board', 'knife', 'bag', 'box']
+Verb-noun pairs in sequence: ['put bag;44.25;45.45', 'move food;53.39;57.87', 'take jug;56.24;57.43', 'put jug;57.53;58.97']
 ************
 Start timestamp: 129.12, Stop timestamp: 130.9
 Narration: open fridge
@@ -91,8 +91,8 @@ Narration: put pepper
 ------
 ************
 Frame IDs in sequence: [7782, 7818, 8079, 8487, 8703, 8920]
-Objects in sequence: ['drawer', 'pepper', 'fridge']
-Verb-noun pairs in sequence: ['open;fridge;129.12;130.9', 'open;drawer;130.53;132.0', 'take;pepper;131.98;144.6']
+Objects in sequence: ['fridge', 'pepper', 'drawer']
+Verb-noun pairs in sequence: ['open fridge;129.12;130.9', 'open drawer;130.53;132.0', 'take pepper;131.98;144.6']
 ************
 Start timestamp: 149.16, Stop timestamp: 156.48
 Narration: take salad
@@ -117,8 +117,8 @@ Narration: take salad
 ------
 ************
 Frame IDs in sequence: [9460, 9542, 9774, 10007, 10136, 10265]
-Objects in sequence: ['bag', 'drawer', 'pepper', 'fridge']
-Verb-noun pairs in sequence: ['put;salad;156.57999999999998;160.25', 'put;salad;159.0;159.98', 'take;salad;160.07999999999998;166.73', 'take;salad;166.41;167.4', 'put;salad;167.32999999999998;167.96']
+Objects in sequence: ['fridge', 'bag', 'pepper', 'drawer']
+Verb-noun pairs in sequence: ['put salad;156.57999999999998;160.25', 'put salad;159.0;159.98', 'take salad;160.07999999999998;166.73', 'take salad;166.41;167.4', 'put salad;167.32999999999998;167.96']
 ************
 Start timestamp: 171.85, Stop timestamp: 173.36
 Narration: put salad
@@ -131,8 +131,8 @@ Narration: put salad
 ------
 ************
 Frame IDs in sequence: [10339, 10377, 10419, 10461, 10511, 10595]
-Objects in sequence: ['bag', 'drawer', 'fridge']
-Verb-noun pairs in sequence: ['put;salad;171.85;173.36', 'take;salad;174.01;175.29']
+Objects in sequence: ['fridge', 'bag', 'drawer']
+Verb-noun pairs in sequence: ['put salad;171.85;173.36', 'take salad;174.01;175.29']
 ************
 Start timestamp: 194.26, Stop timestamp: 194.99
 Narration: close drawer
@@ -146,7 +146,7 @@ Narration: remove drawer
 ************
 Frame IDs in sequence: [11677, 11713, 11751, 11782, 11813, 11843]
 Objects in sequence: ['fridge', 'drawer']
-Verb-noun pairs in sequence: ['close;drawer;194.26;194.99', 'open;drawer;195.16;195.99']
+Verb-noun pairs in sequence: ['close drawer;194.26;194.99', 'open drawer;195.16;195.99']
 ************
 Start timestamp: 198.21, Stop timestamp: 199.16
 Narration: take salad
@@ -159,8 +159,8 @@ Narration: take lemon
 ------
 ************
 Frame IDs in sequence: [11893, 11942, 11997, 12038, 12523, 12555]
-Objects in sequence: ['bag', 'drawer', 'fridge', 'lemon']
-Verb-noun pairs in sequence: ['take;salad;198.21;199.16', 'put;salad;199.54;201.04']
+Objects in sequence: ['lemon', 'fridge', 'bag', 'drawer']
+Verb-noun pairs in sequence: ['take salad;198.21;199.16', 'put salad;199.54;201.04']
 ************
 Start timestamp: 209.66, Stop timestamp: 210.88
 Narration: put lemon
@@ -173,8 +173,8 @@ Narration: put salad in bin
 ------
 ************
 Frame IDs in sequence: [12587, 12635, 13317, 13365, 13455, 13505]
-Objects in sequence: ['bin/garbage can/recycling bin', 'bag', 'fridge', 'lemon']
-Verb-noun pairs in sequence: ['put;lemon;209.66;210.88', 'take;salad;221.73;223.1']
+Objects in sequence: ['lemon', 'bin/garbage can/recycling bin', 'fridge', 'bag']
+Verb-noun pairs in sequence: ['put lemon;209.66;210.88', 'take salad;221.73;223.1']
 ************
 Start timestamp: 225.35, Stop timestamp: 228.13
 Narration: take salad
@@ -187,8 +187,8 @@ Narration: take salad
 ------
 ************
 Frame IDs in sequence: [13575, 13646, 13704, 13758, 13812, 13882]
-Objects in sequence: ['bin/garbage can/recycling bin', 'waste']
-Verb-noun pairs in sequence: ['take;salad;225.35;228.13', 'put-in;salad;228.32;229.05']
+Objects in sequence: ['waste', 'bin/garbage can/recycling bin']
+Verb-noun pairs in sequence: ['take salad;225.35;228.13', 'put salads in bin;228.32;229.05']
 ************
 Start timestamp: 231.66, Stop timestamp: 234.96
 Narration: put salads in bins
@@ -204,8 +204,8 @@ Narration: dry hands
 ------
 ************
 Frame IDs in sequence: [14186, 14464, 14701, 14779, 14887, 14927]
-Objects in sequence: ['towel', 'sink', 'tap', 'cupboard', 'water']
-Verb-noun pairs in sequence: ['wash;hand;235.28;242.75', 'turn-off;tap;242.75;243.57']
+Objects in sequence: ['sink', 'cupboard', 'water', 'towel', 'tap']
+Verb-noun pairs in sequence: ['wash hands;235.28;242.75', 'turn off tap;242.75;243.57']
 ************
 Start timestamp: 247.9, Stop timestamp: 249.04
 Narration: open cupboard
@@ -218,8 +218,8 @@ Narration: put onion
 ------
 ************
 Frame IDs in sequence: [15163, 15223, 15353, 15411, 15564, 15592]
-Objects in sequence: ['drawer', 'cupboard', 'onion']
-Verb-noun pairs in sequence: ['open;cupboard;247.9;249.04', 'close;cupboard;252.34;254.49']
+Objects in sequence: ['cupboard', 'drawer', 'onion']
+Verb-noun pairs in sequence: ['open cupboard;247.9;249.04', 'close cupboard;252.34;254.49']
 ************
 Start timestamp: 259.09, Stop timestamp: 260.09
 Narration: open drawer
@@ -233,7 +233,7 @@ Narration: close drawer
 ************
 Frame IDs in sequence: [15665, 15683, 15702, 15732, 15762, 15788]
 Objects in sequence: ['cupboard', 'drawer']
-Verb-noun pairs in sequence: ['open;drawer;259.09;260.09', 'take;scissors;260.75;261.43']
+Verb-noun pairs in sequence: ['open drawer;259.09;260.09', 'take scissors;260.75;261.43']
 ************
 Start timestamp: 262.47, Stop timestamp: 263.41
 Narration: open cupboard
@@ -247,7 +247,7 @@ Narration: put pan
 ************
 Frame IDs in sequence: [15874, 16028, 16174, 16272, 16406, 16541]
 Objects in sequence: ['cupboard', 'pan']
-Verb-noun pairs in sequence: ['open;cupboard;262.47;263.41', 'take;pan;263.92;267.77']
+Verb-noun pairs in sequence: ['open cupboard;262.47;263.41', 'take pan;263.92;267.77']
 ************
 Start timestamp: 275.40999999999997, Stop timestamp: 276.01
 Narration: close cupboard
@@ -260,8 +260,8 @@ Narration: turn gas on
 ------
 ************
 Frame IDs in sequence: [16587, 16633, 16753, 16941, 17213, 17357]
-Objects in sequence: ['pan', 'scissors', 'hob/cooktop/stovetop', 'waste', 'coconut bag']
-Verb-noun pairs in sequence: ['close;cupboard;275.40999999999997;276.01', 'move;pan;276.11;277.49']
+Objects in sequence: ['hob/cooktop/stovetop', 'waste', 'coconut bag', 'scissors', 'pan']
+Verb-noun pairs in sequence: ['close cupboard;275.40999999999997;276.01', 'move pan;276.11;277.49']
 ************
 Start timestamp: 286.17, Stop timestamp: 290.04
 Narration: open coconut
@@ -277,8 +277,8 @@ Narration: measure coconut in spoon
 ------
 ************
 Frame IDs in sequence: [17688, 17798, 17932, 17966, 17995, 18024]
-Objects in sequence: ['pan', 'bag', 'coconut', 'spoon', 'coconut bag']
-Verb-noun pairs in sequence: ['open;coconut;286.17;290.04', 'measure-in;coconut;294.47;297.48', 'put-in;coconut;297.46;298.26']
+Objects in sequence: ['coconut', 'bag', 'coconut bag', 'spoon', 'pan']
+Verb-noun pairs in sequence: ['open coconut;286.17;290.04', 'measure coconut in spoon;294.47;297.48', 'put coconut in pan;297.46;298.26']
 ************
 Start timestamp: 299.92, Stop timestamp: 300.74
 Narration: put coconut in pan
@@ -291,8 +291,8 @@ Narration: put coconut
 ------
 ************
 Frame IDs in sequence: [18114, 18190, 18266, 18398, 18530, 18680]
-Objects in sequence: ['pan', 'coconut', 'spoon', 'coconut bag', 'bag clip']
-Verb-noun pairs in sequence: ['put-in;coconut;299.92;300.74', 'put;spoon;301.06;305.74']
+Objects in sequence: ['coconut', 'bag clip', 'coconut bag', 'spoon', 'pan']
+Verb-noun pairs in sequence: ['put coconut in pan;299.92;300.74', 'put spoon;301.06;305.74']
 ************
 Start timestamp: 307.29, Stop timestamp: 312.25
 Narration: close bag of coconut
@@ -308,8 +308,8 @@ Narration: put bits in bin
 ------
 ************
 Frame IDs in sequence: [19668, 19722, 19796, 19840, 19917, 19961]
-Objects in sequence: ['bin/garbage can/recycling bin', 'rubbish/trash', 'can', 'lime']
-Verb-noun pairs in sequence: ['close;bag:coconut;307.29;312.25', 'close;bag;310.61;324.74', 'gather;board:chopping;327.05;329.41']
+Objects in sequence: ['lime', 'can', 'bin/garbage can/recycling bin', 'rubbish/trash']
+Verb-noun pairs in sequence: ['close bag of coconut;307.29;312.25', 'close bag;310.61;324.74', 'gather bits;327.05;329.41']
 ************
 Start timestamp: 331.09, Stop timestamp: 333.68
 Narration: take limes
@@ -322,8 +322,8 @@ Narration: clean limes
 ------
 ************
 Frame IDs in sequence: [20196, 20245, 20441, 20568, 20955, 21089]
-Objects in sequence: ['sink', 'tap', 'washing up bowl', 'lime', 'water']
-Verb-noun pairs in sequence: ['take;lime;331.09;333.68', 'rinse;bowl:washing:up;336.15;337.57']
+Objects in sequence: ['sink', 'lime', 'washing up bowl', 'water', 'tap']
+Verb-noun pairs in sequence: ['take limes;331.09;333.68', 'rinse washing up bowl;336.15;337.57']
 ************
 Start timestamp: 343.5, Stop timestamp: 344.63
 Narration: rinse lime
@@ -340,7 +340,7 @@ Narration: put lime
 ************
 Frame IDs in sequence: [21419, 21469, 21517, 21565, 21641, 21718]
 Objects in sequence: ['towel', 'lime']
-Verb-noun pairs in sequence: ['clean;lime;347.86;352.49', 'dry;lime;355.99;358.98']
+Verb-noun pairs in sequence: ['clean lime;347.86;352.49', 'dry lime;355.99;358.98']
 ************
 Start timestamp: 359.79, Stop timestamp: 361.47
 Narration: dry lime
@@ -356,8 +356,8 @@ Narration: split onion
 ------
 ************
 Frame IDs in sequence: [21962, 22006, 22372, 22406, 22623, 22865]
-Objects in sequence: ['chopping board', 'onion', 'knife', 'onion peel']
-Verb-noun pairs in sequence: ['put;lime;361.85;362.51', 'chop;onion;365.24;367.4']
+Objects in sequence: ['chopping board', 'knife', 'onion', 'onion peel']
+Verb-noun pairs in sequence: ['put lime;361.85;362.51', 'chop onion;365.24;367.4']
 ************
 Start timestamp: 374.89, Stop timestamp: 382.93
 Narration: peel onion
@@ -370,8 +370,8 @@ Narration: slice onion
 ------
 ************
 Frame IDs in sequence: [23109, 23301, 23760, 24286, 25179, 25271]
-Objects in sequence: ['chopping board', 'onion', 'knife', 'onion peel']
-Verb-noun pairs in sequence: ['peel;onion;374.89;382.93', 'peel;onion;384.16;389.88']
+Objects in sequence: ['chopping board', 'knife', 'onion', 'onion peel']
+Verb-noun pairs in sequence: ['peel onion;374.89;382.93', 'peel onion;384.16;389.88']
 ************
 Start timestamp: 392.0, Stop timestamp: 405.49
 Narration: continue slicing onion
@@ -405,8 +405,8 @@ Narration: continue chopping onion
 ------
 ************
 Frame IDs in sequence: [25419, 25610, 25985, 26360, 26809, 27141]
-Objects in sequence: ['ginger bag', 'chopping board', 'onion', 'knife', 'onion peel']
-Verb-noun pairs in sequence: ['chop;onion;418.13;422.45', 'chop;onion;422.55;428.23', 'chop;onion;427.78;430.54']
+Objects in sequence: ['chopping board', 'knife', 'ginger bag', 'onion', 'onion peel']
+Verb-noun pairs in sequence: ['chop onion;418.13;422.45', 'continue chopping onion;422.55;428.23', 'continue chopping onion;427.78;430.54']
 ************
 Start timestamp: 437.01, Stop timestamp: 442.55
 Narration: chop onion
@@ -431,8 +431,8 @@ Narration: remove ginger from bag
 ------
 ************
 Frame IDs in sequence: [27241, 27337, 27365, 27590, 27816, 27946]
-Objects in sequence: ['ginger', 'ginger bag', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['take;bag:ginger;451.99;452.89', 'open;bag:ginger;453.49;454.79']
+Objects in sequence: ['chopping board', 'knife', 'ginger', 'ginger bag']
+Verb-noun pairs in sequence: ['take bag of ginger;451.99;452.89', 'open bag of ginger;453.49;454.79']
 ************
 Start timestamp: 462.88, Stop timestamp: 466.62
 Narration: cut ginger
@@ -448,8 +448,8 @@ Narration: stir coconut
 ------
 ************
 Frame IDs in sequence: [28056, 28142, 28663, 28737, 28881, 28943]
-Objects in sequence: ['pan', 'ginger', 'coconut', 'gas', 'chopping board', 'knife', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['cut;ginger;462.88;466.62', 'peel;ginger;466.72;469.58', 'peel;ginger;469.06;473.94']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'coconut', 'gas', 'hob', 'ginger', 'pan']
+Verb-noun pairs in sequence: ['cut ginger;462.88;466.62', 'peel ginger;466.72;469.58', 'continue peeling ginger;469.06;473.94']
 ************
 Start timestamp: 480.67, Stop timestamp: 483.09
 Narration: adjust gas
@@ -468,8 +468,8 @@ Narration: continue peeling ginger
 ------
 ************
 Frame IDs in sequence: [29562, 29914, 30122, 30394, 30665, 30849]
-Objects in sequence: ['ginger', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['adjust;gas;480.67;483.09', 'stir;coconut;482.92;488.47', 'peel;ginger;491.23;500.23', 'peel;ginger;500.12;509.24']
+Objects in sequence: ['chopping board', 'knife', 'ginger']
+Verb-noun pairs in sequence: ['adjust gas;480.67;483.09', 'stir coconut;482.92;488.47', 'continue peeling ginger;491.23;500.23', 'continue peeling ginger;500.12;509.24']
 ************
 Start timestamp: 509.34, Stop timestamp: 515.78
 Narration: continue peeling ginger
@@ -482,8 +482,8 @@ Narration: continue chopping ginger
 ------
 ************
 Frame IDs in sequence: [31005, 31115, 31225, 31435, 31612, 32050]
-Objects in sequence: ['ginger', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['peel;ginger;509.34;515.78', 'chop;ginger;515.86;519.4']
+Objects in sequence: ['chopping board', 'knife', 'ginger']
+Verb-noun pairs in sequence: ['continue peeling ginger;509.34;515.78', 'chop ginger;515.86;519.4']
 ************
 Start timestamp: 525.02, Stop timestamp: 537.68
 Narration: continue chopping ginger
@@ -499,8 +499,8 @@ Narration: continue chopping ginger
 ------
 ************
 Frame IDs in sequence: [32324, 32382, 32436, 32480, 32555, 32663]
-Objects in sequence: ['ginger', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['chop;ginger;525.02;537.68', 'chop;ginger;536.18;538.44', 'chop;ginger;537.91;540.32']
+Objects in sequence: ['chopping board', 'knife', 'ginger']
+Verb-noun pairs in sequence: ['continue chopping ginger;525.02;537.68', 'continue chopping ginger;536.18;538.44', 'continue chopping ginger;537.91;540.32']
 ************
 Start timestamp: 541.68, Stop timestamp: 545.74
 Narration: continue chopping ginger
@@ -516,8 +516,8 @@ Narration: move chopping board
 ------
 ************
 Frame IDs in sequence: [33614, 34436, 35013, 35161, 35317, 35381]
-Objects in sequence: ['ginger', 'chopping board', 'knife', 'garlic bag']
-Verb-noun pairs in sequence: ['chop;ginger;541.68;545.74', 'chop;ginger;557.14;578.42', 'chop;ginger;570.73;575.47']
+Objects in sequence: ['chopping board', 'knife', 'ginger', 'garlic bag']
+Verb-noun pairs in sequence: ['continue chopping ginger;541.68;545.74', 'continue chopping ginger;557.14;578.42', 'continue chopping ginger;570.73;575.47']
 ************
 Start timestamp: 587.94, Stop timestamp: 590.36
 Narration: take bag of garlic
@@ -539,8 +539,8 @@ Narration: remove garlic
 ------
 ************
 Frame IDs in sequence: [35838, 36282, 36781, 36981, 37357, 37405]
-Objects in sequence: ['garlic', 'garlic clove', 'chopping board', 'knife', 'garlic bulb']
-Verb-noun pairs in sequence: ['take;bag:garlic;587.94;590.36', 'remove;bulb:garlic;589.52;592.89', 'split;bulb:garlic;592.99;608.1', 'split;garlic;593.85;599.26', 'move-from;clove;606.45;609.09']
+Objects in sequence: ['garlic bulb', 'chopping board', 'knife', 'garlic clove', 'garlic']
+Verb-noun pairs in sequence: ['take bag of garlic;587.94;590.36', 'remove bulb of garlic;589.52;592.89', 'split bulb of garlic;592.99;608.1', 'continue splitting bulb of garlic;593.85;599.26', 'move cloves from garlic bulb;606.45;609.09']
 ************
 Start timestamp: 615.45, Stop timestamp: 622.2
 Narration: break garlic clove
@@ -556,8 +556,8 @@ Narration: skin from garlic clove
 ------
 ************
 Frame IDs in sequence: [37471, 37521, 37712, 37782, 37994, 38142]
-Objects in sequence: ['skin', 'garlic', 'garlic clove', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['break;clove:garlic;622.46;623.66', 'break;clove:garlic;624.33;625.66']
+Objects in sequence: ['chopping board', 'knife', 'garlic clove', 'skin', 'garlic']
+Verb-noun pairs in sequence: ['break garlic clove;622.46;623.66', 'break garlic clove;624.33;625.66']
 ************
 Start timestamp: 631.44, Stop timestamp: 636.79
 Narration: remove skin from garlic clove
@@ -570,8 +570,8 @@ Narration: stir coconut
 ------
 ************
 Frame IDs in sequence: [39003, 39287, 39568, 39648, 39814, 40002]
-Objects in sequence: ['skin', 'pan', 'sink', 'coconut', 'garlic', 'garlic clove', 'chopping board', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['remove;skin;631.44;636.79', 'stir;coconut;647.9;657.36']
+Objects in sequence: ['chopping board', 'sink', 'wooden spoon', 'coconut', 'hob', 'garlic clove', 'skin', 'pan', 'garlic']
+Verb-noun pairs in sequence: ['remove skin from garlic clove;631.44;636.79', 'stir coconut;647.9;657.36']
 ************
 Start timestamp: 662.54, Stop timestamp: 667.9
 Narration: remove skin from garlic clove
@@ -584,8 +584,8 @@ Narration: stir coconut
 ------
 ************
 Frame IDs in sequence: [40264, 40456, 40603, 40767, 40987, 41265]
-Objects in sequence: ['pan', 'coconut', 'garlic', 'chopping board', 'knife', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['remove;skin;662.54;667.9', 'stir;coconut;669.22;675.53']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'coconut', 'hob', 'pan', 'garlic']
+Verb-noun pairs in sequence: ['remove skin from garlic clove;662.54;667.9', 'stir coconut;669.22;675.53']
 ************
 Start timestamp: 681.25, Stop timestamp: 689.11
 Narration: chop garlic
@@ -601,8 +601,8 @@ Narration: continue chopping garlic
 ------
 ************
 Frame IDs in sequence: [41515, 41724, 42392, 42478, 42829, 43083]
-Objects in sequence: ['garlic', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['chop;garlic;681.25;689.11', 'chop;garlic;689.21;697.2', 'chop;garlic;696.57;708.19']
+Objects in sequence: ['chopping board', 'knife', 'garlic']
+Verb-noun pairs in sequence: ['chop garlic;681.25;689.11', 'continue chopping garlic;689.21;697.2', 'chop garlic;696.57;708.19']
 ************
 Start timestamp: 710.58, Stop timestamp: 721.89
 Narration: chop
@@ -621,8 +621,8 @@ Narration: continue chopping garlic
 ------
 ************
 Frame IDs in sequence: [43439, 43576, 43647, 43706, 44000, 44088]
-Objects in sequence: ['garlic', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['chop;garlic;710.58;721.89', 'chop;garlic;715.05;723.12', 'chop;garlic;723.29;726.95', 'chop;garlic;726.84;732.39']
+Objects in sequence: ['chopping board', 'knife', 'garlic']
+Verb-noun pairs in sequence: ['chop;710.58;721.89', 'continue chopping garlic;715.05;723.12', 'chop garlic;723.29;726.95', 'continue chopping garlic;726.84;732.39']
 ************
 Start timestamp: 732.51, Stop timestamp: 735.36
 Narration: continue chopping garlic
@@ -635,8 +635,8 @@ Narration: continue chopping garlic
 ------
 ************
 Frame IDs in sequence: [44178, 44294, 44430, 44536, 44653, 44753]
-Objects in sequence: ['pan', 'garlic', 'coconut', 'hob/cooktop/stovetop', 'chopping board', 'knife', 'wooden spoon']
-Verb-noun pairs in sequence: ['chop;garlic;732.51;735.36', 'chop;garlic;735.46;739.33']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'coconut', 'hob/cooktop/stovetop', 'pan', 'garlic']
+Verb-noun pairs in sequence: ['continue chopping garlic;732.51;735.36', 'continue chopping garlic;735.46;739.33']
 ************
 Start timestamp: 743.48, Stop timestamp: 746.4
 Narration: stir coconut
@@ -652,8 +652,8 @@ Narration: continue pouring olive oil in pan
 ------
 ************
 Frame IDs in sequence: [44911, 45039, 45353, 45501, 45726, 45890]
-Objects in sequence: ['pan', 'bottle', 'coconut', 'hob/cooktop/stovetop', 'wooden spoon', 'olive oil']
-Verb-noun pairs in sequence: ['stir;coconut;743.48;746.4', 'pour-in;oil:olive;747.16;751.76', 'pour-in;oil:olive;748.88;750.49']
+Objects in sequence: ['wooden spoon', 'coconut', 'bottle', 'hob/cooktop/stovetop', 'pan', 'olive oil']
+Verb-noun pairs in sequence: ['stir coconut;743.48;746.4', 'pour olive oil in pan;747.16;751.76', 'continue pouring olive oil in pan;748.88;750.49']
 ************
 Start timestamp: 761.05, Stop timestamp: 765.95
 Narration: stir coconut
@@ -666,8 +666,8 @@ Narration: put garlic in pan
 ------
 ************
 Frame IDs in sequence: [46108, 46330, 46873, 47069, 47395, 47708]
-Objects in sequence: ['pan', 'bottle', 'coconut', 'garlic', 'hob/cooktop/stovetop', 'chopping board', 'onion', 'knife', 'wooden spoon', 'olive oil']
-Verb-noun pairs in sequence: ['stir;coconut;761.05;765.95', 'pour-in;oil:olive;767.09;774.61']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'coconut', 'bottle', 'hob/cooktop/stovetop', 'onion', 'pan', 'garlic', 'olive oil']
+Verb-noun pairs in sequence: ['stir coconut;761.05;765.95', 'pour olive oil in pan;767.09;774.61']
 ************
 Start timestamp: 785.19, Stop timestamp: 787.37
 Narration: put onion in pan
@@ -683,8 +683,8 @@ Narration: continue stirring food
 ------
 ************
 Frame IDs in sequence: [48074, 48373, 48585, 48663, 49309, 49936]
-Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'food', 'wooden spoon']
-Verb-noun pairs in sequence: ['scrape;board:chopping;787.6;796.44', 'stir;food;799.17;808.17']
+Objects in sequence: ['wooden spoon', 'food', 'hob/cooktop/stovetop', 'pan']
+Verb-noun pairs in sequence: ['scrape chopping board clean;787.6;796.44', 'stir food;799.17;808.17']
 ************
 Start timestamp: 809.46, Stop timestamp: 814.25
 Narration: continue stirring food
@@ -712,8 +712,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [50823, 50891, 50999, 51037, 51091, 51119]
-Objects in sequence: ['cupboard', 'chopping board', 'knife', 'lime']
-Verb-noun pairs in sequence: ['stir;food;814.6;840.33', 'split;onion;825.52;830.35', 'stir;food;834.33;837.75', 'stir;food;837.85;840.36', 'cut;lime;846.36;848.52']
+Objects in sequence: ['chopping board', 'knife', 'lime', 'cupboard']
+Verb-noun pairs in sequence: ['continue stirring food;814.6;840.33', 'split onion;825.52;830.35', 'stir food;834.33;837.75', 'continue stirring food;837.85;840.36', 'cut lime;846.36;848.52']
 ************
 Start timestamp: 851.25, Stop timestamp: 852.43
 Narration: close cupboard
@@ -733,7 +733,7 @@ Narration: take box
 ************
 Frame IDs in sequence: [51203, 51398, 51593, 51634, 51744, 51855]
 Objects in sequence: ['cupboard', 'box']
-Verb-noun pairs in sequence: ['close;cupboard;851.25;852.43', 'open;cupboard;851.81;852.55', 'close;cupboard;851.96;852.76', 'open;cupboard;853.19;854.07']
+Verb-noun pairs in sequence: ['close cupboard;851.25;852.43', 'open cupboard;851.81;852.55', 'close cupboard;851.96;852.76', 'open cupboard;853.19;854.07']
 ************
 Start timestamp: 863.97, Stop timestamp: 864.55
 Narration: put box
@@ -746,8 +746,8 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [51896, 51932, 52004, 52036, 52366, 52581]
-Objects in sequence: ['cupboard', 'squeezer', 'lime']
-Verb-noun pairs in sequence: ['put;box;863.97;864.55', 'close;cupboard;864.65;865.68']
+Objects in sequence: ['lime', 'cupboard', 'squeezer']
+Verb-noun pairs in sequence: ['put box;863.97;864.55', 'close cupboard;864.65;865.68']
 ************
 Start timestamp: 870.46, Stop timestamp: 877.77
 Narration: squeeze lime
@@ -764,7 +764,7 @@ Narration: squeeze lime
 ************
 Frame IDs in sequence: [52769, 52872, 53409, 53529, 53686, 53886]
 Objects in sequence: ['squeezer', 'lime']
-Verb-noun pairs in sequence: ['squeeze;lime;870.46;877.77', 'squeeze;lime;878.47;882.16', 'squeeze;lime;878.52;885.46']
+Verb-noun pairs in sequence: ['squeeze lime;870.46;877.77', 'squeeze lime;878.47;882.16', 'continue squeezing;878.52;885.46']
 ************
 Start timestamp: 891.0, Stop timestamp: 895.8
 Narration: continue squeezing lime
@@ -786,8 +786,8 @@ Narration: open freezer
 ------
 ************
 Frame IDs in sequence: [54094, 54226, 54358, 54597, 54717, 54791]
-Objects in sequence: ['bag', 'drawer', 'fridge', 'squeezer', 'lime']
-Verb-noun pairs in sequence: ['squeeze;lime;893.53;899.51', 'squeeze;lime;894.35;898.32', 'squeeze;lime;898.42;907.99', 'squeeze;lime;899.61;908.13']
+Objects in sequence: ['lime', 'fridge', 'bag', 'drawer', 'squeezer']
+Verb-noun pairs in sequence: ['continue squeezing lime;893.53;899.51', 'continue squeezing lime;894.35;898.32', 'continue squeezing lime;898.42;907.99', 'continue squeezing lime;899.61;908.13']
 ************
 Start timestamp: 910.3, Stop timestamp: 911.63
 Narration: open drawer
@@ -803,8 +803,8 @@ Narration: put parsley in drawer
 ------
 ************
 Frame IDs in sequence: [54985, 55257, 55602, 55948, 55998, 56104]
-Objects in sequence: ['bag', 'drawer', 'freezer', 'fridge']
-Verb-noun pairs in sequence: ['take;fish;911.54;913.69', 'take-from;drawer;914.5;922.36']
+Objects in sequence: ['fridge', 'bag', 'freezer', 'drawer']
+Verb-noun pairs in sequence: ['take fish;911.54;913.69', 'take parsley from drawer;914.5;922.36']
 ************
 Start timestamp: 933.37, Stop timestamp: 934.3
 Narration: close drawer
@@ -821,7 +821,7 @@ Narration: open cupboards
 ************
 Frame IDs in sequence: [56623, 56731, 56953, 57001, 57203, 57243]
 Objects in sequence: ['cupboard', 'garlic bag']
-Verb-noun pairs in sequence: ['close;freezer;934.81;935.85', 'take;garlic;942.99;946.69']
+Verb-noun pairs in sequence: ['close freezer;934.81;935.85', 'take garlic;942.99;946.69']
 ************
 Start timestamp: 952.87, Stop timestamp: 954.66
 Narration: close cupboards
@@ -837,8 +837,8 @@ Narration: open cupboards
 ------
 ************
 Frame IDs in sequence: [57357, 57433, 57642, 58430, 59219, 59265]
-Objects in sequence: ['bowl', 'bin/garbage can/recycling bin', 'ginger', 'cupboard', 'garlic bulb', 'garlic bag']
-Verb-noun pairs in sequence: ['close;cupboard;952.87;954.66', 'put;garlic;955.51;957.89', 'put-in;bin;957.76;959.93']
+Objects in sequence: ['garlic bulb', 'cupboard', 'bin/garbage can/recycling bin', 'ginger', 'bowl', 'garlic bag']
+Verb-noun pairs in sequence: ['close cupboards;952.87;954.66', 'put garlic and ginger;955.51;957.89', 'put back in bin;957.76;959.93']
 ************
 Start timestamp: 986.62, Stop timestamp: 988.03
 Narration: put garlic in bowl
@@ -854,8 +854,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [59431, 59575, 59664, 59769, 59890]
-Objects in sequence: ['bowl', 'towel', 'cupboard']
-Verb-noun pairs in sequence: ['put-in;garlic;986.62;988.03', 'hang;towel;990.02;991.54', 'gather;bit:food;991.39;1004.84']
+Objects in sequence: ['cupboard', 'bowl', 'towel']
+Verb-noun pairs in sequence: ['put garlic in bowl;986.62;988.03', 'hang towel;990.02;991.54', 'gather food bits;991.39;1004.84']
 ************
 Start timestamp: 995.24, Stop timestamp: 999.86
 Narration: put bowl
@@ -869,7 +869,7 @@ Narration: gather food bits
 ************
 Frame IDs in sequence: [60414, 60512, 60606, 60699, 60997, 61045]
 Objects in sequence: ['bin/garbage can/recycling bin', 'bag', 'food bit']
-Verb-noun pairs in sequence: ['put;bowl;995.24;999.86', 'put-in;bit:food;1005.63;1009.32']
+Verb-noun pairs in sequence: ['put bowl;995.24;999.86', 'put food bits in bin;1005.63;1009.32']
 ************
 Start timestamp: 1016.47, Stop timestamp: 1017.53
 Narration: continue gathering food bits
@@ -882,8 +882,8 @@ Narration: continue gathering food bits
 ------
 ************
 Frame IDs in sequence: [61151, 61205, 61353, 61427, 61721, 61822]
-Objects in sequence: ['bag', 'food bit']
-Verb-noun pairs in sequence: ['gather;bit:food;1016.47;1017.53', 'gather;bit:food;1018.75;1020.4']
+Objects in sequence: ['food bit', 'bag']
+Verb-noun pairs in sequence: ['continue gathering food bits;1016.47;1017.53', 'continue gathering food bits;1018.75;1020.4']
 ************
 Start timestamp: 1028.44, Stop timestamp: 1030.87
 Narration: put food bits in bag
@@ -900,7 +900,7 @@ Narration: gather food bits
 ************
 Frame IDs in sequence: [61882, 61922, 62244, 62372, 62464, 62532]
 Objects in sequence: ['bin/garbage can/recycling bin', 'bag', 'food bit']
-Verb-noun pairs in sequence: ['put-in;bit:food;1028.44;1030.87', 'put-in;bit:food;1031.03;1032.21', 'gather;bit:food;1031.7;1035.07']
+Verb-noun pairs in sequence: ['put food bits in bag;1028.44;1030.87', 'continue putting food bits in bag;1031.03;1032.21', 'gather food bits;1031.7;1035.07']
 ************
 Start timestamp: 1040.74, Stop timestamp: 1042.62
 Narration: put bag in bin
@@ -913,8 +913,8 @@ Narration: wash hands
 ------
 ************
 Frame IDs in sequence: [62615, 62767, 62903, 62964, 63127, 63229]
-Objects in sequence: ['sink', 'pan', 'tap', 'food', 'hob', 'wooden spoon', 'spoon', 'water']
-Verb-noun pairs in sequence: ['put-in;bag;1040.74;1042.62', 'stir;food;1042.72;1047.17']
+Objects in sequence: ['sink', 'wooden spoon', 'food', 'hob', 'water', 'spoon', 'pan', 'tap']
+Verb-noun pairs in sequence: ['put bag in bin;1040.74;1042.62', 'stir food;1042.72;1047.17']
 ************
 Start timestamp: 1050.76, Stop timestamp: 1054.85
 Narration: stir food
@@ -933,8 +933,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [63485, 63517, 63933, 64083, 64257, 64419]
-Objects in sequence: ['pan', 'sink', 'tap', 'food', 'hob', 'wooden spoon', 'water']
-Verb-noun pairs in sequence: ['stir;food;1050.76;1054.85', 'stir;food;1053.6;1057.02', 'add-to;water;1057.5;1058.91', 'stir;food;1058.67;1064.21']
+Objects in sequence: ['sink', 'wooden spoon', 'food', 'hob', 'water', 'pan', 'tap']
+Verb-noun pairs in sequence: ['stir food;1050.76;1054.85', 'continue stirring food;1053.6;1057.02', 'add water to pan;1057.5;1058.91', 'stir food;1058.67;1064.21']
 ************
 Start timestamp: 1069.96, Stop timestamp: 1074.61
 Narration: stir food
@@ -950,8 +950,8 @@ Narration: chop lime
 ------
 ************
 Frame IDs in sequence: [64926, 65004, 65282, 65514, 65692, 65791]
-Objects in sequence: ['bag', 'chopping board', 'knife', 'chilli package', 'lime']
-Verb-noun pairs in sequence: ['stir;food;1069.96;1074.61', 'take;chilli;1081.85;1083.83', 'chop;lime;1082.82;1085.11']
+Objects in sequence: ['chopping board', 'knife', 'lime', 'bag', 'chilli package']
+Verb-noun pairs in sequence: ['stir food;1069.96;1074.61', 'take chillies;1081.85;1083.83', 'chop lime;1082.82;1085.11']
 ************
 Start timestamp: 1094.29, Stop timestamp: 1097.3
 Narration: move lime pieces
@@ -964,8 +964,8 @@ Narration: remove some cling film
 ------
 ************
 Frame IDs in sequence: [66043, 66125, 66265, 66387, 66734, 66930]
-Objects in sequence: ['cling film', 'cling film package', 'cupboard', 'lime']
-Verb-noun pairs in sequence: ['move;piece:lime;1094.29;1097.3', 'take;film:cling;1099.75;1103.02']
+Objects in sequence: ['lime', 'cupboard', 'cling film', 'cling film package']
+Verb-noun pairs in sequence: ['move lime pieces;1094.29;1097.3', 'take cling film;1099.75;1103.02']
 ************
 Start timestamp: 1110.27, Stop timestamp: 1117.57
 Narration: wrap lime with cling film
@@ -981,8 +981,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [67552, 67608, 68114, 68312, 68518, 68681]
-Objects in sequence: ['bottle', 'pan', 'fridge', 'can', 'hob/cooktop/stovetop', 'coconut milk', 'food', 'wooden spoon']
-Verb-noun pairs in sequence: ['wrap-with;lime;1110.27;1117.57', 'put-in;lime;1117.18;1125.39', 'close;fridge;1125.49;1127.07']
+Objects in sequence: ['wooden spoon', 'can', 'bottle', 'food', 'hob/cooktop/stovetop', 'coconut milk', 'fridge', 'pan']
+Verb-noun pairs in sequence: ['wrap lime with cling film;1110.27;1117.57', 'put lime in fridge;1117.18;1125.39', 'close fridge;1125.49;1127.07']
 ************
 Start timestamp: 1140.6, Stop timestamp: 1146.64
 Narration: open coconut milk
@@ -998,8 +998,8 @@ Narration: put coconut milk in pan
 ------
 ************
 Frame IDs in sequence: [68845, 68891, 69099, 69345, 69872, 70188]
-Objects in sequence: ['drawer', 'pan', 'can', 'coconut milk', 'food', 'hob', 'wooden spoon', 'spoon']
-Verb-noun pairs in sequence: ['open;milk:coconut;1140.6;1146.64', 'open;draw;1147.12;1148.27', 'take;spoon;1147.87;1149.37']
+Objects in sequence: ['can', 'wooden spoon', 'coconut milk', 'food', 'hob', 'spoon', 'drawer', 'pan']
+Verb-noun pairs in sequence: ['open coconut milk;1140.6;1146.64', 'open draw;1147.12;1148.27', 'take spoon;1147.87;1149.37']
 ************
 Start timestamp: 1153.53, Stop timestamp: 1162.96
 Narration: continue putting coconut milk in pan
@@ -1018,8 +1018,8 @@ Narration: empty washing up bowl
 ------
 ************
 Frame IDs in sequence: [70546, 70603, 70649, 70693, 70768, 70843]
-Objects in sequence: ['sink', 'tap', 'washing up bowl', 'spoon', 'water']
-Verb-noun pairs in sequence: ['put-in;milk:coconut;1162.62;1171.29', 'put-in;milk:coconut;1163.62;1166.81', 'rinse;spoon;1175.37;1177.21']
+Objects in sequence: ['sink', 'washing up bowl', 'water', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['continue putting coconut milk in pan;1162.62;1171.29', 'continue putting coconut milk in pan;1163.62;1166.81', 'rinse spoon;1175.37;1177.21']
 ************
 Start timestamp: 1178.28, Stop timestamp: 1180.26
 Narration: rinse bowl
@@ -1035,8 +1035,8 @@ Narration: close box
 ------
 ************
 Frame IDs in sequence: [71455, 71491, 71728, 71768, 71962, 72156]
-Objects in sequence: ['stock cube package', 'box', 'lid']
-Verb-noun pairs in sequence: ['put-in;spoon;1180.65;1181.43', 'open;box;1190.84;1191.59']
+Objects in sequence: ['stock cube package', 'lid', 'box']
+Verb-noun pairs in sequence: ['put spoon in bowl;1180.65;1181.43', 'open box;1190.84;1191.59']
 ************
 Start timestamp: 1202.57, Stop timestamp: 1203.15
 Narration: take stock cubes from box
@@ -1049,8 +1049,8 @@ Narration: cut stock cube
 ------
 ************
 Frame IDs in sequence: [72290, 72456, 72645, 72719, 72795, 72855]
-Objects in sequence: ['stock cube package', 'box', 'chopping board', 'knife', 'stock cube']
-Verb-noun pairs in sequence: ['take-from;cube:stock;1202.57;1203.15', 'take;cube:stock;1203.95;1208.77']
+Objects in sequence: ['chopping board', 'knife', 'stock cube package', 'stock cube', 'box']
+Verb-noun pairs in sequence: ['take stock cubes from box;1202.57;1203.15', 'take stock cubes;1203.95;1208.77']
 ************
 Start timestamp: 1212.7, Stop timestamp: 1214.86
 Narration: put stock cube in box
@@ -1063,8 +1063,8 @@ Narration: close box
 ------
 ************
 Frame IDs in sequence: [72915, 72954, 73105, 73193, 73860, 73955]
-Objects in sequence: ['kettle', 'sink', 'stock cube package', 'tap', 'box', 'water', 'stock cube', 'lid']
-Verb-noun pairs in sequence: ['put-in;cube:stock;1212.7;1214.86', 'close;box;1215.03;1216.28']
+Objects in sequence: ['stock cube package', 'sink', 'lid', 'stock cube', 'box', 'water', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['put stock cube in box;1212.7;1214.86', 'close box;1215.03;1216.28']
 ************
 Start timestamp: 1229.89, Stop timestamp: 1234.13
 Narration: fill kettle
@@ -1077,8 +1077,8 @@ Narration: remove stock cube from packaging
 ------
 ************
 Frame IDs in sequence: [74222, 74254, 74426, 74536, 74603, 74685]
-Objects in sequence: ['kettle', 'packaging', 'stock cube']
-Verb-noun pairs in sequence: ['fill;kettle;1229.89;1234.13', 'turn-on;kettle;1236.93;1237.86']
+Objects in sequence: ['packaging', 'stock cube', 'kettle']
+Verb-noun pairs in sequence: ['fill kettle;1229.89;1234.13', 'turn kettle on;1236.93;1237.86']
 ************
 Start timestamp: 1242.92, Stop timestamp: 1245.24
 Narration: remove stock cube from packaging
@@ -1094,8 +1094,8 @@ Narration: put rubbish in bin
 ------
 ************
 Frame IDs in sequence: [74755, 74825, 75287, 75347, 75740, 75808]
-Objects in sequence: ['rubbish/trash', 'can', 'bin', 'chilli package', 'stock cube']
-Verb-noun pairs in sequence: ['remove-from;cube:stock;1242.92;1245.24', 'put-in;cube:stock;1245.25;1247.51', 'grab;rubbish;1247.49;1253.1']
+Objects in sequence: ['can', 'bin', 'stock cube', 'chilli package', 'rubbish/trash']
+Verb-noun pairs in sequence: ['remove stock cube from packaging;1242.92;1245.24', 'put stock cubes in tin;1245.25;1247.51', 'grab the rubbish;1247.49;1253.1']
 ************
 Start timestamp: 1261.27, Stop timestamp: 1264.78
 Narration: open chillies
@@ -1108,8 +1108,8 @@ Narration: taste
 ------
 ************
 Frame IDs in sequence: [76130, 76234, 76304, 76370, 77403, 77990]
-Objects in sequence: ['chilli', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['open;chilli;1261.27;1264.78', 'chop;chilli;1267.97;1271.51']
+Objects in sequence: ['chopping board', 'knife', 'chilli']
+Verb-noun pairs in sequence: ['open chillies;1261.27;1264.78', 'continue chopping chilli;1267.97;1271.51']
 ************
 Start timestamp: 1282.39, Stop timestamp: 1306.6
 Narration: continue chopping chilli
@@ -1131,8 +1131,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [78682, 78799, 79265, 79311, 79443, 79521]
-Objects in sequence: ['pan', 'chilli', 'food', 'chopping board', 'knife', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['chop;chilli;1282.39;1306.6', 'chop;chilli;1300.23;1303.04', 'chop;chilli;1305.45;1311.19', 'chop;chilli;1310.36;1314.39', 'chop;chilli;1312.3;1319.02']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'food', 'hob', 'pan', 'chilli']
+Verb-noun pairs in sequence: ['continue chopping chilli;1282.39;1306.6', 'continue chopping chilli;1300.23;1303.04', 'continue chopping chilli;1305.45;1311.19', 'continue chopping chilli;1310.36;1314.39', 'continue chopping chilli;1312.3;1319.02']
 ************
 Start timestamp: 1323.29, Stop timestamp: 1326.29
 Narration: put chillies in saucepan
@@ -1145,8 +1145,8 @@ Narration: stir
 ------
 ************
 Frame IDs in sequence: [79612, 79667, 79816, 80212, 80534, 80609]
-Objects in sequence: ['pan', 'food', 'chopping board', 'knife', 'hob', 'wooden spoon', 'lime']
-Verb-noun pairs in sequence: ['put-in;chilli;1323.29;1326.29', 'put;board:chopping;1326.75;1328.33']
+Objects in sequence: ['chopping board', 'knife', 'lime', 'wooden spoon', 'food', 'hob', 'pan']
+Verb-noun pairs in sequence: ['put chillies in saucepan;1323.29;1326.29', 'put chopping board;1326.75;1328.33']
 ************
 Start timestamp: 1341.9, Stop timestamp: 1343.99
 Narration: take limes
@@ -1159,8 +1159,8 @@ Narration: take tin lid
 ------
 ************
 Frame IDs in sequence: [80697, 80741, 80937, 80981, 81069, 81113]
-Objects in sequence: ['sink', 'pan', 'tap', 'can lid', 'food', 'hob', 'wooden spoon', 'lime', 'water']
-Verb-noun pairs in sequence: ['take;lime;1341.9;1343.99', 'put-in;lime;1344.09;1346.22']
+Objects in sequence: ['sink', 'lime', 'wooden spoon', 'food', 'hob', 'water', 'can lid', 'pan', 'tap']
+Verb-noun pairs in sequence: ['take limes;1341.9;1343.99', 'put limes in saucepan;1344.09;1346.22']
 ************
 Start timestamp: 1350.42, Stop timestamp: 1352.56
 Narration: rinse tin lid
@@ -1176,8 +1176,8 @@ Narration: rinse tin lid
 ------
 ************
 Frame IDs in sequence: [81293, 81521, 81594, 81831, 82068, 82224]
-Objects in sequence: ['kettle', 'sink', 'sponge', 'tap', 'can', 'can lid', 'water']
-Verb-noun pairs in sequence: ['rinse;lid:tin;1350.42;1352.56', 'put;liquid:washing:up;1354.42;1355.84', 'clean;lid:tin;1355.79;1358.46']
+Objects in sequence: ['sink', 'can', 'sponge', 'water', 'can lid', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['rinse tin lid;1350.42;1352.56', 'put washing up liquid on sponge;1354.42;1355.84', 'clean tin lid;1355.79;1358.46']
 ************
 Start timestamp: 1360.5, Stop timestamp: 1361.5
 Narration: put tin lid on drying rack
@@ -1193,8 +1193,8 @@ Narration: stir
 ------
 ************
 Frame IDs in sequence: [82480, 82580, 82677, 82885, 83155, 83191]
-Objects in sequence: ['sink', 'tap', 'washing up bowl', 'clip', 'can', 'can lid', 'spoon', 'water']
-Verb-noun pairs in sequence: ['pour-in;water;1366.83;1372.18', 'rinse;spoon;1374.43;1376.56']
+Objects in sequence: ['clip', 'sink', 'can', 'washing up bowl', 'water', 'spoon', 'can lid', 'tap']
+Verb-noun pairs in sequence: ['pour water in tin;1366.83;1372.18', 'rinse spoon;1374.43;1376.56']
 ************
 Start timestamp: 1385.34, Stop timestamp: 1387.2
 Narration: empty washing up bowl
@@ -1210,8 +1210,8 @@ Narration: rinse plate
 ------
 ************
 Frame IDs in sequence: [83337, 83395, 83588, 83756, 84807, 84897]
-Objects in sequence: ['sink', 'clip', 'tap', 'mug', 'plate', 'water']
-Verb-noun pairs in sequence: ['empty;bowl:washing:up;1385.34;1387.2', 'rinse;mug;1388.63;1390.47', 'put;mug;1390.35;1391.33']
+Objects in sequence: ['clip', 'sink', 'plate', 'water', 'mug', 'tap']
+Verb-noun pairs in sequence: ['empty washing up bowl;1385.34;1387.2', 'rinse mug;1388.63;1390.47', 'put mug;1390.35;1391.33']
 ************
 Start timestamp: 1412.43, Stop timestamp: 1415.66
 Narration: rinse mug
@@ -1224,8 +1224,8 @@ Narration: turn tap off
 ------
 ************
 Frame IDs in sequence: [85137, 85266, 85395, 85490, 85586, 85648]
-Objects in sequence: ['sink', 'tap', 'drying rack', 'mug', 'water']
-Verb-noun pairs in sequence: ['rinse;mug;1412.43;1415.66', 'rinse;mug;1416.37;1426.07']
+Objects in sequence: ['sink', 'water', 'drying rack', 'mug', 'tap']
+Verb-noun pairs in sequence: ['rinse mug;1412.43;1415.66', 'rinsing mug;1416.37;1426.07']
 ************
 Start timestamp: 1427.18, Stop timestamp: 1427.97
 Narration: put mug
@@ -1238,8 +1238,8 @@ Narration: rinse plate
 ------
 ************
 Frame IDs in sequence: [85771, 86080, 86367, 86579, 86745, 86825]
-Objects in sequence: ['sink', 'tap', 'washing up bowl', 'drying rack', 'plate', 'water']
-Verb-noun pairs in sequence: ['put;mug;1427.18;1427.97', 'wash;plate;1428.27;1437.06']
+Objects in sequence: ['sink', 'plate', 'washing up bowl', 'water', 'drying rack', 'tap']
+Verb-noun pairs in sequence: ['put mug;1427.18;1427.97', 'wash plate;1428.27;1437.06']
 ************
 Start timestamp: 1437.48, Stop timestamp: 1438.39
 Narration: turn tap on
@@ -1258,8 +1258,8 @@ Narration: turn tap off
 ------
 ************
 Frame IDs in sequence: [86999, 87113, 87203, 87293, 87473, 87551]
-Objects in sequence: ['sink', 'clip', 'washing up bowl', 'tap', 'bag clip', 'drying rack', 'washing bowl', 'water']
-Verb-noun pairs in sequence: ['put-in;plate;1445.09;1447.64', 'wash;clip:bag;1449.02;1452.72', 'rinse;clip:bag;1452.63;1457.58']
+Objects in sequence: ['clip', 'sink', 'washing up bowl', 'bag clip', 'water', 'drying rack', 'washing bowl', 'tap']
+Verb-noun pairs in sequence: ['put plate in drying rack;1445.09;1447.64', 'wash bag clip;1449.02;1452.72', 'rinse bag clip;1452.63;1457.58']
 ************
 Start timestamp: 1458.69, Stop timestamp: 1459.94
 Narration: put bag clip in drying rack
@@ -1275,8 +1275,8 @@ Narration: rinse v60
 ------
 ************
 Frame IDs in sequence: [87822, 87990, 88118, 88180, 88675, 88717]
-Objects in sequence: ['v60', 'sink', 'tap', 'washing up bowl', 'drying rack', 'water']
-Verb-noun pairs in sequence: ['put-in;clip:bag;1458.69;1459.94', 'wash;v60;1462.43;1467.54', 'wash;v60;1465.93;1468.75']
+Objects in sequence: ['sink', 'washing up bowl', 'v60', 'water', 'drying rack', 'tap']
+Verb-noun pairs in sequence: ['put bag clip in drying rack;1458.69;1459.94', 'wash v60;1462.43;1467.54', 'continue washing v60;1465.93;1468.75']
 ************
 Start timestamp: 1470.31, Stop timestamp: 1477.47
 Narration: continue rinsing v60
@@ -1292,8 +1292,8 @@ Narration: stir stock
 ------
 ************
 Frame IDs in sequence: [88831, 88897, 89011, 89091, 89383, 89409]
-Objects in sequence: ['stock', 'sink', 'tap', 'washing up bowl', 'can', 'spoon']
-Verb-noun pairs in sequence: ['put-on;v60;1477.12;1479.32', 'stir;stock;1479.53;1482.79']
+Objects in sequence: ['sink', 'can', 'washing up bowl', 'stock', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['put v60 on drying rack;1477.12;1479.32', 'stir stock;1479.53;1482.79']
 ************
 Start timestamp: 1489.58, Stop timestamp: 1490.41
 Narration: put spoon in washing up bowl
@@ -1306,8 +1306,8 @@ Narration: put tin
 ------
 ************
 Frame IDs in sequence: [89582, 89802, 90024, 90208, 90392, 90542]
-Objects in sequence: ['pan', 'stock', 'can', 'glove', 'hob/cooktop/stovetop', 'food', 'hob', 'left glove', 'wooden spoon', 'spoon']
-Verb-noun pairs in sequence: ['put-in;spoon;1489.58;1490.41', 'pour-into;stock;1491.0;1499.1']
+Objects in sequence: ['glove', 'can', 'wooden spoon', 'food', 'hob', 'hob/cooktop/stovetop', 'stock', 'spoon', 'pan', 'left glove']
+Verb-noun pairs in sequence: ['put spoon in washing up bowl;1489.58;1490.41', 'pour stock into saucepan;1491.0;1499.1']
 ************
 Start timestamp: 1506.18, Stop timestamp: 1509.43
 Narration: scrape stock from tin
@@ -1320,8 +1320,8 @@ Narration: rinse mug tin
 ------
 ************
 Frame IDs in sequence: [90663, 90883, 91135, 91203, 91369, 91481]
-Objects in sequence: ['sink', 'pan', 'tap', 'can', 'food', 'hob', 'wooden spoon', 'water']
-Verb-noun pairs in sequence: ['scrape;stock;1506.18;1509.43', 'scrape;stock;1509.53;1517.1']
+Objects in sequence: ['sink', 'can', 'wooden spoon', 'food', 'hob', 'water', 'pan', 'tap']
+Verb-noun pairs in sequence: ['scrape stock from tin;1506.18;1509.43', 'scrape stock from tin;1509.53;1517.1']
 ************
 Start timestamp: 1521.08, Stop timestamp: 1526.17
 Narration: wash tin
@@ -1337,8 +1337,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [91888, 91932, 92338, 92651, 92957, 93263]
-Objects in sequence: ['pan', 'box', 'can', 'hob/cooktop/stovetop', 'food', 'drying rack', 'wooden spoon']
-Verb-noun pairs in sequence: ['wash;tin;1521.08;1526.17', 'rinse;tin;1525.92;1530.01', 'put-in;tin;1531.09;1532.26']
+Objects in sequence: ['can', 'wooden spoon', 'food', 'hob/cooktop/stovetop', 'box', 'drying rack', 'pan']
+Verb-noun pairs in sequence: ['wash tin;1521.08;1526.17', 'rinse tin;1525.92;1530.01', 'put tin in drying rack;1531.09;1532.26']
 ************
 Start timestamp: 1554.12, Stop timestamp: 1554.8
 Narration: open box
@@ -1354,8 +1354,8 @@ Narration: close box
 ------
 ************
 Frame IDs in sequence: [93319, 93365, 93401, 93437, 93485, 93525]
-Objects in sequence: ['box', 'spice']
-Verb-noun pairs in sequence: ['open;box;1554.12;1554.8', 'take;spice;1554.96;1556.45', 'put;spice;1556.43;1557.28']
+Objects in sequence: ['spice', 'box']
+Verb-noun pairs in sequence: ['open box;1554.12;1554.8', 'take spices;1554.96;1556.45', 'put spices;1556.43;1557.28']
 ************
 Start timestamp: 1557.93, Stop timestamp: 1559.08
 Narration: open box
@@ -1368,8 +1368,8 @@ Narration: put turmeric
 ------
 ************
 Frame IDs in sequence: [93586, 93620, 93796, 93912, 94048, 94082]
-Objects in sequence: ['turmeric', 'pan', 'box', 'turmeric jar', 'turmeric  jar', 'lid']
-Verb-noun pairs in sequence: ['open;box;1557.93;1559.08', 'take;spice;1559.51;1560.98']
+Objects in sequence: ['turmeric', 'turmeric jar', 'lid', 'box', 'turmeric  jar', 'pan']
+Verb-noun pairs in sequence: ['open box;1557.93;1559.08', 'take spices;1559.51;1560.98']
 ************
 Start timestamp: 1566.06, Stop timestamp: 1567.52
 Narration: close turmeric
@@ -1388,8 +1388,8 @@ Narration: continue stirring food
 ------
 ************
 Frame IDs in sequence: [94228, 94530, 95167, 95686, 95948, 96158]
-Objects in sequence: ['pan', 'food', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['put;turmeric;1567.01;1568.21', 'stir;food;1568.79;1577.18', 'stir;food;1577.09;1582.46']
+Objects in sequence: ['wooden spoon', 'food', 'hob', 'pan']
+Verb-noun pairs in sequence: ['put turmeric;1567.01;1568.21', 'stir food;1568.79;1577.18', 'continue stirring food;1577.09;1582.46']
 ************
 Start timestamp: 1588.45, Stop timestamp: 1597.2
 Narration: continue stirring food
@@ -1405,8 +1405,8 @@ Narration: take fish sauce
 ------
 ************
 Frame IDs in sequence: [96548, 96609, 96728, 96969, 97243, 97497]
-Objects in sequence: ['pan', 'fish sauce bottle', 'food', 'cupboard', 'hob', 'fish sauce', 'wooden spoon']
-Verb-noun pairs in sequence: ['taste;food;1598.13;1603.95', 'open;cupboard;1608.58;1610.8']
+Objects in sequence: ['fish sauce', 'wooden spoon', 'cupboard', 'food', 'hob', 'fish sauce bottle', 'pan']
+Verb-noun pairs in sequence: ['taste food;1598.13;1603.95', 'open cupboard;1608.58;1610.8']
 ************
 Start timestamp: 1619.2, Stop timestamp: 1626.27
 Narration: put fish sauce in food
@@ -1425,8 +1425,8 @@ Narration: taste food
 ------
 ************
 Frame IDs in sequence: [97930, 98110, 98713, 99035, 99285, 99341]
-Objects in sequence: ['pan', 'fish sauce bottle', 'hob/cooktop/stovetop', 'food', 'fish sauce', 'wooden spoon']
-Verb-noun pairs in sequence: ['put-in;sauce:fish;1619.2;1626.27', 'stir;food;1625.79;1632.13', 'stir;food;1631.02;1636.14', 'taste;food;1635.76;1645.38']
+Objects in sequence: ['fish sauce', 'wooden spoon', 'food', 'hob/cooktop/stovetop', 'fish sauce bottle', 'pan']
+Verb-noun pairs in sequence: ['put fish sauce in food;1619.2;1626.27', 'stir food;1625.79;1632.13', 'continue stirring food;1631.02;1636.14', 'taste food;1635.76;1645.38']
 ************
 Start timestamp: 1651.43, Stop timestamp: 1654.04
 Narration: stir food
@@ -1445,8 +1445,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [99431, 99503, 99972, 100078, 101075, 101203]
-Objects in sequence: ['pan', 'box', 'fish sauce bottle', 'hob/cooktop/stovetop', 'food', 'wooden spoon', 'lid']
-Verb-noun pairs in sequence: ['put-in;sauce:fish;1654.12;1656.15', 'close;sauce:fish;1656.24;1658.98', 'put;sauce:fish;1658.82;1661.18']
+Objects in sequence: ['wooden spoon', 'food', 'hob/cooktop/stovetop', 'lid', 'fish sauce bottle', 'box', 'pan']
+Verb-noun pairs in sequence: ['put fish sauce in food;1654.12;1656.15', 'close fish sauce;1656.24;1658.98', 'put fish sauce;1658.82;1661.18']
 ************
 Start timestamp: 1683.73, Stop timestamp: 1687.41
 Narration: close box
@@ -1459,8 +1459,8 @@ Narration: slice chilli
 ------
 ************
 Frame IDs in sequence: [101371, 101397, 101533, 101640, 101864, 101944]
-Objects in sequence: ['chilli', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['close;box;1683.73;1687.41', 'slice;chilli;1689.06;1690.36']
+Objects in sequence: ['chopping board', 'knife', 'chilli']
+Verb-noun pairs in sequence: ['close box;1683.73;1687.41', 'slice chilli;1689.06;1690.36']
 ************
 Start timestamp: 1696.72, Stop timestamp: 1699.54
 Narration: chop chilli
@@ -1479,8 +1479,8 @@ Narration: put chilli in food
 ------
 ************
 Frame IDs in sequence: [102048, 102196, 102705, 102821, 103083, 103215]
-Objects in sequence: ['pan', 'drawer', 'chilli', 'fridge', 'food', 'chopping board', 'knife', 'hob', 'wooden spoon']
-Verb-noun pairs in sequence: ['chop;chilli;1696.72;1699.54', 'chop;chilli;1698.52;1701.06', 'chop;chilli;1699.64;1704.14', 'chop;chilli;1704.13;1708.55']
+Objects in sequence: ['chopping board', 'knife', 'wooden spoon', 'food', 'hob', 'fridge', 'drawer', 'pan', 'chilli']
+Verb-noun pairs in sequence: ['chop chilli;1696.72;1699.54', 'continue chopping chilli;1698.52;1701.06', 'continue chopping chilli;1699.64;1704.14', 'continue chopping chilli;1704.13;1708.55']
 ************
 Start timestamp: 1716.67, Stop timestamp: 1721.57
 Narration: put chilli
@@ -1499,8 +1499,8 @@ Narration: take rubbish
 ------
 ************
 Frame IDs in sequence: [103357, 103395, 103620, 103708, 103832, 103894]
-Objects in sequence: ['bin/garbage can/recycling bin', 'drawer', 'rubbish/trash', 'fridge']
-Verb-noun pairs in sequence: ['put;chilli;1716.67;1721.57', 'close;drawer;1721.3;1722.35', 'close;fridge;1722.45;1723.52', 'put-in;rubbish;1723.25;1724.89']
+Objects in sequence: ['bin/garbage can/recycling bin', 'fridge', 'drawer', 'rubbish/trash']
+Verb-noun pairs in sequence: ['put chilli;1716.67;1721.57', 'close drawer;1721.3;1722.35', 'close fridge;1722.45;1723.52', 'put rubbish in bin;1723.25;1724.89']
 ************
 Start timestamp: 1730.32, Stop timestamp: 1732.08
 Narration: put rubbish in bin
@@ -1516,8 +1516,8 @@ Narration: close tap
 ------
 ************
 Frame IDs in sequence: [104108, 104160, 104350, 104390, 104490, 104627]
-Objects in sequence: ['sink', 'tap', 'water']
-Verb-noun pairs in sequence: ['put-in;rubbish;1730.32;1732.08', 'turn-on;tap;1734.53;1736.28', 'wash;hand;1735.4;1738.45']
+Objects in sequence: ['sink', 'water', 'tap']
+Verb-noun pairs in sequence: ['put rubbish in bin;1730.32;1732.08', 'open tap;1734.53;1736.28', 'wash hands;1735.4;1738.45']
 ************
 Start timestamp: 1740.8, Stop timestamp: 1744.62
 Narration: dry hands
@@ -1533,8 +1533,8 @@ Narration: take saucepan
 ------
 ************
 Frame IDs in sequence: [106799, 106922, 107089, 107187, 107285, 107455]
-Objects in sequence: ['gas temperature', 'saucepan lid', 'pan', 'saucepan', 'hob/cooktop/stovetop', 'cupboard', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['dry;hand;1740.8;1744.62', 'adjust;gas;1778.99;1782.87', 'open;cupboard;1782.79;1783.9']
+Objects in sequence: ['wooden spoon', 'cupboard', 'hob/cooktop/stovetop', 'saucepan', 'hob', 'saucepan lid', 'pot', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['dry hands;1740.8;1744.62', 'adjust gas;1778.99;1782.87', 'open cupboard;1782.79;1783.9']
 ************
 Start timestamp: 1784.32, Stop timestamp: 1788.68
 Narration: take saucepan lid
@@ -1553,8 +1553,8 @@ Narration: move vinegar
 ------
 ************
 Frame IDs in sequence: [107654, 107750, 107833, 107922, 108011, 108076]
-Objects in sequence: ['rice container', 'cupboard', 'pot lid', 'pot', 'rice']
-Verb-noun pairs in sequence: ['close;cupboard;1790.55;1791.48', 'open;cupboard;1793.78;1795.02']
+Objects in sequence: ['rice container', 'pot lid', 'cupboard', 'pot', 'rice']
+Verb-noun pairs in sequence: ['close cupboard;1790.55;1791.48', 'open cupboard;1793.78;1795.02']
 ************
 Start timestamp: 1797.27, Stop timestamp: 1799.52
 Narration: take rice
@@ -1571,7 +1571,7 @@ Narration: fill mug with rice
 ************
 Frame IDs in sequence: [108200, 108285, 108440, 108591, 108763, 108891]
 Objects in sequence: ['rice container', 'pot lid', 'pot', 'rice', 'mug']
-Verb-noun pairs in sequence: ['open;container:rice;1799.41;1801.95', 'take;mug;1802.66;1805.17']
+Verb-noun pairs in sequence: ['open rice container;1799.41;1801.95', 'take mug;1802.66;1805.17']
 ************
 Start timestamp: 1811.82, Stop timestamp: 1815.71
 Narration: close rice container
@@ -1584,8 +1584,8 @@ Narration: close cupboard
 ------
 ************
 Frame IDs in sequence: [108989, 109036, 109090, 109131, 109215, 109301]
-Objects in sequence: ['rice container', 'rice mug', 'cupboard', 'pot lid', 'pot']
-Verb-noun pairs in sequence: ['close;container:rice;1811.82;1815.71', 'put;container:rice;1816.24;1817.75']
+Objects in sequence: ['rice container', 'pot lid', 'cupboard', 'rice mug', 'pot']
+Verb-noun pairs in sequence: ['close rice container;1811.82;1815.71', 'put rice container;1816.24;1817.75']
 ************
 Start timestamp: 1819.28, Stop timestamp: 1822.68
 Narration: empty mug of rice into pan
@@ -1598,8 +1598,8 @@ Narration: turn kettle on
 ------
 ************
 Frame IDs in sequence: [109529, 109782, 110152, 110236, 110326, 110424]
-Objects in sequence: ['kettle', 'sink', 'tap', 'box', 'pot', 'water']
-Verb-noun pairs in sequence: ['empty;mug:rice;1819.28;1822.68', 'fill-with;pan;1822.78;1831.47']
+Objects in sequence: ['sink', 'pot', 'box', 'water', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['empty mug of rice into pan;1819.28;1822.68', 'fill pan with water;1822.78;1831.47']
 ************
 Start timestamp: 1837.83, Stop timestamp: 1841.3
 Narration: close box
@@ -1613,7 +1613,7 @@ Narration: put boxes
 ************
 Frame IDs in sequence: [110512, 110542, 110687, 110843, 110903, 110959]
 Objects in sequence: ['box', 'cupboard']
-Verb-noun pairs in sequence: ['close;box;1837.83;1841.3', 'stack;box;1841.48;1842.56']
+Verb-noun pairs in sequence: ['close box;1837.83;1841.3', 'stack boxes;1841.48;1842.56']
 ************
 Start timestamp: 1844.01, Stop timestamp: 1847.1
 Narration: take box
@@ -1632,8 +1632,8 @@ Narration: take box
 ------
 ************
 Frame IDs in sequence: [111003, 111098, 111501, 111533, 111634, 111713]
-Objects in sequence: ['box', 'can', 'cupboard']
-Verb-noun pairs in sequence: ['open;cupboard;1848.28;1849.53', 'put;tin;1849.56;1851.96']
+Objects in sequence: ['can', 'cupboard', 'box']
+Verb-noun pairs in sequence: ['open cupboard;1848.28;1849.53', 'put tin;1849.56;1851.96']
 ************
 Start timestamp: 1859.54, Stop timestamp: 1863.16
 Narration: put box
@@ -1647,7 +1647,7 @@ Narration: put crackers
 ************
 Frame IDs in sequence: [111953, 112035, 112404, 112507, 112645, 112675]
 Objects in sequence: ['cupboard', 'cracker package']
-Verb-noun pairs in sequence: ['put;box;1859.54;1863.16', 'take;cracker;1864.83;1868.5']
+Verb-noun pairs in sequence: ['put box;1859.54;1863.16', 'take crackers;1864.83;1868.5']
 ************
 Start timestamp: 1877.22, Stop timestamp: 1878.23
 Narration: close cupboard
@@ -1661,7 +1661,7 @@ Narration: take water
 ************
 Frame IDs in sequence: [112757, 112896, 113035, 113127, 113219, 113245]
 Objects in sequence: ['cupboard', 'water bottle']
-Verb-noun pairs in sequence: ['close;cupboard;1877.22;1878.23', 'close;cupboard;1878.98;1879.87']
+Verb-noun pairs in sequence: ['close cupboard;1877.22;1878.23', 'close cupboard;1878.98;1879.87']
 ************
 Start timestamp: 1884.49, Stop timestamp: 1887.02
 Narration: drink water
@@ -1680,8 +1680,8 @@ Narration: rinse rice
 ------
 ************
 Frame IDs in sequence: [113515, 113687, 114170, 114380, 114837, 114907]
-Objects in sequence: ['sink', 'tap', 'pot', 'rice', 'mug', 'water']
-Verb-noun pairs in sequence: ['put;water;1886.72;1887.67', 'rinse;rice;1890.66;1897.23', 'drain;rice;1896.32;1900.53']
+Objects in sequence: ['sink', 'pot', 'water', 'rice', 'mug', 'tap']
+Verb-noun pairs in sequence: ['put water;1886.72;1887.67', 'rinse rice;1890.66;1897.23', 'drain rice;1896.32;1900.53']
 ************
 Start timestamp: 1905.86, Stop timestamp: 1912.57
 Narration: drain rice
@@ -1697,8 +1697,8 @@ Narration: put water into pan
 ------
 ************
 Frame IDs in sequence: [115041, 115189, 115287, 115361, 115437, 115557]
-Objects in sequence: ['kettle', 'pot', 'rice', 'mug', 'water']
-Verb-noun pairs in sequence: ['put;saucepan;1913.47;1915.87', 'fill-with;mug;1916.63;1920.73']
+Objects in sequence: ['pot', 'water', 'rice', 'mug', 'kettle']
+Verb-noun pairs in sequence: ['put saucepan and mug;1913.47;1915.87', 'fill mug with water;1916.63;1920.73']
 ************
 Start timestamp: 1923.25, Stop timestamp: 1926.63
 Narration: fill mug with water
@@ -1711,8 +1711,8 @@ Narration: fill mug from tap
 ------
 ************
 Frame IDs in sequence: [115617, 115672, 115818, 115868, 115948, 116008]
-Objects in sequence: ['kettle', 'sink', 'tap', 'pot', 'mug', 'water']
-Verb-noun pairs in sequence: ['fill-with;mug;1923.25;1926.63', 'put-into;water;1926.68;1928.04']
+Objects in sequence: ['sink', 'pot', 'water', 'mug', 'kettle', 'tap']
+Verb-noun pairs in sequence: ['fill mug with water;1923.25;1926.63', 'put water into pan;1926.68;1928.04']
 ************
 Start timestamp: 1932.16, Stop timestamp: 1933.75
 Narration: pour water into pan
@@ -1725,8 +1725,8 @@ Narration: stir rice
 ------
 ************
 Frame IDs in sequence: [116232, 116272, 116372, 116478, 116609, 116709]
-Objects in sequence: ['gas temperature', 'pan', 'rice', 'hob/cooktop/stovetop', 'food', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['pour-into;water;1932.16;1933.75', 'take;spoon;1936.71;1938.52']
+Objects in sequence: ['wooden spoon', 'food', 'hob', 'hob/cooktop/stovetop', 'pot', 'rice', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['pour water into pan;1932.16;1933.75', 'take spoon;1936.71;1938.52']
 ************
 Start timestamp: 1942.33, Stop timestamp: 1946.14
 Narration: turn gas on
@@ -1739,8 +1739,8 @@ Narration: put lid
 ------
 ************
 Frame IDs in sequence: [116825, 116985, 117169, 117275, 117351]
-Objects in sequence: ['gas temperature', 'pan', 'hob/cooktop/stovetop', 'rice', 'food', 'pot', 'wooden spoon', 'lid']
-Verb-noun pairs in sequence: ['turn-on;gas;1942.33;1946.14', 'put;spoon;1946.24;1950.72']
+Objects in sequence: ['wooden spoon', 'hob/cooktop/stovetop', 'food', 'lid', 'pot', 'rice', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['turn gas on;1942.33;1946.14', 'put spoon;1946.24;1950.72']
 ************
 Start timestamp: 1953.77, Stop timestamp: 1956.62
 Narration: adjust gas temperature
@@ -1753,8 +1753,8 @@ Narration: clean work surface
 ------
 ************
 Frame IDs in sequence: [117505, 117573, 117692, 117810, 117976, 118002]
-Objects in sequence: ['sink', 'pan', 'sponge', 'tap', 'hob/cooktop/stovetop', 'food', 'work surface', 'pot lid', 'fish sauce', 'pot', 'wooden spoon', 'water']
-Verb-noun pairs in sequence: ['adjust;temperature:gas;1953.77;1956.62', 'rinse;sponge;1957.56;1960.24']
+Objects in sequence: ['work surface', 'sink', 'sponge', 'fish sauce', 'wooden spoon', 'pot lid', 'hob/cooktop/stovetop', 'food', 'pot', 'water', 'pan', 'tap']
+Verb-noun pairs in sequence: ['adjust gas temperature;1953.77;1956.62', 'rinse sponge;1957.56;1960.24']
 ************
 Start timestamp: 1965.82, Stop timestamp: 1967.1
 Narration: take fish sauce
@@ -1768,7 +1768,7 @@ Narration: put fish sauce
 ************
 Frame IDs in sequence: [118110, 118170, 118224, 118272, 118354, 118436]
 Objects in sequence: ['cupboard', 'fish sauce']
-Verb-noun pairs in sequence: ['take;sauce:fish;1965.82;1967.1', 'open;cupboard;1967.81;1970.21']
+Verb-noun pairs in sequence: ['take fish sauce;1965.82;1967.1', 'open cupboard;1967.81;1970.21']
 ************
 Start timestamp: 1973.42, Stop timestamp: 1974.95
 Narration: open cupboard
@@ -1784,8 +1784,8 @@ Narration: wash knife
 ------
 ************
 Frame IDs in sequence: [118873, 119017, 119161, 119311, 119401, 119479]
-Objects in sequence: ['sink', 'sponge', 'tap', 'cupboard', 'knife', 'water']
-Verb-noun pairs in sequence: ['open;cupboard;1973.42;1974.95', 'put;coconut;1974.93;1980.23', 'close;cupboard;1980.98;1981.96']
+Objects in sequence: ['knife', 'sink', 'sponge', 'cupboard', 'water', 'tap']
+Verb-noun pairs in sequence: ['open cupboard;1973.42;1974.95', 'put coconut;1974.93;1980.23', 'close cupboard;1980.98;1981.96']
 ************
 Start timestamp: 1989.55, Stop timestamp: 1991.88
 Narration: rinse knife
@@ -1798,8 +1798,8 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [119640, 119672, 119777, 119814, 119982, 120026]
-Objects in sequence: ['sink', 'tap', 'chopping board', 'knife', 'drying rack']
-Verb-noun pairs in sequence: ['rinse;knife;1989.55;1991.88', 'put-in;knife;1993.6;1994.85']
+Objects in sequence: ['chopping board', 'knife', 'sink', 'drying rack', 'tap']
+Verb-noun pairs in sequence: ['rinse knife;1989.55;1991.88', 'put knife in drying rack;1993.6;1994.85']
 ************
 Start timestamp: 1996.44, Stop timestamp: 1998.77
 Narration: put chipping board
@@ -1821,8 +1821,8 @@ Narration: continue washing chopping board
 ------
 ************
 Frame IDs in sequence: [120324, 120486, 120663, 120699, 120930, 121037]
-Objects in sequence: ['sink', 'tap', 'cupboard', 'chopping board', 'knife', 'water']
-Verb-noun pairs in sequence: ['rinse;board:chopping;1998.9;2001.41', 'wash;board:chopping;2000.03;2006.14', 'turn-off;tap;2000.08;2001.87', 'wash;board:chopping;2004.44;2009.28']
+Objects in sequence: ['chopping board', 'knife', 'sink', 'cupboard', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse chopping board;1998.9;2001.41', 'wash chopping board;2000.03;2006.14', 'turn off tap;2000.08;2001.87', 'continue washing chopping board;2004.44;2009.28']
 ************
 Start timestamp: 2012.0, Stop timestamp: 2014.37
 Narration: turn tap on
@@ -1841,8 +1841,8 @@ Narration: rinse chopping board
 ------
 ************
 Frame IDs in sequence: [121293, 121375, 121529, 121750, 122234, 122298]
-Objects in sequence: ['sink', 'tap', 'cupboard', 'chopping board', 'washing board', 'drying rack', 'pizza pan', 'water']
-Verb-noun pairs in sequence: ['move;board:chopping;2014.76;2018.15', 'put;pan:pizza;2020.74;2023.51', 'close;cupboard;2022.21;2024.04']
+Objects in sequence: ['chopping board', 'sink', 'cupboard', 'pizza pan', 'water', 'drying rack', 'washing board', 'tap']
+Verb-noun pairs in sequence: ['move chopping board;2014.76;2018.15', 'put pizza pan;2020.74;2023.51', 'close cupboard;2022.21;2024.04']
 ************
 Start timestamp: 2028.86, Stop timestamp: 2035.02
 Narration: continue rinsing chopping board
@@ -1861,8 +1861,8 @@ Narration: wash jug
 ------
 ************
 Frame IDs in sequence: [122464, 122536, 122841, 123089, 123722, 123786]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up bowl', 'knife', 'jug', 'mug', 'water']
-Verb-noun pairs in sequence: ['put-in;board:washing;2035.87;2039.58', 'turn-off;tap;2039.06;2040.74', 'put-in;mug;2040.63;2042.64']
+Objects in sequence: ['knife', 'sink', 'sponge', 'washing up bowl', 'jug', 'water', 'mug', 'tap']
+Verb-noun pairs in sequence: ['put washing board in drying rack;2035.87;2039.58', 'turn off tap;2039.06;2040.74', 'put mug and knife in washing up bowl;2040.63;2042.64']
 ************
 Start timestamp: 2061.49, Stop timestamp: 2063.8
 Narration: wash mug
@@ -1878,8 +1878,8 @@ Narration: rinse mug
 ------
 ************
 Frame IDs in sequence: [123996, 124096, 124296, 124436, 124687, 124745]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing rack', 'washing bowl', 'spoon', 'mug', 'water']
-Verb-noun pairs in sequence: ['wash;mug;2061.49;2063.8', 'wash;mug;2066.2;2069.38', 'rinse;mug;2069.25;2073.25']
+Objects in sequence: ['washing rack', 'sink', 'sponge', 'water', 'washing bowl', 'mug', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['wash mug;2061.49;2063.8', 'wash mug;2066.2;2069.38', 'continue rinsing mug;2069.25;2073.25']
 ************
 Start timestamp: 2074.8, Stop timestamp: 2076.31
 Narration: continue rinsing mug
@@ -1898,8 +1898,8 @@ Narration: put spoon in drying rack
 ------
 ************
 Frame IDs in sequence: [124831, 124867, 124907, 124938, 125051, 125181]
-Objects in sequence: ['sink', 'sponge', 'tap', 'drying rack', 'jug', 'spoon', 'water']
-Verb-noun pairs in sequence: ['wash;spoon;2077.5;2079.58', 'rinse;spoon;2079.98;2081.26']
+Objects in sequence: ['sink', 'sponge', 'jug', 'water', 'drying rack', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['wash spoon;2077.5;2079.58', 'rinse spoon;2079.98;2081.26']
 ************
 Start timestamp: 2083.34, Stop timestamp: 2087.84
 Narration: wash jug
@@ -1912,8 +1912,8 @@ Narration: continue stirring food
 ------
 ************
 Frame IDs in sequence: [125377, 125495, 125648, 125868, 126474, 126508]
-Objects in sequence: ['pan', 'tap', 'hob/cooktop/stovetop', 'food', 'pot lid', 'jug', 'drying rack', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['wash;jug;2083.34;2087.84', 'stir;food;2088.76;2092.96']
+Objects in sequence: ['wooden spoon', 'pot lid', 'food', 'hob/cooktop/stovetop', 'jug', 'pot', 'drying rack', 'pan', 'tap']
+Verb-noun pairs in sequence: ['wash jug;2083.34;2087.84', 'stir food;2088.76;2092.96']
 ************
 Start timestamp: 2098.69, Stop timestamp: 2104.94
 Narration: rinse jug
@@ -1929,8 +1929,8 @@ Narration: remove lime from food
 ------
 ************
 Frame IDs in sequence: [126789, 127003, 127317, 127505, 127629, 127804]
-Objects in sequence: ['pan', 'sponge', 'hob/cooktop/stovetop', 'food', 'pot lid', 'pot', 'wooden spoon', 'lime']
-Verb-noun pairs in sequence: ['put-in;jug;2107.5;2109.0', 'taste;food;2110.85;2119.1']
+Objects in sequence: ['sponge', 'lime', 'wooden spoon', 'pot lid', 'food', 'hob/cooktop/stovetop', 'pot', 'pan']
+Verb-noun pairs in sequence: ['put jug in drying rack;2107.5;2109.0', 'taste food;2110.85;2119.1']
 ************
 Start timestamp: 2126.29, Stop timestamp: 2130.79
 Narration: remove lime from food
@@ -1943,8 +1943,8 @@ Narration: remove lime from food
 ------
 ************
 Frame IDs in sequence: [127992, 128266, 128466, 128617, 128725, 128861]
-Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'food', 'pot lid', 'pot', 'wooden spoon', 'lime']
-Verb-noun pairs in sequence: ['remove-from;lime;2126.29;2130.79', 'remove-from;lime;2131.39;2140.14']
+Objects in sequence: ['lime', 'wooden spoon', 'pot lid', 'food', 'hob/cooktop/stovetop', 'pot', 'pan']
+Verb-noun pairs in sequence: ['remove lime from food;2126.29;2130.79', 'remove lime from food;2131.39;2140.14']
 ************
 Start timestamp: 2144.59, Stop timestamp: 2148.59
 Narration: remove lime from food
@@ -1960,8 +1960,8 @@ Narration: put lime
 ------
 ************
 Frame IDs in sequence: [129842, 129870, 130058, 130090, 130164, 130219]
-Objects in sequence: ['fridge', 'water bottle', 'lime']
-Verb-noun pairs in sequence: ['remove-from;lime;2144.59;2148.59', 'open;fridge;2163.92;2164.82', 'take;lime;2164.79;2166.54']
+Objects in sequence: ['water bottle', 'lime', 'fridge']
+Verb-noun pairs in sequence: ['remove lime from food;2144.59;2148.59', 'open fridge;2163.92;2164.82', 'take lime;2164.79;2166.54']
 ************
 Start timestamp: 2168.04, Stop timestamp: 2169.79
 Narration: open fridge
@@ -1984,7 +1984,7 @@ Narration: put bottle
 ************
 Frame IDs in sequence: [130317, 130371, 130764, 130834, 131008, 131054]
 Objects in sequence: ['water bottle']
-Verb-noun pairs in sequence: ['take;water;2169.14;2170.64', 'close;fridge;2170.24;2171.37', 'open;bottle:water;2171.36;2173.32', 'drink;water;2173.17;2179.1']
+Verb-noun pairs in sequence: ['take water;2169.14;2170.64', 'close fridge;2170.24;2171.37', 'open water bottle;2171.36;2173.32', 'drink water;2173.17;2179.1']
 ************
 Start timestamp: 2180.24, Stop timestamp: 2183.15
 Narration: move bottle
@@ -2000,8 +2000,8 @@ Narration: rinse sponge
 ------
 ************
 Frame IDs in sequence: [131200, 131362, 131598, 131662, 131793, 131849]
-Objects in sequence: ['bottle', 'sink', 'sponge', 'tap', 'washing up bowl', 'scissors', 'water bottle', 'water']
-Verb-noun pairs in sequence: ['take;bottle;2183.25;2184.44', 'empty;bottle;2184.54;2190.71']
+Objects in sequence: ['water bottle', 'sink', 'sponge', 'washing up bowl', 'bottle', 'scissors', 'water', 'tap']
+Verb-noun pairs in sequence: ['take bottle;2183.25;2184.44', 'empty bottle;2184.54;2190.71']
 ************
 Start timestamp: 2196.36, Stop timestamp: 2197.63
 Narration: take scissors
@@ -2014,8 +2014,8 @@ Narration: wipe scissors
 ------
 ************
 Frame IDs in sequence: [131933, 131979, 132047, 132099, 132197, 132351]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up bowl', 'scissors', 'water']
-Verb-noun pairs in sequence: ['take;scissors;2196.36;2197.63', 'clean;scissors;2198.28;2200.15']
+Objects in sequence: ['sink', 'sponge', 'washing up bowl', 'scissors', 'water', 'tap']
+Verb-noun pairs in sequence: ['take scissors;2196.36;2197.63', 'clean scissors;2198.28;2200.15']
 ************
 Start timestamp: 2202.42, Stop timestamp: 2206.68
 Narration: rinse scissors
@@ -2031,8 +2031,8 @@ Narration: put scissors in drying rack
 ------
 ************
 Frame IDs in sequence: [132489, 132519, 132655, 132770, 132956, 133062]
-Objects in sequence: ['sink', 'bag', 'sponge', 'tap', 'washing up bowl', 'scissors', 'surface', 'drying rack', 'water']
-Verb-noun pairs in sequence: ['rinse;scissors;2202.42;2206.68', 'rinse;scissors;2206.52;2207.81', 'turn-off;tap;2207.91;2208.74']
+Objects in sequence: ['sink', 'sponge', 'washing up bowl', 'bag', 'scissors', 'water', 'drying rack', 'surface', 'tap']
+Verb-noun pairs in sequence: ['rinse scissors;2202.42;2206.68', 'continue rinsing scissors;2206.52;2207.81', 'turn off tap;2207.91;2208.74']
 ************
 Start timestamp: 2214.43, Stop timestamp: 2219.27
 Narration: wipe surface
@@ -2055,7 +2055,7 @@ Narration: continue wiping surface
 ************
 Frame IDs in sequence: [133228, 133374, 133783, 133999, 134211, 134395]
 Objects in sequence: ['surface', 'sponge']
-Verb-noun pairs in sequence: ['wipe;surface;2214.43;2219.27', 'wipe;surface;2218.11;2220.78', 'wipe;surface;2218.31;2222.98', 'wipe;surface;2220.12;2223.57', 'wipe;surface;2222.24;2227.73']
+Verb-noun pairs in sequence: ['wipe surface;2214.43;2219.27', 'continue wiping surface;2218.11;2220.78', 'continue wiping surface;2218.31;2222.98', 'continue wiping surface;2220.12;2223.57', 'continue wiping surface;2222.24;2227.73']
 ************
 Start timestamp: 2235.91, Stop timestamp: 2240.99
 Narration: continue wiping surface
@@ -2068,8 +2068,8 @@ Narration: continue wiping surface
 ------
 ************
 Frame IDs in sequence: [134493, 134550, 134629, 134710, 134934, 135056]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up bowl', 'water bottle', 'surface', 'water']
-Verb-noun pairs in sequence: ['wipe;surface;2235.91;2240.99', 'wipe;surface;2241.09;2242.82']
+Objects in sequence: ['water bottle', 'sink', 'sponge', 'washing up bowl', 'water', 'surface', 'tap']
+Verb-noun pairs in sequence: ['continue wiping surface;2235.91;2240.99', 'continue wiping surface;2241.09;2242.82']
 ************
 Start timestamp: 2242.98, Stop timestamp: 2246.47
 Narration: continue wiping surface
@@ -2088,8 +2088,8 @@ Narration: put knife and spoon in drying rack
 ------
 ************
 Frame IDs in sequence: [135430, 135685, 136013, 136107, 136203, 136277]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up bowl', 'knife', 'drying rack', 'spoon', 'water']
-Verb-noun pairs in sequence: ['rinse;sponge;2248.17;2251.66', 'rinse;sponge;2250.85;2252.7', 'rinse;knife;2253.78;2265.36']
+Objects in sequence: ['knife', 'sink', 'sponge', 'washing up bowl', 'water', 'drying rack', 'spoon', 'tap']
+Verb-noun pairs in sequence: ['rinse sponge;2248.17;2251.66', 'rinse sponge;2250.85;2252.7', 'rinse knife and spoon;2253.78;2265.36']
 ************
 Start timestamp: 2269.11, Stop timestamp: 2272.33
 Narration: rinse sponge
@@ -2102,8 +2102,8 @@ Narration: put lime pieces in bin
 ------
 ************
 Frame IDs in sequence: [136420, 136501, 136654, 136701, 136856, 136940]
-Objects in sequence: ['sink', 'sponge', 'lime piece', 'washing up bowl', 'tap', 'bin', 'surface', 'drying rack', 'water']
-Verb-noun pairs in sequence: ['rinse;sponge;2269.11;2272.33', 'take;piece:lime;2272.74;2276.04']
+Objects in sequence: ['sink', 'sponge', 'washing up bowl', 'bin', 'water', 'drying rack', 'lime piece', 'surface', 'tap']
+Verb-noun pairs in sequence: ['rinse sponge;2269.11;2272.33', 'take lime pieces;2272.74;2276.04']
 ************
 Start timestamp: 2279.74, Stop timestamp: 2283.69
 Narration: wipe surface
@@ -2119,8 +2119,8 @@ Narration: clean sponge
 ------
 ************
 Frame IDs in sequence: [137324, 137398, 137540, 137757, 137905, 137963]
-Objects in sequence: ['bowl', 'sink', 'sponge', 'tap', 'washing up bowl', 'surface', 'water']
-Verb-noun pairs in sequence: ['wipe;surface;2279.74;2283.69', 'clean;sponge;2283.68;2288.42', 'wipe;surface;2288.41;2290.58']
+Objects in sequence: ['sink', 'sponge', 'washing up bowl', 'bowl', 'water', 'surface', 'tap']
+Verb-noun pairs in sequence: ['wipe surface;2279.74;2283.69', 'clean sponge;2283.68;2288.42', 'wipe surface;2288.41;2290.58']
 ************
 Start timestamp: 2297.9, Stop timestamp: 2299.98
 Narration: empty washing out bowl
@@ -2133,8 +2133,8 @@ Narration: adjust gas temperature
 ------
 ************
 Frame IDs in sequence: [138291, 138319, 138463, 138694, 139482, 139695]
-Objects in sequence: ['gas temperature', 'pan', 'hob/cooktop/stovetop', 'rice', 'food', 'pot lid', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['empty;bowl;2297.9;2299.98', 'lift;lid:pan;2304.42;2305.99']
+Objects in sequence: ['pot lid', 'wooden spoon', 'hob/cooktop/stovetop', 'food', 'pot', 'rice', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['empty washing out bowl;2297.9;2299.98', 'lift pan lid;2304.42;2305.99']
 ************
 Start timestamp: 2311.73, Stop timestamp: 2314.58
 Narration: put pan lid
@@ -2156,8 +2156,8 @@ Narration: take bag of fish
 ------
 ************
 Frame IDs in sequence: [140047, 140223, 140519, 140575, 140735, 140920]
-Objects in sequence: ['fish bag', 'pan', 'scissors', 'food', 'pot lid', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['adjust;temperature:gas;2321.92;2331.34', 'stir;food;2332.92;2337.89', 'stir;food;2333.87;2341.16', 'stir;food;2334.81;2340.34']
+Objects in sequence: ['wooden spoon', 'pot lid', 'food', 'hob', 'fish bag', 'pot', 'scissors', 'pan']
+Verb-noun pairs in sequence: ['adjust gas temperature;2321.92;2331.34', 'stir food;2332.92;2337.89', 'stir food;2333.87;2341.16', 'continue stirring food;2334.81;2340.34']
 ************
 Start timestamp: 2344.32, Stop timestamp: 2349.59
 Narration: open bag of fish
@@ -2176,8 +2176,8 @@ Narration: open bin
 ------
 ************
 Frame IDs in sequence: [141163, 141386, 142195, 142263, 142515, 142744]
-Objects in sequence: ['bin/garbage can/recycling bin', 'fish bag', 'pan', 'bag', 'hob/cooktop/stovetop', 'fish', 'food', 'pot lid', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['open;bag:fish;2344.32;2349.59', 'remove-from;fish;2350.21;2358.7', 'put-in;fish;2358.0;2368.47', 'put-in;fish;2358.38;2368.77']
+Objects in sequence: ['wooden spoon', 'pot lid', 'bin/garbage can/recycling bin', 'food', 'hob/cooktop/stovetop', 'fish bag', 'hob', 'fish', 'pot', 'bag', 'pan']
+Verb-noun pairs in sequence: ['open bag of fish;2344.32;2349.59', 'remove fish from bag;2350.21;2358.7', 'put fish in pan;2358.0;2368.47', 'put fish in pan;2358.38;2368.77']
 ************
 Start timestamp: 2371.43, Stop timestamp: 2372.24
 Narration: put bag in bin
@@ -2193,8 +2193,8 @@ Narration: take rubbish
 ------
 ************
 Frame IDs in sequence: [142964, 143296, 143564, 143610, 144321, 144416]
-Objects in sequence: ['bin/garbage can/recycling bin', 'pan', 'rubbish/trash', 'hob/cooktop/stovetop', 'fish', 'food', 'pot lid', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['stir;food;2373.44;2380.09', 'adjust;temperature:gas;2380.58;2390.43']
+Objects in sequence: ['wooden spoon', 'pot lid', 'bin/garbage can/recycling bin', 'food', 'fish', 'pot', 'pan', 'hob/cooktop/stovetop', 'rubbish/trash']
+Verb-noun pairs in sequence: ['stir food;2373.44;2380.09', 'adjust gas temperature;2380.58;2390.43']
 ************
 Start timestamp: 2393.21, Stop timestamp: 2397.86
 Narration: move
@@ -2213,8 +2213,8 @@ Narration: put lime
 ------
 ************
 Frame IDs in sequence: [144633, 144748, 144906, 144938, 145132, 145188]
-Objects in sequence: ['cling film', 'chopping board', 'lime']
-Verb-noun pairs in sequence: ['put-in;rubbish;2404.53;2407.83', 'unwrap;lime;2409.51;2413.33', 'put-in;film:cling;2413.22;2414.38']
+Objects in sequence: ['chopping board', 'lime', 'cling film']
+Verb-noun pairs in sequence: ['put rubbish in bin;2404.53;2407.83', 'unwrap lime;2409.51;2413.33', 'put cling film in bin;2413.22;2414.38']
 ************
 Start timestamp: 2417.84, Stop timestamp: 2420.47
 Narration: take chopping board
@@ -2228,7 +2228,7 @@ Narration: take knife
 ************
 Frame IDs in sequence: [145266, 145334, 145402, 145504, 145606, 145689]
 Objects in sequence: ['carrot bag', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['take;board:chopping;2417.84;2420.47', 'put;board:chopping;2420.57;2422.01']
+Verb-noun pairs in sequence: ['take chopping board;2417.84;2420.47', 'put chopping board;2420.57;2422.01']
 ************
 Start timestamp: 2423.64, Stop timestamp: 2425.51
 Narration: open bag of carrots
@@ -2247,8 +2247,8 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [145825, 145911, 146025, 146063, 146113, 146190]
-Objects in sequence: ['carrot box', 'carrot bag', 'fridge', 'chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['take;carrot;2425.61;2429.53', 'put;carrot;2429.47;2431.78', 'remove;carrot;2429.69;2432.64']
+Objects in sequence: ['carrot bag', 'chopping board', 'knife', 'fridge', 'carrot', 'carrot box']
+Verb-noun pairs in sequence: ['take carrot;2425.61;2429.53', 'put carrot;2429.47;2431.78', 'remove carrots from bag;2429.69;2432.64']
 ************
 Start timestamp: 2435.02, Stop timestamp: 2437.1
 Narration: take box of carrots from fridge
@@ -2261,8 +2261,8 @@ Narration: top and tail carrot
 ------
 ************
 Frame IDs in sequence: [146285, 146347, 146511, 146591, 146680, 146750]
-Objects in sequence: ['bag', 'container', 'chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['take;box:carrot;2435.02;2437.1', 'close;fridge;2437.48;2439.47']
+Objects in sequence: ['chopping board', 'knife', 'container', 'carrot', 'bag']
+Verb-noun pairs in sequence: ['take box of carrots from fridge;2435.02;2437.1', 'close fridge;2437.48;2439.47']
 ************
 Start timestamp: 2444.26, Stop timestamp: 2446.36
 Narration: top and tail carrot
@@ -2276,7 +2276,7 @@ Narration: top and tail carrot
 ************
 Frame IDs in sequence: [146908, 147032, 147240, 147300, 147454, 147510]
 Objects in sequence: ['chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['top;carrot:tail;2444.26;2446.36', 'top;carrot:tail;2447.13;2452.01']
+Verb-noun pairs in sequence: ['top and tail carrot;2444.26;2446.36', 'top and tail carrot;2447.13;2452.01']
 ************
 Start timestamp: 2457.06, Stop timestamp: 2458.97
 Narration: top and tail carrot
@@ -2293,7 +2293,7 @@ Narration: top and tail carrot
 ************
 Frame IDs in sequence: [147705, 147805, 148003, 148071, 148205, 148263]
 Objects in sequence: ['chopping board', 'knife', 'carrot']
-Verb-noun pairs in sequence: ['top;carrot:tail;2457.06;2458.97', 'top;carrot:tail;2461.0;2464.05', 'top;carrot:tail;2464.0;2473.75']
+Verb-noun pairs in sequence: ['top and tail carrot;2457.06;2458.97', 'top and tail carrot;2461.0;2464.05', 'top and tail carrot;2464.0;2473.75']
 ************
 Start timestamp: 2469.23, Stop timestamp: 2471.98
 Narration: top and tail carrot
@@ -2309,8 +2309,8 @@ Narration: stir rice
 ------
 ************
 Frame IDs in sequence: [148495, 148642, 148792, 148902, 149044, 149188]
-Objects in sequence: ['pan', 'rice', 'food', 'pot lid', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['top;carrot:tail;2469.23;2471.98', 'adjust;temperature:gas;2473.85;2478.31', 'remove;lid:pan;2475.12;2476.94']
+Objects in sequence: ['pot lid', 'wooden spoon', 'food', 'hob', 'pot', 'rice', 'pan']
+Verb-noun pairs in sequence: ['top and tail carrot;2469.23;2471.98', 'adjust gas temperature;2473.85;2478.31', 'remove pan lid;2475.12;2476.94']
 ************
 Start timestamp: 2482.32, Stop timestamp: 2488.17
 Narration: continue stirring rice
@@ -2326,8 +2326,8 @@ Narration: put pan lid
 ------
 ************
 Frame IDs in sequence: [149494, 149606, 149691, 149769, 149895, 150024]
-Objects in sequence: ['drawer', 'pan', 'food', 'pot lid', 'wooden spoon', 'hob', 'pot', 'rice']
-Verb-noun pairs in sequence: ['stir;rice;2482.32;2488.17', 'adjust;temperature:gas;2487.97;2489.89', 'stir;rice;2489.99;2494.48']
+Objects in sequence: ['pot lid', 'wooden spoon', 'food', 'hob', 'pot', 'rice', 'drawer', 'pan']
+Verb-noun pairs in sequence: ['continue stirring rice;2482.32;2488.17', 'adjust gas temperature;2487.97;2489.89', 'stir rice;2489.99;2494.48']
 ************
 Start timestamp: 2495.79, Stop timestamp: 2497.45
 Narration: put spoon
@@ -2346,8 +2346,8 @@ Narration: move chopping board
 ------
 ************
 Frame IDs in sequence: [150094, 150153, 150193, 150279, 150324, 150369]
-Objects in sequence: ['carrot box', 'drawer', 'peeler', 'chopping board']
-Verb-noun pairs in sequence: ['open;drawer;2497.49;2501.23', 'take;peeler;2500.46;2501.72', 'close;drawer;2501.49;2502.28']
+Objects in sequence: ['peeler', 'chopping board', 'carrot box', 'drawer']
+Verb-noun pairs in sequence: ['open drawer;2497.49;2501.23', 'take peeler;2500.46;2501.72', 'close drawer;2501.49;2502.28']
 ************
 Start timestamp: 2503.99, Stop timestamp: 2506.93
 Narration: open box of carrots
@@ -2360,8 +2360,8 @@ Narration: take bowl
 ------
 ************
 Frame IDs in sequence: [150469, 150501, 150547, 150612, 150678, 150736]
-Objects in sequence: ['bowl', 'carrot box', 'cupboard', 'carrot']
-Verb-noun pairs in sequence: ['open;box:carrot;2503.99;2506.93', 'open;cupboard;2507.66;2508.53']
+Objects in sequence: ['cupboard', 'carrot', 'bowl', 'carrot box']
+Verb-noun pairs in sequence: ['open box of carrots;2503.99;2506.93', 'open cupboard;2507.66;2508.53']
 ************
 Start timestamp: 2509.18, Stop timestamp: 2509.93
 Narration: close cupboard
@@ -2377,8 +2377,8 @@ Narration: rinse box
 ------
 ************
 Frame IDs in sequence: [150970, 151048, 151111, 151236, 151903, 151975]
-Objects in sequence: ['bowl', 'sink', 'tap', 'box', 'peeler', 'carrot peeling', 'carrot ends', 'carrot', 'water']
-Verb-noun pairs in sequence: ['put-in;carrot;2510.22;2513.37', 'empty;box:water;2515.92;2517.91']
+Objects in sequence: ['peeler', 'sink', 'carrot', 'bowl', 'box', 'water', 'carrot peeling', 'carrot ends', 'tap']
+Verb-noun pairs in sequence: ['put carrots in bowl;2510.22;2513.37', 'empty box of water;2515.92;2517.91']
 ************
 Start timestamp: 2519.14, Stop timestamp: 2521.4
 Narration: rinse box
@@ -2397,8 +2397,8 @@ Narration: continue skinning carrot
 ------
 ************
 Frame IDs in sequence: [152043, 152097, 152399, 152445, 152632, 152812]
-Objects in sequence: ['peeler', 'carrot ends', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2530.93;2533.51', 'skin;carrot;2533.61;2535.57']
+Objects in sequence: ['peeler', 'carrot', 'carrot peeling', 'carrot ends']
+Verb-noun pairs in sequence: ['skin carrot;2530.93;2533.51', 'continue skinning carrot;2533.61;2535.57']
 ************
 Start timestamp: 2540.94, Stop timestamp: 2543.15
 Narration: continue skinning carrot
@@ -2414,8 +2414,8 @@ Narration: skin carrot
 ------
 ************
 Frame IDs in sequence: [152975, 153018, 153092, 153138, 153376, 153560]
-Objects in sequence: ['box', 'peeler', 'carrot ends', 'hob', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2542.93;2548.4', 'put-in;carrot;2549.56;2550.47']
+Objects in sequence: ['peeler', 'hob', 'carrot', 'box', 'carrot peeling', 'carrot ends']
+Verb-noun pairs in sequence: ['continue skinning carrot;2542.93;2548.4', 'put carrot in box;2549.56;2550.47']
 ************
 Start timestamp: 2555.42, Stop timestamp: 2560.77
 Narration: adjust gas temperature
@@ -2431,8 +2431,8 @@ Narration: continue skinning carrot
 ------
 ************
 Frame IDs in sequence: [153741, 153871, 154269, 154417, 154964, 155038]
-Objects in sequence: ['peeler', 'carrot ends', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['adjust;temperature:gas;2555.42;2560.77', 'skin;carrot;2561.64;2565.09', 'skin;carrot;2564.3;2569.64']
+Objects in sequence: ['peeler', 'carrot', 'carrot peeling', 'carrot ends']
+Verb-noun pairs in sequence: ['adjust gas temperature;2555.42;2560.77', 'skin carrot;2561.64;2565.09', 'continue skinning carrot;2564.3;2569.64']
 ************
 Start timestamp: 2575.11, Stop timestamp: 2581.73
 Narration: continue skinning carrot
@@ -2454,8 +2454,8 @@ Narration: put carrot in box
 ------
 ************
 Frame IDs in sequence: [155222, 155316, 155907, 155943, 156055, 156139]
-Objects in sequence: ['box', 'peeler', 'carrot ends', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2581.83;2584.44', 'skin;carrot;2581.84;2583.82', 'skin;carrot;2586.17;2589.26', 'skin;carrot;2587.16;2593.17']
+Objects in sequence: ['peeler', 'carrot', 'box', 'carrot peeling', 'carrot ends']
+Verb-noun pairs in sequence: ['skin carrot;2581.83;2584.44', 'continue skinning carrot;2581.84;2583.82', 'continue skinning carrot;2586.17;2589.26', 'continue skinning carrot;2587.16;2593.17']
 ************
 Start timestamp: 2599.88, Stop timestamp: 2603.31
 Narration: continue skinning carrot
@@ -2480,8 +2480,8 @@ Narration: continue skinning carrot
 ------
 ************
 Frame IDs in sequence: [156301, 156467, 156645, 156824, 156930, 157156]
-Objects in sequence: ['box', 'peeler', 'carrot ends', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2599.88;2603.31', 'skin;carrot;2600.18;2604.03', 'skin;carrot;2603.41;2609.98', 'skin;carrot;2604.02;2606.45', 'remove-from;carrot;2606.55;2609.36', 'skin;carrot;2609.89;2613.17']
+Objects in sequence: ['peeler', 'carrot', 'box', 'carrot peeling', 'carrot ends']
+Verb-noun pairs in sequence: ['continue skinning carrot;2599.88;2603.31', 'skin carrot;2600.18;2604.03', 'continue skinning carrot;2603.41;2609.98', 'continue skinning carrot;2604.02;2606.45', 'remove bad bit from carrot;2606.55;2609.36', 'continue skinning carrot;2609.89;2613.17']
 ************
 Start timestamp: 2615.94, Stop timestamp: 2619.02
 Narration: continue skinning carrot
@@ -2507,7 +2507,7 @@ Narration: continue skinning carrot
 ************
 Frame IDs in sequence: [157290, 157438, 157763, 157839, 157949, 158173]
 Objects in sequence: ['peeler', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['put-in;carrot;2618.95;2619.8', 'skin;carrot;2620.06;2625.92', 'skin;carrot;2620.31;2623.9', 'skin;carrot;2624.84;2628.3', 'skin;carrot;2625.63;2628.97']
+Verb-noun pairs in sequence: ['put carrot in box;2618.95;2619.8', 'skin carrot;2620.06;2625.92', 'continue skinning carrot;2620.31;2623.9', 'continue skinning carrot;2624.84;2628.3', 'continue skinning carrot;2625.63;2628.97']
 ************
 Start timestamp: 2631.33, Stop timestamp: 2638.66
 Narration: continue skinning carrot
@@ -2524,7 +2524,7 @@ Narration: continue skinning carrot
 ************
 Frame IDs in sequence: [158445, 158505, 158632, 158733, 159396, 159500]
 Objects in sequence: ['peeler', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2631.33;2638.66', 'put-in;carrot;2638.49;2639.22', 'skin;carrot;2640.09;2642.35']
+Verb-noun pairs in sequence: ['continue skinning carrot;2631.33;2638.66', 'put carrot in box;2638.49;2639.22', 'skin carrot;2640.09;2642.35']
 ************
 Start timestamp: 2646.3, Stop timestamp: 2654.35
 Narration: continue skinning carrot
@@ -2540,8 +2540,8 @@ Narration: put carrot in box
 ------
 ************
 Frame IDs in sequence: [159687, 159857, 160319, 160413, 160535, 160753]
-Objects in sequence: ['box', 'peeler', 'knife', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['chop;carrot;2655.77;2659.98', 'chop;carrot;2660.08;2665.82']
+Objects in sequence: ['peeler', 'knife', 'carrot', 'box', 'carrot peeling']
+Verb-noun pairs in sequence: ['continue chopping carrot;2655.77;2659.98', 'continue chopping carrot;2660.08;2665.82']
 ************
 Start timestamp: 2674.43, Stop timestamp: 2680.48
 Narration: skin carrot
@@ -2561,7 +2561,7 @@ Narration: skin carrot
 ************
 Frame IDs in sequence: [161108, 161224, 161314, 161443, 161572, 161620]
 Objects in sequence: ['peeler', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2674.43;2680.48', 'remove-from;carrot;2679.56;2685.86', 'remove-from;carrot;2679.56;2685.65', 'remove-from;carrot;2684.88;2685.93']
+Verb-noun pairs in sequence: ['skin carrot;2674.43;2680.48', 'remove bad bit from carrot;2679.56;2685.86', 'remove bad bit from carrot;2679.56;2685.65', 'remove bad bit from carrot;2684.88;2685.93']
 ************
 Start timestamp: 2689.27, Stop timestamp: 2692.12
 Narration: continue skinning carrot
@@ -2578,7 +2578,7 @@ Narration: continue skinning carrot
 ************
 Frame IDs in sequence: [161673, 161767, 161823, 161879, 161971, 162071]
 Objects in sequence: ['peeler', 'chopping board', 'knife', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['skin;carrot;2692.22;2694.16', 'skin;carrot;2694.27;2696.76']
+Verb-noun pairs in sequence: ['continue skinning carrot;2692.22;2694.16', 'continue skinning carrot;2694.27;2696.76']
 ************
 Start timestamp: 2699.89, Stop timestamp: 2700.92
 Narration: put carrot in box
@@ -2603,8 +2603,8 @@ Narration: continue skinning carrot
 ------
 ************
 Frame IDs in sequence: [162395, 162507, 162653, 162799, 162974, 163132]
-Objects in sequence: ['box', 'peeler', 'carrot', 'carrot peeling']
-Verb-noun pairs in sequence: ['take;carrot;2701.13;2702.01', 'skin;carrot;2702.0;2705.16', 'skin;carrot;2705.26;2709.04', 'skin;carrot;2708.63;2710.68', 'skin;carrot;2708.99;2712.49']
+Objects in sequence: ['peeler', 'carrot', 'box', 'carrot peeling']
+Verb-noun pairs in sequence: ['take carrot;2701.13;2702.01', 'skin carrot;2702.0;2705.16', 'continue skinning carrot;2705.26;2709.04', 'continue skinning carrot;2708.63;2710.68', 'continue skinning carrot;2708.99;2712.49']
 ************
 Start timestamp: 2718.44, Stop timestamp: 2719.47
 Narration: put carrot in box
@@ -2618,7 +2618,7 @@ Narration: continue gathering carrot peelings
 ************
 Frame IDs in sequence: [163316, 163474, 163674, 163763, 164019, 164177]
 Objects in sequence: ['bin/garbage can/recycling bin', 'carrot peeling']
-Verb-noun pairs in sequence: ['put-in;carrot;2718.44;2719.47', 'gather;peeling:carrot;2719.79;2726.66']
+Verb-noun pairs in sequence: ['put carrot in box;2718.44;2719.47', 'gather carrot peelings;2719.79;2726.66']
 ************
 Start timestamp: 2727.61, Stop timestamp: 2733.24
 Narration: pick up carrot peelings
@@ -2637,8 +2637,8 @@ Narration: wash hands
 ------
 ************
 Frame IDs in sequence: [164627, 164680, 164840, 164895, 165122, 165152]
-Objects in sequence: ['gas temperature', 'bin/garbage can/recycling bin', 'sink', 'pan', 'tap', 'water', 'food', 'pot lid', 'hob', 'pot', 'wooden spoon', 'carrot peeling']
-Verb-noun pairs in sequence: ['put-in;peeling:carrot;2732.99;2736.76', 'gather;peeling:carrot;2736.63;2742.78', 'put-in;peeling:carrot;2743.44;2745.23']
+Objects in sequence: ['sink', 'pot lid', 'wooden spoon', 'bin/garbage can/recycling bin', 'food', 'hob', 'pot', 'water', 'carrot peeling', 'pan', 'gas temperature', 'tap']
+Verb-noun pairs in sequence: ['put carrot peelings in bin;2732.99;2736.76', 'gather carrot peelings;2736.63;2742.78', 'put carrot peelings in bin;2743.44;2745.23']
 ************
 Start timestamp: 2748.38, Stop timestamp: 2749.28
 Narration: turn tap off
@@ -2657,8 +2657,8 @@ Narration: move pan
 ------
 ************
 Frame IDs in sequence: [165250, 165364, 165416, 165486, 165736, 165987]
-Objects in sequence: ['pan', 'rice', 'food', 'hob', 'pot', 'wooden spoon', 'lid']
-Verb-noun pairs in sequence: ['adjust;temperature:gas;2751.83;2752.92', 'move;pan;2753.35;2756.5', 'move;pan;2753.88;2757.05']
+Objects in sequence: ['wooden spoon', 'food', 'hob', 'lid', 'pot', 'rice', 'pan']
+Verb-noun pairs in sequence: ['adjust gas temperature;2751.83;2752.92', 'move pan;2753.35;2756.5', 'move pan;2753.88;2757.05']
 ************
 Start timestamp: 2758.74, Stop timestamp: 2761.12
 Narration: adjust gas temperature
@@ -2677,8 +2677,8 @@ Narration: stir rice
 ------
 ************
 Frame IDs in sequence: [166145, 166181, 166321, 166471, 166906, 167092]
-Objects in sequence: ['gas temperature', 'pan', 'rice', 'food', 'pot lid', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['lift;lid;2766.2;2767.23', 'put;lid;2766.66;2768.49', 'adjust;temperature:gas;2768.52;2770.34']
+Objects in sequence: ['wooden spoon', 'pot lid', 'food', 'hob', 'pot', 'rice', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['lift lid;2766.2;2767.23', 'put lid;2766.66;2768.49', 'adjust gas temperature;2768.52;2770.34']
 ************
 Start timestamp: 2775.85, Stop timestamp: 2777.48
 Narration: scoop some rice
@@ -2694,8 +2694,8 @@ Narration: adjust gas temperature
 ------
 ************
 Frame IDs in sequence: [167510, 167568, 167697, 168309, 168922, 169022]
-Objects in sequence: ['gas temperature', 'pan', 'lime juicer', 'hob/cooktop/stovetop', 'rice', 'food', 'pot lid', 'pot', 'wooden spoon', 'lime juice', 'lid']
-Verb-noun pairs in sequence: ['test;rice;2780.19;2787.03', 'put-on;lid;2791.47;2793.34']
+Objects in sequence: ['wooden spoon', 'lime juicer', 'pot lid', 'hob/cooktop/stovetop', 'food', 'lid', 'lime juice', 'pot', 'rice', 'pan', 'gas temperature']
+Verb-noun pairs in sequence: ['test rice;2780.19;2787.03', 'put lid on pan;2791.47;2793.34']
 ************
 Start timestamp: 2815.03, Stop timestamp: 2817.89
 Narration: put lime juice in pan
@@ -2711,8 +2711,8 @@ Narration: rinse lime juicer
 ------
 ************
 Frame IDs in sequence: [169146, 169216, 169416, 169520, 169653, 169707]
-Objects in sequence: ['sink', 'lime juicer', 'tap', 'water']
-Verb-noun pairs in sequence: ['put-in;juice:lime;2815.03;2817.89', 'turn-on;tap;2818.61;2821.23', 'rinse;juicer:lime;2819.35;2824.49']
+Objects in sequence: ['sink', 'lime juicer', 'water', 'tap']
+Verb-noun pairs in sequence: ['put lime juice in pan;2815.03;2817.89', 'turn tap on;2818.61;2821.23', 'rinse lime juicer;2819.35;2824.49']
 ************
 Start timestamp: 2826.33, Stop timestamp: 2829.62
 Narration: continue rinsing lime juicer
@@ -2728,8 +2728,8 @@ Narration: wash lime juicer
 ------
 ************
 Frame IDs in sequence: [170198, 170279, 170361, 170523, 170678, 170790]
-Objects in sequence: ['washing up liquid/dish soap', 'sink', 'lime juicer', 'sponge', 'tap', 'water']
-Verb-noun pairs in sequence: ['rinse;juicer:lime;2826.33;2829.62', 'rinse;juicer:lime;2829.34;2833.61', 'put;liquid:washing:up;2836.14;2837.26']
+Objects in sequence: ['sink', 'sponge', 'lime juicer', 'water', 'washing up liquid/dish soap', 'tap']
+Verb-noun pairs in sequence: ['continue rinsing lime juicer;2826.33;2829.62', 'continue rinsing lime juicer;2829.34;2833.61', 'put washing up liquid on sponge;2836.14;2837.26']
 ************
 Start timestamp: 2843.81, Stop timestamp: 2847.27
 Narration: rinse lime juicer
@@ -2745,8 +2745,8 @@ Narration: wash lime juicer
 ------
 ************
 Frame IDs in sequence: [170978, 171030, 171192, 171288, 171449, 171610]
-Objects in sequence: ['dish rack', 'sink', 'lime juicer', 'sponge', 'tap', 'water']
-Verb-noun pairs in sequence: ['rinse;juicer:lime;2843.81;2847.27', 'rinse;juicer:lime;2847.19;2849.27', 'put-on;juicer:lime;2849.1;2850.96']
+Objects in sequence: ['sink', 'sponge', 'lime juicer', 'dish rack', 'water', 'tap']
+Verb-noun pairs in sequence: ['rinse lime juicer;2843.81;2847.27', 'continue rinsing lime juicer;2847.19;2849.27', 'put lime juicer on the drying up rack;2849.1;2850.96']
 ************
 Start timestamp: 2855.37, Stop timestamp: 2859.69
 Narration: continue washing lime juicer
@@ -2762,8 +2762,8 @@ Narration: rinse scissors
 ------
 ************
 Frame IDs in sequence: [171703, 171787, 171903, 171999, 172071, 172189]
-Objects in sequence: ['dish rack', 'sink', 'sponge', 'tap', 'scissors', 'drying rack', 'water']
-Verb-noun pairs in sequence: ['put-on;juicer:lime;2859.67;2860.89', 'wash;scissors;2861.04;2864.07']
+Objects in sequence: ['sink', 'sponge', 'dish rack', 'scissors', 'water', 'drying rack', 'tap']
+Verb-noun pairs in sequence: ['put lime juicer on rack;2859.67;2860.89', 'wash scissors;2861.04;2864.07']
 ************
 Start timestamp: 2867.37, Stop timestamp: 2870.46
 Narration: put scissors on drying rack
@@ -2776,8 +2776,8 @@ Narration: wash knife
 ------
 ************
 Frame IDs in sequence: [172307, 172385, 172429, 172525, 172574, 172623]
-Objects in sequence: ['sink', 'sponge', 'tap', 'knife', 'water']
-Verb-noun pairs in sequence: ['put-on;scissors;2867.37;2870.46', 'rinse;knife;2871.68;2873.52']
+Objects in sequence: ['knife', 'sink', 'sponge', 'water', 'tap']
+Verb-noun pairs in sequence: ['put scissors on drying rack;2867.37;2870.46', 'rinse knife;2871.68;2873.52']
 ************
 Start timestamp: 2874.67, Stop timestamp: 2877.77
 Narration: rinse knife
@@ -2793,8 +2793,8 @@ Narration: put chopping board
 ------
 ************
 Frame IDs in sequence: [172714, 172765, 172888, 172926, 173074, 173202]
-Objects in sequence: ['dish rack', 'sink', 'chopping board', 'knife']
-Verb-noun pairs in sequence: ['rinse;knife;2874.67;2877.77', 'put-on;knife;2877.87;2879.97', 'take;board:chopping;2879.8;2880.68']
+Objects in sequence: ['chopping board', 'knife', 'sink', 'dish rack']
+Verb-noun pairs in sequence: ['rinse knife;2874.67;2877.77', 'put knife on drying rack;2877.87;2879.97', 'take chopping board;2879.8;2880.68']
 ************
 Start timestamp: 2882.15, Stop timestamp: 2883.38
 Narration: turn off tap
@@ -2813,8 +2813,8 @@ Narration: put chopping board on drying rack
 ------
 ************
 Frame IDs in sequence: [173530, 173659, 173807, 173865, 173957, 174065]
-Objects in sequence: ['dish rack', 'sink', 'pan', 'tap', 'rice', 'food', 'chopping board', 'pot lid', 'hob', 'pot', 'wooden spoon', 'spoon', 'water']
-Verb-noun pairs in sequence: ['scrub;squeezer:lime;2883.23;2887.48', 'wash;board:chopping;2887.23;2891.74', 'rinse;board:chopping;2890.4;2895.86']
+Objects in sequence: ['chopping board', 'sink', 'wooden spoon', 'pot lid', 'food', 'hob', 'pot', 'dish rack', 'water', 'spoon', 'rice', 'pan', 'tap']
+Verb-noun pairs in sequence: ['scrub;2883.23;2887.48', 'washing;2887.23;2891.74', 'rinse chopping board;2890.4;2895.86']
 ************
 Start timestamp: 2899.0, Stop timestamp: 2901.45
 Narration: take spoon
@@ -2827,8 +2827,8 @@ Narration: take oven gloves
 ------
 ************
 Frame IDs in sequence: [174102, 174153, 174231, 174303, 174910, 175195]
-Objects in sequence: ['pan', 'sink', 'glove', 'food', 'pot lid', 'wooden spoon', 'rice pot', 'hob', 'left glove', 'rice']
-Verb-noun pairs in sequence: ['take;spoon;2899.0;2901.45', 'put;spoon;2901.55;2902.64']
+Objects in sequence: ['sink', 'glove', 'wooden spoon', 'rice pot', 'pot lid', 'food', 'hob', 'rice', 'pan', 'left glove']
+Verb-noun pairs in sequence: ['take spoon;2899.0;2901.45', 'put spoon;2901.55;2902.64']
 ************
 Start timestamp: 2912.27, Stop timestamp: 2922.82
 Narration: drain water from rice
@@ -2841,8 +2841,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [175925, 176023, 176631, 176669, 176764, 176842]
-Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'rice', 'food', 'fish', 'pot lid', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['drain-from;water;2912.27;2922.82', 'adjust;temperature:gas;2931.39;2934.13']
+Objects in sequence: ['wooden spoon', 'pot lid', 'food', 'hob/cooktop/stovetop', 'fish', 'pot', 'rice', 'pan']
+Verb-noun pairs in sequence: ['drain water from rice;2912.27;2922.82', 'adjust gas temperature;2931.39;2934.13']
 ************
 Start timestamp: 2945.45, Stop timestamp: 2948.47
 Narration: split fish
@@ -2861,8 +2861,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [177490, 177677, 177851, 178145, 178465]
-Objects in sequence: ['pan', 'hob/cooktop/stovetop', 'rice', 'food', 'fish', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['split;fish;2945.45;2948.47', 'split;fish;2947.31;2955.67', 'split;fish;2947.85;2956.77', 'split;fish;2956.36;2962.65']
+Objects in sequence: ['wooden spoon', 'food', 'fish', 'pot', 'rice', 'pan', 'hob/cooktop/stovetop']
+Verb-noun pairs in sequence: ['split fish;2945.45;2948.47', 'continue splitting fish;2947.31;2955.67', 'continue splitting fish;2947.85;2956.77', 'continue splitting fish;2956.36;2962.65']
 ************
 Start timestamp: 2972.02, Stop timestamp: 2975.13
 Narration: take rubbish
@@ -2875,8 +2875,8 @@ Narration: take lime
 ------
 ************
 Frame IDs in sequence: [178539, 178593, 178673, 178722, 178766, 178810]
-Objects in sequence: ['bin/garbage can/recycling bin', 'rubbish/trash', 'cupboard', 'knife', 'lime']
-Verb-noun pairs in sequence: ['take;rubbish;2972.02;2975.13', 'put-in;rubbish;2975.23;2977.29']
+Objects in sequence: ['knife', 'lime', 'cupboard', 'bin/garbage can/recycling bin', 'rubbish/trash']
+Verb-noun pairs in sequence: ['take rubbish;2972.02;2975.13', 'put rubbish in bin;2975.23;2977.29']
 ************
 Start timestamp: 2979.79, Stop timestamp: 2980.66
 Narration: open cupboard
@@ -2889,8 +2889,8 @@ Narration: put plate
 ------
 ************
 Frame IDs in sequence: [178882, 178930, 179008, 179040, 179250, 179308]
-Objects in sequence: ['cupboard', 'knife', 'plate', 'lime']
-Verb-noun pairs in sequence: ['open;cupboard;2979.79;2980.66', 'take;plate;2980.76;2982.99']
+Objects in sequence: ['knife', 'lime', 'plate', 'cupboard']
+Verb-noun pairs in sequence: ['open cupboard;2979.79;2980.66', 'take plate;2980.76;2982.99']
 ************
 Start timestamp: 2986.68, Stop timestamp: 2989.36
 Narration: chop lime
@@ -2903,8 +2903,8 @@ Narration: chop lime
 ------
 ************
 Frame IDs in sequence: [179410, 179518, 179612, 179745, 180243, 180313]
-Objects in sequence: ['knife', 'plate', 'lime']
-Verb-noun pairs in sequence: ['chop;lime;2986.68;2989.36', 'chop;lime;2989.83;2992.33']
+Objects in sequence: ['knife', 'lime', 'plate']
+Verb-noun pairs in sequence: ['chop lime;2986.68;2989.36', 'chop lime;2989.83;2992.33']
 ************
 Start timestamp: 2995.32, Stop timestamp: 3001.73
 Narration: chop lime
@@ -2920,8 +2920,8 @@ Narration: put lime piece in bin
 ------
 ************
 Frame IDs in sequence: [180415, 180451, 181096, 181134, 181290, 181396]
-Objects in sequence: ['bin/garbage can/recycling bin', 'sink', 'lime piece', 'tap', 'cupboard', 'knife', 'plate', 'water']
-Verb-noun pairs in sequence: ['chop;lime;3003.33;3005.89', 'pick-up;piece:lime;3006.85;3007.64']
+Objects in sequence: ['knife', 'sink', 'plate', 'cupboard', 'bin/garbage can/recycling bin', 'water', 'lime piece', 'tap']
+Verb-noun pairs in sequence: ['continue chopping lime;3003.33;3005.89', 'pick up lime piece;3006.85;3007.64']
 ************
 Start timestamp: 3020.41, Stop timestamp: 3023.89
 Narration: turn tap on
@@ -2937,8 +2937,8 @@ Narration: fill box of carrots with water
 ------
 ************
 Frame IDs in sequence: [181524, 181671, 181785, 181899, 181973, 182013]
-Objects in sequence: ['carrot box', 'sink', 'tap', 'water']
-Verb-noun pairs in sequence: ['turn-on;tap;3020.41;3023.89', 'wash;hand;3023.64;3024.68', 'turn-off;tap;3024.97;3026.0']
+Objects in sequence: ['sink', 'carrot box', 'water', 'tap']
+Verb-noun pairs in sequence: ['turn tap on;3020.41;3023.89', 'wash hands;3023.64;3024.68', 'turn tap off;3024.97;3026.0']
 ************
 Start timestamp: 3032.54, Stop timestamp: 3034.16
 Narration: empty water from box of carrots
@@ -2951,8 +2951,8 @@ Narration: put lid on box of carrots
 ------
 ************
 Frame IDs in sequence: [182115, 182251, 182405, 182549, 182822, 182957]
-Objects in sequence: ['carrot box', 'sink', 'tap', 'fridge', 'lid', 'water']
-Verb-noun pairs in sequence: ['empty;water;3032.54;3034.16', 'fill;box:carrot;3034.33;3038.34']
+Objects in sequence: ['sink', 'lid', 'fridge', 'carrot box', 'water', 'tap']
+Verb-noun pairs in sequence: ['empty water from box of carrots;3032.54;3034.16', 'fill box of carrots with water;3034.33;3038.34']
 ************
 Start timestamp: 3045.78, Stop timestamp: 3049.95
 Narration: put box of carrots in fridge
@@ -2965,8 +2965,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [183037, 183080, 183160, 183380, 183831, 184083]
-Objects in sequence: ['pan', 'fridge', 'rice', 'food', 'cupboard', 'pot lid', 'hob', 'pot', 'wooden spoon']
-Verb-noun pairs in sequence: ['put-of;box:carrot;3045.78;3049.95', 'close;fridge;3050.44;3051.53']
+Objects in sequence: ['wooden spoon', 'pot lid', 'cupboard', 'food', 'hob', 'fridge', 'pot', 'rice', 'pan']
+Verb-noun pairs in sequence: ['put box of carrots in fridge;3045.78;3049.95', 'close fridge;3050.44;3051.53']
 ************
 Start timestamp: 3058.29, Stop timestamp: 3059.19
 Narration: close cupboard
@@ -2985,8 +2985,8 @@ Narration: turn top on
 ------
 ************
 Frame IDs in sequence: [184575, 184633, 184940, 185036, 185138, 185196]
-Objects in sequence: ['bottle', 'sink', 'tap', 'food bit', 'water']
-Verb-noun pairs in sequence: ['sample;food;3060.41;3070.5', 'take;bit:food;3075.95;3077.65', 'put-in;bit:food;3076.52;3079.91']
+Objects in sequence: ['sink', 'bottle', 'water', 'food bit', 'tap']
+Verb-noun pairs in sequence: ['sample food;3060.41;3070.5', 'take food bits;3075.95;3077.65', 'put food bits in bin;3076.52;3079.91']
 ************
 Start timestamp: 3084.98, Stop timestamp: 3087.09
 Narration: empty bottle
@@ -3005,8 +3005,8 @@ Narration: put lid on bottle
 ------
 ************
 Frame IDs in sequence: [185346, 185490, 185580, 185620, 185695, 185757]
-Objects in sequence: ['sink', 'bottle', 'tap', 'bottle lid', 'top', 'water']
-Verb-noun pairs in sequence: ['empty;bottle;3084.98;3087.09', 'fill-up;bottle;3087.12;3092.94', 'fill-up;bottle;3087.2;3092.76', 'put-on;top;3092.71;3094.41']
+Objects in sequence: ['sink', 'bottle', 'top', 'water', 'bottle lid', 'tap']
+Verb-noun pairs in sequence: ['empty bottle;3084.98;3087.09', 'fill up bottle;3087.12;3092.94', 'fill up bottle;3087.2;3092.76', 'put top on bottle;3092.71;3094.41']
 ************
 Start timestamp: 3094.47, Stop timestamp: 3096.15
 Narration: rinse bottle lid
@@ -3019,8 +3019,8 @@ Narration: take bottles
 ------
 ************
 Frame IDs in sequence: [186151, 186188, 186233, 186300, 186368, 186428]
-Objects in sequence: ['bottle', 'sink', 'tap', 'bottle lid', 'fridge', 'water']
-Verb-noun pairs in sequence: ['rinse;lid:bottle;3094.47;3096.15', 'turn-off;top;3102.5;3103.15']
+Objects in sequence: ['sink', 'bottle', 'fridge', 'water', 'bottle lid', 'tap']
+Verb-noun pairs in sequence: ['rinse bottle lid;3094.47;3096.15', 'turn top off;3102.5;3103.15']
 ************
 Start timestamp: 3105.7, Stop timestamp: 3107.7
 Narration: put bottle in fridge
@@ -3036,8 +3036,8 @@ Narration: take carrot skinner
 ------
 ************
 Frame IDs in sequence: [186519, 186550, 186712, 186748, 186908, 187137]
-Objects in sequence: ['sink', 'sponge', 'tap', 'fridge', 'carrot skinner']
-Verb-noun pairs in sequence: ['put-in;bottle;3105.7;3107.7', 'put-in;bottle;3107.67;3108.42', 'close;fridge;3108.61;3109.5']
+Objects in sequence: ['carrot skinner', 'sink', 'sponge', 'fridge', 'tap']
+Verb-noun pairs in sequence: ['put bottle in fridge;3105.7;3107.7', 'put bottle in fridge;3107.67;3108.42', 'close fridge;3108.61;3109.5']
 ************
 Start timestamp: 3112.33, Stop timestamp: 3125.93
 Narration: put carrot skinner in drying rack
@@ -3053,8 +3053,8 @@ Narration: empty washing out bowl
 ------
 ************
 Frame IDs in sequence: [187271, 187379, 187581, 187643, 187744, 187830]
-Objects in sequence: ['sink', 'tap', 'washing up bowl', 'carrot skinner', 'water']
-Verb-noun pairs in sequence: ['wash;skinner:carrot;3114.16;3120.03', 'rinse;skinner:carrot;3120.13;3124.02']
+Objects in sequence: ['carrot skinner', 'sink', 'washing up bowl', 'water', 'tap']
+Verb-noun pairs in sequence: ['wash carrot skinner;3114.16;3120.03', 'rinse carrot skinner;3120.13;3124.02']
 ************
 Start timestamp: 3128.38, Stop timestamp: 3131.14
 Narration: rinse washing out bowl
@@ -3070,8 +3070,8 @@ Narration: rinse sponge
 ------
 ************
 Frame IDs in sequence: [187989, 188086, 188224, 188278, 188360, 188474]
-Objects in sequence: ['sink', 'sponge', 'tap', 'surface', 'water']
-Verb-noun pairs in sequence: ['rinse;bowl;3128.38;3131.14', 'wipe;surface;3132.81;3135.78', 'rinse;sponge;3135.05;3136.67']
+Objects in sequence: ['sink', 'sponge', 'water', 'surface', 'tap']
+Verb-noun pairs in sequence: ['rinse washing out bowl;3128.38;3131.14', 'wipe surface;3132.81;3135.78', 'rinse sponge;3135.05;3136.67']
 ************
 Start timestamp: 3138.77, Stop timestamp: 3141.85
 Narration: wipe surface
@@ -3087,8 +3087,8 @@ Narration: rinse sponge
 ------
 ************
 Frame IDs in sequence: [188582, 188642, 188845, 188901, 189011, 189059]
-Objects in sequence: ['sink', 'sponge', 'tap', 'washing up bowl', 'surface']
-Verb-noun pairs in sequence: ['wipe;surface;3138.77;3141.85', 'wipe;surface;3141.89;3145.08', 'wipe;surface;3144.97;3147.51']
+Objects in sequence: ['sink', 'sponge', 'washing up bowl', 'surface', 'tap']
+Verb-noun pairs in sequence: ['wipe surface;3138.77;3141.85', 'continue wiping surface;3141.89;3145.08', 'continue wiping surface;3144.97;3147.51']
 ************
 Start timestamp: 3148.07, Stop timestamp: 3149.35
 Narration: empty washing out bowl
@@ -3104,8 +3104,8 @@ Narration: put lid in washing out bowl
 ------
 ************
 Frame IDs in sequence: [189177, 189253, 189347, 189401, 189641, 189756]
-Objects in sequence: ['towel', 'sink', 'pan', 'washing up bowl', 'hob/cooktop/stovetop', 'rice', 'food', 'pot', 'wooden spoon', 'lid']
-Verb-noun pairs in sequence: ['turn-off;top;3149.85;3151.17', 'dry;hand;3152.41;3154.87']
+Objects in sequence: ['sink', 'wooden spoon', 'washing up bowl', 'food', 'hob/cooktop/stovetop', 'lid', 'pot', 'rice', 'towel', 'pan']
+Verb-noun pairs in sequence: ['turn off top;3149.85;3151.17', 'dry hands;3152.41;3154.87']
 ************
 Start timestamp: 3159.24, Stop timestamp: 3163.45
 Narration: stir food
@@ -3118,8 +3118,8 @@ Narration: rearrange line pieces
 ------
 ************
 Frame IDs in sequence: [189852, 189928, 190116, 190236, 190446, 190522]
-Objects in sequence: ['pan', 'carrot', 'lime piece', 'hob/cooktop/stovetop', 'rice', 'food', 'pot', 'wooden spoon', 'plate']
-Verb-noun pairs in sequence: ['stir;food;3159.24;3163.45', 'stir;food;3163.55;3166.46']
+Objects in sequence: ['wooden spoon', 'plate', 'hob/cooktop/stovetop', 'food', 'carrot', 'pot', 'rice', 'lime piece', 'pan']
+Verb-noun pairs in sequence: ['stir food;3159.24;3163.45', 'continue stirring food;3163.55;3166.46']
 ************
 Start timestamp: 3173.7, Stop timestamp: 3175.98
 Narration: move bowl of carrots
@@ -3132,8 +3132,8 @@ Narration: take hummus
 ------
 ************
 Frame IDs in sequence: [190604, 190642, 190703, 190792, 190968, 190998]
-Objects in sequence: ['bowl', 'fridge', 'hummus', 'hummus box', 'carrot', 'lid']
-Verb-noun pairs in sequence: ['move;bowl:carrot;3173.7;3175.98', 'open;fridge;3176.56;3177.6']
+Objects in sequence: ['lid', 'hummus box', 'fridge', 'bowl', 'carrot', 'hummus']
+Verb-noun pairs in sequence: ['move bowl of carrots;3173.7;3175.98', 'open fridge;3176.56;3177.6']
 ************
 Start timestamp: 3180.16, Stop timestamp: 3182.26
 Narration: close fridge
@@ -3152,8 +3152,8 @@ Narration: dip carrot in hummus
 ------
 ************
 Frame IDs in sequence: [191180, 191222, 191328, 191358, 191456, 191524]
-Objects in sequence: ['bowl', 'hummus', 'hummus box', 'carrot']
-Verb-noun pairs in sequence: ['open;hummus;3182.36;3183.65', 'dip;carrot;3186.01;3187.47', 'eat;carrot;3187.46;3188.26']
+Objects in sequence: ['hummus box', 'carrot', 'bowl', 'hummus']
+Verb-noun pairs in sequence: ['open hummus;3182.36;3183.65', 'dip carrot in hummus;3186.01;3187.47', 'eat carrot;3187.46;3188.26']
 ************
 Start timestamp: 3190.65, Stop timestamp: 3192.39
 Narration: eat carrot
@@ -3166,8 +3166,8 @@ Narration: stir food
 ------
 ************
 Frame IDs in sequence: [191624, 191841, 192227, 193049, 193871, 193944]
-Objects in sequence: ['bowl', 'pan', 'washing up bowl', 'food', 'wooden spoon', 'rice pot', 'hob', 'rice', 'carrot']
-Verb-noun pairs in sequence: ['eat;carrot;3190.65;3192.39', 'put-in;carrot;3193.39;3194.29']
+Objects in sequence: ['wooden spoon', 'washing up bowl', 'rice pot', 'food', 'hob', 'carrot', 'bowl', 'rice', 'pan']
+Verb-noun pairs in sequence: ['eat carrot;3190.65;3192.39', 'put carrot in bowl;3193.39;3194.29']
 ************
 Start timestamp: 3230.74, Stop timestamp: 3232.65
 Narration: sample rice

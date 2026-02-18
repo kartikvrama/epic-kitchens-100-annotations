@@ -13,7 +13,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [250, 302, 452, 573, 747, 783]
 Objects in sequence: ['bowl', 'cupboard']
-Verb-noun pairs in sequence: ['take;bowl;3.64;5.49', 'open;cupboard;5.31;6.78', 'put-in;bowl;6.75;10.68']
+Verb-noun pairs in sequence: ['take bowl;3.64;5.49', 'open cupboard;5.31;6.78', 'put bowl in cupboard;6.75;10.68']
 ************
 Start timestamp: 14.45, Stop timestamp: 16.15
 Narration: take coffee machine
@@ -29,8 +29,8 @@ Narration: throw filter in garbage
 ------
 ************
 Frame IDs in sequence: [903, 949, 1067, 1097, 1225, 1261]
-Objects in sequence: ['garbage', 'coffee filter', 'coffee machine']
-Verb-noun pairs in sequence: ['take;machine:coffee;14.45;16.15', 'open;machine:coffee;16.13;16.94', 'take-out;filter:coffee;17.29;18.79']
+Objects in sequence: ['coffee filter', 'garbage', 'coffee machine']
+Verb-noun pairs in sequence: ['take coffee machine;14.45;16.15', 'open coffee machine;16.13;16.94', 'take out coffee filter;17.29;18.79']
 ************
 Start timestamp: 23.61, Stop timestamp: 24.55
 Narration: take coffee pot
@@ -46,8 +46,8 @@ Narration: put coffee pot in coffee machine
 ------
 ************
 Frame IDs in sequence: [1417, 1472, 1616, 1736, 2322, 2418]
-Objects in sequence: ['sink', 'coffee pot', 'tap', 'coffee machine', 'water']
-Verb-noun pairs in sequence: ['take;pot:coffee;23.61;24.55', 'put-in;water;25.84;29.84', 'pour-in;water;29.48;37.26']
+Objects in sequence: ['sink', 'coffee machine', 'coffee pot', 'water', 'tap']
+Verb-noun pairs in sequence: ['take coffee pot;23.61;24.55', 'put water in coffee pot;25.84;29.84', 'pour water in coffee machine;29.48;37.26']
 ************
 Start timestamp: 42.46, Stop timestamp: 43.34
 Narration: open cupboard
@@ -60,8 +60,8 @@ Narration: put filter in coffee machine
 ------
 ************
 Frame IDs in sequence: [2557, 2631, 2755, 2879, 3127, 3177]
-Objects in sequence: ['coffee filter', 'coffee filter bag', 'cupboard', 'coffee machine']
-Verb-noun pairs in sequence: ['open;cupboard;42.46;43.34', 'take;filter:coffee;43.67;44.56']
+Objects in sequence: ['cupboard', 'coffee filter', 'coffee filter bag', 'coffee machine']
+Verb-noun pairs in sequence: ['open cupboard;42.46;43.34', 'take coffee filter;43.67;44.56']
 ************
 Start timestamp: 55.77, Stop timestamp: 60.15
 Narration: put filters no take out the coffee from the cupboard
@@ -74,8 +74,8 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [3443, 3546, 3654, 3740, 3826, 3860]
-Objects in sequence: ['drawer', 'cupboard', 'coffee filter bag', 'coffee machine', 'coffee']
-Verb-noun pairs in sequence: ['put;filter;55.77;60.15', 'put;filter;60.32;61.88']
+Objects in sequence: ['drawer', 'coffee', 'cupboard', 'coffee filter bag', 'coffee machine']
+Verb-noun pairs in sequence: ['put filters no take out the coffee from the cupboard;55.77;60.15', 'put the filters back into the cupboard;60.32;61.88']
 ************
 Start timestamp: 65.28, Stop timestamp: 67.48
 Narration: take spoon
@@ -88,8 +88,8 @@ Narration: put coffee into coffee filter
 ------
 ************
 Frame IDs in sequence: [3934, 4144, 4238, 4853, 4887]
-Objects in sequence: ['drawer', 'coffee filter', 'coffee machine', 'coffee bag', 'spoon', 'coffee']
-Verb-noun pairs in sequence: ['take;spoon;65.28;67.48', 'open;coffee;68.71000000000001;71.77']
+Objects in sequence: ['coffee bag', 'coffee', 'coffee filter', 'spoon', 'drawer', 'coffee machine']
+Verb-noun pairs in sequence: ['take spoon;65.28;67.48', 'open coffee;68.71000000000001;71.77']
 ************
 Start timestamp: 88.1, Stop timestamp: 89.33
 Narration: close coffee machine drawer
@@ -102,8 +102,8 @@ Narration: put spoon back in drawer
 ------
 ************
 Frame IDs in sequence: [5305, 5343, 5373, 5419, 5632, 5667]
-Objects in sequence: ['drawer', 'coffee machine drawer', 'coffee machine', 'coffee bag', 'spoon']
-Verb-noun pairs in sequence: ['close;drawer:coffee:machine;88.1;89.33', 'turn-on;machine:coffee;89.43;90.58']
+Objects in sequence: ['coffee bag', 'spoon', 'drawer', 'coffee machine drawer', 'coffee machine']
+Verb-noun pairs in sequence: ['close coffee machine drawer;88.1;89.33', 'turn on coffee machine;89.43;90.58']
 ************
 Start timestamp: 94.6, Stop timestamp: 95.6
 Narration: close drawer
@@ -125,8 +125,8 @@ Narration: take plate
 ------
 ************
 Frame IDs in sequence: [5900, 6058, 6280, 6488, 6668, 6725]
-Objects in sequence: ['cupboard', 'plate', 'coffee']
-Verb-noun pairs in sequence: ['wrap-up;coffee;97.18;102.19', 'take-out;butter:peanut;102.15;104.28999999999999', 'put-in;coffee;104.0;108.75', 'close;cupboard;108.64;110.74000000000001']
+Objects in sequence: ['plate', 'coffee', 'cupboard']
+Verb-noun pairs in sequence: ['wrap up coffee;97.18;102.19', 'take out peanut butter;102.15;104.28999999999999', 'put coffee in cupboard;104.0;108.75', 'close cupboard;108.64;110.74000000000001']
 ************
 Start timestamp: 112.22, Stop timestamp: 115.88
 Narration: put plate on counter
@@ -142,8 +142,8 @@ Narration: take fork
 ------
 ************
 Frame IDs in sequence: [7011, 7053, 7097, 7141, 7181, 7223]
-Objects in sequence: ['fork', 'counter', 'mug']
-Verb-noun pairs in sequence: ['take;mug;116.4;117.9', 'put-on;mug;118.0;119.25']
+Objects in sequence: ['counter', 'fork', 'mug']
+Verb-noun pairs in sequence: ['take mug;116.4;117.9', 'put mug on counter;118.0;119.25']
 ************
 Start timestamp: 121.52, Stop timestamp: 123.87
 Narration: put fork in drawer
@@ -156,8 +156,8 @@ Narration: place it on the plate
 ------
 ************
 Frame IDs in sequence: [7327, 7395, 7473, 7501, 7587, 7674]
-Objects in sequence: ['drawer', 'fork', 'spreading knife', 'plate']
-Verb-noun pairs in sequence: ['put-in;fork;121.52;123.87', 'take;knife:spreading;123.97;125.3']
+Objects in sequence: ['plate', 'fork', 'spreading knife', 'drawer']
+Verb-noun pairs in sequence: ['put fork in drawer;121.52;123.87', 'take spreading knife;123.97;125.3']
 ************
 Start timestamp: 128.92, Stop timestamp: 130.84
 Narration: take toast bread
@@ -170,8 +170,8 @@ Narration: take two slices from the toast bread
 ------
 ************
 Frame IDs in sequence: [7764, 7824, 8044, 8190, 8364, 8468]
-Objects in sequence: ['toast bread', 'spreading knife', 'bread package', 'plate']
-Verb-noun pairs in sequence: ['take;bread:toast;128.92;130.84', 'open;bread:toast;133.06;137.99']
+Objects in sequence: ['plate', 'bread package', 'spreading knife', 'toast bread']
+Verb-noun pairs in sequence: ['take toast bread;128.92;130.84', 'open toast bread;133.06;137.99']
 ************
 Start timestamp: 142.52, Stop timestamp: 144.27
 Narration: separate them
