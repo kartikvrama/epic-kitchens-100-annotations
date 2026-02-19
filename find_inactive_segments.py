@@ -4,15 +4,18 @@ Find temporal segments (>= min_duration seconds) where each object is NOT active
 in an active_objects JSON file. Takes the JSON file path as a command-line argument.
 """
 
-import argparse
+import os
 import json
 import csv
 import math
 from collections import defaultdict
-video_info = []
+import argparse
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 BUFFER_TIME = 5 # seconds
+
+video_info = []
+
 
 def generate_event_history(narrations, fps):
     """Sort narrations and frame ids by timestamp to generate a history of events."""
@@ -49,6 +52,7 @@ def inactive_segments(active_intervals, video_start, video_end, min_duration, fp
         gap_end = active_intervals[i + 1]["start_time"]
         prev_active_narrations = active_intervals[i]["narrations"]
         event_history = generate_event_history(prev_active_narrations, fps)
+        ## TODO: Is it ok to choose a frame after the gap start like this?
         frame_after_gap_start = math.ceil((BUFFER_TIME + gap_start) * fps)
         if gap_end - gap_start >= min_duration:
             gaps.append(
@@ -81,27 +85,21 @@ def main():
         description="Find segments (>= 12s) where each object is not active in an active_objects JSON file."
     )
     parser.add_argument(
-        "json_file",
+        "active_object_folder",
         type=str,
-        help="Path to active_objects JSON file (e.g. active_objects/active_objects_P01_01.json)",
-    )
-    parser.add_argument(
-        "--video-path",
-        type=str,
-        default=None,
-        help="Path to the video file (e.g. data/videos/P01_01.mp4)",
+        help="Path to active_objects folder (e.g. active_objects)",
     )
     parser.add_argument(
         "--min-duration",
         type=float,
-        default=12.0,
+        default=0,
         help="Minimum duration (seconds) for an inactive segment (default: 12)",
     )
     parser.add_argument(
-        "--output",
+        "--output_folder",
         "-o",
         type=str,
-        default=None,
+        default="inactive_segments",
         help="Optional path to write results as JSON",
     )
     args = parser.parse_args()
@@ -110,49 +108,49 @@ def main():
         video_info = list(csv.DictReader(f))
     video_info = {v["video_id"]: v for v in video_info}
 
-    video_id = args.json_file.split("/")[-1].split(".")[0].split("active_objects_")[1]
-    print(f"Video ID: {video_id}")
+    for active_objects_file in os.listdir(args.active_object_folder):
+        if not active_objects_file.endswith(".json"):
+            continue
+        video_id = active_objects_file.split("active_objects_")[1].split(".")[0]
+        print(f"Video ID: {video_id}")
+        print(f"Active objects file: {active_objects_file}")
+        with open(os.path.join(args.active_object_folder, active_objects_file)) as f:
+            segments = json.load(f)
+        video_start = segments[0]["start_time"]
+        video_end = segments[-1]["end_time"]
+        print(f"Video time range: {video_start:.2f}s - {video_end:.2f}s")
 
-    with open(args.json_file) as f:
-        segments = json.load(f)
+        # For each object, collect (start_time, end_time) of segments where it appears
+        object_active_segment_mapping = defaultdict(list)
+        for idx, seg in enumerate(segments):
+            for obj in seg.get("objects_in_sequence", []):
+                key = f"{obj['class_id']}/{obj['class_name']}/{obj['name']}"
+                object_active_segment_mapping[key].append(idx)
 
-    if not segments:
-        print("No segments in JSON file.")
-        return
+        # Compute inactive segments >= min_duration per object (active segments are non-overlapping by design)
+        result = {}
+        for obj_key in sorted(object_active_segment_mapping.keys()):
+            active = [
+                segments[idx] for idx in object_active_segment_mapping[obj_key]
+            ]
+            inactive = inactive_segments(active, video_start, video_end, args.min_duration, float(video_info[video_id]["fps"]))
+            if inactive:
+                result[obj_key] = inactive
 
-    video_start = segments[0]["start_time"]
-    video_end = segments[-1]["end_time"]
+        # Print summary
+        print(f"Video time range: {video_start:.2f}s - {video_end:.2f}s")
+        print(f"Inactive segments (duration >= {args.min_duration}s):\n")
+        for obj_key in sorted(result.keys()):
+            segments_list = result[obj_key]
+            print(f"  {obj_key}: {len(segments_list)} segment(s)")
+            for seg in segments_list:
+                print(f"    [{seg['start_time']:.2f}, {seg['end_time']:.2f}] ({seg['duration_sec']}s)")
+            print()
 
-    # For each object, collect (start_time, end_time) of segments where it appears
-    object_active_segment_mapping = defaultdict(list)
-    for idx, seg in enumerate(segments):
-        for obj in seg.get("objects_in_sequence", []):
-            object_active_segment_mapping[obj].append((idx, seg["segment_id"]))
-
-    # Compute inactive segments >= min_duration per object (active segments are non-overlapping by design)
-    result = {}
-    for obj in sorted(object_active_segment_mapping.keys()):
-        active = [
-            segments[idx[0]] for idx in object_active_segment_mapping[obj]
-        ]
-        inactive = inactive_segments(active, video_start, video_end, args.min_duration, float(video_info[video_id]["fps"]))
-        if inactive:
-            result[obj] = inactive
-
-    # Print summary
-    print(f"Video time range: {video_start:.2f}s - {video_end:.2f}s")
-    print(f"Inactive segments (duration >= {args.min_duration}s):\n")
-    for obj in sorted(result.keys()):
-        segments_list = result[obj]
-        print(f"  {obj}: {len(segments_list)} segment(s)")
-        for seg in segments_list:
-            print(f"    [{seg['start_time']:.2f}, {seg['end_time']:.2f}] ({seg['duration_sec']}s)")
-        print()
-
-    if args.output:
-        with open(args.output, "w") as f:
+        os.makedirs(args.output_folder, exist_ok=True)
+        with open(os.path.join(args.output_folder, f"inactive_segments_{video_id}.json"), "w") as f:
             json.dump(result, f, indent=2)
-        print(f"Wrote results to {args.output}")
+        print(f"Wrote results to {os.path.join(args.output_folder, f'inactive_segments_{video_id}.json')}")
 
 
 if __name__ == "__main__":
