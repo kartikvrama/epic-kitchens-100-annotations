@@ -10,7 +10,7 @@ Narration: put mug down
 ************
 Frame IDs in sequence: [217, 236, 256, 276, 296, 326]
 Objects in sequence: ['cup (mug)', 'maker:coffee (coffee machine)', 'rack:drying (drainer)']
-Verb-noun pairs in sequence: ['pick up mug from drainer;4.07;4.84', 'lift coffee machine base;5.79;6.16']
+Verb-noun pairs in sequence: ['pick up mug from drainer;4.07;4.84', 'lift coffee machine base;5.79;6.16', 'put mug down;6.19;6.7']
 ************
 Start timestamp: 6.79, Stop timestamp: 8.04
 Narration: turn on coffee machine
@@ -33,7 +33,7 @@ Narration: close coffee machine
 ************
 Frame IDs in sequence: [351, 396, 763, 855, 953, 980]
 Objects in sequence: ['cup (mug)', 'maker:coffee (coffee blender)', 'maker:coffee (coffee machine)']
-Verb-noun pairs in sequence: ['turn on coffee machine;6.79;8.04', 'pick up coffee capsule;7.78;15.39', 'adjust coffee blender;14.6;18.11', 'open coffee machine;15.0;17.9', 'put capsule in coffee machine;17.98;18.9']
+Verb-noun pairs in sequence: ['turn on coffee machine;6.79;8.04', 'adjust coffee blender;14.6;18.11', 'close coffee machine;18.86;19.76']
 ************
 Start timestamp: 19.7, Stop timestamp: 24.71
 Narration: open bag
@@ -59,7 +59,7 @@ Narration: open bin
 ************
 Frame IDs in sequence: [1251, 1276, 1363, 1451, 1538, 1626]
 Objects in sequence: ['bag (bag)', 'bin (bin/garbage can/recycling bin)', 'board:chopping (chopping board)', 'bread (bagel)']
-Verb-noun pairs in sequence: ['put down bag;24.81;25.7', 'remove bagel from bag;25.67;28.65', 'put down bagel;28.68;29.35', 'crumple bag;29.31;31.81']
+Verb-noun pairs in sequence: ['put down bag;24.81;25.7', 'put down bagel;28.68;29.35', 'open bin;32.16;32.86']
 ************
 Start timestamp: 32.49, Stop timestamp: 33.29
 Narration: throw bag
@@ -76,7 +76,7 @@ Narration: open fridge
 ************
 Frame IDs in sequence: [1680, 1717, 1892, 2050, 2208, 2236]
 Objects in sequence: ['bag (bag)', 'bin (bin/garbage can/recycling bin)', 'button (button)', 'coffee (coffee)', 'cup (mug)', 'fridge (fridge)', 'maker:coffee (coffee machine)']
-Verb-noun pairs in sequence: ['close bin;33.35;35.07', 'press button;37.58;38.08']
+Verb-noun pairs in sequence: ['close bin;33.35;35.07', 'press button;37.58;38.08', 'open fridge;43.97;44.87']
 ************
 Start timestamp: 44.96, Stop timestamp: 45.96
 Narration: open drawer of fridge
@@ -90,7 +90,7 @@ Narration: put down oranges
 ************
 Frame IDs in sequence: [2253, 2290, 2330, 2392, 2487, 2521]
 Objects in sequence: ['bag (orange mesh)', 'drawer (fridge drawer)', 'fridge (fridge)']
-Verb-noun pairs in sequence: ['open drawer of fridge;44.96;45.96', 'pick up oranges mesh;46.31;48.25']
+Verb-noun pairs in sequence: ['open drawer of fridge;44.96;45.96', 'pick up oranges mesh;46.31;48.25', 'put down oranges;48.25;49.63']
 ************
 Start timestamp: 49.2, Stop timestamp: 50.89
 Narration: pick up orange
@@ -107,7 +107,7 @@ Narration: pick up milk from fridges door
 ************
 Frame IDs in sequence: [2613, 2638, 2674, 2700, 2723, 2746]
 Objects in sequence: ['bag (orange mesh)', 'bottle (milk bottle)', 'drawer (fridge drawer)', 'fridge (fridge)', 'fridge (fridge door)']
-Verb-noun pairs in sequence: ['put down orange;50.78;51.62', 'close drawer;51.9;52.9']
+Verb-noun pairs in sequence: ['put down orange;50.78;51.62', 'close drawer;51.9;52.9', 'pick up milk from fridges door;53.24;53.75']
 ************
 Start timestamp: 53.92, Stop timestamp: 55.0
 Narration: close fridge
@@ -121,7 +121,7 @@ Narration: pour milk from bottle into mug
 ************
 Frame IDs in sequence: [2867, 2926, 2957, 2988, 3034, 3067]
 Objects in sequence: ['bottle (milk bottle)', 'coffee (coffee)', 'cup (mug)', 'maker:coffee (coffee machine)', 'milk (milk)']
-Verb-noun pairs in sequence: ['close fridge;53.92;55.0', 'open milk;56.98;57.76']
+Verb-noun pairs in sequence: ['close fridge;53.92;55.0', 'open milk;56.98;57.76', 'pour milk from bottle into mug;58.18;60.05']
 ************
 Start timestamp: 60.18, Stop timestamp: 61.93
 Narration: close milk bottle
@@ -138,7 +138,7 @@ Narration: close fridge
 ************
 Frame IDs in sequence: [3201, 3236, 3273, 3311, 3376, 3442]
 Objects in sequence: ['bottle (milk bottle)', 'coffee (coffee)', 'cup (mug)', 'fridge (fridge)', 'fridge (fridge door)', 'maker:coffee (coffee machine)']
-Verb-noun pairs in sequence: ['close milk bottle;60.18;61.93', 'open fridge;64.05;64.74', 'put milk in fridges door;64.67;65.74']
+Verb-noun pairs in sequence: ['close milk bottle;60.18;61.93', 'open fridge;64.05;64.74', 'close fridge;65.89;66.57']
 ************
 Start timestamp: 68.67, Stop timestamp: 69.25
 Narration: press button
@@ -152,7 +152,7 @@ Narration: stir coffee in mug using wooden stirrer
 ************
 Frame IDs in sequence: [3501, 3530, 3601, 3651, 3788, 3925]
 Objects in sequence: ['box (box)', 'bread (bagel)', 'coffee (coffee)', 'cup (mug)', 'knife (knife)', 'maker:coffee (coffee machine)', 'spoon (wooden stirrer)']
-Verb-noun pairs in sequence: ['press button;68.67;69.25', 'pick up wooden stirrer from box;69.73;71.09']
+Verb-noun pairs in sequence: ['press button;68.67;69.25', 'pick up wooden stirrer from box;69.73;71.09', 'stir coffee in mug using wooden stirrer;71.74;73.74']
 ************
 Start timestamp: 78.14, Stop timestamp: 79.24
 Narration: pick knife from stand
@@ -166,7 +166,7 @@ Narration: cut bagel using knife
 ************
 Frame IDs in sequence: [4138, 4251, 4334, 4417, 4567, 4598]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'knife (knife)']
-Verb-noun pairs in sequence: ['pick knife from stand;78.14;79.24', 'turn bagel to its side;82.59;83.26']
+Verb-noun pairs in sequence: ['pick knife from stand;78.14;79.24', 'turn bagel to its side;82.59;83.26', 'cut bagel using knife;83.4;90.53999999999999']
 ************
 Start timestamp: 90.53, Stop timestamp: 91.13
 Narration: turn bagel
@@ -186,7 +186,7 @@ Narration: pick up bagel half
 ************
 Frame IDs in sequence: [4626, 4663, 4701, 4726, 4751, 4801]
 Objects in sequence: ['bread (bagel)', 'toaster (toaster)']
-Verb-noun pairs in sequence: ['put down knife;91.48;91.86', 'pick up half of bagel;91.78999999999999;92.86', 'put bagel in toaster;92.22;92.97']
+Verb-noun pairs in sequence: ['put down knife;91.48;91.86', 'put bagel in toaster;92.22;92.97', 'pick up bagel half;92.97999999999999;93.52000000000001']
 ************
 Start timestamp: 93.62, Stop timestamp: 94.53999999999999
 Narration: put bagel half in toaster
@@ -206,7 +206,7 @@ Narration: pick up mug
 ************
 Frame IDs in sequence: [5180, 5205, 5299, 5394, 5433, 5463]
 Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'coffee (coffee)', 'cup (mug)', 'maker:coffee (coffee machine)', 'spoon (wooden stirrer)']
-Verb-noun pairs in sequence: ['put bagel half in toaster;93.62;94.53999999999999', 'turn on toaster;94.41;95.34', 'pick up knife;95.74000000000001;96.69', 'put knife into stand;96.36;100.69']
+Verb-noun pairs in sequence: ['put bagel half in toaster;93.62;94.53999999999999', 'pick up knife;95.74000000000001;96.69', 'pick up mug;103.21000000000001;104.75999999999999']
 ************
 Start timestamp: 104.50999999999999, Stop timestamp: 106.71000000000001
 Narration: stir mug coffee using wooden stirrer
@@ -226,7 +226,7 @@ Narration: pick up wooden stirrer from floor
 ************
 Frame IDs in sequence: [5536, 5574, 5613, 5712, 5746]
 Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'coffee (coffee)', 'cup (mug)', 'spoon (wooden stirrer)']
-Verb-noun pairs in sequence: ['open bin;107.65;108.28', 'throw wooden stirrer;107.99000000000001;108.68', 'wooden stirrer falls on floor;108.53;109.41']
+Verb-noun pairs in sequence: ['open bin;107.65;108.28', 'wooden stirrer falls on floor;108.53;109.41', 'pick up wooden stirrer from floor;109.96000000000001;111.81']
 ************
 Start timestamp: 111.91, Stop timestamp: 112.85
 Narration: throw wooden stirrer in bin
@@ -243,7 +243,7 @@ Narration: open fridge
 ************
 Frame IDs in sequence: [5876, 5905, 5946, 5973, 6001, 6037]
 Objects in sequence: ['fridge (fridge)', 'jar (jam jar)']
-Verb-noun pairs in sequence: ['throw wooden stirrer in bin;111.91;112.85', 'close bin;112.55;113.24000000000001', 'put down mug;114.6;115.45']
+Verb-noun pairs in sequence: ['throw wooden stirrer in bin;111.91;112.85', 'put down mug;114.6;115.45', 'open fridge;117.37;118.35']
 ************
 Start timestamp: 118.52000000000001, Stop timestamp: 119.87
 Narration: pick up jar of jam
@@ -257,7 +257,7 @@ Narration: open drawer
 ************
 Frame IDs in sequence: [6051, 6086, 6121, 6151, 6226, 6267]
 Objects in sequence: ['board:chopping (chopping board)', 'drawer (drawer)', 'fridge (fridge)', 'jar (jam jar)', 'knife (knife)']
-Verb-noun pairs in sequence: ['pick up jar of jam;118.52000000000001;119.87', 'close fridge;120.08;120.67']
+Verb-noun pairs in sequence: ['pick up jar of jam;118.52000000000001;119.87', 'close fridge;120.08;120.67', 'open drawer;120.93;121.78']
 ************
 Start timestamp: 122.17, Stop timestamp: 123.08
 Narration: pick up knife
@@ -280,7 +280,7 @@ Narration: open jam jar
 ************
 Frame IDs in sequence: [6317, 6359, 6382, 6405, 6451, 6484]
 Objects in sequence: ['board:chopping (chopping board)', 'coffee (coffee)', 'cup (mug)', 'jar (jam jar)', 'lid (lid)', 'spreads (jam)']
-Verb-noun pairs in sequence: ['pick up knife;122.17;123.08', 'close drawer;122.94;123.95', 'put down knife;124.08;125.79', 'move knife;124.53;125.05', 'put down jar of jam;124.84;125.74']
+Verb-noun pairs in sequence: ['pick up knife;122.17;123.08', 'put down knife;124.08;125.79', 'open jam jar;125.89;127.05']
 ************
 Start timestamp: 127.08, Stop timestamp: 127.6
 Narration: put down lid
@@ -294,7 +294,7 @@ Narration: move lid
 ************
 Frame IDs in sequence: [6571, 6600, 6626, 6985, 7034]
 Objects in sequence: ['bowl (bowl)', 'cup (mug)', 'cupboard (cupboard)', 'lid (lid)', 'plate (plate)']
-Verb-noun pairs in sequence: ['put down lid;127.08;127.6', 'pick up mug;128.91;129.86']
+Verb-noun pairs in sequence: ['put down lid;127.08;127.6', 'pick up mug;128.91;129.86', 'move lid;131.16;132.03']
 ************
 Start timestamp: 132.04, Stop timestamp: 132.81
 Narration: put down mug
@@ -308,7 +308,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [7134, 7176, 7355, 7392, 7805, 7839]
 Objects in sequence: ['cupboard (cupboard)', 'glass (glass)', 'jug (water filter)', 'plate (plate)', 'rack:drying (drainer)']
-Verb-noun pairs in sequence: ['put down mug;132.04;132.81', 'pick up plate from cupboard;139.51;141.01']
+Verb-noun pairs in sequence: ['put down mug;132.04;132.81', 'pick up plate from cupboard;139.51;141.01', 'close cupboard;142.69;143.71']
 ************
 Start timestamp: 146.54, Stop timestamp: 148.04
 Narration: move water filter
@@ -325,7 +325,7 @@ Narration: pick up water filter
 ************
 Frame IDs in sequence: [7902, 7951, 7976, 8001, 8040, 8075]
 Objects in sequence: ['glass (glass)', 'jug (water filter)', 'rack:drying (drainer)', 'water (water)']
-Verb-noun pairs in sequence: ['move water filter;146.54;148.04', 'put down plate;147.82999999999998;149.11', 'pick up glass from drainer;155.57999999999998;157.57']
+Verb-noun pairs in sequence: ['move water filter;146.54;148.04', 'pick up glass from drainer;155.57999999999998;157.57', 'pick up water filter;157.71;158.32999999999998']
 ************
 Start timestamp: 158.43, Stop timestamp: 160.69
 Narration: pour water from water filter into glass
@@ -342,7 +342,7 @@ Narration: put down glass
 ************
 Frame IDs in sequence: [8336, 8400, 9226, 9301, 10292, 10326]
 Objects in sequence: ['bread (bagel)', 'glass (glass)', 'jug (water filter)', 'toaster (toaster)']
-Verb-noun pairs in sequence: ['pour water from water filter into glass;158.43;160.69', 'put down water filter;160.77;161.51', 'drink water from glass;161.47;165.4']
+Verb-noun pairs in sequence: ['pour water from water filter into glass;158.43;160.69', 'put down water filter;160.77;161.51', 'put down glass;166.38;168.21']
 ************
 Start timestamp: 184.13, Stop timestamp: 186.81
 Narration: pick up knife
@@ -356,7 +356,7 @@ Narration: stab bagel using knife
 ************
 Frame IDs in sequence: [10376, 10401, 10501, 10551, 10701, 10751]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'jar (jam jar)', 'knife (knife)', 'spreads (jam)', 'toaster (toaster)']
-Verb-noun pairs in sequence: ['pick up knife;184.13;186.81', 'press button on toaster to release bagel;205.36;206.82999999999998']
+Verb-noun pairs in sequence: ['pick up knife;184.13;186.81', 'press button on toaster to release bagel;205.36;206.82999999999998', 'stab bagel using knife;207.11;208.3']
 ************
 Start timestamp: 208.12, Stop timestamp: 210.02
 Narration: put bagel down on chopping board
@@ -379,7 +379,7 @@ Narration: spread jam on bagel
 ************
 Frame IDs in sequence: [10776, 10851, 10901, 10926, 11151, 11259]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'jar (jam jar)', 'knife (knife)', 'spreads (jam)']
-Verb-noun pairs in sequence: ['scoop jam from jar using knife;209.71;211.63', 'spread jam on bagel using knife;211.56;213.75', 'scoop jam from jar using knife;213.66;215.25']
+Verb-noun pairs in sequence: ['scoop jam from jar using knife;209.71;211.63', 'scoop jam from jar using knife;213.66;215.25', 'spread jam on bagel;215.35;217.67000000000002']
 ************
 Start timestamp: 217.74, Stop timestamp: 219.2
 Narration: scoop jam from jar using knife
@@ -399,7 +399,7 @@ Narration: stab bagel using knife
 ************
 Frame IDs in sequence: [11401, 11442, 11540, 11576, 11663, 11751]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'jar (jam jar)', 'knife (knife)', 'spreads (jam)', 'toaster (toaster)']
-Verb-noun pairs in sequence: ['scoop jam from jar using knife;217.74;219.2', 'spread jam on bagel;218.97;225.92000000000002', 'pick up bagel from chopping board;222.53;226.56', 'put bagel in plate;226.31;226.95']
+Verb-noun pairs in sequence: ['scoop jam from jar using knife;217.74;219.2', 'pick up bagel from chopping board;222.53;226.56', 'stab bagel using knife;227.05;229.51']
 ************
 Start timestamp: 227.87, Stop timestamp: 228.82
 Narration: pick up bagel from toaster
@@ -422,7 +422,7 @@ Narration: spread jam on bagel using knife
 ************
 Frame IDs in sequence: [11834, 11876, 11926, 11951, 12051, 12301]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'jar (jam jar)', 'knife (knife)', 'spreads (jam)']
-Verb-noun pairs in sequence: ['scoop jam from jar using knife;230.52;231.82', 'spread jam on bagel using knife;231.59;234.56', 'scoop jam from bagel using knife;234.66;235.76']
+Verb-noun pairs in sequence: ['scoop jam from jar using knife;230.52;231.82', 'scoop jam from bagel using knife;234.66;235.76', 'spread jam on bagel using knife;235.86;238.09']
 ************
 Start timestamp: 238.17000000000002, Stop timestamp: 239.21
 Narration: scoop jam from bagel using knife
@@ -436,7 +436,7 @@ Narration: pick up bagel from chopping board
 ************
 Frame IDs in sequence: [12363, 12401, 12420, 12440, 12462, 12484]
 Objects in sequence: ['board:chopping (chopping board)', 'bread (bagel)', 'jar (jam jar)', 'knife (knife)', 'lid (lid)', 'plate (plate)', 'spreads (jam)']
-Verb-noun pairs in sequence: ['scoop jam from bagel using knife;238.17000000000002;239.21', 'spread jam on bagel using knife;239.57;247.23']
+Verb-noun pairs in sequence: ['scoop jam from bagel using knife;238.17000000000002;239.21', 'spread jam on bagel using knife;239.57;247.23', 'pick up bagel from chopping board;247.33;247.67']
 ************
 Start timestamp: 247.64, Stop timestamp: 248.89
 Narration: put bagel on plate
@@ -456,7 +456,7 @@ Narration: close jar
 ************
 Frame IDs in sequence: [12534, 12570, 12607, 12655, 12696, 12726]
 Objects in sequence: ['fridge (fridge)', 'jar (jam jar)', 'lid (lid)']
-Verb-noun pairs in sequence: ['put down knife;248.49;249.3', 'pick up lid;249.44;250.05', 'pick up jam jar;249.69;250.41']
+Verb-noun pairs in sequence: ['put down knife;248.49;249.3', 'pick up lid;249.44;250.05', 'close jar;250.39;251.5']
 ************
 Start timestamp: 251.63, Stop timestamp: 253.65
 Narration: open fridge
@@ -470,7 +470,7 @@ Narration: close fridge
 ************
 Frame IDs in sequence: [12809, 12846, 12871, 12901, 12944, 12970]
 Objects in sequence: ['bread (bagel)', 'coffee (coffee)', 'cup (coffee mug)', 'plate (plate)']
-Verb-noun pairs in sequence: ['open fridge;251.63;253.65', 'put jam jar in fridge;253.75;254.94']
+Verb-noun pairs in sequence: ['open fridge;251.63;253.65', 'put jam jar in fridge;253.75;254.94', 'close fridge;254.94;255.71']
 ************
 Start timestamp: 255.64, Stop timestamp: 257.34
 Narration: pick up coffee mug

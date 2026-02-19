@@ -13,7 +13,7 @@ Narration: turn off tap
 ************
 Frame IDs in sequence: [315, 365, 452, 504, 646, 681]
 Objects in sequence: ['kettle (kettle)', 'sink (sink)', 'tap (tap)', 'water (water)']
-Verb-noun pairs in sequence: ['take kettle;5.01;6.37', 'turn on tap;6.97;8.65', 'fill kettle;8.11;11.97']
+Verb-noun pairs in sequence: ['take kettle;5.01;6.37', 'turn on tap;6.97;8.65', 'turn off tap;10.29;11.84']
 ************
 Start timestamp: 11.94, Stop timestamp: 13.24
 Narration: close kettle
@@ -33,7 +33,7 @@ Narration: open cupboard
 ************
 Frame IDs in sequence: [745, 775, 886, 933, 1022, 1062]
 Objects in sequence: ['cupboard (cupboard)', 'juicer (lime squeezer)', 'kettle (kettle)']
-Verb-noun pairs in sequence: ['close kettle;11.94;13.24', 'put kettle;12.69;14.96', 'turn kettle on;14.68;15.81', 'take lime squeezer;15.63;17.38']
+Verb-noun pairs in sequence: ['close kettle;11.94;13.24', 'turn kettle on;14.68;15.81', 'open cupboard;16.77;17.94']
 ************
 Start timestamp: 18.04, Stop timestamp: 19.58
 Narration: put lime squeezer
@@ -50,7 +50,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [1112, 1144, 1261, 1363, 1463, 1501]
 Objects in sequence: ['cupboard (cupboard)', 'juicer (lime squeezer)']
-Verb-noun pairs in sequence: ['put lime squeezer;18.04;19.58', 'close cupboard;19.33;20.56', 'open cupboard;20.66;21.6']
+Verb-noun pairs in sequence: ['put lime squeezer;18.04;19.58', 'open cupboard;20.66;21.6', 'close cupboard;24.2;25.28']
 ************
 Start timestamp: 27.12, Stop timestamp: 28.11
 Narration: take v60
@@ -64,7 +64,7 @@ Narration: take mug
 ************
 Frame IDs in sequence: [1638, 1698, 1758, 1798, 1909]
 Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'cup (mug)', 'filter (filter)', 'maker:coffee (v60/pourover coffee maker)']
-Verb-noun pairs in sequence: ['take v60;27.12;28.11', 'put filter in bin;28.74;30.61']
+Verb-noun pairs in sequence: ['take v60;27.12;28.11', 'put filter in bin;28.74;30.61', 'take mug;31.56;32.76']
 ************
 Start timestamp: 33.18, Stop timestamp: 34.16
 Narration: turn tap on
@@ -78,7 +78,7 @@ Narration: wash mug
 ************
 Frame IDs in sequence: [1994, 2043, 2075, 2163, 2271, 2443]
 Objects in sequence: ['bottle (liquid bottle)', 'cup (mug)', 'sink (sink)', 'tap (tap)', 'water (water)']
-Verb-noun pairs in sequence: ['turn tap on;33.18;34.16', 'rinse mug;34.24;36.53']
+Verb-noun pairs in sequence: ['turn tap on;33.18;34.16', 'rinse mug;34.24;36.53', 'wash mug;36.63;42.88']
 ************
 Start timestamp: 41.74, Stop timestamp: 45.21
 Narration: continue washing mug
@@ -98,7 +98,7 @@ Narration: rinse jug
 ************
 Frame IDs in sequence: [2800, 2902, 3082, 3120, 3204, 3310]
 Objects in sequence: ['cup (mug)', 'jug (jug)', 'sink (sink)', 'tap (tap)', 'water (water)']
-Verb-noun pairs in sequence: ['rinse mug;46.16;48.96', 'continue rinsing mug;48.57;50.43', 'put mug;51.07;52.41']
+Verb-noun pairs in sequence: ['rinse mug;46.16;48.96', 'put mug;51.07;52.41', 'rinse jug;52.52;55.74']
 ************
 Start timestamp: 57.17, Stop timestamp: 58.1
 Narration: take mug
@@ -112,7 +112,7 @@ Narration: dry mug
 ************
 Frame IDs in sequence: [3436, 3472, 3507, 3595, 3683, 3795]
 Objects in sequence: ['cup (mug)', 'jug (jug)', 'towel (tea towel/dish towel)']
-Verb-noun pairs in sequence: ['take mug;57.17;58.1', 'empty mug;58.23;59.18']
+Verb-noun pairs in sequence: ['take mug;57.17;58.1', 'empty mug;58.23;59.18', 'dry mug;60.57;63.99']
 ************
 Start timestamp: 63.44, Stop timestamp: 66.87
 Narration: continue drying mug
@@ -129,7 +129,7 @@ Narration: put mug
 ************
 Frame IDs in sequence: [4026, 4191, 4267, 4373]
 Objects in sequence: ['cup (mug)', 'towel (tea towel/dish towel)']
-Verb-noun pairs in sequence: ['continue drying mug;66.89;68.67', 'hang tea towel;69.49;71.37']
+Verb-noun pairs in sequence: ['continue drying mug;66.89;68.67', 'hang tea towel;69.49;71.37', 'put mug;72.7;73.48']
 ************
 Start timestamp: 73.34, Stop timestamp: 74.1
 Narration: take v60
@@ -146,7 +146,7 @@ Narration: put bowl
 ************
 Frame IDs in sequence: [4462, 4503, 4561, 4611, 4639, 4671]
 Objects in sequence: ['bowl (bowl)', 'cup (mug)', 'maker:coffee (v60)', 'plate (plate)', 'rack:drying (drainer)']
-Verb-noun pairs in sequence: ['put v60;74.38;75.18', 'take bowl;75.73;77.0']
+Verb-noun pairs in sequence: ['put v60;74.38;75.18', 'take bowl;75.73;77.0', 'put bowl;77.1;78.01']
 ************
 Start timestamp: 78.11, Stop timestamp: 79.28999999999999
 Narration: take plate
@@ -163,7 +163,7 @@ Narration: take chopping board
 ************
 Frame IDs in sequence: [4699, 4733, 4838, 4873, 4917, 4961]
 Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)', 'plate (plate)', 'rack:drying (drainer)']
-Verb-noun pairs in sequence: ['take plate;78.11;79.28999999999999', 'open cupboard;79.08;80.12', 'put plate;80.22;81.33']
+Verb-noun pairs in sequence: ['take plate;78.11;79.28999999999999', 'put plate;80.22;81.33', 'take chopping board;81.37;83.37']
 ************
 Start timestamp: 83.56, Stop timestamp: 84.42
 Narration: close cupboard
@@ -180,7 +180,7 @@ Narration: open bag of coffee
 ************
 Frame IDs in sequence: [5025, 5055, 5226, 5268, 5318, 5398]
 Objects in sequence: ['bag (coffee bag)', 'board:chopping (chopping board)', 'cupboard (cupboard)', 'maker:coffee (coffee grinder)', 'microwave (microwave)']
-Verb-noun pairs in sequence: ['close cupboard;83.56;84.42', 'put chopping board;84.31;86.71000000000001', 'take coffee;87.08;87.89']
+Verb-noun pairs in sequence: ['close cupboard;83.56;84.42', 'take coffee;87.08;87.89', 'open bag of coffee;88.15;90.77']
 ************
 Start timestamp: 91.6, Stop timestamp: 95.19
 Narration: scoop coffee beans
@@ -200,7 +200,7 @@ Narration: put bag of coffee
 ************
 Frame IDs in sequence: [5556, 5648, 5841, 5897, 5959, 5999]
 Objects in sequence: ['bag (coffee bag)', 'coffee (coffee)', 'maker:coffee (coffee grinder)', 'spoon (spoon)']
-Verb-noun pairs in sequence: ['scoop coffee beans;91.6;95.19', 'put coffee beans into grinder;94.68;97.12', 'turn grinder on;97.22;98.41', 'close bag of coffee;98.05;99.08']
+Verb-noun pairs in sequence: ['scoop coffee beans;91.6;95.19', 'turn grinder on;97.22;98.41', 'put bag of coffee;99.24000000000001;100.12']
 ************
 Start timestamp: 100.53, Stop timestamp: 104.85
 Narration: move bottle of olive oil
@@ -214,7 +214,7 @@ Narration: take filters
 ************
 Frame IDs in sequence: [6124, 6254, 6385, 6437, 6549, 6605]
 Objects in sequence: ['bottle (olive oil bottle)', 'box (filter box)', 'filter (filter)', 'maker:coffee (coffee grinder)', 'spoon (spoon)']
-Verb-noun pairs in sequence: ['move bottle of olive oil;100.53;104.85', 'turn coffee grinder off;105.71000000000001;108.32']
+Verb-noun pairs in sequence: ['move bottle of olive oil;100.53;104.85', 'turn coffee grinder off;105.71000000000001;108.32', 'take filters;108.61;110.46000000000001']
 ************
 Start timestamp: 110.56, Stop timestamp: 113.37
 Narration: remove filter
@@ -231,7 +231,7 @@ Narration: put filter in v60
 ************
 Frame IDs in sequence: [6669, 6759, 7058, 7358, 7405, 7466]
 Objects in sequence: ['box (filter box)', 'cup (mug)', 'filter (filter)', 'maker:coffee (v60/pourover coffee maker)']
-Verb-noun pairs in sequence: ['remove filter;110.56;113.37', 'fold filter;113.07;120.26', 'open filter;122.33;124.17']
+Verb-noun pairs in sequence: ['remove filter;110.56;113.37', 'open filter;122.33;124.17', 'put filter in v60;124.38;125.08']
 ************
 Start timestamp: 125.41, Stop timestamp: 127.58
 Narration: put coffee grounds in v60
@@ -248,7 +248,7 @@ Narration: put kettle
 ************
 Frame IDs in sequence: [7546, 7623, 7979, 8024, 8272, 8343]
 Objects in sequence: ['cup (mug)', 'filter (filter)', 'jar (coffee jar)', 'jug (jug)', 'kettle (kettle)', 'maker:coffee (v60/pourover coffee maker)', 'water (water)']
-Verb-noun pairs in sequence: ['put coffee grounds in v60;125.41;127.58', 'take kettle;132.75;133.93', 'fill jug from kettle;133.68;137.51']
+Verb-noun pairs in sequence: ['put coffee grounds in v60;125.41;127.58', 'take kettle;132.75;133.93', 'put kettle;137.61;139.32']
 ************
 Start timestamp: 139.42000000000002, Stop timestamp: 141.35
 Narration: take cereal
@@ -262,7 +262,7 @@ Narration: pour cereal into bowl
 ************
 Frame IDs in sequence: [8387, 8465, 8521, 8661, 8801, 8973]
 Objects in sequence: ['bag (cereal bag)', 'bowl (bowl)', 'box (cereal box)', 'cereal (cereal)', 'cupboard (cupboard)']
-Verb-noun pairs in sequence: ['take cereal;139.42000000000002;141.35', 'open cereal;141.57;142.51']
+Verb-noun pairs in sequence: ['take cereal;139.42000000000002;141.35', 'open cereal;141.57;142.51', 'pour cereal into bowl;144.24;151.46']
 ************
 Start timestamp: 151.56, Stop timestamp: 153.71
 Narration: close cereal bag
@@ -276,7 +276,7 @@ Narration: put cereal box
 ************
 Frame IDs in sequence: [9123, 9182, 9270, 9304, 9369]
 Objects in sequence: ['bag (cereal bag)', 'bowl (bowl)', 'box (cereal box)', 'cereal (cereal)']
-Verb-noun pairs in sequence: ['close cereal bag;151.56;153.71', 'close cereal box;153.76;155.8']
+Verb-noun pairs in sequence: ['close cereal bag;151.56;153.71', 'close cereal box;153.76;155.8', 'put cereal box;155.9;157.36']
 ************
 Start timestamp: 157.09, Stop timestamp: 164.71
 Narration: pour water into v60
@@ -293,7 +293,7 @@ Narration: take spoon
 ************
 Frame IDs in sequence: [9612, 9823, 9975, 10003, 10061, 10121]
 Objects in sequence: ['bowl (bowl)', 'cereal (cereal)', 'coffee (coffee)', 'drawer (drawer)', 'filter (filter)', 'jug (jug)', 'maker:coffee (v60/pourover coffee maker)', 'spoon (spoon)', 'water (water)']
-Verb-noun pairs in sequence: ['continue pouring water into v60;159.39;164.84', 'open drawer;166.13;167.05']
+Verb-noun pairs in sequence: ['continue pouring water into v60;159.39;164.84', 'open drawer;166.13;167.05', 'take spoon;167.07999999999998;168.89']
 ************
 Start timestamp: 168.75, Stop timestamp: 170.67000000000002
 Narration: put spoon in cereal
@@ -313,7 +313,7 @@ Narration: put honey
 ************
 Frame IDs in sequence: [10370, 10451, 10555, 10714, 10873, 10993]
 Objects in sequence: ['bottle (honey bottle)', 'bowl (bowl)', 'cereal (cereal)', 'cupboard (cupboard)', 'spoon (spoon)']
-Verb-noun pairs in sequence: ['open cupboard;172.66;174.46', 'take honey;174.41;175.67000000000002', 'close cupboard;175.67000000000002;176.42000000000002']
+Verb-noun pairs in sequence: ['open cupboard;172.66;174.46', 'close cupboard;175.67000000000002;176.42000000000002', 'put honey;179.21;184.75']
 ************
 Start timestamp: 179.27, Stop timestamp: 185.26
 Narration: squeeze honey onto cereal
@@ -330,7 +330,7 @@ Narration: close cupboard
 ************
 Frame IDs in sequence: [11114, 11159, 11232, 11262, 11381, 11411]
 Objects in sequence: ['cupboard (cupboard)']
-Verb-noun pairs in sequence: ['close honey;185.09;186.3', 'open cupboard;186.81;188.29']
+Verb-noun pairs in sequence: ['close honey;185.09;186.3', 'open cupboard;186.81;188.29', 'close cupboard;189.59;190.31']
 ************
 Start timestamp: 191.68, Stop timestamp: 193.23
 Narration: open fridge
@@ -344,7 +344,7 @@ Narration: pour soy milk
 ************
 Frame IDs in sequence: [11516, 11564, 11633, 11820, 11920, 12019]
 Objects in sequence: ['bowl (bowl)', 'cereal (cereal)', 'fridge (fridge)', 'lid (lid)', 'milk (soy milk)', 'package (soy milk carton)', 'spoon (spoon)']
-Verb-noun pairs in sequence: ['open fridge;191.68;193.23', 'take soy milk;193.51;194.26']
+Verb-noun pairs in sequence: ['open fridge;191.68;193.23', 'take soy milk;193.51;194.26', 'pour soy milk;195.86;201.4']
 ************
 Start timestamp: 202.35, Stop timestamp: 204.11
 Narration: close fridge
@@ -358,7 +358,7 @@ Narration: continue squashing soy milk carton
 ************
 Frame IDs in sequence: [12180, 12205, 12416, 12483, 12563, 12626]
 Objects in sequence: ['bowl (bowl)', 'cereal (cereal)', 'fridge (fridge)', 'milk (spilled milk)', 'package (soy milk carton)', 'spoon (spoon)']
-Verb-noun pairs in sequence: ['close fridge;202.35;204.11', 'squash soy milk carton;206.32;208.61']
+Verb-noun pairs in sequence: ['close fridge;202.35;204.11', 'squash soy milk carton;206.32;208.61', 'continue squashing soy milk carton;209.03;211.07999999999998']
 ************
 Start timestamp: 210.99, Stop timestamp: 212.72
 Narration: screw lid onto soy milk
@@ -375,7 +375,7 @@ Narration: rinse sponge
 ************
 Frame IDs in sequence: [12811, 12862, 13058, 13128, 13262, 13314]
 Objects in sequence: ['bin (recycling bin)', 'bowl (washing bowl)', 'drawer (drawer)', 'fork (fork)', 'knife (knife)', 'package (soy milk carton)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
-Verb-noun pairs in sequence: ['put soy milk carton in recycling bin;213.12;214.82', 'take knife and fork and put into drawer;216.48;220.31']
+Verb-noun pairs in sequence: ['put soy milk carton in recycling bin;213.12;214.82', 'take knife and fork and put into drawer;216.48;220.31', 'rinse sponge;220.41;222.63']
 ************
 Start timestamp: 222.56, Stop timestamp: 230.04
 Narration: wipe surface
@@ -392,7 +392,7 @@ Narration: rinse sponge
 ************
 Frame IDs in sequence: [13697, 13815, 13913, 13987, 14115, 14165]
 Objects in sequence: ['bowl (bowl)', 'bowl (washing bowl)', 'cereal (cereal)', 'milk (spilled milk)', 'sink (sink)', 'sponge (sponge)', 'spoon (spoon)', 'tap (tap)', 'top (surface)', 'water (water)']
-Verb-noun pairs in sequence: ['continue wiping surface;227.57999999999998;231.15', 'rinse sponge;231.57999999999998;234.07']
+Verb-noun pairs in sequence: ['continue wiping surface;227.57999999999998;231.15', 'rinse sponge;231.57999999999998;234.07', 'rinse sponge;234.9;236.56']
 ************
 Start timestamp: 236.66, Stop timestamp: 243.72
 Narration: scrub surface
@@ -415,7 +415,7 @@ Narration: scrub surface
 ************
 Frame IDs in sequence: [14295, 14522, 14858, 14929, 15046, 15140]
 Objects in sequence: ['bowl (bowl)', 'cereal (cereal)', 'sponge (sponge)', 'spoon (spoon)', 'top (surface)']
-Verb-noun pairs in sequence: ['scrub surface;236.66;243.72', 'wipe surface;240.09;243.66', 'move mug;243.44;246.02', 'move cereal;246.62;249.63', 'move v60;246.8;249.71']
+Verb-noun pairs in sequence: ['scrub surface;236.66;243.72', 'move cereal;246.62;249.63', 'scrub surface;249.94;253.42']
 ************
 Start timestamp: 253.21, Stop timestamp: 253.9
 Narration: continue scrubbing surface
@@ -435,7 +435,7 @@ Narration: continue wiping surface
 ************
 Frame IDs in sequence: [15384, 15764, 16185, 16294, 16501, 16576]
 Objects in sequence: ['bowl (bowl)', 'cereal (cereal)', 'sponge (sponge)', 'spoon (spoon)', 'top (surface)']
-Verb-noun pairs in sequence: ['continue scrubbing surface;253.77;266.02', 'wipe surface;268.62;272.65', 'continue wiping surface;271.97;274.72']
+Verb-noun pairs in sequence: ['continue scrubbing surface;253.77;266.02', 'wipe surface;268.62;272.65', 'continue wiping surface;274.75;276.82']
 ************
 Start timestamp: 276.09000000000003, Stop timestamp: 279.75
 Narration: continue wiping surface

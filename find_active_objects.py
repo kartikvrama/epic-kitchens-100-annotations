@@ -20,8 +20,10 @@ def hhmmss_to_seconds(hhmmss):
 
 def save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir="./"):
     visor_annotations_file = f"visor_annotations/train/{video_id}.json"
+    split = "train"
     if not os.path.exists(visor_annotations_file):
         visor_annotations_file = f"visor_annotations/val/{video_id}.json"
+        split = "val"
         if not os.path.exists(visor_annotations_file):
             # print(f"Visor annotations not found for {video_id}")
             return
@@ -42,7 +44,10 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
     max_subsequence_visor = max([int(frame["image"]["subsequence"].split("_")[-1]) for frame in visor_annotations])
 
     fps = float([v for v in video_info if v["video_id"] == video_id][0]["fps"])
-    narrations_low_level_filtered = narration_low_level_df[narration_low_level_df["video_id"] == video_id]
+    # Use only narrations from the same split as visor (train/val) so sequence count matches visor
+    narrations_low_level_filtered = narration_low_level_df[
+        (narration_low_level_df["video_id"] == video_id) & (narration_low_level_df["_source"] == split)
+    ]
     ## Sort by start_timestamp
     narrations_low_level_filtered = narrations_low_level_filtered.sort_values(by="start_timestamp")
 
@@ -85,6 +90,8 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                 non_overlapping_count += 1
                 sequence_end_time = stop_timestamp
                 sequence_end_frame = stop_frame
+                # Append current (non-overlapping) action before completing sequence so stored narrations has 3 entries
+                narrations.append(narration)
 
                 if non_overlapping_count > 3:
                     # Sequence complete: [sequence_start_time, sequence_end_time] with 3 actions
@@ -137,8 +144,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                     non_overlapping_count = 1
                     sequence_index += 1
                 prev_stop = stop_timestamp
-
-            narrations.append(narration)
+            # Only non-overlapping actions are appended above (inside the if block)
 
     if len(sequences) == 0:
         print(f"No active objects found for {video_id}")
@@ -164,6 +170,12 @@ def main():
     narration_low_level = []
     for file in NARRATION_LOW_LEVEL_FILES:
         narration_file = pd.read_csv(file)
+        if "train" in file:
+            narration_file["_source"] = "train"
+        elif "validation" in file:
+            narration_file["_source"] = "val"
+        else:
+            narration_file["_source"] = "test"
         narration_low_level.append(narration_file)
     narration_low_level_df = pd.concat(narration_low_level)
 
