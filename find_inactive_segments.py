@@ -6,32 +6,73 @@ in an active_objects JSON file. Takes the JSON file path as a command-line argum
 
 import argparse
 import json
+import csv
+import math
 from collections import defaultdict
+video_info = []
+
+VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
+BUFFER_TIME = 5 # seconds
+
+def generate_event_history(narrations, fps):
+    """Sort narrations and frame ids by timestamp to generate a history of events."""
+    event_history = []
+    for narration in narrations:
+        narration, start_time, end_time = narration.split(";")
+        event_history.append(f"narration:{narration}")
+        start_time = float(start_time)
+        frame_after_start = math.ceil(start_time * fps)
+        event_history.append(f"frame_id:{frame_after_start}")
+        end_time = float(end_time)
+        frame_before_end = math.floor(end_time * fps)
+        event_history.append(f"frame_id:{frame_before_end}")
+    return event_history
 
 
-def inactive_segments(active_intervals, video_start, video_end, min_duration):
+def inactive_segments(active_intervals, video_start, video_end, min_duration, fps):
     """
     Given active intervals (non-overlapping by design) within [video_start, video_end],
     return list of (start, end) where the object is inactive for at least min_duration seconds.
     """
+    global video_info
     if not active_intervals:
         gap_start, gap_end = video_start, video_end
         if gap_end - gap_start >= min_duration:
             return [(gap_start, gap_end)]
         return []
 
-    active_intervals = sorted(active_intervals, key=lambda x: x[0])
+    active_intervals = sorted(active_intervals, key=lambda x: x["start_time"])
     gaps = []
     # Gaps between active intervals (exclude time before first active)
     for i in range(len(active_intervals) - 1):
-        gap_start = active_intervals[i][1]
-        gap_end = active_intervals[i + 1][0]
+        gap_start = active_intervals[i]["end_time"]
+        gap_end = active_intervals[i + 1]["start_time"]
+        prev_active_narrations = active_intervals[i]["narrations"]
+        event_history = generate_event_history(prev_active_narrations, fps)
+        frame_after_gap_start = math.ceil((BUFFER_TIME + gap_start) * fps)
         if gap_end - gap_start >= min_duration:
-            gaps.append((gap_start, gap_end))
+            gaps.append(
+                {
+                    "start_time": gap_start,
+                    "end_time": gap_end,
+                    "duration_sec": round(gap_end - gap_start, 2),
+                    "event_history": event_history,
+                    "frame_after_gap_start": frame_after_gap_start,
+                }
+            )
     # Gap after last active
-    if video_end - active_intervals[-1][1] >= min_duration:
-        gaps.append((active_intervals[-1][1], video_end))
-
+    if video_end - active_intervals[-1]["end_time"] >= min_duration:
+        event_history = generate_event_history(active_intervals[-1]["narrations"], fps)
+        frame_after_gap_start = math.ceil(active_intervals[-1]["end_time"] * fps)
+        gaps.append(
+            {
+                "start_time": active_intervals[-1]["end_time"],
+                "end_time": video_end,
+                "duration_sec": round(video_end - active_intervals[-1]["end_time"], 2),
+                "event_history": event_history,
+                "frame_after_gap_start": frame_after_gap_start,
+            }
+        )
     return gaps
 
 
@@ -43,6 +84,12 @@ def main():
         "json_file",
         type=str,
         help="Path to active_objects JSON file (e.g. active_objects/active_objects_P01_01.json)",
+    )
+    parser.add_argument(
+        "--video-path",
+        type=str,
+        default=None,
+        help="Path to the video file (e.g. data/videos/P01_01.mp4)",
     )
     parser.add_argument(
         "--min-duration",
@@ -59,6 +106,13 @@ def main():
     )
     args = parser.parse_args()
 
+    with open(VIDEO_INFO_FILE) as f:
+        video_info = list(csv.DictReader(f))
+    video_info = {v["video_id"]: v for v in video_info}
+
+    video_id = args.json_file.split("/")[-1].split(".")[0].split("active_objects_")[1]
+    print(f"Video ID: {video_id}")
+
     with open(args.json_file) as f:
         segments = json.load(f)
 
@@ -70,19 +124,20 @@ def main():
     video_end = segments[-1]["end_time"]
 
     # For each object, collect (start_time, end_time) of segments where it appears
-    object_active_intervals = defaultdict(list)
-    for seg in segments:
-        start, end = seg["start_time"], seg["end_time"]
+    object_active_segment_mapping = defaultdict(list)
+    for idx, seg in enumerate(segments):
         for obj in seg.get("objects_in_sequence", []):
-            object_active_intervals[obj].append((start, end))
+            object_active_segment_mapping[obj].append((idx, seg["segment_id"]))
 
     # Compute inactive segments >= min_duration per object (active segments are non-overlapping by design)
     result = {}
-    for obj in sorted(object_active_intervals.keys()):
-        active = object_active_intervals[obj]
-        inactive = inactive_segments(active, video_start, video_end, args.min_duration)
+    for obj in sorted(object_active_segment_mapping.keys()):
+        active = [
+            segments[idx[0]] for idx in object_active_segment_mapping[obj]
+        ]
+        inactive = inactive_segments(active, video_start, video_end, args.min_duration, float(video_info[video_id]["fps"]))
         if inactive:
-            result[obj] = [{"start_time": s, "end_time": e, "duration_sec": round(e - s, 2)} for s, e in inactive]
+            result[obj] = inactive
 
     # Print summary
     print(f"Video time range: {video_start:.2f}s - {video_end:.2f}s")
