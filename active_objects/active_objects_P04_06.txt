@@ -9,7 +9,7 @@ Narration: close bag
 ------
 ************
 Frame IDs in sequence: [66, 110, 136, 278, 421, 590]
-Objects in sequence: ['patty', 'bag']
+Objects in sequence: ['bag (bag)', 'burger (patty)']
 Verb-noun pairs in sequence: ['pick up patties;0.94;1.96', 'put in bag;1.99;2.66']
 ************
 Start timestamp: 11.91, Stop timestamp: 13.38
@@ -23,7 +23,7 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [740, 782, 872, 902, 1042]
-Objects in sequence: ['drawer', 'freezer']
+Objects in sequence: ['drawer (drawer)', 'freezer (freezer)']
 Verb-noun pairs in sequence: ['open freezer;11.91;13.38', 'put in freezer;13.93;15.54']
 ************
 Start timestamp: 18.05, Stop timestamp: 20.59
@@ -40,7 +40,7 @@ Narration: open freezer
 ------
 ************
 Frame IDs in sequence: [1116, 1214, 1555, 1896, 2381, 2842]
-Objects in sequence: ['drawer', 'tray', 'tamagoyaki', 'bag']
+Objects in sequence: ['bag (bag)', 'drawer (drawer)', 'omelette (tamagoyaki)', 'tray (tray)']
 Verb-noun pairs in sequence: ['pick up bag;18.05;20.59', 'put tamagoyaki in bag;25.13;46.08', 'close bag;46.0;48.49']
 ************
 Start timestamp: 50.13, Stop timestamp: 53.23
@@ -54,7 +54,7 @@ Narration: pick up trays
 ------
 ************
 Frame IDs in sequence: [3040, 3097, 3154, 3243, 3296, 3334]
-Objects in sequence: ['drawer', 'plate', 'freezer']
+Objects in sequence: ['drawer (drawer)', 'freezer (freezer)', 'plate (plate)']
 Verb-noun pairs in sequence: ['put in freezer;50.13;53.23', 'close freezer;53.56;54.62']
 ************
 Start timestamp: 56.01, Stop timestamp: 57.59
@@ -68,7 +68,7 @@ Narration: measure spice
 ------
 ************
 Frame IDs in sequence: [3394, 3424, 3560, 3671, 4034, 4126]
-Objects in sequence: ['tap', 'hob/cooktop/stovetop', 'food', 'sink', 'spatula', 'pan', 'spice bottle', 'plate', 'spoon', 'spice']
+Objects in sequence: ['bottle (spice bottle)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'plate (plate)', 'sink (sink)', 'spatula (spatula)', 'spice (spice)', 'spoon (spoon)', 'tap (tap)']
 Verb-noun pairs in sequence: ['put in sink;56.01;57.59', 'stir pan;57.9;62.15']
 ************
 Start timestamp: 69.25, Stop timestamp: 71.51
@@ -91,7 +91,7 @@ Narration: open spinach
 ------
 ************
 Frame IDs in sequence: [4496, 4648, 5557, 5677, 6157, 6190]
-Objects in sequence: ['food', 'spatula', 'pan', 'fridge', 'spinach', 'hob/cooktop/stovetop', 'spinach bag']
+Objects in sequence: ['bag (spinach bag)', 'food (food)', 'fridge (fridge)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['stir pan;73.35;78.75', 'stir pan;76.11;78.83', 'open fridge;76.57;77.21000000000001', 'pick up spinach;91.53;96.08']
 ************
 Start timestamp: 104.18, Stop timestamp: 114.88
@@ -105,7 +105,7 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [6393, 6674, 7208, 7358, 7916, 7958]
-Objects in sequence: ['cupboard', 'spatula', 'pan', 'spinach', 'hob/cooktop/stovetop', 'spinach bag']
+Objects in sequence: ['bag (spinach bag)', 'cupboard (cupboard)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['put spinach in pan;104.18;114.88', 'stir pan;118.16;124.34']
 ************
 Start timestamp: 133.28, Stop timestamp: 134.94
@@ -122,7 +122,7 @@ Narration: roll bread
 ------
 ************
 Frame IDs in sequence: [8010, 8084, 8154, 8229, 8934, 9087]
-Objects in sequence: ['rolling pin', 'pan', 'bread', 'chopping board', 'plate', 'hob/cooktop/stovetop']
+Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'pin:rolling (rolling pin)', 'plate (plate)']
 Verb-noun pairs in sequence: ['pick up pan;133.28;134.94', 'put down pan;135.48;138.12', 'turn on hob;136.72;139.32999999999998']
 ************
 Start timestamp: 153.36, Stop timestamp: 155.93
@@ -139,7 +139,7 @@ Narration: put away box
 ------
 ************
 Frame IDs in sequence: [9233, 9310, 9551, 9641, 9851]
-Objects in sequence: ['box', 'flour', 'rolling pin', 'dough', 'chopping board']
+Objects in sequence: ['board:chopping (chopping board)', 'box (box)', 'dough (dough)', 'flour (flour)', 'pin:rolling (rolling pin)']
 Verb-noun pairs in sequence: ['move flour;153.36;155.93', 'put in box;155.91;157.35', 'close box;158.91;161.25']
 ************
 Start timestamp: 165.96, Stop timestamp: 184.56
@@ -156,7 +156,7 @@ Narration: roll bread
 ------
 ************
 Frame IDs in sequence: [10271, 10760, 11826, 11858, 12523, 12782]
-Objects in sequence: ['rolling pin', 'dough', 'pan', 'chopping board', 'hob/cooktop/stovetop']
+Objects in sequence: ['board:chopping (chopping board)', 'dough (dough)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'pin:rolling (rolling pin)']
 Verb-noun pairs in sequence: ['roll bread;165.96;184.56', 'roll bread;177.59;192.94', 'put bread in pan;196.76;198.01']
 ************
 Start timestamp: 213.0, Stop timestamp: 215.77
@@ -173,7 +173,7 @@ Narration: squeeze dough
 ------
 ************
 Frame IDs in sequence: [13049, 13274, 13995, 14060, 14329, 14475]
-Objects in sequence: ['rolling pin', 'dough', 'chopping board']
+Objects in sequence: ['board:chopping (chopping board)', 'dough (dough)', 'pin:rolling (rolling pin)']
 Verb-noun pairs in sequence: ['turn bread;216.13;223.2', 'pick up;232.57;235.41']
 ************
 Start timestamp: 245.63, Stop timestamp: 248.79
@@ -187,7 +187,7 @@ Narration: pick up flour
 ------
 ************
 Frame IDs in sequence: [15001, 15039, 15071, 15123]
-Objects in sequence: ['box']
+Objects in sequence: ['box (box)']
 Verb-noun pairs in sequence: ['pick up box;245.63;248.79', 'open box;249.72;250.72']
 ************
 Start timestamp: 252.4, Stop timestamp: 253.52
@@ -201,7 +201,7 @@ Narration: close box
 ------
 ************
 Frame IDs in sequence: [15166, 15234, 15302, 15343, 15404, 15436]
-Objects in sequence: ['box', 'rolling pin', 'dough', 'chopping board']
+Objects in sequence: ['board:chopping (chopping board)', 'box (box)', 'dough (dough)', 'pin:rolling (rolling pin)']
 Verb-noun pairs in sequence: ['sprinkle flour;252.4;253.52', 'sprinkle flour;254.84;256.1']
 ************
 Start timestamp: 258.33, Stop timestamp: 260.33
@@ -215,7 +215,7 @@ Narration: put dough in pan
 ------
 ************
 Frame IDs in sequence: [15538, 15588, 16067, 16703, 17084, 17111]
-Objects in sequence: ['box', 'rolling pin', 'cupboard', 'dough', 'pan', 'chopping board', 'hob/cooktop/stovetop']
+Objects in sequence: ['board:chopping (chopping board)', 'box (box)', 'cupboard (cupboard)', 'dough (dough)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'pin:rolling (rolling pin)']
 Verb-noun pairs in sequence: ['put away box;258.33;260.33', 'roll dough;262.68;283.43']
 ************
 Start timestamp: 286.88, Stop timestamp: 301.63
@@ -229,7 +229,7 @@ Narration: put in pan
 ------
 ************
 Frame IDs in sequence: [17448, 17699, 17950, 18130, 18179, 18235]
-Objects in sequence: ['spatula', 'pan', 'dough', 'spinach', 'hob/cooktop/stovetop', 'spinach bag']
+Objects in sequence: ['bag (spinach bag)', 'dough (dough)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['stir spinach;286.88;301.63', 'pick up spinach;301.73;303.48']
 ************
 Start timestamp: 308.65, Stop timestamp: 309.51
@@ -243,7 +243,7 @@ Narration: put in fridge
 ------
 ************
 Frame IDs in sequence: [18536, 18567, 18680, 18710, 18827, 18860]
-Objects in sequence: ['hob', 'spatula', 'pan', 'fridge', 'spinach', 'spinach bag']
+Objects in sequence: ['bag (spinach bag)', 'fridge (fridge)', 'hob (hob)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['put spinach in pan;308.65;309.51', 'pick up spinach;311.05;312.08']
 ************
 Start timestamp: 315.9, Stop timestamp: 325.71
@@ -257,7 +257,7 @@ Narration: put in cupboard
 ------
 ************
 Frame IDs in sequence: [19118, 19400, 20031, 20182, 20250]
-Objects in sequence: ['tap', 'sink', 'water', 'cupboard', 'shreddies', 'potato']
+Objects in sequence: ['cereal (shreddies)', 'cupboard (cupboard)', 'potato (potato)', 'sink (sink)', 'tap (tap)', 'water (water)']
 Verb-noun pairs in sequence: ['wash hands;315.9;325.71', 'pick up potatoes;333.52;334.33']
 ************
 Start timestamp: 338.40999999999997, Stop timestamp: 339.22
@@ -271,7 +271,7 @@ Narration: pick up bread
 ------
 ************
 Frame IDs in sequence: [20310, 20392, 20442, 20539, 20637, 20708]
-Objects in sequence: ['shreddies', 'cupboard', 'pan', 'bread', 'spinach', 'hob/cooktop/stovetop']
+Objects in sequence: ['bread (bread)', 'cereal (shreddies)', 'cupboard (cupboard)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['pick up shreddies;338.40999999999997;339.22', 'put in cupboard;339.57;341.32']
 ************
 Start timestamp: 348.94, Stop timestamp: 352.92
@@ -285,7 +285,7 @@ Narration: put kitchen roll in bin
 ------
 ************
 Frame IDs in sequence: [20992, 21119, 21548, 21713, 21912, 21999]
-Objects in sequence: ['paneer', 'bin/garbage can/recycling bin', 'cup', 'spatula', 'pan', 'creme fraiche', 'kitchen roll', 'spinach', 'hob/cooktop/stovetop']
+Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'cheese (paneer)', 'cream (creme fraiche)', 'cup (cup)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)', 'towel:kitchen (kitchen roll)']
 Verb-noun pairs in sequence: ['put creme fraiche in pan;348.94;352.92', 'put paneer in pan;357.0;363.41']
 ************
 Start timestamp: 369.28, Stop timestamp: 370.05
@@ -299,7 +299,7 @@ Narration: dry plate
 ------
 ************
 Frame IDs in sequence: [22175, 22244, 22296, 22358, 22420, 22482]
-Objects in sequence: ['tea towel', 'tap', 'sink', 'water', 'plate']
+Objects in sequence: ['plate (plate)', 'sink (sink)', 'tap (tap)', 'towel (tea towel)', 'water (water)']
 Verb-noun pairs in sequence: ['pick up plate;369.28;370.05', 'rinse plate;370.15;372.12']
 ************
 Start timestamp: 377.98, Stop timestamp: 378.89
@@ -313,7 +313,7 @@ Narration: put creme fraiche in pan
 ------
 ************
 Frame IDs in sequence: [22701, 23127, 23349, 23674, 23820]
-Objects in sequence: ['paneer', 'cup', 'food', 'spatula', 'pan', 'creme fraiche', 'spinach', 'hob/cooktop/stovetop']
+Objects in sequence: ['cheese (paneer)', 'cream (creme fraiche)', 'cup (cup)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['pick up clip;377.98;378.89', 'stir pan;384.46;390.05']
 ************
 Start timestamp: 407.83, Stop timestamp: 425.33
@@ -327,7 +327,7 @@ Narration: stir pan
 ------
 ************
 Frame IDs in sequence: [24776, 25196, 25834, 26043, 26306, 26403]
-Objects in sequence: ['food', 'spatula', 'pan', 'bread', 'spinach', 'hob/cooktop/stovetop']
+Objects in sequence: ['bread (bread)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['stir pan;407.83;425.33', 'flip bread;427.93;435.68']
 ************
 Start timestamp: 442.13, Stop timestamp: 454.88
@@ -341,7 +341,7 @@ Narration: pick up knife
 ------
 ************
 Frame IDs in sequence: [26658, 27166, 27760, 27860, 28276, 28320]
-Objects in sequence: ['saag paneer', 'food', 'spatula', 'pan', 'bread', 'chopping board', 'spinach', 'hob/cooktop/stovetop', 'knife', 'potato curry']
+Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'knife (knife)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['stir pan;442.13;454.88', 'turn up hob;461.98;465.48']
 ************
 Start timestamp: 472.82, Stop timestamp: 490.43
@@ -355,7 +355,7 @@ Narration: sharpen knife
 ------
 ************
 Frame IDs in sequence: [28680, 29130, 30046, 30152, 30316, 30508]
-Objects in sequence: ['tap', 'sink', 'water', 'sponge', 'sharpener', 'knife']
+Objects in sequence: ['knife (knife)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)', 'whetstone (sharpener)']
 Verb-noun pairs in sequence: ['wash knife;472.82;490.43', 'pick up sharpener;500.13;503.04']
 ************
 Start timestamp: 511.51, Stop timestamp: 536.76
@@ -369,7 +369,7 @@ Narration: test sharpness of knife
 ------
 ************
 Frame IDs in sequence: [31127, 31681, 32278, 32362, 32591, 33123]
-Objects in sequence: ['paper', 'sharpener', 'knife']
+Objects in sequence: ['knife (knife)', 'paper (paper)', 'whetstone (sharpener)']
 Verb-noun pairs in sequence: ['sharpen knife;511.51;536.76', 'put away sharpener;537.24;539.98']
 ************
 Start timestamp: 555.13, Stop timestamp: 557.23
@@ -383,7 +383,7 @@ Narration: pick up spinach
 ------
 ************
 Frame IDs in sequence: [33351, 33405, 33695, 33884, 34158, 34235]
-Objects in sequence: ['saag paneer', 'food', 'spatula', 'sieve', 'pan', 'bread', 'spinach', 'hob/cooktop/stovetop', 'knife', 'potato curry']
+Objects in sequence: ['bread (bread)', 'colander (sieve)', 'curry (potato curry)', 'curry (saag paneer)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'knife (knife)', 'pan (pan)', 'spatula (spatula)', 'spinach (spinach)']
 Verb-noun pairs in sequence: ['put away knife;555.13;557.23', 'stir pan;558.12;568.0']
 ************
 Start timestamp: 571.44, Stop timestamp: 578.99
@@ -400,7 +400,7 @@ Narration: pick up spoon
 ------
 ************
 Frame IDs in sequence: [34475, 34626, 35648, 35679, 35872]
-Objects in sequence: ['drawer', 'saag paneer', 'spatula', 'pan', 'bread', 'spoon', 'potato curry']
+Objects in sequence: ['bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'drawer (drawer)', 'pan (pan)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['flip bread;572.32;579.24', 'open cupboard;593.63;595.36']
 ************
 Start timestamp: 600.38, Stop timestamp: 617.85
@@ -417,7 +417,7 @@ Narration: rearrange bread
 ------
 ************
 Frame IDs in sequence: [36251, 36733, 37538, 37748, 38019, 38114]
-Objects in sequence: ['saag paneer', 'hob/cooktop/stovetop', 'spatula', 'pan', 'bread', 'plate', 'spoon', 'potato curry']
+Objects in sequence: ['bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'plate (plate)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['serve potato curry;600.38;617.85', 'flip bread;624.21;630.34', 'flip bread;629.52;632.21']
 ************
 Start timestamp: 638.2, Stop timestamp: 641.08
@@ -434,7 +434,7 @@ Narration: serve saag paneer
 ------
 ************
 Frame IDs in sequence: [38330, 38409, 38707, 38924, 39535, 40023]
-Objects in sequence: ['saag paneer', 'hob/cooktop/stovetop', 'spatula', 'pan', 'bread', 'plate', 'spoon', 'potato curry']
+Objects in sequence: ['bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'plate (plate)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['turn off hob;638.2;641.08', 'turn off hob;640.75;642.84', 'stir pan;642.72;650.18']
 ************
 Start timestamp: 671.96, Stop timestamp: 689.88
@@ -448,7 +448,7 @@ Narration: clip bread
 ------
 ************
 Frame IDs in sequence: [40692, 41142, 41580, 41623, 41780, 41953]
-Objects in sequence: ['saag paneer', 'hob/cooktop/stovetop', 'spatula', 'pan', 'bread', 'plate', 'spoon', 'potato curry']
+Objects in sequence: ['bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'plate (plate)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['serve saag paneer;671.96;689.88', 'clip bread;692.59;694.13']
 ************
 Start timestamp: 707.04, Stop timestamp: 708.04
@@ -462,7 +462,7 @@ Narration: turn off pan
 ------
 ************
 Frame IDs in sequence: [42433, 42463, 42505, 42553, 42714, 42767]
-Objects in sequence: ['saag paneer', 'butter container', 'hob', 'butter', 'fridge', 'pan', 'spatula', 'bread', 'spoon', 'potato curry']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'container (butter container)', 'curry (potato curry)', 'curry (saag paneer)', 'fridge (fridge)', 'hob (hob)', 'pan (pan)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['open fridge;707.04;708.04', 'pick up butter;708.05;709.39']
 ************
 Start timestamp: 714.37, Stop timestamp: 715.33
@@ -491,7 +491,7 @@ Narration: spread butter
 ------
 ************
 Frame IDs in sequence: [42884, 42914, 43301, 43958, 44667, 45091]
-Objects in sequence: ['spoon', 'drawer', 'saag paneer', 'butter container', 'butter', 'food', 'spatula', 'pan', 'bread', 'hob/cooktop/stovetop', 'knife', 'potato curry']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'container (butter container)', 'curry (potato curry)', 'curry (saag paneer)', 'drawer (drawer)', 'food (food)', 'hob (hob/cooktop/stovetop)', 'knife (knife)', 'pan (pan)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['open drawer;714.37;715.33', 'pick up knife;715.24;717.44', 'spread butter on bread;718.38;739.72', 'spread butter on bread;720.0;731.58', 'clip bread;731.85;734.58', 'spread butter;734.39;739.57', 'put bread;738.42;741.76']
 ************
 Start timestamp: 763.74, Stop timestamp: 765.66
@@ -505,7 +505,7 @@ Narration: put bread on plate
 ------
 ************
 Frame IDs in sequence: [45857, 45891, 46280, 46379, 46503, 46620]
-Objects in sequence: ['spoon', 'saag paneer', 'spatula', 'pan', 'bread', 'plate', 'hob/cooktop/stovetop', 'potato curry']
+Objects in sequence: ['bread (bread)', 'curry (potato curry)', 'curry (saag paneer)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'plate (plate)', 'spatula (spatula)', 'spoon (spoon)']
 Verb-noun pairs in sequence: ['turn off extractor plan;763.74;765.66', 'put bread on plate;770.41;773.89']
 ************
 Start timestamp: 778.11, Stop timestamp: 779.92

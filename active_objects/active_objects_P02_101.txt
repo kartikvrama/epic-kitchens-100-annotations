@@ -9,7 +9,7 @@ Narration: open coffee machine
 ------
 ************
 Frame IDs in sequence: [276, 309, 342, 376, 413, 479]
-Objects in sequence: ['box', 'coffee machine', 'coffee pod']
+Objects in sequence: ['box (box)', 'coffee (coffee pod)', 'maker:coffee (coffee machine)']
 Verb-noun pairs in sequence: ['switch on coffee machine;5.29;6.4', 'pick coffee pod;6.98;8.88']
 ************
 Start timestamp: 10.02, Stop timestamp: 10.4
@@ -23,7 +23,7 @@ Narration: pick mug
 ------
 ************
 Frame IDs in sequence: [505, 536, 571, 595, 619, 651]
-Objects in sequence: ['box', 'mug', 'coffee machine', 'coffee pod']
+Objects in sequence: ['box (box)', 'coffee (coffee pod)', 'cup (mug)', 'maker:coffee (coffee machine)']
 Verb-noun pairs in sequence: ['place pod;10.02;10.4', 'close coffee machine;10.49;11.78']
 ************
 Start timestamp: 13.18, Stop timestamp: 13.78
@@ -37,7 +37,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [658, 690, 717, 805, 849, 894]
-Objects in sequence: ['mug', 'coffee machine', 'fridge']
+Objects in sequence: ['cup (mug)', 'fridge (fridge)', 'maker:coffee (coffee machine)']
 Verb-noun pairs in sequence: ['turn mug;13.18;13.78', 'place mug;13.88;14.92']
 ************
 Start timestamp: 18.64, Stop timestamp: 19.64
@@ -51,7 +51,7 @@ Narration: open milk
 ------
 ************
 Frame IDs in sequence: [954, 985, 1025, 1072, 1119, 1155]
-Objects in sequence: ['mug', 'coffee machine', 'lid', 'fridge', 'milk', 'milk bottle']
+Objects in sequence: ['bottle (milk bottle)', 'cup (mug)', 'fridge (fridge)', 'lid (lid)', 'maker:coffee (coffee machine)', 'milk (milk)']
 Verb-noun pairs in sequence: ['pick milk;18.64;19.64', 'close fridge;19.73;20.63']
 ************
 Start timestamp: 23.51, Stop timestamp: 25.94
@@ -68,7 +68,7 @@ Narration: press button
 ------
 ************
 Frame IDs in sequence: [1217, 1276, 1311, 1346, 1371, 1413]
-Objects in sequence: ['mug', 'coffee machine', 'button', 'lid', 'milk', 'milk bottle']
+Objects in sequence: ['bottle (milk bottle)', 'button (button)', 'cup (mug)', 'lid (lid)', 'maker:coffee (coffee machine)', 'milk (milk)']
 Verb-noun pairs in sequence: ['pour milk;23.51;25.94', 'close milk;25.91;26.65', 'put down milk;26.51;27.77']
 ************
 Start timestamp: 29.45, Stop timestamp: 32.05
@@ -82,7 +82,7 @@ Narration: put milk
 ------
 ************
 Frame IDs in sequence: [1484, 1528, 1572, 1613, 1647, 1682]
-Objects in sequence: ['mug', 'coffee machine', 'button', 'lid', 'fridge', 'milk', 'milk bottle']
+Objects in sequence: ['bottle (milk bottle)', 'button (button)', 'cup (mug)', 'fridge (fridge)', 'lid (lid)', 'maker:coffee (coffee machine)', 'milk (milk)']
 Verb-noun pairs in sequence: ['pick up milk;29.45;32.05', 'open fridge;32.28;32.9']
 ************
 Start timestamp: 34.24, Stop timestamp: 35.35
@@ -96,7 +96,7 @@ Narration: open bread bag
 ------
 ************
 Frame IDs in sequence: [1988, 2112, 2180, 2326, 2401, 2459]
-Objects in sequence: ['bread', 'toaster', 'bread bag']
+Objects in sequence: ['bag (bread bag)', 'bread (bread)', 'toaster (toaster)']
 Verb-noun pairs in sequence: ['close fridge;34.24;35.35', 'pick up bread;38.74;43.06']
 ************
 Start timestamp: 47.87, Stop timestamp: 49.48
@@ -110,7 +110,7 @@ Narration: throw bread
 ------
 ************
 Frame IDs in sequence: [2690, 2702, 2715, 2727, 2739]
-Objects in sequence: ['bread', 'bin/garbage can/recycling bin']
+Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'bread (bread)']
 Verb-noun pairs in sequence: ['pick up toast;47.87;49.48', 'open bin;53.44;54.18']
 ************
 Start timestamp: 54.74, Stop timestamp: 55.23
@@ -124,7 +124,7 @@ Narration: put bread in toaster
 ------
 ************
 Frame IDs in sequence: [2913, 2998, 3084, 3221, 3300, 3330]
-Objects in sequence: ['bread', 'toaster', 'bread bag']
+Objects in sequence: ['bag (bread bag)', 'bread (bread)', 'toaster (toaster)']
 Verb-noun pairs in sequence: ['close bin;54.74;55.23', 'pick up toast;57.29;62.9']
 ************
 Start timestamp: 65.07, Stop timestamp: 65.72
@@ -144,7 +144,7 @@ Narration: press button
 ------
 ************
 Frame IDs in sequence: [3428, 3575, 3734, 3778, 3942, 4001]
-Objects in sequence: ['mug', 'coffee machine', 'button', 'coffee', 'toaster', 'plate', 'bread bag']
+Objects in sequence: ['bag (bread bag)', 'button (button)', 'coffee (coffee)', 'cup (mug)', 'maker:coffee (coffee machine)', 'plate (plate)', 'toaster (toaster)']
 Verb-noun pairs in sequence: ['switch toaster on;65.75;67.14', 'close bag;67.95;72.45', 'put bread bag down;71.28999999999999;73.08']
 ************
 Start timestamp: 78.37, Stop timestamp: 80.36
@@ -158,7 +158,7 @@ Narration: open drawer
 ------
 ************
 Frame IDs in sequence: [4065, 4103, 4122, 4142, 4178, 4211]
-Objects in sequence: ['drawer', 'plate', 'knife']
+Objects in sequence: ['drawer (drawer)', 'knife (knife)', 'plate (plate)']
 Verb-noun pairs in sequence: ['pick up plate;78.37;80.36', 'put down plate;80.98;81.99']
 ************
 Start timestamp: 83.66, Stop timestamp: 85.1
@@ -175,7 +175,7 @@ Narration: pick up butter
 ------
 ************
 Frame IDs in sequence: [4312, 4363, 4394, 4425, 4452, 4508]
-Objects in sequence: ['jam', 'butter', 'fridge', 'knife']
+Objects in sequence: ['butter (butter)', 'fridge (fridge)', 'knife (knife)', 'spreads (jam)']
 Verb-noun pairs in sequence: ['pick up knife;83.66;85.1', 'close drawer;85.0;85.82', 'open fridge;85.83;87.3']
 ************
 Start timestamp: 89.11, Stop timestamp: 90.94
@@ -192,7 +192,7 @@ Narration: put knife
 ------
 ************
 Frame IDs in sequence: [4616, 4658, 4701, 4726, 4776, 4826]
-Objects in sequence: ['mug', 'jam jar', 'coffee', 'plate', 'butter package', 'knife', 'stirrer box']
+Objects in sequence: ['box (stirrer box)', 'coffee (coffee)', 'cup (mug)', 'jar (jam jar)', 'knife (knife)', 'package (butter package)', 'plate (plate)']
 Verb-noun pairs in sequence: ['pick up jam;89.11;90.94', 'put jam;91.9;92.75', 'put butter;92.59;93.34']
 ************
 Start timestamp: 95.89, Stop timestamp: 97.47
@@ -209,7 +209,7 @@ Narration: open bin
 ------
 ************
 Frame IDs in sequence: [4971, 5053, 5255, 5286, 5521, 5555]
-Objects in sequence: ['mug', 'bin/garbage can/recycling bin', 'stirrer', 'butter', 'butter package', 'coffee']
+Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'butter (butter)', 'coffee (coffee)', 'cup (mug)', 'package (butter package)', 'spoon (stirrer)']
 Verb-noun pairs in sequence: ['pick up stirrer;95.89;97.47', 'stir coffee;98.03999999999999;102.56', 'shake stirrer;102.39;103.45']
 ************
 Start timestamp: 105.46000000000001, Stop timestamp: 105.97999999999999
@@ -232,7 +232,7 @@ Narration: put lid down
 ------
 ************
 Frame IDs in sequence: [5621, 6042, 6084, 6332, 6580, 7076]
-Objects in sequence: ['jam jar', 'jam', 'butter', 'lid', 'toaster', 'butter package']
+Objects in sequence: ['butter (butter)', 'jar (jam jar)', 'lid (lid)', 'package (butter package)', 'spreads (jam)', 'toaster (toaster)']
 Verb-noun pairs in sequence: ['open butter;109.72999999999999;111.92', 'pick up jam;112.02000000000001;112.72', 'open jam;112.65;119.75999999999999']
 ************
 Start timestamp: 141.04, Stop timestamp: 142.25
@@ -249,7 +249,7 @@ Narration: pick up bread with knife
 ------
 ************
 Frame IDs in sequence: [7168, 7201, 7251, 7292, 7342, 7401]
-Objects in sequence: ['bread', 'toaster', 'plate', 'knife']
+Objects in sequence: ['bread (bread)', 'knife (knife)', 'plate (plate)', 'toaster (toaster)']
 Verb-noun pairs in sequence: ['press button;141.04;142.25', 'pick up knife;143.37;144.2', 'pick up plate;143.92000000000002;144.57']
 ************
 Start timestamp: 145.84, Stop timestamp: 146.39
@@ -269,7 +269,7 @@ Narration: hold butter
 ------
 ************
 Frame IDs in sequence: [7484, 7526, 7563, 7651, 7701, 7751]
-Objects in sequence: ['butter', 'bread', 'plate', 'butter package', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'knife (knife)', 'package (butter package)', 'plate (plate)']
 Verb-noun pairs in sequence: ['pick up bread with knife;146.49;148.42000000000002', 'put bread in plate;148.18;149.79', 'put plate down;149.39;150.67000000000002']
 ************
 Start timestamp: 151.56, Stop timestamp: 156.15
@@ -286,7 +286,7 @@ Narration: move bread
 ------
 ************
 Frame IDs in sequence: [7875, 7901, 8019, 8138, 8213, 8251]
-Objects in sequence: ['butter', 'bread', 'plate', 'butter package', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'knife (knife)', 'package (butter package)', 'plate (plate)']
 Verb-noun pairs in sequence: ['slice butter;151.56;156.15', 'put butter on bread;157.09;158.11', 'spread butter;157.87;162.75']
 ************
 Start timestamp: 164.72, Stop timestamp: 165.42000000000002
@@ -303,7 +303,7 @@ Narration: spread butter
 ------
 ************
 Frame IDs in sequence: [8335, 8426, 8692, 8876, 8996, 9051]
-Objects in sequence: ['jam jar', 'jam', 'butter', 'bread', 'plate', 'butter package', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'jar (jam jar)', 'knife (knife)', 'package (butter package)', 'plate (plate)', 'spreads (jam)']
 Verb-noun pairs in sequence: ['hold butter;164.72;165.42000000000002', 'slice butter;165.44;169.74', 'put butter on bread;169.54;171.64']
 ************
 Start timestamp: 178.66, Stop timestamp: 179.96
@@ -323,7 +323,7 @@ Narration: scoop jam
 ------
 ************
 Frame IDs in sequence: [9096, 9151, 9180, 9269, 9314, 9359]
-Objects in sequence: ['jam jar', 'jam', 'butter', 'bread', 'plate', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'jar (jam jar)', 'knife (knife)', 'plate (plate)', 'spreads (jam)']
 Verb-noun pairs in sequence: ['pick up jam;179.65;181.24', 'put jam on bread;180.24;181.66', 'put jam on bread;181.67;182.38']
 ************
 Start timestamp: 183.44, Stop timestamp: 186.61
@@ -349,7 +349,7 @@ Narration: spread jam and butter
 ------
 ************
 Frame IDs in sequence: [9588, 9684, 9821, 9940, 10082, 10184]
-Objects in sequence: ['jam', 'butter', 'bread', 'plate', 'butter package', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'knife (knife)', 'package (butter package)', 'plate (plate)', 'spreads (jam)']
 Verb-noun pairs in sequence: ['put jam down;186.71;187.97', 'pick up toast;186.98;187.99', 'spread jam and butter;187.91;192.58', 'put down toast;191.0;194.45', 'pick up toast;192.3;195.94']
 ************
 Start timestamp: 200.23, Stop timestamp: 200.88
@@ -369,7 +369,7 @@ Narration: close jam
 ------
 ************
 Frame IDs in sequence: [10226, 10263, 10301, 10330, 10472, 10546]
-Objects in sequence: ['tap', 'jam jar', 'jam', 'butter', 'sink', 'water', 'lid', 'bread', 'plate', 'knife']
+Objects in sequence: ['bread (bread)', 'butter (butter)', 'jar (jam jar)', 'knife (knife)', 'lid (lid)', 'plate (plate)', 'sink (sink)', 'spreads (jam)', 'tap (tap)', 'water (water)']
 Verb-noun pairs in sequence: ['close butter;201.01;204.12', 'put butter down;203.9;204.41', 'pick up lid;204.51;205.24']
 ************
 Start timestamp: 208.86, Stop timestamp: 211.47
@@ -395,7 +395,7 @@ Narration: pour washing liquid on sponge
 ------
 ************
 Frame IDs in sequence: [10655, 10692, 10796, 10865, 10934, 10996]
-Objects in sequence: ['tap', 'sink', 'water', 'sponge', 'knife', 'washing liquid']
+Objects in sequence: ['knife (knife)', 'liquid:washing (washing liquid)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
 Verb-noun pairs in sequence: ['open tap;208.86;211.47', 'wash knife;209.77;211.43', 'pick up sponge;210.0;212.54', 'close tap;211.17000000000002;212.34', 'wash sponge;212.5;214.72', 'pick up washing liquid;214.61;215.47']
 ************
 Start timestamp: 216.7, Stop timestamp: 217.36
@@ -415,7 +415,7 @@ Narration: wash knife
 ------
 ************
 Frame IDs in sequence: [11073, 11109, 11146, 11175, 11225, 11276]
-Objects in sequence: ['tap', 'sink', 'water', 'knife']
+Objects in sequence: ['knife (knife)', 'sink (sink)', 'tap (tap)', 'water (water)']
 Verb-noun pairs in sequence: ['clean knife;218.12;220.25', 'put sponge down;220.16;220.85', 'open tap;220.95;222.42000000000002']
 ************
 Start timestamp: 223.0, Stop timestamp: 225.26
@@ -438,7 +438,7 @@ Narration: put mug down
 ------
 ************
 Frame IDs in sequence: [11378, 11425, 11485, 11545, 11665, 11746]
-Objects in sequence: ['mug', 'jam jar', 'towel', 'butter package', 'coffee']
+Objects in sequence: ['coffee (coffee)', 'cup (mug)', 'jar (jam jar)', 'package (butter package)', 'towel (towel)']
 Verb-noun pairs in sequence: ['shake hands;225.36;225.95', 'dry hands with towel;227.1;229.4', 'pick up mug;227.79;232.86']
 ************
 Start timestamp: 234.5, Stop timestamp: 235.55
@@ -455,7 +455,7 @@ Narration: put jam
 ------
 ************
 Frame IDs in sequence: [11853, 11877, 11901, 11944, 11987, 12032]
-Objects in sequence: ['jam jar', 'fridge', 'butter package']
+Objects in sequence: ['fridge (fridge)', 'jar (jam jar)', 'package (butter package)']
 Verb-noun pairs in sequence: ['pick up jam and butter;234.5;235.55', 'open fridge;236.95;238.61', 'put butter;237.54;239.09']
 ************
 Start timestamp: 240.27, Stop timestamp: 241.7

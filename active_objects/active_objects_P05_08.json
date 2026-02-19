@@ -4,9 +4,21 @@
     "start_time": 1.21,
     "end_time": 9.75,
     "objects_in_sequence": [
-      "pasta pack",
-      "pesto jar",
-      "refrigerator"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "refrigerator"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "pesto jar"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pasta pack"
+      }
     ],
     "frame_ids": [
       104,
@@ -28,9 +40,21 @@
     "start_time": 10.6,
     "end_time": 19.64,
     "objects_in_sequence": [
-      "hob",
-      "pasta pack",
-      "saucepan"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pasta pack"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      }
     ],
     "frame_ids": [
       671,
@@ -51,10 +75,26 @@
     "start_time": 20.46,
     "end_time": 28.99,
     "objects_in_sequence": [
-      "cupboard",
-      "hob",
-      "pan",
-      "saucepan"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      }
     ],
     "frame_ids": [
       1252,
@@ -75,12 +115,36 @@
     "start_time": 29.6,
     "end_time": 34.43,
     "objects_in_sequence": [
-      "extractor fan",
-      "hob",
-      "saucepan",
-      "switch",
-      "switch extractor fan",
-      "switch hob"
+      {
+        "class_id": 92,
+        "class_name": "button",
+        "name": "switch"
+      },
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "extractor fan"
+      },
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "switch extractor fan"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "switch hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      }
     ],
     "frame_ids": [
       1808,
@@ -101,9 +165,21 @@
     "start_time": 34.53,
     "end_time": 44.21,
     "objects_in_sequence": [
-      "hob/cooktop/stovetop",
-      "oil bottle",
-      "switch hob"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "oil bottle"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "switch hob"
+      }
     ],
     "frame_ids": [
       2096,
@@ -124,14 +200,46 @@
     "start_time": 45.24,
     "end_time": 56.14,
     "objects_in_sequence": [
-      "hob",
-      "oil",
-      "oil bottle",
-      "pan",
-      "saucepan",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "oil bottle"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       2786,
@@ -153,10 +261,26 @@
     "start_time": 59.15,
     "end_time": 80.74,
     "objects_in_sequence": [
-      "jug",
-      "kettle",
-      "tap",
-      "water"
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3584,
@@ -177,9 +301,21 @@
     "start_time": 81.93,
     "end_time": 85.96000000000001,
     "objects_in_sequence": [
-      "base",
-      "kettle",
-      "switch kettle"
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "switch kettle"
+      },
+      {
+        "class_id": 249,
+        "class_name": "stand",
+        "name": "base"
+      }
     ],
     "frame_ids": [
       4950,
@@ -200,9 +336,21 @@
     "start_time": 89.43,
     "end_time": 100.22999999999999,
     "objects_in_sequence": [
-      "drainer",
-      "knife",
-      "pasta package"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pasta package"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      }
     ],
     "frame_ids": [
       5383,
@@ -224,8 +372,16 @@
     "start_time": 101.75,
     "end_time": 108.52000000000001,
     "objects_in_sequence": [
-      "meat pack",
-      "pasta package"
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat pack"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pasta package"
+      }
     ],
     "frame_ids": [
       6164,
@@ -247,10 +403,26 @@
     "start_time": 112.4,
     "end_time": 119.84,
     "objects_in_sequence": [
-      "knife",
-      "meat",
-      "meat pack",
-      "salad package"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat pack"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "salad package"
+      }
     ],
     "frame_ids": [
       6779,
@@ -271,16 +443,56 @@
     "start_time": 119.94,
     "end_time": 148.32999999999998,
     "objects_in_sequence": [
-      "bag",
-      "door",
-      "garbage",
-      "hob",
-      "meat package",
-      "oil",
-      "pan",
-      "salad",
-      "salad package",
-      "saucepan"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "bag"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "door"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat package"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "salad package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      }
     ],
     "frame_ids": [
       7513,
@@ -302,12 +514,36 @@
     "start_time": 175.61,
     "end_time": 184.17,
     "objects_in_sequence": [
-      "hob",
-      "oil",
-      "pan",
-      "salt",
-      "salt bottle",
-      "saucepan"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "salt bottle"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 38,
+        "class_name": "salt",
+        "name": "salt"
+      }
     ],
     "frame_ids": [
       10572,
@@ -328,11 +564,31 @@
     "start_time": 184.89,
     "end_time": 217.8,
     "objects_in_sequence": [
-      "hob",
-      "oil",
-      "pan",
-      "salt",
-      "saucepan"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 38,
+        "class_name": "salt",
+        "name": "salt"
+      }
     ],
     "frame_ids": [
       11118,
@@ -352,12 +608,36 @@
     "start_time": 218.36,
     "end_time": 257.78,
     "objects_in_sequence": [
-      "hob",
-      "kettle",
-      "oil",
-      "pan",
-      "salt",
-      "saucepan"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 38,
+        "class_name": "salt",
+        "name": "salt"
+      }
     ],
     "frame_ids": [
       13180,
@@ -377,13 +657,41 @@
     "start_time": 258.72,
     "end_time": 277.05,
     "objects_in_sequence": [
-      "base",
-      "hob",
-      "kettle",
-      "oil",
-      "pan",
-      "saucepan",
-      "water"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 249,
+        "class_name": "stand",
+        "name": "base"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       15677,
@@ -404,13 +712,41 @@
     "start_time": 278.4,
     "end_time": 295.1,
     "objects_in_sequence": [
-      "hob",
-      "pan",
-      "pasta",
-      "pasta package",
-      "saucepan",
-      "water",
-      "wooden spoon"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pasta package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       16710,
@@ -431,13 +767,41 @@
     "start_time": 295.7,
     "end_time": 316.39,
     "objects_in_sequence": [
-      "bag",
-      "hob",
-      "pan",
-      "pasta",
-      "saucepan",
-      "water",
-      "wooden spoon"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "bag"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       17828,
@@ -458,17 +822,61 @@
     "start_time": 317.24,
     "end_time": 327.75,
     "objects_in_sequence": [
-      "drainer",
-      "hob",
-      "oil",
-      "onion",
-      "pan",
-      "pasta",
-      "salad",
-      "salad package",
-      "saucepan",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "salad package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       19121,
@@ -489,17 +897,61 @@
     "start_time": 328.09,
     "end_time": 335.72,
     "objects_in_sequence": [
-      "hob",
-      "meat",
-      "meat pack",
-      "meat package",
-      "oil",
-      "onion",
-      "pan",
-      "pasta",
-      "saucepan",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "meat"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat pack"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       19726,
@@ -520,17 +972,61 @@
     "start_time": 337.0,
     "end_time": 368.77,
     "objects_in_sequence": [
-      "hob",
-      "meat",
-      "meat pack",
-      "meat package",
-      "oil",
-      "onion",
-      "pan",
-      "pasta",
-      "saucepan",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "meat"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "oil"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat pack"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       20241,
@@ -551,20 +1047,76 @@
     "start_time": 371.2,
     "end_time": 451.13,
     "objects_in_sequence": [
-      "hob",
-      "meat",
-      "meat package",
-      "onion",
-      "pan",
-      "pasta",
-      "salad",
-      "salad package",
-      "saucepan",
-      "sink",
-      "tap",
-      "water",
-      "wooden spatula",
-      "wooden spoon"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "meat"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat package"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "salad package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       22355,
@@ -586,11 +1138,31 @@
     "start_time": 451.63,
     "end_time": 472.82,
     "objects_in_sequence": [
-      "packaging",
-      "sink",
-      "tap",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "packaging"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       27127,
@@ -611,15 +1183,51 @@
     "start_time": 472.94,
     "end_time": 620.29,
     "objects_in_sequence": [
-      "hob",
-      "meat",
-      "pan",
-      "pasta",
-      "salad",
-      "saucepan",
-      "water",
-      "wooden spatula",
-      "wooden spoon"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       28920,
@@ -642,14 +1250,46 @@
     "start_time": 622.43,
     "end_time": 641.39,
     "objects_in_sequence": [
-      "hob",
-      "pan",
-      "pasta",
-      "salad",
-      "saucepan",
-      "water",
-      "wooden spatula",
-      "wooden spoon"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       37361,
@@ -670,9 +1310,21 @@
     "start_time": 643.97,
     "end_time": 664.38,
     "objects_in_sequence": [
-      "colander",
-      "container",
-      "cupboard"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      }
     ],
     "frame_ids": [
       38722,
@@ -692,17 +1344,61 @@
     "start_time": 721.68,
     "end_time": 742.39,
     "objects_in_sequence": [
-      "colander",
-      "container",
-      "hob",
-      "pan",
-      "pasta",
-      "salad",
-      "saucepan",
-      "sink",
-      "tap",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       43334,
@@ -723,14 +1419,46 @@
     "start_time": 743.36,
     "end_time": 754.41,
     "objects_in_sequence": [
-      "colander",
-      "container",
-      "hob pot",
-      "pasta",
-      "pesto jar",
-      "saucepan",
-      "sink",
-      "tap"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "pesto jar"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "hob pot"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       44656,
@@ -751,13 +1479,41 @@
     "start_time": 756.83,
     "end_time": 776.01,
     "objects_in_sequence": [
-      "container",
-      "drainer",
-      "pasta",
-      "pesto",
-      "pesto bottle",
-      "sink",
-      "teaspoon"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "pesto bottle"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "pesto"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "teaspoon"
+      }
     ],
     "frame_ids": [
       45436,
@@ -778,14 +1534,46 @@
     "start_time": 778.34,
     "end_time": 799.3,
     "objects_in_sequence": [
-      "colander",
-      "container",
-      "pasta",
-      "pesto bottle",
-      "saucepan",
-      "sink",
-      "teaspoon",
-      "wooden spoon"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "pesto bottle"
+      },
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "teaspoon"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      }
     ],
     "frame_ids": [
       46710,
@@ -806,15 +1594,51 @@
     "start_time": 800.34,
     "end_time": 809.52,
     "objects_in_sequence": [
-      "colander",
-      "container",
-      "pasta",
-      "pesto bottle",
-      "saucepan",
-      "sink",
-      "tap",
-      "teaspoon",
-      "wooden spoon"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "pesto bottle"
+      },
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "teaspoon"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       48030,
@@ -835,16 +1659,56 @@
     "start_time": 815.57,
     "end_time": 921.76,
     "objects_in_sequence": [
-      "container",
-      "hob",
-      "pan",
-      "pasta",
-      "pesto",
-      "pesto bottle",
-      "salad",
-      "teaspoon",
-      "wooden spatula",
-      "wooden spoon"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "pesto bottle"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "pesto"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "teaspoon"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      }
     ],
     "frame_ids": [
       49550,
@@ -865,12 +1729,36 @@
     "start_time": 924.6,
     "end_time": 979.88,
     "objects_in_sequence": [
-      "colander",
-      "drainer",
-      "saucepan",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       55755,
@@ -892,14 +1780,46 @@
     "start_time": 980.91,
     "end_time": 1024.84,
     "objects_in_sequence": [
-      "cup",
-      "pesto bottle",
-      "sink",
-      "sponge",
-      "tap",
-      "teaspoon",
-      "water",
-      "wooden spoon"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "pesto bottle"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "teaspoon"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "wooden spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       58950,
@@ -922,12 +1842,36 @@
     "start_time": 1030.14,
     "end_time": 1122.58,
     "objects_in_sequence": [
-      "container",
-      "hob",
-      "pan",
-      "pasta",
-      "salad",
-      "wooden spatula"
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      }
     ],
     "frame_ids": [
       61833,
@@ -949,14 +1893,46 @@
     "start_time": 1130.93,
     "end_time": 1174.02,
     "objects_in_sequence": [
-      "drainer",
-      "pan",
-      "saucepan",
-      "sink",
-      "sponge",
-      "tap",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "saucepan"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       67886,
@@ -979,12 +1955,36 @@
     "start_time": 1175.66,
     "end_time": 1201.35,
     "objects_in_sequence": [
-      "drainer",
-      "pan",
-      "sink",
-      "tap",
-      "water",
-      "wooden spatula"
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "wooden spatula"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       70609,
@@ -1005,14 +2005,46 @@
     "start_time": 1202.7,
     "end_time": 1212.63,
     "objects_in_sequence": [
-      "container",
-      "container lid",
-      "drainer",
-      "pan",
-      "pasta",
-      "salad",
-      "sink",
-      "tap"
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "container lid"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 68,
+        "class_name": "salad",
+        "name": "salad"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       72194,
@@ -1033,11 +2065,31 @@
     "start_time": 1217.6,
     "end_time": 1229.21,
     "objects_in_sequence": [
-      "counter",
-      "rag",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 17,
+        "class_name": "cloth",
+        "name": "rag"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 42,
+        "class_name": "top",
+        "name": "counter"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       73095,
@@ -1058,12 +2110,36 @@
     "start_time": 1231.68,
     "end_time": 1257.15,
     "objects_in_sequence": [
-      "counter",
-      "hob/cooktop/stovetop",
-      "rag",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 17,
+        "class_name": "cloth",
+        "name": "rag"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 42,
+        "class_name": "top",
+        "name": "counter"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       73972,
@@ -1084,11 +2160,31 @@
     "start_time": 1264.53,
     "end_time": 1272.96,
     "objects_in_sequence": [
-      "container",
-      "container lid",
-      "extractor fan",
-      "switch",
-      "switch extractor fan"
+      {
+        "class_id": 92,
+        "class_name": "button",
+        "name": "switch"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "container"
+      },
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "extractor fan"
+      },
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "switch extractor fan"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "container lid"
+      }
     ],
     "frame_ids": [
       75874,

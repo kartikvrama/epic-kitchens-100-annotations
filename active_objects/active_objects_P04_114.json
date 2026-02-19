@@ -4,9 +4,21 @@
     "start_time": 0.91,
     "end_time": 8.74,
     "objects_in_sequence": [
-      "glove",
-      "oven door",
-      "switch"
+      {
+        "class_id": 92,
+        "class_name": "button",
+        "name": "switch"
+      },
+      {
+        "class_id": 60,
+        "class_name": "glove",
+        "name": "glove"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven door"
+      }
     ],
     "frame_ids": [
       65,
@@ -27,11 +39,31 @@
     "start_time": 9.39,
     "end_time": 22.25,
     "objects_in_sequence": [
-      "hob",
-      "rice cooker",
-      "rice cooker lid",
-      "tea towel",
-      "water"
+      {
+        "class_id": 152,
+        "class_name": "cooker:slow",
+        "name": "rice cooker"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "rice cooker lid"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       491,
@@ -52,7 +84,11 @@
     "start_time": 22.31,
     "end_time": 24.54,
     "objects_in_sequence": [
-      "kettle"
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      }
     ],
     "frame_ids": [
       1117,
@@ -73,12 +109,36 @@
     "start_time": 26.47,
     "end_time": 30.27,
     "objects_in_sequence": [
-      "aeropress",
-      "coffee",
-      "mug",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       1344,
@@ -100,12 +160,36 @@
     "start_time": 30.37,
     "end_time": 36.11,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "mug",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       1550,
@@ -128,11 +212,31 @@
     "start_time": 37.25,
     "end_time": 43.56,
     "objects_in_sequence": [
-      "aeropress",
-      "cup",
-      "cupboard",
-      "sink",
-      "tap"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       1876,
@@ -154,9 +258,21 @@
     "start_time": 44.02,
     "end_time": 50.59,
     "objects_in_sequence": [
-      "coffee bag",
-      "cupboard",
-      "drawer"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      }
     ],
     "frame_ids": [
       2223,
@@ -177,12 +293,36 @@
     "start_time": 51.17,
     "end_time": 57.9,
     "objects_in_sequence": [
-      "aeropress",
-      "coffee",
-      "coffee bag",
-      "drawer",
-      "hob",
-      "spoon"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       2580,
@@ -203,8 +343,16 @@
     "start_time": 58.14,
     "end_time": 61.84,
     "objects_in_sequence": [
-      "coffee bag",
-      "cupboard"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      }
     ],
     "frame_ids": [
       2930,
@@ -226,12 +374,36 @@
     "start_time": 62.54,
     "end_time": 71.55,
     "objects_in_sequence": [
-      "aeropress",
-      "coffee",
-      "hob",
-      "kettle",
-      "spoon",
-      "water"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3136,
@@ -252,13 +424,41 @@
     "start_time": 72.15,
     "end_time": 80.89,
     "objects_in_sequence": [
-      "aeropress",
-      "coffee",
-      "hob",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3615,
@@ -280,13 +480,41 @@
     "start_time": 81.39,
     "end_time": 86.85,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "coffee",
-      "hob",
-      "sink",
-      "spoon",
-      "tea towel"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       4084,
@@ -309,11 +537,31 @@
     "start_time": 86.89,
     "end_time": 94.28999999999999,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "coffee",
-      "hob",
-      "mug"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      }
     ],
     "frame_ids": [
       4351,
@@ -336,10 +584,26 @@
     "start_time": 94.95,
     "end_time": 103.64,
     "objects_in_sequence": [
-      "aeropress",
-      "drawer",
-      "knife",
-      "mug"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      }
     ],
     "frame_ids": [
       4751,
@@ -361,9 +625,21 @@
     "start_time": 103.78999999999999,
     "end_time": 107.99000000000001,
     "objects_in_sequence": [
-      "drawer",
-      "knife",
-      "sheath"
+      {
+        "class_id": 89,
+        "class_name": "cover",
+        "name": "sheath"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       5201,
@@ -386,10 +662,26 @@
     "start_time": 110.11,
     "end_time": 129.46,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "mug",
-      "sink"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      }
     ],
     "frame_ids": [
       5621,
@@ -411,10 +703,26 @@
     "start_time": 131.35,
     "end_time": 133.89,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "filter holder",
-      "sink"
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "filter holder"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      }
     ],
     "frame_ids": [
       6565,
@@ -436,12 +744,36 @@
     "start_time": 133.93,
     "end_time": 136.98,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "filter holder",
-      "sink",
-      "sponge",
-      "tap"
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "filter holder"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       6701,
@@ -464,13 +796,41 @@
     "start_time": 137.65,
     "end_time": 147.24,
     "objects_in_sequence": [
-      "aeropress",
-      "aeropress filter",
-      "filter",
-      "filter holder",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "aeropress"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "filter holder"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       6917,
@@ -493,12 +853,36 @@
     "start_time": 147.48,
     "end_time": 149.87,
     "objects_in_sequence": [
-      "aeropress filter",
-      "filter holder",
-      "sink",
-      "tap",
-      "tea towel",
-      "water"
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "aeropress filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "filter holder"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       7391,

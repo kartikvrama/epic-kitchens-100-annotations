@@ -4,8 +4,16 @@
     "start_time": 1.23,
     "end_time": 25.51,
     "objects_in_sequence": [
-      "foil box",
-      "plastic bag"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "plastic bag"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "foil box"
+      }
     ],
     "frame_ids": [
       122,
@@ -27,10 +35,26 @@
     "start_time": 26.86,
     "end_time": 43.39,
     "objects_in_sequence": [
-      "bottle",
-      "chocolate",
-      "drawer",
-      "fridge"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "bottle"
+      },
+      {
+        "class_id": 188,
+        "class_name": "chocolate",
+        "name": "chocolate"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      }
     ],
     "frame_ids": [
       1636,
@@ -51,12 +75,36 @@
     "start_time": 46.05,
     "end_time": 62.6,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "package",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "package"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       2819,
@@ -77,12 +125,36 @@
     "start_time": 64.15,
     "end_time": 78.16,
     "objects_in_sequence": [
-      "cheese",
-      "knife",
-      "package",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "package"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3896,
@@ -104,12 +176,36 @@
     "start_time": 83.65,
     "end_time": 128.33,
     "objects_in_sequence": [
-      "cheese",
-      "chopping board",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       5033,
@@ -130,11 +226,31 @@
     "start_time": 130.11,
     "end_time": 136.32999999999998,
     "objects_in_sequence": [
-      "cloth",
-      "drawer",
-      "sink",
-      "spoon",
-      "tap"
+      {
+        "class_id": 17,
+        "class_name": "cloth",
+        "name": "cloth"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       7830,
@@ -155,16 +271,56 @@
     "start_time": 143.42000000000002,
     "end_time": 163.63,
     "objects_in_sequence": [
-      "fan",
-      "fork",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "lid",
-      "minced meat",
-      "pasta",
-      "pot",
-      "spoon"
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "fan"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "lid"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       8623,
@@ -185,17 +341,61 @@
     "start_time": 165.79,
     "end_time": 229.74,
     "objects_in_sequence": [
-      "asagne sheet",
-      "folk",
-      "fork",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "lasagne sheet",
-      "lid",
-      "minced meat",
-      "pot",
-      "spoon"
+      {
+        "class_id": 58,
+        "class_name": "cutlery",
+        "name": "folk"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "lid"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "asagne sheet"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       10092,
@@ -216,14 +416,46 @@
     "start_time": 230.34,
     "end_time": 299.18,
     "objects_in_sequence": [
-      "fork",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "lasagne sheet",
-      "minced meat",
-      "pot",
-      "spoon"
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       13910,
@@ -245,19 +477,71 @@
     "start_time": 316.86,
     "end_time": 414.92,
     "objects_in_sequence": [
-      "bowl",
-      "cheese",
-      "cheese mixture",
-      "chopping board",
-      "fork",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "lasagne sheet",
-      "minced meat",
-      "pan",
-      "pot",
-      "spoon"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       19267,
@@ -279,18 +563,66 @@
     "start_time": 606.75,
     "end_time": 658.39,
     "objects_in_sequence": [
-      "bowl",
-      "cheese",
-      "cheese mixture",
-      "chopping board",
-      "frying pan",
-      "hob",
-      "knife",
-      "lasagna plate",
-      "lasagne sheet",
-      "minced meat",
-      "pot",
-      "spoon"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       36414,
@@ -311,17 +643,61 @@
     "start_time": 658.49,
     "end_time": 668.55,
     "objects_in_sequence": [
-      "bowl",
-      "cheese mixture",
-      "chopping board",
-      "frying pan",
-      "hob",
-      "knife",
-      "lasagna plate",
-      "lasagne sheet",
-      "pasta",
-      "pot",
-      "spoon"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       39539,
@@ -343,22 +719,86 @@
     "start_time": 696.61,
     "end_time": 767.27,
     "objects_in_sequence": [
-      "bowl",
-      "box",
-      "cheese",
-      "cheese mixture",
-      "chopping board",
-      "foil box",
-      "frying pan",
-      "hob",
-      "knife",
-      "lasagna plate",
-      "lasagne sheet",
-      "minced meat",
-      "pasta plate",
-      "pot",
-      "spoon",
-      "tool"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "box"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "foil box"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 58,
+        "class_name": "cutlery",
+        "name": "tool"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "pasta plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       42110,
@@ -380,20 +820,76 @@
     "start_time": 797.35,
     "end_time": 878.24,
     "objects_in_sequence": [
-      "bowl",
-      "cheese",
-      "cheese mixture",
-      "foil box",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "lasagne sheet",
-      "minced meat",
-      "pot",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "foil box"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "lasagne sheet"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       47888,
@@ -414,16 +910,56 @@
     "start_time": 888.81,
     "end_time": 986.37,
     "objects_in_sequence": [
-      "cheese",
-      "cheese mixture",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "mincemeat",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mincemeat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       54460,
@@ -444,15 +980,51 @@
     "start_time": 988.93,
     "end_time": 1130.4,
     "objects_in_sequence": [
-      "basil",
-      "cheese",
-      "cheese mixture",
-      "chopping board",
-      "frying pan",
-      "hob",
-      "lasagna plate",
-      "mincemeat",
-      "spoon"
+      {
+        "class_id": 201,
+        "class_name": "basil",
+        "name": "basil"
+      },
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese mixture"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mincemeat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       59744,
@@ -473,13 +1045,41 @@
     "start_time": 1130.5,
     "end_time": 1212.11,
     "objects_in_sequence": [
-      "basil",
-      "cheese",
-      "lasagna plate",
-      "minced meat",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 201,
+        "class_name": "basil",
+        "name": "basil"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       68219,
@@ -501,11 +1101,31 @@
     "start_time": 1213.83,
     "end_time": 1342.02,
     "objects_in_sequence": [
-      "basil",
-      "foil",
-      "foil box",
-      "foil roll",
-      "lasagna plate"
+      {
+        "class_id": 201,
+        "class_name": "basil",
+        "name": "basil"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "foil box"
+      },
+      {
+        "class_id": 123,
+        "class_name": "foil",
+        "name": "foil"
+      },
+      {
+        "class_id": 123,
+        "class_name": "foil",
+        "name": "foil roll"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "lasagna plate"
+      }
     ],
     "frame_ids": [
       73286,
@@ -528,9 +1148,21 @@
     "start_time": 1364.33,
     "end_time": 1384.31,
     "objects_in_sequence": [
-      "foil",
-      "knife",
-      "oven"
+      {
+        "class_id": 123,
+        "class_name": "foil",
+        "name": "foil"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      }
     ],
     "frame_ids": [
       81969,
@@ -552,13 +1184,41 @@
     "start_time": 1386.81,
     "end_time": 1427.38,
     "objects_in_sequence": [
-      "bowl",
-      "dirty dish",
-      "dishwasher",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "dirty dish"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       83344,
@@ -582,13 +1242,41 @@
     "start_time": 1440.6,
     "end_time": 1462.49,
     "objects_in_sequence": [
-      "bowl",
-      "dishwasher",
-      "knife",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       86686,
@@ -609,11 +1297,31 @@
     "start_time": 1472.72,
     "end_time": 1482.69,
     "objects_in_sequence": [
-      "bowl",
-      "dishwasher",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       88383,
@@ -634,14 +1342,46 @@
     "start_time": 1482.79,
     "end_time": 1498.8,
     "objects_in_sequence": [
-      "bowl",
-      "chopping board",
-      "dishwasher",
-      "plate",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "bowl"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       88992,
@@ -663,12 +1403,36 @@
     "start_time": 1499.15,
     "end_time": 1536.39,
     "objects_in_sequence": [
-      "chopped cucumber",
-      "chopping board",
-      "cupboard",
-      "drawer",
-      "olive oil bottle",
-      "plate"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "olive oil bottle"
+      },
+      {
+        "class_id": 72,
+        "class_name": "cucumber",
+        "name": "chopped cucumber"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       89975,
@@ -690,14 +1454,46 @@
     "start_time": 1537.5,
     "end_time": 1558.46,
     "objects_in_sequence": [
-      "bottle lid",
-      "chopped cucumber",
-      "chopping board",
-      "floor",
-      "olive oil",
-      "olive oil bottle",
-      "plate",
-      "trash"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "olive oil bottle"
+      },
+      {
+        "class_id": 118,
+        "class_name": "cap",
+        "name": "bottle lid"
+      },
+      {
+        "class_id": 72,
+        "class_name": "cucumber",
+        "name": "chopped cucumber"
+      },
+      {
+        "class_id": 159,
+        "class_name": "floor",
+        "name": "floor"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "olive oil"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "trash"
+      }
     ],
     "frame_ids": [
       92335,
@@ -718,11 +1514,31 @@
     "start_time": 1560.79,
     "end_time": 1576.45,
     "objects_in_sequence": [
-      "chopping board",
-      "dishwasher",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       93769,
@@ -743,11 +1559,31 @@
     "start_time": 1576.75,
     "end_time": 1606.61,
     "objects_in_sequence": [
-      "dishwasher",
-      "grater",
-      "pot",
-      "sink",
-      "tap"
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 96,
+        "class_name": "grater",
+        "name": "grater"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "pot"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       94702,
@@ -768,16 +1604,56 @@
     "start_time": 1617.82,
     "end_time": 1728.29,
     "objects_in_sequence": [
-      "brush",
-      "dishwasher",
-      "frying pan",
-      "garbage",
-      "mug",
-      "sink",
-      "spatula",
-      "sponge",
-      "tap",
-      "water"
+      {
+        "class_id": 103,
+        "class_name": "brush",
+        "name": "brush"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "spatula"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       98349,
@@ -801,16 +1677,56 @@
     "start_time": 1728.32,
     "end_time": 1790.57,
     "objects_in_sequence": [
-      "brush",
-      "cloth",
-      "garbage",
-      "garbage bin",
-      "sink",
-      "soap",
-      "table",
-      "tap",
-      "washing up liquid",
-      "water"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "garbage bin"
+      },
+      {
+        "class_id": 103,
+        "class_name": "brush",
+        "name": "brush"
+      },
+      {
+        "class_id": 17,
+        "class_name": "cloth",
+        "name": "cloth"
+      },
+      {
+        "class_id": 22,
+        "class_name": "liquid:washing",
+        "name": "soap"
+      },
+      {
+        "class_id": 22,
+        "class_name": "liquid:washing",
+        "name": "washing up liquid"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 42,
+        "class_name": "top",
+        "name": "table"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       103766,
@@ -832,10 +1748,26 @@
     "start_time": 1814.64,
     "end_time": 1899.53,
     "objects_in_sequence": [
-      "cloth",
-      "garbage",
-      "garbage bin",
-      "salt"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "garbage bin"
+      },
+      {
+        "class_id": 17,
+        "class_name": "cloth",
+        "name": "cloth"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 38,
+        "class_name": "salt",
+        "name": "salt"
+      }
     ],
     "frame_ids": [
       108914,

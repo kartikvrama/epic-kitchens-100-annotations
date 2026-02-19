@@ -4,8 +4,16 @@
     "start_time": 11.64,
     "end_time": 26.84,
     "objects_in_sequence": [
-      "hob",
-      "pan"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      }
     ],
     "frame_ids": [
       601,
@@ -28,11 +36,31 @@
     "start_time": 28.58,
     "end_time": 50.03,
     "objects_in_sequence": [
-      "coffee maker",
-      "fridge",
-      "glove",
-      "packet",
-      "paper roll"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 60,
+        "class_name": "glove",
+        "name": "glove"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "coffee maker"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "packet"
+      },
+      {
+        "class_id": 93,
+        "class_name": "towel:kitchen",
+        "name": "paper roll"
+      }
     ],
     "frame_ids": [
       1468,
@@ -54,11 +82,31 @@
     "start_time": 50.84,
     "end_time": 64.16,
     "objects_in_sequence": [
-      "cheese packet",
-      "chopping board",
-      "coffee maker",
-      "drawer",
-      "paper roll"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "coffee maker"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "cheese packet"
+      },
+      {
+        "class_id": 93,
+        "class_name": "towel:kitchen",
+        "name": "paper roll"
+      }
     ],
     "frame_ids": [
       2562,
@@ -80,10 +128,26 @@
     "start_time": 64.26,
     "end_time": 102.69,
     "objects_in_sequence": [
-      "cheese",
-      "cutting board",
-      "drawer",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "cutting board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       3217,
@@ -104,11 +168,31 @@
     "start_time": 104.47999999999999,
     "end_time": 122.52,
     "objects_in_sequence": [
-      "cheese packet",
-      "hob",
-      "pan",
-      "tortilla",
-      "tortilla packet"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "cheese packet"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "tortilla packet"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       5268,
@@ -130,9 +214,21 @@
     "start_time": 130.18,
     "end_time": 135.29,
     "objects_in_sequence": [
-      "sink",
-      "spatula",
-      "spoon"
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "spatula"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       6518,
@@ -153,10 +249,26 @@
     "start_time": 138.51,
     "end_time": 146.71,
     "objects_in_sequence": [
-      "pan",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       6936,
@@ -178,12 +290,36 @@
     "start_time": 149.07999999999998,
     "end_time": 170.57999999999998,
     "objects_in_sequence": [
-      "hob/cooktop/stovetop",
-      "oven",
-      "pan",
-      "sink",
-      "tortilla",
-      "towel"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "towel"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       7488,
@@ -205,13 +341,41 @@
     "start_time": 173.11,
     "end_time": 219.74,
     "objects_in_sequence": [
-      "cheese",
-      "chopping board",
-      "ham",
-      "hob/cooktop/stovetop",
-      "pan",
-      "tortilla",
-      "tortilla packet"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "tortilla packet"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 156,
+        "class_name": "salami",
+        "name": "ham"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       8703,
@@ -233,11 +397,31 @@
     "start_time": 221.64,
     "end_time": 233.55,
     "objects_in_sequence": [
-      "cheese",
-      "chopping board",
-      "chorizo packet",
-      "fridge",
-      "tortilla packet"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "chorizo packet"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "tortilla packet"
+      }
     ],
     "frame_ids": [
       11086,
@@ -258,11 +442,31 @@
     "start_time": 236.2,
     "end_time": 246.9,
     "objects_in_sequence": [
-      "chorizo",
-      "chorizo packet",
-      "hob/cooktop/stovetop",
-      "pan",
-      "tortilla"
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "chorizo packet"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       11884,
@@ -283,11 +487,31 @@
     "start_time": 249.0,
     "end_time": 288.69,
     "objects_in_sequence": [
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "chorizo packet",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "chorizo packet"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      }
     ],
     "frame_ids": [
       12501,
@@ -309,14 +533,46 @@
     "start_time": 289.43,
     "end_time": 302.67,
     "objects_in_sequence": [
-      "chorizo",
-      "fridge",
-      "hob/cooktop/stovetop",
-      "pan",
-      "sink",
-      "tap",
-      "tortilla",
-      "water"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       14480,
@@ -339,10 +595,26 @@
     "start_time": 311.17,
     "end_time": 322.96,
     "objects_in_sequence": [
-      "pan",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       15562,
@@ -364,10 +636,26 @@
     "start_time": 323.67,
     "end_time": 331.9,
     "objects_in_sequence": [
-      "cupboard",
-      "plate",
-      "sink",
-      "tap"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       16230,
@@ -388,11 +676,31 @@
     "start_time": 331.94,
     "end_time": 337.51,
     "objects_in_sequence": [
-      "cupboard",
-      "hob",
-      "pan",
-      "plate",
-      "tortilla"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 107,
+        "class_name": "wrap",
+        "name": "tortilla"
+      }
     ],
     "frame_ids": [
       16611,
@@ -413,11 +721,31 @@
     "start_time": 340.47,
     "end_time": 371.78,
     "objects_in_sequence": [
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "cupboard",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      }
     ],
     "frame_ids": [
       17059,
@@ -439,15 +767,51 @@
     "start_time": 371.88,
     "end_time": 389.52,
     "objects_in_sequence": [
-      "bread",
-      "bread packet",
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "cupboard",
-      "fridge",
-      "knife",
-      "tray"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "bread"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "bread packet"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "tray"
+      }
     ],
     "frame_ids": [
       18601,
@@ -469,14 +833,46 @@
     "start_time": 392.59000000000003,
     "end_time": 405.32,
     "objects_in_sequence": [
-      "bread",
-      "bread packet",
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "fridge",
-      "knife",
-      "tray"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "bread"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "bread packet"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "tray"
+      }
     ],
     "frame_ids": [
       19693,
@@ -498,12 +894,36 @@
     "start_time": 405.78,
     "end_time": 438.06,
     "objects_in_sequence": [
-      "bread",
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "knife",
-      "tray"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "bread"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "tray"
+      }
     ],
     "frame_ids": [
       20295,
@@ -524,11 +944,31 @@
     "start_time": 442.87,
     "end_time": 456.74,
     "objects_in_sequence": [
-      "bread",
-      "cheese",
-      "chopping board",
-      "chorizo",
-      "oven"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "bread"
+      },
+      {
+        "class_id": 32,
+        "class_name": "cheese",
+        "name": "cheese"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      },
+      {
+        "class_id": 86,
+        "class_name": "sausage",
+        "name": "chorizo"
+      }
     ],
     "frame_ids": [
       22161,

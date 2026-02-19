@@ -4,9 +4,21 @@
     "start_time": 4.33,
     "end_time": 13.15,
     "objects_in_sequence": [
-      "fridge",
-      "oven",
-      "pizza box"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "pizza box"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      }
     ],
     "frame_ids": [
       242,
@@ -29,8 +41,16 @@
     "start_time": 22.53,
     "end_time": 28.22,
     "objects_in_sequence": [
-      "oven",
-      "oven tray"
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "oven tray"
+      }
     ],
     "frame_ids": [
       1171,
@@ -51,10 +71,26 @@
     "start_time": 28.24,
     "end_time": 36.74,
     "objects_in_sequence": [
-      "oven",
-      "oven tray",
-      "pizza",
-      "pizza box"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "pizza box"
+      },
+      {
+        "class_id": 46,
+        "class_name": "oven",
+        "name": "oven"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "oven tray"
+      }
     ],
     "frame_ids": [
       1425,
@@ -76,9 +112,21 @@
     "start_time": 36.75,
     "end_time": 47.06,
     "objects_in_sequence": [
-      "knife",
-      "pizza",
-      "pizza box"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "pizza box"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      }
     ],
     "frame_ids": [
       1951,
@@ -100,11 +148,31 @@
     "start_time": 49.18,
     "end_time": 77.26,
     "objects_in_sequence": [
-      "cardboard",
-      "knife",
-      "oven tray",
-      "packaging",
-      "pizza"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "cardboard"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "packaging"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "oven tray"
+      }
     ],
     "frame_ids": [
       2996,
@@ -129,11 +197,31 @@
     "start_time": 79.32,
     "end_time": 85.66,
     "objects_in_sequence": [
-      "bin",
-      "cardboard",
-      "oven tray",
-      "packaging",
-      "pizza"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "bin"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "cardboard"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "packaging"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "oven tray"
+      }
     ],
     "frame_ids": [
       4109,
@@ -155,8 +243,16 @@
     "start_time": 89.36,
     "end_time": 99.9,
     "objects_in_sequence": [
-      "knife",
-      "knife sharpener"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 212,
+        "class_name": "whetstone",
+        "name": "knife sharpener"
+      }
     ],
     "frame_ids": [
       4859,
@@ -177,9 +273,21 @@
     "start_time": 100.71000000000001,
     "end_time": 114.39,
     "objects_in_sequence": [
-      "chopping board",
-      "cupboard",
-      "knife sharpener"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 212,
+        "class_name": "whetstone",
+        "name": "knife sharpener"
+      }
     ],
     "frame_ids": [
       5483,
@@ -201,8 +309,16 @@
     "start_time": 116.47999999999999,
     "end_time": 120.65,
     "objects_in_sequence": [
-      "chopping board",
-      "cupboard"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      }
     ],
     "frame_ids": [
       5945,
@@ -223,9 +339,21 @@
     "start_time": 121.05,
     "end_time": 124.79,
     "objects_in_sequence": [
-      "chopping board",
-      "cupboard",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       6114,
@@ -246,11 +374,31 @@
     "start_time": 125.26,
     "end_time": 132.49,
     "objects_in_sequence": [
-      "chopping board",
-      "fridge",
-      "knife",
-      "tomato",
-      "tomato packaging"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "tomato packaging"
+      },
+      {
+        "class_id": 43,
+        "class_name": "tomato",
+        "name": "tomato"
+      }
     ],
     "frame_ids": [
       6405,
@@ -271,12 +419,36 @@
     "start_time": 133.36,
     "end_time": 145.34,
     "objects_in_sequence": [
-      "chopping board",
-      "fridge",
-      "mushroom",
-      "mushroom packaging",
-      "tomato",
-      "tomato packaging"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 56,
+        "class_name": "mushroom",
+        "name": "mushroom"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "mushroom packaging"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "tomato packaging"
+      },
+      {
+        "class_id": 43,
+        "class_name": "tomato",
+        "name": "tomato"
+      }
     ],
     "frame_ids": [
       6876,
@@ -297,11 +469,31 @@
     "start_time": 147.11,
     "end_time": 154.6,
     "objects_in_sequence": [
-      "chopping board",
-      "mushroom",
-      "mushroom packaging",
-      "onion",
-      "tomato"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 56,
+        "class_name": "mushroom",
+        "name": "mushroom"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "mushroom packaging"
+      },
+      {
+        "class_id": 43,
+        "class_name": "tomato",
+        "name": "tomato"
+      }
     ],
     "frame_ids": [
       7417,
@@ -322,7 +514,11 @@
     "start_time": 154.8,
     "end_time": 165.47,
     "objects_in_sequence": [
-      "onion"
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      }
     ],
     "frame_ids": [
       8021,
@@ -343,9 +539,21 @@
     "start_time": 167.55,
     "end_time": 172.25,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "onion"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      }
     ],
     "frame_ids": [
       8459,
@@ -366,10 +574,26 @@
     "start_time": 172.63,
     "end_time": 198.26,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "onion",
-      "peels"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      }
     ],
     "frame_ids": [
       8738,
@@ -390,10 +614,26 @@
     "start_time": 198.42000000000002,
     "end_time": 227.9,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "onion",
-      "peels"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      }
     ],
     "frame_ids": [
       10057,
@@ -414,11 +654,31 @@
     "start_time": 228.09,
     "end_time": 234.45,
     "objects_in_sequence": [
-      "chopping board",
-      "drawer",
-      "knife",
-      "onion",
-      "peels"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      }
     ],
     "frame_ids": [
       11601,
@@ -440,12 +700,36 @@
     "start_time": 234.54,
     "end_time": 243.49,
     "objects_in_sequence": [
-      "chopping board",
-      "drawer",
-      "onion",
-      "peels",
-      "slicer",
-      "slicer guard"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer guard"
+      }
     ],
     "frame_ids": [
       11846,
@@ -466,13 +750,41 @@
     "start_time": 250.18,
     "end_time": 260.09,
     "objects_in_sequence": [
-      "chopping board",
-      "onion",
-      "peels",
-      "pepperoni",
-      "pizza",
-      "slicer",
-      "slicer guard"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      },
+      {
+        "class_id": 156,
+        "class_name": "salami",
+        "name": "pepperoni"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer guard"
+      }
     ],
     "frame_ids": [
       12642,
@@ -494,12 +806,36 @@
     "start_time": 268.31,
     "end_time": 285.62,
     "objects_in_sequence": [
-      "chopping board",
-      "onion",
-      "peels",
-      "pizza",
-      "slicer",
-      "slicer guard"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 91,
+        "class_name": "pizza",
+        "name": "pizza"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer guard"
+      }
     ],
     "frame_ids": [
       13863,
@@ -520,13 +856,41 @@
     "start_time": 285.7,
     "end_time": 311.41,
     "objects_in_sequence": [
-      "chopping board",
-      "onion",
-      "peels",
-      "sink",
-      "slicer",
-      "slicer guard",
-      "tap"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peels"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer"
+      },
+      {
+        "class_id": 220,
+        "class_name": "slicer",
+        "name": "slicer guard"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       15026,

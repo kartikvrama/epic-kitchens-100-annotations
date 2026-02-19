@@ -6,12 +6,19 @@ from math import floor, ceil
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = ["EPIC_100_train.csv", "EPIC_100_validation.csv", "EPIC_100_test_timestamps.csv"]
+NOUN_CLASSES_FILE = "EPIC_100_noun_classes_v2.csv"
+
+def load_noun_class_names():
+    """Load class_id -> class name (key) from EPIC_100_noun_classes_v2.csv."""
+    with open(NOUN_CLASSES_FILE) as f:
+        reader = csv.DictReader(f)
+        return {int(row["id"]): row["key"] for row in reader}
 
 def hhmmss_to_seconds(hhmmss):
     h, m, s = hhmmss.split(":")
     return int(h) * 3600 + int(m) * 60 + float(s)
 
-def save_active_objects(video_id, video_info, narration_low_level_df, output_dir="./"):
+def save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir="./"):
     visor_annotations_file = f"visor_annotations/train/{video_id}.json"
     if not os.path.exists(visor_annotations_file):
         visor_annotations_file = f"visor_annotations/val/{video_id}.json"
@@ -24,7 +31,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
     ## Add frame_id and objects to each frame
     for frame in visor_annotations:
         frame["frame_id"] = int(frame["image"]["name"].split("_")[-1].split(".")[0])
-        frame["objects"] = [k["name"] for k in frame["annotations"]]
+        frame["objects"] = [(k["class_id"], k["name"]) for k in frame["annotations"]]
 
     fps = float([v for v in video_info if v["video_id"] == video_id][0]["fps"])
     narrations_low_level_filtered = narration_low_level_df[narration_low_level_df["video_id"] == video_id]
@@ -72,14 +79,24 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
                         frame for frame in visor_annotations
                         if int(frame["image"]["subsequence"].split("_")[-1]) == sequence_index
                     ]
-                    objects_in_sequence = list(set(sum([f["objects"] for f in frames_in_sequence], [])))
-                    if "left hand" in objects_in_sequence:
-                        objects_in_sequence.remove("left hand")
-                    if "right hand" in objects_in_sequence:
-                        objects_in_sequence.remove("right hand")
+                    # Collect (class_id, name) from all frames, then build objects with class_name from noun classes
+                    raw_objects = set(sum([f["objects"] for f in frames_in_sequence], []))
+                    objects_in_sequence = []
+                    for class_id, name in raw_objects:
+                        class_name = noun_class_names.get(class_id, "unknown")
+                        # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
+                        if class_id in (300, 301) or class_name in ("hand:left", "hand:right"):
+                            continue
+                        objects_in_sequence.append({
+                            "class_id": class_id,
+                            "class_name": class_name,
+                            "name": name,
+                        })
+                    objects_in_sequence = sorted(objects_in_sequence, key=lambda x: (x["class_name"], x["name"]))
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
-                    txt_file.write(f"Objects in sequence: {objects_in_sequence}\n")
+                    obj_strs = [f"{o['class_name']} ({o['name']})" for o in objects_in_sequence]
+                    txt_file.write(f"Objects in sequence: {obj_strs}\n")
                     txt_file.write(f"Verb-noun pairs in sequence: {narrations}\n")
                     txt_file.write("************\n")
 
@@ -87,7 +104,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, output_dir
                         "segment_id": f"{video_id}_ActiveUsage_{sequence_index:04d}",
                         "start_time": sequence_start_time,
                         "end_time": sequence_end_time,
-                        "objects_in_sequence": sorted(objects_in_sequence),
+                        "objects_in_sequence": objects_in_sequence,
                         "frame_ids": frame_ids_in_sequence,
                         "narrations": narrations,
                     })
@@ -115,12 +132,15 @@ def main():
         narration_low_level.append(narration_file)
     narration_low_level_df = pd.concat(narration_low_level)
 
+    print("Loading noun class names")
+    noun_class_names = load_noun_class_names()
+
     for row in video_info:
         print(f"Processing video {row['video_id']}")
-        save_active_objects(row["video_id"], video_info, narration_low_level_df, output_dir="active_objects")
+        save_active_objects(row["video_id"], video_info, narration_low_level_df, noun_class_names, output_dir="active_objects")
     
     # ## DEBUG
-    # save_active_objects("P37_101", video_info, narration_low_level_df, output_dir="active_objects")
+    # save_active_objects("P37_101", video_info, narration_low_level_df, noun_class_names, output_dir="active_objects")
 
 
 if __name__ == "__main__":

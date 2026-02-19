@@ -4,11 +4,31 @@
     "start_time": 1.3,
     "end_time": 20.16,
     "objects_in_sequence": [
-      "cupboard",
-      "kitchen",
-      "laundry",
-      "washing machine",
-      "washing powder package"
+      {
+        "class_id": 73,
+        "class_name": "clothes",
+        "name": "laundry"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 157,
+        "class_name": "kitchen",
+        "name": "kitchen"
+      },
+      {
+        "class_id": 124,
+        "class_name": "machine:washing",
+        "name": "washing machine"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "washing powder package"
+      }
     ],
     "frame_ids": [
       120,
@@ -30,13 +50,41 @@
     "start_time": 21.15,
     "end_time": 43.06,
     "objects_in_sequence": [
-      "setting",
-      "sink",
-      "tap",
-      "washing machine",
-      "washing powder",
-      "washing powder package",
-      "water"
+      {
+        "class_id": 124,
+        "class_name": "machine:washing",
+        "name": "setting"
+      },
+      {
+        "class_id": 124,
+        "class_name": "machine:washing",
+        "name": "washing machine"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "washing powder package"
+      },
+      {
+        "class_id": 234,
+        "class_name": "powder:washing",
+        "name": "washing powder"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       1357,
@@ -59,10 +107,26 @@
     "start_time": 46.65,
     "end_time": 85.94,
     "objects_in_sequence": [
-      "fridge",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3029,
@@ -84,9 +148,21 @@
     "start_time": 90.59,
     "end_time": 97.35,
     "objects_in_sequence": [
-      "drawer",
-      "fridge",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      }
     ],
     "frame_ids": [
       5451,
@@ -107,8 +183,16 @@
     "start_time": 98.69,
     "end_time": 119.03,
     "objects_in_sequence": [
-      "drawer",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      }
     ],
     "frame_ids": [
       6025,
@@ -130,12 +214,36 @@
     "start_time": 125.84,
     "end_time": 137.14,
     "objects_in_sequence": [
-      "dishwasher",
-      "drawer",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       7574,
@@ -156,13 +264,41 @@
     "start_time": 137.74,
     "end_time": 183.52,
     "objects_in_sequence": [
-      "chopping board",
-      "dish brush",
-      "dishwasher",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 103,
+        "class_name": "brush",
+        "name": "dish brush"
+      },
+      {
+        "class_id": 70,
+        "class_name": "dishwasher",
+        "name": "dishwasher"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       8328,
@@ -185,11 +321,31 @@
     "start_time": 183.63,
     "end_time": 206.77,
     "objects_in_sequence": [
-      "chopping board",
-      "drawer",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       11137,
@@ -211,13 +367,41 @@
     "start_time": 210.37,
     "end_time": 225.56,
     "objects_in_sequence": [
-      "cupboard",
-      "frying pan",
-      "knife",
-      "meat package",
-      "minced meat",
-      "sink",
-      "tap"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       12633,
@@ -238,10 +422,26 @@
     "start_time": 230.56,
     "end_time": 248.19,
     "objects_in_sequence": [
-      "frying pan",
-      "stove",
-      "tomato sauce",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "stove"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "tomato sauce"
+      }
     ],
     "frame_ids": [
       13858,
@@ -262,10 +462,26 @@
     "start_time": 248.35,
     "end_time": 277.15999999999997,
     "objects_in_sequence": [
-      "garlic",
-      "onion",
-      "tomato sauce",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "tomato sauce"
+      }
     ],
     "frame_ids": [
       14993,
@@ -286,11 +502,31 @@
     "start_time": 278.75,
     "end_time": 325.6,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife",
-      "onion",
-      "peel"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peel"
+      }
     ],
     "frame_ids": [
       16890,
@@ -313,9 +549,21 @@
     "start_time": 339.21,
     "end_time": 387.73,
     "objects_in_sequence": [
-      "garlic",
-      "onion",
-      "peel"
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 48,
+        "class_name": "skin",
+        "name": "peel"
+      }
     ],
     "frame_ids": [
       20486,
@@ -337,9 +585,21 @@
     "start_time": 388.44,
     "end_time": 434.47,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       23461,
@@ -360,13 +620,41 @@
     "start_time": 450.59,
     "end_time": 477.12,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife",
-      "onion",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       27117,
@@ -387,10 +675,26 @@
     "start_time": 477.22,
     "end_time": 530.68,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife",
-      "onion"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      }
     ],
     "frame_ids": [
       28965,
@@ -412,10 +716,26 @@
     "start_time": 537.61,
     "end_time": 618.52,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife",
-      "onion"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      }
     ],
     "frame_ids": [
       32589,
@@ -437,12 +757,36 @@
     "start_time": 619.81,
     "end_time": 644.89,
     "objects_in_sequence": [
-      "chopping board",
-      "garlic",
-      "knife",
-      "onion",
-      "sink",
-      "tap"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 51,
+        "class_name": "garlic",
+        "name": "garlic"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       37285,
@@ -464,11 +808,31 @@
     "start_time": 646.54,
     "end_time": 657.59,
     "objects_in_sequence": [
-      "frying pan",
-      "hob",
-      "olive bottle",
-      "olive oil",
-      "olive oil spray"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "olive bottle"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "olive oil"
+      },
+      {
+        "class_id": 31,
+        "class_name": "oil",
+        "name": "olive oil spray"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       38798,
@@ -489,10 +853,26 @@
     "start_time": 657.69,
     "end_time": 669.29,
     "objects_in_sequence": [
-      "frying pan",
-      "hob",
-      "olive",
-      "olive bottle"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "olive bottle"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 83,
+        "class_name": "olive",
+        "name": "olive"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       39592,
@@ -513,9 +893,21 @@
     "start_time": 701.96,
     "end_time": 714.19,
     "objects_in_sequence": [
-      "pepper",
-      "salt bottle",
-      "spice"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "salt bottle"
+      },
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "pepper"
+      },
+      {
+        "class_id": 85,
+        "class_name": "spice",
+        "name": "spice"
+      }
     ],
     "frame_ids": [
       42148,
@@ -536,10 +928,26 @@
     "start_time": 716.12,
     "end_time": 742.8,
     "objects_in_sequence": [
-      "parsley package",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "parsley package"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       42980,
@@ -560,14 +968,46 @@
     "start_time": 747.2,
     "end_time": 771.49,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "onion",
-      "parsley",
-      "parsley package",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "parsley package"
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       44903,
@@ -588,12 +1028,36 @@
     "start_time": 772.34,
     "end_time": 804.34,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "parsley",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       46376,
@@ -614,18 +1078,66 @@
     "start_time": 808.12,
     "end_time": 854.02,
     "objects_in_sequence": [
-      "chopping board",
-      "fork",
-      "frying pan",
-      "knife",
-      "mince meat",
-      "minced meat",
-      "minced meat package",
-      "parsley",
-      "sink",
-      "stove",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "stove"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mince meat"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "minced meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       48845,
@@ -648,14 +1160,46 @@
     "start_time": 854.27,
     "end_time": 894.59,
     "objects_in_sequence": [
-      "fan",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "minced meat",
-      "minced meat package",
-      "switch"
+      {
+        "class_id": 92,
+        "class_name": "button",
+        "name": "switch"
+      },
+      {
+        "class_id": 179,
+        "class_name": "fan:extractor",
+        "name": "fan"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "minced meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       51295,
@@ -676,12 +1220,36 @@
     "start_time": 898.22,
     "end_time": 910.69,
     "objects_in_sequence": [
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "mince meat",
-      "minced meat package"
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mince meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "minced meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       53950,
@@ -702,14 +1270,46 @@
     "start_time": 930.97,
     "end_time": 971.65,
     "objects_in_sequence": [
-      "bin",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "mince meat",
-      "minced meat package",
-      "mug"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "bin"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mince meat"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "minced meat package"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       55964,
@@ -731,12 +1331,36 @@
     "start_time": 978.23,
     "end_time": 1016.1,
     "objects_in_sequence": [
-      "drawer",
-      "mug",
-      "salt bottle",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "salt bottle"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       58725,
@@ -758,19 +1382,71 @@
     "start_time": 1024.3,
     "end_time": 1062.38,
     "objects_in_sequence": [
-      "chopping board",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "mince meat",
-      "onion",
-      "parsley",
-      "salt",
-      "salt bottle",
-      "spoon",
-      "tomato sauce",
-      "tomato sauce can"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "salt bottle"
+      },
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "mince meat"
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley"
+      },
+      {
+        "class_id": 38,
+        "class_name": "salt",
+        "name": "salt"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "tomato sauce"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       61501,
@@ -791,16 +1467,56 @@
     "start_time": 1066.09,
     "end_time": 1104.04,
     "objects_in_sequence": [
-      "chopping board",
-      "food",
-      "fork",
-      "frying pan",
-      "garbage",
-      "hob",
-      "knife",
-      "parsley",
-      "sink",
-      "tap"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       64277,
@@ -822,12 +1538,36 @@
     "start_time": 1104.75,
     "end_time": 1129.45,
     "objects_in_sequence": [
-      "bin",
-      "garbage",
-      "sink",
-      "tap",
-      "towel",
-      "water"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "bin"
+      },
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "towel"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       66361,
@@ -848,11 +1588,31 @@
     "start_time": 1131.65,
     "end_time": 1181.89,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       68217,
@@ -873,13 +1633,41 @@
     "start_time": 1183.04,
     "end_time": 1197.24,
     "objects_in_sequence": [
-      "food",
-      "frying pan",
-      "hob",
-      "minced meat",
-      "pan",
-      "pepper",
-      "spice jar"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "spice jar"
+      },
+      {
+        "class_id": 28,
+        "class_name": "meat",
+        "name": "minced meat"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "pan"
+      },
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "pepper"
+      }
     ],
     "frame_ids": [
       71000,
@@ -901,14 +1689,46 @@
     "start_time": 1225.13,
     "end_time": 1295.14,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "spice jar",
-      "tomato sauce",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "spice jar"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "tomato sauce"
+      }
     ],
     "frame_ids": [
       73605,
@@ -929,15 +1749,51 @@
     "start_time": 1295.62,
     "end_time": 1318.07,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "fridge",
-      "frying pan",
-      "hob",
-      "knife",
-      "spoon",
-      "tomato sauce",
-      "tomato sauce can"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 47,
+        "class_name": "sauce",
+        "name": "tomato sauce"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       77803,
@@ -958,8 +1814,16 @@
     "start_time": 1322.17,
     "end_time": 1356.79,
     "objects_in_sequence": [
-      "fridge",
-      "tube"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 227,
+        "class_name": "roll",
+        "name": "tube"
+      }
     ],
     "frame_ids": [
       79382,
@@ -980,14 +1844,46 @@
     "start_time": 1356.89,
     "end_time": 1372.25,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "fridge",
-      "frying pan",
-      "hob",
-      "knife",
-      "tomato",
-      "tube"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 227,
+        "class_name": "roll",
+        "name": "tube"
+      },
+      {
+        "class_id": 43,
+        "class_name": "tomato",
+        "name": "tomato"
+      }
     ],
     "frame_ids": [
       81510,
@@ -1008,14 +1904,46 @@
     "start_time": 1373.41,
     "end_time": 1422.47,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "spice",
-      "spice jar",
-      "spice plastic bag"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "spice plastic bag"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "spice jar"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 85,
+        "class_name": "spice",
+        "name": "spice"
+      }
     ],
     "frame_ids": [
       82892,
@@ -1037,12 +1965,36 @@
     "start_time": 1435.97,
     "end_time": 1466.91,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "spice jar"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 40,
+        "class_name": "jar",
+        "name": "spice jar"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      }
     ],
     "frame_ids": [
       86187,
@@ -1065,15 +2017,51 @@
     "start_time": 1467.48,
     "end_time": 1527.22,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "sink",
-      "tap",
-      "tomato sauce can",
-      "water"
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       88335,
@@ -1094,10 +2082,26 @@
     "start_time": 1536.14,
     "end_time": 1547.68,
     "objects_in_sequence": [
-      "cupboard",
-      "plastic bag",
-      "tomato sauce can",
-      "trash bin"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "plastic bag"
+      },
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "trash bin"
+      },
+      {
+        "class_id": 61,
+        "class_name": "can",
+        "name": "tomato sauce can"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      }
     ],
     "frame_ids": [
       92235,
@@ -1118,13 +2122,41 @@
     "start_time": 1556.86,
     "end_time": 1607.99,
     "objects_in_sequence": [
-      "chopping board",
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "sink"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      }
     ],
     "frame_ids": [
       93641,
@@ -1146,9 +2178,21 @@
     "start_time": 1610.53,
     "end_time": 1629.89,
     "objects_in_sequence": [
-      "butter",
-      "fridge",
-      "salt bottle"
+      {
+        "class_id": 15,
+        "class_name": "bottle",
+        "name": "salt bottle"
+      },
+      {
+        "class_id": 78,
+        "class_name": "butter",
+        "name": "butter"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      }
     ],
     "frame_ids": [
       96708,
@@ -1169,17 +2213,61 @@
     "start_time": 1630.96,
     "end_time": 1671.42,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "fridge",
-      "frying pan",
-      "glass",
-      "hob",
-      "knife",
-      "sink",
-      "spoon",
-      "tap",
-      "water"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 10,
+        "class_name": "glass",
+        "name": "glass"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       97975,
@@ -1200,10 +2288,26 @@
     "start_time": 1671.74,
     "end_time": 1685.67,
     "objects_in_sequence": [
-      "glass",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 10,
+        "class_name": "glass",
+        "name": "glass"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       100357,
@@ -1225,10 +2329,26 @@
     "start_time": 1686.44,
     "end_time": 1692.85,
     "objects_in_sequence": [
-      "garbage",
-      "sink",
-      "spoon",
-      "tap"
+      {
+        "class_id": 54,
+        "class_name": "rubbish",
+        "name": "garbage"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       101206,
@@ -1250,14 +2370,46 @@
     "start_time": 1695.42,
     "end_time": 1713.75,
     "objects_in_sequence": [
-      "cupboard",
-      "food",
-      "fork",
-      "frying pan",
-      "hob",
-      "knife",
-      "sink",
-      "tap"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       101833,
@@ -1279,7 +2431,11 @@
     "start_time": 1717.62,
     "end_time": 1734.39,
     "objects_in_sequence": [
-      "drawer"
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      }
     ],
     "frame_ids": [
       103100,
@@ -1300,13 +2456,41 @@
     "start_time": 1734.8,
     "end_time": 1755.94,
     "objects_in_sequence": [
-      "cucumber",
-      "drawer",
-      "knife",
-      "pasta",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 72,
+        "class_name": "cucumber",
+        "name": "cucumber"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 45,
+        "class_name": "pasta",
+        "name": "pasta"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       104201,
@@ -1329,12 +2513,36 @@
     "start_time": 1761.59,
     "end_time": 1781.95,
     "objects_in_sequence": [
-      "chopping board",
-      "cucumber",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 72,
+        "class_name": "cucumber",
+        "name": "cucumber"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       105711,
@@ -1355,12 +2563,36 @@
     "start_time": 1782.06,
     "end_time": 1813.7,
     "objects_in_sequence": [
-      "chopping board",
-      "cucumber",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 72,
+        "class_name": "cucumber",
+        "name": "cucumber"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       107196,
@@ -1381,14 +2613,46 @@
     "start_time": 1816.1,
     "end_time": 1851.37,
     "objects_in_sequence": [
-      "food",
-      "fork",
-      "frying pan",
-      "hob/cooktop/stovetop",
-      "knife",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 34,
+        "class_name": "food",
+        "name": "food"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 24,
+        "class_name": "hob",
+        "name": "hob/cooktop/stovetop"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "frying pan"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       109340,

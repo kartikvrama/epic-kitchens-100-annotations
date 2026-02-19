@@ -4,10 +4,26 @@
     "start_time": 0.42,
     "end_time": 3.05,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "pitta bread",
-      "pitta bread package"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta bread"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pitta bread package"
+      }
     ],
     "frame_ids": [
       23,
@@ -28,9 +44,21 @@
     "start_time": 3.15,
     "end_time": 10.56,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee bag",
-      "toaster"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 186,
+        "class_name": "toaster",
+        "name": "toaster"
+      }
     ],
     "frame_ids": [
       171,
@@ -52,10 +80,26 @@
     "start_time": 10.88,
     "end_time": 17.95,
     "objects_in_sequence": [
-      "coffee",
-      "coffee bag",
-      "spoon",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      }
     ],
     "frame_ids": [
       567,
@@ -78,10 +122,26 @@
     "start_time": 19.2,
     "end_time": 24.32,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee bag",
-      "cup",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "coffee bag"
+      },
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      }
     ],
     "frame_ids": [
       976,
@@ -104,9 +164,21 @@
     "start_time": 24.68,
     "end_time": 28.46,
     "objects_in_sequence": [
-      "cupboard",
-      "filter",
-      "filters package"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "filters package"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      }
     ],
     "frame_ids": [
       1231,
@@ -127,12 +199,36 @@
     "start_time": 28.49,
     "end_time": 33.5,
     "objects_in_sequence": [
-      "chopping board",
-      "cup",
-      "cupboard",
-      "filter",
-      "filters package",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "filters package"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      }
     ],
     "frame_ids": [
       1446,
@@ -154,12 +250,36 @@
     "start_time": 34.99,
     "end_time": 40.3,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "coffee container",
-      "coffee grinder",
-      "filter",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "coffee container"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "coffee grinder"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      }
     ],
     "frame_ids": [
       1780,
@@ -180,13 +300,41 @@
     "start_time": 40.4,
     "end_time": 45.54,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "coffee container",
-      "coffee grinder",
-      "filter",
-      "mug",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "coffee container"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "coffee grinder"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      }
     ],
     "frame_ids": [
       2044,
@@ -208,11 +356,31 @@
     "start_time": 45.86,
     "end_time": 51.41,
     "objects_in_sequence": [
-      "jug",
-      "kettle",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       2313,
@@ -235,9 +403,21 @@
     "start_time": 51.45,
     "end_time": 54.83,
     "objects_in_sequence": [
-      "jug",
-      "kettle",
-      "water"
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       2584,
@@ -258,12 +438,36 @@
     "start_time": 55.43,
     "end_time": 61.02,
     "objects_in_sequence": [
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up liquid",
-      "water"
+      {
+        "class_id": 22,
+        "class_name": "liquid:washing",
+        "name": "washing up liquid"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       2780,
@@ -285,13 +489,41 @@
     "start_time": 61.12,
     "end_time": 78.86,
     "objects_in_sequence": [
-      "drainer",
-      "mug",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "water"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3117,
@@ -314,14 +546,46 @@
     "start_time": 85.16,
     "end_time": 99.3,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer",
-      "lemon squeezer piece",
-      "mug",
-      "sink",
-      "sponge",
-      "tap",
-      "water"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       4338,
@@ -344,13 +608,41 @@
     "start_time": 99.31,
     "end_time": 104.19,
     "objects_in_sequence": [
-      "lemon squeezer",
-      "lemon squeezer piece",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "water"
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       4982,
@@ -372,11 +664,31 @@
     "start_time": 104.28999999999999,
     "end_time": 110.49000000000001,
     "objects_in_sequence": [
-      "knife",
-      "plate",
-      "sink",
-      "sponge",
-      "tap"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       5255,
@@ -397,12 +709,36 @@
     "start_time": 112.7,
     "end_time": 114.50999999999999,
     "objects_in_sequence": [
-      "knife",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       5650,
@@ -423,13 +759,41 @@
     "start_time": 114.69,
     "end_time": 125.47,
     "objects_in_sequence": [
-      "knife",
-      "lemon squeezer piece",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       5761,
@@ -450,13 +814,41 @@
     "start_time": 125.75,
     "end_time": 133.24,
     "objects_in_sequence": [
-      "knife",
-      "lemon squeezer piece",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       6296,
@@ -478,13 +870,41 @@
     "start_time": 134.12,
     "end_time": 142.94,
     "objects_in_sequence": [
-      "knife",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       6736,
@@ -507,13 +927,41 @@
     "start_time": 145.82,
     "end_time": 150.61,
     "objects_in_sequence": [
-      "drainer",
-      "plate",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       7294,
@@ -535,11 +983,31 @@
     "start_time": 150.71,
     "end_time": 158.75,
     "objects_in_sequence": [
-      "fork",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       7554,
@@ -560,12 +1028,36 @@
     "start_time": 158.81,
     "end_time": 166.35,
     "objects_in_sequence": [
-      "drainer",
-      "fork",
-      "lemon squeezer piece",
-      "sink",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       8005,
@@ -588,12 +1080,36 @@
     "start_time": 174.86,
     "end_time": 180.4,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "sink",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       8769,
@@ -616,12 +1132,36 @@
     "start_time": 180.5,
     "end_time": 192.22,
     "objects_in_sequence": [
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       9030,
@@ -643,13 +1183,41 @@
     "start_time": 192.22,
     "end_time": 200.24,
     "objects_in_sequence": [
-      "knife",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       9877,
@@ -671,13 +1239,41 @@
     "start_time": 200.32999999999998,
     "end_time": 207.7,
     "objects_in_sequence": [
-      "drainer",
-      "knife",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       10151,
@@ -699,14 +1295,46 @@
     "start_time": 207.75,
     "end_time": 214.45,
     "objects_in_sequence": [
-      "drainer",
-      "knife",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       10626,
@@ -727,14 +1355,46 @@
     "start_time": 217.26,
     "end_time": 227.3,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "spoon",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       11186,
@@ -756,13 +1416,41 @@
     "start_time": 228.35,
     "end_time": 232.24,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "spoon",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       11484,
@@ -784,13 +1472,41 @@
     "start_time": 232.63,
     "end_time": 248.21,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "spoon",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       11690,
@@ -812,12 +1528,36 @@
     "start_time": 248.31,
     "end_time": 252.89,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       12484,
@@ -839,13 +1579,41 @@
     "start_time": 253.78,
     "end_time": 260.99,
     "objects_in_sequence": [
-      "chopping board",
-      "drainer",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       12839,
@@ -867,9 +1635,21 @@
     "start_time": 262.12,
     "end_time": 265.08,
     "objects_in_sequence": [
-      "chopping board",
-      "pitta bread package",
-      "sponge"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pitta bread package"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      }
     ],
     "frame_ids": [
       13165,
@@ -891,11 +1671,31 @@
     "start_time": 265.16,
     "end_time": 270.74,
     "objects_in_sequence": [
-      "pitta bread package",
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pitta bread package"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       13321,
@@ -920,11 +1720,31 @@
     "start_time": 272.03,
     "end_time": 277.83,
     "objects_in_sequence": [
-      "sink",
-      "sponge",
-      "tap",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       13847,
@@ -946,12 +1766,36 @@
     "start_time": 277.89,
     "end_time": 283.22,
     "objects_in_sequence": [
-      "sink",
-      "sponge",
-      "tap",
-      "tea towel",
-      "washing up bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       14079,
@@ -972,14 +1816,46 @@
     "start_time": 284.0,
     "end_time": 289.69,
     "objects_in_sequence": [
-      "chopping board",
-      "jug",
-      "kettle",
-      "mug",
-      "pitta bread",
-      "pitta bread package",
-      "sponge",
-      "toaster"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta bread"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 26,
+        "class_name": "package",
+        "name": "pitta bread package"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 186,
+        "class_name": "toaster",
+        "name": "toaster"
+      }
     ],
     "frame_ids": [
       14367,
@@ -1000,13 +1876,41 @@
     "start_time": 291.22,
     "end_time": 297.73,
     "objects_in_sequence": [
-      "coffee",
-      "filter",
-      "jug",
-      "kettle",
-      "mug",
-      "v60 cup",
-      "water"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       14657,
@@ -1028,12 +1932,36 @@
     "start_time": 297.94,
     "end_time": 307.33,
     "objects_in_sequence": [
-      "coffee",
-      "filter",
-      "fridge",
-      "jug",
-      "v60 cup",
-      "water"
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       15096,
@@ -1055,9 +1983,21 @@
     "start_time": 307.43,
     "end_time": 311.49,
     "objects_in_sequence": [
-      "fridge",
-      "hummus",
-      "lid"
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "lid"
+      }
     ],
     "frame_ids": [
       15442,
@@ -1080,10 +2020,26 @@
     "start_time": 313.72,
     "end_time": 317.27,
     "objects_in_sequence": [
-      "cupboard",
-      "drainer",
-      "hummus",
-      "plate"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      }
     ],
     "frame_ids": [
       15759,
@@ -1104,11 +2060,31 @@
     "start_time": 317.68,
     "end_time": 320.07,
     "objects_in_sequence": [
-      "chopping board",
-      "cupboard",
-      "knife",
-      "pitta bread",
-      "plate"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta bread"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       15946,
@@ -1130,13 +2106,41 @@
     "start_time": 321.5,
     "end_time": 332.21,
     "objects_in_sequence": [
-      "chopping board",
-      "knife",
-      "pitta bread",
-      "plate",
-      "sink",
-      "sponge",
-      "tap"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta bread"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 9,
+        "class_name": "sponge",
+        "name": "sponge"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       16450,
@@ -1160,10 +2164,26 @@
     "start_time": 333.9,
     "end_time": 337.37,
     "objects_in_sequence": [
-      "drainer",
-      "knife",
-      "sink",
-      "tap"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       16733,
@@ -1185,17 +2205,61 @@
     "start_time": 337.89,
     "end_time": 343.97,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "jug",
-      "mug",
-      "pitta piece",
-      "plate",
-      "tea towel",
-      "v60 cup",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       17021,
@@ -1218,17 +2282,61 @@
     "start_time": 344.68,
     "end_time": 361.53,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "jug",
-      "lid",
-      "mug",
-      "pitta bread",
-      "pitta piece",
-      "plate",
-      "v60 cup"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta bread"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "lid"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       17955,
@@ -1251,17 +2359,61 @@
     "start_time": 362.04,
     "end_time": 371.38,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "jug",
-      "lid",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60 cup",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "lid"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       18242,
@@ -1283,14 +2435,46 @@
     "start_time": 371.52,
     "end_time": 381.56,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       18667,
@@ -1311,16 +2495,56 @@
     "start_time": 381.66,
     "end_time": 384.5,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "jug",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60 cup",
-      "water"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       19147,
@@ -1341,14 +2565,46 @@
     "start_time": 384.6,
     "end_time": 403.87,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       20114,
@@ -1370,14 +2626,46 @@
     "start_time": 404.15999999999997,
     "end_time": 430.1,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       21284,
@@ -1399,10 +2687,26 @@
     "start_time": 430.68,
     "end_time": 434.13,
     "objects_in_sequence": [
-      "chopping board",
-      "hummus",
-      "pitta piece",
-      "plate"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       21671,
@@ -1421,10 +2725,26 @@
     "start_time": 436.21,
     "end_time": 452.02,
     "objects_in_sequence": [
-      "chopping board",
-      "hummus",
-      "pitta piece",
-      "plate"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       22538,
@@ -1446,14 +2766,46 @@
     "start_time": 452.31,
     "end_time": 479.87,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       23875,
@@ -1475,10 +2827,26 @@
     "start_time": 483.46,
     "end_time": 487.17,
     "objects_in_sequence": [
-      "chopping board",
-      "hummus",
-      "pitta piece",
-      "plate"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       24307,
@@ -1499,14 +2867,46 @@
     "start_time": 500.15,
     "end_time": 512.9,
     "objects_in_sequence": [
-      "chopping board",
-      "coffee",
-      "filter",
-      "hummus",
-      "mug",
-      "pitta piece",
-      "plate",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 181,
+        "class_name": "hummus",
+        "name": "hummus"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       25551,
@@ -1529,10 +2929,26 @@
     "start_time": 516.46,
     "end_time": 525.3,
     "objects_in_sequence": [
-      "cupboard",
-      "drainer",
-      "plate",
-      "tea towel"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       26237,
@@ -1553,10 +2969,26 @@
     "start_time": 526.46,
     "end_time": 529.36,
     "objects_in_sequence": [
-      "cupboard",
-      "glass",
-      "plate",
-      "tea towel"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 10,
+        "class_name": "glass",
+        "name": "glass"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       26571,
@@ -1578,13 +3010,41 @@
     "start_time": 531.27,
     "end_time": 536.15,
     "objects_in_sequence": [
-      "cupboard",
-      "drainer",
-      "drawer",
-      "glass",
-      "knife",
-      "plate",
-      "tea towel"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 10,
+        "class_name": "glass",
+        "name": "glass"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       26917,
@@ -1606,11 +3066,31 @@
     "start_time": 538.14,
     "end_time": 546.48,
     "objects_in_sequence": [
-      "drainer",
-      "drawer",
-      "fork",
-      "knife",
-      "tea towel"
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       27324,
@@ -1634,11 +3114,31 @@
     "start_time": 546.58,
     "end_time": 549.55,
     "objects_in_sequence": [
-      "drainer",
-      "knife",
-      "lemon squeezer piece",
-      "spoon",
-      "tea towel"
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       27571,
@@ -1659,9 +3159,21 @@
     "start_time": 549.62,
     "end_time": 553.67,
     "objects_in_sequence": [
-      "drainer",
-      "lemon squeezer piece",
-      "tea towel"
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       27814,
@@ -1684,8 +3196,16 @@
     "start_time": 554.94,
     "end_time": 560.92,
     "objects_in_sequence": [
-      "lemon squeezer piece",
-      "tea towel"
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer piece"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       28780,
@@ -1707,8 +3227,16 @@
     "start_time": 561.02,
     "end_time": 578.76,
     "objects_in_sequence": [
-      "drawer",
-      "lemon squeezer"
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 106,
+        "class_name": "juicer",
+        "name": "lemon squeezer"
+      }
     ],
     "frame_ids": [
       29744,
@@ -1730,12 +3258,36 @@
     "start_time": 591.59,
     "end_time": 597.21,
     "objects_in_sequence": [
-      "bin",
-      "coffee",
-      "filter",
-      "mug",
-      "tea towel",
-      "v60/pourover coffee maker"
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "bin"
+      },
+      {
+        "class_id": 59,
+        "class_name": "coffee",
+        "name": "coffee"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "mug"
+      },
+      {
+        "class_id": 77,
+        "class_name": "filter",
+        "name": "filter"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       30080,
@@ -1756,11 +3308,31 @@
     "start_time": 598.01,
     "end_time": 606.18,
     "objects_in_sequence": [
-      "cupboard",
-      "jug",
-      "sink",
-      "v60/pourover coffee maker",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60/pourover coffee maker"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      }
     ],
     "frame_ids": [
       30451,
@@ -1783,13 +3355,41 @@
     "start_time": 607.46,
     "end_time": 610.98,
     "objects_in_sequence": [
-      "cupboard",
-      "jug",
-      "sink",
-      "tap",
-      "v60 cup",
-      "washing bowl",
-      "water"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing bowl"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       30641,
@@ -1810,14 +3410,46 @@
     "start_time": 611.01,
     "end_time": 615.72,
     "objects_in_sequence": [
-      "drainer",
-      "jug",
-      "pitta piece",
-      "plate",
-      "sink",
-      "tap",
-      "v60 cup",
-      "washing up bowl"
+      {
+        "class_id": 7,
+        "class_name": "bowl",
+        "name": "washing up bowl"
+      },
+      {
+        "class_id": 33,
+        "class_name": "bread",
+        "name": "pitta piece"
+      },
+      {
+        "class_id": 66,
+        "class_name": "jug",
+        "name": "jug"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "v60 cup"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       30913,

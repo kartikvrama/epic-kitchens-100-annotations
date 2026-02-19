@@ -4,9 +4,21 @@
     "start_time": 1.43,
     "end_time": 10.0,
     "objects_in_sequence": [
-      "cupboard",
-      "door",
-      "plate"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "door"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       109,
@@ -27,9 +39,21 @@
     "start_time": 10.48,
     "end_time": 14.65,
     "objects_in_sequence": [
-      "cupboard",
-      "plate",
-      "wok"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "wok"
+      },
+      {
+        "class_id": 2,
+        "class_name": "plate",
+        "name": "plate"
+      }
     ],
     "frame_ids": [
       538,
@@ -50,9 +74,21 @@
     "start_time": 16.17,
     "end_time": 21.9,
     "objects_in_sequence": [
-      "cupboard",
-      "paper",
-      "wok"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 5,
+        "class_name": "pan",
+        "name": "wok"
+      },
+      {
+        "class_id": 49,
+        "class_name": "paper",
+        "name": "paper"
+      }
     ],
     "frame_ids": [
       817,
@@ -76,10 +112,26 @@
     "start_time": 22.82,
     "end_time": 29.63,
     "objects_in_sequence": [
-      "chopping board",
-      "colander",
-      "cupboard",
-      "knife"
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board"
+      },
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       1182,
@@ -101,8 +153,16 @@
     "start_time": 33.96,
     "end_time": 37.53,
     "objects_in_sequence": [
-      "cup",
-      "spatula"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "spatula"
+      }
     ],
     "frame_ids": [
       1725,
@@ -123,7 +183,11 @@
     "start_time": 37.94,
     "end_time": 41.59,
     "objects_in_sequence": [
-      "knife"
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      }
     ],
     "frame_ids": [
       1913,
@@ -145,12 +209,36 @@
     "start_time": 42.03,
     "end_time": 46.7,
     "objects_in_sequence": [
-      "cutlery tray",
-      "drawer",
-      "fork",
-      "knife",
-      "peeler",
-      "spatula"
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 87,
+        "class_name": "peeler:potato",
+        "name": "peeler"
+      },
+      {
+        "class_id": 20,
+        "class_name": "spatula",
+        "name": "spatula"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "cutlery tray"
+      }
     ],
     "frame_ids": [
       2126,
@@ -171,11 +259,31 @@
     "start_time": 46.87,
     "end_time": 50.03,
     "objects_in_sequence": [
-      "cutlery tray",
-      "drawer",
-      "fork",
-      "knife",
-      "peeler"
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 14,
+        "class_name": "fork",
+        "name": "fork"
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife"
+      },
+      {
+        "class_id": 87,
+        "class_name": "peeler:potato",
+        "name": "peeler"
+      },
+      {
+        "class_id": 35,
+        "class_name": "tray",
+        "name": "cutlery tray"
+      }
     ],
     "frame_ids": [
       2363,
@@ -197,8 +305,16 @@
     "start_time": 50.31,
     "end_time": 54.01,
     "objects_in_sequence": [
-      "cafetiere",
-      "colander"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "cafetiere"
+      }
     ],
     "frame_ids": [
       2532,
@@ -219,10 +335,26 @@
     "start_time": 54.11,
     "end_time": 59.01,
     "objects_in_sequence": [
-      "cafetiere",
-      "colander",
-      "cup",
-      "cupboard"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "cafetiere"
+      }
     ],
     "frame_ids": [
       2709,
@@ -243,11 +375,31 @@
     "start_time": 59.11,
     "end_time": 67.43,
     "objects_in_sequence": [
-      "cafetiere",
-      "cupboard",
-      "sink",
-      "spoon",
-      "tap"
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 50,
+        "class_name": "maker:coffee",
+        "name": "cafetiere"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       2962,
@@ -270,10 +422,26 @@
     "start_time": 68.64,
     "end_time": 72.91,
     "objects_in_sequence": [
-      "rice cooker",
-      "rice cooker pot",
-      "sink",
-      "tap"
+      {
+        "class_id": 152,
+        "class_name": "cooker:slow",
+        "name": "rice cooker"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "rice cooker pot"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      }
     ],
     "frame_ids": [
       3450,
@@ -295,11 +463,31 @@
     "start_time": 72.97,
     "end_time": 83.03,
     "objects_in_sequence": [
-      "colander",
-      "rice cooker pot",
-      "sink",
-      "tap",
-      "water"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 29,
+        "class_name": "pot",
+        "name": "rice cooker pot"
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink"
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap"
+      },
+      {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water"
+      }
     ],
     "frame_ids": [
       3667,
@@ -321,8 +509,16 @@
     "start_time": 84.03,
     "end_time": 87.78999999999999,
     "objects_in_sequence": [
-      "colander",
-      "cup"
+      {
+        "class_id": 39,
+        "class_name": "colander",
+        "name": "colander"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      }
     ],
     "frame_ids": [
       4213,
@@ -343,9 +539,21 @@
     "start_time": 88.24,
     "end_time": 90.91,
     "objects_in_sequence": [
-      "cereal box",
-      "cup",
-      "cupboard"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      }
     ],
     "frame_ids": [
       4413,
@@ -366,9 +574,21 @@
     "start_time": 91.36,
     "end_time": 98.09,
     "objects_in_sequence": [
-      "cereal bag",
-      "cereal box",
-      "cup"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "cereal bag"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      }
     ],
     "frame_ids": [
       4586,
@@ -391,10 +611,26 @@
     "start_time": 98.47999999999999,
     "end_time": 109.78999999999999,
     "objects_in_sequence": [
-      "cereal",
-      "cereal bag",
-      "cereal box",
-      "cup"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "cereal bag"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box"
+      },
+      {
+        "class_id": 99,
+        "class_name": "cereal",
+        "name": "cereal"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      }
     ],
     "frame_ids": [
       5042,
@@ -415,9 +651,21 @@
     "start_time": 110.38,
     "end_time": 120.59,
     "objects_in_sequence": [
-      "cereal",
-      "cereal bag",
-      "cereal box"
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "cereal bag"
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box"
+      },
+      {
+        "class_id": 99,
+        "class_name": "cereal",
+        "name": "cereal"
+      }
     ],
     "frame_ids": [
       5576,
@@ -438,12 +686,36 @@
     "start_time": 121.0,
     "end_time": 126.84,
     "objects_in_sequence": [
-      "cereal",
-      "cereal box",
-      "cup",
-      "cupboard",
-      "fridge",
-      "soy milk"
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box"
+      },
+      {
+        "class_id": 99,
+        "class_name": "cereal",
+        "name": "cereal"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 64,
+        "class_name": "milk",
+        "name": "soy milk"
+      }
     ],
     "frame_ids": [
       6088,
@@ -466,10 +738,26 @@
     "start_time": 127.24,
     "end_time": 131.25,
     "objects_in_sequence": [
-      "cup",
-      "food container",
-      "fridge",
-      "soy milk"
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "food container"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 64,
+        "class_name": "milk",
+        "name": "soy milk"
+      }
     ],
     "frame_ids": [
       6480,
@@ -491,11 +779,31 @@
     "start_time": 131.27,
     "end_time": 137.9,
     "objects_in_sequence": [
-      "cap",
-      "cup",
-      "food container",
-      "fridge",
-      "soy milk"
+      {
+        "class_id": 118,
+        "class_name": "cap",
+        "name": "cap"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "food container"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 64,
+        "class_name": "milk",
+        "name": "soy milk"
+      }
     ],
     "frame_ids": [
       6655,
@@ -517,11 +825,31 @@
     "start_time": 138.09,
     "end_time": 147.55,
     "objects_in_sequence": [
-      "cap",
-      "cup",
-      "food container",
-      "fridge",
-      "soy milk"
+      {
+        "class_id": 118,
+        "class_name": "cap",
+        "name": "cap"
+      },
+      {
+        "class_id": 21,
+        "class_name": "container",
+        "name": "food container"
+      },
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge"
+      },
+      {
+        "class_id": 64,
+        "class_name": "milk",
+        "name": "soy milk"
+      }
     ],
     "frame_ids": [
       7194,
@@ -543,10 +871,26 @@
     "start_time": 148.4,
     "end_time": 152.1,
     "objects_in_sequence": [
-      "cup",
-      "drawer",
-      "spoon",
-      "tea towel/dish towel"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel/dish towel"
+      }
     ],
     "frame_ids": [
       7513,
@@ -569,11 +913,31 @@
     "start_time": 152.7,
     "end_time": 163.41,
     "objects_in_sequence": [
-      "cup",
-      "drawer",
-      "spoon",
-      "table",
-      "tea towel/dish towel"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 42,
+        "class_name": "top",
+        "name": "table"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel/dish towel"
+      }
     ],
     "frame_ids": [
       7763,
@@ -595,10 +959,26 @@
     "start_time": 163.47,
     "end_time": 171.54,
     "objects_in_sequence": [
-      "cup",
-      "spoon",
-      "table",
-      "tea towel"
+      {
+        "class_id": 13,
+        "class_name": "cup",
+        "name": "cup"
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon"
+      },
+      {
+        "class_id": 42,
+        "class_name": "top",
+        "name": "table"
+      },
+      {
+        "class_id": 52,
+        "class_name": "towel",
+        "name": "tea towel"
+      }
     ],
     "frame_ids": [
       8471,
