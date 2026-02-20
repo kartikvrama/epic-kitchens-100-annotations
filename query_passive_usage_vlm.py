@@ -9,23 +9,27 @@ Usage:
     python query_passive_usage_vlm.py --video-path /path/to/P01_01.MP4 [options]
 """
 
+import os
+import sys
 import argparse
 import base64
 import json
-import os
-import sys
 
 import cv2
 import ollama
 
 from label_passive_usage_vlm import system_prompt
+from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
 from visualize_inactive_segments import (
     extract_frames_full_res,
     extract_object_crops,
     parse_crop_specs,
 )
 
-
+MODEL_NAME="qwen3-vl:30b"
+TEMPERATURE=0.8
+MAX_NUM_PREDICT=2000
+NUM_TRIES=3
 
 
 def ensure_ollama_model_loaded(model_name):
@@ -132,7 +136,7 @@ def query_ollama(
     crop_images_base64,
     event_history_lines,
     event_frame_images_base64,
-    num_tries=3
+    num_tries=NUM_TRIES
 ):
     """
     POST to Ollama /api/chat with system prompt, user message, images; format json. Returns parsed JSON or None.
@@ -157,7 +161,7 @@ def query_ollama(
         ]
     for i, (content, images_base64) in enumerate(zip(event_history_lines, event_frame_images_base64)):
         if i == 0:
-            content += f" Event history:\n{content}"
+            content = f"Event history:\n{content}"
         if images_base64:
             messages.append({
                 "role": "user",
@@ -170,13 +174,6 @@ def query_ollama(
                 "content": content,
             })
 
-    ## DEBUG
-    for m in messages:
-        print(m["content"])
-        if "images" in m:
-            print(f"Num images: {len(m['images'])}")
-        print("-" * 100)
-
     last_exception = None
     for attempt in range(num_tries):
         try:
@@ -184,7 +181,7 @@ def query_ollama(
                 model=model,
                 messages=messages,
                 format=json_schema,
-                options={"temperature": 0.8, "num_predict": 2000, "num_ctx": 150000},
+                options={"temperature": TEMPERATURE, "num_predict": MAX_NUM_PREDICT, "num_ctx": 150000},
             )
             if response is not None:
                 return response
@@ -199,11 +196,51 @@ def query_ollama(
     return None
 
 
+def _ollama_response_metadata(response):
+    """
+    Extract serializable debugging fields from an Ollama ChatResponse.
+    Handles both dict and Pydantic-style (get/attribute) response.
+    See: https://docs.ollama.com/api/chat and ollama-python _types.ChatResponse
+    """
+    if response is None:
+        return {}
+    out = {}
+    def get(k, default=None):
+        if isinstance(response, dict):
+            return response.get(k, default)
+        return getattr(response, k, default)
+    # Top-level timing and counts (all durations in nanoseconds)
+    out["ollama_model"] = get("model")
+    out["ollama_created_at"] = get("created_at")
+    out["ollama_done"] = get("done")
+    out["ollama_done_reason"] = get("done_reason")
+    out["ollama_total_duration_ns"] = get("total_duration")
+    out["ollama_load_duration_ns"] = get("load_duration")
+    out["ollama_prompt_eval_count"] = get("prompt_eval_count")
+    out["ollama_prompt_eval_duration_ns"] = get("prompt_eval_duration")
+    out["ollama_eval_count"] = get("eval_count")
+    out["ollama_eval_duration_ns"] = get("eval_duration")
+    # Message content (raw string; when format=json this is the JSON text)
+    msg = get("message")
+    if msg is not None:
+        msg_get = (lambda k, d=None: msg.get(k, d)) if isinstance(msg, dict) else (lambda k, d=None: getattr(msg, k, d))
+        out["ollama_message_content"] = msg_get("content")
+        out["ollama_message_thinking"] = msg_get("thinking")
+    # Full response for raw debugging (ensure JSON-serializable)
+    try:
+        raw = response.model_dump() if hasattr(response, "model_dump") else response
+        out["llm_response"] = json.loads(json.dumps(raw, default=str)) if isinstance(raw, dict) else raw
+    except Exception:
+        out["llm_response"] = str(response)
+    return out
+
 
 def main():
     parser = argparse.ArgumentParser(
         description="Query VLM (Ollama) for passive usage labels on inactive segments."
     )
+    parser.add_argument('--model', type=str, required=False, default=MODEL_NAME,
+                    help='Model name to use')
     parser.add_argument(
         "--video-path",
         required=True,
@@ -219,12 +256,9 @@ def main():
         default="vlm_passive_usage_labels",
         help="Directory to write labels JSON (default: vlm_passive_usage_labels)",
     )
-    parser.add_argument(
-        "--model",
-        default="llava",
-        help="Ollama model name (default: llava)",
-    )
     args = parser.parse_args()
+
+    ensure_ollama_model_loaded(args.model)
 
     video_path = os.path.abspath(args.video_path)
     if not os.path.isfile(video_path):
@@ -242,49 +276,103 @@ def main():
 
     os.makedirs(args.output_dir, exist_ok=True)
     output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.json")
+    debug_jsonl_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels_debug.jsonl")
     results = {}
 
-    total_segments = sum(
-        min(len(segments_data[k]), args.limit) if args.limit is not None else len(segments_data[k])
-        for k in segments_data
-    )
+    total_segments = sum([len(segments_data[k]) for k in segments_data])
     done = 0
-    for obj_key in sorted(segments_data.keys()):
-        seg_list = segments_data[obj_key]
-        category, name = object_key_to_category_and_name(obj_key)
-        results[obj_key] = []
-
-        for seg in seg_list:
-            done += 1
-            print(f"[{done}/{total_segments}] {obj_key} segment {seg.get('start_time')}-{seg.get('end_time')}", flush=True)
-            event_history_lines, event_frame_images_base64 = format_event_history(
-                seg.get("event_history", []), video_path
-            )
-            crop_images_base64 = get_crop_images_base64(video_path, seg)
-            user_content = build_user_message(category, name)
-            if not crop_images_base64:
-                results[obj_key].append({
-                    "start_time": seg.get("start_time"),
-                    "end_time": seg.get("end_time"),
-                    "error": "no crops extracted",
-                    "parse_error": True,
-                })
+    with open(debug_jsonl_path, "w") as debug_jsonl:
+        for obj_key in sorted(segments_data.keys()):
+            seg_list = segments_data[obj_key]
+            category, name = object_key_to_category_and_name(obj_key)
+            if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
+                print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
+                results[obj_key] = []
                 continue
-            out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
-            try:
-                results[obj_key].append({
-                    "start_time": seg.get("start_time"),
-                    "end_time": seg.get("end_time"),
-                    "reasoning": out.get("reasoning"),
-                    "is_passive_usage": out.get("is_passive_usage"),
-                })
-            except Exception as e:
-                import pdb; pdb.set_trace()
+            results[obj_key] = []
 
+            for seg in seg_list:
+                done += 1
+                start_time = seg.get("start_time")
+                end_time = seg.get("end_time")
+                print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
+                event_history_lines, event_frame_images_base64 = format_event_history(
+                    seg.get("event_history", []), video_path
+                )
+                crop_images_base64 = get_crop_images_base64(video_path, seg)
+                user_content = build_user_message(category, name)
+                if not crop_images_base64:
+                    results[obj_key].append({
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "error": "no crops extracted",
+                        "parse_error": True,
+                    })
+                    debug_jsonl.write(json.dumps({
+                        "query_object": obj_key,
+                        "object_name": name,
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "error": "no crops extracted",
+                        "llm_response": None,
+                    }) + "\n")
+                    continue
+                out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
+                # Parse message.content when format=json (Ollama returns content in message.content)
+                reasoning, is_passive_usage = None, None
+                raw_content = None
+                if out:
+                    msg = out.get("message") if isinstance(out, dict) else getattr(out, "message", None)
+                    if msg:
+                        raw_content = msg.get("content") if isinstance(msg, dict) else getattr(msg, "content", None)
+                        if raw_content and isinstance(raw_content, str):
+                            try:
+                                parsed = json.loads(raw_content)
+                                reasoning = parsed.get("reasoning")
+                                is_passive_usage = parsed.get("is_passive_usage")
+                            except json.JSONDecodeError:
+                                pass
+                    if reasoning is None and is_passive_usage is None:
+                        reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
+                        is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
+                try:
+                    results[obj_key].append({
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "reasoning": reasoning,
+                        "is_passive_usage": is_passive_usage,
+                    })
+                    debug_record = {
+                        "query_object": obj_key,
+                        "object_name": name,
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "reasoning": reasoning,
+                        "is_passive_usage": is_passive_usage,
+                        **_ollama_response_metadata(out),
+                    }
+                    debug_jsonl.write(json.dumps(debug_record) + "\n")
+                except Exception as e:
+                    results[obj_key].append({
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "error": str(e),
+                        "parse_error": True,
+                    })
+                    debug_record = {
+                        "query_object": obj_key,
+                        "object_name": name,
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "error": str(e),
+                        **_ollama_response_metadata(out),
+                    }
+                    debug_jsonl.write(json.dumps(debug_record) + "\n")
 
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
     print(f"Wrote {output_path}")
+    print(f"Wrote debug JSONL {debug_jsonl_path}")
 
 
 if __name__ == "__main__":
