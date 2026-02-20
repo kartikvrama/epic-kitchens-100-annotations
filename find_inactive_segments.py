@@ -81,6 +81,7 @@ def inactive_segments(active_intervals, object_crop_data, video_start, video_end
     if video_end - active_intervals[-1]["end_time"] >= min_duration:
         event_history = generate_event_history(active_intervals[-1]["narrations"], fps)
         frame_after_gap_start = math.ceil(active_intervals[-1]["end_time"] * fps)
+        object_crop_data_end = object_crop_data[-1]
         gaps.append(
             {
                 "start_time": active_intervals[-1]["end_time"],
@@ -88,6 +89,7 @@ def inactive_segments(active_intervals, object_crop_data, video_start, video_end
                 "duration_sec": round(video_end - active_intervals[-1]["end_time"], 2),
                 "event_history": event_history,
                 "frame_after_gap_start": frame_after_gap_start,
+                "crop_from_previous_active": object_crop_data_end,
             }
         )
     return gaps
