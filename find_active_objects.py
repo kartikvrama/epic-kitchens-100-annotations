@@ -18,6 +18,32 @@ def hhmmss_to_seconds(hhmmss):
     h, m, s = hhmmss.split(":")
     return int(h) * 3600 + int(m) * 60 + float(s)
 
+def bbox_from_segments(segments):
+    """Compute axis-aligned bounding box [x, y, w, h] from VISOR polygon segments."""
+    all_x, all_y = [], []
+    for polygon in segments:
+        for pt in polygon:
+            all_x.append(pt[0])
+            all_y.append(pt[1])
+    if not all_x:
+        return None
+    x = min(all_x)
+    y = min(all_y)
+    w = max(all_x) - x
+    h = max(all_y) - y
+    return [round(x, 2), round(y, 2), round(w, 2), round(h, 2)]
+
+def get_crop_for_object(frames_in_sequence, class_id, name):
+    """Return (frame_id, bbox, image_name) for first frame containing this object, or (None, None, None)."""
+    for frame in frames_in_sequence:
+        for ann in frame["annotations"]:
+            if ann["class_id"] == class_id and ann["name"] == name:
+                bbox = bbox_from_segments(ann.get("segments", []))
+                if bbox is not None:
+                    image_name = frame["image"].get("name") or frame["image"]["image_path"].split("/")[-1]
+                    return frame["frame_id"], bbox, image_name
+    return None, None, None
+
 def save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir="./"):
     visor_annotations_file = f"visor_annotations/train/{video_id}.json"
     split = "train"
@@ -114,11 +140,20 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                         # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
                         if class_id in (300, 301) or class_name in ("hand:left", "hand:right"):
                             continue
-                        objects_in_sequence.append({
+                        crop_frame_id, crop_bbox, crop_image_name = get_crop_for_object(
+                            frames_in_sequence, class_id, name
+                        )
+                        obj = {
                             "class_id": class_id,
                             "class_name": class_name,
                             "name": name,
-                        })
+                        }
+                        if crop_frame_id is not None and crop_bbox is not None:
+                            obj["crop_frame_id"] = crop_frame_id
+                            obj["crop_bbox"] = crop_bbox  # [x, y, w, h] in image coordinates
+                            if crop_image_name:
+                                obj["crop_image_name"] = crop_image_name
+                        objects_in_sequence.append(obj)
                     objects_in_sequence = sorted(objects_in_sequence, key=lambda x: (x["class_name"], x["name"]))
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
                     if not all(sequence_start_frame <= frame_id <= sequence_end_frame for frame_id in frame_ids_in_sequence):
