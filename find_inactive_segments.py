@@ -12,9 +12,19 @@ from collections import defaultdict
 import argparse
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
-BUFFER_TIME = 5 # seconds
+BUFFER_TIME = 1 # seconds
 
 video_info = []
+
+
+def sample_frames(frame_after_start, frame_before_end):
+    ## Sample frames at 25 % after start and 25 % behind end
+    duration = frame_before_end - frame_after_start
+    if duration > 50:
+        sampled_frames = [frame_after_start + math.floor(0.25 * duration), frame_before_end - math.floor(0.25 * duration)]
+    else: ## choose middle frame
+        sampled_frames = [math.floor((frame_after_start + frame_before_end) / 2)]
+    return sampled_frames
 
 
 def generate_event_history(narrations, fps):
@@ -25,10 +35,11 @@ def generate_event_history(narrations, fps):
         event_history.append(f"narration:{narration}")
         start_time = float(start_time)
         frame_after_start = math.ceil(start_time * fps)
-        event_history.append(f"frame_id:{frame_after_start}")
         end_time = float(end_time)
         frame_before_end = math.floor(end_time * fps)
-        event_history.append(f"frame_id:{frame_before_end}")
+        sampled_frames = sample_frames(frame_after_start, frame_before_end)
+        for frame in sampled_frames:
+            event_history.append(f"frame_id:{frame}")
     return event_history
 
 
@@ -118,7 +129,6 @@ def main():
             segments = json.load(f)
         video_start = segments[0]["start_time"]
         video_end = segments[-1]["end_time"]
-        print(f"Video time range: {video_start:.2f}s - {video_end:.2f}s")
 
         # For each object, collect (start_time, end_time) of segments where it appears
         object_active_segment_mapping = defaultdict(list)
