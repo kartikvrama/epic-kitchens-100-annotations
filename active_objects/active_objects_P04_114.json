@@ -1165,15 +1165,6 @@
               799.36,
               340.85
             ]
-          },
-          {
-            "frame_path": "frame_0000002180.jpg",
-            "bbox": [
-              114.86,
-              0,
-              1160.08,
-              1080
-            ]
           }
         ]
       },
@@ -1321,8 +1312,7 @@
       1901,
       1959,
       2011,
-      2146,
-      2180
+      2146
     ],
     "narrations": [
       "flick bit off aeropress;37.25;38.05",
@@ -3754,15 +3744,6 @@
         "name": "aeropress filter",
         "image_crops": [
           {
-            "frame_path": "frame_0000006565.jpg",
-            "bbox": [
-              878.18,
-              503.36,
-              49.12,
-              40.24
-            ]
-          },
-          {
             "frame_path": "frame_0000006580.jpg",
             "bbox": [
               1006.07,
@@ -3814,15 +3795,6 @@
         "class_name": "maker:coffee",
         "name": "aeropress",
         "image_crops": [
-          {
-            "frame_path": "frame_0000006565.jpg",
-            "bbox": [
-              672.12,
-              516.54,
-              238.59,
-              240.68
-            ]
-          },
           {
             "frame_path": "frame_0000006580.jpg",
             "bbox": [
@@ -3919,15 +3891,6 @@
         "name": "sink",
         "image_crops": [
           {
-            "frame_path": "frame_0000006565.jpg",
-            "bbox": [
-              200.86,
-              247.1,
-              931.74,
-              794.78
-            ]
-          },
-          {
             "frame_path": "frame_0000006580.jpg",
             "bbox": [
               174.39,
@@ -3976,7 +3939,6 @@
       }
     ],
     "frame_ids": [
-      6565,
       6580,
       6596,
       6619,
@@ -4716,33 +4678,6 @@
               693.36,
               491.19
             ]
-          },
-          {
-            "frame_path": "frame_0000007534.jpg",
-            "bbox": [
-              0,
-              66.38,
-              417.98,
-              707.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000007567.jpg",
-            "bbox": [
-              0,
-              443.38,
-              215.61,
-              430.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000007601.jpg",
-            "bbox": [
-              0,
-              696.8,
-              208.77,
-              383.2
-            ]
           }
         ]
       },
@@ -4781,6 +4716,75 @@
         ]
       },
       {
+        "class_id": 27,
+        "class_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007391.jpg",
+            "bbox": [
+              682.91,
+              239.04,
+              168.83,
+              347.55
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      7391,
+      7421,
+      7477
+    ],
+    "narrations": [
+      "turn off tap;147.48;148.41",
+      "shake filter;148.49;149.0",
+      "put filter on aeropress;149.0;149.87"
+    ]
+  },
+  {
+    "segment_id": "P04_114_ActiveUsage_0021",
+    "start_time": 150.15,
+    "end_time": 157.9,
+    "start_frame": 7507,
+    "end_frame": 7895,
+    "objects_in_sequence": [
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007534.jpg",
+            "bbox": [
+              0,
+              66.38,
+              417.98,
+              707.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000007567.jpg",
+            "bbox": [
+              0,
+              443.38,
+              215.61,
+              430.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000007601.jpg",
+            "bbox": [
+              0,
+              696.8,
+              208.77,
+              383.2
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 52,
         "class_name": "towel",
         "name": "tea towel",
@@ -4813,46 +4817,13 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007391.jpg",
-            "bbox": [
-              682.91,
-              239.04,
-              168.83,
-              347.55
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
-      7391,
-      7421,
-      7477,
       7534,
       7567,
       7601
     ],
-    "narrations": [
-      "turn off tap;147.48;148.41",
-      "shake filter;148.49;149.0",
-      "put filter on aeropress;149.0;149.87"
-    ]
-  },
-  {
-    "segment_id": "P04_114_ActiveUsage_0021",
-    "start_time": 150.15,
-    "end_time": 157.9,
-    "start_frame": 7507,
-    "end_frame": 7895,
-    "objects_in_sequence": [],
-    "frame_ids": [],
     "narrations": [
       "pick up tea towel;150.15;152.35",
       "dry hands with tea towel;152.45;153.7",

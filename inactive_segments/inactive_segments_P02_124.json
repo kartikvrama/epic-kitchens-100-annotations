@@ -1,18 +1,21 @@
 {
   "0/tap/tap": [
     {
-      "start_time": 110.9,
-      "end_time": 115.0,
-      "duration_sec": 4.1,
+      "start_time": 123.77,
+      "end_time": 230.56,
+      "duration_sec": 106.79,
       "event_history": [
-        "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792",
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173"
       ],
-      "frame_after_gap_start": 5595,
+      "frame_after_gap_start": 6189,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005763.jpg",
@@ -31,26 +34,7 @@
             424.53,
             205.7
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 123.77,
-      "end_time": 230.56,
-      "duration_sec": 106.79,
-      "event_history": [
-        "narration:open tap",
-        "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
-      ],
-      "frame_after_gap_start": 6189,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -84,8 +68,8 @@
   "1/spoon/wooden stirrer": [
     {
       "start_time": 171.61,
-      "end_time": 218.7,
-      "duration_sec": 47.09,
+      "end_time": 193.55,
+      "duration_sec": 21.94,
       "event_history": [
         "narration:put milk bottle in fridge door",
         "frame_id:7742",
@@ -116,16 +100,25 @@
             691.21,
             172.35
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            818.97,
-            326.73,
-            740.3,
-            280.48
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 205.02,
+      "end_time": 218.7,
+      "duration_sec": 13.68,
+      "event_history": [
+        "narration:press button on coffee machine",
+        "frame_id:9699",
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166"
+      ],
+      "frame_after_gap_start": 10301,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [
@@ -139,8 +132,8 @@
     },
     {
       "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
+      "end_time": 228.82999999999998,
+      "duration_sec": 3.81,
       "event_history": [
         "narration:open cupboard",
         "frame_id:10954",
@@ -150,26 +143,8 @@
         "narration:pick up mug",
         "frame_id:11230"
       ],
-      "frame_after_gap_start": 11251,
+      "frame_after_gap_start": 11301,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011441.jpg",
-          "bbox": [
-            789.92,
-            479.7,
-            331.42,
-            70.04
-          ]
-        },
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            690.11,
-            551.75,
-            234.9,
-            125.19
-          ]
-        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -186,6 +161,31 @@
             554.61,
             94.75,
             69.96
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 230.56,
+      "end_time": 230.56,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:open bin",
+        "frame_id:11462",
+        "narration:throw wooden stirrer",
+        "frame_id:11493",
+        "narration:close bin",
+        "frame_id:11517"
+      ],
+      "frame_after_gap_start": 11528,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011476.jpg",
+          "bbox": [
+            690.11,
+            551.75,
+            234.9,
+            125.19
           ]
         }
       ]
@@ -253,15 +253,6 @@
             1920,
             1055.71
           ]
-        },
-        {
-          "frame_path": "frame_0000007151.jpg",
-          "bbox": [
-            0,
-            0,
-            1920,
-            1080
-          ]
         }
       ]
     },
@@ -281,6 +272,15 @@
       "frame_after_gap_start": 7407,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000007151.jpg",
+          "bbox": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        },
+        {
           "frame_path": "frame_0000007200.jpg",
           "bbox": [
             838.97,
@@ -293,8 +293,8 @@
     },
     {
       "start_time": 154.44,
-      "end_time": 230.56,
-      "duration_sec": 76.12,
+      "end_time": 154.46,
+      "duration_sec": 0.02,
       "event_history": [
         "narration:pour milk from bottle into mug",
         "frame_id:7397",
@@ -305,7 +305,7 @@
         "narration:open fridge",
         "frame_id:7703"
       ],
-      "frame_after_gap_start": 7722,
+      "frame_after_gap_start": 7772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007630.jpg",
@@ -333,7 +333,26 @@
             1920,
             1014.85
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 171.61,
+      "end_time": 230.56,
+      "duration_sec": 58.95,
+      "event_history": [
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781",
+        "narration:pick up wooden stirrer from box",
+        "frame_id:8295",
+        "frame_id:8359",
+        "narration:stir coffee",
+        "frame_id:8442",
+        "frame_id:8534"
+      ],
+      "frame_after_gap_start": 8581,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007751.jpg",
           "bbox": [
@@ -399,24 +418,6 @@
             836.92,
             222.34
           ]
-        },
-        {
-          "frame_path": "frame_0000000413.jpg",
-          "bbox": [
-            197.29,
-            0,
-            1580.63,
-            563.58
-          ]
-        },
-        {
-          "frame_path": "frame_0000000475.jpg",
-          "bbox": [
-            633.37,
-            0,
-            1286.63,
-            1078.44
-          ]
         }
       ]
     },
@@ -437,6 +438,24 @@
       ],
       "frame_after_gap_start": 847,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000000413.jpg",
+          "bbox": [
+            197.29,
+            0,
+            1580.63,
+            563.58
+          ]
+        },
+        {
+          "frame_path": "frame_0000000475.jpg",
+          "bbox": [
+            633.37,
+            0,
+            1286.63,
+            1078.44
+          ]
+        },
         {
           "frame_path": "frame_0000000615.jpg",
           "bbox": [
@@ -526,24 +545,6 @@
             910.29,
             641.92
           ]
-        },
-        {
-          "frame_path": "frame_0000001230.jpg",
-          "bbox": [
-            898.41,
-            0,
-            1021.59,
-            414.18
-          ]
-        },
-        {
-          "frame_path": "frame_0000001342.jpg",
-          "bbox": [
-            887.81,
-            0,
-            1032.19,
-            356.93
-          ]
         }
       ]
     },
@@ -564,6 +565,24 @@
       ],
       "frame_after_gap_start": 2042,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000001230.jpg",
+          "bbox": [
+            898.41,
+            0,
+            1021.59,
+            414.18
+          ]
+        },
+        {
+          "frame_path": "frame_0000001342.jpg",
+          "bbox": [
+            887.81,
+            0,
+            1032.19,
+            356.93
+          ]
+        },
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -608,15 +627,6 @@
             968.45,
             327.94
           ]
-        },
-        {
-          "frame_path": "frame_0000002021.jpg",
-          "bbox": [
-            941.08,
-            210.58,
-            936.88,
-            388.69
-          ]
         }
       ]
     },
@@ -637,6 +647,15 @@
       ],
       "frame_after_gap_start": 2473,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002021.jpg",
+          "bbox": [
+            941.08,
+            210.58,
+            936.88,
+            388.69
+          ]
+        },
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -783,24 +802,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003251.jpg",
-          "bbox": [
-            489.0,
-            0,
-            1125.9,
-            314.45
-          ]
-        },
-        {
-          "frame_path": "frame_0000003301.jpg",
-          "bbox": [
-            495.71,
-            67.61,
-            1115.18,
-            249.96
-          ]
-        },
-        {
           "frame_path": "frame_0000003059.jpg",
           "bbox": [
             347.89,
@@ -828,6 +829,24 @@
       ],
       "frame_after_gap_start": 3610,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003251.jpg",
+          "bbox": [
+            489.0,
+            0,
+            1125.9,
+            314.45
+          ]
+        },
+        {
+          "frame_path": "frame_0000003301.jpg",
+          "bbox": [
+            495.71,
+            67.61,
+            1115.18,
+            249.96
+          ]
+        },
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -863,24 +882,6 @@
             1067.4,
             263.73
           ]
-        },
-        {
-          "frame_path": "frame_0000003601.jpg",
-          "bbox": [
-            666.5,
-            129.24,
-            931.31,
-            316.99
-          ]
-        },
-        {
-          "frame_path": "frame_0000003692.jpg",
-          "bbox": [
-            666.95,
-            199.09,
-            932.72,
-            279.01
-          ]
         }
       ]
     },
@@ -900,6 +901,24 @@
       ],
       "frame_after_gap_start": 3960,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003601.jpg",
+          "bbox": [
+            666.5,
+            129.24,
+            931.31,
+            316.99
+          ]
+        },
+        {
+          "frame_path": "frame_0000003692.jpg",
+          "bbox": [
+            666.95,
+            199.09,
+            932.72,
+            279.01
+          ]
+        },
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -926,40 +945,13 @@
             1070.11,
             452.27
           ]
-        },
-        {
-          "frame_path": "frame_0000003923.jpg",
-          "bbox": [
-            985.47,
-            387.83,
-            934.53,
-            602.74
-          ]
-        },
-        {
-          "frame_path": "frame_0000003963.jpg",
-          "bbox": [
-            912.65,
-            365.35,
-            1007.35,
-            650.21
-          ]
-        },
-        {
-          "frame_path": "frame_0000003996.jpg",
-          "bbox": [
-            411.07,
-            419.19,
-            1058.69,
-            158.15
-          ]
         }
       ]
     },
     {
       "start_time": 84.59,
-      "end_time": 230.56,
-      "duration_sec": 145.97,
+      "end_time": 84.68,
+      "duration_sec": 0.09,
       "event_history": [
         "narration:close cupboard",
         "frame_id:3982",
@@ -970,7 +962,7 @@
         "frame_id:4183",
         "frame_id:4214"
       ],
-      "frame_after_gap_start": 4230,
+      "frame_after_gap_start": 4280,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004042.jpg",
@@ -1018,6 +1010,32 @@
           ]
         },
         {
+          "frame_path": "frame_0000003996.jpg",
+          "bbox": [
+            411.07,
+            419.19,
+            1058.69,
+            158.15
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 95.02000000000001,
+      "end_time": 230.56,
+      "duration_sec": 135.54,
+      "event_history": [
+        "narration:close washing machine door",
+        "frame_id:4243",
+        "narration:pick up mug",
+        "frame_id:4453",
+        "narration:move laundry basket",
+        "frame_id:4549",
+        "frame_id:4684"
+      ],
+      "frame_after_gap_start": 4752,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000004242.jpg",
           "bbox": [
             354.24,
@@ -1032,8 +1050,8 @@
   "13/cup/cup": [
     {
       "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
+      "end_time": 48.55,
+      "duration_sec": 8.72,
       "event_history": [
         "narration:scoop washing powder",
         "frame_id:1223",
@@ -1059,37 +1077,9 @@
       ]
     },
     {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000002446.jpg",
-          "bbox": [
-            804.86,
-            440.85,
-            113.66,
-            107.14
-          ]
-        }
-      ]
-    },
-    {
       "start_time": 52.28,
-      "end_time": 193.55,
-      "duration_sec": 141.27,
+      "end_time": 205.1,
+      "duration_sec": 152.82,
       "event_history": [
         "narration:put washing powder in drawer",
         "frame_id:2445",
@@ -1103,6 +1093,15 @@
       "frame_after_gap_start": 2664,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000002446.jpg",
+          "bbox": [
+            804.86,
+            440.85,
+            113.66,
+            107.14
+          ]
+        },
+        {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
             584.61,
@@ -1114,20 +1113,21 @@
       ]
     },
     {
-      "start_time": 205.02,
+      "start_time": 216.59,
       "end_time": 230.56,
-      "duration_sec": 25.54,
+      "duration_sec": 13.97,
       "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327",
+        "narration:fit wire inside box",
+        "frame_id:10448",
+        "frame_id:10566",
+        "narration:pick up box",
+        "frame_id:10777",
+        "frame_id:10812"
       ],
-      "frame_after_gap_start": 10251,
+      "frame_after_gap_start": 10830,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010276.jpg",
@@ -1176,24 +1176,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000004758.jpg",
-          "bbox": [
-            756.75,
-            1057.6,
-            126.72,
-            22.4
-          ]
-        },
-        {
-          "frame_path": "frame_0000004825.jpg",
-          "bbox": [
-            504.07,
-            597.14,
-            194.66,
-            196.73
-          ]
-        },
-        {
           "frame_path": "frame_0000004450.jpg",
           "bbox": [
             813.62,
@@ -1229,6 +1211,15 @@
       "frame_after_gap_start": 5048,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000004825.jpg",
+          "bbox": [
+            504.07,
+            597.14,
+            194.66,
+            196.73
+          ]
+        },
+        {
           "frame_path": "frame_0000004876.jpg",
           "bbox": [
             686.23,
@@ -1254,33 +1245,6 @@
             217.66,
             184.83
           ]
-        },
-        {
-          "frame_path": "frame_0000005007.jpg",
-          "bbox": [
-            130.63,
-            493.95,
-            318.05,
-            203.82
-          ]
-        },
-        {
-          "frame_path": "frame_0000005039.jpg",
-          "bbox": [
-            0,
-            559.42,
-            283.19,
-            202.96
-          ]
-        },
-        {
-          "frame_path": "frame_0000005076.jpg",
-          "bbox": [
-            423.86,
-            585.38,
-            194.14,
-            199.76
-          ]
         }
       ]
     },
@@ -1298,6 +1262,15 @@
       ],
       "frame_after_gap_start": 5595,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000005076.jpg",
+          "bbox": [
+            423.86,
+            585.38,
+            194.14,
+            199.76
+          ]
+        },
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -1323,15 +1296,6 @@
             732.34,
             280.12,
             201.6
-          ]
-        },
-        {
-          "frame_path": "frame_0000005644.jpg",
-          "bbox": [
-            766.18,
-            643.41,
-            159.66,
-            219.05
           ]
         }
       ]
@@ -1361,22 +1325,13 @@
             249.28,
             219.29
           ]
-        },
-        {
-          "frame_path": "frame_0000006301.jpg",
-          "bbox": [
-            642.74,
-            415.4,
-            192.08,
-            210.43
-          ]
         }
       ]
     },
     {
       "start_time": 135.24,
-      "end_time": 142.77,
-      "duration_sec": 7.53,
+      "end_time": 135.41,
+      "duration_sec": 0.17,
       "event_history": [
         "narration:pick up mug",
         "frame_id:6292",
@@ -1391,6 +1346,15 @@
       "frame_after_gap_start": 6812,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000006301.jpg",
+          "bbox": [
+            642.74,
+            415.4,
+            192.08,
+            210.43
+          ]
+        },
+        {
           "frame_path": "frame_0000006701.jpg",
           "bbox": [
             576.4,
@@ -1399,6 +1363,34 @@
             228.76
           ]
         },
+        {
+          "frame_path": "frame_0000006626.jpg",
+          "bbox": [
+            664.02,
+            562.34,
+            188.26,
+            209.67
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 142.67000000000002,
+      "end_time": 142.77,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822",
+        "narration:close drawer",
+        "frame_id:7040",
+        "frame_id:7066",
+        "narration:open fridge",
+        "frame_id:7094",
+        "frame_id:7121"
+      ],
+      "frame_after_gap_start": 7184,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006784.jpg",
           "bbox": [
@@ -1415,15 +1407,6 @@
             402.71,
             182.31,
             231.66
-          ]
-        },
-        {
-          "frame_path": "frame_0000006626.jpg",
-          "bbox": [
-            664.02,
-            562.34,
-            188.26,
-            209.67
           ]
         }
       ]
@@ -1460,24 +1443,6 @@
             232.11,
             188.84
           ]
-        },
-        {
-          "frame_path": "frame_0000007417.jpg",
-          "bbox": [
-            875.88,
-            400.18,
-            249.65,
-            208.22
-          ]
-        },
-        {
-          "frame_path": "frame_0000007476.jpg",
-          "bbox": [
-            828.72,
-            371.28,
-            254.89,
-            208.31
-          ]
         }
       ]
     },
@@ -1497,6 +1462,24 @@
       ],
       "frame_after_gap_start": 7772,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007417.jpg",
+          "bbox": [
+            875.88,
+            400.18,
+            249.65,
+            208.22
+          ]
+        },
+        {
+          "frame_path": "frame_0000007476.jpg",
+          "bbox": [
+            828.72,
+            371.28,
+            254.89,
+            208.31
+          ]
+        },
         {
           "frame_path": "frame_0000007526.jpg",
           "bbox": [
@@ -1560,24 +1543,6 @@
             208.18,
             186.58
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            735.02,
-            422.56,
-            196.9,
-            185.16
-          ]
-        },
-        {
-          "frame_path": "frame_0000009705.jpg",
-          "bbox": [
-            714.34,
-            411.43,
-            190.88,
-            190.57
-          ]
         }
       ]
     },
@@ -1598,6 +1563,15 @@
       "frame_after_gap_start": 10301,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000009705.jpg",
+          "bbox": [
+            714.34,
+            411.43,
+            190.88,
+            190.57
+          ]
+        },
+        {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
             141.52,
@@ -1610,8 +1584,8 @@
     },
     {
       "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
+      "end_time": 228.82999999999998,
+      "duration_sec": 3.81,
       "event_history": [
         "narration:open cupboard",
         "frame_id:10954",
@@ -1621,26 +1595,8 @@
         "narration:pick up mug",
         "frame_id:11230"
       ],
-      "frame_after_gap_start": 11251,
+      "frame_after_gap_start": 11301,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011441.jpg",
-          "bbox": [
-            527.03,
-            631.81,
-            233.21,
-            233.79
-          ]
-        },
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            296.36,
-            833.3,
-            304.93,
-            246.7
-          ]
-        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -1657,6 +1613,31 @@
             531.27,
             172.13,
             213.27
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 230.56,
+      "end_time": 230.56,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:open bin",
+        "frame_id:11462",
+        "narration:throw wooden stirrer",
+        "frame_id:11493",
+        "narration:close bin",
+        "frame_id:11517"
+      ],
+      "frame_after_gap_start": 11528,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011476.jpg",
+          "bbox": [
+            296.36,
+            833.3,
+            304.93,
+            246.7
           ]
         }
       ]
@@ -1715,24 +1696,6 @@
             207.91,
             206.46
           ]
-        },
-        {
-          "frame_path": "frame_0000003601.jpg",
-          "bbox": [
-            709.75,
-            515.17,
-            164.24,
-            186.47
-          ]
-        },
-        {
-          "frame_path": "frame_0000003692.jpg",
-          "bbox": [
-            703.54,
-            644.83,
-            126.67,
-            182.25
-          ]
         }
       ]
     },
@@ -1752,6 +1715,24 @@
       ],
       "frame_after_gap_start": 3910,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003601.jpg",
+          "bbox": [
+            709.75,
+            515.17,
+            164.24,
+            186.47
+          ]
+        },
+        {
+          "frame_path": "frame_0000003692.jpg",
+          "bbox": [
+            703.54,
+            644.83,
+            126.67,
+            182.25
+          ]
+        },
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -1777,24 +1758,6 @@
             787.91,
             163.69,
             186.97
-          ]
-        },
-        {
-          "frame_path": "frame_0000003923.jpg",
-          "bbox": [
-            978.7,
-            292.85,
-            149.54,
-            139.68
-          ]
-        },
-        {
-          "frame_path": "frame_0000003963.jpg",
-          "bbox": [
-            932.17,
-            238.08,
-            147.55,
-            115.11
           ]
         }
       ]
@@ -1825,22 +1788,13 @@
             149.2,
             89.54
           ]
-        },
-        {
-          "frame_path": "frame_0000002722.jpg",
-          "bbox": [
-            1095.3,
-            487.86,
-            129.3,
-            64.78
-          ]
         }
       ]
     },
     {
       "start_time": 64.17,
-      "end_time": 230.56,
-      "duration_sec": 166.39,
+      "end_time": 64.27,
+      "duration_sec": 0.1,
       "event_history": [
         "narration:pick up fabric conditioner bottle",
         "frame_id:2685",
@@ -1852,8 +1806,17 @@
         "frame_id:3080",
         "frame_id:3166"
       ],
-      "frame_after_gap_start": 3209,
+      "frame_after_gap_start": 3259,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002722.jpg",
+          "bbox": [
+            1095.3,
+            487.86,
+            129.3,
+            64.78
+          ]
+        },
         {
           "frame_path": "frame_0000002830.jpg",
           "bbox": [
@@ -1882,6 +1845,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            7.66,
+            692.7,
+            621.35,
+            387.3
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 71.18,
+      "end_time": 230.56,
+      "duration_sec": 159.38,
+      "event_history": [
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528"
+      ],
+      "frame_after_gap_start": 3560,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             523.13,
@@ -1897,15 +1888,6 @@
             680.4,
             214.08,
             203.46
-          ]
-        },
-        {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            7.66,
-            692.7,
-            621.35,
-            387.3
           ]
         }
       ]
@@ -1946,15 +1928,6 @@
             311.47,
             462.81
           ]
-        },
-        {
-          "frame_path": "frame_0000007151.jpg",
-          "bbox": [
-            947.42,
-            148.91,
-            277.2,
-            474.78
-          ]
         }
       ]
     },
@@ -1973,6 +1946,15 @@
       ],
       "frame_after_gap_start": 7407,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007151.jpg",
+          "bbox": [
+            947.42,
+            148.91,
+            277.2,
+            474.78
+          ]
+        },
         {
           "frame_path": "frame_0000007200.jpg",
           "bbox": [
@@ -2008,31 +1990,13 @@
             221.94,
             371.11
           ]
-        },
-        {
-          "frame_path": "frame_0000007417.jpg",
-          "bbox": [
-            1070.41,
-            512.42,
-            495.25,
-            493.15
-          ]
-        },
-        {
-          "frame_path": "frame_0000007476.jpg",
-          "bbox": [
-            1021.57,
-            475.07,
-            494.9,
-            468.0
-          ]
         }
       ]
     },
     {
       "start_time": 154.44,
-      "end_time": 230.56,
-      "duration_sec": 76.12,
+      "end_time": 154.46,
+      "duration_sec": 0.02,
       "event_history": [
         "narration:pour milk from bottle into mug",
         "frame_id:7397",
@@ -2043,8 +2007,17 @@
         "narration:open fridge",
         "frame_id:7703"
       ],
-      "frame_after_gap_start": 7722,
+      "frame_after_gap_start": 7772,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007417.jpg",
+          "bbox": [
+            1070.41,
+            512.42,
+            495.25,
+            493.15
+          ]
+        },
         {
           "frame_path": "frame_0000007576.jpg",
           "bbox": [
@@ -2082,12 +2055,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000007751.jpg",
+          "frame_path": "frame_0000007476.jpg",
           "bbox": [
-            556.62,
-            216.06,
-            535.19,
-            380.27
+            1021.57,
+            475.07,
+            494.9,
+            468.0
           ]
         },
         {
@@ -2097,6 +2070,34 @@
             669.99,
             213.38,
             249.58
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 171.61,
+      "end_time": 230.56,
+      "duration_sec": 58.95,
+      "event_history": [
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781",
+        "narration:pick up wooden stirrer from box",
+        "frame_id:8295",
+        "frame_id:8359",
+        "narration:stir coffee",
+        "frame_id:8442",
+        "frame_id:8534"
+      ],
+      "frame_after_gap_start": 8581,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007751.jpg",
+          "bbox": [
+            556.62,
+            216.06,
+            535.19,
+            380.27
           ]
         }
       ]
@@ -2128,7 +2129,26 @@
             111.36,
             121.5
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 71.18,
+      "end_time": 71.34,
+      "duration_sec": 0.16,
+      "event_history": [
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528"
+      ],
+      "frame_after_gap_start": 3610,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
@@ -2146,26 +2166,7 @@
             78.46,
             111.25
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 230.56,
-      "duration_sec": 159.38,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3560,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -2201,7 +2202,25 @@
             343.75,
             362.78
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 78.18,
+      "end_time": 230.56,
+      "duration_sec": 152.38,
+      "event_history": [
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676",
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892"
+      ],
+      "frame_after_gap_start": 3910,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003692.jpg",
           "bbox": [
@@ -2296,24 +2315,6 @@
             942.88,
             865.45
           ]
-        },
-        {
-          "frame_path": "frame_0000000413.jpg",
-          "bbox": [
-            933.22,
-            232.3,
-            725.29,
-            672.26
-          ]
-        },
-        {
-          "frame_path": "frame_0000000475.jpg",
-          "bbox": [
-            1123.37,
-            621.72,
-            274.81,
-            458.28
-          ]
         }
       ]
     },
@@ -2334,6 +2335,24 @@
       ],
       "frame_after_gap_start": 847,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000000413.jpg",
+          "bbox": [
+            933.22,
+            232.3,
+            725.29,
+            672.26
+          ]
+        },
+        {
+          "frame_path": "frame_0000000475.jpg",
+          "bbox": [
+            1123.37,
+            621.72,
+            274.81,
+            458.28
+          ]
+        },
         {
           "frame_path": "frame_0000000615.jpg",
           "bbox": [
@@ -2429,8 +2448,8 @@
   "190/knob/dial": [
     {
       "start_time": 84.59,
-      "end_time": 230.56,
-      "duration_sec": 145.97,
+      "end_time": 84.68,
+      "duration_sec": 0.09,
       "event_history": [
         "narration:close cupboard",
         "frame_id:3982",
@@ -2441,7 +2460,7 @@
         "frame_id:4183",
         "frame_id:4214"
       ],
-      "frame_after_gap_start": 4230,
+      "frame_after_gap_start": 4280,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004042.jpg",
@@ -2487,7 +2506,24 @@
             116.02,
             39.74
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 95.02000000000001,
+      "end_time": 230.56,
+      "duration_sec": 135.54,
+      "event_history": [
+        "narration:close washing machine door",
+        "frame_id:4243",
+        "narration:pick up mug",
+        "frame_id:4453",
+        "narration:move laundry basket",
+        "frame_id:4549",
+        "frame_id:4684"
+      ],
+      "frame_after_gap_start": 4752,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004242.jpg",
           "bbox": [
@@ -2624,24 +2660,6 @@
             533.55,
             315.71
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            1388.03,
-            190.61,
-            339.47,
-            310.83
-          ]
-        },
-        {
-          "frame_path": "frame_0000009705.jpg",
-          "bbox": [
-            1200.94,
-            106.93,
-            452.41,
-            381.2
-          ]
         }
       ]
     },
@@ -2671,6 +2689,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000009705.jpg",
+          "bbox": [
+            1200.94,
+            106.93,
+            452.41,
+            381.2
+          ]
+        },
+        {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
             699.73,
@@ -2695,24 +2722,6 @@
             363.2,
             777.88,
             616.83
-          ]
-        },
-        {
-          "frame_path": "frame_0000010276.jpg",
-          "bbox": [
-            761.33,
-            511.03,
-            694.35,
-            568.97
-          ]
-        },
-        {
-          "frame_path": "frame_0000010313.jpg",
-          "bbox": [
-            736.76,
-            495.79,
-            1163.2,
-            572.19
           ]
         }
       ]
@@ -2780,12 +2789,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010955.jpg",
+          "frame_path": "frame_0000010276.jpg",
           "bbox": [
-            802.11,
-            545.88,
-            791.55,
-            534.12
+            761.33,
+            511.03,
+            694.35,
+            568.97
+          ]
+        },
+        {
+          "frame_path": "frame_0000010313.jpg",
+          "bbox": [
+            736.76,
+            495.79,
+            1163.2,
+            572.19
           ]
         }
       ]
@@ -2805,6 +2823,15 @@
       ],
       "frame_after_gap_start": 11251,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000010955.jpg",
+          "bbox": [
+            802.11,
+            545.88,
+            791.55,
+            534.12
+          ]
+        },
         {
           "frame_path": "frame_0000010981.jpg",
           "bbox": [
@@ -2887,24 +2914,6 @@
             952.89,
             770.9
           ]
-        },
-        {
-          "frame_path": "frame_0000001230.jpg",
-          "bbox": [
-            322.57,
-            416.81,
-            798.88,
-            618.43
-          ]
-        },
-        {
-          "frame_path": "frame_0000001342.jpg",
-          "bbox": [
-            433.92,
-            374.18,
-            706.25,
-            600.9
-          ]
         }
       ]
     },
@@ -2925,6 +2934,24 @@
       ],
       "frame_after_gap_start": 2042,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000001230.jpg",
+          "bbox": [
+            322.57,
+            416.81,
+            798.88,
+            618.43
+          ]
+        },
+        {
+          "frame_path": "frame_0000001342.jpg",
+          "bbox": [
+            433.92,
+            374.18,
+            706.25,
+            600.9
+          ]
+        },
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -2969,22 +2996,13 @@
             565.21,
             686.31
           ]
-        },
-        {
-          "frame_path": "frame_0000002021.jpg",
-          "bbox": [
-            354.91,
-            318.04,
-            603.64,
-            529.79
-          ]
         }
       ]
     },
     {
       "start_time": 48.45,
-      "end_time": 230.56,
-      "duration_sec": 182.11,
+      "end_time": 48.55,
+      "duration_sec": 0.1,
       "event_history": [
         "narration:close box",
         "frame_id:2008",
@@ -2996,8 +3014,17 @@
         "frame_id:2293",
         "frame_id:2379"
       ],
-      "frame_after_gap_start": 2423,
+      "frame_after_gap_start": 2473,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002021.jpg",
+          "bbox": [
+            354.91,
+            318.04,
+            603.64,
+            529.79
+          ]
+        },
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -3033,7 +3060,25 @@
             319.67,
             296.55
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 52.28,
+      "end_time": 230.56,
+      "duration_sec": 178.28,
+      "event_history": [
+        "narration:put washing powder in drawer",
+        "frame_id:2445",
+        "narration:pick up lid",
+        "frame_id:2498",
+        "frame_id:2527",
+        "narration:close box",
+        "frame_id:2561",
+        "frame_id:2597"
+      ],
+      "frame_after_gap_start": 2614,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002446.jpg",
           "bbox": [
@@ -3048,21 +3093,20 @@
   ],
   "234/powder:washing/washing powder": [
     {
-      "start_time": 15.92,
-      "end_time": 17.12,
-      "duration_sec": 1.2,
+      "start_time": 23.07,
+      "end_time": 23.13,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
-        "narration:put towel in washing machine",
-        "frame_id:618",
-        "frame_id:657",
-        "narration:open drawer",
-        "frame_id:731",
-        "frame_id:775"
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912",
+        "narration:put down washing powder",
+        "frame_id:958",
+        "frame_id:1005",
+        "narration:open box",
+        "frame_id:1129"
       ],
-      "frame_after_gap_start": 847,
+      "frame_after_gap_start": 1204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000876.jpg",
@@ -3081,25 +3125,7 @@
             201.12,
             105.91
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
-      "event_history": [
-        "narration:pick up washing powder",
-        "frame_id:874",
-        "frame_id:912",
-        "narration:put down washing powder",
-        "frame_id:958",
-        "frame_id:1005",
-        "narration:open box",
-        "frame_id:1129"
-      ],
-      "frame_after_gap_start": 1204,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001122.jpg",
           "bbox": [
@@ -3181,15 +3207,6 @@
             426.14,
             200.84
           ]
-        },
-        {
-          "frame_path": "frame_0000002021.jpg",
-          "bbox": [
-            1115.76,
-            409.41,
-            79.81,
-            209.33
-          ]
         }
       ]
     },
@@ -3210,6 +3227,15 @@
       ],
       "frame_after_gap_start": 2473,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002021.jpg",
+          "bbox": [
+            1115.76,
+            409.41,
+            79.81,
+            209.33
+          ]
+        },
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -3245,15 +3271,6 @@
             99.98,
             199.56
           ]
-        },
-        {
-          "frame_path": "frame_0000002446.jpg",
-          "bbox": [
-            425.74,
-            339.44,
-            474.47,
-            428.16
-          ]
         }
       ]
     },
@@ -3273,6 +3290,15 @@
       ],
       "frame_after_gap_start": 2664,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002446.jpg",
+          "bbox": [
+            425.74,
+            339.44,
+            474.47,
+            428.16
+          ]
+        },
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -3356,6 +3382,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            640.37,
+            284.54,
+            101.19,
+            259.91
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 71.18,
+      "end_time": 71.34,
+      "duration_sec": 0.16,
+      "event_history": [
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528"
+      ],
+      "frame_after_gap_start": 3610,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             763.42,
@@ -3373,34 +3427,6 @@
             250.97
           ]
         },
-        {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            640.37,
-            284.54,
-            101.19,
-            259.91
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 230.56,
-      "duration_sec": 159.38,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3560,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -3436,7 +3462,25 @@
             90.63,
             252.19
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 78.18,
+      "end_time": 230.56,
+      "duration_sec": 152.38,
+      "event_history": [
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676",
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892"
+      ],
+      "frame_after_gap_start": 3910,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -3460,21 +3504,20 @@
   ],
   "3/cupboard/cupboard": [
     {
-      "start_time": 15.92,
-      "end_time": 17.12,
-      "duration_sec": 1.2,
+      "start_time": 23.07,
+      "end_time": 23.13,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
-        "narration:put towel in washing machine",
-        "frame_id:618",
-        "frame_id:657",
-        "narration:open drawer",
-        "frame_id:731",
-        "frame_id:775"
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912",
+        "narration:put down washing powder",
+        "frame_id:958",
+        "frame_id:1005",
+        "narration:open box",
+        "frame_id:1129"
       ],
-      "frame_after_gap_start": 847,
+      "frame_after_gap_start": 1204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000876.jpg",
@@ -3493,25 +3536,7 @@
             1513.46,
             804.01
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
-      "event_history": [
-        "narration:pick up washing powder",
-        "frame_id:874",
-        "frame_id:912",
-        "narration:put down washing powder",
-        "frame_id:958",
-        "frame_id:1005",
-        "narration:open box",
-        "frame_id:1129"
-      ],
-      "frame_after_gap_start": 1204,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000973.jpg",
           "bbox": [
@@ -3547,24 +3572,6 @@
             1019.14,
             317.26
           ]
-        },
-        {
-          "frame_path": "frame_0000001230.jpg",
-          "bbox": [
-            0,
-            0,
-            947.88,
-            661.69
-          ]
-        },
-        {
-          "frame_path": "frame_0000001342.jpg",
-          "bbox": [
-            0,
-            0,
-            890.55,
-            824.85
-          ]
         }
       ]
     },
@@ -3585,6 +3592,24 @@
       ],
       "frame_after_gap_start": 2042,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000001230.jpg",
+          "bbox": [
+            0,
+            0,
+            947.88,
+            661.69
+          ]
+        },
+        {
+          "frame_path": "frame_0000001342.jpg",
+          "bbox": [
+            0,
+            0,
+            890.55,
+            824.85
+          ]
+        },
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -3629,15 +3654,6 @@
             831.02,
             904.22
           ]
-        },
-        {
-          "frame_path": "frame_0000002021.jpg",
-          "bbox": [
-            0,
-            0,
-            1022.84,
-            845.02
-          ]
         }
       ]
     },
@@ -3658,6 +3674,15 @@
       ],
       "frame_after_gap_start": 2473,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002021.jpg",
+          "bbox": [
+            0,
+            0,
+            1022.84,
+            845.02
+          ]
+        },
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -3693,15 +3718,6 @@
             623.92,
             671.14
           ]
-        },
-        {
-          "frame_path": "frame_0000002446.jpg",
-          "bbox": [
-            0,
-            0,
-            738.42,
-            687.05
-          ]
         }
       ]
     },
@@ -3721,6 +3737,15 @@
       ],
       "frame_after_gap_start": 2664,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002446.jpg",
+          "bbox": [
+            0,
+            0,
+            738.42,
+            687.05
+          ]
+        },
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -3747,15 +3772,6 @@
             1385.07,
             520.52
           ]
-        },
-        {
-          "frame_path": "frame_0000002689.jpg",
-          "bbox": [
-            777.73,
-            0,
-            757.89,
-            1006.28
-          ]
         }
       ]
     },
@@ -3776,6 +3792,15 @@
       ],
       "frame_after_gap_start": 3259,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002689.jpg",
+          "bbox": [
+            777.73,
+            0,
+            757.89,
+            1006.28
+          ]
+        },
         {
           "frame_path": "frame_0000002830.jpg",
           "bbox": [
@@ -3801,24 +3826,6 @@
             138.17,
             562.11,
             169.33
-          ]
-        },
-        {
-          "frame_path": "frame_0000003251.jpg",
-          "bbox": [
-            0,
-            222.02,
-            659.72,
-            172.03
-          ]
-        },
-        {
-          "frame_path": "frame_0000003301.jpg",
-          "bbox": [
-            0,
-            189.03,
-            658.45,
-            145.18
           ]
         },
         {
@@ -3849,6 +3856,24 @@
       ],
       "frame_after_gap_start": 3610,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003251.jpg",
+          "bbox": [
+            0,
+            222.02,
+            659.72,
+            172.03
+          ]
+        },
+        {
+          "frame_path": "frame_0000003301.jpg",
+          "bbox": [
+            0,
+            189.03,
+            658.45,
+            145.18
+          ]
+        },
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -3884,7 +3909,25 @@
             733.51,
             197.4
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 78.18,
+      "end_time": 79.34,
+      "duration_sec": 1.16,
+      "event_history": [
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676",
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892"
+      ],
+      "frame_after_gap_start": 3960,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -3902,25 +3945,7 @@
             715.35,
             234.0
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 205.1,
-      "duration_sec": 126.92,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -3947,25 +3972,25 @@
             917.0,
             465.92
           ]
-        },
-        {
-          "frame_path": "frame_0000003923.jpg",
-          "bbox": [
-            205.03,
-            0,
-            1156.11,
-            1068.99
-          ]
-        },
-        {
-          "frame_path": "frame_0000003963.jpg",
-          "bbox": [
-            0,
-            0,
-            1308.64,
-            1080
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 84.59,
+      "end_time": 205.1,
+      "duration_sec": 120.51,
+      "event_history": [
+        "narration:close cupboard",
+        "frame_id:3982",
+        "narration:turn on dial",
+        "frame_id:4052",
+        "frame_id:4127",
+        "narration:open washing machine door",
+        "frame_id:4183",
+        "frame_id:4214"
+      ],
+      "frame_after_gap_start": 4280,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003996.jpg",
           "bbox": [
@@ -4020,15 +4045,6 @@
             586.82,
             592.59
           ]
-        },
-        {
-          "frame_path": "frame_0000010955.jpg",
-          "bbox": [
-            70.7,
-            0,
-            831.19,
-            861.12
-          ]
         }
       ]
     },
@@ -4047,6 +4063,15 @@
       ],
       "frame_after_gap_start": 11251,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000010955.jpg",
+          "bbox": [
+            70.7,
+            0,
+            831.19,
+            861.12
+          ]
+        },
         {
           "frame_path": "frame_0000010981.jpg",
           "bbox": [
@@ -4070,29 +4095,19 @@
   ],
   "36/bin/bin": [
     {
-      "start_time": 225.02,
+      "start_time": 230.56,
       "end_time": 230.56,
-      "duration_sec": 5.54,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
-        "narration:put box in cupboard",
-        "frame_id:10996",
-        "frame_id:11033",
-        "narration:pick up mug",
-        "frame_id:11230"
+        "narration:open bin",
+        "frame_id:11462",
+        "narration:throw wooden stirrer",
+        "frame_id:11493",
+        "narration:close bin",
+        "frame_id:11517"
       ],
-      "frame_after_gap_start": 11251,
+      "frame_after_gap_start": 11528,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011441.jpg",
-          "bbox": [
-            341.87,
-            99.03,
-            471.34,
-            476.12
-          ]
-        },
         {
           "frame_path": "frame_0000011476.jpg",
           "bbox": [
@@ -4150,24 +4165,6 @@
       "frame_after_gap_start": 4802,
       "crop_from_previous_active": [
         {
-          "frame_path": "frame_0000004758.jpg",
-          "bbox": [
-            39.88,
-            0,
-            404.13,
-            279.98
-          ]
-        },
-        {
-          "frame_path": "frame_0000004825.jpg",
-          "bbox": [
-            470.61,
-            103.75,
-            502.7,
-            643.58
-          ]
-        },
-        {
           "frame_path": "frame_0000004559.jpg",
           "bbox": [
             731.88,
@@ -4194,6 +4191,15 @@
       "frame_after_gap_start": 5048,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000004825.jpg",
+          "bbox": [
+            470.61,
+            103.75,
+            502.7,
+            643.58
+          ]
+        },
+        {
           "frame_path": "frame_0000004876.jpg",
           "bbox": [
             698.48,
@@ -4219,33 +4225,6 @@
             481.4,
             553.64
           ]
-        },
-        {
-          "frame_path": "frame_0000005007.jpg",
-          "bbox": [
-            0,
-            0,
-            606.37,
-            621.3
-          ]
-        },
-        {
-          "frame_path": "frame_0000005039.jpg",
-          "bbox": [
-            0,
-            0,
-            438.18,
-            682.75
-          ]
-        },
-        {
-          "frame_path": "frame_0000005076.jpg",
-          "bbox": [
-            458.62,
-            185.23,
-            330.01,
-            527.62
-          ]
         }
       ]
     },
@@ -4263,6 +4242,15 @@
       ],
       "frame_after_gap_start": 5595,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000005076.jpg",
+          "bbox": [
+            458.62,
+            185.23,
+            330.01,
+            527.62
+          ]
+        },
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -4289,22 +4277,13 @@
             506.28,
             653.47
           ]
-        },
-        {
-          "frame_path": "frame_0000005644.jpg",
-          "bbox": [
-            778.52,
-            303.97,
-            421.07,
-            491.4
-          ]
         }
       ]
     },
     {
       "start_time": 135.24,
-      "end_time": 147.17000000000002,
-      "duration_sec": 11.93,
+      "end_time": 135.41,
+      "duration_sec": 0.17,
       "event_history": [
         "narration:pick up mug",
         "frame_id:6292",
@@ -4328,24 +4307,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000006784.jpg",
-          "bbox": [
-            617.35,
-            0,
-            404.31,
-            487.71
-          ]
-        },
-        {
-          "frame_path": "frame_0000006826.jpg",
-          "bbox": [
-            706.58,
-            0,
-            453.35,
-            551.68
-          ]
-        },
-        {
           "frame_path": "frame_0000006550.jpg",
           "bbox": [
             1344.95,
@@ -4361,6 +4322,43 @@
             0,
             283.52,
             344.37
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 142.67000000000002,
+      "end_time": 147.17000000000002,
+      "duration_sec": 4.5,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822",
+        "narration:close drawer",
+        "frame_id:7040",
+        "frame_id:7066",
+        "narration:open fridge",
+        "frame_id:7094",
+        "frame_id:7121"
+      ],
+      "frame_after_gap_start": 7184,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006784.jpg",
+          "bbox": [
+            617.35,
+            0,
+            404.31,
+            487.71
+          ]
+        },
+        {
+          "frame_path": "frame_0000006826.jpg",
+          "bbox": [
+            706.58,
+            0,
+            453.35,
+            551.68
           ]
         }
       ]
@@ -4444,24 +4442,6 @@
             532.48,
             450.17
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            816.91,
-            76.24,
-            508.51,
-            505.37
-          ]
-        },
-        {
-          "frame_path": "frame_0000009705.jpg",
-          "bbox": [
-            778.02,
-            31.96,
-            466.24,
-            535.36
-          ]
         }
       ]
     },
@@ -4481,6 +4461,15 @@
       ],
       "frame_after_gap_start": 10301,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000009705.jpg",
+          "bbox": [
+            778.02,
+            31.96,
+            466.24,
+            535.36
+          ]
+        },
         {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
@@ -4619,24 +4608,6 @@
             144.17,
             125.56
           ]
-        },
-        {
-          "frame_path": "frame_0000007417.jpg",
-          "bbox": [
-            960.16,
-            440.4,
-            124.25,
-            128.56
-          ]
-        },
-        {
-          "frame_path": "frame_0000007476.jpg",
-          "bbox": [
-            915.69,
-            409.02,
-            87.19,
-            128.77
-          ]
         }
       ]
     },
@@ -4656,6 +4627,24 @@
       ],
       "frame_after_gap_start": 7772,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007417.jpg",
+          "bbox": [
+            960.16,
+            440.4,
+            124.25,
+            128.56
+          ]
+        },
+        {
+          "frame_path": "frame_0000007476.jpg",
+          "bbox": [
+            915.69,
+            409.02,
+            87.19,
+            128.77
+          ]
+        },
         {
           "frame_path": "frame_0000007526.jpg",
           "bbox": [
@@ -4719,24 +4708,6 @@
             113.45,
             90.68
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            792.78,
-            457.79,
-            124.16,
-            99.06
-          ]
-        },
-        {
-          "frame_path": "frame_0000009705.jpg",
-          "bbox": [
-            764.95,
-            448.31,
-            124.02,
-            99.68
-          ]
         }
       ]
     },
@@ -4757,6 +4728,15 @@
       "frame_after_gap_start": 10301,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000009705.jpg",
+          "bbox": [
+            764.95,
+            448.31,
+            124.02,
+            99.68
+          ]
+        },
+        {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
             210.57,
@@ -4769,8 +4749,8 @@
     },
     {
       "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
+      "end_time": 228.82999999999998,
+      "duration_sec": 3.81,
       "event_history": [
         "narration:open cupboard",
         "frame_id:10954",
@@ -4780,26 +4760,8 @@
         "narration:pick up mug",
         "frame_id:11230"
       ],
-      "frame_after_gap_start": 11251,
+      "frame_after_gap_start": 11301,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011441.jpg",
-          "bbox": [
-            552.27,
-            648.21,
-            193.33,
-            193.33
-          ]
-        },
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            344.38,
-            894.86,
-            229.63,
-            185.14
-          ]
-        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -4819,35 +4781,34 @@
           ]
         }
       ]
-    }
-  ],
-  "6/lid/coffee machine lid": [
+    },
     {
-      "start_time": 99.95,
-      "end_time": 100.83,
-      "duration_sec": 0.88,
+      "start_time": 230.56,
+      "end_time": 230.56,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:put mug down",
-        "frame_id:4812",
-        "frame_id:4840",
-        "narration:pick up capsule",
-        "frame_id:4898",
-        "narration:put capsule in coffee machine",
-        "frame_id:4978"
+        "narration:open bin",
+        "frame_id:11462",
+        "narration:throw wooden stirrer",
+        "frame_id:11493",
+        "narration:close bin",
+        "frame_id:11517"
       ],
-      "frame_after_gap_start": 5048,
+      "frame_after_gap_start": 11528,
       "crop_from_previous_active": [
         {
-          "frame_path": "frame_0000005076.jpg",
+          "frame_path": "frame_0000011476.jpg",
           "bbox": [
-            702.61,
-            122.42,
-            65.36,
-            96.38
+            344.38,
+            894.86,
+            229.63,
+            185.14
           ]
         }
       ]
-    },
+    }
+  ],
+  "6/lid/coffee machine lid": [
     {
       "start_time": 110.9,
       "end_time": 230.56,
@@ -4862,6 +4823,15 @@
       ],
       "frame_after_gap_start": 5545,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000005076.jpg",
+          "bbox": [
+            702.61,
+            122.42,
+            65.36,
+            96.38
+          ]
+        },
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -4887,15 +4857,6 @@
             113.15,
             187.17,
             196.09
-          ]
-        },
-        {
-          "frame_path": "frame_0000005644.jpg",
-          "bbox": [
-            1133.66,
-            266.81,
-            96.87,
-            134.82
           ]
         }
       ]
@@ -4944,15 +4905,6 @@
             309.29,
             186.74
           ]
-        },
-        {
-          "frame_path": "frame_0000002722.jpg",
-          "bbox": [
-            1205.27,
-            489.75,
-            99.69,
-            67.21
-          ]
         }
       ]
     },
@@ -4974,6 +4926,15 @@
       "frame_after_gap_start": 3259,
       "crop_from_previous_active": [
         {
+          "frame_path": "frame_0000002722.jpg",
+          "bbox": [
+            1205.27,
+            489.75,
+            99.69,
+            67.21
+          ]
+        },
+        {
           "frame_path": "frame_0000002880.jpg",
           "bbox": [
             944.63,
@@ -4989,24 +4950,6 @@
             559.04,
             143.58,
             122.81
-          ]
-        },
-        {
-          "frame_path": "frame_0000003251.jpg",
-          "bbox": [
-            927.79,
-            359.69,
-            116.19,
-            94.68
-          ]
-        },
-        {
-          "frame_path": "frame_0000003301.jpg",
-          "bbox": [
-            904.84,
-            358.25,
-            106.86,
-            86.94
           ]
         },
         {
@@ -5037,6 +4980,24 @@
       ],
       "frame_after_gap_start": 3610,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003251.jpg",
+          "bbox": [
+            927.79,
+            359.69,
+            116.19,
+            94.68
+          ]
+        },
+        {
+          "frame_path": "frame_0000003301.jpg",
+          "bbox": [
+            904.84,
+            358.25,
+            106.86,
+            86.94
+          ]
+        },
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -5072,24 +5033,6 @@
             129.16,
             96.97
           ]
-        },
-        {
-          "frame_path": "frame_0000003601.jpg",
-          "bbox": [
-            766.6,
-            484.25,
-            227.56,
-            181.26
-          ]
-        },
-        {
-          "frame_path": "frame_0000003692.jpg",
-          "bbox": [
-            755.97,
-            636.36,
-            182.45,
-            157.75
-          ]
         }
       ]
     },
@@ -5109,6 +5052,24 @@
       ],
       "frame_after_gap_start": 3960,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003601.jpg",
+          "bbox": [
+            766.6,
+            484.25,
+            227.56,
+            181.26
+          ]
+        },
+        {
+          "frame_path": "frame_0000003692.jpg",
+          "bbox": [
+            755.97,
+            636.36,
+            182.45,
+            157.75
+          ]
+        },
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -5134,24 +5095,6 @@
             882.36,
             109.98,
             132.07
-          ]
-        },
-        {
-          "frame_path": "frame_0000003923.jpg",
-          "bbox": [
-            1052.89,
-            354.06,
-            83.99,
-            84.79
-          ]
-        },
-        {
-          "frame_path": "frame_0000003963.jpg",
-          "bbox": [
-            1025.34,
-            239.74,
-            97.4,
-            89.68
           ]
         }
       ]
@@ -5197,31 +5140,13 @@
             83.16,
             113.7
           ]
-        },
-        {
-          "frame_path": "frame_0000007417.jpg",
-          "bbox": [
-            585.65,
-            761.12,
-            88.61,
-            99.51
-          ]
-        },
-        {
-          "frame_path": "frame_0000007476.jpg",
-          "bbox": [
-            526.11,
-            736.05,
-            91.91,
-            97.83
-          ]
         }
       ]
     },
     {
       "start_time": 154.44,
-      "end_time": 230.56,
-      "duration_sec": 76.12,
+      "end_time": 154.46,
+      "duration_sec": 0.02,
       "event_history": [
         "narration:pour milk from bottle into mug",
         "frame_id:7397",
@@ -5232,8 +5157,17 @@
         "narration:open fridge",
         "frame_id:7703"
       ],
-      "frame_after_gap_start": 7722,
+      "frame_after_gap_start": 7772,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007417.jpg",
+          "bbox": [
+            585.65,
+            761.12,
+            88.61,
+            99.51
+          ]
+        },
         {
           "frame_path": "frame_0000007630.jpg",
           "bbox": [
@@ -5262,12 +5196,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000007751.jpg",
+          "frame_path": "frame_0000007476.jpg",
           "bbox": [
-            486.1,
-            242.51,
-            201.7,
-            217.74
+            526.11,
+            736.05,
+            91.91,
+            97.83
           ]
         },
         {
@@ -5280,22 +5214,53 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 171.61,
+      "end_time": 230.56,
+      "duration_sec": 58.95,
+      "event_history": [
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781",
+        "narration:pick up wooden stirrer from box",
+        "frame_id:8295",
+        "frame_id:8359",
+        "narration:stir coffee",
+        "frame_id:8442",
+        "frame_id:8534"
+      ],
+      "frame_after_gap_start": 8581,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007751.jpg",
+          "bbox": [
+            486.1,
+            242.51,
+            201.7,
+            217.74
+          ]
+        }
+      ]
     }
   ],
   "63/sink/sink": [
     {
-      "start_time": 110.9,
-      "end_time": 115.0,
-      "duration_sec": 4.1,
+      "start_time": 123.77,
+      "end_time": 125.49,
+      "duration_sec": 1.72,
       "event_history": [
-        "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792",
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173"
       ],
-      "frame_after_gap_start": 5595,
+      "frame_after_gap_start": 6239,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005763.jpg",
@@ -5314,26 +5279,7 @@
             1451.08,
             784.19
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 123.77,
-      "end_time": 125.49,
-      "duration_sec": 1.72,
-      "event_history": [
-        "narration:open tap",
-        "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
-      ],
-      "frame_after_gap_start": 6239,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -5353,15 +5299,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000006301.jpg",
-          "bbox": [
-            0,
-            0,
-            396.82,
-            474.38
-          ]
-        },
-        {
           "frame_path": "frame_0000006029.jpg",
           "bbox": [
             0,
@@ -5374,8 +5311,8 @@
     },
     {
       "start_time": 135.24,
-      "end_time": 230.56,
-      "duration_sec": 95.32,
+      "end_time": 135.41,
+      "duration_sec": 0.17,
       "event_history": [
         "narration:pick up mug",
         "frame_id:6292",
@@ -5387,8 +5324,17 @@
         "frame_id:6621",
         "frame_id:6715"
       ],
-      "frame_after_gap_start": 6762,
+      "frame_after_gap_start": 6812,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006301.jpg",
+          "bbox": [
+            0,
+            0,
+            396.82,
+            474.38
+          ]
+        },
         {
           "frame_path": "frame_0000006701.jpg",
           "bbox": [
@@ -5396,24 +5342,6 @@
             357.37,
             245.03,
             408.38
-          ]
-        },
-        {
-          "frame_path": "frame_0000006784.jpg",
-          "bbox": [
-            0,
-            204.87,
-            340.74,
-            497.44
-          ]
-        },
-        {
-          "frame_path": "frame_0000006826.jpg",
-          "bbox": [
-            0,
-            316.46,
-            394.35,
-            416.1
           ]
         },
         {
@@ -5444,23 +5372,61 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 142.67000000000002,
+      "end_time": 230.56,
+      "duration_sec": 87.89,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822",
+        "narration:close drawer",
+        "frame_id:7040",
+        "frame_id:7066",
+        "narration:open fridge",
+        "frame_id:7094",
+        "frame_id:7121"
+      ],
+      "frame_after_gap_start": 7134,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006784.jpg",
+          "bbox": [
+            0,
+            204.87,
+            340.74,
+            497.44
+          ]
+        },
+        {
+          "frame_path": "frame_0000006826.jpg",
+          "bbox": [
+            0,
+            316.46,
+            394.35,
+            416.1
+          ]
+        }
+      ]
     }
   ],
   "64/milk/milk": [
     {
-      "start_time": 147.14,
+      "start_time": 154.44,
       "end_time": 230.56,
-      "duration_sec": 83.42,
+      "duration_sec": 76.12,
       "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
-        "narration:close fridge",
-        "frame_id:7205",
-        "narration:open milk bottle",
-        "frame_id:7298",
-        "frame_id:7337"
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476",
+        "narration:close milk bottle",
+        "frame_id:7540",
+        "frame_id:7582",
+        "narration:open fridge",
+        "frame_id:7703"
       ],
-      "frame_after_gap_start": 7357,
+      "frame_after_gap_start": 7722,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007476.jpg",
@@ -5516,33 +5482,6 @@
             416.44,
             502.26
           ]
-        },
-        {
-          "frame_path": "frame_0000005007.jpg",
-          "bbox": [
-            1331.38,
-            327.28,
-            574.92,
-            516.41
-          ]
-        },
-        {
-          "frame_path": "frame_0000005039.jpg",
-          "bbox": [
-            1203.29,
-            308.33,
-            521.48,
-            494.67
-          ]
-        },
-        {
-          "frame_path": "frame_0000005076.jpg",
-          "bbox": [
-            1278.31,
-            0,
-            641.69,
-            544.72
-          ]
         }
       ]
     },
@@ -5560,6 +5499,15 @@
       ],
       "frame_after_gap_start": 5595,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000005076.jpg",
+          "bbox": [
+            1278.31,
+            0,
+            641.69,
+            544.72
+          ]
+        },
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -5586,16 +5534,26 @@
             603.77,
             534.42
           ]
-        },
-        {
-          "frame_path": "frame_0000005644.jpg",
-          "bbox": [
-            1211.79,
-            535.54,
-            571.43,
-            544.48
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 123.77,
+      "end_time": 125.49,
+      "duration_sec": 1.72,
+      "event_history": [
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792",
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173"
+      ],
+      "frame_after_gap_start": 6239,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005763.jpg",
           "bbox": [
@@ -5613,26 +5571,7 @@
             328.45,
             491.38
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 123.77,
-      "end_time": 230.56,
-      "duration_sec": 106.79,
-      "event_history": [
-        "narration:open tap",
-        "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
-      ],
-      "frame_after_gap_start": 6189,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -5670,15 +5609,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000006301.jpg",
-          "bbox": [
-            1471.51,
-            972.72,
-            448.49,
-            107.28
-          ]
-        },
-        {
           "frame_path": "frame_0000006029.jpg",
           "bbox": [
             0,
@@ -5688,13 +5618,41 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 135.24,
+      "end_time": 230.56,
+      "duration_sec": 95.32,
+      "event_history": [
+        "narration:pick up mug",
+        "frame_id:6292",
+        "frame_id:6326",
+        "narration:empty mug in sink",
+        "frame_id:6506",
+        "frame_id:6537",
+        "narration:put down mug",
+        "frame_id:6621",
+        "frame_id:6715"
+      ],
+      "frame_after_gap_start": 6762,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006301.jpg",
+          "bbox": [
+            1471.51,
+            972.72,
+            448.49,
+            107.28
+          ]
+        }
+      ]
     }
   ],
   "73/clothes/clothes": [
     {
       "start_time": 6.97,
-      "end_time": 230.56,
-      "duration_sec": 223.59,
+      "end_time": 7.51,
+      "duration_sec": 0.54,
       "event_history": [
         "narration:put down laundry basket",
         "frame_id:138",
@@ -5706,7 +5664,7 @@
         "frame_id:286",
         "frame_id:328"
       ],
-      "frame_after_gap_start": 349,
+      "frame_after_gap_start": 399,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000144.jpg",
@@ -5743,7 +5701,26 @@
             556.95,
             703.18
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 15.92,
+      "end_time": 230.56,
+      "duration_sec": 214.64,
+      "event_history": [
+        "narration:put clothes in washing machine",
+        "frame_id:406",
+        "frame_id:468",
+        "narration:put towel in washing machine",
+        "frame_id:618",
+        "frame_id:657",
+        "narration:open drawer",
+        "frame_id:731",
+        "frame_id:775"
+      ],
+      "frame_after_gap_start": 796,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000413.jpg",
           "bbox": [
@@ -5836,24 +5813,6 @@
             381.3,
             434.02
           ]
-        },
-        {
-          "frame_path": "frame_0000001230.jpg",
-          "bbox": [
-            958.75,
-            102.79,
-            346.75,
-            437.86
-          ]
-        },
-        {
-          "frame_path": "frame_0000001342.jpg",
-          "bbox": [
-            964.59,
-            77.74,
-            306.78,
-            407.99
-          ]
         }
       ]
     },
@@ -5874,6 +5833,24 @@
       ],
       "frame_after_gap_start": 2042,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000001230.jpg",
+          "bbox": [
+            958.75,
+            102.79,
+            346.75,
+            437.86
+          ]
+        },
+        {
+          "frame_path": "frame_0000001342.jpg",
+          "bbox": [
+            964.59,
+            77.74,
+            306.78,
+            407.99
+          ]
+        },
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -5918,15 +5895,6 @@
             332.81,
             385.57
           ]
-        },
-        {
-          "frame_path": "frame_0000002021.jpg",
-          "bbox": [
-            1054.79,
-            316.24,
-            275.98,
-            385.58
-          ]
         }
       ]
     },
@@ -5947,6 +5915,15 @@
       ],
       "frame_after_gap_start": 2473,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002021.jpg",
+          "bbox": [
+            1054.79,
+            316.24,
+            275.98,
+            385.58
+          ]
+        },
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -5991,15 +5968,6 @@
             341.87,
             365.97
           ]
-        },
-        {
-          "frame_path": "frame_0000002446.jpg",
-          "bbox": [
-            643.0,
-            235.28,
-            412.48,
-            427.05
-          ]
         }
       ]
     },
@@ -6019,6 +5987,15 @@
       ],
       "frame_after_gap_start": 2664,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002446.jpg",
+          "bbox": [
+            643.0,
+            235.28,
+            412.48,
+            427.05
+          ]
+        },
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -6102,24 +6079,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003251.jpg",
-          "bbox": [
-            640.52,
-            179.78,
-            351.14,
-            417.99
-          ]
-        },
-        {
-          "frame_path": "frame_0000003301.jpg",
-          "bbox": [
-            636.8,
-            181.81,
-            335.74,
-            399.3
-          ]
-        },
-        {
           "frame_path": "frame_0000003059.jpg",
           "bbox": [
             506.14,
@@ -6147,6 +6106,24 @@
       ],
       "frame_after_gap_start": 3610,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003251.jpg",
+          "bbox": [
+            640.52,
+            179.78,
+            351.14,
+            417.99
+          ]
+        },
+        {
+          "frame_path": "frame_0000003301.jpg",
+          "bbox": [
+            636.8,
+            181.81,
+            335.74,
+            399.3
+          ]
+        },
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -6182,7 +6159,25 @@
             347.09,
             385.84
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 78.18,
+      "end_time": 79.34,
+      "duration_sec": 1.16,
+      "event_history": [
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676",
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892"
+      ],
+      "frame_after_gap_start": 3960,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -6200,25 +6195,7 @@
             334.17,
             366.91
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 135.41,
-      "duration_sec": 57.23,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -6245,25 +6222,25 @@
             380.96,
             156.47
           ]
-        },
-        {
-          "frame_path": "frame_0000003923.jpg",
-          "bbox": [
-            1386.84,
-            562.68,
-            481.04,
-            266.21
-          ]
-        },
-        {
-          "frame_path": "frame_0000003963.jpg",
-          "bbox": [
-            1370.6,
-            612.0,
-            455.7,
-            242.64
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 84.59,
+      "end_time": 135.41,
+      "duration_sec": 50.82,
+      "event_history": [
+        "narration:close cupboard",
+        "frame_id:3982",
+        "narration:turn on dial",
+        "frame_id:4052",
+        "frame_id:4127",
+        "narration:open washing machine door",
+        "frame_id:4183",
+        "frame_id:4214"
+      ],
+      "frame_after_gap_start": 4280,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003996.jpg",
           "bbox": [
@@ -6374,24 +6351,6 @@
             430.29,
             221.01
           ]
-        },
-        {
-          "frame_path": "frame_0000010276.jpg",
-          "bbox": [
-            931.85,
-            624.36,
-            185.43,
-            169.42
-          ]
-        },
-        {
-          "frame_path": "frame_0000010313.jpg",
-          "bbox": [
-            868.92,
-            608.07,
-            184.95,
-            169.61
-          ]
         }
       ]
     },
@@ -6429,26 +6388,45 @@
             155.35,
             160.16
           ]
+        },
+        {
+          "frame_path": "frame_0000010276.jpg",
+          "bbox": [
+            931.85,
+            624.36,
+            185.43,
+            169.42
+          ]
+        },
+        {
+          "frame_path": "frame_0000010313.jpg",
+          "bbox": [
+            868.92,
+            608.07,
+            184.95,
+            169.61
+          ]
         }
       ]
     }
   ],
   "82/blender/hand blender piece": [
     {
-      "start_time": 205.02,
+      "start_time": 216.59,
       "end_time": 230.56,
-      "duration_sec": 25.54,
+      "duration_sec": 13.97,
       "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327",
+        "narration:fit wire inside box",
+        "frame_id:10448",
+        "frame_id:10566",
+        "narration:pick up box",
+        "frame_id:10777",
+        "frame_id:10812"
       ],
-      "frame_after_gap_start": 10251,
+      "frame_after_gap_start": 10830,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010276.jpg",
@@ -6474,8 +6452,8 @@
   "92/button/button": [
     {
       "start_time": 171.61,
-      "end_time": 230.56,
-      "duration_sec": 58.95,
+      "end_time": 193.55,
+      "duration_sec": 21.94,
       "event_history": [
         "narration:put milk bottle in fridge door",
         "frame_id:7742",
@@ -6487,7 +6465,7 @@
         "frame_id:8442",
         "frame_id:8534"
       ],
-      "frame_after_gap_start": 8581,
+      "frame_after_gap_start": 8631,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -6524,16 +6502,25 @@
             47.87,
             50.9
           ]
-        },
-        {
-          "frame_path": "frame_0000009676.jpg",
-          "bbox": [
-            1181.04,
-            114.09,
-            45.42,
-            43.6
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 205.02,
+      "end_time": 230.56,
+      "duration_sec": 25.54,
+      "event_history": [
+        "narration:press button on coffee machine",
+        "frame_id:9699",
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166"
+      ],
+      "frame_after_gap_start": 10251,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [

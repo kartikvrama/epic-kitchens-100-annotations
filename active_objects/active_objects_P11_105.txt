@@ -65,7 +65,7 @@ Start timestamp: 45.97, Stop timestamp: 47.06
 Narration: pick up knife
 ------
 ************
-Frame IDs in sequence: [1951, 1976, 2318, 2559, 2780]
+Frame IDs in sequence: [1951, 1976, 2318]
 Objects in sequence: ['box (pizza box)', 'knife (knife)', 'pizza (pizza)']
 Verb-noun pairs in sequence: ['open pizza;36.75;39.02', 'pick up pizza box;39.13;41.08', 'pick up knife;45.97;47.06']
 ************
@@ -85,7 +85,7 @@ Start timestamp: 68.49, Stop timestamp: 77.26
 Narration: open pizza
 ------
 ************
-Frame IDs in sequence: [2996, 3101, 3530, 3734, 3996, 4030]
+Frame IDs in sequence: [2559, 2780, 2996, 3101, 3530, 3734]
 Objects in sequence: ['knife (knife)', 'package (cardboard)', 'package (packaging)', 'pizza (pizza)', 'tray (oven tray)']
 Verb-noun pairs in sequence: ['open pizza;49.18;57.94', 'remove pizza packaging;58.56;62.88', 'open pizza;68.49;77.26']
 ************
@@ -105,8 +105,8 @@ Start timestamp: 84.82, Stop timestamp: 85.66
 Narration: pick up pizza packaging
 ------
 ************
-Frame IDs in sequence: [4109, 4146, 4259, 4380, 4501, 4626]
-Objects in sequence: ['bin (bin)', 'package (cardboard)', 'package (packaging)', 'pizza (pizza)', 'tray (oven tray)']
+Frame IDs in sequence: [3996, 4030, 4109, 4146, 4259]
+Objects in sequence: ['knife (knife)', 'package (cardboard)', 'package (packaging)', 'pizza (pizza)', 'tray (oven tray)']
 Verb-noun pairs in sequence: ['remove pizza packaging;79.32;81.33', 'remove pizza packaging;81.43;83.84', 'pick up pizza packaging;84.82;85.66']
 ************
 Start timestamp: 85.3, Stop timestamp: 89.88
@@ -122,8 +122,8 @@ Start timestamp: 99.17, Stop timestamp: 99.9
 Narration: pick up knife sharpener
 ------
 ************
-Frame IDs in sequence: [4859, 4967, 5045, 5123, 5226, 5330]
-Objects in sequence: ['knife (knife)', 'whetstone (knife sharpener)']
+Frame IDs in sequence: [4501, 4626, 4859, 4967]
+Objects in sequence: ['bin (bin)', 'knife (knife)', 'package (cardboard)', 'package (packaging)', 'tray (oven tray)', 'whetstone (knife sharpener)']
 Verb-noun pairs in sequence: ['recycle pizza packaging;89.36;93.64', 'pick up knife;97.03;97.97', 'pick up knife sharpener;99.17;99.9']
 ************
 Start timestamp: 100.71000000000001, Stop timestamp: 109.15
@@ -139,8 +139,8 @@ Start timestamp: 113.49000000000001, Stop timestamp: 114.39
 Narration: open cupboard
 ------
 ************
-Frame IDs in sequence: [5483, 5679, 5758, 5838, 5865]
-Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)', 'whetstone (knife sharpener)']
+Frame IDs in sequence: [5045, 5123, 5226, 5330, 5483, 5679]
+Objects in sequence: ['cupboard (cupboard)', 'knife (knife)', 'whetstone (knife sharpener)']
 Verb-noun pairs in sequence: ['hone knife;100.71000000000001;109.15', 'put down knife;109.35;109.84', 'open cupboard;113.49000000000001;114.39']
 ************
 Start timestamp: 114.14, Stop timestamp: 116.25
@@ -156,7 +156,7 @@ Start timestamp: 119.82, Stop timestamp: 120.65
 Narration: pick up chopping board
 ------
 ************
-Frame IDs in sequence: [5945, 5960, 5976, 6001, 6031, 6062]
+Frame IDs in sequence: [5838, 5865, 5945, 5960, 5976, 6001, 6031]
 Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)']
 Verb-noun pairs in sequence: ['drop chopping board;116.47999999999999;117.24000000000001', 'put down chopping board;118.46000000000001;119.72', 'pick up chopping board;119.82;120.65']
 ************
@@ -170,7 +170,7 @@ Start timestamp: 123.88, Stop timestamp: 124.79
 Narration: close cupboard
 ------
 ************
-Frame IDs in sequence: [6114, 6148, 6172, 6196, 6239, 6275]
+Frame IDs in sequence: [6062, 6114, 6148, 6172, 6196, 6239]
 Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)', 'knife (knife)']
 Verb-noun pairs in sequence: ['open cupboard;121.05;121.68', 'put away chopping board;121.78;123.38', 'close cupboard;123.88;124.79']
 ************
@@ -184,8 +184,8 @@ Start timestamp: 131.46, Stop timestamp: 132.49
 Narration: open fridge
 ------
 ************
-Frame IDs in sequence: [6405, 6500, 6596, 6621, 6717, 6793]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'package (tomato packaging)', 'tomato (tomato)']
+Frame IDs in sequence: [6275, 6405, 6500, 6596, 6621]
+Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)']
 Verb-noun pairs in sequence: ['pick up chopping board;125.26;126.0', 'put down chopping board;127.81;128.62', 'open fridge;131.46;132.49']
 ************
 Start timestamp: 133.36, Stop timestamp: 136.71
@@ -198,8 +198,8 @@ Start timestamp: 142.32, Stop timestamp: 145.34
 Narration: pick up mushrooms
 ------
 ************
-Frame IDs in sequence: [6876, 7016, 7157, 7226, 7299, 7373]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'mushroom (mushroom)', 'package (mushroom packaging)', 'package (tomato packaging)', 'tomato (tomato)']
+Frame IDs in sequence: [6717, 6793, 6876, 7016, 7157, 7226]
+Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'package (tomato packaging)', 'tomato (tomato)']
 Verb-noun pairs in sequence: ['pick up tomatoes;133.36;136.71', 'put down tomatoes;137.47;138.1', 'pick up mushrooms;142.32;145.34']
 ************
 Start timestamp: 147.11, Stop timestamp: 147.8
@@ -212,7 +212,7 @@ Start timestamp: 152.91, Stop timestamp: 154.6
 Narration: pick up onion
 ------
 ************
-Frame IDs in sequence: [7417, 7442, 7667, 7703, 7805, 7869]
+Frame IDs in sequence: [7373, 7417, 7442, 7667, 7703]
 Objects in sequence: ['board:chopping (chopping board)', 'mushroom (mushroom)', 'onion (onion)', 'package (mushroom packaging)', 'tomato (tomato)']
 Verb-noun pairs in sequence: ['close fridge;147.11;147.8', 'put down mushrooms;147.84;149.24', 'pick up onion;152.91;154.6']
 ************
@@ -226,7 +226,7 @@ Start timestamp: 164.92000000000002, Stop timestamp: 165.47
 Narration: put down onion
 ------
 ************
-Frame IDs in sequence: [8021, 8089, 8170, 8251, 8388, 8419]
+Frame IDs in sequence: [7805, 7869, 8021, 8089, 8170, 8251]
 Objects in sequence: ['onion (onion)']
 Verb-noun pairs in sequence: ['pick up onion;154.8;158.25', 'pick up onion;159.49;162.44', 'put down onion;164.92000000000002;165.47']
 ************
@@ -240,7 +240,7 @@ Start timestamp: 171.52, Stop timestamp: 172.25
 Narration: put down onions
 ------
 ************
-Frame IDs in sequence: [8459, 8492, 8525, 8558, 8592, 8642]
+Frame IDs in sequence: [8388, 8419, 8459, 8492, 8525, 8558, 8592]
 Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'onion (onion)']
 Verb-noun pairs in sequence: ['put down onion;167.55;168.61', 'pick up onion;168.71;169.82', 'put down onions;171.52;172.25']
 ************
@@ -254,7 +254,7 @@ Start timestamp: 181.1, Stop timestamp: 198.26
 Narration: peel onion
 ------
 ************
-Frame IDs in sequence: [8738, 8851, 9217, 9463, 9709, 9938]
+Frame IDs in sequence: [8642, 8738, 8851, 9217, 9463, 9709]
 Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'onion (onion)', 'skin (peels)']
 Verb-noun pairs in sequence: ['pick up knife;172.63;173.38', 'chop onion;173.43;178.46', 'peel onion;181.1;198.26']
 ************
@@ -268,7 +268,7 @@ Start timestamp: 206.49, Stop timestamp: 227.9
 Narration: peel onion
 ------
 ************
-Frame IDs in sequence: [10057, 10142, 10526, 10798, 11071, 11419]
+Frame IDs in sequence: [9938, 10057, 10142, 10526, 10798, 11071]
 Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'onion (onion)', 'skin (peels)']
 Verb-noun pairs in sequence: ['put down onion;198.42000000000002;199.12', 'chop onion;200.16;203.31', 'peel onion;206.49;227.9']
 ************
@@ -285,8 +285,8 @@ Start timestamp: 232.88, Stop timestamp: 234.45
 Narration: put down knife
 ------
 ************
-Frame IDs in sequence: [11601, 11638, 11675, 11714, 11754, 11783]
-Objects in sequence: ['board:chopping (chopping board)', 'drawer (drawer)', 'knife (knife)', 'onion (onion)', 'skin (peels)']
+Frame IDs in sequence: [11419, 11601, 11638, 11675, 11714]
+Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'onion (onion)', 'skin (peels)']
 Verb-noun pairs in sequence: ['pick up knife;228.09;228.71', 'pick up knife;232.01;232.7', 'put down knife;232.88;234.45']
 ************
 Start timestamp: 234.54, Stop timestamp: 235.79
@@ -299,8 +299,8 @@ Start timestamp: 238.6, Stop timestamp: 243.49
 Narration: slice onion
 ------
 ************
-Frame IDs in sequence: [11846, 12000, 12131, 12326, 12521, 12551]
-Objects in sequence: ['board:chopping (chopping board)', 'drawer (drawer)', 'onion (onion)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
+Frame IDs in sequence: [11754, 11783, 11846, 12000, 12131]
+Objects in sequence: ['board:chopping (chopping board)', 'drawer (drawer)', 'knife (knife)', 'onion (onion)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
 Verb-noun pairs in sequence: ['open drawer;234.54;235.79', 'pick up slicer;236.48;237.51', 'slice onion;238.6;243.49']
 ************
 Start timestamp: 250.18, Stop timestamp: 251.08
@@ -316,7 +316,7 @@ Start timestamp: 256.53, Stop timestamp: 260.09
 Narration: rearrange pepperoni
 ------
 ************
-Frame IDs in sequence: [12642, 12765, 12892, 12967, 13446, 13546]
+Frame IDs in sequence: [12521, 12551, 12642, 12765, 12892, 12967]
 Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'pizza (pizza)', 'salami (pepperoni)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
 Verb-noun pairs in sequence: ['pick up onion;250.18;251.08', 'slice onion;252.02;256.06', 'rearrange pepperoni;256.53;260.09']
 ************
@@ -330,8 +330,8 @@ Start timestamp: 284.47, Stop timestamp: 285.62
 Narration: put down onion slicer
 ------
 ************
-Frame IDs in sequence: [13863, 13967, 14071, 14249, 14398, 14596]
-Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'pizza (pizza)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
+Frame IDs in sequence: [13446, 13546, 13863, 13967, 14071, 14249]
+Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'pizza (pizza)', 'salami (pepperoni)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
 Verb-noun pairs in sequence: ['rearrange pepperoni;268.31;271.66', 'slice onion;274.89;284.42', 'put down onion slicer;284.47;285.62']
 ************
 Start timestamp: 285.7, Stop timestamp: 294.96
@@ -344,8 +344,8 @@ Start timestamp: 310.73, Stop timestamp: 311.41
 Narration: turn on tap
 ------
 ************
-Frame IDs in sequence: [15026, 15188, 15350, 15556, 15855, 15913]
-Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'sink (sink)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)', 'tap (tap)']
+Frame IDs in sequence: [14398, 14596, 15026, 15188, 15350, 15556]
+Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'pizza (pizza)', 'sink (sink)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)', 'tap (tap)']
 Verb-noun pairs in sequence: ['rearrange onion;285.7;294.96', 'rearrange onion;295.92;309.73', 'turn on tap;310.73;311.41']
 ************
 Start timestamp: 311.3, Stop timestamp: 312.36
@@ -361,7 +361,7 @@ Start timestamp: 324.55, Stop timestamp: 328.91
 Narration: pick up mushrooms
 ------
 ************
-Frame IDs in sequence: []
-Objects in sequence: []
+Frame IDs in sequence: [15855, 15913]
+Objects in sequence: ['board:chopping (chopping board)', 'onion (onion)', 'skin (peels)', 'slicer (slicer)', 'slicer (slicer guard)']
 Verb-noun pairs in sequence: ['move up slicer;316.8;318.54', 'open mushrooms;319.0;323.55', 'pick up mushrooms;324.55;328.91']
 ************

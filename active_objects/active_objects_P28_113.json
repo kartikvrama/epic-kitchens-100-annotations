@@ -1948,15 +1948,6 @@
               741.72,
               514.86
             ]
-          },
-          {
-            "frame_path": "frame_0000007051.jpg",
-            "bbox": [
-              773.52,
-              423.73,
-              452.48,
-              49.61
-            ]
           }
         ]
       },
@@ -2027,22 +2018,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 1,
-        "class_name": "spoon",
-        "name": "spoon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007051.jpg",
-            "bbox": [
-              782.74,
-              851.58,
-              164.19,
-              228.42
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2050,8 +2025,7 @@
       6876,
       6938,
       6969,
-      7001,
-      7051
+      7001
     ],
     "narrations": [
       "place knife;136.3;137.95",
@@ -2081,6 +2055,56 @@
             ]
           },
           {
+            "frame_path": "frame_0000007051.jpg",
+            "bbox": [
+              773.52,
+              423.73,
+              452.48,
+              49.61
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007051.jpg",
+            "bbox": [
+              782.74,
+              851.58,
+              164.19,
+              228.42
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      7051,
+      7113
+    ],
+    "narrations": [
+      "open drawer;140.89;141.67000000000002",
+      "close drawer;142.02;142.54",
+      "open drawer;142.55;143.35"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0014",
+    "start_time": 143.53,
+    "end_time": 151.9,
+    "start_frame": 7176,
+    "end_frame": 7595,
+    "objects_in_sequence": [
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
             "frame_path": "frame_0000007213.jpg",
             "bbox": [
               595.76,
@@ -2105,6 +2129,15 @@
               0,
               536.53,
               477.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000007551.jpg",
+            "bbox": [
+              526.7,
+              210.74,
+              803.02,
+              798.22
             ]
           }
         ]
@@ -2139,6 +2172,15 @@
               712.04,
               275.64,
               367.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000007551.jpg",
+            "bbox": [
+              926.6,
+              1045.62,
+              78.8,
+              34.38
             ]
           }
         ]
@@ -2181,30 +2223,39 @@
               314.81,
               358.75
             ]
+          },
+          {
+            "frame_path": "frame_0000007551.jpg",
+            "bbox": [
+              838.81,
+              992.9,
+              178.8,
+              87.1
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      7113,
       7213,
       7301,
       7376,
       7451,
-      7496
+      7496,
+      7551
     ],
     "narrations": [
-      "open drawer;140.89;141.67000000000002",
-      "close drawer;142.02;142.54",
-      "open drawer;142.55;143.35"
+      "sort cutlery;143.53;147.2",
+      "take cutlery;148.63;150.09",
+      "close drawer;150.77;151.9"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0014",
-    "start_time": 143.53,
-    "end_time": 151.9,
-    "start_frame": 7176,
-    "end_frame": 7595,
+    "segment_id": "P28_113_ActiveUsage_0015",
+    "start_time": 152.81,
+    "end_time": 161.59,
+    "start_frame": 7640,
+    "end_frame": 8079,
     "objects_in_sequence": [
       {
         "class_id": 8,
@@ -2221,12 +2272,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000007551.jpg",
+            "frame_path": "frame_0000008076.jpg",
             "bbox": [
-              526.7,
-              210.74,
-              803.02,
-              798.22
+              475.67,
+              283.08,
+              595.42,
+              439.79
             ]
           }
         ]
@@ -2246,12 +2297,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000007551.jpg",
+            "frame_path": "frame_0000008013.jpg",
             "bbox": [
-              926.6,
-              1045.62,
-              78.8,
-              34.38
+              824.54,
+              659.59,
+              98.66,
+              93.43
             ]
           },
           {
@@ -2261,6 +2312,31 @@
               351.82,
               136.33,
               250.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000008076.jpg",
+            "bbox": [
+              834.24,
+              653.97,
+              548.25,
+              345.01
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 87,
+        "class_name": "peeler:potato",
+        "name": "peeler",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008076.jpg",
+            "bbox": [
+              1360.06,
+              967.8,
+              52.98,
+              62.07
             ]
           }
         ]
@@ -2318,17 +2394,17 @@
         ]
       },
       {
-        "class_id": 20,
-        "class_name": "spatula",
-        "name": "spatula",
+        "class_id": 79,
+        "class_name": "scissors",
+        "name": "scissors",
         "image_crops": [
           {
-            "frame_path": "frame_0000007551.jpg",
+            "frame_path": "frame_0000008076.jpg",
             "bbox": [
-              838.81,
-              992.9,
-              178.8,
-              87.1
+              1294.12,
+              916.64,
+              142.64,
+              163.36
             ]
           }
         ]
@@ -2357,6 +2433,15 @@
             ]
           },
           {
+            "frame_path": "frame_0000008013.jpg",
+            "bbox": [
+              825.55,
+              655.44,
+              86.74,
+              81.48
+            ]
+          },
+          {
             "frame_path": "frame_0000007836.jpg",
             "bbox": [
               845.4,
@@ -2364,30 +2449,40 @@
               71.68,
               190.43
             ]
+          },
+          {
+            "frame_path": "frame_0000008076.jpg",
+            "bbox": [
+              837.03,
+              640.85,
+              92.26,
+              47.27
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      7551,
       7651,
       7711,
       7771,
       7836,
-      7901
+      7901,
+      8013,
+      8076
     ],
     "narrations": [
-      "sort cutlery;143.53;147.2",
-      "take cutlery;148.63;150.09",
-      "close drawer;150.77;151.9"
+      "put cutlery;152.81;153.11",
+      "take cutlery;154.09;159.43",
+      "open drawer;160.21;161.59"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0015",
-    "start_time": 152.81,
-    "end_time": 161.59,
-    "start_frame": 7640,
-    "end_frame": 8079,
+    "segment_id": "P28_113_ActiveUsage_0016",
+    "start_time": 163.29,
+    "end_time": 168.94,
+    "start_frame": 8164,
+    "end_frame": 8447,
     "objects_in_sequence": [
       {
         "class_id": 8,
@@ -2431,12 +2526,21 @@
             ]
           },
           {
-            "frame_path": "frame_0000008076.jpg",
+            "frame_path": "frame_0000008371.jpg",
             "bbox": [
-              475.67,
-              283.08,
-              595.42,
-              439.79
+              651.9,
+              244.14,
+              698.81,
+              543.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              739.66,
+              374.74,
+              731.22,
+              544.23
             ]
           }
         ]
@@ -2446,15 +2550,6 @@
         "class_name": "knife",
         "name": "knife",
         "image_crops": [
-          {
-            "frame_path": "frame_0000008013.jpg",
-            "bbox": [
-              824.54,
-              659.59,
-              98.66,
-              93.43
-            ]
-          },
           {
             "frame_path": "frame_0000008201.jpg",
             "bbox": [
@@ -2492,12 +2587,21 @@
             ]
           },
           {
-            "frame_path": "frame_0000008076.jpg",
+            "frame_path": "frame_0000008371.jpg",
             "bbox": [
-              834.24,
-              653.97,
-              548.25,
-              345.01
+              876.04,
+              310.71,
+              284.3,
+              371.11
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              948.87,
+              618.15,
+              42.51,
+              174.47
             ]
           }
         ]
@@ -2544,12 +2648,21 @@
             ]
           },
           {
-            "frame_path": "frame_0000008076.jpg",
+            "frame_path": "frame_0000008371.jpg",
             "bbox": [
-              1360.06,
-              967.8,
-              52.98,
-              62.07
+              1073.39,
+              392.01,
+              125.55,
+              264.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              1096.46,
+              391.07,
+              75.54,
+              67.14
             ]
           }
         ]
@@ -2567,15 +2680,6 @@
               251.01,
               103.19
             ]
-          },
-          {
-            "frame_path": "frame_0000008076.jpg",
-            "bbox": [
-              1294.12,
-              916.64,
-              142.64,
-              163.36
-            ]
           }
         ]
       },
@@ -2584,15 +2688,6 @@
         "class_name": "spoon",
         "name": "spoon",
         "image_crops": [
-          {
-            "frame_path": "frame_0000008013.jpg",
-            "bbox": [
-              825.55,
-              655.44,
-              86.74,
-              81.48
-            ]
-          },
           {
             "frame_path": "frame_0000008201.jpg",
             "bbox": [
@@ -2630,61 +2725,52 @@
             ]
           },
           {
-            "frame_path": "frame_0000008076.jpg",
+            "frame_path": "frame_0000008371.jpg",
             "bbox": [
-              837.03,
-              640.85,
-              92.26,
-              47.27
+              878.06,
+              419.94,
+              221.29,
+              215.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              967.34,
+              650.21,
+              63.66,
+              255.69
             ]
           }
         ]
       }
     ],
     "frame_ids": [
-      8013,
-      8076,
       8201,
       8251,
       8305,
-      8342
+      8342,
+      8371,
+      8426
     ],
     "narrations": [
-      "put cutlery;152.81;153.11",
-      "take cutlery;154.09;159.43",
-      "open drawer;160.21;161.59"
+      "put scissors;163.29;165.57",
+      "open drawer;166.07;166.85",
+      "place spoon;166.95;168.94"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0016",
-    "start_time": 163.29,
-    "end_time": 168.94,
-    "start_frame": 8164,
-    "end_frame": 8447,
+    "segment_id": "P28_113_ActiveUsage_0017",
+    "start_time": 169.4,
+    "end_time": 172.98,
+    "start_frame": 8470,
+    "end_frame": 8649,
     "objects_in_sequence": [
       {
         "class_id": 8,
         "class_name": "drawer",
         "name": "drawer",
         "image_crops": [
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              651.9,
-              244.14,
-              698.81,
-              543.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              739.66,
-              374.74,
-              731.22,
-              544.23
-            ]
-          },
           {
             "frame_path": "frame_0000008476.jpg",
             "bbox": [
@@ -2720,192 +2806,7 @@
               707.78,
               570.89
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              876.04,
-              310.71,
-              284.3,
-              371.11
-            ]
           },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              948.87,
-              618.15,
-              42.51,
-              174.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000008476.jpg",
-            "bbox": [
-              799.15,
-              438.05,
-              423.65,
-              447.32
-            ]
-          },
-          {
-            "frame_path": "frame_0000008501.jpg",
-            "bbox": [
-              894.25,
-              441.28,
-              294.45,
-              465.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000008530.jpg",
-            "bbox": [
-              950.99,
-              288.83,
-              290.29,
-              543.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000008559.jpg",
-            "bbox": [
-              1058.1,
-              569.91,
-              136.01,
-              376.43
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 87,
-        "class_name": "peeler:potato",
-        "name": "peeler",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              1073.39,
-              392.01,
-              125.55,
-              264.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              1096.46,
-              391.07,
-              75.54,
-              67.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000008476.jpg",
-            "bbox": [
-              1153.16,
-              599.93,
-              105.56,
-              288.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000008501.jpg",
-            "bbox": [
-              1098.74,
-              629.07,
-              100.29,
-              289.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000008530.jpg",
-            "bbox": [
-              1106.98,
-              701.33,
-              118.53,
-              332.67
-            ]
-          },
-          {
-            "frame_path": "frame_0000008559.jpg",
-            "bbox": [
-              1052.91,
-              630.58,
-              108.49,
-              330.45
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 1,
-        "class_name": "spoon",
-        "name": "spoon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              878.06,
-              419.94,
-              221.29,
-              215.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              967.34,
-              650.21,
-              63.66,
-              255.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000008476.jpg",
-            "bbox": [
-              798.06,
-              504.82,
-              207.34,
-              51.42
-            ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      8371,
-      8426,
-      8476,
-      8501,
-      8530,
-      8559
-    ],
-    "narrations": [
-      "put scissors;163.29;165.57",
-      "open drawer;166.07;166.85",
-      "place spoon;166.95;168.94"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0017",
-    "start_time": 169.4,
-    "end_time": 172.98,
-    "start_frame": 8470,
-    "end_frame": 8649,
-    "objects_in_sequence": [
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
           {
             "frame_path": "frame_0000008609.jpg",
             "bbox": [
@@ -2941,24 +2842,6 @@
               682.87,
               521.27
             ]
-          },
-          {
-            "frame_path": "frame_0000008663.jpg",
-            "bbox": [
-              695.79,
-              413.38,
-              735.3,
-              612.34
-            ]
-          },
-          {
-            "frame_path": "frame_0000008688.jpg",
-            "bbox": [
-              1075.22,
-              696.82,
-              735.05,
-              383.18
-            ]
           }
         ]
       },
@@ -2967,6 +2850,42 @@
         "class_name": "knife",
         "name": "knife",
         "image_crops": [
+          {
+            "frame_path": "frame_0000008476.jpg",
+            "bbox": [
+              799.15,
+              438.05,
+              423.65,
+              447.32
+            ]
+          },
+          {
+            "frame_path": "frame_0000008501.jpg",
+            "bbox": [
+              894.25,
+              441.28,
+              294.45,
+              465.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000008530.jpg",
+            "bbox": [
+              950.99,
+              288.83,
+              290.29,
+              543.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000008559.jpg",
+            "bbox": [
+              1058.1,
+              569.91,
+              136.01,
+              376.43
+            ]
+          },
           {
             "frame_path": "frame_0000008609.jpg",
             "bbox": [
@@ -3001,6 +2920,42 @@
         "class_name": "peeler:potato",
         "name": "peeler",
         "image_crops": [
+          {
+            "frame_path": "frame_0000008476.jpg",
+            "bbox": [
+              1153.16,
+              599.93,
+              105.56,
+              288.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000008501.jpg",
+            "bbox": [
+              1098.74,
+              629.07,
+              100.29,
+              289.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000008530.jpg",
+            "bbox": [
+              1106.98,
+              701.33,
+              118.53,
+              332.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000008559.jpg",
+            "bbox": [
+              1052.91,
+              630.58,
+              108.49,
+              330.45
+            ]
+          },
           {
             "frame_path": "frame_0000008609.jpg",
             "bbox": [
@@ -3038,15 +2993,33 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "spoon",
+        "name": "spoon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008476.jpg",
+            "bbox": [
+              798.06,
+              504.82,
+              207.34,
+              51.42
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
+      8476,
+      8501,
+      8530,
+      8559,
       8609,
       8623,
       8638,
-      8650,
-      8663,
-      8688
+      8650
     ],
     "narrations": [
       "place spoon;169.4;169.96",
@@ -3062,22 +3035,6 @@
     "end_frame": 8935,
     "objects_in_sequence": [
       {
-        "class_id": 82,
-        "class_name": "blender",
-        "name": "mixer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009016.jpg",
-            "bbox": [
-              649.87,
-              366.15,
-              126.23,
-              135.95
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 18,
         "class_name": "board:chopping",
         "name": "chopping board",
@@ -3090,7 +3047,100 @@
               630.69,
               218.53
             ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "wooden chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008896.jpg",
+            "bbox": [
+              517.56,
+              372.71,
+              336.47,
+              214.22
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "class_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008663.jpg",
+            "bbox": [
+              695.79,
+              413.38,
+              735.3,
+              612.34
+            ]
           },
+          {
+            "frame_path": "frame_0000008688.jpg",
+            "bbox": [
+              1075.22,
+              696.82,
+              735.05,
+              383.18
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 110,
+        "class_name": "rack:drying",
+        "name": "drainer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008838.jpg",
+            "bbox": [
+              885.93,
+              564.7,
+              616.19,
+              515.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000008896.jpg",
+            "bbox": [
+              623.81,
+              515.97,
+              698.37,
+              564.03
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      8663,
+      8688,
+      8838,
+      8896
+    ],
+    "narrations": [
+      "place peeler;173.06;173.49",
+      "close drawer;173.59;174.36",
+      "take chopping board;176.0;178.71"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0019",
+    "start_time": 182.54,
+    "end_time": 187.29,
+    "start_frame": 9127,
+    "end_frame": 9364,
+    "objects_in_sequence": [
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
           {
             "frame_path": "frame_0000009136.jpg",
             "bbox": [
@@ -3117,6 +3167,15 @@
               222.14,
               298.47
             ]
+          },
+          {
+            "frame_path": "frame_0000009326.jpg",
+            "bbox": [
+              1496.66,
+              0,
+              401.55,
+              147.59
+            ]
           }
         ]
       },
@@ -3125,24 +3184,6 @@
         "class_name": "board:chopping",
         "name": "wooden chopping board",
         "image_crops": [
-          {
-            "frame_path": "frame_0000008896.jpg",
-            "bbox": [
-              517.56,
-              372.71,
-              336.47,
-              214.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000009016.jpg",
-            "bbox": [
-              1429.05,
-              1013.52,
-              283.16,
-              66.48
-            ]
-          },
           {
             "frame_path": "frame_0000009136.jpg",
             "bbox": [
@@ -3185,95 +3226,7 @@
               783.32,
               247.71
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 110,
-        "class_name": "rack:drying",
-        "name": "drainer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008838.jpg",
-            "bbox": [
-              885.93,
-              564.7,
-              616.19,
-              515.3
-            ]
           },
-          {
-            "frame_path": "frame_0000008896.jpg",
-            "bbox": [
-              623.81,
-              515.97,
-              698.37,
-              564.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000009016.jpg",
-            "bbox": [
-              693.24,
-              258.7,
-              771.57,
-              821.3
-            ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      8838,
-      8896,
-      9016,
-      9136,
-      9171,
-      9230
-    ],
-    "narrations": [
-      "place peeler;173.06;173.49",
-      "close drawer;173.59;174.36",
-      "take chopping board;176.0;178.71"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0019",
-    "start_time": 182.54,
-    "end_time": 187.29,
-    "start_frame": 9127,
-    "end_frame": 9364,
-    "objects_in_sequence": [
-      {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009326.jpg",
-            "bbox": [
-              1496.66,
-              0,
-              401.55,
-              147.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000009488.jpg",
-            "bbox": [
-              0,
-              316.89,
-              523.3,
-              449.55
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
           {
             "frame_path": "frame_0000009326.jpg",
             "bbox": [
@@ -3284,64 +3237,13 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009569.jpg",
-            "bbox": [
-              731.21,
-              0,
-              268.5,
-              479.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000009651.jpg",
-            "bbox": [
-              1041.4,
-              0,
-              878.6,
-              989.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000009751.jpg",
-            "bbox": [
-              284.85,
-              0,
-              1635.15,
-              1080
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 37,
-        "class_name": "pepper",
-        "name": "bell pepper",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009751.jpg",
-            "bbox": [
-              689.3,
-              181.97,
-              164.65,
-              124.54
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
-      9326,
-      9488,
-      9569,
-      9651,
-      9751
+      9136,
+      9171,
+      9230,
+      9326
     ],
     "narrations": [
       "put chopping board;182.54;183.43",
@@ -3362,6 +3264,24 @@
         "name": "fridge",
         "image_crops": [
           {
+            "frame_path": "frame_0000009651.jpg",
+            "bbox": [
+              1041.4,
+              0,
+              878.6,
+              989.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000009751.jpg",
+            "bbox": [
+              284.85,
+              0,
+              1635.15,
+              1080
+            ]
+          },
+          {
             "frame_path": "frame_0000009838.jpg",
             "bbox": [
               337.98,
@@ -3369,16 +3289,99 @@
               1582.02,
               1080
             ]
-          },
+          }
+        ]
+      },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley",
+        "image_crops": [
           {
-            "frame_path": "frame_0000009871.jpg",
+            "frame_path": "frame_0000009838.jpg",
             "bbox": [
-              369.79,
+              598.9,
               0,
-              1550.21,
-              1080
+              496.68,
+              526.5
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "bell pepper",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009751.jpg",
+            "bbox": [
+              689.3,
+              181.97,
+              164.65,
+              124.54
             ]
           },
+          {
+            "frame_path": "frame_0000009838.jpg",
+            "bbox": [
+              1258.04,
+              1036.19,
+              90.7,
+              43.81
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      9651,
+      9751,
+      9838
+    ],
+    "narrations": [
+      "open fridge;192.85;193.79",
+      "take bell pepper;194.7;195.76",
+      "take parsley;196.5;197.01"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0021",
+    "start_time": 197.88,
+    "end_time": 205.31,
+    "start_frame": 9894,
+    "end_frame": 10265,
+    "objects_in_sequence": [
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010230.jpg",
+            "bbox": [
+              256.58,
+              477.24,
+              629.07,
+              586.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000010263.jpg",
+            "bbox": [
+              140.22,
+              422.52,
+              565.81,
+              468.57
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 12,
+        "class_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
           {
             "frame_path": "frame_0000009905.jpg",
             "bbox": [
@@ -3423,24 +3426,6 @@
         "name": "parsley",
         "image_crops": [
           {
-            "frame_path": "frame_0000009838.jpg",
-            "bbox": [
-              598.9,
-              0,
-              496.68,
-              526.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000009871.jpg",
-            "bbox": [
-              957.42,
-              800.96,
-              514.46,
-              279.04
-            ]
-          },
-          {
             "frame_path": "frame_0000009905.jpg",
             "bbox": [
               1053.54,
@@ -3475,131 +3460,7 @@
               337.74,
               107.7
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 37,
-        "class_name": "pepper",
-        "name": "bell pepper",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009838.jpg",
-            "bbox": [
-              1258.04,
-              1036.19,
-              90.7,
-              43.81
-            ]
           },
-          {
-            "frame_path": "frame_0000009871.jpg",
-            "bbox": [
-              1219.68,
-              975.39,
-              148.66,
-              104.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000009963.jpg",
-            "bbox": [
-              1133.06,
-              867.66,
-              243.61,
-              212.34
-            ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      9838,
-      9871,
-      9905,
-      9963,
-      10021,
-      10067
-    ],
-    "narrations": [
-      "open fridge;192.85;193.79",
-      "take bell pepper;194.7;195.76",
-      "take parsley;196.5;197.01"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0021",
-    "start_time": 197.88,
-    "end_time": 205.31,
-    "start_frame": 9894,
-    "end_frame": 10265,
-    "objects_in_sequence": [
-      {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010230.jpg",
-            "bbox": [
-              256.58,
-              477.24,
-              629.07,
-              586.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000010290.jpg",
-            "bbox": [
-              256.19,
-              339.98,
-              513.42,
-              397.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000010317.jpg",
-            "bbox": [
-              277.03,
-              309.69,
-              504.59,
-              378.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000010371.jpg",
-            "bbox": [
-              295.19,
-              294.3,
-              494.12,
-              361.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000010263.jpg",
-            "bbox": [
-              140.22,
-              422.52,
-              565.81,
-              468.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000010417.jpg",
-            "bbox": [
-              239.65,
-              294.82,
-              502.49,
-              359.28
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 169,
-        "class_name": "parsley",
-        "name": "parsley",
-        "image_crops": [
           {
             "frame_path": "frame_0000010230.jpg",
             "bbox": [
@@ -3610,48 +3471,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000010290.jpg",
-            "bbox": [
-              749.83,
-              672.23,
-              321.02,
-              324.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000010317.jpg",
-            "bbox": [
-              876.71,
-              643.62,
-              341.15,
-              430.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000010371.jpg",
-            "bbox": [
-              884.82,
-              667.9,
-              331.88,
-              398.53
-            ]
-          },
-          {
             "frame_path": "frame_0000010263.jpg",
             "bbox": [
               682.62,
               759.13,
               357.76,
               320.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000010417.jpg",
-            "bbox": [
-              1015.03,
-              318.58,
-              233.66,
-              351.18
             ]
           }
         ]
@@ -3662,39 +3487,21 @@
         "name": "bell pepper",
         "image_crops": [
           {
+            "frame_path": "frame_0000009963.jpg",
+            "bbox": [
+              1133.06,
+              867.66,
+              243.61,
+              212.34
+            ]
+          },
+          {
             "frame_path": "frame_0000010230.jpg",
             "bbox": [
               888.6,
               401.61,
               92.95,
               136.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000010290.jpg",
-            "bbox": [
-              903.76,
-              821.13,
-              177.23,
-              209.92
-            ]
-          },
-          {
-            "frame_path": "frame_0000010317.jpg",
-            "bbox": [
-              571.94,
-              291.31,
-              370.55,
-              394.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000010371.jpg",
-            "bbox": [
-              811.63,
-              295.42,
-              397.06,
-              784.58
             ]
           },
           {
@@ -3705,26 +3512,17 @@
               380.11,
               701.59
             ]
-          },
-          {
-            "frame_path": "frame_0000010417.jpg",
-            "bbox": [
-              764.32,
-              299.51,
-              218.64,
-              221.77
-            ]
           }
         ]
       }
     ],
     "frame_ids": [
+      9905,
+      9963,
+      10021,
+      10067,
       10230,
-      10263,
-      10290,
-      10317,
-      10371,
-      10417
+      10263
     ],
     "narrations": [
       "take bell pepper;197.88;198.65",
@@ -3745,12 +3543,39 @@
         "name": "chopping board",
         "image_crops": [
           {
+            "frame_path": "frame_0000010317.jpg",
+            "bbox": [
+              277.03,
+              309.69,
+              504.59,
+              378.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000010371.jpg",
+            "bbox": [
+              295.19,
+              294.3,
+              494.12,
+              361.65
+            ]
+          },
+          {
             "frame_path": "frame_0000010455.jpg",
             "bbox": [
               272.1,
               238.88,
               516.16,
               345.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000010417.jpg",
+            "bbox": [
+              239.65,
+              294.82,
+              502.49,
+              359.28
             ]
           },
           {
@@ -3764,6 +3589,131 @@
           }
         ]
       },
+      {
+        "class_id": 169,
+        "class_name": "parsley",
+        "name": "parsley",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010317.jpg",
+            "bbox": [
+              876.71,
+              643.62,
+              341.15,
+              430.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000010371.jpg",
+            "bbox": [
+              884.82,
+              667.9,
+              331.88,
+              398.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000010455.jpg",
+            "bbox": [
+              1026.27,
+              263.42,
+              249.47,
+              346.32
+            ]
+          },
+          {
+            "frame_path": "frame_0000010417.jpg",
+            "bbox": [
+              1015.03,
+              318.58,
+              233.66,
+              351.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000010496.jpg",
+            "bbox": [
+              1248.62,
+              440.31,
+              349.6,
+              397.91
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "bell pepper",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010317.jpg",
+            "bbox": [
+              571.94,
+              291.31,
+              370.55,
+              394.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000010371.jpg",
+            "bbox": [
+              811.63,
+              295.42,
+              397.06,
+              784.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000010455.jpg",
+            "bbox": [
+              806.07,
+              269.27,
+              224.23,
+              468.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000010417.jpg",
+            "bbox": [
+              764.32,
+              299.51,
+              218.64,
+              221.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000010496.jpg",
+            "bbox": [
+              1094.03,
+              358.23,
+              211.79,
+              377.92
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      10317,
+      10371,
+      10417,
+      10455,
+      10496
+    ],
+    "narrations": [
+      "put bell pepper;206.17000000000002;207.5",
+      "put parsley;208.18;208.8",
+      "put bell pepper;208.93;210.45"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0023",
+    "start_time": 213.2,
+    "end_time": 231.46,
+    "start_frame": 10660,
+    "end_frame": 11573,
+    "objects_in_sequence": [
       {
         "class_id": 12,
         "class_name": "fridge",
@@ -3803,6 +3753,24 @@
               0,
               1300.37,
               621.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000011451.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000011534.jpg",
+            "bbox": [
+              17.24,
+              0,
+              1902.76,
+              1080
             ]
           }
         ]
@@ -3847,80 +3815,48 @@
               369.79,
               709.22
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 169,
-        "class_name": "parsley",
-        "name": "parsley",
-        "image_crops": [
+          },
           {
-            "frame_path": "frame_0000010455.jpg",
+            "frame_path": "frame_0000011451.jpg",
             "bbox": [
-              1026.27,
-              263.42,
-              249.47,
-              346.32
+              854.53,
+              200.99,
+              342.47,
+              879.01
             ]
           },
           {
-            "frame_path": "frame_0000010496.jpg",
+            "frame_path": "frame_0000011534.jpg",
             "bbox": [
-              1248.62,
-              440.31,
-              349.6,
-              397.91
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 37,
-        "class_name": "pepper",
-        "name": "bell pepper",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010455.jpg",
-            "bbox": [
-              806.07,
-              269.27,
-              224.23,
-              468.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000010496.jpg",
-            "bbox": [
-              1094.03,
-              358.23,
-              211.79,
-              377.92
+              694.19,
+              235.12,
+              328.55,
+              844.88
             ]
           }
         ]
       }
     ],
     "frame_ids": [
-      10455,
-      10496,
       10676,
       10711,
       10921,
-      11159
+      11159,
+      11451,
+      11534
     ],
     "narrations": [
-      "put bell pepper;206.17000000000002;207.5",
-      "put parsley;208.18;208.8",
-      "put bell pepper;208.93;210.45"
+      "take spring onions;213.2;214.82999999999998",
+      "take out spring onions;214.86;227.66",
+      "put spring onions;228.28;231.46"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0023",
-    "start_time": 213.2,
-    "end_time": 231.46,
-    "start_frame": 10660,
-    "end_frame": 11573,
+    "segment_id": "P28_113_ActiveUsage_0024",
+    "start_time": 234.78,
+    "end_time": 251.48,
+    "start_frame": 11739,
+    "end_frame": 12574,
     "objects_in_sequence": [
       {
         "class_id": 18,
@@ -3944,6 +3880,31 @@
               568.08,
               448.9
             ]
+          },
+          {
+            "frame_path": "frame_0000012513.jpg",
+            "bbox": [
+              160.21,
+              601.04,
+              658.74,
+              478.96
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012551.jpg",
+            "bbox": [
+              983.41,
+              0.24,
+              446.94,
+              538.84
+            ]
           }
         ]
       },
@@ -3952,24 +3913,6 @@
         "class_name": "fridge",
         "name": "fridge",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011451.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000011534.jpg",
-            "bbox": [
-              17.24,
-              0,
-              1902.76,
-              1080
-            ]
-          },
           {
             "frame_path": "frame_0000012034.jpg",
             "bbox": [
@@ -3991,28 +3934,26 @@
         ]
       },
       {
+        "class_id": 105,
+        "class_name": "lemon",
+        "name": "lemon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012513.jpg",
+            "bbox": [
+              547.29,
+              503.1,
+              112.05,
+              118.12
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 128,
         "class_name": "onion:spring",
         "name": "spring onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011451.jpg",
-            "bbox": [
-              854.53,
-              200.99,
-              342.47,
-              879.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000011534.jpg",
-            "bbox": [
-              694.19,
-              235.12,
-              328.55,
-              844.88
-            ]
-          },
           {
             "frame_path": "frame_0000011751.jpg",
             "bbox": [
@@ -4103,25 +4044,25 @@
       }
     ],
     "frame_ids": [
-      11451,
-      11534,
       11751,
       11788,
       12034,
-      12221
+      12221,
+      12513,
+      12551
     ],
     "narrations": [
-      "take spring onions;213.2;214.82999999999998",
-      "take out spring onions;214.86;227.66",
-      "put spring onions;228.28;231.46"
+      "put spring onions;234.78;236.07999999999998",
+      "take lemon;239.06;245.73",
+      "put lemon;249.91;251.48"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0024",
-    "start_time": 234.78,
-    "end_time": 251.48,
-    "start_frame": 11739,
-    "end_frame": 12574,
+    "segment_id": "P28_113_ActiveUsage_0025",
+    "start_time": 253.37,
+    "end_time": 267.54,
+    "start_frame": 12668,
+    "end_frame": 13377,
     "objects_in_sequence": [
       {
         "class_id": 19,
@@ -4163,6 +4104,15 @@
               140.42,
               377.93
             ]
+          },
+          {
+            "frame_path": "frame_0000013351.jpg",
+            "bbox": [
+              1080.11,
+              539.81,
+              303.24,
+              233.74
+            ]
           }
         ]
       },
@@ -4171,15 +4121,6 @@
         "class_name": "board:chopping",
         "name": "chopping board",
         "image_crops": [
-          {
-            "frame_path": "frame_0000012513.jpg",
-            "bbox": [
-              160.21,
-              601.04,
-              658.74,
-              478.96
-            ]
-          },
           {
             "frame_path": "frame_0000012958.jpg",
             "bbox": [
@@ -4231,15 +4172,6 @@
         "name": "cupboard",
         "image_crops": [
           {
-            "frame_path": "frame_0000012551.jpg",
-            "bbox": [
-              983.41,
-              0.24,
-              446.94,
-              538.84
-            ]
-          },
-          {
             "frame_path": "frame_0000012701.jpg",
             "bbox": [
               501.6,
@@ -4274,15 +4206,6 @@
         "name": "lemon",
         "image_crops": [
           {
-            "frame_path": "frame_0000012513.jpg",
-            "bbox": [
-              547.29,
-              503.1,
-              112.05,
-              118.12
-            ]
-          },
-          {
             "frame_path": "frame_0000012958.jpg",
             "bbox": [
               1753.53,
@@ -4292,41 +4215,65 @@
             ]
           }
         ]
-      }
-    ],
-    "frame_ids": [
-      12513,
-      12551,
-      12701,
-      12751,
-      12926,
-      12958
-    ],
-    "narrations": [
-      "put spring onions;234.78;236.07999999999998",
-      "take lemon;239.06;245.73",
-      "put lemon;249.91;251.48"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0025",
-    "start_time": 253.37,
-    "end_time": 267.54,
-    "start_frame": 12668,
-    "end_frame": 13377,
-    "objects_in_sequence": [
+      },
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "onion net",
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion",
         "image_crops": [
           {
             "frame_path": "frame_0000013351.jpg",
             "bbox": [
-              1080.11,
-              539.81,
-              303.24,
-              233.74
+              705.24,
+              559.72,
+              132.71,
+              121.19
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      12701,
+      12751,
+      12926,
+      12958,
+      13351
+    ],
+    "narrations": [
+      "take onion;253.37;255.56",
+      "close cupboard;258.25;259.22",
+      "throw away net;266.83;267.54"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0026",
+    "start_time": 270.35,
+    "end_time": 280.95,
+    "start_frame": 13517,
+    "end_frame": 14047,
+    "objects_in_sequence": [
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "rubbish bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000013838.jpg",
+            "bbox": [
+              980.61,
+              496.33,
+              146.0,
+              276.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000013976.jpg",
+            "bbox": [
+              846.62,
+              321.9,
+              920.93,
+              312.76
             ]
           }
         ]
@@ -4387,6 +4334,24 @@
               850.02,
               481.33
             ]
+          },
+          {
+            "frame_path": "frame_0000013838.jpg",
+            "bbox": [
+              589.32,
+              378.33,
+              835.4,
+              425.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000013976.jpg",
+            "bbox": [
+              623.24,
+              281.7,
+              852.69,
+              446.11
+            ]
           }
         ]
       },
@@ -4395,15 +4360,6 @@
         "class_name": "onion",
         "name": "onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000013351.jpg",
-            "bbox": [
-              705.24,
-              559.72,
-              132.71,
-              121.19
-            ]
-          },
           {
             "frame_path": "frame_0000013526.jpg",
             "bbox": [
@@ -4426,48 +4382,31 @@
       }
     ],
     "frame_ids": [
-      13351,
       13526,
       13576,
       13675,
-      13723
+      13723,
+      13838,
+      13976
     ],
     "narrations": [
-      "take onion;253.37;255.56",
-      "close cupboard;258.25;259.22",
-      "throw away net;266.83;267.54"
+      "put onion;270.35;271.7",
+      "open drawer;273.4;274.49",
+      "take rubbish bag;275.17;280.95"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0026",
-    "start_time": 270.35,
-    "end_time": 280.95,
-    "start_frame": 13517,
-    "end_frame": 14047,
+    "segment_id": "P28_113_ActiveUsage_0027",
+    "start_time": 281.64,
+    "end_time": 295.6,
+    "start_frame": 14082,
+    "end_frame": 14780,
     "objects_in_sequence": [
       {
         "class_id": 19,
         "class_name": "bag",
         "name": "rubbish bag",
         "image_crops": [
-          {
-            "frame_path": "frame_0000013838.jpg",
-            "bbox": [
-              980.61,
-              496.33,
-              146.0,
-              276.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000013976.jpg",
-            "bbox": [
-              846.62,
-              321.9,
-              920.93,
-              312.76
-            ]
-          },
           {
             "frame_path": "frame_0000014088.jpg",
             "bbox": [
@@ -4503,6 +4442,15 @@
               507.15,
               399.5
             ]
+          },
+          {
+            "frame_path": "frame_0000014746.jpg",
+            "bbox": [
+              727.88,
+              244.6,
+              429.39,
+              370.18
+            ]
           }
         ]
       },
@@ -4519,6 +4467,15 @@
               345.02,
               257.05
             ]
+          },
+          {
+            "frame_path": "frame_0000014746.jpg",
+            "bbox": [
+              971.26,
+              581.03,
+              104.26,
+              53.13
+            ]
           }
         ]
       },
@@ -4527,24 +4484,6 @@
         "class_name": "drawer",
         "name": "drawer",
         "image_crops": [
-          {
-            "frame_path": "frame_0000013838.jpg",
-            "bbox": [
-              589.32,
-              378.33,
-              835.4,
-              425.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000013976.jpg",
-            "bbox": [
-              623.24,
-              281.7,
-              852.69,
-              446.11
-            ]
-          },
           {
             "frame_path": "frame_0000014088.jpg",
             "bbox": [
@@ -4578,61 +4517,44 @@
               505.89,
               370.96
             ]
+          },
+          {
+            "frame_path": "frame_0000014746.jpg",
+            "bbox": [
+              810.8,
+              0,
+              395.38,
+              340.07
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      13838,
-      13976,
       14088,
       14306,
       14525,
-      14655
+      14655,
+      14746
     ],
     "narrations": [
-      "put onion;270.35;271.7",
-      "open drawer;273.4;274.49",
-      "take rubbish bag;275.17;280.95"
+      "close drawer;281.64;282.53",
+      "place rubbish bag in bin;288.32;294.43",
+      "close bin lid;294.92;295.6"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0027",
-    "start_time": 281.64,
-    "end_time": 295.6,
-    "start_frame": 14082,
-    "end_frame": 14780,
+    "segment_id": "P28_113_ActiveUsage_0028",
+    "start_time": 295.64,
+    "end_time": 321.51,
+    "start_frame": 14782,
+    "end_frame": 16075,
     "objects_in_sequence": [
-      {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "rubbish bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000014746.jpg",
-            "bbox": [
-              727.88,
-              244.6,
-              429.39,
-              370.18
-            ]
-          }
-        ]
-      },
       {
         "class_id": 36,
         "class_name": "bin",
         "name": "bin",
         "image_crops": [
-          {
-            "frame_path": "frame_0000014746.jpg",
-            "bbox": [
-              971.26,
-              581.03,
-              104.26,
-              53.13
-            ]
-          },
           {
             "frame_path": "frame_0000015701.jpg",
             "bbox": [
@@ -4697,22 +4619,6 @@
         ]
       },
       {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "bin lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000014746.jpg",
-            "bbox": [
-              810.8,
-              0,
-              395.38,
-              340.07
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 37,
         "class_name": "pepper",
         "name": "bell pepper",
@@ -4734,35 +4640,7 @@
               260.75,
               373.27
             ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      14746,
-      15276,
-      15488,
-      15701,
-      15751
-    ],
-    "narrations": [
-      "close drawer;281.64;282.53",
-      "place rubbish bag in bin;288.32;294.43",
-      "close bin lid;294.92;295.6"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0028",
-    "start_time": 295.64,
-    "end_time": 321.51,
-    "start_frame": 14782,
-    "end_frame": 16075,
-    "objects_in_sequence": [
-      {
-        "class_id": 37,
-        "class_name": "pepper",
-        "name": "bell pepper",
-        "image_crops": [
+          },
           {
             "frame_path": "frame_0000015991.jpg",
             "bbox": [
@@ -4780,7 +4658,36 @@
               1009.18,
               347.33
             ]
-          },
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      15276,
+      15488,
+      15701,
+      15751,
+      15991,
+      16025
+    ],
+    "narrations": [
+      "take out sticker from bell pepper;295.64;310.6",
+      "throw rubbish;314.0;315.48",
+      "take bell peppers;318.77;321.51"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0029",
+    "start_time": 322.09,
+    "end_time": 325.52,
+    "start_frame": 16104,
+    "end_frame": 16276,
+    "objects_in_sequence": [
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "bell pepper",
+        "image_crops": [
           {
             "frame_path": "frame_0000016126.jpg",
             "bbox": [
@@ -4815,6 +4722,15 @@
               440.94,
               278.03,
               275.66
+            ]
+          },
+          {
+            "frame_path": "frame_0000016251.jpg",
+            "bbox": [
+              1065.03,
+              464.92,
+              588.98,
+              333.74
             ]
           }
         ]
@@ -4859,6 +4775,15 @@
               1347.85,
               887.12
             ]
+          },
+          {
+            "frame_path": "frame_0000016251.jpg",
+            "bbox": [
+              0,
+              210.67,
+              1374.75,
+              869.33
+            ]
           }
         ]
       },
@@ -4902,6 +4827,15 @@
               238.61,
               268.98
             ]
+          },
+          {
+            "frame_path": "frame_0000016251.jpg",
+            "bbox": [
+              430.32,
+              334.78,
+              355.43,
+              294.51
+            ]
           }
         ]
       },
@@ -4918,63 +4852,44 @@
               160.17,
               111.37
             ]
+          },
+          {
+            "frame_path": "frame_0000016251.jpg",
+            "bbox": [
+              774.2,
+              601.3,
+              140.12,
+              87.62
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      15991,
-      16025,
       16126,
       16151,
       16196,
-      16234
+      16234,
+      16251
     ],
     "narrations": [
-      "take out sticker from bell pepper;295.64;310.6",
-      "throw rubbish;314.0;315.48",
-      "take bell peppers;318.77;321.51"
+      "put bell peppers;322.09;323.29",
+      "turn on tap;323.84;324.77",
+      "take bell pepper;324.8;325.52"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0029",
-    "start_time": 322.09,
-    "end_time": 325.52,
-    "start_frame": 16104,
-    "end_frame": 16276,
+    "segment_id": "P28_113_ActiveUsage_0030",
+    "start_time": 334.74,
+    "end_time": 342.15999999999997,
+    "start_frame": 16737,
+    "end_frame": 17108,
     "objects_in_sequence": [
       {
         "class_id": 37,
         "class_name": "pepper",
         "name": "bell pepper",
         "image_crops": [
-          {
-            "frame_path": "frame_0000016251.jpg",
-            "bbox": [
-              1065.03,
-              464.92,
-              588.98,
-              333.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000016376.jpg",
-            "bbox": [
-              977.08,
-              474.66,
-              888.75,
-              339.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000016501.jpg",
-            "bbox": [
-              613.22,
-              369.33,
-              875.46,
-              348.77
-            ]
-          },
           {
             "frame_path": "frame_0000016751.jpg",
             "bbox": [
@@ -5001,6 +4916,15 @@
               936.19,
               460.43
             ]
+          },
+          {
+            "frame_path": "frame_0000017092.jpg",
+            "bbox": [
+              1037.39,
+              298.22,
+              262.82,
+              384.67
+            ]
           }
         ]
       },
@@ -5009,33 +4933,6 @@
         "class_name": "sink",
         "name": "sink",
         "image_crops": [
-          {
-            "frame_path": "frame_0000016251.jpg",
-            "bbox": [
-              0,
-              210.67,
-              1374.75,
-              869.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000016376.jpg",
-            "bbox": [
-              80.87,
-              168.6,
-              1428.87,
-              887.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000016501.jpg",
-            "bbox": [
-              0,
-              176.9,
-              1257.59,
-              903.1
-            ]
-          },
           {
             "frame_path": "frame_0000016751.jpg",
             "bbox": [
@@ -5062,6 +4959,15 @@
               1414.5,
               801.29
             ]
+          },
+          {
+            "frame_path": "frame_0000017092.jpg",
+            "bbox": [
+              0,
+              188.16,
+              1077.85,
+              891.84
+            ]
           }
         ]
       },
@@ -5070,33 +4976,6 @@
         "class_name": "tap",
         "name": "tap",
         "image_crops": [
-          {
-            "frame_path": "frame_0000016251.jpg",
-            "bbox": [
-              430.32,
-              334.78,
-              355.43,
-              294.51
-            ]
-          },
-          {
-            "frame_path": "frame_0000016376.jpg",
-            "bbox": [
-              600.63,
-              258.49,
-              333.24,
-              322.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000016501.jpg",
-            "bbox": [
-              188.78,
-              447.59,
-              404.69,
-              245.58
-            ]
-          },
           {
             "frame_path": "frame_0000016751.jpg",
             "bbox": [
@@ -5123,6 +5002,15 @@
               318.12,
               344.39
             ]
+          },
+          {
+            "frame_path": "frame_0000017092.jpg",
+            "bbox": [
+              72.08,
+              377.73,
+              358.59,
+              255.12
+            ]
           }
         ]
       },
@@ -5131,33 +5019,6 @@
         "class_name": "water",
         "name": "water",
         "image_crops": [
-          {
-            "frame_path": "frame_0000016251.jpg",
-            "bbox": [
-              774.2,
-              601.3,
-              140.12,
-              87.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000016376.jpg",
-            "bbox": [
-              918.57,
-              556.49,
-              45.6,
-              40.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000016501.jpg",
-            "bbox": [
-              585.84,
-              654.7,
-              95.24,
-              37.49
-            ]
-          },
           {
             "frame_path": "frame_0000016751.jpg",
             "bbox": [
@@ -5184,45 +5045,43 @@
               41.69,
               47.93
             ]
+          },
+          {
+            "frame_path": "frame_0000017092.jpg",
+            "bbox": [
+              423.35,
+              601.96,
+              257.5,
+              81.05
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      16251,
-      16376,
-      16501,
       16751,
       16851,
-      16988
+      16988,
+      17092
     ],
     "narrations": [
-      "put bell peppers;322.09;323.29",
-      "turn on tap;323.84;324.77",
-      "take bell pepper;324.8;325.52"
+      "put bell pepper;334.74;335.22",
+      "rinse bell pepper;335.69;341.59000000000003",
+      "put bell pepper;341.62;342.15999999999997"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0030",
-    "start_time": 334.74,
-    "end_time": 342.15999999999997,
-    "start_frame": 16737,
-    "end_frame": 17108,
+    "segment_id": "P28_113_ActiveUsage_0031",
+    "start_time": 342.26,
+    "end_time": 352.76,
+    "start_frame": 17113,
+    "end_frame": 17638,
     "objects_in_sequence": [
       {
         "class_id": 37,
         "class_name": "pepper",
         "name": "bell pepper",
         "image_crops": [
-          {
-            "frame_path": "frame_0000017092.jpg",
-            "bbox": [
-              1037.39,
-              298.22,
-              262.82,
-              384.67
-            ]
-          },
           {
             "frame_path": "frame_0000017126.jpg",
             "bbox": [
@@ -5267,6 +5126,24 @@
               420.0,
               457.86
             ]
+          },
+          {
+            "frame_path": "frame_0000017584.jpg",
+            "bbox": [
+              1183.09,
+              417.84,
+              194.14,
+              514.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000017626.jpg",
+            "bbox": [
+              1083.14,
+              337.48,
+              165.21,
+              463.2
+            ]
           }
         ]
       },
@@ -5275,15 +5152,6 @@
         "class_name": "sink",
         "name": "sink",
         "image_crops": [
-          {
-            "frame_path": "frame_0000017092.jpg",
-            "bbox": [
-              0,
-              188.16,
-              1077.85,
-              891.84
-            ]
-          },
           {
             "frame_path": "frame_0000017126.jpg",
             "bbox": [
@@ -5328,6 +5196,24 @@
               1010.28,
               878.19
             ]
+          },
+          {
+            "frame_path": "frame_0000017584.jpg",
+            "bbox": [
+              0,
+              266.84,
+              1153.35,
+              813.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000017626.jpg",
+            "bbox": [
+              0,
+              228.29,
+              1079.89,
+              851.71
+            ]
           }
         ]
       },
@@ -5336,15 +5222,6 @@
         "class_name": "tap",
         "name": "tap",
         "image_crops": [
-          {
-            "frame_path": "frame_0000017092.jpg",
-            "bbox": [
-              72.08,
-              377.73,
-              358.59,
-              255.12
-            ]
-          },
           {
             "frame_path": "frame_0000017126.jpg",
             "bbox": [
@@ -5389,6 +5266,24 @@
               344.22,
               273.51
             ]
+          },
+          {
+            "frame_path": "frame_0000017584.jpg",
+            "bbox": [
+              308.94,
+              342.81,
+              263.15,
+              270.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000017626.jpg",
+            "bbox": [
+              231.09,
+              333.64,
+              269.86,
+              230.53
+            ]
           }
         ]
       },
@@ -5397,15 +5292,6 @@
         "class_name": "water",
         "name": "water",
         "image_crops": [
-          {
-            "frame_path": "frame_0000017092.jpg",
-            "bbox": [
-              423.35,
-              601.96,
-              257.5,
-              81.05
-            ]
-          },
           {
             "frame_path": "frame_0000017126.jpg",
             "bbox": [
@@ -5450,174 +5336,7 @@
               274.37,
               98.83
             ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      17092,
-      17126,
-      17231,
-      17336,
-      17441,
-      17546
-    ],
-    "narrations": [
-      "put bell pepper;334.74;335.22",
-      "rinse bell pepper;335.69;341.59000000000003",
-      "put bell pepper;341.62;342.15999999999997"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0031",
-    "start_time": 342.26,
-    "end_time": 352.76,
-    "start_frame": 17113,
-    "end_frame": 17638,
-    "objects_in_sequence": [
-      {
-        "class_id": 37,
-        "class_name": "pepper",
-        "name": "bell pepper",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000017584.jpg",
-            "bbox": [
-              1183.09,
-              417.84,
-              194.14,
-              514.24
-            ]
           },
-          {
-            "frame_path": "frame_0000017626.jpg",
-            "bbox": [
-              1083.14,
-              337.48,
-              165.21,
-              463.2
-            ]
-          },
-          {
-            "frame_path": "frame_0000017651.jpg",
-            "bbox": [
-              1086.7,
-              526.17,
-              294.79,
-              296.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000017813.jpg",
-            "bbox": [
-              903.71,
-              389.47,
-              171.7,
-              376.29
-            ]
-          },
-          {
-            "frame_path": "frame_0000017901.jpg",
-            "bbox": [
-              885.3,
-              257.66,
-              251.19,
-              351.91
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000017584.jpg",
-            "bbox": [
-              0,
-              266.84,
-              1153.35,
-              813.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000017626.jpg",
-            "bbox": [
-              0,
-              228.29,
-              1079.89,
-              851.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000017651.jpg",
-            "bbox": [
-              0,
-              218.99,
-              1026.31,
-              788.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000017676.jpg",
-            "bbox": [
-              995.28,
-              0,
-              924.72,
-              1027.54
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000017584.jpg",
-            "bbox": [
-              308.94,
-              342.81,
-              263.15,
-              270.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000017626.jpg",
-            "bbox": [
-              231.09,
-              333.64,
-              269.86,
-              230.53
-            ]
-          },
-          {
-            "frame_path": "frame_0000017651.jpg",
-            "bbox": [
-              324.23,
-              221.03,
-              163.93,
-              290.63
-            ]
-          },
-          {
-            "frame_path": "frame_0000017676.jpg",
-            "bbox": [
-              1559.42,
-              169.01,
-              205.53,
-              267.61
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
           {
             "frame_path": "frame_0000017584.jpg",
             "bbox": [
@@ -5631,12 +5350,13 @@
       }
     ],
     "frame_ids": [
+      17126,
+      17231,
+      17336,
+      17441,
+      17546,
       17584,
-      17626,
-      17651,
-      17676,
-      17813,
-      17901
+      17626
     ],
     "narrations": [
       "take bell pepper;342.26;342.8",
@@ -5673,7 +5393,145 @@
               294.97,
               334.31
             ]
+          }
+        ]
+      },
+      {
+        "class_id": 37,
+        "class_name": "pepper",
+        "name": "bell pepper",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000017651.jpg",
+            "bbox": [
+              1086.7,
+              526.17,
+              294.79,
+              296.02
+            ]
           },
+          {
+            "frame_path": "frame_0000017813.jpg",
+            "bbox": [
+              903.71,
+              389.47,
+              171.7,
+              376.29
+            ]
+          },
+          {
+            "frame_path": "frame_0000017901.jpg",
+            "bbox": [
+              885.3,
+              257.66,
+              251.19,
+              351.91
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000017651.jpg",
+            "bbox": [
+              0,
+              218.99,
+              1026.31,
+              788.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000017676.jpg",
+            "bbox": [
+              995.28,
+              0,
+              924.72,
+              1027.54
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000017651.jpg",
+            "bbox": [
+              324.23,
+              221.03,
+              163.93,
+              290.63
+            ]
+          },
+          {
+            "frame_path": "frame_0000017676.jpg",
+            "bbox": [
+              1559.42,
+              169.01,
+              205.53,
+              267.61
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      17651,
+      17676,
+      17813,
+      17901,
+      17988,
+      18042
+    ],
+    "narrations": [
+      "take bell peppers;352.99;353.93",
+      "put bell peppers;355.02;359.03",
+      "take spring onions;359.33;361.39"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0033",
+    "start_time": 362.6,
+    "end_time": 381.89,
+    "start_frame": 18130,
+    "end_frame": 19094,
+    "objects_in_sequence": [
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000019017.jpg",
+            "bbox": [
+              68.34,
+              348.04,
+              579.77,
+              494.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000019076.jpg",
+            "bbox": [
+              273.62,
+              198.6,
+              515.64,
+              375.48
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 128,
+        "class_name": "onion:spring",
+        "name": "spring onion",
+        "image_crops": [
           {
             "frame_path": "frame_0000018146.jpg",
             "bbox": [
@@ -5708,6 +5566,24 @@
               61.95,
               237.41,
               605.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000019017.jpg",
+            "bbox": [
+              671.11,
+              419.97,
+              240.49,
+              462.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000019076.jpg",
+            "bbox": [
+              835.97,
+              215.75,
+              228.58,
+              431.48
             ]
           }
         ]
@@ -5825,25 +5701,25 @@
       }
     ],
     "frame_ids": [
-      17988,
-      18042,
       18146,
       18180,
       18523,
-      18867
+      18867,
+      19017,
+      19076
     ],
     "narrations": [
-      "take bell peppers;352.99;353.93",
-      "put bell peppers;355.02;359.03",
-      "take spring onions;359.33;361.39"
+      "turn on tap;362.6;363.78",
+      "rinse spring onions;363.78;378.0",
+      "put spring onions;379.74;381.89"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0033",
-    "start_time": 362.6,
-    "end_time": 381.89,
-    "start_frame": 18130,
-    "end_frame": 19094,
+    "segment_id": "P28_113_ActiveUsage_0034",
+    "start_time": 386.86,
+    "end_time": 392.37,
+    "start_frame": 19343,
+    "end_frame": 19618,
     "objects_in_sequence": [
       {
         "class_id": 18,
@@ -5851,21 +5727,12 @@
         "name": "chopping board",
         "image_crops": [
           {
-            "frame_path": "frame_0000019017.jpg",
+            "frame_path": "frame_0000019590.jpg",
             "bbox": [
-              68.34,
-              348.04,
-              579.77,
-              494.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000019076.jpg",
-            "bbox": [
-              273.62,
-              198.6,
-              515.64,
-              375.48
+              471.59,
+              253.43,
+              596.33,
+              500.56
             ]
           }
         ]
@@ -5926,70 +5793,60 @@
               346.71,
               90.74
             ]
+          },
+          {
+            "frame_path": "frame_0000019590.jpg",
+            "bbox": [
+              831.99,
+              749.6,
+              55.63,
+              330.4
+            ]
           }
         ]
       },
       {
-        "class_id": 128,
-        "class_name": "onion:spring",
-        "name": "spring onion",
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion",
         "image_crops": [
           {
-            "frame_path": "frame_0000019017.jpg",
+            "frame_path": "frame_0000019590.jpg",
             "bbox": [
-              671.11,
-              419.97,
-              240.49,
-              462.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000019076.jpg",
-            "bbox": [
-              835.97,
-              215.75,
-              228.58,
-              431.48
+              1088.2,
+              424.89,
+              60.24,
+              95.42
             ]
           }
         ]
       }
     ],
     "frame_ids": [
-      19017,
-      19076,
       19351,
       19376,
       19426,
-      19480
+      19480,
+      19590
     ],
     "narrations": [
-      "turn on tap;362.6;363.78",
-      "rinse spring onions;363.78;378.0",
-      "put spring onions;379.74;381.89"
+      "open drawer;386.86;387.57",
+      "take knife;388.18;390.26",
+      "take onion;391.5;392.37"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0034",
-    "start_time": 386.86,
-    "end_time": 392.37,
-    "start_frame": 19343,
-    "end_frame": 19618,
+    "segment_id": "P28_113_ActiveUsage_0035",
+    "start_time": 393.29,
+    "end_time": 414.23,
+    "start_frame": 19664,
+    "end_frame": 20711,
     "objects_in_sequence": [
       {
         "class_id": 18,
         "class_name": "board:chopping",
         "name": "chopping board",
         "image_crops": [
-          {
-            "frame_path": "frame_0000019590.jpg",
-            "bbox": [
-              471.59,
-              253.43,
-              596.33,
-              500.56
-            ]
-          },
           {
             "frame_path": "frame_0000019750.jpg",
             "bbox": [
@@ -6034,6 +5891,24 @@
               580.45,
               467.05
             ]
+          },
+          {
+            "frame_path": "frame_0000020551.jpg",
+            "bbox": [
+              623.32,
+              15.91,
+              629.15,
+              519.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000020676.jpg",
+            "bbox": [
+              648.87,
+              96.19,
+              596.05,
+              469.49
+            ]
           }
         ]
       },
@@ -6042,15 +5917,6 @@
         "class_name": "knife",
         "name": "knife",
         "image_crops": [
-          {
-            "frame_path": "frame_0000019590.jpg",
-            "bbox": [
-              831.99,
-              749.6,
-              55.63,
-              330.4
-            ]
-          },
           {
             "frame_path": "frame_0000019750.jpg",
             "bbox": [
@@ -6095,6 +5961,24 @@
               263.92,
               432.59
             ]
+          },
+          {
+            "frame_path": "frame_0000020551.jpg",
+            "bbox": [
+              700.25,
+              85.81,
+              245.06,
+              467.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000020676.jpg",
+            "bbox": [
+              699.74,
+              143.58,
+              276.13,
+              438.36
+            ]
           }
         ]
       },
@@ -6103,15 +5987,6 @@
         "class_name": "onion",
         "name": "onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000019590.jpg",
-            "bbox": [
-              1088.2,
-              424.89,
-              60.24,
-              95.42
-            ]
-          },
           {
             "frame_path": "frame_0000019750.jpg",
             "bbox": [
@@ -6155,6 +6030,24 @@
               333.56,
               133.17,
               116.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000020551.jpg",
+            "bbox": [
+              1016.8,
+              393.86,
+              146.86,
+              142.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000020676.jpg",
+            "bbox": [
+              1050.43,
+              348.69,
+              143.85,
+              118.24
             ]
           }
         ]
@@ -6208,54 +6101,80 @@
               109.78,
               152.74
             ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      19590,
-      19750,
-      19976,
-      20103,
-      20230,
-      20371
-    ],
-    "narrations": [
-      "open drawer;386.86;387.57",
-      "take knife;388.18;390.26",
-      "take onion;391.5;392.37"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0035",
-    "start_time": 393.29,
-    "end_time": 414.23,
-    "start_frame": 19664,
-    "end_frame": 20711,
-    "objects_in_sequence": [
-      {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
+          },
           {
             "frame_path": "frame_0000020551.jpg",
             "bbox": [
-              623.32,
-              15.91,
-              629.15,
-              519.82
+              891.08,
+              207.98,
+              285.42,
+              176.96
             ]
           },
           {
             "frame_path": "frame_0000020676.jpg",
             "bbox": [
-              648.87,
-              96.19,
-              596.05,
-              469.49
+              958.69,
+              265.65,
+              113.24,
+              176.4
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      19750,
+      19976,
+      20103,
+      20230,
+      20371,
+      20551,
+      20676
+    ],
+    "narrations": [
+      "peel onion;393.29;402.0",
+      "peel onion;403.02;408.51",
+      "peel onion;410.07;414.23"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0036",
+    "start_time": 439.62,
+    "end_time": 478.3,
+    "start_frame": 21981,
+    "end_frame": 23915,
+    "objects_in_sequence": [
+      {
+        "class_id": 36,
+        "class_name": "bin",
+        "name": "bin",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000023671.jpg",
+            "bbox": [
+              1016.24,
+              661.97,
+              123.79,
+              44.53
             ]
           },
+          {
+            "frame_path": "frame_0000023813.jpg",
+            "bbox": [
+              1015.78,
+              570.28,
+              114.37,
+              121.19
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
           {
             "frame_path": "frame_0000022267.jpg",
             "bbox": [
@@ -6300,24 +6219,6 @@
         "name": "knife",
         "image_crops": [
           {
-            "frame_path": "frame_0000020551.jpg",
-            "bbox": [
-              700.25,
-              85.81,
-              245.06,
-              467.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000020676.jpg",
-            "bbox": [
-              699.74,
-              143.58,
-              276.13,
-              438.36
-            ]
-          },
-          {
             "frame_path": "frame_0000022267.jpg",
             "bbox": [
               676.46,
@@ -6360,24 +6261,6 @@
         "class_name": "onion",
         "name": "onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000020551.jpg",
-            "bbox": [
-              1016.8,
-              393.86,
-              146.86,
-              142.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000020676.jpg",
-            "bbox": [
-              1050.43,
-              348.69,
-              143.85,
-              118.24
-            ]
-          },
           {
             "frame_path": "frame_0000022267.jpg",
             "bbox": [
@@ -6422,24 +6305,6 @@
         "name": "onion peel",
         "image_crops": [
           {
-            "frame_path": "frame_0000020551.jpg",
-            "bbox": [
-              891.08,
-              207.98,
-              285.42,
-              176.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000020676.jpg",
-            "bbox": [
-              958.69,
-              265.65,
-              113.24,
-              176.4
-            ]
-          },
-          {
             "frame_path": "frame_0000022267.jpg",
             "bbox": [
               870.98,
@@ -6474,170 +6339,7 @@
               310.52,
               542.87
             ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      20551,
-      20676,
-      22267,
-      22676,
-      23134,
-      23292
-    ],
-    "narrations": [
-      "peel onion;393.29;402.0",
-      "peel onion;403.02;408.51",
-      "peel onion;410.07;414.23"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0036",
-    "start_time": 439.62,
-    "end_time": 478.3,
-    "start_frame": 21981,
-    "end_frame": 23915,
-    "objects_in_sequence": [
-      {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000023671.jpg",
-            "bbox": [
-              1016.24,
-              661.97,
-              123.79,
-              44.53
-            ]
           },
-          {
-            "frame_path": "frame_0000023813.jpg",
-            "bbox": [
-              1015.78,
-              570.28,
-              114.37,
-              121.19
-            ]
-          },
-          {
-            "frame_path": "frame_0000024100.jpg",
-            "bbox": [
-              902.12,
-              587.09,
-              164.76,
-              76.66
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000024388.jpg",
-            "bbox": [
-              217.44,
-              335.04,
-              683.42,
-              536.55
-            ]
-          },
-          {
-            "frame_path": "frame_0000024438.jpg",
-            "bbox": [
-              331.52,
-              319.06,
-              614.76,
-              542.22
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000024388.jpg",
-            "bbox": [
-              428.42,
-              451.79,
-              111.4,
-              403.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000024438.jpg",
-            "bbox": [
-              461.99,
-              414.39,
-              166.99,
-              469.39
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 16,
-        "class_name": "onion",
-        "name": "onion",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000024388.jpg",
-            "bbox": [
-              944.92,
-              515.65,
-              94.64,
-              105.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000024438.jpg",
-            "bbox": [
-              673.92,
-              427.5,
-              73.35,
-              99.86
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 128,
-        "class_name": "onion:spring",
-        "name": "spring onion",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000024388.jpg",
-            "bbox": [
-              902.1,
-              339.48,
-              321.31,
-              388.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000024438.jpg",
-            "bbox": [
-              971.68,
-              343.53,
-              300.72,
-              375.91
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 48,
-        "class_name": "skin",
-        "name": "onion peel",
-        "image_crops": [
           {
             "frame_path": "frame_0000023671.jpg",
             "bbox": [
@@ -6655,25 +6357,17 @@
               141.26,
               92.68
             ]
-          },
-          {
-            "frame_path": "frame_0000024100.jpg",
-            "bbox": [
-              880.01,
-              426.93,
-              100.61,
-              159.29
-            ]
           }
         ]
       }
     ],
     "frame_ids": [
+      22267,
+      22676,
+      23134,
+      23292,
       23671,
-      23813,
-      24100,
-      24388,
-      24438
+      23813
     ],
     "narrations": [
       "peel onion;439.62;460.13",
@@ -6703,6 +6397,189 @@
             ]
           },
           {
+            "frame_path": "frame_0000024388.jpg",
+            "bbox": [
+              217.44,
+              335.04,
+              683.42,
+              536.55
+            ]
+          },
+          {
+            "frame_path": "frame_0000024438.jpg",
+            "bbox": [
+              331.52,
+              319.06,
+              614.76,
+              542.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000024480.jpg",
+            "bbox": [
+              333.55,
+              306.98,
+              606.73,
+              514.86
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000024509.jpg",
+            "bbox": [
+              541.52,
+              319.28,
+              237.19,
+              427.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000024388.jpg",
+            "bbox": [
+              428.42,
+              451.79,
+              111.4,
+              403.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000024438.jpg",
+            "bbox": [
+              461.99,
+              414.39,
+              166.99,
+              469.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000024480.jpg",
+            "bbox": [
+              437.14,
+              389.79,
+              197.89,
+              453.61
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 16,
+        "class_name": "onion",
+        "name": "onion",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000024509.jpg",
+            "bbox": [
+              838.68,
+              332.78,
+              103.09,
+              100.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000024388.jpg",
+            "bbox": [
+              944.92,
+              515.65,
+              94.64,
+              105.05
+            ]
+          },
+          {
+            "frame_path": "frame_0000024438.jpg",
+            "bbox": [
+              673.92,
+              427.5,
+              73.35,
+              99.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000024480.jpg",
+            "bbox": [
+              697.91,
+              390.83,
+              102.13,
+              99.94
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 128,
+        "class_name": "onion:spring",
+        "name": "spring onion",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000024509.jpg",
+            "bbox": [
+              830.92,
+              456.57,
+              432.03,
+              327.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000024388.jpg",
+            "bbox": [
+              902.1,
+              339.48,
+              321.31,
+              388.1
+            ]
+          },
+          {
+            "frame_path": "frame_0000024438.jpg",
+            "bbox": [
+              971.68,
+              343.53,
+              300.72,
+              375.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000024480.jpg",
+            "bbox": [
+              972.08,
+              358.41,
+              289.86,
+              392.48
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      24388,
+      24438,
+      24480,
+      24509
+    ],
+    "narrations": [
+      "take onion;487.47;488.05",
+      "put onion;488.4;489.38",
+      "take spring onions;489.45;490.38"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0038",
+    "start_time": 490.47,
+    "end_time": 504.26,
+    "start_frame": 24523,
+    "end_frame": 25213,
+    "objects_in_sequence": [
+      {
+        "class_id": 18,
+        "class_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
             "frame_path": "frame_0000024536.jpg",
             "bbox": [
               657.84,
@@ -6730,12 +6607,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000024480.jpg",
+            "frame_path": "frame_0000025180.jpg",
             "bbox": [
-              333.55,
-              306.98,
-              606.73,
-              514.86
+              423.09,
+              211.38,
+              596.7,
+              478.79
             ]
           },
           {
@@ -6754,15 +6631,6 @@
         "class_name": "knife",
         "name": "knife",
         "image_crops": [
-          {
-            "frame_path": "frame_0000024509.jpg",
-            "bbox": [
-              541.52,
-              319.28,
-              237.19,
-              427.52
-            ]
-          },
           {
             "frame_path": "frame_0000024536.jpg",
             "bbox": [
@@ -6791,12 +6659,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000024480.jpg",
+            "frame_path": "frame_0000025180.jpg",
             "bbox": [
-              437.14,
-              389.79,
-              197.89,
-              453.61
+              487.72,
+              266.5,
+              75.62,
+              487.23
             ]
           },
           {
@@ -6815,15 +6683,6 @@
         "class_name": "onion",
         "name": "onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000024509.jpg",
-            "bbox": [
-              838.68,
-              332.78,
-              103.09,
-              100.46
-            ]
-          },
           {
             "frame_path": "frame_0000024536.jpg",
             "bbox": [
@@ -6852,12 +6711,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000024480.jpg",
+            "frame_path": "frame_0000025180.jpg",
             "bbox": [
-              697.91,
-              390.83,
-              102.13,
-              99.94
+              796.94,
+              291.79,
+              105.99,
+              104.77
             ]
           },
           {
@@ -6876,15 +6735,6 @@
         "class_name": "onion:spring",
         "name": "spring onion",
         "image_crops": [
-          {
-            "frame_path": "frame_0000024509.jpg",
-            "bbox": [
-              830.92,
-              456.57,
-              432.03,
-              327.24
-            ]
-          },
           {
             "frame_path": "frame_0000024536.jpg",
             "bbox": [
@@ -6913,12 +6763,12 @@
             ]
           },
           {
-            "frame_path": "frame_0000024480.jpg",
+            "frame_path": "frame_0000025180.jpg",
             "bbox": [
-              972.08,
-              358.41,
-              289.86,
-              392.48
+              659.87,
+              357.41,
+              396.24,
+              248.42
             ]
           },
           {
@@ -6968,40 +6818,30 @@
       }
     ],
     "frame_ids": [
-      24480,
-      24509,
       24536,
       24651,
       24717,
-      24784
+      24784,
+      25180
     ],
     "narrations": [
-      "take onion;487.47;488.05",
-      "put onion;488.4;489.38",
-      "take spring onions;489.45;490.38"
+      "put spring onions;490.47;490.92",
+      "cut spring onions;491.88;496.23",
+      "take rubbish;503.33;504.26"
     ]
   },
   {
-    "segment_id": "P28_113_ActiveUsage_0038",
-    "start_time": 490.47,
-    "end_time": 504.26,
-    "start_frame": 24523,
-    "end_frame": 25213,
+    "segment_id": "P28_113_ActiveUsage_0039",
+    "start_time": 507.9,
+    "end_time": 518.82,
+    "start_frame": 25395,
+    "end_frame": 25941,
     "objects_in_sequence": [
       {
         "class_id": 36,
         "class_name": "bin",
         "name": "bin",
         "image_crops": [
-          {
-            "frame_path": "frame_0000025345.jpg",
-            "bbox": [
-              1050.17,
-              12.06,
-              144.12,
-              153.04
-            ]
-          },
           {
             "frame_path": "frame_0000025401.jpg",
             "bbox": [
@@ -7023,33 +6863,26 @@
         ]
       },
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle",
         "image_crops": [
           {
-            "frame_path": "frame_0000025180.jpg",
+            "frame_path": "frame_0000025871.jpg",
             "bbox": [
-              423.09,
-              211.38,
-              596.7,
-              478.79
+              1039.65,
+              189.03,
+              292.94,
+              400.17
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
+          },
           {
-            "frame_path": "frame_0000025180.jpg",
+            "frame_path": "frame_0000025930.jpg",
             "bbox": [
-              487.72,
-              266.5,
-              75.62,
-              487.23
+              827.86,
+              862.86,
+              419.49,
+              217.14
             ]
           }
         ]
@@ -7059,15 +6892,6 @@
         "class_name": "lid",
         "name": "bin lid",
         "image_crops": [
-          {
-            "frame_path": "frame_0000025345.jpg",
-            "bbox": [
-              1080.48,
-              0,
-              155.91,
-              20.08
-            ]
-          },
           {
             "frame_path": "frame_0000025401.jpg",
             "bbox": [
@@ -7098,137 +6922,6 @@
         ]
       },
       {
-        "class_id": 16,
-        "class_name": "onion",
-        "name": "onion",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025180.jpg",
-            "bbox": [
-              796.94,
-              291.79,
-              105.99,
-              104.77
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 128,
-        "class_name": "onion:spring",
-        "name": "spring onion",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025180.jpg",
-            "bbox": [
-              659.87,
-              357.41,
-              396.24,
-              248.42
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 128,
-        "class_name": "onion:spring",
-        "name": "spring onion root",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025446.jpg",
-            "bbox": [
-              884.76,
-              408.8,
-              37.86,
-              83.84
-            ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      25180,
-      25290,
-      25345,
-      25401,
-      25446,
-      25476
-    ],
-    "narrations": [
-      "put spring onions;490.47;490.92",
-      "cut spring onions;491.88;496.23",
-      "take rubbish;503.33;504.26"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0039",
-    "start_time": 507.9,
-    "end_time": 518.82,
-    "start_frame": 25395,
-    "end_frame": 25941,
-    "objects_in_sequence": [
-      {
-        "class_id": 44,
-        "class_name": "kettle",
-        "name": "kettle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025871.jpg",
-            "bbox": [
-              1039.65,
-              189.03,
-              292.94,
-              400.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000025930.jpg",
-            "bbox": [
-              827.86,
-              862.86,
-              419.49,
-              217.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000026063.jpg",
-            "bbox": [
-              690.13,
-              536.69,
-              297.98,
-              315.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000026292.jpg",
-            "bbox": [
-              778.55,
-              427.19,
-              312.29,
-              325.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000026030.jpg",
-            "bbox": [
-              789.92,
-              598.95,
-              274.23,
-              309.66
-            ]
-          },
-          {
-            "frame_path": "frame_0000026177.jpg",
-            "bbox": [
-              816.33,
-              472.65,
-              290.19,
-              317.15
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 6,
         "class_name": "lid",
         "name": "kettle lid",
@@ -7250,7 +6943,117 @@
               243.18,
               199.52
             ]
+          }
+        ]
+      },
+      {
+        "class_id": 128,
+        "class_name": "onion:spring",
+        "name": "spring onion root",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025446.jpg",
+            "bbox": [
+              884.76,
+              408.8,
+              37.86,
+              83.84
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "class_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025930.jpg",
+            "bbox": [
+              0,
+              0,
+              709.72,
+              704.47
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025930.jpg",
+            "bbox": [
+              79.32,
+              10.95,
+              240.11,
+              169.82
+            ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      25401,
+      25446,
+      25476,
+      25871,
+      25930
+    ],
+    "narrations": [
+      "open bin lid;507.9;508.35",
+      "throw rubbish;508.5;509.79",
+      "take kettle;517.35;518.82"
+    ]
+  },
+  {
+    "segment_id": "P28_113_ActiveUsage_0040",
+    "start_time": 520.6,
+    "end_time": 530.38,
+    "start_frame": 26030,
+    "end_frame": 26519,
+    "objects_in_sequence": [
+      {
+        "class_id": 44,
+        "class_name": "kettle",
+        "name": "kettle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026063.jpg",
+            "bbox": [
+              690.13,
+              536.69,
+              297.98,
+              315.83
+            ]
           },
+          {
+            "frame_path": "frame_0000026292.jpg",
+            "bbox": [
+              778.55,
+              427.19,
+              312.29,
+              325.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000026177.jpg",
+            "bbox": [
+              816.33,
+              472.65,
+              290.19,
+              317.15
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "lid",
+        "name": "kettle lid",
+        "image_crops": [
           {
             "frame_path": "frame_0000026063.jpg",
             "bbox": [
@@ -7270,15 +7073,6 @@
             ]
           },
           {
-            "frame_path": "frame_0000026030.jpg",
-            "bbox": [
-              802.88,
-              674.09,
-              171.43,
-              162.04
-            ]
-          },
-          {
             "frame_path": "frame_0000026177.jpg",
             "bbox": [
               800.05,
@@ -7294,15 +7088,6 @@
         "class_name": "sink",
         "name": "sink",
         "image_crops": [
-          {
-            "frame_path": "frame_0000025930.jpg",
-            "bbox": [
-              0,
-              0,
-              709.72,
-              704.47
-            ]
-          },
           {
             "frame_path": "frame_0000026063.jpg",
             "bbox": [
@@ -7322,15 +7107,6 @@
             ]
           },
           {
-            "frame_path": "frame_0000026030.jpg",
-            "bbox": [
-              0,
-              307.39,
-              1357.05,
-              772.61
-            ]
-          },
-          {
             "frame_path": "frame_0000026177.jpg",
             "bbox": [
               0,
@@ -7347,15 +7123,6 @@
         "name": "tap",
         "image_crops": [
           {
-            "frame_path": "frame_0000025930.jpg",
-            "bbox": [
-              79.32,
-              10.95,
-              240.11,
-              169.82
-            ]
-          },
-          {
             "frame_path": "frame_0000026063.jpg",
             "bbox": [
               583.11,
@@ -7371,15 +7138,6 @@
               75.78,
               290.03,
               422.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000026030.jpg",
-            "bbox": [
-              591.75,
-              311.95,
-              296.67,
-              334.63
             ]
           },
           {
@@ -7420,27 +7178,10 @@
       }
     ],
     "frame_ids": [
-      25871,
-      25930,
-      26030,
       26063,
       26177,
       26292
     ],
-    "narrations": [
-      "open bin lid;507.9;508.35",
-      "throw rubbish;508.5;509.79",
-      "take kettle;517.35;518.82"
-    ]
-  },
-  {
-    "segment_id": "P28_113_ActiveUsage_0040",
-    "start_time": 520.6,
-    "end_time": 530.38,
-    "start_frame": 26030,
-    "end_frame": 26519,
-    "objects_in_sequence": [],
-    "frame_ids": [],
     "narrations": [
       "turn on tap;520.6;521.44",
       "turn off tap;525.4;526.65",

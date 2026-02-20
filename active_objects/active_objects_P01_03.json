@@ -1389,24 +1389,6 @@
               246.24,
               216.11
             ]
-          },
-          {
-            "frame_path": "frame_0000006057.jpg",
-            "bbox": [
-              964.17,
-              830.44,
-              169.12,
-              139.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000006121.jpg",
-            "bbox": [
-              935.0,
-              779.01,
-              208.16,
-              183.41
-            ]
           }
         ]
       },
@@ -1450,7 +1432,59 @@
               271.34,
               335.09
             ]
+          }
+        ]
+      }
+    ],
+    "frame_ids": [
+      5579,
+      5665,
+      5883,
+      5919
+    ],
+    "narrations": [
+      "put down cereals;92.35;95.00999999999999",
+      "open cereal bag;95.00999999999999;97.28",
+      "extract bag;97.61;98.71000000000001"
+    ]
+  },
+  {
+    "segment_id": "P01_03_ActiveUsage_0012",
+    "start_time": 100.11,
+    "end_time": 114.65,
+    "start_frame": 6006,
+    "end_frame": 6879,
+    "objects_in_sequence": [
+      {
+        "class_id": 19,
+        "class_name": "bag",
+        "name": "cereal bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006057.jpg",
+            "bbox": [
+              964.17,
+              830.44,
+              169.12,
+              139.36
+            ]
           },
+          {
+            "frame_path": "frame_0000006121.jpg",
+            "bbox": [
+              935.0,
+              779.01,
+              208.16,
+              183.41
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 23,
+        "class_name": "box",
+        "name": "cereal box",
+        "image_crops": [
           {
             "frame_path": "frame_0000006057.jpg",
             "bbox": [
@@ -1489,27 +1523,9 @@
       }
     ],
     "frame_ids": [
-      5579,
-      5665,
-      5883,
-      5919,
       6057,
       6121
     ],
-    "narrations": [
-      "put down cereals;92.35;95.00999999999999",
-      "open cereal bag;95.00999999999999;97.28",
-      "extract bag;97.61;98.71000000000001"
-    ]
-  },
-  {
-    "segment_id": "P01_03_ActiveUsage_0012",
-    "start_time": 100.11,
-    "end_time": 114.65,
-    "start_frame": 6006,
-    "end_frame": 6879,
-    "objects_in_sequence": [],
-    "frame_ids": [],
     "narrations": [
       "unfold bag;100.11;102.44",
       "pour cereals;103.84;108.85",

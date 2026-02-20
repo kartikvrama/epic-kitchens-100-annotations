@@ -130,16 +130,11 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                 if non_overlapping_count > 3:
                     # Sequence complete: [sequence_start_time, sequence_end_time] with 3 actions
                     txt_file.write("************\n")
-                    # Frame filtering based on subsequence index
+                    # Frame filtering based on timestamp
                     frames_in_sequence = [
                         frame for frame in visor_annotations
-                        if int(frame["image"]["subsequence"].split("_")[-1]) == sequence_index
+                        if sequence_start_time <= frame["timestamp"] <= sequence_end_time
                     ]
-                    # ## Frame filtering based on frame_id
-                    # frames_in_sequence = [
-                    #     frame for frame in visor_annotations
-                    #     if sequence_start_frame <= int(frame["frame_id"]) <= sequence_end_frame
-                    # ]
                     # Collect (class_id, name) from all frames, then build objects with class_name from noun classes
                     raw_objects = set(sum([f["objects"] for f in frames_in_sequence], []))
                     objects_in_sequence = []
@@ -160,7 +155,6 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
 
                     ## Check if all frames are within the start and stop frame and timestamp
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
-                    frame_timestamps_in_sequence = sorted([f["timestamp"] for f in frames_in_sequence])
 
                     ## Frame id based check
                     if not all(sequence_start_frame <= frame_id <= sequence_end_frame for frame_id in frame_ids_in_sequence):
@@ -169,13 +163,6 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                             for frame_id in frame_ids_in_sequence
                         )
                         print(f"  - [FRAME CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_ids_in_sequence)} frame(s) are not within the start and stop frame for {video_id}")
-                    ## Timestamp based check
-                    if not all(sequence_start_time <= frame_timestamp <= sequence_end_time for frame_timestamp in frame_timestamps_in_sequence):
-                        num_out_of_range_frames = sum(
-                            not (sequence_start_time <= frame_timestamp <= sequence_end_time)
-                            for frame_timestamp in frame_timestamps_in_sequence
-                        )
-                        print(f"  - [TIMESTAMP CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_timestamps_in_sequence)} frame(s) are not within the start and stop timestamp for {video_id}")
 
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
                     obj_strs = [f"{o['class_name']} ({o['name']})" for o in objects_in_sequence]
