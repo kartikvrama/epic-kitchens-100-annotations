@@ -43,7 +43,7 @@ def generate_event_history(narrations, fps):
     return event_history
 
 
-def inactive_segments(active_intervals, video_start, video_end, min_duration, fps):
+def inactive_segments(active_intervals, object_crop_data, video_start, video_end, min_duration, fps):
     """
     Given active intervals (non-overlapping by design) within [video_start, video_end],
     return list of (start, end) where the object is inactive for at least min_duration seconds.
@@ -60,6 +60,7 @@ def inactive_segments(active_intervals, video_start, video_end, min_duration, fp
     # Gaps between active intervals (exclude time before first active)
     for i in range(len(active_intervals) - 1):
         gap_start = active_intervals[i]["end_time"]
+        object_crop_data_start = object_crop_data[i]
         gap_end = active_intervals[i + 1]["start_time"]
         prev_active_narrations = active_intervals[i]["narrations"]
         event_history = generate_event_history(prev_active_narrations, fps)
@@ -73,6 +74,7 @@ def inactive_segments(active_intervals, video_start, video_end, min_duration, fp
                     "duration_sec": round(gap_end - gap_start, 2),
                     "event_history": event_history,
                     "frame_after_gap_start": frame_after_gap_start,
+                    "crop_from_previous_active": object_crop_data_start,
                 }
             )
     # Gap after last active
@@ -143,7 +145,17 @@ def main():
             active = [
                 segments[idx] for idx in object_active_segment_mapping[obj_key]
             ]
-            inactive = inactive_segments(active, video_start, video_end, args.min_duration, float(video_info[video_id]["fps"]))
+            # One crop per active segment: the object's crop in that segment
+            object_crop_data = [
+                next(
+                    (elem for elem in seg.get("objects_in_sequence", [])
+                     if obj_key == f"{elem['class_id']}/{elem['class_name']}/{elem['name']}"),
+                    None,
+                )
+                for seg in active
+            ]
+            inactive = inactive_segments(active, object_crop_data, video_start, video_end, args.min_duration, float(video_info[video_id]["fps"]))
+
             if inactive:
                 result[obj_key] = inactive
 
