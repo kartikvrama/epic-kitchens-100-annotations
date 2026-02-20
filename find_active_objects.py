@@ -35,14 +35,15 @@ def bbox_from_segments(segments):
 
 def get_crop_for_object(frames_in_sequence, class_id, name):
     """Return (frame_id, bbox, image_name) for first frame containing this object, or (None, None, None)."""
+    image_crops = []
     for frame in frames_in_sequence:
         for ann in frame["annotations"]:
             if ann["class_id"] == class_id and ann["name"] == name:
                 bbox = bbox_from_segments(ann.get("segments", []))
                 if bbox is not None:
                     image_name = frame["frame_path_adjusted"]
-                    return frame["frame_id"], bbox, image_name
-    return None, None, None
+                    image_crops.append({"frame_path": image_name, "bbox": bbox})
+    return image_crops
 
 def save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir="./"):
     visor_annotations_file = f"visor_annotations/train/{video_id}.json"
@@ -60,13 +61,18 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
 
     with open(f"visor-frame-mapping.json", "r") as f:
         visor_frame_mapping = json.load(f)
+    with open(f"visor-frames_to_timestamps.json", "r") as f:
+        visor_frame_to_timestamps = json.load(f)["timestamps"]
 
     ## Add frame_id and objects to each frame
     for frame in visor_annotations:
-        frame_path_adjusted = visor_frame_mapping[video_id][frame["image"]["image_path"].split("/")[-1]]
+        visor_frame_path = frame["image"]["image_path"].split("/")[-1]
+        frame_path_adjusted = visor_frame_mapping[video_id][visor_frame_path]
+        frame_timestamp = visor_frame_to_timestamps[visor_frame_path]
         ## Frame path mapped to EPIC-KITCHENS-100 dataset
         frame["frame_path_adjusted"] = frame_path_adjusted
         frame["frame_id"] = int(frame_path_adjusted.split("_")[-1].split(".")[0])
+        frame["timestamp"] = frame_timestamp
         frame["objects"] = [(k["class_id"], k["name"]) for k in frame["annotations"]]
 
     max_subsequence_visor = max([int(frame["image"]["subsequence"].split("_")[-1]) for frame in visor_annotations])
@@ -142,25 +148,35 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                         # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
                         if class_id in (300, 301) or class_name in ("hand:left", "hand:right"):
                             continue
-                        crop_frame_id, crop_bbox, crop_image_name = get_crop_for_object(
-                            frames_in_sequence, class_id, name
-                        )
+                        image_crops = get_crop_for_object(frames_in_sequence, class_id, name)
                         obj = {
                             "class_id": class_id,
                             "class_name": class_name,
                             "name": name,
+                            "image_crops": image_crops,
                         }
-                        if crop_frame_id is not None and crop_bbox is not None:
-                            obj["crop_frame_id"] = crop_frame_id
-                            obj["crop_bbox"] = crop_bbox  # [x, y, w, h] in image coordinates
-                            if crop_image_name:
-                                obj["crop_image_name"] = crop_image_name
                         objects_in_sequence.append(obj)
                     objects_in_sequence = sorted(objects_in_sequence, key=lambda x: (x["class_name"], x["name"]))
+
+                    ## Check if all frames are within the start and stop frame and timestamp
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
+                    frame_timestamps_in_sequence = sorted([f["timestamp"] for f in frames_in_sequence])
+
+                    ## Frame id based check
                     if not all(sequence_start_frame <= frame_id <= sequence_end_frame for frame_id in frame_ids_in_sequence):
-                        print(f"{sequence_index}: Frame IDs in sequence are not within the start and stop frame for {video_id}")
-                        # import pdb; pdb.set_trace()
+                        num_out_of_range_frames = sum(
+                            not (sequence_start_frame <= frame_id <= sequence_end_frame)
+                            for frame_id in frame_ids_in_sequence
+                        )
+                        print(f"  - [FRAME CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_ids_in_sequence)} frame(s) are not within the start and stop frame for {video_id}")
+                    ## Timestamp based check
+                    if not all(sequence_start_time <= frame_timestamp <= sequence_end_time for frame_timestamp in frame_timestamps_in_sequence):
+                        num_out_of_range_frames = sum(
+                            not (sequence_start_time <= frame_timestamp <= sequence_end_time)
+                            for frame_timestamp in frame_timestamps_in_sequence
+                        )
+                        print(f"  - [TIMESTAMP CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_timestamps_in_sequence)} frame(s) are not within the start and stop timestamp for {video_id}")
+
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
                     obj_strs = [f"{o['class_name']} ({o['name']})" for o in objects_in_sequence]
                     txt_file.write(f"Objects in sequence: {obj_strs}\n")
