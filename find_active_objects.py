@@ -40,7 +40,7 @@ def get_crop_for_object(frames_in_sequence, class_id, name):
             if ann["class_id"] == class_id and ann["name"] == name:
                 bbox = bbox_from_segments(ann.get("segments", []))
                 if bbox is not None:
-                    image_name = frame["image"].get("name") or frame["image"]["image_path"].split("/")[-1]
+                    image_name = frame["frame_path_adjusted"]
                     return frame["frame_id"], bbox, image_name
     return None, None, None
 
@@ -64,6 +64,8 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
     ## Add frame_id and objects to each frame
     for frame in visor_annotations:
         frame_path_adjusted = visor_frame_mapping[video_id][frame["image"]["image_path"].split("/")[-1]]
+        ## Frame path mapped to EPIC-KITCHENS-100 dataset
+        frame["frame_path_adjusted"] = frame_path_adjusted
         frame["frame_id"] = int(frame_path_adjusted.split("_")[-1].split(".")[0])
         frame["objects"] = [(k["class_id"], k["name"]) for k in frame["annotations"]]
 
