@@ -311,13 +311,16 @@ def main():
             print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
             continue
 
-        segments_saved_this_obj = [seg_saved for seg_saved in segments_saved if seg_saved["query_object"] == obj_key]
+        ## Get segments saved for this object (from previous runs)
+        segments_saved_this_obj = []
+        if segments_saved:
+            segments_saved_this_obj = [seg_saved for seg_saved in segments_saved if seg_saved.get("query_object", "") == obj_key]
 
         for seg in seg_list:
             ## Skip if already processed
             if segments_saved_this_obj:
                 if any([
-                    seg_saved["start_time"] == seg.get("start_time") and seg_saved["end_time"] == seg.get("end_time") for seg_saved in segments_saved_this_obj
+                    seg_saved.get("start_time", 0.0) == seg.get("start_time") and seg_saved.get("end_time", 0.0) == seg.get("end_time") for seg_saved in segments_saved_this_obj
                 ]):
                     print(f"Skipping already processed segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
                     continue
@@ -341,7 +344,7 @@ def main():
                     "user_content": user_content,
                     "video_path": video_path,
                     "crop_specs": json.dumps(crop_specs),
-                    "event_history": json.dumps(event_history_lines),
+                    "event_history": seg.get("event_history", []),
                 }) + "\n")
             ## Skip if no crops extracted
             if not crop_images_base64:
