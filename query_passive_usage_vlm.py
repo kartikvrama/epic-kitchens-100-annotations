@@ -15,9 +15,10 @@ import argparse
 import base64
 import json
 from datetime import datetime
-
 import cv2
+
 import ollama
+import pdb
 
 from label_passive_usage_vlm import system_prompt
 from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
@@ -274,18 +275,25 @@ def main():
 
     with open(segments_file) as f:
         segments_data = json.load(f)
+    total_segments = sum([len(segments_data[k]) for k in segments_data])
 
     os.makedirs(args.output_dir, exist_ok=True)
+    # pdb.set_trace()
     output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.jsonl")
     debug_jsonl_path = os.path.join(args.output_dir, f"debug_vlm_{video_id}.jsonl")
 
+    segments_saved = []
     if os.path.isfile(output_path):
-        with open(output_path, "w") as f:
+        with open(output_path, "r") as f:
             segments_saved = [json.loads(line) for line in f]
+        print(f"Resuming from {len(segments_saved)}/{total_segments} segments in {output_path}")
 
-    total_segments = sum([len(segments_data[k]) for k in segments_data])
-    done = 0
+    with open(debug_jsonl_path, "a") as debug_jsonl:
+        debug_jsonl.write(json.dumps({}) + "\n")
+    with open(output_path, "a") as output_jsonl:
+        output_jsonl.write(json.dumps({}) + "\n")
 
+    done = len(segments_saved)
     for obj_key in sorted(segments_data.keys()):
         seg_list = segments_data[obj_key]
         category, name = object_key_to_category_and_name(obj_key)

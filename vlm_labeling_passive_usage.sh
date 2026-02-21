@@ -15,7 +15,7 @@ OLLAMA_MODELS=/coc/flash5/kvr6/repos/ollama_models ./ollama/bin/ollama serve&
 export PYTHONPATH=/coc/flash5/kvr6/containers/envs/llmEnv/bin/python
 cd /coc/flash5/kvr6/repos/epic-kitchen-repos/epic-kitchens-100-annotations
 
-VIDEO_PATHS_FILE="video_paths.txt"
+VIDEO_PATHS_FILE="${1:-video_paths.txt}"
 
 MODEL_NAME="qwen3-vl:30b"
 
