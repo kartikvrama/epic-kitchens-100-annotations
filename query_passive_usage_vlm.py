@@ -14,6 +14,7 @@ import sys
 import argparse
 import base64
 import json
+from datetime import datetime
 
 import cv2
 import ollama
@@ -253,7 +254,7 @@ def main():
     )
     parser.add_argument(
         "--output-dir",
-        default="vlm_passive_usage_labels",
+        default="vlm_annotations",
         help="Directory to write labels JSON (default: vlm_passive_usage_labels)",
     )
     args = parser.parse_args()
@@ -275,105 +276,111 @@ def main():
         segments_data = json.load(f)
 
     os.makedirs(args.output_dir, exist_ok=True)
-    output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.json")
-    debug_jsonl_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels_debug.jsonl")
-    results = {}
+    output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.jsonl")
+    debug_jsonl_path = os.path.join(args.output_dir, f"debug_vlm_{video_id}.jsonl")
+
+    if os.path.isfile(output_path):
+        with open(output_path, "w") as f:
+            segments_saved = [json.loads(line) for line in f]
 
     total_segments = sum([len(segments_data[k]) for k in segments_data])
     done = 0
-    with open(debug_jsonl_path, "w") as debug_jsonl:
-        for obj_key in sorted(segments_data.keys()):
-            seg_list = segments_data[obj_key]
-            category, name = object_key_to_category_and_name(obj_key)
-            if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
-                print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
-                results[obj_key] = []
-                continue
-            results[obj_key] = []
 
-            for seg in seg_list:
-                done += 1
-                start_time = seg.get("start_time")
-                end_time = seg.get("end_time")
-                print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
-                event_history_lines, event_frame_images_base64 = format_event_history(
-                    seg.get("event_history", []), video_path
-                )
-                crop_images_base64 = get_crop_images_base64(video_path, seg)
-                user_content = build_user_message(category, name)
-                if not crop_images_base64:
-                    results[obj_key].append({
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "error": "no crops extracted",
-                        "parse_error": True,
-                    })
-                    debug_jsonl.write(json.dumps({
-                        "query_object": obj_key,
-                        "object_name": name,
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "error": "no crops extracted",
-                        "llm_response": None,
-                    }) + "\n")
+    for obj_key in sorted(segments_data.keys()):
+        seg_list = segments_data[obj_key]
+        category, name = object_key_to_category_and_name(obj_key)
+        if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
+            print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
+            continue
+
+        segments_saved_this_obj = [seg_saved for seg_saved in segments_saved if seg_saved["query_object"] == obj_key]
+
+        for seg in seg_list:
+
+            if segments_saved_this_obj:
+                if any([
+                    seg_saved["start_time"] == seg.get("start_time") and seg_saved["end_time"] == seg.get("end_time") for seg_saved in segments_saved_this_obj
+                ]):
+                    print(f"Skipping already processed segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
                     continue
-                out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
-                # Parse message.content when format=json (Ollama returns content in message.content)
-                reasoning, is_passive_usage = None, None
-                raw_content = None
-                if out:
-                    msg = out.get("message") if isinstance(out, dict) else getattr(out, "message", None)
-                    if msg:
-                        raw_content = msg.get("content") if isinstance(msg, dict) else getattr(msg, "content", None)
-                        if raw_content and isinstance(raw_content, str):
-                            try:
-                                parsed = json.loads(raw_content)
-                                reasoning = parsed.get("reasoning")
-                                is_passive_usage = parsed.get("is_passive_usage")
-                            except json.JSONDecodeError:
-                                pass
-                    if reasoning is None and is_passive_usage is None:
-                        reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
-                        is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
-                try:
-                    results[obj_key].append({
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "reasoning": reasoning,
-                        "is_passive_usage": is_passive_usage,
-                    })
-                    debug_record = {
-                        "query_object": obj_key,
-                        "object_name": name,
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "reasoning": reasoning,
-                        "is_passive_usage": is_passive_usage,
-                        **_ollama_response_metadata(out),
-                    }
-                    debug_jsonl.write(json.dumps(debug_record) + "\n")
-                except Exception as e:
-                    results[obj_key].append({
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "error": str(e),
-                        "parse_error": True,
-                    })
-                    debug_record = {
-                        "query_object": obj_key,
-                        "object_name": name,
-                        "start_time": start_time,
-                        "end_time": end_time,
-                        "error": str(e),
-                        **_ollama_response_metadata(out),
-                    }
-                    debug_jsonl.write(json.dumps(debug_record) + "\n")
 
-    with open(output_path, "w") as f:
-        json.dump(results, f, indent=2)
-    print(f"Wrote {output_path}")
-    print(f"Wrote debug JSONL {debug_jsonl_path}")
+            done += 1
+            start_time = seg.get("start_time")
+            end_time = seg.get("end_time")
+            print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
+            event_history_lines, event_frame_images_base64 = format_event_history(
+                seg.get("event_history", []), video_path
+            )
+            crop_images_base64 = get_crop_images_base64(video_path, seg)
+            user_content = build_user_message(category, name)
+            if not crop_images_base64:
+                debug_jsonl.write(json.dumps({
+                    "query_object": obj_key,
+                    "object_name": name,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "error": "no crops extracted",
+                    "llm_response": None,
+                }) + "\n")
+                continue
+            out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
+            # Parse message.content when format=json (Ollama returns content in message.content)
+            reasoning, is_passive_usage = None, None
+            raw_content = None
+            if out:
+                msg = out.get("message") if isinstance(out, dict) else getattr(out, "message", None)
+                if msg:
+                    raw_content = msg.get("content") if isinstance(msg, dict) else getattr(msg, "content", None)
+                    if raw_content and isinstance(raw_content, str):
+                        try:
+                            parsed = json.loads(raw_content)
+                            reasoning = parsed.get("reasoning")
+                            is_passive_usage = parsed.get("is_passive_usage")
+                        except json.JSONDecodeError:
+                            pass
+                if reasoning is None and is_passive_usage is None:
+                    reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
+                    is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
+            try:
+                result = {
+                    "query_object": obj_key,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "reasoning": reasoning,
+                    "is_passive_usage": is_passive_usage,
+                }
+                debug_record = {
+                    "query_object": obj_key,
+                    "object_name": name,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "reasoning": reasoning,
+                    "is_passive_usage": is_passive_usage,
+                    **_ollama_response_metadata(out),
+                }
+            except Exception as e:
+                result = {
+                    "query_object": obj_key,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "error": str(e),
+                    "parse_error": True,
+                }
+                debug_record = {
+                    "query_object": obj_key,
+                    "object_name": name,
+                    "start_time": start_time,
+                    "end_time": end_time,
+                    "error": str(e),
+                    **_ollama_response_metadata(out),
+                }
 
+            ## Write output and debug record to JSONL files
+            with open(debug_jsonl_path, "a") as debug_jsonl:
+                debug_jsonl.write(json.dumps(debug_record) + "\n")
+            with open(output_path, "a") as output_jsonl:
+                output_jsonl.write(json.dumps(result) + "\n")
+            print(f"Finished processing {obj_key} segment {start_time}-{end_time}")
 
 if __name__ == "__main__":
     main()
