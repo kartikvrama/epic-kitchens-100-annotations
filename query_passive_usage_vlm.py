@@ -296,12 +296,13 @@ def main():
             segments_saved = [json.loads(line) for line in f]
         print(f"Resuming from {len(segments_saved)}/{total_segments} segments in {output_path}")
 
+    date_time_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     with open(debug_jsonl_path, "a") as debug_jsonl:
-        debug_jsonl.write(json.dumps({}) + "\n")
+        debug_jsonl.write(json.dumps({"date_time": date_time_str}) + "\n")
     with open(output_path, "a") as output_jsonl:
-        output_jsonl.write(json.dumps({}) + "\n")
+        output_jsonl.write(json.dumps({"date_time": date_time_str}) + "\n")
     with open(input_prompt_jsonl_path, "a") as input_prompt_jsonl:
-        input_prompt_jsonl.write(json.dumps({}) + "\n")
+        input_prompt_jsonl.write(json.dumps({"date_time": date_time_str}) + "\n")
 
     done = len(segments_saved)
     for obj_key in sorted(segments_data.keys()):
@@ -311,6 +312,8 @@ def main():
             print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
             continue
 
+        print(f"Processing object: {obj_key} ({category}/{name})", flush=True)
+
         ## Get segments saved for this object (from previous runs)
         segments_saved_this_obj = []
         if segments_saved:
@@ -319,11 +322,24 @@ def main():
         for seg in seg_list:
             ## Skip if already processed
             if segments_saved_this_obj:
-                if any([
-                    seg_saved.get("start_time", 0.0) == seg.get("start_time") and seg_saved.get("end_time", 0.0) == seg.get("end_time") for seg_saved in segments_saved_this_obj
-                ]):
-                    print(f"Skipping already processed segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
-                    continue
+                matched_segments = [
+                    seg_saved for seg_saved in segments_saved_this_obj
+                    if seg_saved.get("start_time", 0.0) == seg.get("start_time")
+                    and seg_saved.get("end_time", 0.0) == seg.get("end_time")
+                    
+                ]
+                if matched_segments:
+                    if any(
+                        seg_matched.get("reasoning") and seg_matched.get("is_passive_usage")
+                        for seg_matched in matched_segments
+                    ):
+                        ## Skip if already processed and has valid reasoning & is_passive_usage.
+                        print(f"Skipping already processed segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
+                        continue
+                    else:
+                        print(f"Segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key} has invalid reasoning & is_passive_usage, reprocessing...", flush=True)
+            ## Process segment
+            print(f"Processing segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
             start_time = seg.get("start_time")
             end_time = seg.get("end_time")
             print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
