@@ -33,6 +33,10 @@ TEMPERATURE=0.8
 MAX_NUM_PREDICT=2000
 NUM_TRIES=3
 
+# Qwen3 VL (and some other VLMs) require image dimensions > 32 (e.g. "factor:32").
+# Upscale any smaller image so both height and width exceed this.
+OLLAMA_MIN_IMAGE_DIM = 33
+
 
 def ensure_ollama_model_loaded(model_name):
     """Ensure the specified ollama model is loaded."""
@@ -56,9 +60,16 @@ def ensure_ollama_model_loaded(model_name):
 
 
 def image_to_base64(rgb_array):
-    """Encode an RGB image (numpy array) to base64 PNG string for Ollama."""
+    """Encode an RGB image (numpy array) to base64 PNG string for Ollama, ensuring dimensions are > OLLAMA_MIN_IMAGE_DIM."""
     if rgb_array is None or rgb_array.size == 0:
         return None
+    h, w = rgb_array.shape[:2]
+    if h < OLLAMA_MIN_IMAGE_DIM or w < OLLAMA_MIN_IMAGE_DIM:
+        ## Upscale to OLLAMA_MIN_IMAGE_DIM
+        scale = OLLAMA_MIN_IMAGE_DIM / float(min(h, w))
+        new_w = OLLAMA_MIN_IMAGE_DIM
+        new_h = int(round(h * scale))
+        rgb_array = cv2.resize(rgb_array, (new_w, new_h), interpolation=cv2.INTER_AREA)
     # OpenCV imencode writes channels as-is; we have RGB, PNG viewers expect RGB
     ok, buf = cv2.imencode(".png", rgb_array)
     if not ok:
@@ -99,13 +110,9 @@ def format_event_history(event_history, video_path):
             frame_id = int(item.split("frame_id:", 1)[1])
             frame = frames_dict.get(frame_id)
             if frame is not None and frame.size > 0:
-                h, w = frame.shape[:2]
-                frame_3x = cv2.resize(frame, (w // 3, h // 3), interpolation=cv2.INTER_AREA)
-                b64 = image_to_base64(frame_3x)
+                b64 = image_to_base64(frame)
                 if b64 is not None:
                     event_frame_images_base64[-1].append(b64)
-                else:
-                    print("Warning: Failed to encode frame to base64.")
             else:
                 print("Warning: Failed to extract frame.")
     assert len(event_lines) == len(event_frame_images_base64)
@@ -129,7 +136,7 @@ def get_crop_images_base64(video_path, segment):
     if not crop_specs:
         return []
     crops = extract_object_crops(video_path, crop_specs)
-    return [image_to_base64(c) for c in crops if image_to_base64(c) is not None]
+    return [image_to_base64(c) for c in crops if image_to_base64(c) is not None], crop_specs
 
 
 def query_ollama(
@@ -280,6 +287,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
     # pdb.set_trace()
     output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.jsonl")
+    input_prompt_jsonl_path = os.path.join(args.output_dir, f"input_prompt_{video_id}.jsonl")
     debug_jsonl_path = os.path.join(args.output_dir, f"debug_vlm_{video_id}.jsonl")
 
     segments_saved = []
@@ -292,6 +300,8 @@ def main():
         debug_jsonl.write(json.dumps({}) + "\n")
     with open(output_path, "a") as output_jsonl:
         output_jsonl.write(json.dumps({}) + "\n")
+    with open(input_prompt_jsonl_path, "a") as input_prompt_jsonl:
+        input_prompt_jsonl.write(json.dumps({}) + "\n")
 
     done = len(segments_saved)
     for obj_key in sorted(segments_data.keys()):
@@ -304,33 +314,47 @@ def main():
         segments_saved_this_obj = [seg_saved for seg_saved in segments_saved if seg_saved["query_object"] == obj_key]
 
         for seg in seg_list:
-
+            ## Skip if already processed
             if segments_saved_this_obj:
                 if any([
                     seg_saved["start_time"] == seg.get("start_time") and seg_saved["end_time"] == seg.get("end_time") for seg_saved in segments_saved_this_obj
                 ]):
                     print(f"Skipping already processed segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
                     continue
-
-            done += 1
             start_time = seg.get("start_time")
             end_time = seg.get("end_time")
             print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
+            ## Format event history
             event_history_lines, event_frame_images_base64 = format_event_history(
                 seg.get("event_history", []), video_path
             )
-            crop_images_base64 = get_crop_images_base64(video_path, seg)
+            ## Extract crop images
+            crop_images_base64, crop_specs = get_crop_images_base64(video_path, seg)
+            ## Build user content
             user_content = build_user_message(category, name)
-            if not crop_images_base64:
-                debug_jsonl.write(json.dumps({
+            ## Write input prompt to JSONL file
+            with open(input_prompt_jsonl_path, "a") as input_prompt_jsonl:
+                input_prompt_jsonl.write(json.dumps({
                     "query_object": obj_key,
-                    "object_name": name,
                     "start_time": start_time,
                     "end_time": end_time,
-                    "error": "no crops extracted",
-                    "llm_response": None,
+                    "user_content": user_content,
+                    "video_path": video_path,
+                    "crop_specs": json.dumps(crop_specs),
+                    "event_history": json.dumps(event_history_lines),
                 }) + "\n")
+            ## Skip if no crops extracted
+            if not crop_images_base64:
+                with open(debug_jsonl_path, "a") as debug_jsonl:
+                    debug_jsonl.write(json.dumps({
+                        "query_object": obj_key,
+                        "start_time": start_time,
+                        "end_time": end_time,
+                        "error": "no crops extracted",
+                        "llm_response": None,
+                    }) + "\n")
                 continue
+            ## Query Ollama
             out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
             # Parse message.content when format=json (Ollama returns content in message.content)
             reasoning, is_passive_usage = None, None
@@ -349,6 +373,7 @@ def main():
                 if reasoning is None and is_passive_usage is None:
                     reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
                     is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
+            ## Write result to output JSONL file
             try:
                 result = {
                     "query_object": obj_key,
@@ -376,7 +401,6 @@ def main():
                 }
                 debug_record = {
                     "query_object": obj_key,
-                    "object_name": name,
                     "start_time": start_time,
                     "end_time": end_time,
                     "error": str(e),
@@ -389,6 +413,8 @@ def main():
             with open(output_path, "a") as output_jsonl:
                 output_jsonl.write(json.dumps(result) + "\n")
             print(f"Finished processing {obj_key} segment {start_time}-{end_time}")
+            done += 1
+
 
 if __name__ == "__main__":
     main()
