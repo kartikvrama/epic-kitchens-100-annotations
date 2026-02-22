@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=query_passive_usage_vlm
-#SBATCH --partition=overcap
+#SBATCH --partition=rail-lab
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32

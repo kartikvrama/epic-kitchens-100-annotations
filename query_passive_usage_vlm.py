@@ -193,7 +193,10 @@ def query_ollama(
                 options={"temperature": TEMPERATURE, "num_predict": MAX_NUM_PREDICT, "num_ctx": 150000},
             )
             if response is not None:
-                return response
+                if response.get("message") and response.get("message").get("content"):
+                    return response
+                else:
+                    print(f"query_ollama: got response with no message content (attempt {attempt + 1}/{num_tries})")
             else:
                 print(f"query_ollama: got None response (attempt {attempt + 1}/{num_tries})")
         except Exception as e:
@@ -330,7 +333,7 @@ def main():
                 ]
                 if matched_segments:
                     if any(
-                        seg_matched.get("reasoning") and seg_matched.get("is_passive_usage")
+                        seg_matched.get("reasoning") and (seg_matched.get("is_passive_usage") in [True, False])
                         for seg_matched in matched_segments
                     ):
                         ## Skip if already processed and has valid reasoning & is_passive_usage.
@@ -338,6 +341,9 @@ def main():
                         continue
                     else:
                         print(f"Segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key} has invalid reasoning & is_passive_usage, reprocessing...", flush=True)
+                        for seg_matched in matched_segments:
+                            print(seg_matched.get("start_time"), seg_matched.get("end_time"), seg_matched.get("reasoning"), seg_matched.get("is_passive_usage"), type(seg_matched.get("is_passive_usage")))
+                        print("--------------------------------")
             ## Process segment
             print(f"Processing segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key}", flush=True)
             start_time = seg.get("start_time")
