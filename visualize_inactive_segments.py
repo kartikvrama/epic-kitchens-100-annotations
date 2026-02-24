@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """
-Iteratively visualize inactive segment prompt information:
+Manual labeling tool for inactive segments. Displays segment prompt information:
   - Object crops (from crop_from_previous_active, when present; multiple per segment)
   - All event history frames (start/end per narration)
   - Frame extracted from the video at frame_after_gap_start
 
-Navigation: arrow keys (left/right), q to quit.
+Segment timestamps are shown in hh:mm:ss. You can assign a binary label per segment:
+  - "used": object is used in this segment
+  - "not used": object is not used in this segment
+
+Labels are persisted to a JSONL file (default: vlm_annotations/inactive_segments_<video_basename>_manual_labels.jsonl).
+Existing labels are loaded at startup so you can resume.
 
 Usage:
-    python visualize_inactive_segments.py <video_path> [--segments-dir inactive_segments]
+    python visualize_inactive_segments.py <video_path> [--segments-dir inactive_segments] [--labels path.jsonl]
 """
 
 import argparse
@@ -21,6 +26,7 @@ import textwrap
 import cv2
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
 
 
 def extract_frames(video_path, frame_numbers, max_size=400):
@@ -119,6 +125,21 @@ def parse_event_history(event_history):
     return entries
 
 
+def seconds_to_hhmmss(secs):
+    """Convert seconds (float) to hh:mm:ss string (e.g. 511.13 -> 00:08:31.13)."""
+    h = int(secs // 3600)
+    m = int((secs % 3600) // 60)
+    s = secs % 60
+    if s == int(s):
+        return f"{h:02d}:{m:02d}:{int(s):02d}"
+    return f"{h:02d}:{m:02d}:{s:06.3f}".rstrip("0").rstrip(".")
+
+
+def segment_key(obj_name, seg):
+    """Return a hashable key for a segment (for label dict). Uses rounded times for float stability."""
+    return (obj_name, round(seg["start_time"], 2), round(seg["end_time"], 2))
+
+
 def build_flat_list(data):
     """Flatten {object: [segments]} into [(object, segment_index, segment)] list."""
     items = []
@@ -128,7 +149,7 @@ def build_flat_list(data):
     return items
 
 
-def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, total):
+def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, total, label_state=None, current_label=None):
     fig.clf()
 
     entries = parse_event_history(seg["event_history"])
@@ -166,13 +187,20 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
     gs = gridspec.GridSpec(n_rows, n_cols, height_ratios=height_ratios, hspace=0.35, wspace=0.2)
 
     row = 0
-    # --- Header: object, segment, gap times ---
+    # --- Header: object, segment, gap times (hh:mm:ss), label, shortcuts ---
     ax_header = fig.add_subplot(gs[row, :])
+    gap_start_str = seconds_to_hhmmss(gap_start)
+    gap_end_str = seconds_to_hhmmss(gap_end)
+    label_str = "(unset)"
+    if current_label is True:
+        label_str = "used"
+    elif current_label is False:
+        label_str = "not used"
     narration_bullets = "  |  ".join(f"\u2022 {n}" for n, _, _ in entries)
     info = (
         f"Object: {obj_name}   Segment {seg_idx + 1}/{total_for_obj}   "
-        f"Gap: {gap_start:.2f}s \u2013 {gap_end:.2f}s  ({duration:.1f}s)\n"
-        f"Event narrations: {narration_bullets}"
+        f"Gap: {gap_start_str} \u2013 {gap_end_str}  ({duration:.1f}s)   Label: {label_str}\n"
+        f"Event narrations: {narration_bullets}\n"
     )
     ax_header.text(
         0.02, 0.5, info,
@@ -264,15 +292,49 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
         spine.set_linewidth(2)
     ax_gap.set_axis_off()
 
+    # Key bindings strip at bottom of figure (always visible on plt screen)
+    fig.text(
+        0.5, 0.02,
+        "[y] or [1] used   [n] or [0] not used   [x] clear   [←] [→] navigate   [q] quit",
+        ha="center", fontsize=10, fontfamily="monospace",
+        bbox=dict(boxstyle="round,pad=0.4", facecolor="#e3f2fd", edgecolor="#1976d2"),
+    )
+
     fig.suptitle(
-        f"Inactive Segment {current + 1} / {total}   [\u2190 prev]  [\u2192 next]  [q quit]",
+        f"Inactive Segment {current + 1} / {total}",
         fontsize=12, fontweight="bold",
     )
     fig.canvas.draw_idle()
 
 
+def load_labels(labels_path):
+    """Load labels from JSONL; return dict keyed by (query_object, start_time, end_time) with rounded times. Last occurrence wins."""
+    labels = {}
+    if not os.path.exists(labels_path):
+        return labels
+    with open(labels_path) as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+                q = rec.get("query_object")
+                st = rec.get("start_time")
+                et = rec.get("end_time")
+                if q is None or st is None or et is None:
+                    continue
+                if "used" not in rec:
+                    continue
+                key = (q, round(float(st), 2), round(float(et), 2))
+                labels[key] = bool(rec["used"])
+            except (json.JSONDecodeError, TypeError, ValueError):
+                continue
+    return labels
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Visualize inactive segment prompts.")
+    parser = argparse.ArgumentParser(description="Manual labeling: visualize inactive segments and assign used/not used.")
     parser.add_argument("video_path", help="Path to the video file (e.g. data/videos/P37_101.MP4)")
     parser.add_argument("--segments-dir", default="inactive_segments",
                         help="Directory containing inactive segment JSON files")
@@ -280,6 +342,9 @@ def main():
 
     video_basename = os.path.splitext(os.path.basename(args.video_path))[0]
     print(f"Video basename: {video_basename}")
+    labels_path = os.path.join("manual_labels", f"inactive_segments_{video_basename}.jsonl")
+    print(f"Labels file: {labels_path}")
+
     json_path = os.path.join(args.segments_dir, f"inactive_segments_{video_basename}.json")
     if not os.path.exists(json_path):
         print(f"No inactive segments file found at {json_path}")
@@ -288,18 +353,13 @@ def main():
     with open(json_path) as f:
         data = json.load(f)
 
-    ignore_keys = set()
-    if os.path.exists("nouns_to_ignore_keys.txt"):
-        with open("nouns_to_ignore_keys.txt") as f:
-            for line in f:
-                line = line.strip()
-                if not line or line.startswith('#'):
-                    continue
-                ignore_keys.add(line)
-
     filtered_data = {}
     for obj_key in data.keys():
-        if obj_key.split("/")[1] in ignore_keys or obj_key.split("/")[2] in ignore_keys:
+        parts = obj_key.split("/")
+        if len(parts) < 3:
+            continue
+        category, name = parts[1], parts[2]
+        if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
             continue
         filtered_data[obj_key] = data[obj_key]
     data = filtered_data
@@ -310,9 +370,11 @@ def main():
         return
 
     obj_counts = {}
-    
     for obj in data:
         obj_counts[obj] = len(data[obj])
+
+    # Mutable label state: key = (query_object, start_time, end_time), value = True (used) / False (not used) / None
+    label_state = load_labels(labels_path)
 
     current = [0]
 
@@ -322,8 +384,27 @@ def main():
         idx = idx % len(items)
         current[0] = idx
         obj, seg_idx, seg = items[idx]
+        key = segment_key(obj, seg)
+        current_label = label_state.get(key)
         render(fig, obj, seg_idx, seg, obj_counts[obj],
-               args.video_path, idx, len(items))
+               args.video_path, idx, len(items), label_state=label_state, current_label=current_label)
+
+    def set_label(used_val):
+        """Set label for current segment and append to JSONL. used_val is True (used), False (not used), or None (clear)."""
+        obj, seg_idx, seg = items[current[0]]
+        key = segment_key(obj, seg)
+        st = round(seg["start_time"], 2)
+        et = round(seg["end_time"], 2)
+        if used_val is None:
+            label_state.pop(key, None)
+        else:
+            label_state[key] = used_val
+            labels_dir = os.path.dirname(labels_path)
+            if labels_dir:
+                os.makedirs(labels_dir, exist_ok=True)
+            with open(labels_path, "a") as f:
+                f.write(json.dumps({"query_object": obj, "start_time": st, "end_time": et, "used": bool(used_val)}) + "\n")
+        show(current[0])
 
     def on_key(event):
         if event.key == "right":
@@ -332,10 +413,16 @@ def main():
             show(current[0] - 1)
         elif event.key == "q":
             plt.close(fig)
+        elif event.key in ("y", "1"):
+            set_label(True)
+        elif event.key in ("n", "0"):
+            set_label(False)
+        elif event.key in ("x", "backspace"):
+            set_label(None)
 
     fig.canvas.mpl_connect("key_press_event", on_key)
     show(0)
-    plt.tight_layout(rect=[0, 0, 1, 0.94])
+    plt.tight_layout(rect=[0, 0.04, 1, 0.94])
     plt.show()
 
 
