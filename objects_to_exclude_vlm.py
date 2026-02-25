@@ -5,6 +5,8 @@ Derived from nouns_to_ignore_fixed_large_liquids_parts.md sections 1 and 3.
 
 # Fixed entities (section 1)
 FIXED_ENTITY_KEYS = {
+    "bin",
+    "hob",
     "tap",
     "cupboard",
     "drawer",

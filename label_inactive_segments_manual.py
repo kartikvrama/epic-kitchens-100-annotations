@@ -29,9 +29,14 @@ import matplotlib.gridspec as gridspec
 from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
 
 
-def extract_frames(video_path, frame_numbers, max_size=400):
-    """Extract multiple frames in one pass; optionally scale so longest side is max_size. Returns {frame_number: rgb_array}."""
-    cap = cv2.VideoCapture(video_path)
+MIN_DURATION = 6 # half the length of average active segment
+
+def extract_frames(video_path, frame_numbers, max_size=400, cap=None):
+    """Extract multiple frames in one pass; optionally scale so longest side is max_size. Returns {frame_number: rgb_array}.
+    If cap is provided, it is used and not released; otherwise a new capture is opened and released."""
+    own_cap = cap is None
+    if own_cap:
+        cap = cv2.VideoCapture(video_path)
     results = {}
     for fn in sorted(set(frame_numbers)):
         cap.set(cv2.CAP_PROP_POS_FRAMES, fn)
@@ -45,19 +50,24 @@ def extract_frames(video_path, frame_numbers, max_size=400):
             scale = max_size / max(h, w)
             frame = cv2.resize(frame, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
         results[fn] = frame
-    cap.release()
+    if own_cap:
+        cap.release()
     return results
 
 
-def extract_frames_full_res(video_path, frame_numbers):
-    """Extract frames at original resolution, returned as {frame_number: rgb_array}."""
-    cap = cv2.VideoCapture(video_path)
+def extract_frames_full_res(video_path, frame_numbers, cap=None):
+    """Extract frames at original resolution, returned as {frame_number: rgb_array}.
+    If cap is provided, it is used and not released; otherwise a new capture is opened and released."""
+    own_cap = cap is None
+    if own_cap:
+        cap = cv2.VideoCapture(video_path)
     results = {}
     for fn in sorted(set(frame_numbers)):
         cap.set(cv2.CAP_PROP_POS_FRAMES, fn)
         ret, frame = cap.read()
         results[fn] = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) if ret else None
-    cap.release()
+    if own_cap:
+        cap.release()
     return results
 
 
@@ -96,12 +106,13 @@ def parse_crop_specs(crop_from_previous_active):
     return specs
 
 
-def extract_object_crops(video_path, crop_specs):
+def extract_object_crops(video_path, crop_specs, cap=None):
     """Extract multiple object crops. crop_specs is list of (frame_id, bbox). Returns list of RGB arrays."""
     if not crop_specs:
         return []
     unique_frames = list({fid for fid, _ in crop_specs})
-    full_res = extract_frames_full_res(video_path, unique_frames)
+    unique_frames = unique_frames[::2] ## For faster loading, only load every other frame
+    full_res = extract_frames_full_res(video_path, unique_frames, cap=cap)
     return [crop_bbox_from_image(full_res.get(fid), bbox) for fid, bbox in crop_specs]
 
 
@@ -135,6 +146,13 @@ def seconds_to_hhmmss(secs):
     return f"{h:02d}:{m:02d}:{s:06.3f}".rstrip("0").rstrip(".")
 
 
+def frame_to_hhmmss(frame_id, fps):
+    """Convert frame number to hh:mm:ss using video fps. Returns None if fps is None or <= 0."""
+    if fps is None or fps <= 0:
+        return None
+    return seconds_to_hhmmss(frame_id / fps)
+
+
 def segment_key(obj_name, seg):
     """Return a hashable key for a segment (for label dict). Uses rounded times for float stability."""
     return (obj_name, round(seg["start_time"], 2), round(seg["end_time"], 2))
@@ -149,7 +167,8 @@ def build_flat_list(data):
     return items
 
 
-def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, total, label_state=None, current_label=None):
+def render(fig, obj_name, seg_idx, seg, total_for_obj, current, total, label_state=None, current_label=None, frames=None, object_crop_rgbs=None, video_fps=None):
+    """Display segment using precomputed frames and object_crop_rgbs (no video I/O)."""
     fig.clf()
 
     entries = parse_event_history(seg["event_history"])
@@ -157,20 +176,6 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
     gap_start = seg["start_time"]
     gap_end = seg["end_time"]
     duration = seg["duration_sec"]
-
-    # Object crops from previous active (can be multiple per segment)
-    crop_specs = parse_crop_specs(seg.get("crop_from_previous_active"))
-    object_crop_rgbs = extract_object_crops(video_path, crop_specs)
-
-    # Collect all frame numbers: event start/end per narration, and frame_after_gap_start
-    event_frame_nums = []
-    for _, sf, ef in entries:
-        if sf is not None:
-            event_frame_nums.append(sf)
-        if ef is not None:
-            event_frame_nums.append(ef)
-    all_frame_nums = list(set(event_frame_nums + [frame_after]))
-    frames = extract_frames(video_path, all_frame_nums, max_size=400)
 
     n_crop = len(object_crop_rgbs)
     n_events = len(entries)
@@ -258,7 +263,11 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
                 ax_start.text(0.5, 0.5, f"Frame {sf}\nunavailable", ha="center", va="center", fontsize=8, color="red", transform=ax_start.transAxes)
         else:
             ax_start.text(0.5, 0.5, "No start frame", ha="center", va="center", fontsize=8, transform=ax_start.transAxes)
-        ax_start.set_title(f"Start frame {sf}" if sf is not None else "Start", fontsize=8)
+        start_time_str = frame_to_hhmmss(sf, video_fps) if sf is not None else None
+        ax_start.set_title(
+            f"Start {start_time_str} (frame {sf})" if (sf is not None and start_time_str) else (f"Start frame {sf}" if sf is not None else "Start"),
+            fontsize=8,
+        )
         ax_start.set_axis_off()
 
         ax_end = fig.add_subplot(gs[row, 2])
@@ -270,7 +279,11 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
                 ax_end.text(0.5, 0.5, f"Frame {ef}\nunavailable", ha="center", va="center", fontsize=8, color="red", transform=ax_end.transAxes)
         else:
             ax_end.text(0.5, 0.5, "No end frame", ha="center", va="center", fontsize=8, transform=ax_end.transAxes)
-        ax_end.set_title(f"End frame {ef}" if ef is not None else "End", fontsize=8)
+        end_time_str = frame_to_hhmmss(ef, video_fps) if ef is not None else None
+        ax_end.set_title(
+            f"End {end_time_str} (frame {ef})" if (ef is not None and end_time_str) else (f"End frame {ef}" if ef is not None else "End"),
+            fontsize=8,
+        )
         ax_end.set_axis_off()
         row += 1
 
@@ -286,7 +299,9 @@ def render(fig, obj_name, seg_idx, seg, total_for_obj, video_path, current, tota
         ax_gap.imshow(gap_img)
     else:
         ax_gap.text(0.5, 0.5, f"Frame {frame_after} unavailable", ha="center", va="center", fontsize=12, color="red", transform=ax_gap.transAxes)
-    ax_gap.set_title(f"Frame {frame_after} (first frame after gap start)", fontsize=10, fontweight="bold", color="#b71c1c")
+    gap_time_str = frame_to_hhmmss(frame_after, video_fps)
+    gap_title = f"Frame {frame_after} ({gap_time_str})" if gap_time_str else f"Frame {frame_after}"
+    ax_gap.set_title(f"{gap_title} (first frame after gap start)", fontsize=10, fontweight="bold", color="#b71c1c")
     for spine in ax_gap.spines.values():
         spine.set_edgecolor("#b71c1c")
         spine.set_linewidth(2)
@@ -361,7 +376,10 @@ def main():
         category, name = parts[1], parts[2]
         if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
             continue
-        filtered_data[obj_key] = data[obj_key]
+        filtered_data[obj_key] = [
+            elem for elem in data[obj_key]
+            if elem["duration_sec"] >= MIN_DURATION
+        ]
     data = filtered_data
 
     items = build_flat_list(data)
@@ -377,53 +395,83 @@ def main():
     label_state = load_labels(labels_path)
 
     current = [0]
+    segment_cache = {}
+    cap = cv2.VideoCapture(args.video_path)
+    video_fps = cap.get(cv2.CAP_PROP_FPS) or None
+    try:
+        fig = plt.figure(figsize=(18, 9))
 
-    fig = plt.figure(figsize=(18, 9))
+        def show(idx):
+            idx = idx % len(items)
+            current[0] = idx
+            obj, seg_idx, seg = items[idx]
+            key = segment_key(obj, seg)
+            current_label = label_state.get(key)
 
-    def show(idx):
-        idx = idx % len(items)
-        current[0] = idx
-        obj, seg_idx, seg = items[idx]
-        key = segment_key(obj, seg)
-        current_label = label_state.get(key)
-        render(fig, obj, seg_idx, seg, obj_counts[obj],
-               args.video_path, idx, len(items), label_state=label_state, current_label=current_label)
+            if idx not in segment_cache:
+                entries = parse_event_history(seg["event_history"])
+                crop_specs = parse_crop_specs(seg.get("crop_from_previous_active"))
+                event_frame_nums = []
+                for _, sf, ef in entries:
+                    if sf is not None:
+                        event_frame_nums.append(sf)
+                    if ef is not None:
+                        event_frame_nums.append(ef)
+                # frame_after = seg["frame_after_gap_start"]
+                # all_frame_nums = list(set(event_frame_nums + [frame_after]))
+                all_frame_nums = list(set(event_frame_nums))
+                object_crop_rgbs = extract_object_crops(args.video_path, crop_specs, cap=cap)
+                frames = extract_frames(args.video_path, all_frame_nums, max_size=400, cap=cap)
+                segment_cache[idx] = {"frames": frames, "object_crop_rgbs": object_crop_rgbs}
+            else:
+                frames = segment_cache[idx]["frames"]
+                object_crop_rgbs = segment_cache[idx]["object_crop_rgbs"]
 
-    def set_label(used_val):
-        """Set label for current segment and append to JSONL. used_val is True (used), False (not used), or None (clear)."""
-        obj, seg_idx, seg = items[current[0]]
-        key = segment_key(obj, seg)
-        st = round(seg["start_time"], 2)
-        et = round(seg["end_time"], 2)
-        if used_val is None:
-            label_state.pop(key, None)
-        else:
-            label_state[key] = used_val
-            labels_dir = os.path.dirname(labels_path)
-            if labels_dir:
-                os.makedirs(labels_dir, exist_ok=True)
-            with open(labels_path, "a") as f:
-                f.write(json.dumps({"query_object": obj, "start_time": st, "end_time": et, "used": bool(used_val)}) + "\n")
-        show(current[0])
+            render(
+                fig, obj, seg_idx, seg, obj_counts[obj],
+                current=idx, total=len(items),
+                label_state=label_state, current_label=current_label,
+                frames=frames, object_crop_rgbs=object_crop_rgbs,
+                video_fps=video_fps,
+            )
 
-    def on_key(event):
-        if event.key == "right":
-            show(current[0] + 1)
-        elif event.key == "left":
-            show(current[0] - 1)
-        elif event.key == "q":
-            plt.close(fig)
-        elif event.key in ("y", "1"):
-            set_label(True)
-        elif event.key in ("n", "0"):
-            set_label(False)
-        elif event.key in ("x", "backspace"):
-            set_label(None)
+        def set_label(used_val):
+            """Set label for current segment and append to JSONL. used_val is True (used), False (not used), or None (clear)."""
+            obj, seg_idx, seg = items[current[0]]
+            key = segment_key(obj, seg)
+            st = round(seg["start_time"], 2)
+            et = round(seg["end_time"], 2)
+            if used_val is None:
+                label_state.pop(key, None)
+            else:
+                label_state[key] = used_val
+                labels_dir = os.path.dirname(labels_path)
+                if labels_dir:
+                    os.makedirs(labels_dir, exist_ok=True)
+                with open(labels_path, "a") as f:
+                    f.write(json.dumps({"query_object": obj, "start_time": st, "end_time": et, "used": bool(used_val)}) + "\n")
+            show(current[0])
 
-    fig.canvas.mpl_connect("key_press_event", on_key)
-    show(0)
-    plt.tight_layout(rect=[0, 0.04, 1, 0.94])
-    plt.show()
+        def on_key(event):
+            if event.key == "right":
+                show(current[0] + 1)
+            elif event.key == "left":
+                show(current[0] - 1)
+            elif event.key == "q":
+                plt.close(fig)
+            elif event.key in ("y", "1"):
+                set_label(True)
+            elif event.key in ("n", "0"):
+                set_label(False)
+            elif event.key in ("x", "backspace"):
+                set_label(None)
+
+        fig.canvas.mpl_connect("key_press_event", on_key)
+        show(0)
+        plt.tight_layout(rect=[0, 0.04, 1, 0.94])
+        plt.show()
+    finally:
+        cap.release()
 
 
 if __name__ == "__main__":
