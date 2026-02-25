@@ -7,69 +7,9 @@
     "end_frame": 422,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000321.jpg",
-            "bbox": [
-              729.78,
-              437.11,
-              660.88,
-              642.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000000376.jpg",
-            "bbox": [
-              0,
-              493.51,
-              830.5,
-              586.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000000405.jpg",
-            "bbox": [
-              0,
-              516.83,
-              776.45,
-              563.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000000101.jpg",
-            "bbox": [
-              911.54,
-              277.54,
-              141.58,
-              66.23
-            ]
-          },
-          {
-            "frame_path": "frame_0000000146.jpg",
-            "bbox": [
-              723.37,
-              407.23,
-              276.71,
-              169.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000000265.jpg",
-            "bbox": [
-              745.54,
-              466.77,
-              688.25,
-              613.23
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -129,8 +69,71 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000321.jpg",
+            "bbox": [
+              729.78,
+              437.11,
+              660.88,
+              642.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000000376.jpg",
+            "bbox": [
+              0,
+              493.51,
+              830.5,
+              586.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000000405.jpg",
+            "bbox": [
+              0,
+              516.83,
+              776.45,
+              563.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000000101.jpg",
+            "bbox": [
+              911.54,
+              277.54,
+              141.58,
+              66.23
+            ]
+          },
+          {
+            "frame_path": "frame_0000000146.jpg",
+            "bbox": [
+              723.37,
+              407.23,
+              276.71,
+              169.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000000265.jpg",
+            "bbox": [
+              745.54,
+              466.77,
+              688.25,
+              613.23
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -191,7 +194,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -264,76 +268,9 @@
     "end_frame": 1661,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000509.jpg",
-            "bbox": [
-              801.25,
-              448.3,
-              638.37,
-              631.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000000867.jpg",
-            "bbox": [
-              827.6,
-              381.85,
-              626.45,
-              694.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000001121.jpg",
-            "bbox": [
-              702.75,
-              426.8,
-              622.6,
-              653.2
-            ]
-          },
-          {
-            "frame_path": "frame_0000001351.jpg",
-            "bbox": [
-              616.76,
-              644.48,
-              633.41,
-              435.52
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001587.jpg",
-            "bbox": [
-              773.26,
-              994.01,
-              236.86,
-              85.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000001651.jpg",
-            "bbox": [
-              687.63,
-              704.0,
-              672.07,
-              376.03
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -375,8 +312,53 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000509.jpg",
+            "bbox": [
+              801.25,
+              448.3,
+              638.37,
+              631.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000000867.jpg",
+            "bbox": [
+              827.6,
+              381.85,
+              626.45,
+              694.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000001121.jpg",
+            "bbox": [
+              702.75,
+              426.8,
+              622.6,
+              653.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000001351.jpg",
+            "bbox": [
+              616.76,
+              644.48,
+              633.41,
+              435.52
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -418,8 +400,35 @@
         ]
       },
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001587.jpg",
+            "bbox": [
+              773.26,
+              994.01,
+              236.86,
+              85.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000001651.jpg",
+            "bbox": [
+              687.63,
+              704.0,
+              672.07,
+              376.03
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -484,7 +493,8 @@
     "objects_in_sequence": [
       {
         "class_id": 8,
-        "class_name": "drawer",
+        "category": "furniture",
+        "subclass_name": "drawer",
         "name": "drawer",
         "image_crops": [
           {
@@ -536,7 +546,8 @@
       },
       {
         "class_id": 97,
-        "class_name": "ladle",
+        "category": "utensils",
+        "subclass_name": "ladle",
         "name": "ladle",
         "image_crops": [
           {
@@ -600,7 +611,8 @@
     "objects_in_sequence": [
       {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -652,7 +664,8 @@
       },
       {
         "class_id": 97,
-        "class_name": "ladle",
+        "category": "utensils",
+        "subclass_name": "ladle",
         "name": "ladle",
         "image_crops": [
           {
@@ -716,69 +729,9 @@
     "end_frame": 2970,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002351.jpg",
-            "bbox": [
-              580.88,
-              357.23,
-              666.7,
-              649.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000002401.jpg",
-            "bbox": [
-              699.58,
-              391.12,
-              661.37,
-              659.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000002559.jpg",
-            "bbox": [
-              696.05,
-              465.04,
-              688.11,
-              614.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000002656.jpg",
-            "bbox": [
-              646.12,
-              386.09,
-              801.9,
-              693.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000002753.jpg",
-            "bbox": [
-              842.77,
-              470.17,
-              926.38,
-              609.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000002946.jpg",
-            "bbox": [
-              186.58,
-              404.57,
-              752.86,
-              675.43
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -838,8 +791,71 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002351.jpg",
+            "bbox": [
+              580.88,
+              357.23,
+              666.7,
+              649.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000002401.jpg",
+            "bbox": [
+              699.58,
+              391.12,
+              661.37,
+              659.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000002559.jpg",
+            "bbox": [
+              696.05,
+              465.04,
+              688.11,
+              614.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000002656.jpg",
+            "bbox": [
+              646.12,
+              386.09,
+              801.9,
+              693.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000002753.jpg",
+            "bbox": [
+              842.77,
+              470.17,
+              926.38,
+              609.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000002946.jpg",
+            "bbox": [
+              186.58,
+              404.57,
+              752.86,
+              675.43
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -900,7 +916,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -982,69 +999,9 @@
     "end_frame": 3676,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003138.jpg",
-            "bbox": [
-              763.09,
-              411.59,
-              621.67,
-              668.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000003276.jpg",
-            "bbox": [
-              779.46,
-              429.47,
-              620.06,
-              650.53
-            ]
-          },
-          {
-            "frame_path": "frame_0000003392.jpg",
-            "bbox": [
-              838.88,
-              125.73,
-              640.62,
-              667.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000003480.jpg",
-            "bbox": [
-              796.51,
-              361.04,
-              499.13,
-              493.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000003569.jpg",
-            "bbox": [
-              790.88,
-              521.48,
-              601.65,
-              558.52
-            ]
-          },
-          {
-            "frame_path": "frame_0000003639.jpg",
-            "bbox": [
-              707.18,
-              497.12,
-              604.66,
-              582.88
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -1104,8 +1061,71 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003138.jpg",
+            "bbox": [
+              763.09,
+              411.59,
+              621.67,
+              668.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000003276.jpg",
+            "bbox": [
+              779.46,
+              429.47,
+              620.06,
+              650.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000003392.jpg",
+            "bbox": [
+              838.88,
+              125.73,
+              640.62,
+              667.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000003480.jpg",
+            "bbox": [
+              796.51,
+              361.04,
+              499.13,
+              493.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000003569.jpg",
+            "bbox": [
+              790.88,
+              521.48,
+              601.65,
+              558.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000003639.jpg",
+            "bbox": [
+              707.18,
+              497.12,
+              604.66,
+              582.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -1166,7 +1186,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -1248,103 +1269,9 @@
     "end_frame": 4202,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003721.jpg",
-            "bbox": [
-              0,
-              629.48,
-              761.77,
-              450.52
-            ]
-          },
-          {
-            "frame_path": "frame_0000003770.jpg",
-            "bbox": [
-              0,
-              83.74,
-              676.67,
-              539.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000003969.jpg",
-            "bbox": [
-              13.58,
-              0,
-              532.43,
-              226.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000004053.jpg",
-            "bbox": [
-              671.14,
-              40.27,
-              299.95,
-              187.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000004138.jpg",
-            "bbox": [
-              -0.17,
-              0,
-              338.45,
-              102.88
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003770.jpg",
-            "bbox": [
-              715.25,
-              865.76,
-              265.82,
-              186.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000003811.jpg",
-            "bbox": [
-              612.88,
-              640.09,
-              340.0,
-              223.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000004053.jpg",
-            "bbox": [
-              574.46,
-              313.26,
-              1345.54,
-              766.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000004138.jpg",
-            "bbox": [
-              1024.97,
-              810.8,
-              291.54,
-              269.2
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -1405,7 +1332,8 @@
       },
       {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -1456,8 +1384,62 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003721.jpg",
+            "bbox": [
+              0,
+              629.48,
+              761.77,
+              450.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000003770.jpg",
+            "bbox": [
+              0,
+              83.74,
+              676.67,
+              539.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000003969.jpg",
+            "bbox": [
+              13.58,
+              0,
+              532.43,
+              226.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000004053.jpg",
+            "bbox": [
+              671.14,
+              40.27,
+              299.95,
+              187.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000004138.jpg",
+            "bbox": [
+              -0.17,
+              0,
+              338.45,
+              102.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -1517,8 +1499,53 @@
         ]
       },
       {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003770.jpg",
+            "bbox": [
+              715.25,
+              865.76,
+              265.82,
+              186.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000003811.jpg",
+            "bbox": [
+              612.88,
+              640.09,
+              340.0,
+              223.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000004053.jpg",
+            "bbox": [
+              574.46,
+              313.26,
+              1345.54,
+              766.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000004138.jpg",
+            "bbox": [
+              1024.97,
+              810.8,
+              291.54,
+              269.2
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -1582,191 +1609,9 @@
     "end_frame": 4650,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004346.jpg",
-            "bbox": [
-              994.33,
-              1012.06,
-              173.31,
-              67.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000004413.jpg",
-            "bbox": [
-              1166.9,
-              1034.06,
-              114.36,
-              46.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000004480.jpg",
-            "bbox": [
-              1007.54,
-              869.44,
-              252.48,
-              210.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000004517.jpg",
-            "bbox": [
-              1081.82,
-              783.9,
-              238.18,
-              296.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000004582.jpg",
-            "bbox": [
-              1114.36,
-              837.47,
-              266.3,
-              242.53
-            ]
-          },
-          {
-            "frame_path": "frame_0000004613.jpg",
-            "bbox": [
-              1108.33,
-              797.19,
-              292.32,
-              282.81
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 40,
-        "class_name": "jar",
-        "name": "clip top jar",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004346.jpg",
-            "bbox": [
-              525.82,
-              856.42,
-              389.03,
-              223.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000004413.jpg",
-            "bbox": [
-              649.98,
-              911.61,
-              177.0,
-              168.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000004480.jpg",
-            "bbox": [
-              636.94,
-              260.61,
-              312.4,
-              819.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000004517.jpg",
-            "bbox": [
-              599.71,
-              257.31,
-              244.54,
-              822.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000004582.jpg",
-            "bbox": [
-              620.83,
-              887.29,
-              216.99,
-              192.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000004613.jpg",
-            "bbox": [
-              269.05,
-              280.55,
-              553.59,
-              799.45
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 66,
-        "class_name": "jug",
-        "name": "measuring jug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004346.jpg",
-            "bbox": [
-              1413.33,
-              243.82,
-              230.01,
-              208.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000004413.jpg",
-            "bbox": [
-              1168.82,
-              444.76,
-              256.04,
-              237.85
-            ]
-          },
-          {
-            "frame_path": "frame_0000004480.jpg",
-            "bbox": [
-              1068.12,
-              723.85,
-              322.06,
-              273.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000004517.jpg",
-            "bbox": [
-              1133.07,
-              642.89,
-              332.65,
-              269.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000004582.jpg",
-            "bbox": [
-              976.82,
-              582.17,
-              316.53,
-              267.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000004613.jpg",
-            "bbox": [
-              886.83,
-              601.14,
-              314.01,
-              265.81
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -1791,7 +1636,8 @@
       },
       {
         "class_id": 108,
-        "class_name": "scale",
+        "category": "appliances",
+        "subclass_name": "scale",
         "name": "scale",
         "image_crops": [
           {
@@ -1851,8 +1697,71 @@
         ]
       },
       {
+        "class_id": 40,
+        "category": "containers",
+        "subclass_name": "jar",
+        "name": "clip top jar",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004346.jpg",
+            "bbox": [
+              525.82,
+              856.42,
+              389.03,
+              223.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000004413.jpg",
+            "bbox": [
+              649.98,
+              911.61,
+              177.0,
+              168.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000004480.jpg",
+            "bbox": [
+              636.94,
+              260.61,
+              312.4,
+              819.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000004517.jpg",
+            "bbox": [
+              599.71,
+              257.31,
+              244.54,
+              822.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000004582.jpg",
+            "bbox": [
+              620.83,
+              887.29,
+              216.99,
+              192.71
+            ]
+          },
+          {
+            "frame_path": "frame_0000004613.jpg",
+            "bbox": [
+              269.05,
+              280.55,
+              553.59,
+              799.45
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "baking tray",
         "image_crops": [
           {
@@ -1910,6 +1819,130 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 66,
+        "category": "crockery",
+        "subclass_name": "jug",
+        "name": "measuring jug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004346.jpg",
+            "bbox": [
+              1413.33,
+              243.82,
+              230.01,
+              208.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000004413.jpg",
+            "bbox": [
+              1168.82,
+              444.76,
+              256.04,
+              237.85
+            ]
+          },
+          {
+            "frame_path": "frame_0000004480.jpg",
+            "bbox": [
+              1068.12,
+              723.85,
+              322.06,
+              273.06
+            ]
+          },
+          {
+            "frame_path": "frame_0000004517.jpg",
+            "bbox": [
+              1133.07,
+              642.89,
+              332.65,
+              269.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000004582.jpg",
+            "bbox": [
+              976.82,
+              582.17,
+              316.53,
+              267.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000004613.jpg",
+            "bbox": [
+              886.83,
+              601.14,
+              314.01,
+              265.81
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004346.jpg",
+            "bbox": [
+              994.33,
+              1012.06,
+              173.31,
+              67.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000004413.jpg",
+            "bbox": [
+              1166.9,
+              1034.06,
+              114.36,
+              46.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000004480.jpg",
+            "bbox": [
+              1007.54,
+              869.44,
+              252.48,
+              210.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000004517.jpg",
+            "bbox": [
+              1081.82,
+              783.9,
+              238.18,
+              296.1
+            ]
+          },
+          {
+            "frame_path": "frame_0000004582.jpg",
+            "bbox": [
+              1114.36,
+              837.47,
+              266.3,
+              242.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000004613.jpg",
+            "bbox": [
+              1108.33,
+              797.19,
+              292.32,
+              282.81
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1934,121 +1967,9 @@
     "end_frame": 4929,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004679.jpg",
-            "bbox": [
-              1279.97,
-              812.59,
-              257.03,
-              267.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000004719.jpg",
-            "bbox": [
-              520.58,
-              942.04,
-              921.19,
-              137.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000004759.jpg",
-            "bbox": [
-              1294.72,
-              1014.51,
-              154.44,
-              65.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000004801.jpg",
-            "bbox": [
-              536.43,
-              946.38,
-              985.28,
-              133.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000004838.jpg",
-            "bbox": [
-              769.97,
-              662.09,
-              718.15,
-              418.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000004876.jpg",
-            "bbox": [
-              742.58,
-              624.53,
-              869.35,
-              455.47
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 96,
-        "class_name": "grater",
-        "name": "grater",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004679.jpg",
-            "bbox": [
-              1395.62,
-              696.67,
-              246.09,
-              301.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000004719.jpg",
-            "bbox": [
-              1254.4,
-              628.04,
-              254.46,
-              323.2
-            ]
-          },
-          {
-            "frame_path": "frame_0000004759.jpg",
-            "bbox": [
-              1227.8,
-              741.71,
-              270.04,
-              321.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000004801.jpg",
-            "bbox": [
-              1310.7,
-              787.4,
-              222.17,
-              292.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000004838.jpg",
-            "bbox": [
-              1372.11,
-              736.33,
-              192.72,
-              343.67
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -2109,7 +2030,8 @@
       },
       {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "baking tray",
         "image_crops": [
           {
@@ -2167,6 +2089,121 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004679.jpg",
+            "bbox": [
+              1279.97,
+              812.59,
+              257.03,
+              267.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000004719.jpg",
+            "bbox": [
+              520.58,
+              942.04,
+              921.19,
+              137.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000004759.jpg",
+            "bbox": [
+              1294.72,
+              1014.51,
+              154.44,
+              65.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000004801.jpg",
+            "bbox": [
+              536.43,
+              946.38,
+              985.28,
+              133.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000004838.jpg",
+            "bbox": [
+              769.97,
+              662.09,
+              718.15,
+              418.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000004876.jpg",
+            "bbox": [
+              742.58,
+              624.53,
+              869.35,
+              455.47
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 96,
+        "category": "utensils",
+        "subclass_name": "grater",
+        "name": "grater",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004679.jpg",
+            "bbox": [
+              1395.62,
+              696.67,
+              246.09,
+              301.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000004719.jpg",
+            "bbox": [
+              1254.4,
+              628.04,
+              254.46,
+              323.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000004759.jpg",
+            "bbox": [
+              1227.8,
+              741.71,
+              270.04,
+              321.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000004801.jpg",
+            "bbox": [
+              1310.7,
+              787.4,
+              222.17,
+              292.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000004838.jpg",
+            "bbox": [
+              1372.11,
+              736.33,
+              192.72,
+              343.67
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2191,69 +2228,9 @@
     "end_frame": 5526,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005167.jpg",
-            "bbox": [
-              604.78,
-              707.24,
-              865.82,
-              372.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000005251.jpg",
-            "bbox": [
-              763.48,
-              478.42,
-              694.48,
-              601.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000005276.jpg",
-            "bbox": [
-              730.75,
-              532.23,
-              800.08,
-              547.77
-            ]
-          },
-          {
-            "frame_path": "frame_0000005330.jpg",
-            "bbox": [
-              793.65,
-              574.44,
-              1014.19,
-              505.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000005384.jpg",
-            "bbox": [
-              801.15,
-              956.76,
-              593.0,
-              123.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000005492.jpg",
-            "bbox": [
-              557.95,
-              683.84,
-              820.62,
-              396.28
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -2314,7 +2291,8 @@
       },
       {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "baking tray",
         "image_crops": [
           {
@@ -2372,6 +2350,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005167.jpg",
+            "bbox": [
+              604.78,
+              707.24,
+              865.82,
+              372.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000005251.jpg",
+            "bbox": [
+              763.48,
+              478.42,
+              694.48,
+              601.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000005276.jpg",
+            "bbox": [
+              730.75,
+              532.23,
+              800.08,
+              547.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000005330.jpg",
+            "bbox": [
+              793.65,
+              574.44,
+              1014.19,
+              505.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000005384.jpg",
+            "bbox": [
+              801.15,
+              956.76,
+              593.0,
+              123.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000005492.jpg",
+            "bbox": [
+              557.95,
+              683.84,
+              820.62,
+              396.28
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2396,112 +2436,9 @@
     "end_frame": 5946,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005710.jpg",
-            "bbox": [
-              1086.95,
-              173.2,
-              486.18,
-              413.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000005854.jpg",
-            "bbox": [
-              1287.12,
-              285.46,
-              555.91,
-              527.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000005890.jpg",
-            "bbox": [
-              1352.13,
-              392.95,
-              567.87,
-              584.66
-            ]
-          },
-          {
-            "frame_path": "frame_0000005917.jpg",
-            "bbox": [
-              1482.63,
-              525.56,
-              437.37,
-              554.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000005946.jpg",
-            "bbox": [
-              1128.87,
-              506.4,
-              550.67,
-              573.6
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005710.jpg",
-            "bbox": [
-              737.09,
-              757.98,
-              753.34,
-              322.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000005854.jpg",
-            "bbox": [
-              448.72,
-              886.24,
-              681.3,
-              193.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000005890.jpg",
-            "bbox": [
-              467.13,
-              1022.95,
-              244.17,
-              57.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000005946.jpg",
-            "bbox": [
-              284.2,
-              1005.32,
-              272.98,
-              74.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000005567.jpg",
-            "bbox": [
-              828.48,
-              709.03,
-              852.13,
-              370.97
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -2561,94 +2498,9 @@
         ]
       },
       {
-        "class_id": 40,
-        "class_name": "jar",
-        "name": "clip top jar",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005710.jpg",
-            "bbox": [
-              840.11,
-              888.41,
-              154.35,
-              191.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000005854.jpg",
-            "bbox": [
-              493.94,
-              1011.07,
-              300.8,
-              68.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000005567.jpg",
-            "bbox": [
-              893.4,
-              393.23,
-              376.27,
-              294.94
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005710.jpg",
-            "bbox": [
-              451.85,
-              480.5,
-              257.45,
-              476.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000005854.jpg",
-            "bbox": [
-              637.71,
-              423.22,
-              127.76,
-              472.23
-            ]
-          },
-          {
-            "frame_path": "frame_0000005890.jpg",
-            "bbox": [
-              753.73,
-              414.68,
-              125.9,
-              453.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000005917.jpg",
-            "bbox": [
-              805.13,
-              517.21,
-              118.8,
-              504.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000005946.jpg",
-            "bbox": [
-              1272.26,
-              502.91,
-              321.58,
-              577.09
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -2708,8 +2560,167 @@
         ]
       },
       {
+        "class_id": 40,
+        "category": "containers",
+        "subclass_name": "jar",
+        "name": "clip top jar",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005710.jpg",
+            "bbox": [
+              840.11,
+              888.41,
+              154.35,
+              191.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000005854.jpg",
+            "bbox": [
+              493.94,
+              1011.07,
+              300.8,
+              68.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000005567.jpg",
+            "bbox": [
+              893.4,
+              393.23,
+              376.27,
+              294.94
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 35,
+        "category": "cookware",
+        "subclass_name": "tray",
+        "name": "baking tray",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005567.jpg",
+            "bbox": [
+              1009.39,
+              333.77,
+              567.8,
+              447.35
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005710.jpg",
+            "bbox": [
+              1086.95,
+              173.2,
+              486.18,
+              413.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000005854.jpg",
+            "bbox": [
+              1287.12,
+              285.46,
+              555.91,
+              527.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000005890.jpg",
+            "bbox": [
+              1352.13,
+              392.95,
+              567.87,
+              584.66
+            ]
+          },
+          {
+            "frame_path": "frame_0000005917.jpg",
+            "bbox": [
+              1482.63,
+              525.56,
+              437.37,
+              554.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000005946.jpg",
+            "bbox": [
+              1128.87,
+              506.4,
+              550.67,
+              573.6
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005710.jpg",
+            "bbox": [
+              737.09,
+              757.98,
+              753.34,
+              322.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000005854.jpg",
+            "bbox": [
+              448.72,
+              886.24,
+              681.3,
+              193.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000005890.jpg",
+            "bbox": [
+              467.13,
+              1022.95,
+              244.17,
+              57.05
+            ]
+          },
+          {
+            "frame_path": "frame_0000005946.jpg",
+            "bbox": [
+              284.2,
+              1005.32,
+              272.98,
+              74.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000005567.jpg",
+            "bbox": [
+              828.48,
+              709.03,
+              852.13,
+              370.97
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -2760,17 +2771,54 @@
         ]
       },
       {
-        "class_id": 35,
-        "class_name": "tray",
-        "name": "baking tray",
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
         "image_crops": [
           {
-            "frame_path": "frame_0000005567.jpg",
+            "frame_path": "frame_0000005710.jpg",
             "bbox": [
-              1009.39,
-              333.77,
-              567.8,
-              447.35
+              451.85,
+              480.5,
+              257.45,
+              476.64
+            ]
+          },
+          {
+            "frame_path": "frame_0000005854.jpg",
+            "bbox": [
+              637.71,
+              423.22,
+              127.76,
+              472.23
+            ]
+          },
+          {
+            "frame_path": "frame_0000005890.jpg",
+            "bbox": [
+              753.73,
+              414.68,
+              125.9,
+              453.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000005917.jpg",
+            "bbox": [
+              805.13,
+              517.21,
+              118.8,
+              504.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000005946.jpg",
+            "bbox": [
+              1272.26,
+              502.91,
+              321.58,
+              577.09
             ]
           }
         ]
@@ -2798,69 +2846,9 @@
     "end_frame": 7266,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006301.jpg",
-            "bbox": [
-              735.06,
-              611.62,
-              524.11,
-              468.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000006476.jpg",
-            "bbox": [
-              715.95,
-              594.24,
-              601.29,
-              485.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000006751.jpg",
-            "bbox": [
-              747.66,
-              626.41,
-              558.57,
-              453.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000006884.jpg",
-            "bbox": [
-              668.15,
-              642.54,
-              651.4,
-              437.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000007101.jpg",
-            "bbox": [
-              592.53,
-              630.31,
-              530.69,
-              449.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000007201.jpg",
-            "bbox": [
-              711.03,
-              667.55,
-              580.79,
-              412.45
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -2921,7 +2909,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -2981,69 +2970,71 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
         "image_crops": [
           {
             "frame_path": "frame_0000006301.jpg",
             "bbox": [
-              916.06,
-              300.27,
-              1003.94,
-              779.73
+              735.06,
+              611.62,
+              524.11,
+              468.38
             ]
           },
           {
             "frame_path": "frame_0000006476.jpg",
             "bbox": [
-              931.3,
-              380.7,
-              570.06,
-              699.3
+              715.95,
+              594.24,
+              601.29,
+              485.76
             ]
           },
           {
             "frame_path": "frame_0000006751.jpg",
             "bbox": [
-              957.3,
-              317.33,
-              962.7,
-              762.67
+              747.66,
+              626.41,
+              558.57,
+              453.59
             ]
           },
           {
             "frame_path": "frame_0000006884.jpg",
             "bbox": [
-              892.51,
-              431.73,
-              605.2,
-              648.27
+              668.15,
+              642.54,
+              651.4,
+              437.46
             ]
           },
           {
             "frame_path": "frame_0000007101.jpg",
             "bbox": [
-              1075.69,
-              309.38,
-              844.31,
-              550.72
+              592.53,
+              630.31,
+              530.69,
+              449.69
             ]
           },
           {
             "frame_path": "frame_0000007201.jpg",
             "bbox": [
-              939.78,
-              399.16,
-              650.31,
-              680.84
+              711.03,
+              667.55,
+              580.79,
+              412.45
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -3101,6 +3092,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006301.jpg",
+            "bbox": [
+              916.06,
+              300.27,
+              1003.94,
+              779.73
+            ]
+          },
+          {
+            "frame_path": "frame_0000006476.jpg",
+            "bbox": [
+              931.3,
+              380.7,
+              570.06,
+              699.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000006751.jpg",
+            "bbox": [
+              957.3,
+              317.33,
+              962.7,
+              762.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000006884.jpg",
+            "bbox": [
+              892.51,
+              431.73,
+              605.2,
+              648.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000007101.jpg",
+            "bbox": [
+              1075.69,
+              309.38,
+              844.31,
+              550.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000007201.jpg",
+            "bbox": [
+              939.78,
+              399.16,
+              650.31,
+              680.84
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -3125,130 +3178,9 @@
     "end_frame": 8378,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007826.jpg",
-            "bbox": [
-              1111.1,
-              471.49,
-              292.45,
-              607.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000007976.jpg",
-            "bbox": [
-              945.58,
-              481.55,
-              476.78,
-              598.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000008180.jpg",
-            "bbox": [
-              818.88,
-              457.79,
-              612.23,
-              622.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000008234.jpg",
-            "bbox": [
-              929.89,
-              409.13,
-              607.13,
-              635.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000008330.jpg",
-            "bbox": [
-              1537.96,
-              324.52,
-              382.04,
-              583.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000008363.jpg",
-            "bbox": [
-              1537.89,
-              373.96,
-              382.11,
-              582.23
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007826.jpg",
-            "bbox": [
-              682.8,
-              573.58,
-              558.86,
-              506.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000007976.jpg",
-            "bbox": [
-              676.01,
-              544.42,
-              558.87,
-              535.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000008180.jpg",
-            "bbox": [
-              31.26,
-              648.36,
-              680.78,
-              431.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000008234.jpg",
-            "bbox": [
-              333.14,
-              781.53,
-              441.54,
-              298.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000008330.jpg",
-            "bbox": [
-              614.45,
-              731.67,
-              731.36,
-              348.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000008363.jpg",
-            "bbox": [
-              787.7,
-              737.01,
-              597.65,
-              342.99
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -3309,7 +3241,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -3369,69 +3302,133 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000007826.jpg",
             "bbox": [
-              859.54,
-              439.8,
-              635.15,
-              640.2
+              1111.1,
+              471.49,
+              292.45,
+              607.08
             ]
           },
           {
             "frame_path": "frame_0000007976.jpg",
             "bbox": [
-              833.23,
-              520.51,
-              597.36,
-              559.49
+              945.58,
+              481.55,
+              476.78,
+              598.45
             ]
           },
           {
             "frame_path": "frame_0000008180.jpg",
             "bbox": [
-              983.49,
-              726.39,
-              343.41,
-              272.35
+              818.88,
+              457.79,
+              612.23,
+              622.21
             ]
           },
           {
             "frame_path": "frame_0000008234.jpg",
             "bbox": [
-              1126.09,
-              577.55,
-              463.71,
-              502.45
+              929.89,
+              409.13,
+              607.13,
+              635.56
             ]
           },
           {
             "frame_path": "frame_0000008330.jpg",
             "bbox": [
-              1649.44,
-              511.38,
-              270.56,
-              209.15
+              1537.96,
+              324.52,
+              382.04,
+              583.4
             ]
           },
           {
             "frame_path": "frame_0000008363.jpg",
             "bbox": [
-              1634.48,
-              555.37,
-              285.52,
-              221.52
+              1537.89,
+              373.96,
+              382.11,
+              582.23
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007826.jpg",
+            "bbox": [
+              682.8,
+              573.58,
+              558.86,
+              506.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000007976.jpg",
+            "bbox": [
+              676.01,
+              544.42,
+              558.87,
+              535.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000008180.jpg",
+            "bbox": [
+              31.26,
+              648.36,
+              680.78,
+              431.64
+            ]
+          },
+          {
+            "frame_path": "frame_0000008234.jpg",
+            "bbox": [
+              333.14,
+              781.53,
+              441.54,
+              298.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000008330.jpg",
+            "bbox": [
+              614.45,
+              731.67,
+              731.36,
+              348.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000008363.jpg",
+            "bbox": [
+              787.7,
+              737.01,
+              597.65,
+              342.99
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -3489,6 +3486,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007826.jpg",
+            "bbox": [
+              859.54,
+              439.8,
+              635.15,
+              640.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000007976.jpg",
+            "bbox": [
+              833.23,
+              520.51,
+              597.36,
+              559.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000008180.jpg",
+            "bbox": [
+              983.49,
+              726.39,
+              343.41,
+              272.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000008234.jpg",
+            "bbox": [
+              1126.09,
+              577.55,
+              463.71,
+              502.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000008330.jpg",
+            "bbox": [
+              1649.44,
+              511.38,
+              270.56,
+              209.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000008363.jpg",
+            "bbox": [
+              1634.48,
+              555.37,
+              285.52,
+              221.52
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -3513,112 +3572,9 @@
     "end_frame": 8629,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008401.jpg",
-            "bbox": [
-              1536.79,
-              479.89,
-              383.31,
-              600.11
-            ]
-          },
-          {
-            "frame_path": "frame_0000008428.jpg",
-            "bbox": [
-              1521.79,
-              463.55,
-              398.21,
-              616.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000008470.jpg",
-            "bbox": [
-              0,
-              248.82,
-              670.55,
-              498.28
-            ]
-          },
-          {
-            "frame_path": "frame_0000008560.jpg",
-            "bbox": [
-              49.29,
-              344.83,
-              592.95,
-              422.0
-            ]
-          },
-          {
-            "frame_path": "frame_0000008607.jpg",
-            "bbox": [
-              917.59,
-              384.02,
-              538.24,
-              486.41
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008401.jpg",
-            "bbox": [
-              759.05,
-              776.59,
-              558.24,
-              303.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000008428.jpg",
-            "bbox": [
-              608.02,
-              754.81,
-              665.59,
-              325.19
-            ]
-          },
-          {
-            "frame_path": "frame_0000008513.jpg",
-            "bbox": [
-              512.04,
-              609.85,
-              857.21,
-              470.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000008560.jpg",
-            "bbox": [
-              797.94,
-              903.53,
-              853.29,
-              176.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000008607.jpg",
-            "bbox": [
-              450.65,
-              860.99,
-              525.54,
-              219.01
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -3679,7 +3635,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -3730,60 +3687,115 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000008401.jpg",
             "bbox": [
-              1643.48,
-              675.21,
-              276.52,
-              257.76
+              1536.79,
+              479.89,
+              383.31,
+              600.11
             ]
           },
           {
             "frame_path": "frame_0000008428.jpg",
             "bbox": [
-              1617.8,
-              651.02,
-              302.2,
-              256.03
+              1521.79,
+              463.55,
+              398.21,
+              616.45
             ]
           },
           {
             "frame_path": "frame_0000008470.jpg",
             "bbox": [
-              252.81,
-              431.52,
-              610.01,
-              147.25
+              0,
+              248.82,
+              670.55,
+              498.28
             ]
           },
           {
             "frame_path": "frame_0000008560.jpg",
             "bbox": [
-              360.57,
-              493.95,
-              377.29,
-              149.09
+              49.29,
+              344.83,
+              592.95,
+              422.0
             ]
           },
           {
             "frame_path": "frame_0000008607.jpg",
             "bbox": [
-              1077.11,
-              539.33,
-              615.38,
-              349.17
+              917.59,
+              384.02,
+              538.24,
+              486.41
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008401.jpg",
+            "bbox": [
+              759.05,
+              776.59,
+              558.24,
+              303.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000008428.jpg",
+            "bbox": [
+              608.02,
+              754.81,
+              665.59,
+              325.19
+            ]
+          },
+          {
+            "frame_path": "frame_0000008513.jpg",
+            "bbox": [
+              512.04,
+              609.85,
+              857.21,
+              470.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000008560.jpg",
+            "bbox": [
+              797.94,
+              903.53,
+              853.29,
+              176.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000008607.jpg",
+            "bbox": [
+              450.65,
+              860.99,
+              525.54,
+              219.01
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -3832,6 +3844,59 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008401.jpg",
+            "bbox": [
+              1643.48,
+              675.21,
+              276.52,
+              257.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000008428.jpg",
+            "bbox": [
+              1617.8,
+              651.02,
+              302.2,
+              256.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000008470.jpg",
+            "bbox": [
+              252.81,
+              431.52,
+              610.01,
+              147.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000008560.jpg",
+            "bbox": [
+              360.57,
+              493.95,
+              377.29,
+              149.09
+            ]
+          },
+          {
+            "frame_path": "frame_0000008607.jpg",
+            "bbox": [
+              1077.11,
+              539.33,
+              615.38,
+              349.17
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -3856,130 +3921,9 @@
     "end_frame": 9274,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008688.jpg",
-            "bbox": [
-              876.74,
-              539.88,
-              661.16,
-              540.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000008730.jpg",
-            "bbox": [
-              795.97,
-              484.27,
-              669.09,
-              595.73
-            ]
-          },
-          {
-            "frame_path": "frame_0000008876.jpg",
-            "bbox": [
-              800.93,
-              544.25,
-              495.49,
-              535.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000009051.jpg",
-            "bbox": [
-              917.34,
-              598.7,
-              449.24,
-              481.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000009176.jpg",
-            "bbox": [
-              856.04,
-              535.96,
-              601.02,
-              544.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000009238.jpg",
-            "bbox": [
-              891.18,
-              498.52,
-              589.89,
-              581.48
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008688.jpg",
-            "bbox": [
-              484.99,
-              855.56,
-              398.36,
-              224.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000008730.jpg",
-            "bbox": [
-              405.36,
-              788.06,
-              438.02,
-              291.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000008876.jpg",
-            "bbox": [
-              528.92,
-              529.93,
-              474.43,
-              550.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000009051.jpg",
-            "bbox": [
-              691.76,
-              538.81,
-              441.58,
-              541.19
-            ]
-          },
-          {
-            "frame_path": "frame_0000009176.jpg",
-            "bbox": [
-              407.15,
-              589.76,
-              565.33,
-              490.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000009238.jpg",
-            "bbox": [
-              461.2,
-              505.49,
-              557.15,
-              574.51
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -4040,7 +3984,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -4100,69 +4045,133 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000008688.jpg",
             "bbox": [
-              1092.77,
-              710.93,
-              397.03,
-              369.07
+              876.74,
+              539.88,
+              661.16,
+              540.12
             ]
           },
           {
             "frame_path": "frame_0000008730.jpg",
             "bbox": [
-              1088.68,
-              629.23,
-              420.59,
-              450.77
+              795.97,
+              484.27,
+              669.09,
+              595.73
             ]
           },
           {
             "frame_path": "frame_0000008876.jpg",
             "bbox": [
-              1051.68,
-              377.86,
-              868.32,
-              702.14
+              800.93,
+              544.25,
+              495.49,
+              535.75
             ]
           },
           {
             "frame_path": "frame_0000009051.jpg",
             "bbox": [
-              875.38,
-              373.17,
-              451.86,
-              706.83
+              917.34,
+              598.7,
+              449.24,
+              481.3
             ]
           },
           {
             "frame_path": "frame_0000009176.jpg",
             "bbox": [
-              1078.41,
-              646.0,
-              364.44,
-              434.0
+              856.04,
+              535.96,
+              601.02,
+              544.04
             ]
           },
           {
             "frame_path": "frame_0000009238.jpg",
             "bbox": [
-              1079.12,
-              803.96,
-              274.95,
-              276.04
+              891.18,
+              498.52,
+              589.89,
+              581.48
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008688.jpg",
+            "bbox": [
+              484.99,
+              855.56,
+              398.36,
+              224.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000008730.jpg",
+            "bbox": [
+              405.36,
+              788.06,
+              438.02,
+              291.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000008876.jpg",
+            "bbox": [
+              528.92,
+              529.93,
+              474.43,
+              550.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000009051.jpg",
+            "bbox": [
+              691.76,
+              538.81,
+              441.58,
+              541.19
+            ]
+          },
+          {
+            "frame_path": "frame_0000009176.jpg",
+            "bbox": [
+              407.15,
+              589.76,
+              565.33,
+              490.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000009238.jpg",
+            "bbox": [
+              461.2,
+              505.49,
+              557.15,
+              574.51
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -4220,6 +4229,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008688.jpg",
+            "bbox": [
+              1092.77,
+              710.93,
+              397.03,
+              369.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000008730.jpg",
+            "bbox": [
+              1088.68,
+              629.23,
+              420.59,
+              450.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000008876.jpg",
+            "bbox": [
+              1051.68,
+              377.86,
+              868.32,
+              702.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000009051.jpg",
+            "bbox": [
+              875.38,
+              373.17,
+              451.86,
+              706.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000009176.jpg",
+            "bbox": [
+              1078.41,
+              646.0,
+              364.44,
+              434.0
+            ]
+          },
+          {
+            "frame_path": "frame_0000009238.jpg",
+            "bbox": [
+              1079.12,
+              803.96,
+              274.95,
+              276.04
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -4244,130 +4315,9 @@
     "end_frame": 10493,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009676.jpg",
-            "bbox": [
-              841.35,
-              486.65,
-              602.3,
-              593.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000009801.jpg",
-            "bbox": [
-              885.42,
-              455.36,
-              559.33,
-              624.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000010015.jpg",
-            "bbox": [
-              1109.5,
-              870.25,
-              182.25,
-              209.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000010230.jpg",
-            "bbox": [
-              783.69,
-              647.16,
-              559.18,
-              432.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000010359.jpg",
-            "bbox": [
-              540.25,
-              225.1,
-              432.21,
-              320.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000010447.jpg",
-            "bbox": [
-              475.57,
-              247.12,
-              450.31,
-              312.82
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009676.jpg",
-            "bbox": [
-              247.65,
-              491.01,
-              654.06,
-              588.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000009801.jpg",
-            "bbox": [
-              357.28,
-              437.76,
-              631.64,
-              642.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000010015.jpg",
-            "bbox": [
-              749.3,
-              636.39,
-              477.98,
-              443.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000010230.jpg",
-            "bbox": [
-              249.05,
-              746.29,
-              630.0,
-              333.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000010359.jpg",
-            "bbox": [
-              732.64,
-              854.04,
-              970.38,
-              225.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000010447.jpg",
-            "bbox": [
-              303.2,
-              861.5,
-              1261.58,
-              218.5
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -4428,7 +4378,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -4488,69 +4439,133 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000009676.jpg",
             "bbox": [
-              1036.9,
-              735.99,
-              650.85,
-              328.98
+              841.35,
+              486.65,
+              602.3,
+              593.35
             ]
           },
           {
             "frame_path": "frame_0000009801.jpg",
             "bbox": [
-              1044.79,
-              774.57,
-              413.23,
-              305.43
+              885.42,
+              455.36,
+              559.33,
+              624.64
             ]
           },
           {
             "frame_path": "frame_0000010015.jpg",
             "bbox": [
-              890.49,
-              532.2,
-              344.6,
-              547.8
+              1109.5,
+              870.25,
+              182.25,
+              209.75
             ]
           },
           {
             "frame_path": "frame_0000010230.jpg",
             "bbox": [
-              947.35,
-              834.93,
-              261.17,
-              245.07
+              783.69,
+              647.16,
+              559.18,
+              432.84
             ]
           },
           {
             "frame_path": "frame_0000010359.jpg",
             "bbox": [
-              703.69,
-              372.57,
-              314.99,
-              157.18
+              540.25,
+              225.1,
+              432.21,
+              320.08
             ]
           },
           {
             "frame_path": "frame_0000010447.jpg",
             "bbox": [
-              639.18,
-              393.21,
-              348.34,
-              135.74
+              475.57,
+              247.12,
+              450.31,
+              312.82
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009676.jpg",
+            "bbox": [
+              247.65,
+              491.01,
+              654.06,
+              588.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000009801.jpg",
+            "bbox": [
+              357.28,
+              437.76,
+              631.64,
+              642.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000010015.jpg",
+            "bbox": [
+              749.3,
+              636.39,
+              477.98,
+              443.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000010230.jpg",
+            "bbox": [
+              249.05,
+              746.29,
+              630.0,
+              333.71
+            ]
+          },
+          {
+            "frame_path": "frame_0000010359.jpg",
+            "bbox": [
+              732.64,
+              854.04,
+              970.38,
+              225.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000010447.jpg",
+            "bbox": [
+              303.2,
+              861.5,
+              1261.58,
+              218.5
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -4608,6 +4623,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009676.jpg",
+            "bbox": [
+              1036.9,
+              735.99,
+              650.85,
+              328.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000009801.jpg",
+            "bbox": [
+              1044.79,
+              774.57,
+              413.23,
+              305.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000010015.jpg",
+            "bbox": [
+              890.49,
+              532.2,
+              344.6,
+              547.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000010230.jpg",
+            "bbox": [
+              947.35,
+              834.93,
+              261.17,
+              245.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000010359.jpg",
+            "bbox": [
+              703.69,
+              372.57,
+              314.99,
+              157.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000010447.jpg",
+            "bbox": [
+              639.18,
+              393.21,
+              348.34,
+              135.74
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -4632,60 +4709,9 @@
     "end_frame": 11013,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010638.jpg",
-            "bbox": [
-              771.98,
-              805.78,
-              385.32,
-              274.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000010701.jpg",
-            "bbox": [
-              875.58,
-              723.6,
-              467.72,
-              356.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000010803.jpg",
-            "bbox": [
-              594.12,
-              720.14,
-              436.12,
-              359.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000010905.jpg",
-            "bbox": [
-              681.58,
-              833.11,
-              502.34,
-              246.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000010976.jpg",
-            "bbox": [
-              749.12,
-              892.32,
-              446.35,
-              187.68
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -4736,8 +4762,62 @@
         ]
       },
       {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010638.jpg",
+            "bbox": [
+              771.98,
+              805.78,
+              385.32,
+              274.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000010701.jpg",
+            "bbox": [
+              875.58,
+              723.6,
+              467.72,
+              356.4
+            ]
+          },
+          {
+            "frame_path": "frame_0000010803.jpg",
+            "bbox": [
+              594.12,
+              720.14,
+              436.12,
+              359.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000010905.jpg",
+            "bbox": [
+              681.58,
+              833.11,
+              502.34,
+              246.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000010976.jpg",
+            "bbox": [
+              749.12,
+              892.32,
+              446.35,
+              187.68
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 88,
-        "class_name": "napkin",
+        "category": "materials",
+        "subclass_name": "napkin",
         "name": "serviette/table napkin",
         "image_crops": [
           {
@@ -4798,7 +4878,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -4871,8 +4952,62 @@
     "end_frame": 11649,
     "objects_in_sequence": [
       {
+        "class_id": 40,
+        "category": "containers",
+        "subclass_name": "jar",
+        "name": "clip top jar",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011251.jpg",
+            "bbox": [
+              840.36,
+              1028.8,
+              172.01,
+              51.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000011326.jpg",
+            "bbox": [
+              1006.09,
+              1017.41,
+              231.01,
+              62.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000011476.jpg",
+            "bbox": [
+              852.72,
+              950.34,
+              210.98,
+              129.66
+            ]
+          },
+          {
+            "frame_path": "frame_0000011501.jpg",
+            "bbox": [
+              1141.6,
+              996.03,
+              86.78,
+              83.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000011621.jpg",
+            "bbox": [
+              872.56,
+              613.82,
+              325.16,
+              384.74
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 60,
-        "class_name": "glove",
+        "category": "materials",
+        "subclass_name": "glove",
         "name": "oven mitt",
         "image_crops": [
           {
@@ -4932,60 +5067,9 @@
         ]
       },
       {
-        "class_id": 40,
-        "class_name": "jar",
-        "name": "clip top jar",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011251.jpg",
-            "bbox": [
-              840.36,
-              1028.8,
-              172.01,
-              51.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000011326.jpg",
-            "bbox": [
-              1006.09,
-              1017.41,
-              231.01,
-              62.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000011476.jpg",
-            "bbox": [
-              852.72,
-              950.34,
-              210.98,
-              129.66
-            ]
-          },
-          {
-            "frame_path": "frame_0000011501.jpg",
-            "bbox": [
-              1141.6,
-              996.03,
-              86.78,
-              83.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000011621.jpg",
-            "bbox": [
-              872.56,
-              613.82,
-              325.16,
-              384.74
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 88,
-        "class_name": "napkin",
+        "category": "materials",
+        "subclass_name": "napkin",
         "name": "serviette/table napkin",
         "image_crops": [
           {
@@ -5019,7 +5103,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -5065,112 +5150,9 @@
     "end_frame": 12402,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012367.jpg",
-            "bbox": [
-              0,
-              503.24,
-              525.61,
-              576.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000012401.jpg",
-            "bbox": [
-              41.96,
-              470.71,
-              707.05,
-              609.29
-            ]
-          },
-          {
-            "frame_path": "frame_0000011700.jpg",
-            "bbox": [
-              1268.03,
-              305.95,
-              524.25,
-              488.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000011814.jpg",
-            "bbox": [
-              804.07,
-              399.79,
-              608.67,
-              590.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000011913.jpg",
-            "bbox": [
-              765.11,
-              391.97,
-              626.34,
-              648.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000011975.jpg",
-            "bbox": [
-              775.05,
-              372.46,
-              618.6,
-              640.11
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011700.jpg",
-            "bbox": [
-              569.67,
-              845.75,
-              772.59,
-              234.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000011814.jpg",
-            "bbox": [
-              535.09,
-              730.33,
-              268.8,
-              349.67
-            ]
-          },
-          {
-            "frame_path": "frame_0000011913.jpg",
-            "bbox": [
-              556.28,
-              714.48,
-              309.03,
-              365.52
-            ]
-          },
-          {
-            "frame_path": "frame_0000011975.jpg",
-            "bbox": [
-              590.37,
-              684.12,
-              332.57,
-              395.88
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob",
         "image_crops": [
           {
@@ -5231,7 +5213,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -5273,69 +5256,115 @@
         ]
       },
       {
-        "class_id": 97,
-        "class_name": "ladle",
-        "name": "ladle",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000012367.jpg",
             "bbox": [
-              1042.34,
-              577.47,
-              237.24,
-              502.53
+              0,
+              503.24,
+              525.61,
+              576.76
             ]
           },
           {
             "frame_path": "frame_0000012401.jpg",
             "bbox": [
-              1221.24,
-              580.32,
-              277.51,
-              499.68
+              41.96,
+              470.71,
+              707.05,
+              609.29
             ]
           },
           {
             "frame_path": "frame_0000011700.jpg",
             "bbox": [
-              1346.88,
-              475.95,
-              573.12,
-              474.81
+              1268.03,
+              305.95,
+              524.25,
+              488.84
             ]
           },
           {
             "frame_path": "frame_0000011814.jpg",
             "bbox": [
-              987.97,
-              577.5,
-              450.2,
-              502.5
+              804.07,
+              399.79,
+              608.67,
+              590.06
             ]
           },
           {
             "frame_path": "frame_0000011913.jpg",
             "bbox": [
-              892.18,
-              607.7,
-              482.27,
-              392.93
+              765.11,
+              391.97,
+              626.34,
+              648.36
             ]
           },
           {
             "frame_path": "frame_0000011975.jpg",
             "bbox": [
-              1028.71,
-              639.12,
-              500.59,
-              422.82
+              775.05,
+              372.46,
+              618.6,
+              640.11
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011700.jpg",
+            "bbox": [
+              569.67,
+              845.75,
+              772.59,
+              234.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000011814.jpg",
+            "bbox": [
+              535.09,
+              730.33,
+              268.8,
+              349.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000011913.jpg",
+            "bbox": [
+              556.28,
+              714.48,
+              309.03,
+              365.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000011975.jpg",
+            "bbox": [
+              590.37,
+              684.12,
+              332.57,
+              395.88
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -5393,6 +5422,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 97,
+        "category": "utensils",
+        "subclass_name": "ladle",
+        "name": "ladle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012367.jpg",
+            "bbox": [
+              1042.34,
+              577.47,
+              237.24,
+              502.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000012401.jpg",
+            "bbox": [
+              1221.24,
+              580.32,
+              277.51,
+              499.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000011700.jpg",
+            "bbox": [
+              1346.88,
+              475.95,
+              573.12,
+              474.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000011814.jpg",
+            "bbox": [
+              987.97,
+              577.5,
+              450.2,
+              502.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000011913.jpg",
+            "bbox": [
+              892.18,
+              607.7,
+              482.27,
+              392.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000011975.jpg",
+            "bbox": [
+              1028.71,
+              639.12,
+              500.59,
+              422.82
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -5417,8 +5508,62 @@
     "end_frame": 12742,
     "objects_in_sequence": [
       {
+        "class_id": 40,
+        "category": "containers",
+        "subclass_name": "jar",
+        "name": "clip top jar",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012507.jpg",
+            "bbox": [
+              376.09,
+              448.21,
+              251.52,
+              317.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000012579.jpg",
+            "bbox": [
+              279.53,
+              702.55,
+              320.34,
+              334.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000012651.jpg",
+            "bbox": [
+              948.61,
+              548.64,
+              282.09,
+              273.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000012676.jpg",
+            "bbox": [
+              934.09,
+              533.61,
+              311.02,
+              272.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000012713.jpg",
+            "bbox": [
+              918.9,
+              525.94,
+              310.13,
+              268.0
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -5478,8 +5623,88 @@
         ]
       },
       {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012507.jpg",
+            "bbox": [
+              1006.66,
+              847.91,
+              266.3,
+              232.09
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 115,
+        "category": "prepared food",
+        "subclass_name": "spreads",
+        "name": "lemon curd",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012428.jpg",
+            "bbox": [
+              308.65,
+              473.11,
+              426.96,
+              440.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000012507.jpg",
+            "bbox": [
+              400.24,
+              215.2,
+              940.2,
+              494.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000012579.jpg",
+            "bbox": [
+              313.5,
+              567.87,
+              1012.07,
+              428.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000012651.jpg",
+            "bbox": [
+              974.95,
+              571.33,
+              945.05,
+              395.92
+            ]
+          },
+          {
+            "frame_path": "frame_0000012676.jpg",
+            "bbox": [
+              992.17,
+              558.0,
+              927.83,
+              413.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000012713.jpg",
+            "bbox": [
+              973.93,
+              549.72,
+              946.07,
+              530.57
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 129,
-        "class_name": "clip",
+        "category": "utensils",
+        "subclass_name": "clip",
         "name": "clip",
         "image_crops": [
           {
@@ -5539,76 +5764,9 @@
         ]
       },
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012507.jpg",
-            "bbox": [
-              1006.66,
-              847.91,
-              266.3,
-              232.09
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 40,
-        "class_name": "jar",
-        "name": "clip top jar",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012507.jpg",
-            "bbox": [
-              376.09,
-              448.21,
-              251.52,
-              317.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000012579.jpg",
-            "bbox": [
-              279.53,
-              702.55,
-              320.34,
-              334.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000012651.jpg",
-            "bbox": [
-              948.61,
-              548.64,
-              282.09,
-              273.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000012676.jpg",
-            "bbox": [
-              934.09,
-              533.61,
-              311.02,
-              272.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000012713.jpg",
-            "bbox": [
-              918.9,
-              525.94,
-              310.13,
-              268.0
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 97,
-        "class_name": "ladle",
+        "category": "utensils",
+        "subclass_name": "ladle",
         "name": "ladle",
         "image_crops": [
           {
@@ -5627,67 +5785,6 @@
               484.36,
               119.28,
               234.3
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 115,
-        "class_name": "spreads",
-        "name": "lemon curd",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012428.jpg",
-            "bbox": [
-              308.65,
-              473.11,
-              426.96,
-              440.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000012507.jpg",
-            "bbox": [
-              400.24,
-              215.2,
-              940.2,
-              494.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000012579.jpg",
-            "bbox": [
-              313.5,
-              567.87,
-              1012.07,
-              428.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000012651.jpg",
-            "bbox": [
-              974.95,
-              571.33,
-              945.05,
-              395.92
-            ]
-          },
-          {
-            "frame_path": "frame_0000012676.jpg",
-            "bbox": [
-              992.17,
-              558.0,
-              927.83,
-              413.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000012713.jpg",
-            "bbox": [
-              973.93,
-              549.72,
-              946.07,
-              530.57
             ]
           }
         ]
@@ -5716,7 +5813,8 @@
     "objects_in_sequence": [
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -5777,7 +5875,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar top",
         "image_crops": [
           {
@@ -5838,7 +5937,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "clip top jar seal",
         "image_crops": [
           {
@@ -5881,7 +5981,8 @@
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -5963,69 +6064,35 @@
     "end_frame": 13913,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
+        "class_id": 46,
+        "category": "appliances",
+        "subclass_name": "oven",
+        "name": "oven",
         "image_crops": [
-          {
-            "frame_path": "frame_0000013217.jpg",
-            "bbox": [
-              1351.19,
-              985.18,
-              229.12,
-              94.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000013246.jpg",
-            "bbox": [
-              1340.13,
-              977.4,
-              254.98,
-              102.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000013838.jpg",
-            "bbox": [
-              667.57,
-              497.8,
-              733.54,
-              582.2
-            ]
-          },
           {
             "frame_path": "frame_0000013400.jpg",
             "bbox": [
-              757.88,
-              600.21,
-              504.99,
-              479.79
+              854.43,
+              485.46,
+              789.03,
+              344.94
             ]
           },
           {
             "frame_path": "frame_0000013426.jpg",
             "bbox": [
-              186.23,
-              577.82,
-              979.81,
-              502.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000013609.jpg",
-            "bbox": [
-              545.73,
-              661.56,
-              765.62,
-              418.44
+              925.19,
+              489.12,
+              737.41,
+              362.48
             ]
           }
         ]
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -6086,7 +6153,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar top",
         "image_crops": [
           {
@@ -6147,7 +6215,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "clip top jar seal",
         "image_crops": [
           {
@@ -6207,33 +6276,71 @@
         ]
       },
       {
-        "class_id": 46,
-        "class_name": "oven",
-        "name": "oven",
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
         "image_crops": [
+          {
+            "frame_path": "frame_0000013217.jpg",
+            "bbox": [
+              1351.19,
+              985.18,
+              229.12,
+              94.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000013246.jpg",
+            "bbox": [
+              1340.13,
+              977.4,
+              254.98,
+              102.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000013838.jpg",
+            "bbox": [
+              667.57,
+              497.8,
+              733.54,
+              582.2
+            ]
+          },
           {
             "frame_path": "frame_0000013400.jpg",
             "bbox": [
-              854.43,
-              485.46,
-              789.03,
-              344.94
+              757.88,
+              600.21,
+              504.99,
+              479.79
             ]
           },
           {
             "frame_path": "frame_0000013426.jpg",
             "bbox": [
-              925.19,
-              489.12,
-              737.41,
-              362.48
+              186.23,
+              577.82,
+              979.81,
+              502.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000013609.jpg",
+            "bbox": [
+              545.73,
+              661.56,
+              765.62,
+              418.44
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -6315,60 +6422,26 @@
     "end_frame": 14577,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
+        "class_id": 46,
+        "category": "appliances",
+        "subclass_name": "oven",
+        "name": "oven",
         "image_crops": [
-          {
-            "frame_path": "frame_0000014284.jpg",
-            "bbox": [
-              1003.97,
-              747.25,
-              371.33,
-              332.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000014351.jpg",
-            "bbox": [
-              981.89,
-              583.16,
-              461.9,
-              496.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000014443.jpg",
-            "bbox": [
-              1165.66,
-              607.51,
-              416.12,
-              472.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000014536.jpg",
-            "bbox": [
-              479.09,
-              534.3,
-              714.48,
-              545.7
-            ]
-          },
           {
             "frame_path": "frame_0000014052.jpg",
             "bbox": [
-              843.78,
-              849.13,
-              782.31,
-              230.87
+              1137.17,
+              576.79,
+              594.26,
+              503.21
             ]
           }
         ]
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -6420,7 +6493,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar top",
         "image_crops": [
           {
@@ -6472,7 +6546,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "clip top jar seal",
         "image_crops": [
           {
@@ -6514,24 +6589,62 @@
         ]
       },
       {
-        "class_id": 46,
-        "class_name": "oven",
-        "name": "oven",
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
         "image_crops": [
+          {
+            "frame_path": "frame_0000014284.jpg",
+            "bbox": [
+              1003.97,
+              747.25,
+              371.33,
+              332.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000014351.jpg",
+            "bbox": [
+              981.89,
+              583.16,
+              461.9,
+              496.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000014443.jpg",
+            "bbox": [
+              1165.66,
+              607.51,
+              416.12,
+              472.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000014536.jpg",
+            "bbox": [
+              479.09,
+              534.3,
+              714.48,
+              545.7
+            ]
+          },
           {
             "frame_path": "frame_0000014052.jpg",
             "bbox": [
-              1137.17,
-              576.79,
-              594.26,
-              503.21
+              843.78,
+              849.13,
+              782.31,
+              230.87
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {
@@ -6603,51 +6716,26 @@
     "end_frame": 15646,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "oven mitt",
+        "class_id": 46,
+        "category": "appliances",
+        "subclass_name": "oven",
+        "name": "oven",
         "image_crops": [
-          {
-            "frame_path": "frame_0000014701.jpg",
-            "bbox": [
-              637.05,
-              487.45,
-              743.8,
-              592.55
-            ]
-          },
-          {
-            "frame_path": "frame_0000014976.jpg",
-            "bbox": [
-              636.75,
-              462.74,
-              751.77,
-              617.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000015238.jpg",
-            "bbox": [
-              0,
-              742.15,
-              1708.21,
-              337.85
-            ]
-          },
           {
             "frame_path": "frame_0000015287.jpg",
             "bbox": [
-              1116.61,
-              866.74,
-              337.23,
-              213.26
+              890.53,
+              820.12,
+              703.09,
+              146.39
             ]
           }
         ]
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar",
         "image_crops": [
           {
@@ -6708,7 +6796,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "clip top jar top",
         "image_crops": [
           {
@@ -6768,24 +6857,53 @@
         ]
       },
       {
-        "class_id": 46,
-        "class_name": "oven",
-        "name": "oven",
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "oven mitt",
         "image_crops": [
+          {
+            "frame_path": "frame_0000014701.jpg",
+            "bbox": [
+              637.05,
+              487.45,
+              743.8,
+              592.55
+            ]
+          },
+          {
+            "frame_path": "frame_0000014976.jpg",
+            "bbox": [
+              636.75,
+              462.74,
+              751.77,
+              617.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000015238.jpg",
+            "bbox": [
+              0,
+              742.15,
+              1708.21,
+              337.85
+            ]
+          },
           {
             "frame_path": "frame_0000015287.jpg",
             "bbox": [
-              890.53,
-              820.12,
-              703.09,
-              146.39
+              1116.61,
+              866.74,
+              337.23,
+              213.26
             ]
           }
         ]
       },
       {
         "class_id": 115,
-        "class_name": "spreads",
+        "category": "prepared food",
+        "subclass_name": "spreads",
         "name": "lemon curd",
         "image_crops": [
           {

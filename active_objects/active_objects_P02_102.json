@@ -8,7 +8,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -69,7 +70,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bread bag",
         "image_crops": [
           {
@@ -130,7 +132,8 @@
       },
       {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -191,7 +194,8 @@
       },
       {
         "class_id": 98,
-        "class_name": "yoghurt",
+        "category": "dairy and eggs",
+        "subclass_name": "yoghurt",
         "name": "yoghurt",
         "image_crops": [
           {
@@ -247,7 +251,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -307,51 +312,9 @@
         ]
       },
       {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000354.jpg",
-            "bbox": [
-              425.64,
-              727.63,
-              134.53,
-              131.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000000451.jpg",
-            "bbox": [
-              623.79,
-              696.01,
-              176.47,
-              167.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000000476.jpg",
-            "bbox": [
-              569.46,
-              685.66,
-              117.04,
-              94.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000000501.jpg",
-            "bbox": [
-              546.24,
-              566.6,
-              261.26,
-              183.06
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -411,8 +374,53 @@
         ]
       },
       {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000354.jpg",
+            "bbox": [
+              425.64,
+              727.63,
+              134.53,
+              131.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000000451.jpg",
+            "bbox": [
+              623.79,
+              696.01,
+              176.47,
+              167.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000000476.jpg",
+            "bbox": [
+              569.46,
+              685.66,
+              117.04,
+              94.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000000501.jpg",
+            "bbox": [
+              546.24,
+              566.6,
+              261.26,
+              183.06
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 105,
-        "class_name": "lemon",
+        "category": "fruits and nuts",
+        "subclass_name": "lemon",
         "name": "lemon",
         "image_crops": [
           {
@@ -494,8 +502,35 @@
     "end_frame": 813,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000730.jpg",
+            "bbox": [
+              1050.77,
+              0,
+              488.45,
+              683.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000000784.jpg",
+            "bbox": [
+              6.16,
+              0,
+              1376.03,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -538,7 +573,8 @@
       },
       {
         "class_id": 53,
-        "class_name": "egg",
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
         "name": "egg",
         "image_crops": [
           {
@@ -580,85 +616,9 @@
         ]
       },
       {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000730.jpg",
-            "bbox": [
-              1050.77,
-              0,
-              488.45,
-              683.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000000784.jpg",
-            "bbox": [
-              6.16,
-              0,
-              1376.03,
-              1080
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 105,
-        "class_name": "lemon",
-        "name": "lemon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000551.jpg",
-            "bbox": [
-              1132.21,
-              538.57,
-              272.84,
-              268.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000000584.jpg",
-            "bbox": [
-              1150.91,
-              513.82,
-              221.3,
-              259.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000000634.jpg",
-            "bbox": [
-              1313.89,
-              650.06,
-              198.15,
-              268.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000000676.jpg",
-            "bbox": [
-              1137.02,
-              565.55,
-              182.53,
-              232.92
-            ]
-          },
-          {
-            "frame_path": "frame_0000000730.jpg",
-            "bbox": [
-              0,
-              670.32,
-              175.06,
-              263.4
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -710,7 +670,8 @@
       },
       {
         "class_id": 98,
-        "class_name": "yoghurt",
+        "category": "dairy and eggs",
+        "subclass_name": "yoghurt",
         "name": "yoghurt",
         "image_crops": [
           {
@@ -750,6 +711,59 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 105,
+        "category": "fruits and nuts",
+        "subclass_name": "lemon",
+        "name": "lemon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000551.jpg",
+            "bbox": [
+              1132.21,
+              538.57,
+              272.84,
+              268.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000000584.jpg",
+            "bbox": [
+              1150.91,
+              513.82,
+              221.3,
+              259.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000000634.jpg",
+            "bbox": [
+              1313.89,
+              650.06,
+              198.15,
+              268.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000000676.jpg",
+            "bbox": [
+              1137.02,
+              565.55,
+              182.53,
+              232.92
+            ]
+          },
+          {
+            "frame_path": "frame_0000000730.jpg",
+            "bbox": [
+              0,
+              670.32,
+              175.06,
+              263.4
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -774,40 +788,9 @@
     "end_frame": 1051,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001028.jpg",
-            "bbox": [
-              192.22,
-              0,
-              631.28,
-              698.35
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001028.jpg",
-            "bbox": [
-              556.68,
-              671.94,
-              242.07,
-              273.91
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -858,24 +841,43 @@
         ]
       },
       {
-        "class_id": 105,
-        "class_name": "lemon",
-        "name": "lemon",
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
         "image_crops": [
           {
             "frame_path": "frame_0000001028.jpg",
             "bbox": [
-              948.12,
-              740.34,
-              109.72,
-              225.73
+              192.22,
+              0,
+              631.28,
+              698.35
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001028.jpg",
+            "bbox": [
+              556.68,
+              671.94,
+              242.07,
+              273.91
             ]
           }
         ]
       },
       {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -918,7 +920,8 @@
       },
       {
         "class_id": 98,
-        "class_name": "yoghurt",
+        "category": "dairy and eggs",
+        "subclass_name": "yoghurt",
         "name": "yoghurt",
         "image_crops": [
           {
@@ -928,6 +931,23 @@
               623.51,
               177.54,
               204.18
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 105,
+        "category": "fruits and nuts",
+        "subclass_name": "lemon",
+        "name": "lemon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001028.jpg",
+            "bbox": [
+              948.12,
+              740.34,
+              109.72,
+              225.73
             ]
           }
         ]
@@ -955,60 +975,9 @@
     "end_frame": 1406,
     "objects_in_sequence": [
       {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001134.jpg",
-            "bbox": [
-              352.88,
-              796.58,
-              384.26,
-              283.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000001172.jpg",
-            "bbox": [
-              400.0,
-              614.28,
-              404.27,
-              465.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000001210.jpg",
-            "bbox": [
-              499.87,
-              0,
-              318.16,
-              280.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000001253.jpg",
-            "bbox": [
-              580.12,
-              25.8,
-              284.15,
-              194.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000001296.jpg",
-            "bbox": [
-              912.2,
-              197.4,
-              164.88,
-              181.27
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -1068,8 +1037,62 @@
         ]
       },
       {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001134.jpg",
+            "bbox": [
+              352.88,
+              796.58,
+              384.26,
+              283.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000001172.jpg",
+            "bbox": [
+              400.0,
+              614.28,
+              404.27,
+              465.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000001210.jpg",
+            "bbox": [
+              499.87,
+              0,
+              318.16,
+              280.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000001253.jpg",
+            "bbox": [
+              580.12,
+              25.8,
+              284.15,
+              194.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000001296.jpg",
+            "bbox": [
+              912.2,
+              197.4,
+              164.88,
+              181.27
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 98,
-        "class_name": "yoghurt",
+        "category": "dairy and eggs",
+        "subclass_name": "yoghurt",
         "name": "yoghurt",
         "image_crops": [
           {
@@ -1124,76 +1147,9 @@
     "end_frame": 1780,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001513.jpg",
-            "bbox": [
-              22.3,
-              0,
-              592.85,
-              516.31
-            ]
-          },
-          {
-            "frame_path": "frame_0000001538.jpg",
-            "bbox": [
-              0,
-              0,
-              555.98,
-              580.44
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001639.jpg",
-            "bbox": [
-              806.81,
-              315.95,
-              326.1,
-              207.11
-            ]
-          },
-          {
-            "frame_path": "frame_0000001700.jpg",
-            "bbox": [
-              630.05,
-              311.8,
-              514.17,
-              405.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000001727.jpg",
-            "bbox": [
-              630.97,
-              308.19,
-              486.89,
-              420.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000001770.jpg",
-            "bbox": [
-              572.98,
-              280.47,
-              389.76,
-              168.81
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -1235,8 +1191,35 @@
         ]
       },
       {
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001513.jpg",
+            "bbox": [
+              22.3,
+              0,
+              592.85,
+              516.31
+            ]
+          },
+          {
+            "frame_path": "frame_0000001538.jpg",
+            "bbox": [
+              0,
+              0,
+              555.98,
+              580.44
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 105,
-        "class_name": "lemon",
+        "category": "fruits and nuts",
+        "subclass_name": "lemon",
         "name": "lemon",
         "image_crops": [
           {
@@ -1267,6 +1250,50 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001639.jpg",
+            "bbox": [
+              806.81,
+              315.95,
+              326.1,
+              207.11
+            ]
+          },
+          {
+            "frame_path": "frame_0000001700.jpg",
+            "bbox": [
+              630.05,
+              311.8,
+              514.17,
+              405.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000001727.jpg",
+            "bbox": [
+              630.97,
+              308.19,
+              486.89,
+              420.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000001770.jpg",
+            "bbox": [
+              572.98,
+              280.47,
+              389.76,
+              168.81
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1292,7 +1319,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -1353,7 +1381,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -1427,7 +1456,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -1488,7 +1518,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -1549,7 +1580,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -1623,7 +1655,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bread bag",
         "image_crops": [
           {
@@ -1675,7 +1708,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -1727,7 +1761,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -1779,7 +1814,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "package",
         "image_crops": [
           {
@@ -1825,8 +1861,53 @@
     "end_frame": 3004,
     "objects_in_sequence": [
       {
+        "class_id": 113,
+        "category": "appliances",
+        "subclass_name": "freezer",
+        "name": "freezer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002757.jpg",
+            "bbox": [
+              280.45,
+              0,
+              1168.54,
+              889.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000002868.jpg",
+            "bbox": [
+              259.46,
+              0,
+              1660.54,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000002921.jpg",
+            "bbox": [
+              241.74,
+              0,
+              1678.26,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000002984.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -1851,7 +1932,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -1876,7 +1958,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "potato bag",
         "image_crops": [
           {
@@ -1937,7 +2020,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -1962,7 +2046,8 @@
       },
       {
         "class_id": 8,
-        "class_name": "drawer",
+        "category": "furniture",
+        "subclass_name": "drawer",
         "name": "drawer",
         "image_crops": [
           {
@@ -1993,49 +2078,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 113,
-        "class_name": "freezer",
-        "name": "freezer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002757.jpg",
-            "bbox": [
-              280.45,
-              0,
-              1168.54,
-              889.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000002868.jpg",
-            "bbox": [
-              259.46,
-              0,
-              1660.54,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000002921.jpg",
-            "bbox": [
-              241.74,
-              0,
-              1678.26,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000002984.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2060,8 +2102,35 @@
     "end_frame": 3428,
     "objects_in_sequence": [
       {
+        "class_id": 113,
+        "category": "appliances",
+        "subclass_name": "freezer",
+        "name": "freezer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003114.jpg",
+            "bbox": [
+              143.03,
+              99.82,
+              1481.21,
+              980.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000003151.jpg",
+            "bbox": [
+              839.95,
+              500.93,
+              1044.63,
+              564.82
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -2104,7 +2173,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -2147,7 +2217,8 @@
       },
       {
         "class_id": 32,
-        "class_name": "cheese",
+        "category": "dairy and eggs",
+        "subclass_name": "cheese",
         "name": "cheese",
         "image_crops": [
           {
@@ -2157,31 +2228,6 @@
               381.86,
               436.26,
               542.77
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 113,
-        "class_name": "freezer",
-        "name": "freezer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003114.jpg",
-            "bbox": [
-              143.03,
-              99.82,
-              1481.21,
-              980.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000003151.jpg",
-            "bbox": [
-              839.95,
-              500.93,
-              1044.63,
-              564.82
             ]
           }
         ]
@@ -2209,8 +2255,35 @@
     "end_frame": 3664,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003598.jpg",
+            "bbox": [
+              1030.89,
+              0,
+              483.86,
+              592.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000003626.jpg",
+            "bbox": [
+              557.09,
+              0,
+              915.96,
+              823.1
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -2253,7 +2326,8 @@
       },
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "pistachio bag",
         "image_crops": [
           {
@@ -2296,7 +2370,8 @@
       },
       {
         "class_id": 32,
-        "class_name": "cheese",
+        "category": "dairy and eggs",
+        "subclass_name": "cheese",
         "name": "cheese",
         "image_crops": [
           {
@@ -2363,31 +2438,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003598.jpg",
-            "bbox": [
-              1030.89,
-              0,
-              483.86,
-              592.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000003626.jpg",
-            "bbox": [
-              557.09,
-              0,
-              915.96,
-              823.1
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2412,8 +2462,44 @@
     "end_frame": 4004,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003700.jpg",
+            "bbox": [
+              183.69,
+              0,
+              1736.31,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000003767.jpg",
+            "bbox": [
+              220.8,
+              0,
+              1699.2,
+              1080.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000003821.jpg",
+            "bbox": [
+              1455.59,
+              0,
+              464.41,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -2456,7 +2542,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -2499,7 +2586,8 @@
       },
       {
         "class_id": 32,
-        "class_name": "cheese",
+        "category": "dairy and eggs",
+        "subclass_name": "cheese",
         "name": "cheese",
         "image_crops": [
           {
@@ -2523,42 +2611,9 @@
         ]
       },
       {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003700.jpg",
-            "bbox": [
-              183.69,
-              0,
-              1736.31,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000003767.jpg",
-            "bbox": [
-              220.8,
-              0,
-              1699.2,
-              1080.28
-            ]
-          },
-          {
-            "frame_path": "frame_0000003821.jpg",
-            "bbox": [
-              1455.59,
-              0,
-              464.41,
-              1080
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -2595,67 +2650,9 @@
     "end_frame": 4310,
     "objects_in_sequence": [
       {
-        "class_id": 23,
-        "class_name": "box",
-        "name": "box",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004042.jpg",
-            "bbox": [
-              797.54,
-              637.56,
-              491.42,
-              442.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000004090.jpg",
-            "bbox": [
-              724.87,
-              608.98,
-              459.2,
-              471.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000004138.jpg",
-            "bbox": [
-              212.19,
-              315.95,
-              821.29,
-              753.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000004211.jpg",
-            "bbox": [
-              1100.52,
-              905.76,
-              433.97,
-              174.24
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 34,
-        "class_name": "food",
-        "name": "food",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004296.jpg",
-            "bbox": [
-              308.9,
-              0,
-              368.48,
-              257.39
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -2704,6 +2701,67 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 23,
+        "category": "containers",
+        "subclass_name": "box",
+        "name": "box",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004042.jpg",
+            "bbox": [
+              797.54,
+              637.56,
+              491.42,
+              442.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000004090.jpg",
+            "bbox": [
+              724.87,
+              608.98,
+              459.2,
+              471.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000004138.jpg",
+            "bbox": [
+              212.19,
+              315.95,
+              821.29,
+              753.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000004211.jpg",
+            "bbox": [
+              1100.52,
+              905.76,
+              433.97,
+              174.24
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 34,
+        "category": "prepared food",
+        "subclass_name": "food",
+        "name": "food",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004296.jpg",
+            "bbox": [
+              308.9,
+              0,
+              368.48,
+              257.39
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2728,24 +2786,9 @@
     "end_frame": 4741,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004392.jpg",
-            "bbox": [
-              446.48,
-              59.87,
-              382.96,
-              300.88
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -2760,8 +2803,26 @@
         ]
       },
       {
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004392.jpg",
+            "bbox": [
+              446.48,
+              59.87,
+              382.96,
+              300.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -2826,7 +2887,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "oil bottle",
         "image_crops": [
           {
@@ -2860,7 +2922,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -2893,8 +2956,26 @@
         ]
       },
       {
+        "class_id": 28,
+        "category": "meat and substitute",
+        "subclass_name": "meat",
+        "name": "meat",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004855.jpg",
+            "bbox": [
+              35.88,
+              495.77,
+              568.33,
+              334.66
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -2925,22 +3006,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 28,
-        "class_name": "meat",
-        "name": "meat",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004855.jpg",
-            "bbox": [
-              35.88,
-              495.77,
-              568.33,
-              334.66
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2966,7 +3031,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "oil bottle",
         "image_crops": [
           {
@@ -3018,7 +3084,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -3042,8 +3109,44 @@
         ]
       },
       {
+        "class_id": 28,
+        "category": "meat and substitute",
+        "subclass_name": "meat",
+        "name": "meat",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005551.jpg",
+            "bbox": [
+              1362.34,
+              928.28,
+              288.26,
+              151.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000005626.jpg",
+            "bbox": [
+              290.31,
+              242.39,
+              514.96,
+              379.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000005663.jpg",
+            "bbox": [
+              308.5,
+              253.26,
+              550.54,
+              395.0
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -3083,40 +3186,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 28,
-        "class_name": "meat",
-        "name": "meat",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005551.jpg",
-            "bbox": [
-              1362.34,
-              928.28,
-              288.26,
-              151.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000005626.jpg",
-            "bbox": [
-              290.31,
-              242.39,
-              514.96,
-              379.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000005663.jpg",
-            "bbox": [
-              308.5,
-              253.26,
-              550.54,
-              395.0
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3142,7 +3211,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "oil bottle",
         "image_crops": [
           {
@@ -3203,7 +3273,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -3264,7 +3335,8 @@
       },
       {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -3325,7 +3397,8 @@
       },
       {
         "class_id": 31,
-        "class_name": "oil",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "oil",
         "name": "oil",
         "image_crops": [
           {
@@ -3407,8 +3480,35 @@
     "end_frame": 6590,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006213.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000006292.jpg",
+            "bbox": [
+              202.33,
+              0,
+              1717.67,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -3460,7 +3560,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -3484,33 +3585,9 @@
         ]
       },
       {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006213.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000006292.jpg",
-            "bbox": [
-              202.33,
-              0,
-              1717.67,
-              1080
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -3535,7 +3612,8 @@
       },
       {
         "class_id": 31,
-        "class_name": "oil",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "oil",
         "name": "oil",
         "image_crops": [
           {
@@ -3581,7 +3659,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -3642,7 +3721,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -3703,7 +3783,8 @@
       },
       {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -3764,7 +3845,8 @@
       },
       {
         "class_id": 31,
-        "class_name": "oil",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "oil",
         "name": "oil",
         "image_crops": [
           {
@@ -3846,8 +3928,35 @@
     "end_frame": 8047,
     "objects_in_sequence": [
       {
+        "class_id": 28,
+        "category": "meat and substitute",
+        "subclass_name": "meat",
+        "name": "meat",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007986.jpg",
+            "bbox": [
+              738.89,
+              909.92,
+              434.26,
+              170.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000008039.jpg",
+            "bbox": [
+              1100.07,
+              854.23,
+              410.13,
+              225.77
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -3905,31 +4014,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 28,
-        "class_name": "meat",
-        "name": "meat",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007986.jpg",
-            "bbox": [
-              738.89,
-              909.92,
-              434.26,
-              170.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000008039.jpg",
-            "bbox": [
-              1100.07,
-              854.23,
-              410.13,
-              225.77
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3955,7 +4039,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -4016,7 +4101,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -4077,7 +4163,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "spice jar",
         "image_crops": [
           {
@@ -4138,7 +4225,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "lid",
         "image_crops": [
           {
@@ -4199,7 +4287,8 @@
       },
       {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -4251,7 +4340,8 @@
       },
       {
         "class_id": 85,
-        "class_name": "spice",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "spice",
         "name": "spice",
         "image_crops": [
           {
@@ -4316,7 +4406,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -4377,7 +4468,8 @@
       },
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "spice bottle",
         "image_crops": [
           {
@@ -4402,7 +4494,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -4463,7 +4556,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "spice jar",
         "image_crops": [
           {
@@ -4515,7 +4609,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "lid",
         "image_crops": [
           {
@@ -4576,7 +4671,8 @@
       },
       {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -4637,7 +4733,8 @@
       },
       {
         "class_id": 215,
-        "class_name": "thyme",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "thyme",
         "name": "thyme spice",
         "image_crops": [
           {
@@ -4684,7 +4781,8 @@
     "objects_in_sequence": [
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -4727,7 +4825,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -4770,7 +4869,8 @@
       },
       {
         "class_id": 40,
-        "class_name": "jar",
+        "category": "containers",
+        "subclass_name": "jar",
         "name": "spice jar",
         "image_crops": [
           {
@@ -4786,7 +4886,8 @@
       },
       {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -4848,8 +4949,44 @@
     "end_frame": 9643,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009036.jpg",
+            "bbox": [
+              1387.62,
+              621.62,
+              251.21,
+              143.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000009517.jpg",
+            "bbox": [
+              1405.19,
+              486.89,
+              259.82,
+              146.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000009607.jpg",
+            "bbox": [
+              1521.7,
+              542.86,
+              297.38,
+              149.98
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -4910,7 +5047,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -4970,8 +5108,44 @@
         ]
       },
       {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009251.jpg",
+            "bbox": [
+              959.16,
+              556.57,
+              960.84,
+              523.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000009517.jpg",
+            "bbox": [
+              827.01,
+              331.6,
+              1092.99,
+              748.4
+            ]
+          },
+          {
+            "frame_path": "frame_0000009607.jpg",
+            "bbox": [
+              878.78,
+              326.54,
+              1041.22,
+              753.46
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -5029,74 +5203,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009251.jpg",
-            "bbox": [
-              959.16,
-              556.57,
-              960.84,
-              523.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000009517.jpg",
-            "bbox": [
-              827.01,
-              331.6,
-              1092.99,
-              748.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000009607.jpg",
-            "bbox": [
-              878.78,
-              326.54,
-              1041.22,
-              753.46
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009036.jpg",
-            "bbox": [
-              1387.62,
-              621.62,
-              251.21,
-              143.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000009517.jpg",
-            "bbox": [
-              1405.19,
-              486.89,
-              259.82,
-              146.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000009607.jpg",
-            "bbox": [
-              1521.7,
-              542.86,
-              297.38,
-              149.98
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -5121,8 +5227,71 @@
     "end_frame": 10425,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010251.jpg",
+            "bbox": [
+              741.07,
+              346.79,
+              400.01,
+              187.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000010321.jpg",
+            "bbox": [
+              765.24,
+              389.69,
+              470.35,
+              201.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000010345.jpg",
+            "bbox": [
+              867.04,
+              393.71,
+              448.22,
+              176.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000010369.jpg",
+            "bbox": [
+              938.5,
+              396.48,
+              436.91,
+              175.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000010401.jpg",
+            "bbox": [
+              1206.7,
+              462.19,
+              404.13,
+              186.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000010426.jpg",
+            "bbox": [
+              1612.95,
+              461.44,
+              307.05,
+              203.43
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -5183,7 +5352,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -5243,33 +5413,9 @@
         ]
       },
       {
-        "class_id": 28,
-        "class_name": "meat",
-        "name": "meat",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010401.jpg",
-            "bbox": [
-              0,
-              481.95,
-              268.03,
-              321.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000010426.jpg",
-            "bbox": [
-              100.03,
-              413.81,
-              574.99,
-              363.68
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -5329,62 +5475,27 @@
         ]
       },
       {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
+        "class_id": 28,
+        "category": "meat and substitute",
+        "subclass_name": "meat",
+        "name": "meat",
         "image_crops": [
-          {
-            "frame_path": "frame_0000010251.jpg",
-            "bbox": [
-              741.07,
-              346.79,
-              400.01,
-              187.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000010321.jpg",
-            "bbox": [
-              765.24,
-              389.69,
-              470.35,
-              201.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000010345.jpg",
-            "bbox": [
-              867.04,
-              393.71,
-              448.22,
-              176.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000010369.jpg",
-            "bbox": [
-              938.5,
-              396.48,
-              436.91,
-              175.39
-            ]
-          },
           {
             "frame_path": "frame_0000010401.jpg",
             "bbox": [
-              1206.7,
-              462.19,
-              404.13,
-              186.2
+              0,
+              481.95,
+              268.03,
+              321.37
             ]
           },
           {
             "frame_path": "frame_0000010426.jpg",
             "bbox": [
-              1612.95,
-              461.44,
-              307.05,
-              203.43
+              100.03,
+              413.81,
+              574.99,
+              363.68
             ]
           }
         ]
@@ -5412,8 +5523,26 @@
     "end_frame": 11242,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010451.jpg",
+            "bbox": [
+              1712.59,
+              446.29,
+              207.41,
+              153.51
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "sauce bottle",
         "image_crops": [
           {
@@ -5429,7 +5558,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "tupperware",
         "image_crops": [
           {
@@ -5444,8 +5574,26 @@
         ]
       },
       {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010451.jpg",
+            "bbox": [
+              1034.55,
+              255.68,
+              885.45,
+              824.32
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 28,
-        "class_name": "meat",
+        "category": "meat and substitute",
+        "subclass_name": "meat",
         "name": "meat",
         "image_crops": [
           {
@@ -5461,7 +5609,8 @@
       },
       {
         "class_id": 47,
-        "class_name": "sauce",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "sauce",
         "name": "sauce",
         "image_crops": [
           {
@@ -5471,38 +5620,6 @@
               670.63,
               149.64,
               145.21
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010451.jpg",
-            "bbox": [
-              1034.55,
-              255.68,
-              885.45,
-              824.32
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010451.jpg",
-            "bbox": [
-              1712.59,
-              446.29,
-              207.41,
-              153.51
             ]
           }
         ]

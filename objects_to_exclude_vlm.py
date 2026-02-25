@@ -24,7 +24,26 @@ FIXED_ENTITY_KEYS = {
     "candle",
     "airer",
     "door:kitchen",
-    "fridge"
+    "fridge",
+}
+
+SMALL_PARTS_KEYS = {
+    "lid",
+    "cover",
+    "button",
+    "alarm",
+    "light",
+    "cap",
+    "plug",
+    "knob",
+    "handle",
+    "wire",
+    "control:remote",
+    "battery",
+    "cork",
+    "watch",
+    "rest",
+    "filter",
 }
 
 WASTE_KEYS = {
@@ -55,4 +74,4 @@ LIQUID_KEYS = {
 }
 
 # Combined: skip prompting the VLM for these object keys
-OBJECTS_TO_EXCLUDE_FROM_VLM = FIXED_ENTITY_KEYS | LIQUID_KEYS | WASTE_KEYS
+OBJECTS_TO_EXCLUDE_FROM_VLM = FIXED_ENTITY_KEYS | LIQUID_KEYS | WASTE_KEYS | SMALL_PARTS_KEYS

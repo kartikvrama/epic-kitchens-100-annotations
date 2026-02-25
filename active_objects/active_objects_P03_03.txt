@@ -9,7 +9,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [96, 155, 211, 245, 279, 321]
-Objects in sequence: ['bag (bag)', 'fridge (fridge)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (bag) (bag)']
 Verb-noun pairs in sequence: ['pick up bag;0.99;3.25', 'open bag;3.34;4.09', 'open fridge;4.44;5.69']
 ************
 Start timestamp: 6.54, Stop timestamp: 7.29
@@ -23,7 +23,7 @@ Narration: take drink
 ------
 ************
 Frame IDs in sequence: [411, 484, 532, 571, 611, 653]
-Objects in sequence: ['bag (bag)', 'bottle (bottle)', 'box (lunch box)', 'fridge (fridge)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (bag) (bag)', 'containers (bottle) (bottle)', 'containers (box) (lunch box)']
 Verb-noun pairs in sequence: ['take lunch box;6.54;7.29', 'put lunch box in bag;7.76;9.07', 'take drink;9.73;11.47']
 ************
 Start timestamp: 11.46, Stop timestamp: 12.35
@@ -40,7 +40,7 @@ Narration: put bag
 ------
 ************
 Frame IDs in sequence: [833, 903, 964, 994, 1035, 1091]
-Objects in sequence: ['bag (bag)', 'fridge (fridge)', 'machine:washing (washing machine)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (machine:washing) (washing machine)', 'containers (bag) (bag)']
 Verb-noun pairs in sequence: ['close bag;12.85;15.58', 'close fridge;15.77;16.73', 'put bag;17.23;18.22']
 ************
 Start timestamp: 18.12, Stop timestamp: 18.94
@@ -60,7 +60,7 @@ Narration: turn on washing machine
 ------
 ************
 Frame IDs in sequence: [1211, 1249, 1774, 1803, 1868, 1895]
-Objects in sequence: ['clothes (clothes)', 'machine:washing (washing machine)']
+Objects in sequence: ['appliances (machine:washing) (washing machine)', 'materials (clothes) (clothes)']
 Verb-noun pairs in sequence: ['check dryness;19.75;21.17', 'close washing machine;29.27;30.27', 'turn on washing machine;30.74;32.18']
 ************
 Start timestamp: 36.81, Stop timestamp: 37.6
@@ -74,7 +74,7 @@ Narration: press button
 ------
 ************
 Frame IDs in sequence: [2225, 2338, 2451, 2539, 2615, 2723]
-Objects in sequence: ['machine:washing (washing machine)']
+Objects in sequence: ['appliances (machine:washing) (washing machine)']
 Verb-noun pairs in sequence: ['turn on washing machine;36.81;37.6', 'press button;40.67;42.92', 'press button;43.06;46.0']
 ************
 Start timestamp: 46.41, Stop timestamp: 47.22
@@ -88,7 +88,7 @@ Narration: put clothes on hanger
 ------
 ************
 Frame IDs in sequence: [2801, 3041, 3083, 3215, 3349, 3606]
-Objects in sequence: ['airer (hanger)', 'clothes (clothes)', 'machine:washing (washing machine)']
+Objects in sequence: ['appliances (machine:washing) (washing machine)', 'furniture (airer) (hanger)', 'materials (clothes) (clothes)']
 Verb-noun pairs in sequence: ['start washing machine;46.41;47.22', 'pick up clothes;50.5;51.82', 'put clothes on hanger;54.31;61.77']
 ************
 Start timestamp: 63.59, Stop timestamp: 64.92
@@ -102,6 +102,6 @@ Narration: place plate
 ------
 ************
 Frame IDs in sequence: [3838, 3885, 3982, 4033, 4085, 4115]
-Objects in sequence: ['bag (bag)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['containers (bag) (bag)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)']
 Verb-noun pairs in sequence: ['pick up bag;63.59;64.92', 'pick up plate;66.07;66.97', 'place plate;67.72;68.8']
 ************

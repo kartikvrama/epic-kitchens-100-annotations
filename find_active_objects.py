@@ -1,3 +1,4 @@
+import argparse
 import os
 import csv
 import json
@@ -12,7 +13,7 @@ def load_noun_class_names():
     """Load class_id -> class name (key) from EPIC_100_noun_classes_v2.csv."""
     with open(NOUN_CLASSES_FILE) as f:
         reader = csv.DictReader(f)
-        return {int(row["id"]): row["key"] for row in reader}
+        return {int(row["id"]): {"key": row["key"], "category": row["category"]} for row in reader}
 
 def hhmmss_to_seconds(hhmmss):
     h, m, s = hhmmss.split(":")
@@ -139,19 +140,22 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                     raw_objects = set(sum([f["objects"] for f in frames_in_sequence], []))
                     objects_in_sequence = []
                     for class_id, name in raw_objects:
-                        class_name = noun_class_names.get(class_id, "unknown")
+                        object_info = noun_class_names.get(class_id, {})
+                        subclass_name = object_info.get("key", "unknown")
+                        category = object_info.get("category", "unknown")
                         # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
-                        if class_id in (300, 301) or class_name in ("hand:left", "hand:right"):
+                        if class_id in (11, 300, 301) or name in ("hand:left", "hand:right") or category == "hand":
                             continue
                         image_crops = get_crop_for_object(frames_in_sequence, class_id, name)
                         obj = {
                             "class_id": class_id,
-                            "class_name": class_name,
+                            "category": category,
+                            "subclass_name": subclass_name,
                             "name": name,
                             "image_crops": image_crops,
                         }
                         objects_in_sequence.append(obj)
-                    objects_in_sequence = sorted(objects_in_sequence, key=lambda x: (x["class_name"], x["name"]))
+                    objects_in_sequence = sorted(objects_in_sequence, key=lambda x: (x["category"], x["subclass_name"], x["name"]))
 
                     ## Check if all frames are within the start and stop frame and timestamp
                     frame_ids_in_sequence = sorted([f["frame_id"] for f in frames_in_sequence])
@@ -165,7 +169,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                         print(f"  - [FRAME CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_ids_in_sequence)} frame(s) are not within the start and stop frame for {video_id}")
 
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
-                    obj_strs = [f"{o['class_name']} ({o['name']})" for o in objects_in_sequence]
+                    obj_strs = [f"{o['category']} ({o['subclass_name']}) ({o['name']})" for o in objects_in_sequence]
                     txt_file.write(f"Objects in sequence: {obj_strs}\n")
                     txt_file.write(f"Verb-noun pairs in sequence: {narrations}\n")
                     txt_file.write("************\n")
@@ -200,7 +204,104 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
         json.dump(sequences, f, indent=2)
     print(f"Wrote {len(sequences)} sequences to {json_path} and narration log to {txt_path}")
 
+
+def report_frame_id_mismatch(output_dir="active_objects"):
+    """
+    For each video_id with both VISOR annotations and active_objects JSON, report:
+    - Total unique frame IDs in VISOR
+    - Total unique frame IDs in active objects sequences (union across sequences)
+    - Mismatch: frames in VISOR not in any sequence, and frames in sequences not in VISOR.
+    """
+    if not os.path.exists("visor-frame-mapping.json") or not os.path.exists("visor-frames_to_timestamps.json"):
+        print("Missing visor-frame-mapping.json or visor-frames_to_timestamps.json")
+        return
+
+    with open("visor-frame-mapping.json", "r") as f:
+        visor_frame_mapping = json.load(f)
+    with open("visor-frames_to_timestamps.json", "r") as f:
+        visor_frame_to_timestamps = json.load(f)["timestamps"]
+
+    results = []
+    for fname in sorted(os.listdir(output_dir)):
+        if not fname.endswith(".json") or not fname.startswith("active_objects_"):
+            continue
+        video_id = fname.replace("active_objects_", "").replace(".json", "")
+
+        visor_annotations_file = f"visor_annotations/train/{video_id}.json"
+        if not os.path.exists(visor_annotations_file):
+            visor_annotations_file = f"visor_annotations/val/{video_id}.json"
+        if not os.path.exists(visor_annotations_file):
+            results.append((video_id, None, None, None, None, "no VISOR file"))
+            continue
+
+        with open(visor_annotations_file) as f:
+            visor_data = json.load(f)
+        visor_annotations = visor_data["video_annotations"]
+
+        visor_frame_ids = set()
+        for frame in visor_annotations:
+            visor_frame_path = frame["image"]["image_path"].split("/")[-1]
+            if video_id not in visor_frame_mapping or visor_frame_path not in visor_frame_mapping[video_id]:
+                continue
+            frame_path_adjusted = visor_frame_mapping[video_id][visor_frame_path]
+            frame_id = int(frame_path_adjusted.split("_")[-1].split(".")[0])
+            visor_frame_ids.add(frame_id)
+
+        with open(os.path.join(output_dir, fname)) as f:
+            sequences = json.load(f)
+        active_frame_ids = set()
+        for seq in sequences:
+            active_frame_ids.update(seq.get("frame_ids", []))
+
+        only_in_visor = visor_frame_ids - active_frame_ids
+        only_in_active = active_frame_ids - visor_frame_ids
+        results.append((
+            video_id,
+            len(visor_frame_ids),
+            len(active_frame_ids),
+            len(only_in_visor),
+            len(only_in_active),
+            None,
+        ))
+
+    # Print table
+    print("\nFrame ID mismatch: VISOR total vs active objects sequences (per video_id)")
+    print("-" * 90)
+    print(f"{'video_id':<12} {'visor_total':>12} {'active_total':>12} {'only_visor':>12} {'only_active':>12}  note")
+    print("-" * 90)
+    for r in results:
+        video_id, v_total, a_total, only_v, only_a, note = r
+        if note:
+            print(f"{video_id:<12} {'—':>12} {'—':>12} {'—':>12} {'—':>12}  {note}")
+        else:
+            print(f"{video_id:<12} {v_total:>12} {a_total:>12} {only_v:>12} {only_a:>12}")
+    print("-" * 90)
+    with_note = [r for r in results if r[5]]
+    with_counts = [r for r in results if r[1] is not None]
+    if with_counts:
+        total_visor = sum(r[1] for r in with_counts)
+        total_active = sum(r[2] for r in with_counts)
+        total_only_visor = sum(r[3] for r in with_counts)
+        total_only_active = sum(r[4] for r in with_counts)
+        print(f"Sum (videos with both): visor_total={total_visor}, active_total={total_active}, "
+              f"only_in_visor={total_only_visor}, only_in_active={total_only_active}")
+    if with_note:
+        print(f"Skipped {len(with_note)} video(s) (no VISOR file).")
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Build active objects sequences from VISOR and narrations.")
+    parser.add_argument(
+        "--report-mismatch",
+        action="store_true",
+        help="Report mismatch between total frame IDs in VISOR vs active objects sequences per video_id.",
+    )
+    parser.add_argument("--output-dir", default="active_objects", help="Output directory for active_objects JSON/txt.")
+    args = parser.parse_args()
+
+    if args.report_mismatch:
+        report_frame_id_mismatch(output_dir=args.output_dir)
+        return
 
     print("Reading video info")
     with open(VIDEO_INFO_FILE) as f:
@@ -224,10 +325,7 @@ def main():
 
     for row in video_info:
         # print(f"Processing video {row['video_id']}")
-        save_active_objects(row["video_id"], video_info, narration_low_level_df, noun_class_names, output_dir="active_objects")
-    
-    # ## DEBUG
-    # save_active_objects("P37_101", video_info, narration_low_level_df, noun_class_names, output_dir="active_objects")
+        save_active_objects(row["video_id"], video_info, narration_low_level_df, noun_class_names, output_dir=args.output_dir)
 
 
 if __name__ == "__main__":

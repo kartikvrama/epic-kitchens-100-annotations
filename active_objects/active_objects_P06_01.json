@@ -7,8 +7,61 @@
     "end_frame": 709,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000361.jpg",
+            "bbox": [
+              1160.06,
+              -1.27,
+              759.94,
+              870.14
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 64,
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
+        "name": "milk",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000569.jpg",
+            "bbox": [
+              956.84,
+              573.99,
+              183.32,
+              315.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000000605.jpg",
+            "bbox": [
+              976.4,
+              883.82,
+              142.74,
+              195.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000000632.jpg",
+            "bbox": [
+              880.48,
+              962.49,
+              149.57,
+              117.06
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -57,56 +110,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000361.jpg",
-            "bbox": [
-              1160.06,
-              -1.27,
-              759.94,
-              870.14
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 64,
-        "class_name": "milk",
-        "name": "milk",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000569.jpg",
-            "bbox": [
-              956.84,
-              573.99,
-              183.32,
-              315.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000000605.jpg",
-            "bbox": [
-              976.4,
-              883.82,
-              142.74,
-              195.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000000632.jpg",
-            "bbox": [
-              880.48,
-              962.49,
-              149.57,
-              117.06
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -132,7 +135,8 @@
     "objects_in_sequence": [
       {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -156,42 +160,9 @@
         ]
       },
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001010.jpg",
-            "bbox": [
-              453.09,
-              0,
-              1176.74,
-              658.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000001052.jpg",
-            "bbox": [
-              475.27,
-              0,
-              1182.92,
-              663.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000001092.jpg",
-            "bbox": [
-              361.86,
-              0,
-              1137.53,
-              720.02
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -240,6 +211,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001010.jpg",
+            "bbox": [
+              453.09,
+              0,
+              1176.74,
+              658.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000001052.jpg",
+            "bbox": [
+              475.27,
+              0,
+              1182.92,
+              663.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000001092.jpg",
+            "bbox": [
+              361.86,
+              0,
+              1137.53,
+              720.02
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -264,8 +270,53 @@
     "end_frame": 2056,
     "objects_in_sequence": [
       {
+        "class_id": 99,
+        "category": "baked goods and grains",
+        "subclass_name": "cereal",
+        "name": "cereal",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001413.jpg",
+            "bbox": [
+              1111.52,
+              0.12,
+              93.98,
+              153.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000001456.jpg",
+            "bbox": [
+              1005.93,
+              0.46,
+              249.32,
+              239.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000001744.jpg",
+            "bbox": [
+              832.38,
+              518.64,
+              451.53,
+              400.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000001954.jpg",
+            "bbox": [
+              894.65,
+              249.99,
+              421.71,
+              300.6
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -325,94 +376,9 @@
         ]
       },
       {
-        "class_id": 99,
-        "class_name": "cereal",
-        "name": "cereal",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001413.jpg",
-            "bbox": [
-              1111.52,
-              0.12,
-              93.98,
-              153.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000001456.jpg",
-            "bbox": [
-              1005.93,
-              0.46,
-              249.32,
-              239.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000001744.jpg",
-            "bbox": [
-              832.38,
-              518.64,
-              451.53,
-              400.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000001954.jpg",
-            "bbox": [
-              894.65,
-              249.99,
-              421.71,
-              300.6
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001257.jpg",
-            "bbox": [
-              0,
-              0,
-              1040.01,
-              212.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000001315.jpg",
-            "bbox": [
-              335.56,
-              850.96,
-              494.28,
-              89.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000001413.jpg",
-            "bbox": [
-              0,
-              0,
-              1768.45,
-              215.92
-            ]
-          },
-          {
-            "frame_path": "frame_0000001456.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              334.74
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -470,6 +436,50 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001257.jpg",
+            "bbox": [
+              0,
+              0,
+              1040.01,
+              212.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000001315.jpg",
+            "bbox": [
+              335.56,
+              850.96,
+              494.28,
+              89.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000001413.jpg",
+            "bbox": [
+              0,
+              0,
+              1768.45,
+              215.92
+            ]
+          },
+          {
+            "frame_path": "frame_0000001456.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              334.74
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -494,8 +504,52 @@
     "end_frame": 3268,
     "objects_in_sequence": [
       {
+        "class_id": 99,
+        "category": "baked goods and grains",
+        "subclass_name": "cereal",
+        "name": "cereal",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003094.jpg",
+            "bbox": [
+              807.01,
+              309.79,
+              92.93,
+              139.52
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 26,
+        "category": "containers",
+        "subclass_name": "package",
+        "name": "packet",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002885.jpg",
+            "bbox": [
+              151.2,
+              154.18,
+              653.54,
+              371.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000003094.jpg",
+            "bbox": [
+              98.47,
+              191.13,
+              662.5,
+              308.62
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -555,49 +609,9 @@
         ]
       },
       {
-        "class_id": 99,
-        "class_name": "cereal",
-        "name": "cereal",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003094.jpg",
-            "bbox": [
-              807.01,
-              309.79,
-              92.93,
-              139.52
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 26,
-        "class_name": "package",
-        "name": "packet",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002885.jpg",
-            "bbox": [
-              151.2,
-              154.18,
-              653.54,
-              371.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000003094.jpg",
-            "bbox": [
-              98.47,
-              191.13,
-              662.5,
-              308.62
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -658,7 +672,8 @@
       },
       {
         "class_id": 107,
-        "class_name": "wrap",
+        "category": "materials",
+        "subclass_name": "wrap",
         "name": "wrap",
         "image_crops": [
           {
@@ -740,69 +755,9 @@
     "end_frame": 4239,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003465.jpg",
-            "bbox": [
-              779.28,
-              317.56,
-              190.39,
-              223.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000003534.jpg",
-            "bbox": [
-              802.39,
-              336.34,
-              215.42,
-              231.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000003666.jpg",
-            "bbox": [
-              1191.07,
-              512.65,
-              166.56,
-              216.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000003726.jpg",
-            "bbox": [
-              1205.31,
-              508.32,
-              166.73,
-              187.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000004085.jpg",
-            "bbox": [
-              500.02,
-              665.88,
-              186.97,
-              174.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000004176.jpg",
-            "bbox": [
-              557.83,
-              783.99,
-              158.68,
-              170.66
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 99,
-        "class_name": "cereal",
+        "category": "baked goods and grains",
+        "subclass_name": "cereal",
         "name": "cereal",
         "image_crops": [
           {
@@ -862,33 +817,9 @@
         ]
       },
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004085.jpg",
-            "bbox": [
-              0,
-              0,
-              1000.58,
-              115.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000004176.jpg",
-            "bbox": [
-              0,
-              -1.83,
-              1742.5,
-              256.1
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "packet",
         "image_crops": [
           {
@@ -948,8 +879,71 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003465.jpg",
+            "bbox": [
+              779.28,
+              317.56,
+              190.39,
+              223.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000003534.jpg",
+            "bbox": [
+              802.39,
+              336.34,
+              215.42,
+              231.4
+            ]
+          },
+          {
+            "frame_path": "frame_0000003666.jpg",
+            "bbox": [
+              1191.07,
+              512.65,
+              166.56,
+              216.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000003726.jpg",
+            "bbox": [
+              1205.31,
+              508.32,
+              166.73,
+              187.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000004085.jpg",
+            "bbox": [
+              500.02,
+              665.88,
+              186.97,
+              174.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000004176.jpg",
+            "bbox": [
+              557.83,
+              783.99,
+              158.68,
+              170.66
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 107,
-        "class_name": "wrap",
+        "category": "materials",
+        "subclass_name": "wrap",
         "name": "wrap",
         "image_crops": [
           {
@@ -989,6 +983,32 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004085.jpg",
+            "bbox": [
+              0,
+              0,
+              1000.58,
+              115.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000004176.jpg",
+            "bbox": [
+              0,
+              -1.83,
+              1742.5,
+              256.1
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1013,69 +1033,9 @@
     "end_frame": 4921,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004374.jpg",
-            "bbox": [
-              953.42,
-              242.0,
-              225.53,
-              190.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000004428.jpg",
-            "bbox": [
-              784.41,
-              225.73,
-              227.94,
-              233.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000004534.jpg",
-            "bbox": [
-              701.66,
-              230.28,
-              244.74,
-              242.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000004717.jpg",
-            "bbox": [
-              705.55,
-              131.82,
-              247.54,
-              246.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000004847.jpg",
-            "bbox": [
-              910.24,
-              204.91,
-              242.88,
-              235.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000004897.jpg",
-            "bbox": [
-              411.53,
-              419.84,
-              228.28,
-              223.38
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 99,
-        "class_name": "cereal",
+        "category": "baked goods and grains",
+        "subclass_name": "cereal",
         "name": "cereal",
         "image_crops": [
           {
@@ -1136,7 +1096,8 @@
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "lid",
         "image_crops": [
           {
@@ -1196,69 +1157,71 @@
         ]
       },
       {
-        "class_id": 64,
-        "class_name": "milk",
-        "name": "milk",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000004374.jpg",
             "bbox": [
-              843.87,
-              395.0,
-              315.92,
-              287.61
+              953.42,
+              242.0,
+              225.53,
+              190.38
             ]
           },
           {
             "frame_path": "frame_0000004428.jpg",
             "bbox": [
-              597.28,
-              349.08,
-              292.95,
-              393.69
+              784.41,
+              225.73,
+              227.94,
+              233.03
             ]
           },
           {
             "frame_path": "frame_0000004534.jpg",
             "bbox": [
-              417.57,
-              364.73,
-              349.21,
-              388.06
+              701.66,
+              230.28,
+              244.74,
+              242.1
             ]
           },
           {
             "frame_path": "frame_0000004717.jpg",
             "bbox": [
-              732.36,
-              172.42,
-              200.66,
-              180.91
+              705.55,
+              131.82,
+              247.54,
+              246.03
             ]
           },
           {
             "frame_path": "frame_0000004847.jpg",
             "bbox": [
-              930.93,
-              233.74,
-              196.74,
-              195.08
+              910.24,
+              204.91,
+              242.88,
+              235.47
             ]
           },
           {
             "frame_path": "frame_0000004897.jpg",
             "bbox": [
-              448.63,
-              444.44,
-              173.9,
-              181.03
+              411.53,
+              419.84,
+              228.28,
+              223.38
             ]
           }
         ]
       },
       {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
           {
@@ -1313,6 +1276,68 @@
               583.2,
               159.58,
               30.8
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 64,
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
+        "name": "milk",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004374.jpg",
+            "bbox": [
+              843.87,
+              395.0,
+              315.92,
+              287.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000004428.jpg",
+            "bbox": [
+              597.28,
+              349.08,
+              292.95,
+              393.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000004534.jpg",
+            "bbox": [
+              417.57,
+              364.73,
+              349.21,
+              388.06
+            ]
+          },
+          {
+            "frame_path": "frame_0000004717.jpg",
+            "bbox": [
+              732.36,
+              172.42,
+              200.66,
+              180.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000004847.jpg",
+            "bbox": [
+              930.93,
+              233.74,
+              196.74,
+              195.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000004897.jpg",
+            "bbox": [
+              448.63,
+              444.44,
+              173.9,
+              181.03
             ]
           }
         ]

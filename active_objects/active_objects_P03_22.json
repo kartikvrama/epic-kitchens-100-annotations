@@ -7,24 +7,9 @@
     "end_frame": 409,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000121.jpg",
-            "bbox": [
-              995.45,
-              873.19,
-              300.0,
-              206.81
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -48,8 +33,26 @@
         ]
       },
       {
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000121.jpg",
+            "bbox": [
+              995.45,
+              873.19,
+              300.0,
+              206.81
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -94,8 +97,35 @@
     "end_frame": 1080,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000457.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000000501.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -120,7 +150,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "lunch box",
         "image_crops": [
           {
@@ -139,31 +170,6 @@
               596.98,
               254.19,
               262.86
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000457.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000000501.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
             ]
           }
         ]
@@ -191,8 +197,35 @@
     "end_frame": 1459,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001361.jpg",
+            "bbox": [
+              790.83,
+              0,
+              191.19,
+              609.31
+            ]
+          },
+          {
+            "frame_path": "frame_0000001412.jpg",
+            "bbox": [
+              233.16,
+              0,
+              1178.46,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -226,7 +259,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "lunch box",
         "image_crops": [
           {
@@ -266,31 +300,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001361.jpg",
-            "bbox": [
-              790.83,
-              0,
-              191.19,
-              609.31
-            ]
-          },
-          {
-            "frame_path": "frame_0000001412.jpg",
-            "bbox": [
-              233.16,
-              0,
-              1178.46,
-              1080
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -315,8 +324,35 @@
     "end_frame": 1804,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001486.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000001526.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -350,7 +386,8 @@
       },
       {
         "class_id": 209,
-        "class_name": "drink",
+        "category": "drinks",
+        "subclass_name": "drink",
         "name": "drink",
         "image_crops": [
           {
@@ -399,31 +436,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001486.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000001526.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -448,42 +460,9 @@
     "end_frame": 2301,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001867.jpg",
-            "bbox": [
-              810.92,
-              114.72,
-              489.7,
-              732.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000002009.jpg",
-            "bbox": [
-              841.44,
-              175.0,
-              427.05,
-              774.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000002122.jpg",
-            "bbox": [
-              714.63,
-              765.15,
-              361.75,
-              314.85
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -514,6 +493,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001867.jpg",
+            "bbox": [
+              810.92,
+              114.72,
+              489.7,
+              732.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000002009.jpg",
+            "bbox": [
+              841.44,
+              175.0,
+              427.05,
+              774.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000002122.jpg",
+            "bbox": [
+              714.63,
+              765.15,
+              361.75,
+              314.85
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -538,8 +552,52 @@
     "end_frame": 2911,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002463.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000002493.jpg",
+            "bbox": [
+              787.15,
+              0,
+              1132.85,
+              874.82
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 2,
+        "category": "crockery",
+        "subclass_name": "plate",
+        "name": "plate",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002863.jpg",
+            "bbox": [
+              1453.75,
+              282.82,
+              327.67,
+              22.8
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -570,47 +628,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002463.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000002493.jpg",
-            "bbox": [
-              787.15,
-              0,
-              1132.85,
-              874.82
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 2,
-        "class_name": "plate",
-        "name": "plate",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002863.jpg",
-            "bbox": [
-              1453.75,
-              282.82,
-              327.67,
-              22.8
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -635,24 +652,9 @@
     "end_frame": 3152,
     "objects_in_sequence": [
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003102.jpg",
-            "bbox": [
-              104.42,
-              0,
-              1815.58,
-              156.98
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 184,
-        "class_name": "pancake",
+        "category": "baked goods and grains",
+        "subclass_name": "pancake",
         "name": "pancake",
         "image_crops": [
           {
@@ -677,7 +679,8 @@
       },
       {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -726,6 +729,23 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003102.jpg",
+            "bbox": [
+              104.42,
+              0,
+              1815.58,
+              156.98
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -751,7 +771,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -784,8 +805,35 @@
         ]
       },
       {
+        "class_id": 2,
+        "category": "crockery",
+        "subclass_name": "plate",
+        "name": "plate",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003455.jpg",
+            "bbox": [
+              1084.04,
+              620.52,
+              404.12,
+              421.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000003608.jpg",
+            "bbox": [
+              1115.34,
+              982.24,
+              162.17,
+              97.76
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 36,
-        "class_name": "bin",
+        "category": "rubbish",
+        "subclass_name": "bin",
         "name": "bin/garbage can/recycling bin",
         "image_crops": [
           {
@@ -813,31 +861,6 @@
               879.94,
               491.54,
               200.06
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 2,
-        "class_name": "plate",
-        "name": "plate",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003455.jpg",
-            "bbox": [
-              1084.04,
-              620.52,
-              404.12,
-              421.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000003608.jpg",
-            "bbox": [
-              1115.34,
-              982.24,
-              162.17,
-              97.76
             ]
           }
         ]

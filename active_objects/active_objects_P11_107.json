@@ -7,51 +7,9 @@
     "end_frame": 549,
     "objects_in_sequence": [
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000263.jpg",
-            "bbox": [
-              0,
-              0.18,
-              1310.35,
-              765.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000000332.jpg",
-            "bbox": [
-              0.23,
-              0,
-              1634.24,
-              557.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000000369.jpg",
-            "bbox": [
-              0,
-              0,
-              1541.53,
-              708.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000000407.jpg",
-            "bbox": [
-              0,
-              0,
-              1393.76,
-              333.84
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -91,6 +49,50 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000263.jpg",
+            "bbox": [
+              0,
+              0.18,
+              1310.35,
+              765.06
+            ]
+          },
+          {
+            "frame_path": "frame_0000000332.jpg",
+            "bbox": [
+              0.23,
+              0,
+              1634.24,
+              557.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000000369.jpg",
+            "bbox": [
+              0,
+              0,
+              1541.53,
+              708.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000000407.jpg",
+            "bbox": [
+              0,
+              0,
+              1393.76,
+              333.84
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -115,60 +117,9 @@
     "end_frame": 872,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000613.jpg",
-            "bbox": [
-              1132,
-              508,
-              332,
-              124
-            ]
-          },
-          {
-            "frame_path": "frame_0000000667.jpg",
-            "bbox": [
-              870,
-              771,
-              357,
-              309
-            ]
-          },
-          {
-            "frame_path": "frame_0000000747.jpg",
-            "bbox": [
-              758,
-              180,
-              625,
-              900
-            ]
-          },
-          {
-            "frame_path": "frame_0000000793.jpg",
-            "bbox": [
-              737,
-              309,
-              680,
-              666
-            ]
-          },
-          {
-            "frame_path": "frame_0000000840.jpg",
-            "bbox": [
-              660,
-              462,
-              910,
-              452
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -219,24 +170,35 @@
         ]
       },
       {
-        "class_id": 91,
-        "class_name": "pizza",
-        "name": "pizza",
+        "class_id": 35,
+        "category": "cookware",
+        "subclass_name": "tray",
+        "name": "tray",
         "image_crops": [
+          {
+            "frame_path": "frame_0000000747.jpg",
+            "bbox": [
+              842.45,
+              79.52,
+              645.2,
+              60.19
+            ]
+          },
           {
             "frame_path": "frame_0000000840.jpg",
             "bbox": [
-              875.02,
-              293.66,
-              392.06,
-              324.93
+              728.42,
+              301.48,
+              726.77,
+              442.24
             ]
           }
         ]
       },
       {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -260,26 +222,71 @@
         ]
       },
       {
-        "class_id": 35,
-        "class_name": "tray",
-        "name": "tray",
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "glove",
         "image_crops": [
+          {
+            "frame_path": "frame_0000000613.jpg",
+            "bbox": [
+              1132,
+              508,
+              332,
+              124
+            ]
+          },
+          {
+            "frame_path": "frame_0000000667.jpg",
+            "bbox": [
+              870,
+              771,
+              357,
+              309
+            ]
+          },
           {
             "frame_path": "frame_0000000747.jpg",
             "bbox": [
-              842.45,
-              79.52,
-              645.2,
-              60.19
+              758,
+              180,
+              625,
+              900
+            ]
+          },
+          {
+            "frame_path": "frame_0000000793.jpg",
+            "bbox": [
+              737,
+              309,
+              680,
+              666
             ]
           },
           {
             "frame_path": "frame_0000000840.jpg",
             "bbox": [
-              728.42,
-              301.48,
-              726.77,
-              442.24
+              660,
+              462,
+              910,
+              452
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 91,
+        "category": "prepared food",
+        "subclass_name": "pizza",
+        "name": "pizza",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000840.jpg",
+            "bbox": [
+              875.02,
+              293.66,
+              392.06,
+              324.93
             ]
           }
         ]
@@ -306,92 +313,9 @@
     "end_frame": 1344,
     "objects_in_sequence": [
       {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000923.jpg",
-            "bbox": [
-              528,
-              455,
-              998,
-              572
-            ]
-          },
-          {
-            "frame_path": "frame_0000001216.jpg",
-            "bbox": [
-              650,
-              493,
-              803,
-              587
-            ]
-          },
-          {
-            "frame_path": "frame_0000001282.jpg",
-            "bbox": [
-              533,
-              506,
-              1011,
-              576
-            ]
-          },
-          {
-            "frame_path": "frame_0000001309.jpg",
-            "bbox": [
-              535,
-              207,
-              974,
-              610
-            ]
-          },
-          {
-            "frame_path": "frame_0000001337.jpg",
-            "bbox": [
-              592,
-              312,
-              998,
-              631
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 303,
-        "class_name": "glove:left",
-        "name": "left glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001069.jpg",
-            "bbox": [
-              340,
-              906,
-              102,
-              173
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 304,
-        "class_name": "glove:right",
-        "name": "right glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001069.jpg",
-            "bbox": [
-              1056,
-              557,
-              363,
-              523
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -451,121 +375,9 @@
         ]
       },
       {
-        "class_id": 91,
-        "class_name": "pizza",
-        "name": "pizza",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000923.jpg",
-            "bbox": [
-              700.57,
-              139.54,
-              353.48,
-              294.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000001069.jpg",
-            "bbox": [
-              312.86,
-              71.86,
-              285.09,
-              323.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000001216.jpg",
-            "bbox": [
-              870.01,
-              268.3,
-              411.68,
-              242.0
-            ]
-          },
-          {
-            "frame_path": "frame_0000001282.jpg",
-            "bbox": [
-              237.26,
-              216.81,
-              941.33,
-              486.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000001309.jpg",
-            "bbox": [
-              356.06,
-              32.0,
-              720.32,
-              455.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000001337.jpg",
-            "bbox": [
-              397.53,
-              0.25,
-              674.4,
-              465.21
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 2,
-        "class_name": "plate",
-        "name": "plate",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000923.jpg",
-            "bbox": [
-              656.12,
-              0,
-              630.39,
-              292.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000001069.jpg",
-            "bbox": [
-              203.4,
-              20.5,
-              466.85,
-              419.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000001282.jpg",
-            "bbox": [
-              217.6,
-              0.31,
-              670.45,
-              552.54
-            ]
-          },
-          {
-            "frame_path": "frame_0000001309.jpg",
-            "bbox": [
-              343.04,
-              -0.03,
-              663.51,
-              497.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000001337.jpg",
-            "bbox": [
-              383.72,
-              0.31,
-              682.07,
-              480.45
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "tray",
         "image_crops": [
           {
@@ -623,6 +435,208 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 2,
+        "category": "crockery",
+        "subclass_name": "plate",
+        "name": "plate",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000923.jpg",
+            "bbox": [
+              656.12,
+              0,
+              630.39,
+              292.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000001069.jpg",
+            "bbox": [
+              203.4,
+              20.5,
+              466.85,
+              419.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000001282.jpg",
+            "bbox": [
+              217.6,
+              0.31,
+              670.45,
+              552.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000001309.jpg",
+            "bbox": [
+              343.04,
+              -0.03,
+              663.51,
+              497.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000001337.jpg",
+            "bbox": [
+              383.72,
+              0.31,
+              682.07,
+              480.45
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "glove",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000923.jpg",
+            "bbox": [
+              528,
+              455,
+              998,
+              572
+            ]
+          },
+          {
+            "frame_path": "frame_0000001216.jpg",
+            "bbox": [
+              650,
+              493,
+              803,
+              587
+            ]
+          },
+          {
+            "frame_path": "frame_0000001282.jpg",
+            "bbox": [
+              533,
+              506,
+              1011,
+              576
+            ]
+          },
+          {
+            "frame_path": "frame_0000001309.jpg",
+            "bbox": [
+              535,
+              207,
+              974,
+              610
+            ]
+          },
+          {
+            "frame_path": "frame_0000001337.jpg",
+            "bbox": [
+              592,
+              312,
+              998,
+              631
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 303,
+        "category": "materials",
+        "subclass_name": "glove:left",
+        "name": "left glove",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001069.jpg",
+            "bbox": [
+              340,
+              906,
+              102,
+              173
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 304,
+        "category": "materials",
+        "subclass_name": "glove:right",
+        "name": "right glove",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001069.jpg",
+            "bbox": [
+              1056,
+              557,
+              363,
+              523
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 91,
+        "category": "prepared food",
+        "subclass_name": "pizza",
+        "name": "pizza",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000923.jpg",
+            "bbox": [
+              700.57,
+              139.54,
+              353.48,
+              294.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000001069.jpg",
+            "bbox": [
+              312.86,
+              71.86,
+              285.09,
+              323.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000001216.jpg",
+            "bbox": [
+              870.01,
+              268.3,
+              411.68,
+              242.0
+            ]
+          },
+          {
+            "frame_path": "frame_0000001282.jpg",
+            "bbox": [
+              237.26,
+              216.81,
+              941.33,
+              486.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000001309.jpg",
+            "bbox": [
+              356.06,
+              32.0,
+              720.32,
+              455.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000001337.jpg",
+            "bbox": [
+              397.53,
+              0.25,
+              674.4,
+              465.21
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -647,83 +661,9 @@
     "end_frame": 1780,
     "objects_in_sequence": [
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001729.jpg",
-            "bbox": [
-              271.22,
-              0.18,
-              1065.34,
-              981.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000001769.jpg",
-            "bbox": [
-              33.13,
-              175.53,
-              1887.59,
-              555.31
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 60,
-        "class_name": "glove",
-        "name": "glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001440.jpg",
-            "bbox": [
-              554,
-              208,
-              1033,
-              686
-            ]
-          },
-          {
-            "frame_path": "frame_0000001500.jpg",
-            "bbox": [
-              602,
-              42,
-              800,
-              867
-            ]
-          },
-          {
-            "frame_path": "frame_0000001644.jpg",
-            "bbox": [
-              1106,
-              511,
-              336,
-              501
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 304,
-        "class_name": "glove:right",
-        "name": "right glove",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001601.jpg",
-            "bbox": [
-              993,
-              318,
-              374,
-              321
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -766,7 +706,8 @@
       },
       {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "tray",
         "image_crops": [
           {
@@ -776,6 +717,84 @@
               0,
               893.15,
               702.77
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001729.jpg",
+            "bbox": [
+              271.22,
+              0.18,
+              1065.34,
+              981.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000001769.jpg",
+            "bbox": [
+              33.13,
+              175.53,
+              1887.59,
+              555.31
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 60,
+        "category": "materials",
+        "subclass_name": "glove",
+        "name": "glove",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001440.jpg",
+            "bbox": [
+              554,
+              208,
+              1033,
+              686
+            ]
+          },
+          {
+            "frame_path": "frame_0000001500.jpg",
+            "bbox": [
+              602,
+              42,
+              800,
+              867
+            ]
+          },
+          {
+            "frame_path": "frame_0000001644.jpg",
+            "bbox": [
+              1106,
+              511,
+              336,
+              501
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 304,
+        "category": "materials",
+        "subclass_name": "glove:right",
+        "name": "right glove",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001601.jpg",
+            "bbox": [
+              993,
+              318,
+              374,
+              321
             ]
           }
         ]
@@ -803,76 +822,9 @@
     "end_frame": 2444,
     "objects_in_sequence": [
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001837.jpg",
-            "bbox": [
-              273.6,
-              329.08,
-              1646.4,
-              750.92
-            ]
-          },
-          {
-            "frame_path": "frame_0000001909.jpg",
-            "bbox": [
-              504.79,
-              209.91,
-              1415.21,
-              870.09
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 91,
-        "class_name": "pizza",
-        "name": "pizza",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002101.jpg",
-            "bbox": [
-              790.56,
-              0,
-              1129.44,
-              472.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000002209.jpg",
-            "bbox": [
-              745.53,
-              0,
-              1151.94,
-              481.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000002317.jpg",
-            "bbox": [
-              745.14,
-              61.73,
-              1174.52,
-              489.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000002417.jpg",
-            "bbox": [
-              738.52,
-              130.53,
-              1086.94,
-              455.96
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -914,8 +866,79 @@
         ]
       },
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001837.jpg",
+            "bbox": [
+              273.6,
+              329.08,
+              1646.4,
+              750.92
+            ]
+          },
+          {
+            "frame_path": "frame_0000001909.jpg",
+            "bbox": [
+              504.79,
+              209.91,
+              1415.21,
+              870.09
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 91,
+        "category": "prepared food",
+        "subclass_name": "pizza",
+        "name": "pizza",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002101.jpg",
+            "bbox": [
+              790.56,
+              0,
+              1129.44,
+              472.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000002209.jpg",
+            "bbox": [
+              745.53,
+              0,
+              1151.94,
+              481.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000002317.jpg",
+            "bbox": [
+              745.14,
+              61.73,
+              1174.52,
+              489.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000002417.jpg",
+            "bbox": [
+              738.52,
+              130.53,
+              1086.94,
+              455.96
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 79,
-        "class_name": "scissors",
+        "category": "utensils",
+        "subclass_name": "scissors",
         "name": "scissors",
         "image_crops": [
           {
@@ -997,69 +1020,9 @@
     "end_frame": 3960,
     "objects_in_sequence": [
       {
-        "class_id": 91,
-        "class_name": "pizza",
-        "name": "pizza",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002630.jpg",
-            "bbox": [
-              807.56,
-              -0.94,
-              1112.44,
-              485.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000002863.jpg",
-            "bbox": [
-              743.55,
-              0,
-              1176.45,
-              631.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              50.7,
-              -1.14,
-              1233.74,
-              489.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000003517.jpg",
-            "bbox": [
-              244.54,
-              119.53,
-              953.91,
-              505.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000003701.jpg",
-            "bbox": [
-              40.53,
-              0,
-              1204.92,
-              486.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000003876.jpg",
-            "bbox": [
-              254.54,
-              117.52,
-              966.92,
-              501.96
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -1119,8 +1082,71 @@
         ]
       },
       {
+        "class_id": 91,
+        "category": "prepared food",
+        "subclass_name": "pizza",
+        "name": "pizza",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002630.jpg",
+            "bbox": [
+              807.56,
+              -0.94,
+              1112.44,
+              485.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000002863.jpg",
+            "bbox": [
+              743.55,
+              0,
+              1176.45,
+              631.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              50.7,
+              -1.14,
+              1233.74,
+              489.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000003517.jpg",
+            "bbox": [
+              244.54,
+              119.53,
+              953.91,
+              505.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000003701.jpg",
+            "bbox": [
+              40.53,
+              0,
+              1204.92,
+              486.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000003876.jpg",
+            "bbox": [
+              254.54,
+              117.52,
+              966.92,
+              501.96
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 79,
-        "class_name": "scissors",
+        "category": "utensils",
+        "subclass_name": "scissors",
         "name": "scissors",
         "image_crops": [
           {
@@ -1203,7 +1229,8 @@
     "objects_in_sequence": [
       {
         "class_id": 70,
-        "class_name": "dishwasher",
+        "category": "appliances",
+        "subclass_name": "dishwasher",
         "name": "dishwasher",
         "image_crops": [
           {
@@ -1236,8 +1263,26 @@
         ]
       },
       {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004740.jpg",
+            "bbox": [
+              757.42,
+              0,
+              1162.58,
+              367.21
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 91,
-        "class_name": "pizza",
+        "category": "prepared food",
+        "subclass_name": "pizza",
         "name": "pizza",
         "image_crops": [
           {
@@ -1271,7 +1316,8 @@
       },
       {
         "class_id": 79,
-        "class_name": "scissors",
+        "category": "utensils",
+        "subclass_name": "scissors",
         "name": "scissors",
         "image_crops": [
           {
@@ -1320,22 +1366,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004740.jpg",
-            "bbox": [
-              757.42,
-              0,
-              1162.58,
-              367.21
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1360,8 +1390,44 @@
     "end_frame": 5130,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004830.jpg",
+            "bbox": [
+              499.54,
+              28.55,
+              360.48,
+              420.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000004857.jpg",
+            "bbox": [
+              373.67,
+              141.23,
+              391.95,
+              389.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000004884.jpg",
+            "bbox": [
+              -0.26,
+              542.2,
+              356.05,
+              303.27
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 14,
-        "class_name": "fork",
+        "category": "cutlery",
+        "subclass_name": "fork",
         "name": "fork",
         "image_crops": [
           {
@@ -1385,24 +1451,9 @@
         ]
       },
       {
-        "class_id": 88,
-        "class_name": "napkin",
-        "name": "tissue paper",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005092.jpg",
-            "bbox": [
-              681.52,
-              622.2,
-              233.87,
-              222.3
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -1435,35 +1486,18 @@
         ]
       },
       {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
+        "class_id": 88,
+        "category": "materials",
+        "subclass_name": "napkin",
+        "name": "tissue paper",
         "image_crops": [
           {
-            "frame_path": "frame_0000004830.jpg",
+            "frame_path": "frame_0000005092.jpg",
             "bbox": [
-              499.54,
-              28.55,
-              360.48,
-              420.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000004857.jpg",
-            "bbox": [
-              373.67,
-              141.23,
-              391.95,
-              389.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000004884.jpg",
-            "bbox": [
-              -0.26,
-              542.2,
-              356.05,
-              303.27
+              681.52,
+              622.2,
+              233.87,
+              222.3
             ]
           }
         ]
@@ -1489,33 +1523,9 @@
     "end_frame": 5922,
     "objects_in_sequence": [
       {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005375.jpg",
-            "bbox": [
-              995.55,
-              -1.91,
-              402.83,
-              523.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000005430.jpg",
-            "bbox": [
-              803.5,
-              122.54,
-              506.92,
-              604.42
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 70,
-        "class_name": "dishwasher",
+        "category": "appliances",
+        "subclass_name": "dishwasher",
         "name": "dishwasher",
         "image_crops": [
           {
@@ -1539,8 +1549,35 @@
         ]
       },
       {
+        "class_id": 2,
+        "category": "crockery",
+        "subclass_name": "plate",
+        "name": "plate",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005846.jpg",
+            "bbox": [
+              383.54,
+              231.55,
+              962.91,
+              690.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000005900.jpg",
+            "bbox": [
+              577.55,
+              282.56,
+              1229.9,
+              516.48
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 14,
-        "class_name": "fork",
+        "category": "cutlery",
+        "subclass_name": "fork",
         "name": "fork",
         "image_crops": [
           {
@@ -1583,7 +1620,8 @@
       },
       {
         "class_id": 88,
-        "class_name": "napkin",
+        "category": "materials",
+        "subclass_name": "napkin",
         "name": "tissue paper",
         "image_crops": [
           {
@@ -1608,7 +1646,8 @@
       },
       {
         "class_id": 91,
-        "class_name": "pizza",
+        "category": "prepared food",
+        "subclass_name": "pizza",
         "name": "pizza",
         "image_crops": [
           {
@@ -1632,26 +1671,27 @@
         ]
       },
       {
-        "class_id": 2,
-        "class_name": "plate",
-        "name": "plate",
+        "class_id": 36,
+        "category": "rubbish",
+        "subclass_name": "bin",
+        "name": "bin",
         "image_crops": [
           {
-            "frame_path": "frame_0000005846.jpg",
+            "frame_path": "frame_0000005375.jpg",
             "bbox": [
-              383.54,
-              231.55,
-              962.91,
-              690.91
+              995.55,
+              -1.91,
+              402.83,
+              523.07
             ]
           },
           {
-            "frame_path": "frame_0000005900.jpg",
+            "frame_path": "frame_0000005430.jpg",
             "bbox": [
-              577.55,
-              282.56,
-              1229.9,
-              516.48
+              803.5,
+              122.54,
+              506.92,
+              604.42
             ]
           }
         ]

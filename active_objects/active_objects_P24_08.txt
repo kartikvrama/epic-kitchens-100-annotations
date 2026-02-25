@@ -24,7 +24,7 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [257, 466, 765, 831, 1044, 1142]
-Objects in sequence: ['cupboard (cupboard)', 'pasta (pasta)', 'pot (pot)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'baked goods and grains (pasta) (pasta)', 'cookware (pot) (pot)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open door;1.41;11.3', 'pick up pot;12.02;14.92', 'open tap;16.31;20.14']
 ************
 Start timestamp: 17.0, Stop timestamp: 24.89
@@ -53,7 +53,7 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [1557, 1684, 2041, 2133, 2433, 2460]
-Objects in sequence: ['cupboard (cupboard)', 'hob (stove)', 'pot (pot)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (hob) (stove)', 'appliances (tap) (tap)', 'cookware (pot) (pot)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['pick up pot;24.67;29.29', 'turn on stove;33.15;36.79', 'pick up lid;40.27;41.62']
 ************
 Start timestamp: 41.57, Stop timestamp: 42.49
@@ -76,7 +76,7 @@ Narration: open door
 ------
 ************
 Frame IDs in sequence: [2615, 2655, 2758, 2866, 2975, 3078]
-Objects in sequence: ['cupboard (cupboard)', 'lid (lid)', 'pot (pot)']
+Objects in sequence: ['containers (lid) (lid)', 'cookware (pot) (pot)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['put lid on pot;43.28;44.39', 'close door;45.47;46.82', 'open door;48.93;51.8']
 ************
 Start timestamp: 52.34, Stop timestamp: 53.55
@@ -90,7 +90,7 @@ Narration: close door
 ------
 ************
 Frame IDs in sequence: [3174, 3205, 3237, 3274, 3323, 3364]
-Objects in sequence: ['cupboard (cupboard)', 'plate (plate)']
+Objects in sequence: ['crockery (plate) (plate)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['pick up plate;52.34;53.55', 'put down plate;53.65;55.01', 'close door;55.02;56.44']
 ************
 Start timestamp: 57.67, Stop timestamp: 59.64
@@ -104,7 +104,7 @@ Narration: open door
 ------
 ************
 Frame IDs in sequence: [3488, 3537, 3906, 4418, 4923, 4951]
-Objects in sequence: ['cupboard (cupboard)', 'pasta (pasta)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (pasta) (pasta)', 'crockery (plate) (plate)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['pick up pasta;57.67;59.64', 'pour pasta onto plate;61.52;77.41', 'open door;82.03999999999999;82.76']
 ************
 Start timestamp: 82.86, Stop timestamp: 84.21000000000001
@@ -118,7 +118,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [4990, 5031, 5074, 5400, 5478]
-Objects in sequence: ['cupboard (cupboard)', 'fridge (fridge)', 'pasta (pasta)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'baked goods and grains (pasta) (pasta)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['put down pasta;82.86;84.21000000000001', 'close door;84.31;85.86', 'open fridge;89.64;91.78999999999999']
 ************
 Start timestamp: 91.71000000000001, Stop timestamp: 93.43
@@ -135,7 +135,7 @@ Narration: put bottle down
 ------
 ************
 Frame IDs in sequence: [5655, 5681, 5738, 5843, 5906]
-Objects in sequence: ['bottle (bottle)', 'fridge (fridge)', 'onion (onion)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (bottle) (bottle)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['grab onion;93.97999999999999;95.08', 'close fridge;95.18;96.24000000000001', 'put bottle down;97.25999999999999;98.97']
 ************
 Start timestamp: 99.06, Stop timestamp: 100.53999999999999
@@ -149,7 +149,7 @@ Narration: grab chopping board
 ------
 ************
 Frame IDs in sequence: [5959, 5995, 6041, 6089, 6164, 6239]
-Objects in sequence: ['cupboard (cupboard)', 'onion (onion)', 'plate (plate)']
+Objects in sequence: ['crockery (plate) (plate)', 'storage (cupboard) (cupboard)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['move plate aside;99.06;100.53999999999999', 'open cupboard;101.22999999999999;101.94', 'grab chopping board;103.63;104.82']
 ************
 Start timestamp: 106.38, Stop timestamp: 107.3
@@ -166,7 +166,7 @@ Narration: cut onion
 ------
 ************
 Frame IDs in sequence: [6385, 6413, 6563, 6723, 8591, 8869]
-Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)', 'knife (knife)', 'onion (onion)']
+Objects in sequence: ['cutlery (knife) (knife)', 'storage (cupboard) (cupboard)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['grab knife;106.38;107.3', 'cut onion;108.64;112.5', 'cut onion;141.91;150.12']
 ************
 Start timestamp: 149.62, Stop timestamp: 158.25
@@ -183,7 +183,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [9702, 10061, 10870, 10897, 11245, 11298]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'onion (onion)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['cut onion;158.35;170.18', 'put knife;180.92;182.2', 'open fridge;187.43;188.32']
 ************
 Start timestamp: 189.12, Stop timestamp: 190.67
@@ -203,7 +203,7 @@ Narration: pick up onion peel
 ------
 ************
 Frame IDs in sequence: [11366, 11418, 11587, 11648, 11901, 12120]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'onion (onion)', 'skin (onion peel)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'cutlery (knife) (knife)', 'rubbish (skin) (onion peel)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put onion;189.12;190.67', 'pick up knife;192.94;194.31', 'pick up onion peel;197.57999999999998;203.01']
 ************
 Start timestamp: 206.78, Stop timestamp: 209.69
@@ -217,7 +217,7 @@ Narration: pick up pan
 ------
 ************
 Frame IDs in sequence: [12473, 12548, 12793, 12829, 12878, 12945]
-Objects in sequence: ['bag (bag)', 'cupboard (cupboard)', 'pan (pan)', 'skin (onion peel)']
+Objects in sequence: ['containers (bag) (bag)', 'cookware (pan) (pan)', 'rubbish (skin) (onion peel)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['throw onion peel;206.78;209.69', 'open door;213.0;214.03', 'pick up pan;214.09;216.27']
 ************
 Start timestamp: 219.29, Stop timestamp: 220.52
@@ -231,7 +231,7 @@ Narration: pick up coffee pot
 ------
 ************
 Frame IDs in sequence: [13182, 13273, 13364, 13478, 13567, 13600]
-Objects in sequence: ['cloth (dish cloth)', 'maker:coffee (coffee pot)', 'oven (oven)', 'pan (pan)']
+Objects in sequence: ['appliances (maker:coffee) (coffee pot)', 'appliances (oven) (oven)', 'cleaning equipment and material (cloth) (dish cloth)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['dry pan;219.29;220.52', 'put dish cloth;221.55;225.97', 'pick up coffee pot;226.11;226.74']
 ************
 Start timestamp: 227.02, Stop timestamp: 227.82999999999998
@@ -245,7 +245,7 @@ Narration: turn on cooker
 ------
 ************
 Frame IDs in sequence: [13628, 13664, 13777, 13816, 13881, 14015]
-Objects in sequence: ['hob (hob)', 'maker:coffee (coffee pot)', 'oven (cooker)', 'pan (pan)']
+Objects in sequence: ['appliances (hob) (hob)', 'appliances (maker:coffee) (coffee pot)', 'appliances (oven) (cooker)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['put coffee pot;227.02;227.82999999999998', 'put pan on the cooker;229.2;230.4', 'turn on cooker;230.5;235.13']
 ************
 Start timestamp: 240.09, Stop timestamp: 241.85
@@ -262,7 +262,7 @@ Narration: pick up oil bottle
 ------
 ************
 Frame IDs in sequence: [14434, 14475, 14734, 14763, 14867, 14910]
-Objects in sequence: ['bottle (oil bottle)', 'hob (hob)', 'pan (pan)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (bottle) (oil bottle)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['pick up pan;240.09;241.85', 'put pan;244.8;246.79', 'pick up oil bottle;247.45;248.96']
 ************
 Start timestamp: 249.04, Stop timestamp: 251.39
@@ -276,7 +276,7 @@ Narration: close oil bottle
 ------
 ************
 Frame IDs in sequence: [14978, 15046, 15166, 15220, 15288, 15433]
-Objects in sequence: ['bottle (oil bottle)', 'oil (oil)', 'pan (pan)']
+Objects in sequence: ['containers (bottle) (oil bottle)', 'cookware (pan) (pan)', 'spices and herbs and sauces (oil) (oil)']
 Verb-noun pairs in sequence: ['open oil bottle;249.04;251.39', 'pour oil in the pan;251.88;254.3', 'close oil bottle;254.43;257.79']
 ************
 Start timestamp: 256.63, Stop timestamp: 259.04
@@ -296,7 +296,7 @@ Narration: throw onion in the pan
 ------
 ************
 Frame IDs in sequence: [15728, 16157, 16818, 17226, 17780, 18169]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'onion (onion)', 'pan (pan)']
+Objects in sequence: ['cookware (pan) (pan)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['cut onion;259.16;271.57', 'cut onion;278.5;291.25', 'throw onion in the pan;293.61;305.67']
 ************
 Start timestamp: 303.37, Stop timestamp: 327.17
@@ -319,7 +319,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [19612, 19762, 19968, 20022, 20121, 20151]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'hob (hob/cooktop/stovetop)', 'onion (onion)', 'pan (pan)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (hob) (hob/cooktop/stovetop)', 'cookware (pan) (pan)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['move onion on the pan;324.98;330.59', 'put chopping board;332.15;334.25', 'open fridge;334.90999999999997;336.09000000000003']
 ************
 Start timestamp: 336.14, Stop timestamp: 340.19
@@ -336,7 +336,7 @@ Narration: open olives box
 ------
 ************
 Frame IDs in sequence: [20247, 20365, 20783, 20943, 21370, 21519]
-Objects in sequence: ['box (olive box)', 'fridge (fridge)', 'hob (hob/cooktop/stovetop)', 'package (package)', 'pan (pan)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (hob) (hob/cooktop/stovetop)', 'containers (box) (olive box)', 'containers (package) (package)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['pick up package from fridge;336.14;340.19', 'adjust stove flame;345.26;351.21', 'open olives box;355.23;359.40999999999997']
 ************
 Start timestamp: 360.43, Stop timestamp: 361.17
@@ -353,7 +353,7 @@ Narration: slice olive
 ------
 ************
 Frame IDs in sequence: [21628, 21669, 21750, 21790, 22313, 22562]
-Objects in sequence: ['cupboard (cupboard)', 'knife (knife)', 'olive (olive)', 'package (olive package)']
+Objects in sequence: ['containers (package) (olive package)', 'cutlery (knife) (knife)', 'fruits and nuts (olive) (olive)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['close door;360.43;361.17', 'pick up olives;362.44;363.26', 'slice olive;370.34;379.19']
 ************
 Start timestamp: 378.45, Stop timestamp: 381.86
@@ -379,7 +379,7 @@ Narration: take olive
 ------
 ************
 Frame IDs in sequence: [23005, 23154, 24634, 25678, 26217, 26303]
-Objects in sequence: ['knife (knife)', 'olive (olive)', 'package (olive package)']
+Objects in sequence: ['containers (package) (olive package)', 'cutlery (knife) (knife)', 'fruits and nuts (olive) (olive)']
 Verb-noun pairs in sequence: ['slice olive;381.88;387.12', 'slice olive;404.0;435.72', 'take olive;435.82;439.35']
 ************
 Start timestamp: 439.38, Stop timestamp: 444.32
@@ -393,7 +393,7 @@ Narration: take wooden spoon
 ------
 ************
 Frame IDs in sequence: [26462, 26594, 26747]
-Objects in sequence: ['cupboard (cupboard)', 'hob (hob/cooktop/stovetop)', 'knife (knife)', 'olive (olive)', 'onion (onion)', 'package (olive package)', 'pan (pan)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'containers (package) (olive package)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'fruits and nuts (olive) (olive)', 'storage (cupboard) (cupboard)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['slice olive;439.38;444.32', 'open door;445.48;446.09', 'take wooden spoon;446.09;447.22']
 ************
 Start timestamp: 447.32, Stop timestamp: 453.78
@@ -410,7 +410,7 @@ Narration: cut olive
 ------
 ************
 Frame IDs in sequence: [26856, 26966, 27148, 27833, 28020, 28259]
-Objects in sequence: ['cupboard (cupboard)', 'hob (hob/cooktop/stovetop)', 'knife (knife)', 'olive (olive)', 'onion (onion)', 'package (olive package)', 'pan (pan)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'containers (package) (olive package)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'fruits and nuts (olive) (olive)', 'storage (cupboard) (cupboard)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['move onion in pan;447.32;453.78', 'put down wooden spoon;463.47;464.23', 'cut olive;464.38;473.36']
 ************
 Start timestamp: 468.62, Stop timestamp: 474.93
@@ -430,7 +430,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [28561, 28671, 28820, 28867, 29223, 29295]
-Objects in sequence: ['fridge (fridge)', 'knife (knife)', 'olive (olive)', 'package (olive package)', 'pan (pan)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (olive package)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'fruits and nuts (olive) (olive)']
 Verb-noun pairs in sequence: ['close package of olives;475.44;478.40999999999997', 'open fridge;480.19;481.27', 'close fridge;486.13;488.48']
 ************
 Start timestamp: 491.63, Stop timestamp: 493.27
@@ -447,7 +447,7 @@ Narration: cut olive
 ------
 ************
 Frame IDs in sequence: [29520, 29582, 29708, 30092, 30452, 30813]
-Objects in sequence: ['bag (bag)', 'board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'olive (olive)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (bag) (bag)', 'cutlery (knife) (knife)', 'fruits and nuts (olive) (olive)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down knife;491.63;493.27', 'throw away olive seeds;494.95;495.82', 'cut olive;498.66;516.43']
 ************
 Start timestamp: 503.42, Stop timestamp: 507.09
@@ -467,7 +467,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [31262, 31714, 32022, 32073, 32138, 32164]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'olive (olive)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'cutlery (knife) (knife)', 'fruits and nuts (olive) (olive)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['cut olives;519.32;531.32', 'put down knife;533.33;534.93', 'open fridge;535.12;536.49']
 ************
 Start timestamp: 536.59, Stop timestamp: 539.01
@@ -481,7 +481,7 @@ Narration: put down salad bowl
 ------
 ************
 Frame IDs in sequence: [32217, 32298, 32404, 32456, 32556, 32656, 32719]
-Objects in sequence: ['bowl (salad bowl)', 'fridge (fridge)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'crockery (bowl) (salad bowl)', 'cutlery (spoon) (wooden spoon)']
 Verb-noun pairs in sequence: ['pick up salad;536.59;539.01', 'close fridge;539.11;541.74', 'put down salad bowl;543.61;545.94']
 ************
 Start timestamp: 548.14, Stop timestamp: 549.01
@@ -501,7 +501,7 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [32907, 34013, 34265, 34404, 34453]
-Objects in sequence: ['bowl (salad bowl)', 'hob (hob)', 'lid (lid)', 'onion (onion)', 'pan (pan)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'crockery (bowl) (salad bowl)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['pick up wooden spoon;548.14;549.01', 'stir onion in pan;565.47;572.57', 'pick up lid;573.28;574.42']
 ************
 Start timestamp: 574.84, Stop timestamp: 577.4
@@ -515,7 +515,7 @@ Narration: put wooden spoon
 ------
 ************
 Frame IDs in sequence: [34516, 34600, 34697, 34727, 34900, 34987, 35073]
-Objects in sequence: ['hob (hob)', 'lid (lid)', 'onion (onion)', 'pan (pan)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cutlery (spoon) (wooden spoon)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put down lid;574.84;577.4', 'pick up wooden spoon;578.2;579.04', 'put wooden spoon;584.32;585.29']
 ************
 Start timestamp: 585.91, Stop timestamp: 586.88
@@ -529,7 +529,7 @@ Narration: pick up salt
 ------
 ************
 Frame IDs in sequence: [35172, 35342, 35526, 35588]
-Objects in sequence: ['box (salt box)', 'hob (hob)', 'lid (lid)', 'pan (pan)', 'pot (pot)', 'salt (salt)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (box) (salt box)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'spices and herbs and sauces (salt) (salt)']
 Verb-noun pairs in sequence: ['pick up lid;585.91;586.88', 'open salt box;588.84;589.62', 'pick up salt;591.44;593.94']
 ************
 Start timestamp: 594.29, Stop timestamp: 601.02
@@ -543,7 +543,7 @@ Narration: put lid on the pot
 ------
 ************
 Frame IDs in sequence: [35768, 35885, 36003, 36157, 36234, 36300, 36367, 36397]
-Objects in sequence: ['box (salt box)', 'hob (hob)', 'lid (lid)', 'pot (pot)', 'salt (salt)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (box) (salt box)', 'containers (lid) (lid)', 'cookware (pot) (pot)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (salt) (salt)']
 Verb-noun pairs in sequence: ['put salt in the pot;594.29;601.02', 'close salt box;602.43;604.55', 'put lid on the pot;605.85;606.97']
 ************
 Start timestamp: 607.49, Stop timestamp: 608.33
@@ -563,7 +563,7 @@ Narration: stir water in saucepan
 ------
 ************
 Frame IDs in sequence: [36474, 36782, 36969, 37216, 37298]
-Objects in sequence: ['hob (hob)', 'lid (lid)', 'onion (onion)', 'pan (pan)', 'pot (pot)', 'spoon (spoon)', 'spoon (wooden spoon)', 'water (water)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'drinks (water) (water)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['pick up wooden spoon;607.49;608.33', 'move onion in the pot;611.18;618.42', 'stir water in saucepan;619.62;622.05']
 ************
 Start timestamp: 622.66, Stop timestamp: 624.18
@@ -577,7 +577,7 @@ Narration: open sauce bottle
 ------
 ************
 Frame IDs in sequence: [37373, 37420, 37488, 37538, 37652]
-Objects in sequence: ['bottle (sauce bottle)', 'hob (hob)', 'lid (lid)', 'onion (onion)', 'pan (pan)', 'pot (pot)', 'spoon (spoon)', 'spoon (wooden spoon)', 'water (water)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (bottle) (sauce bottle)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'drinks (water) (water)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put down lid;622.66;624.18', 'put down wooden spoon;624.7;625.77', 'open sauce bottle;626.99;628.41']
 ************
 Start timestamp: 631.79, Stop timestamp: 633.12
@@ -591,7 +591,7 @@ Narration: put down sauce bottle
 ------
 ************
 Frame IDs in sequence: [37914, 37960, 38250, 38561, 39115, 39210]
-Objects in sequence: ['bottle (sauce bottle)', 'hob (hob)', 'pan (pan)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (bottle) (sauce bottle)', 'cookware (pan) (pan)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['take wooden spoon;631.79;633.12', 'pour sauce into pan;635.47;644.11', 'put down sauce bottle;650.97;654.48']
 ************
 Start timestamp: 654.27, Stop timestamp: 661.69
@@ -611,7 +611,7 @@ Narration: close saucepan
 ------
 ************
 Frame IDs in sequence: [39717, 39754, 39807, 39861, 40043, 40121]
-Objects in sequence: ['bottle (sauce bottle)', 'hob (hob)', 'lid (lid)', 'pan (pan)', 'pasta (pasta)', 'plate (plate)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'containers (bottle) (sauce bottle)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'crockery (plate) (plate)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['put down wooden spoon;661.76;662.76', 'take plate;662.86;664.71', 'close saucepan;666.82;669.09']
 ************
 Start timestamp: 669.26, Stop timestamp: 671.26
@@ -625,7 +625,7 @@ Narration: slice olives
 ------
 ************
 Frame IDs in sequence: [40195, 40238, 40301, 40331, 40451, 40645]
-Objects in sequence: ['hob (hob)', 'knife (knife)', 'lid (lid)', 'olive (olive)', 'pan (pan)', 'plate (plate)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'fruits and nuts (olive) (olive)']
 Verb-noun pairs in sequence: ['take wooden spoon;669.26;671.26', 'put down wooden spoon;671.36;672.36', 'slice olives;672.46;678.62']
 ************
 Start timestamp: 673.25, Stop timestamp: 673.93
@@ -642,7 +642,7 @@ Narration: put olives into pan
 ------
 ************
 Frame IDs in sequence: [40795, 40903, 41112, 41145, 41262, 41331]
-Objects in sequence: ['board:chopping (chopping board)', 'hob (hob)', 'knife (knife)', 'olive (olive)', 'pan (pan)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'fruits and nuts (olive) (olive)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['adjust flame;679.18;682.72', 'take cutting board;684.93;685.97', 'put olives into pan;686.5;689.71']
 ************
 Start timestamp: 691.17, Stop timestamp: 691.9
@@ -659,7 +659,7 @@ Narration: stir sauce
 ------
 ************
 Frame IDs in sequence: [41482, 41513, 41528, 41655, 41702]
-Objects in sequence: ['board:chopping (chopping board)', 'hob (hob)', 'knife (knife)', 'olive (olive)', 'pan (pan)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'fruits and nuts (olive) (olive)', 'spices and herbs and sauces (sauce) (sauce)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down cutting board;691.17;691.9', 'put down knife;692.0;692.76', 'stir sauce;694.18;695.49']
 ************
 Start timestamp: 703.04, Stop timestamp: 703.97
@@ -673,7 +673,7 @@ Narration: take salt
 ------
 ************
 Frame IDs in sequence: [42202, 42471, 42565, 42683, 42715]
-Objects in sequence: ['box (salt box)', 'hob (hob)', 'knife (knife)', 'pan (pan)', 'salt (salt)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (box) (salt box)', 'cookware (pan) (pan)', 'cutlery (knife) (knife)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (salt) (salt)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['put down wooden spoon;703.04;703.97', 'open salt box;707.15;710.03', 'take salt;710.83;712.25']
 ************
 Start timestamp: 711.26, Stop timestamp: 716.26
@@ -690,7 +690,7 @@ Narration: stir sauce in pan
 ------
 ************
 Frame IDs in sequence: [43086, 43134, 43244, 43304, 43376, 43423]
-Objects in sequence: ['box (salt box)', 'hob (hob)', 'pan (pan)', 'salt (salt)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (box) (salt box)', 'cookware (pan) (pan)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (salt) (salt)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['close box of salt;717.64;719.69', 'pick up wooden spoon;720.41;721.05', 'stir sauce in pan;721.15;723.7']
 ************
 Start timestamp: 723.8, Stop timestamp: 726.46
@@ -704,7 +704,7 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [43470, 43544, 43623, 43691, 43856]
-Objects in sequence: ['hob (hob)', 'pan (pan)', 'sauce (sauce)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'cookware (pan) (pan)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['put down pan;723.8;726.46', 'pick up spoon;726.56;728.5', 'put down spoon;730.37;731.62']
 ************
 Start timestamp: 733.95, Stop timestamp: 735.21
@@ -718,7 +718,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [44041, 44082, 44218, 44385, 44475, 44535]
-Objects in sequence: ['fridge (fridge)', 'package (mozzarella package)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (mozzarella package)']
 Verb-noun pairs in sequence: ['open fridge;733.95;735.21', 'pick up mozzarella;735.31;740.93', 'close fridge;741.03;742.65']
 ************
 Start timestamp: 745.51, Stop timestamp: 747.83
@@ -732,7 +732,7 @@ Narration: put down mozzarella
 ------
 ************
 Frame IDs in sequence: [44761, 44836, 45095, 45169]
-Objects in sequence: ['package (mozzarella package)']
+Objects in sequence: ['containers (package) (mozzarella package)']
 Verb-noun pairs in sequence: ['open mozzarella package;745.51;747.83', 'pick up mozzarella;750.61;753.34', 'put down mozzarella;753.34;754.36']
 ************
 Start timestamp: 755.59, Stop timestamp: 756.59
@@ -746,7 +746,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [45356, 45394, 45453, 45496, 45561, 45597]
-Objects in sequence: ['fridge (fridge)', 'package (mozzarella package)', 'sink (sink)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (mozzarella package)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['open fridge;755.59;756.59', 'put away mozzarella package;757.19;758.62', 'close fridge;759.17;760.44']
 ************
 Start timestamp: 763.19, Stop timestamp: 769.88
@@ -760,7 +760,7 @@ Narration: cut mozzarella package
 ------
 ************
 Frame IDs in sequence: [45918, 46062, 46302, 46337, 46487, 46639]
-Objects in sequence: ['bowl (salad bowl)', 'fridge (fridge)', 'knife (knife)', 'package (mozzarella package)', 'sink (sink)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (mozzarella package)', 'crockery (bowl) (salad bowl)', 'cutlery (knife) (knife)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['open mozzarella package;763.19;769.88', 'drain mozzarella package;771.24;772.74', 'cut mozzarella package;772.84;778.94']
 ************
 Start timestamp: 783.69, Stop timestamp: 785.94
@@ -774,7 +774,7 @@ Narration: cut mozzarella slices into salad bowl
 ------
 ************
 Frame IDs in sequence: [47058, 47140, 47423, 47630, 48169, 48801, 49125]
-Objects in sequence: ['bowl (salad bowl)', 'cheese (mozzarella)', 'cheese (mozzarella slice)', 'hob (hob)', 'knife (knife)', 'package (mozzarella package)', 'pan (pan)', 'sauce (sauce)', 'sink (sink)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (package) (mozzarella package)', 'cookware (pan) (pan)', 'crockery (bowl) (salad bowl)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (mozzarella)', 'dairy and eggs (cheese) (mozzarella slice)', 'furniture (sink) (sink)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['pick up mozzarella;783.69;785.94', 'cut mozzarella slices into salad bowl;788.39;796.38', 'cut mozzarella slices into salad bowl;796.62;822.16']
 ************
 Start timestamp: 823.77, Stop timestamp: 824.53
@@ -788,7 +788,7 @@ Narration: stir sauce
 ------
 ************
 Frame IDs in sequence: [49450, 49612, 49789, 49966, 50058]
-Objects in sequence: ['bowl (salad bowl)', 'cheese (mozzarella slice)', 'hob (hob)', 'knife (knife)', 'lid (lid)', 'pan (pan)', 'pan (saucepan)', 'pot (pot)', 'sauce (sauce)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cookware (pan) (saucepan)', 'cookware (pot) (pot)', 'crockery (bowl) (salad bowl)', 'cutlery (knife) (knife)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'dairy and eggs (cheese) (mozzarella slice)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['pick up wooden spoon;823.77;824.53', 'stir sauce;824.62;831.15', 'stir sauce;831.7;835.59']
 ************
 Start timestamp: 835.59, Stop timestamp: 836.98
@@ -808,7 +808,7 @@ Narration: stir sauce
 ------
 ************
 Frame IDs in sequence: [50297, 50511, 50646, 50680, 50845, 51042]
-Objects in sequence: ['bottle (bottle)', 'hob (hob)', 'hob (hob/cooktop/stovetop)', 'lid (lid)', 'pan (pan)', 'pan (saucepan)', 'pot (pot)', 'sauce (sauce)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'appliances (hob) (hob/cooktop/stovetop)', 'containers (bottle) (bottle)', 'containers (lid) (lid)', 'cookware (pan) (pan)', 'cookware (pan) (saucepan)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['pick up lid;835.59;836.98', 'close lid;843.89;844.85', 'stir sauce;846.18;852.07']
 ************
 Start timestamp: 850.29, Stop timestamp: 851.62
@@ -831,7 +831,7 @@ Narration: put bottle in fridge
 ------
 ************
 Frame IDs in sequence: [51531, 51624, 51871, 51924, 52001]
-Objects in sequence: ['bottle (bottle)', 'fridge (fridge)', 'hob (hob/cooktop/stovetop)', 'package (mozzarella package)', 'pan (pan)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (hob) (hob/cooktop/stovetop)', 'containers (bottle) (bottle)', 'containers (package) (mozzarella package)', 'cookware (pan) (pan)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['take bottle;857.84;861.24', 'open fridge;864.27;865.78', 'put bottle in fridge;866.3;867.54']
 ************
 Start timestamp: 867.51, Stop timestamp: 868.66
@@ -848,7 +848,7 @@ Narration: mix salad
 ------
 ************
 Frame IDs in sequence: [52216, 52288, 52478, 52597, 53080, 53331]
-Objects in sequence: ['bowl (salad bowl)', 'cheese (cheese)', 'fridge (fridge)', 'knife (knife)', 'package (mozzarella package)', 'salad (salad)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (mozzarella package)', 'crockery (bowl) (salad bowl)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (cheese)', 'prepared food (salad) (salad)']
 Verb-noun pairs in sequence: ['take mozzarella bag;869.41;871.8', 'throw mozzarella bag;873.51;877.94', 'mix salad;881.97;891.0']
 ************
 Start timestamp: 888.63, Stop timestamp: 891.23
@@ -865,7 +865,7 @@ Narration: close freezer
 ------
 ************
 Frame IDs in sequence: [53514, 53569, 53616, 53680, 53796, 53858]
-Objects in sequence: ['container (cheese container)', 'freezer (freezer)', 'fridge (fridge)']
+Objects in sequence: ['appliances (freezer) (freezer)', 'appliances (fridge) (fridge)', 'containers (container) (cheese container)']
 Verb-noun pairs in sequence: ['open freezer;891.8;892.87', 'pick up cheese;892.96;895.57', 'close freezer;895.89;898.13']
 ************
 Start timestamp: 896.93, Stop timestamp: 897.58
@@ -882,7 +882,7 @@ Narration: move oil into the salad bowl
 ------
 ************
 Frame IDs in sequence: [54214, 54265, 54373, 54469, 54587, 54714]
-Objects in sequence: ['bottle (oil bottle)', 'bowl (salad bowl)', 'container (cheese container)', 'freezer (freezer)']
+Objects in sequence: ['appliances (freezer) (freezer)', 'containers (bottle) (oil bottle)', 'containers (container) (cheese container)', 'crockery (bowl) (salad bowl)']
 Verb-noun pairs in sequence: ['pick up oil bottle;902.9;904.89', 'open oil bottle;905.46;908.27', 'move oil into the salad bowl;908.39;913.31']
 ************
 Start timestamp: 913.45, Stop timestamp: 916.05
@@ -899,7 +899,7 @@ Narration: pick up pot lid
 ------
 ************
 Frame IDs in sequence: [54869, 54920, 55047, 55080, 55251, 55282]
-Objects in sequence: ['bag (oregano bag)', 'bottle (oil bottle)', 'hob (hob)', 'lid (pot lid)', 'pot (pot)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (bag) (oregano bag)', 'containers (bottle) (oil bottle)', 'containers (lid) (pot lid)', 'cookware (pot) (pot)']
 Verb-noun pairs in sequence: ['close oil bottle;913.45;916.05', 'pick up oregano envelope;917.02;918.02', 'pick up pot lid;920.79;921.77']
 ************
 Start timestamp: 922.69, Stop timestamp: 923.49
@@ -913,7 +913,7 @@ Narration: grab lid
 ------
 ************
 Frame IDs in sequence: [55376, 55408, 55457, 55556, 56127, 56157]
-Objects in sequence: ['hob (hob)', 'lid (lid)', 'lid (pot lid)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'containers (lid) (lid)', 'containers (lid) (pot lid)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)']
 Verb-noun pairs in sequence: ['pick up spoon;922.69;923.49', 'mix pasta;923.55;927.29', 'grab lid;935.23;936.27']
 ************
 Start timestamp: 936.12, Stop timestamp: 937.24
@@ -933,7 +933,7 @@ Narration: close oregano bag
 ------
 ************
 Frame IDs in sequence: [56294, 56442, 57328, 57600, 57840, 57956]
-Objects in sequence: ['bag (oregano bag)', 'bowl (bowl)', 'oregano (oregano)', 'salad (salad)']
+Objects in sequence: ['containers (bag) (oregano bag)', 'crockery (bowl) (bowl)', 'prepared food (salad) (salad)', 'spices and herbs and sauces (oregano) (oregano)']
 Verb-noun pairs in sequence: ['grab oregano;937.39;941.36', 'put oregano in salad;952.06;962.67', 'close oregano bag;962.77;966.44']
 ************
 Start timestamp: 966.11, Stop timestamp: 967.63
@@ -953,7 +953,7 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [58259, 58379, 59391, 59490, 59590, 59642]
-Objects in sequence: ['board:chopping (chopping board)', 'bowl (bowl)', 'knife (knife)', 'salad (salad)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'top (table)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'crockery (bowl) (bowl)', 'cutlery (knife) (knife)', 'furniture (sink) (sink)', 'furniture (top) (table)', 'prepared food (salad) (salad)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['toss salad;969.09;974.71', 'put down salad on table;989.18;991.86', 'put down knife;992.55;994.62']
 ************
 Start timestamp: 996.86, Stop timestamp: 998.37
@@ -970,7 +970,7 @@ Narration: put detergent on sponge
 ------
 ************
 Frame IDs in sequence: [59826, 59882, 60025, 60075, 60233, 60289]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'liquid:washing (detergent)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (detergent)', 'cleaning equipment and material (sponge) (sponge)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['turn on tap;996.86;998.37', 'rinse sponge;999.6;1001.84', 'put detergent on sponge;1003.29;1005.31']
 ************
 Start timestamp: 1007.79, Stop timestamp: 1012.45
@@ -987,7 +987,7 @@ Narration: rinse cutting board
 ------
 ************
 Frame IDs in sequence: [60568, 60684, 60860, 60952, 61417, 61536]
-Objects in sequence: ['board:chopping (chopping board)', 'cupboard (cupboard)', 'knife (knife)', 'liquid:washing (detergent)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (detergent)', 'cleaning equipment and material (sponge) (sponge)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['lather knife;1007.79;1012.45', 'rinse cutting board;1013.78;1016.91', 'rinse cutting board;1022.82;1026.3']
 ************
 Start timestamp: 1027.06, Stop timestamp: 1028.26
@@ -1004,7 +1004,7 @@ Narration: open door
 ------
 ************
 Frame IDs in sequence: [61631, 61671, 61973, 62022, 62165, 62205]
-Objects in sequence: ['board:chopping (chopping board)', 'colander (colander)', 'cupboard (cupboard)', 'knife (knife)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)', 'utensils (board:chopping) (chopping board)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['rinse knife;1027.06;1028.26', 'open door;1032.78;1034.09', 'open door;1036.1;1037.03']
 ************
 Start timestamp: 1036.73, Stop timestamp: 1037.73
@@ -1021,7 +1021,7 @@ Narration: close door
 ------
 ************
 Frame IDs in sequence: [62293, 62326, 62380, 62428, 62486, 62517]
-Objects in sequence: ['colander (colander)', 'cupboard (cupboard)', 'hob (hob)', 'lid (pot lid)', 'sink (sink)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (pot lid)', 'cutlery (spoon) (spoon)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['pick up colander;1037.83;1039.08', 'put down colander;1039.18;1040.93', 'close door;1041.05;1042.3']
 ************
 Start timestamp: 1042.4, Stop timestamp: 1044.78
@@ -1038,7 +1038,7 @@ Narration: taste pasta
 ------
 ************
 Frame IDs in sequence: [62577, 62638, 62863, 62973, 63331, 63465]
-Objects in sequence: ['hob (hob)', 'lid (pot lid)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'containers (lid) (pot lid)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)']
 Verb-noun pairs in sequence: ['dry hands;1042.4;1044.78', 'stir pasta;1047.1;1050.46', 'taste pasta;1054.07;1059.3']
 ************
 Start timestamp: 1062.92, Stop timestamp: 1065.0
@@ -1058,7 +1058,7 @@ Narration: close door
 ------
 ************
 Frame IDs in sequence: [63808, 63881, 64026, 64081, 64276, 64315]
-Objects in sequence: ['cup (coffee cup)', 'cupboard (cupboard)', 'hob (hob)', 'pasta (pasta)', 'pot (pot)', 'spoon (wooden spoon)', 'water (water)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'cookware (pot) (pot)', 'crockery (cup) (coffee cup)', 'cutlery (spoon) (wooden spoon)', 'drinks (water) (water)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['stir pasta;1062.92;1065.0', 'open door;1066.87;1068.51', 'close door;1070.95;1072.45']
 ************
 Start timestamp: 1073.86, Stop timestamp: 1075.76
@@ -1072,7 +1072,7 @@ Narration: pick up colander
 ------
 ************
 Frame IDs in sequence: [64457, 64508, 64598, 64654, 64754, 65079]
-Objects in sequence: ['cup (coffee cup)', 'cupboard (cupboard)', 'hob (hob)', 'lid (lid)', 'pot (pot)', 'sink (sink)', 'water (water)']
+Objects in sequence: ['appliances (hob) (hob)', 'containers (lid) (lid)', 'cookware (pot) (pot)', 'crockery (cup) (coffee cup)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['put water in coffee cup;1073.86;1075.76', 'put down coffee cup;1076.22;1077.83', 'pick up colander;1077.88;1087.7']
 ************
 Start timestamp: 1088.04, Stop timestamp: 1090.12
@@ -1092,7 +1092,7 @@ Narration: rinse lid
 ------
 ************
 Frame IDs in sequence: [65311, 65370, 65683, 65939, 66246, 66421]
-Objects in sequence: ['colander (colander)', 'cupboard (cupboard)', 'lid (lid)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'containers (lid) (lid)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['pick up lid;1088.04;1090.12', 'lather lid;1091.61;1101.71', 'rinse lid;1102.87;1108.16']
 ************
 Start timestamp: 1108.01, Stop timestamp: 1108.59
@@ -1112,7 +1112,7 @@ Narration: take wooden spoon
 ------
 ************
 Frame IDs in sequence: [66581, 66615, 66766, 66860, 67085, 67119]
-Objects in sequence: ['cupboard (cupboard)', 'hob (hob/cooktop/stovetop)', 'lid (lid)', 'pasta (pasta)', 'pot (pot)', 'sink (sink)', 'spoon (wooden spoon)', 'tap (tap)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'appliances (tap) (tap)', 'baked goods and grains (pasta) (pasta)', 'containers (lid) (lid)', 'cookware (pot) (pot)', 'cutlery (spoon) (wooden spoon)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open door;1109.59;1110.67', 'close door;1112.45;1115.04', 'take wooden spoon;1117.94;1118.98']
 ************
 Start timestamp: 1119.08, Stop timestamp: 1122.91
@@ -1126,7 +1126,7 @@ Narration: stir sauce
 ------
 ************
 Frame IDs in sequence: [67210, 67309, 67790, 67885, 68050, 68110]
-Objects in sequence: ['hob (hob/cooktop/stovetop)', 'pan (pan)', 'pasta (pasta)', 'pot (pot)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)']
 Verb-noun pairs in sequence: ['stir pasta;1119.08;1122.91', 'stir pasta;1129.13;1132.04', 'stir sauce;1133.35;1135.77']
 ************
 Start timestamp: 1136.05, Stop timestamp: 1136.98
@@ -1140,7 +1140,7 @@ Narration: take fork
 ------
 ************
 Frame IDs in sequence: [68170, 68200, 68558, 68915, 69005, 69041]
-Objects in sequence: ['cupboard (cupboard)', 'fork (fork)', 'hob (hob/cooktop/stovetop)', 'pan (pan)', 'pasta (pasta)', 'pot (pot)', 'sauce (sauce)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'cutlery (fork) (fork)', 'cutlery (spoon) (wooden spoon)', 'spices and herbs and sauces (sauce) (sauce)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['put down wooden spoon;1136.05;1136.98', 'open door;1148.12;1149.16', 'take fork;1149.81;1150.82']
 ************
 Start timestamp: 1151.19, Stop timestamp: 1153.51
@@ -1154,7 +1154,7 @@ Narration: turn off hob
 ------
 ************
 Frame IDs in sequence: [69099, 69168, 69281, 69371, 69676, 69726]
-Objects in sequence: ['bowl (salad bowl)', 'cloth (rag)', 'cupboard (cupboard)', 'fork (fork)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'sink (sink)', 'tap (tap)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'appliances (tap) (tap)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'crockery (bowl) (salad bowl)', 'cutlery (fork) (fork)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['close door;1151.19;1153.51', 'put fork in salad bowl;1154.37;1156.7', 'turn off hob;1160.81;1162.6']
 ************
 Start timestamp: 1162.7, Stop timestamp: 1165.24
@@ -1171,7 +1171,7 @@ Narration: put pot
 ------
 ************
 Frame IDs in sequence: [69797, 69868, 70362, 70412, 70476]
-Objects in sequence: ['cloth (rag)', 'colander (colander)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'pot (pot)', 'sink (sink)', 'tap (tap)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'appliances (tap) (tap)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'cookware (pot) (pot)', 'furniture (sink) (sink)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['take rag;1162.7;1165.24', 'drain pasta in the colander;1172.13;1173.82', 'put pot;1174.1;1175.1']
 ************
 Start timestamp: 1176.21, Stop timestamp: 1177.93
@@ -1185,7 +1185,7 @@ Narration: put
 ------
 ************
 Frame IDs in sequence: [70600, 70650, 70694, 70724, 70778]
-Objects in sequence: ['colander (colander)', 'pasta (pasta)', 'pot (pot)', 'sink (sink)']
+Objects in sequence: ['baked goods and grains (pasta) (pasta)', 'cookware (pot) (pot)', 'furniture (sink) (sink)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['drain pasta;1176.21;1177.93', 'put pasta in the pot;1178.06;1179.06', 'put;1179.31;1180.46']
 ************
 Start timestamp: 1180.64, Stop timestamp: 1183.29
@@ -1199,7 +1199,7 @@ Narration: put pan
 ------
 ************
 Frame IDs in sequence: [70887, 70964, 71057, 71113, 72032]
-Objects in sequence: ['colander (colander)', 'pan (pan)', 'pasta (pasta)', 'pot (pot)', 'sauce (sauce)', 'sink (sink)', 'spoon (spoon)']
+Objects in sequence: ['baked goods and grains (pasta) (pasta)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'furniture (sink) (sink)', 'spices and herbs and sauces (sauce) (sauce)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['pick up pan;1180.64;1183.29', 'put sauce in the pasta;1183.31;1185.94', 'put pan;1200.1;1201.36']
 ************
 Start timestamp: 1202.34, Stop timestamp: 1203.41
@@ -1216,7 +1216,7 @@ Narration: mix pasta
 ------
 ************
 Frame IDs in sequence: [72149, 72193, 72301, 72353, 72511, 72616]
-Objects in sequence: ['cup (cup)', 'hob (hob)', 'pan (pan)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'crockery (cup) (cup)', 'cutlery (spoon) (spoon)']
 Verb-noun pairs in sequence: ['turn on stove;1202.34;1203.41', 'pick up pot;1204.64;1206.36', 'mix pasta;1207.74;1210.99']
 ************
 Start timestamp: 1223.84, Stop timestamp: 1225.09
@@ -1230,7 +1230,7 @@ Narration: put can
 ------
 ************
 Frame IDs in sequence: [73457, 73504, 73547, 73607, 73695]
-Objects in sequence: ['box (cheese box)', 'cup (cup)', 'hob (hob)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)', 'water (water)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'containers (box) (cheese box)', 'cookware (pot) (pot)', 'crockery (cup) (cup)', 'cutlery (spoon) (spoon)', 'drinks (water) (water)']
 Verb-noun pairs in sequence: ['pick up can;1223.84;1225.09', 'pour water in the pasta;1225.19;1227.27', 'put can;1227.99;1228.84']
 ************
 Start timestamp: 1229.76, Stop timestamp: 1232.09
@@ -1247,7 +1247,7 @@ Narration: take cheese
 ------
 ************
 Frame IDs in sequence: [73817, 73888, 74233, 74581, 74652, 74868]
-Objects in sequence: ['box (cheese box)', 'cheese (cheese)', 'cup (cup)', 'hob (hob)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'containers (box) (cheese box)', 'cookware (pot) (pot)', 'crockery (cup) (cup)', 'cutlery (spoon) (spoon)', 'dairy and eggs (cheese) (cheese)']
 Verb-noun pairs in sequence: ['mix pasta;1229.76;1232.09', 'take cheese;1242.77;1244.43', 'take cheese;1247.43;1248.56']
 ************
 Start timestamp: 1248.66, Stop timestamp: 1253.21
@@ -1261,7 +1261,7 @@ Narration: turn off hob
 ------
 ************
 Frame IDs in sequence: [75004, 75138, 75208, 75278, 75347, 76041, 76110]
-Objects in sequence: ['box (cheese box)', 'cheese (cheese)', 'hob (hob)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'containers (box) (cheese box)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'dairy and eggs (cheese) (cheese)']
 Verb-noun pairs in sequence: ['put cheese in pasta;1248.66;1253.21', 'put cheese in pasta;1253.77;1256.6', 'turn off hob;1267.05;1268.68']
 ************
 Start timestamp: 1268.7, Stop timestamp: 1271.7
@@ -1275,7 +1275,7 @@ Narration: close cheese bag
 ------
 ************
 Frame IDs in sequence: [76167, 76234, 76564, 76640, 77067]
-Objects in sequence: ['box (cheese box)', 'cheese (cheese)', 'hob (hob)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'containers (box) (cheese box)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)', 'dairy and eggs (cheese) (cheese)']
 Verb-noun pairs in sequence: ['stir pasta;1268.7;1271.7', 'put cheese in pasta;1275.4;1277.9', 'close cheese bag;1284.26;1284.89']
 ************
 Start timestamp: 1287.13, Stop timestamp: 1288.91
@@ -1289,7 +1289,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [77269, 77306, 77359, 77397, 77450, 77481]
-Objects in sequence: ['box (cheese box)', 'cloth (rag)', 'fridge (fridge)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'pot (pot)', 'spoon (spoon)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'containers (box) (cheese box)', 'cookware (pot) (pot)', 'cutlery (spoon) (spoon)']
 Verb-noun pairs in sequence: ['open fridge;1287.13;1288.91', 'put down cheese;1289.04;1290.43', 'close fridge;1290.47;1291.35']
 ************
 Start timestamp: 1292.76, Stop timestamp: 1297.48
@@ -1303,7 +1303,7 @@ Narration: take plate
 ------
 ************
 Frame IDs in sequence: [77661, 77791, 77903, 77932, 78106, 78151]
-Objects in sequence: ['cloth (rag)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta)', 'plate (plate)', 'pot (pot)', 'spoon (spoon)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'cookware (pot) (pot)', 'crockery (plate) (plate)', 'cutlery (spoon) (spoon)', 'cutlery (spoon) (wooden spoon)']
 Verb-noun pairs in sequence: ['stir pasta;1292.76;1297.48', 'take rag;1297.72;1299.44', 'take plate;1301.56;1302.7']
 ************
 Start timestamp: 1302.73, Stop timestamp: 1303.48
@@ -1320,7 +1320,7 @@ Narration: take saucepan
 ------
 ************
 Frame IDs in sequence: [78181, 78277, 78373, 78467, 78622, 78652]
-Objects in sequence: ['cloth (rag)', 'hob (hob)', 'pan (saucepan)', 'pasta (pasta)', 'plate (plate)', 'pot (pot)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'cookware (pan) (saucepan)', 'cookware (pot) (pot)', 'crockery (plate) (plate)', 'cutlery (spoon) (wooden spoon)']
 Verb-noun pairs in sequence: ['put down plate;1302.73;1303.48', 'put down wooden spoon;1305.4;1308.74', 'take saucepan;1310.0;1311.1']
 ************
 Start timestamp: 1311.32, Stop timestamp: 1320.82
@@ -1334,7 +1334,7 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [78772, 79061, 80041, 80073, 80097, 80182]
-Objects in sequence: ['cloth (rag)', 'hob (hob)', 'pan (saucepan)', 'pasta (pasta)', 'plate (plate)', 'pot (pot)', 'spoon (wooden spoon)']
+Objects in sequence: ['appliances (hob) (hob)', 'baked goods and grains (pasta) (pasta)', 'cleaning equipment and material (cloth) (rag)', 'cookware (pan) (saucepan)', 'cookware (pot) (pot)', 'crockery (plate) (plate)', 'cutlery (spoon) (wooden spoon)']
 Verb-noun pairs in sequence: ['put pasta onto plate;1311.32;1320.82', 'put down saucepan;1333.76;1334.74', 'put down wooden spoon;1334.84;1336.52']
 ************
 Start timestamp: 1338.33, Stop timestamp: 1339.07
@@ -1348,7 +1348,7 @@ Narration: close door
 ------
 ************
 Frame IDs in sequence: [80315, 80341, 80392, 80454, 80507]
-Objects in sequence: ['cupboard (cupboard)', 'fork (fork)', 'pasta (pasta)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (pasta) (pasta)', 'crockery (plate) (plate)', 'cutlery (fork) (fork)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open door;1338.33;1339.07', 'take fork;1339.52;1340.65', 'close door;1340.67;1341.79']
 ************
 Start timestamp: 1343.2, Stop timestamp: 1345.69
@@ -1362,7 +1362,7 @@ Narration: open door
 ------
 ************
 Frame IDs in sequence: [80614, 80724, 80765, 80800, 80928, 80956]
-Objects in sequence: ['cupboard (cupboard)', 'fork (fork)', 'pasta (pasta)', 'plate (plate)', 'top (table)']
+Objects in sequence: ['baked goods and grains (pasta) (pasta)', 'crockery (plate) (plate)', 'cutlery (fork) (fork)', 'furniture (top) (table)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['take plate with pasta;1343.2;1345.69', 'put plate with pasta onto table;1345.79;1347.21', 'open door;1348.79;1349.42']
 ************
 Start timestamp: 1349.46, Stop timestamp: 1350.99
@@ -1379,7 +1379,7 @@ Narration: open tap
 ------
 ************
 Frame IDs in sequence: [81000, 81085, 81138, 81191, 81505, 81586]
-Objects in sequence: ['colander (colander)', 'cupboard (cupboard)', 'glass (glass)', 'pan (pan)', 'sink (sink)', 'tap (tap)', 'top (table)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cookware (pan) (pan)', 'crockery (glass) (glass)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'furniture (top) (table)', 'storage (cupboard) (cupboard)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['take glass;1349.46;1350.99', 'put glass onto table;1351.06;1353.74', 'open tap;1357.59;1360.49']
 ************
 Start timestamp: 1358.94, Stop timestamp: 1364.04
@@ -1396,7 +1396,7 @@ Narration: put pan
 ------
 ************
 Frame IDs in sequence: [82014, 82185, 82518, 82747, 82892, 82939]
-Objects in sequence: ['colander (colander)', 'pan (pan)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cookware (pan) (pan)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['soap pan;1364.14;1372.06', 'rinse pan;1372.16;1381.17', 'put pan;1381.27;1382.44']
 ************
 Start timestamp: 1382.54, Stop timestamp: 1383.46
@@ -1410,7 +1410,7 @@ Narration: rinse colander
 ------
 ************
 Frame IDs in sequence: [82975, 83065, 83155, 83286]
-Objects in sequence: ['colander (colander)', 'pan (pan)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cookware (pan) (pan)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['pick up colander;1382.54;1383.46', 'soap colander;1384.64;1388.8', 'rinse colander;1388.8;1399.07']
 ************
 Start timestamp: 1399.4, Stop timestamp: 1400.43
@@ -1427,7 +1427,7 @@ Narration: put pot in the sink
 ------
 ************
 Frame IDs in sequence: [83983, 84076, 84123, 84170, 84233, 84287]
-Objects in sequence: ['colander (colander)', 'cupboard (cupboard)', 'pot (pot)', 'sink (sink)', 'sponge (sponge)', 'spoon (wooden spoon)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pot) (pot)', 'cutlery (spoon) (wooden spoon)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (cupboard) (cupboard)', 'utensils (colander) (colander)']
 Verb-noun pairs in sequence: ['open door;1399.4;1400.43', 'pick up pot;1402.73;1403.42', 'put pot in the sink;1403.52;1404.99']
 ************
 Start timestamp: 1405.09, Stop timestamp: 1406.72
@@ -1444,7 +1444,7 @@ Narration: put down wooden spoon
 ------
 ************
 Frame IDs in sequence: [84326, 84381, 84622, 84843, 85319, 85409]
-Objects in sequence: ['pot (pot)', 'sink (sink)', 'sponge (sponge)', 'spoon (wooden spoon)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pot) (pot)', 'cutlery (spoon) (wooden spoon)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['pick up wooden spoon;1405.09;1406.72', 'soap wooden spoon;1408.59;1416.02', 'put down wooden spoon;1421.42;1423.96']
 ************
 Start timestamp: 1424.85, Stop timestamp: 1427.78
@@ -1461,7 +1461,7 @@ Narration: pour washing up liquid onto sponge
 ------
 ************
 Frame IDs in sequence: [85550, 85619, 85742, 85812, 85885, 85948]
-Objects in sequence: ['liquid:washing (washing up liquid)', 'pan (pan)', 'pot (pot)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (washing up liquid)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pan) (pan)', 'cookware (pot) (pot)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['take saucepan;1424.85;1427.78', 'rinse sponge;1428.81;1430.66', 'pour washing up liquid onto sponge;1430.87;1433.08']
 ************
 Start timestamp: 1435.13, Stop timestamp: 1436.36
@@ -1475,7 +1475,7 @@ Narration: wash saucepan
 ------
 ************
 Frame IDs in sequence: [86128, 86160, 86326, 86365, 86598, 86917]
-Objects in sequence: ['pot (pot)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pot) (pot)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['rinse sponge;1435.13;1436.36', 'turn off tap;1438.48;1439.63', 'wash saucepan;1440.64;1451.49']
 ************
 Start timestamp: 1456.42, Stop timestamp: 1457.3
@@ -1492,7 +1492,7 @@ Narration: put down saucepan
 ------
 ************
 Frame IDs in sequence: [87410, 87490, 87691, 88166, 88643, 88797]
-Objects in sequence: ['pot (pot)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pot) (pot)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['put down sponge;1456.42;1457.3', 'rinse saucepan;1457.45;1463.04', 'put down saucepan;1476.48;1480.8']
 ************
 Start timestamp: 1481.42, Stop timestamp: 1482.45
@@ -1509,7 +1509,7 @@ Narration: wash sink
 ------
 ************
 Frame IDs in sequence: [88909, 88946, 89091, 89150, 89397, 89523]
-Objects in sequence: ['cup (cup)', 'pot (pot)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cookware (pot) (pot)', 'crockery (cup) (cup)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['put cups in sink;1481.42;1482.45', 'take sponge;1484.62;1486.18', 'wash sink;1488.49;1493.59']
 ************
 Start timestamp: 1493.41, Stop timestamp: 1494.54
@@ -1529,7 +1529,7 @@ Narration: dry hands
 ------
 ************
 Frame IDs in sequence: [89913, 89957, 90002, 90078, 90154, 90185]
-Objects in sequence: ['cloth (rag)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (cloth) (rag)', 'cleaning equipment and material (sponge) (sponge)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['rinse sponge;1498.25;1498.99', 'turn off tap;1499.7;1500.63', 'dry hands;1502.26;1503.23']
 ************
 Start timestamp: 1504.53, Stop timestamp: 1507.25
@@ -1543,6 +1543,6 @@ Narration: throw pasta piece
 ------
 ************
 Frame IDs in sequence: [90325, 90363, 90401, 90478, 90517, 90557]
-Objects in sequence: ['bag (bag)', 'cloth (rag)', 'hob (hob/cooktop/stovetop)', 'pasta (pasta piece)']
+Objects in sequence: ['appliances (hob) (hob/cooktop/stovetop)', 'baked goods and grains (pasta) (pasta piece)', 'cleaning equipment and material (cloth) (rag)', 'containers (bag) (bag)']
 Verb-noun pairs in sequence: ['put down rag;1504.53;1507.25', 'take pasta piece;1507.37;1508.8', 'throw pasta piece;1508.9;1510.17']
 ************

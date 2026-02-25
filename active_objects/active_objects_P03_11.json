@@ -7,85 +7,9 @@
     "end_frame": 561,
     "objects_in_sequence": [
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000188.jpg",
-            "bbox": [
-              748.23,
-              794.91,
-              475.03,
-              73.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000000241.jpg",
-            "bbox": [
-              711.47,
-              718.79,
-              577.48,
-              139.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000000287.jpg",
-            "bbox": [
-              710.68,
-              636.74,
-              636.64,
-              443.26
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 184,
-        "class_name": "pancake",
-        "name": "pancake",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000188.jpg",
-            "bbox": [
-              711.53,
-              62.77,
-              182.95,
-              102.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000000369.jpg",
-            "bbox": [
-              914.18,
-              688.53,
-              199.36,
-              178.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000000451.jpg",
-            "bbox": [
-              872.25,
-              703.49,
-              250.31,
-              268.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000000513.jpg",
-            "bbox": [
-              870.27,
-              706.53,
-              275.35,
-              240.15
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 186,
-        "class_name": "toaster",
+        "category": "appliances",
+        "subclass_name": "toaster",
         "name": "toaster",
         "image_crops": [
           {
@@ -145,8 +69,88 @@
         ]
       },
       {
+        "class_id": 184,
+        "category": "baked goods and grains",
+        "subclass_name": "pancake",
+        "name": "pancake",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000188.jpg",
+            "bbox": [
+              711.53,
+              62.77,
+              182.95,
+              102.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000000369.jpg",
+            "bbox": [
+              914.18,
+              688.53,
+              199.36,
+              178.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000000451.jpg",
+            "bbox": [
+              872.25,
+              703.49,
+              250.31,
+              268.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000000513.jpg",
+            "bbox": [
+              870.27,
+              706.53,
+              275.35,
+              240.15
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000188.jpg",
+            "bbox": [
+              748.23,
+              794.91,
+              475.03,
+              73.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000000241.jpg",
+            "bbox": [
+              711.47,
+              718.79,
+              577.48,
+              139.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000000287.jpg",
+            "bbox": [
+              710.68,
+              636.74,
+              636.64,
+              443.26
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 142,
-        "class_name": "tongs",
+        "category": "utensils",
+        "subclass_name": "tongs",
         "name": "tongs",
         "image_crops": [
           {
@@ -219,24 +223,53 @@
     "end_frame": 1423,
     "objects_in_sequence": [
       {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
+        "class_id": 186,
+        "category": "appliances",
+        "subclass_name": "toaster",
+        "name": "toaster",
         "image_crops": [
           {
-            "frame_path": "frame_0000000603.jpg",
+            "frame_path": "frame_0000000816.jpg",
             "bbox": [
-              1035.91,
-              594.88,
-              242.16,
-              31.33
+              336.96,
+              271.61,
+              856.0,
+              801.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000000979.jpg",
+            "bbox": [
+              105.81,
+              532.14,
+              1128.89,
+              547.64
+            ]
+          },
+          {
+            "frame_path": "frame_0000001142.jpg",
+            "bbox": [
+              149.95,
+              522.38,
+              1088.58,
+              558.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000001257.jpg",
+            "bbox": [
+              317.02,
+              585.84,
+              965.47,
+              494.16
             ]
           }
         ]
       },
       {
         "class_id": 184,
-        "class_name": "pancake",
+        "category": "baked goods and grains",
+        "subclass_name": "pancake",
         "name": "pancake",
         "image_crops": [
           {
@@ -288,7 +321,8 @@
       },
       {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -303,51 +337,26 @@
         ]
       },
       {
-        "class_id": 186,
-        "class_name": "toaster",
-        "name": "toaster",
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
         "image_crops": [
           {
-            "frame_path": "frame_0000000816.jpg",
+            "frame_path": "frame_0000000603.jpg",
             "bbox": [
-              336.96,
-              271.61,
-              856.0,
-              801.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000000979.jpg",
-            "bbox": [
-              105.81,
-              532.14,
-              1128.89,
-              547.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000001142.jpg",
-            "bbox": [
-              149.95,
-              522.38,
-              1088.58,
-              558.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000001257.jpg",
-            "bbox": [
-              317.02,
-              585.84,
-              965.47,
-              494.16
+              1035.91,
+              594.88,
+              242.16,
+              31.33
             ]
           }
         ]
       },
       {
         "class_id": 142,
-        "class_name": "tongs",
+        "category": "utensils",
+        "subclass_name": "tongs",
         "name": "tongs",
         "image_crops": [
           {
@@ -419,180 +428,9 @@
     "end_frame": 2119,
     "objects_in_sequence": [
       {
-        "class_id": 78,
-        "class_name": "butter",
-        "name": "butter",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001600.jpg",
-            "bbox": [
-              997.93,
-              774.51,
-              227.04,
-              219.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000001850.jpg",
-            "bbox": [
-              269.53,
-              675.56,
-              762.67,
-              404.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000002022.jpg",
-            "bbox": [
-              384.25,
-              705.25,
-              722.03,
-              273.5
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001517.jpg",
-            "bbox": [
-              1097.26,
-              716.59,
-              45.15,
-              363.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000001574.jpg",
-            "bbox": [
-              1202.18,
-              687.23,
-              350.58,
-              298.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000001600.jpg",
-            "bbox": [
-              1306.98,
-              672.78,
-              208.98,
-              237.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000001850.jpg",
-            "bbox": [
-              957.08,
-              674.3,
-              142.39,
-              151.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000002022.jpg",
-            "bbox": [
-              1030.37,
-              734.57,
-              215.44,
-              138.0
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001600.jpg",
-            "bbox": [
-              1023.54,
-              595.35,
-              165.0,
-              167.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000001850.jpg",
-            "bbox": [
-              769.84,
-              328.86,
-              209.07,
-              242.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000002022.jpg",
-            "bbox": [
-              864.77,
-              315.66,
-              194.23,
-              221.65
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 26,
-        "class_name": "package",
-        "name": "butter package",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001517.jpg",
-            "bbox": [
-              680.65,
-              609.68,
-              229.82,
-              275.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000001574.jpg",
-            "bbox": [
-              897.02,
-              720.12,
-              379.0,
-              359.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000001600.jpg",
-            "bbox": [
-              980.04,
-              749.3,
-              343.82,
-              330.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000001850.jpg",
-            "bbox": [
-              252.99,
-              768.3,
-              316.15,
-              313.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000002022.jpg",
-            "bbox": [
-              371.64,
-              693.55,
-              284.09,
-              297.91
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 184,
-        "class_name": "pancake",
+        "category": "baked goods and grains",
+        "subclass_name": "pancake",
         "name": "pancake",
         "image_crops": [
           {
@@ -643,8 +481,97 @@
         ]
       },
       {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001600.jpg",
+            "bbox": [
+              1023.54,
+              595.35,
+              165.0,
+              167.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000001850.jpg",
+            "bbox": [
+              769.84,
+              328.86,
+              209.07,
+              242.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000002022.jpg",
+            "bbox": [
+              864.77,
+              315.66,
+              194.23,
+              221.65
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 26,
+        "category": "containers",
+        "subclass_name": "package",
+        "name": "butter package",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001517.jpg",
+            "bbox": [
+              680.65,
+              609.68,
+              229.82,
+              275.65
+            ]
+          },
+          {
+            "frame_path": "frame_0000001574.jpg",
+            "bbox": [
+              897.02,
+              720.12,
+              379.0,
+              359.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000001600.jpg",
+            "bbox": [
+              980.04,
+              749.3,
+              343.82,
+              330.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000001850.jpg",
+            "bbox": [
+              252.99,
+              768.3,
+              316.15,
+              313.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000002022.jpg",
+            "bbox": [
+              371.64,
+              693.55,
+              284.09,
+              297.91
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -693,6 +620,94 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001517.jpg",
+            "bbox": [
+              1097.26,
+              716.59,
+              45.15,
+              363.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000001574.jpg",
+            "bbox": [
+              1202.18,
+              687.23,
+              350.58,
+              298.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000001600.jpg",
+            "bbox": [
+              1306.98,
+              672.78,
+              208.98,
+              237.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000001850.jpg",
+            "bbox": [
+              957.08,
+              674.3,
+              142.39,
+              151.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000002022.jpg",
+            "bbox": [
+              1030.37,
+              734.57,
+              215.44,
+              138.0
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 78,
+        "category": "dairy and eggs",
+        "subclass_name": "butter",
+        "name": "butter",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001600.jpg",
+            "bbox": [
+              997.93,
+              774.51,
+              227.04,
+              219.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000001850.jpg",
+            "bbox": [
+              269.53,
+              675.56,
+              762.67,
+              404.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000002022.jpg",
+            "bbox": [
+              384.25,
+              705.25,
+              722.03,
+              273.5
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -716,189 +731,9 @@
     "end_frame": 2747,
     "objects_in_sequence": [
       {
-        "class_id": 78,
-        "class_name": "butter",
-        "name": "butter",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002212.jpg",
-            "bbox": [
-              552.46,
-              681.55,
-              530.82,
-              278.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000002307.jpg",
-            "bbox": [
-              482.38,
-              703.24,
-              555.63,
-              295.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000002403.jpg",
-            "bbox": [
-              477.7,
-              730.76,
-              528.91,
-              289.58
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002212.jpg",
-            "bbox": [
-              1022.03,
-              690.15,
-              184.83,
-              166.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000002307.jpg",
-            "bbox": [
-              997.55,
-              749.33,
-              196.39,
-              166.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000002403.jpg",
-            "bbox": [
-              933.63,
-              764.45,
-              188.6,
-              173.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000002645.jpg",
-            "bbox": [
-              1293.7,
-              953.45,
-              135.62,
-              125.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000002705.jpg",
-            "bbox": [
-              1214.67,
-              796.31,
-              128.63,
-              255.13
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002212.jpg",
-            "bbox": [
-              957.17,
-              264.35,
-              205.59,
-              219.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000002307.jpg",
-            "bbox": [
-              867.15,
-              278.8,
-              209.86,
-              220.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000002403.jpg",
-            "bbox": [
-              832.47,
-              266.91,
-              213.24,
-              222.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000002581.jpg",
-            "bbox": [
-              880.62,
-              577.19,
-              185.63,
-              236.0
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 26,
-        "class_name": "package",
-        "name": "butter package",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002212.jpg",
-            "bbox": [
-              539.51,
-              669.63,
-              259.87,
-              303.52
-            ]
-          },
-          {
-            "frame_path": "frame_0000002307.jpg",
-            "bbox": [
-              466.91,
-              703.16,
-              262.22,
-              309.66
-            ]
-          },
-          {
-            "frame_path": "frame_0000002403.jpg",
-            "bbox": [
-              466.25,
-              718.81,
-              252.33,
-              314.51
-            ]
-          },
-          {
-            "frame_path": "frame_0000002645.jpg",
-            "bbox": [
-              785.52,
-              696.35,
-              246.54,
-              290.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000002705.jpg",
-            "bbox": [
-              704.29,
-              725.9,
-              152.04,
-              298.47
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 184,
-        "class_name": "pancake",
+        "category": "baked goods and grains",
+        "subclass_name": "pancake",
         "name": "pancake",
         "image_crops": [
           {
@@ -958,8 +793,106 @@
         ]
       },
       {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002212.jpg",
+            "bbox": [
+              957.17,
+              264.35,
+              205.59,
+              219.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000002307.jpg",
+            "bbox": [
+              867.15,
+              278.8,
+              209.86,
+              220.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000002403.jpg",
+            "bbox": [
+              832.47,
+              266.91,
+              213.24,
+              222.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000002581.jpg",
+            "bbox": [
+              880.62,
+              577.19,
+              185.63,
+              236.0
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 26,
+        "category": "containers",
+        "subclass_name": "package",
+        "name": "butter package",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002212.jpg",
+            "bbox": [
+              539.51,
+              669.63,
+              259.87,
+              303.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000002307.jpg",
+            "bbox": [
+              466.91,
+              703.16,
+              262.22,
+              309.66
+            ]
+          },
+          {
+            "frame_path": "frame_0000002403.jpg",
+            "bbox": [
+              466.25,
+              718.81,
+              252.33,
+              314.51
+            ]
+          },
+          {
+            "frame_path": "frame_0000002645.jpg",
+            "bbox": [
+              785.52,
+              696.35,
+              246.54,
+              290.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000002705.jpg",
+            "bbox": [
+              704.29,
+              725.9,
+              152.04,
+              298.47
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 2,
-        "class_name": "plate",
+        "category": "crockery",
+        "subclass_name": "plate",
         "name": "plate",
         "image_crops": [
           {
@@ -1017,6 +950,94 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002212.jpg",
+            "bbox": [
+              1022.03,
+              690.15,
+              184.83,
+              166.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000002307.jpg",
+            "bbox": [
+              997.55,
+              749.33,
+              196.39,
+              166.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000002403.jpg",
+            "bbox": [
+              933.63,
+              764.45,
+              188.6,
+              173.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000002645.jpg",
+            "bbox": [
+              1293.7,
+              953.45,
+              135.62,
+              125.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000002705.jpg",
+            "bbox": [
+              1214.67,
+              796.31,
+              128.63,
+              255.13
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 78,
+        "category": "dairy and eggs",
+        "subclass_name": "butter",
+        "name": "butter",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002212.jpg",
+            "bbox": [
+              552.46,
+              681.55,
+              530.82,
+              278.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000002307.jpg",
+            "bbox": [
+              482.38,
+              703.24,
+              555.63,
+              295.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000002403.jpg",
+            "bbox": [
+              477.7,
+              730.76,
+              528.91,
+              289.58
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1042,7 +1063,8 @@
     "objects_in_sequence": [
       {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -1103,7 +1125,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "butter package",
         "image_crops": [
           {

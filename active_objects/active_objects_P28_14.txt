@@ -12,7 +12,7 @@ Narration: put bread in plate
 ------
 ************
 Frame IDs in sequence: [203, 281, 510, 592, 662, 726]
-Objects in sequence: ['bread (bread)', 'oven (oven)', 'plate (plate)']
+Objects in sequence: ['appliances (oven) (oven)', 'baked goods and grains (bread) (bread)', 'crockery (plate) (plate)']
 Verb-noun pairs in sequence: ['turn off oven;2.7;5.2', 'take bread;7.45;10.29', 'put bread in plate;10.39;12.64']
 ************
 Start timestamp: 13.73, Stop timestamp: 14.95
@@ -26,7 +26,7 @@ Narration: move stuff
 ------
 ************
 Frame IDs in sequence: [845, 874, 1082, 1151, 1280, 1408]
-Objects in sequence: ['bag (bread bag)', 'fridge (fridge)', 'oven (oven)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (oven) (oven)', 'containers (bag) (bread bag)']
 Verb-noun pairs in sequence: ['close oven;13.73;14.95', 'open fridge;17.33;19.58', 'move stuff;19.9;25.29']
 ************
 Start timestamp: 25.54, Stop timestamp: 29.56
@@ -40,7 +40,7 @@ Narration: put down food container
 ------
 ************
 Frame IDs in sequence: [1619, 1687, 1825, 1894, 2053]
-Objects in sequence: ['bag (bread bag)', 'container (food container)', 'fridge (fridge)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (bag) (bread bag)', 'containers (container) (food container)']
 Verb-noun pairs in sequence: ['take food container;25.54;29.56', 'close fridge;29.6;32.61', 'put down food container;32.72;34.78']
 ************
 Start timestamp: 34.47, Stop timestamp: 41.06
@@ -63,7 +63,7 @@ Narration: take knife
 ------
 ************
 Frame IDs in sequence: [2186, 2274, 2368, 2440, 2515, 2659]
-Objects in sequence: ['container (food container)', 'knife (knife)', 'lid (lid)', 'package (cheese package)']
+Objects in sequence: ['containers (container) (food container)', 'containers (lid) (lid)', 'containers (package) (cheese package)', 'cutlery (knife) (knife)']
 Verb-noun pairs in sequence: ['open food container;35.05;38.81', 'put down lid;38.81;39.57', 'take knife;44.04;44.92']
 ************
 Start timestamp: 44.92, Stop timestamp: 55.57
@@ -80,7 +80,7 @@ Narration: put down bread
 ------
 ************
 Frame IDs in sequence: [3133, 3293, 3453]
-Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['cut bread;44.92;55.57', 'open bread;55.93;59.43', 'put down bread;60.03;61.15']
 ************
 Start timestamp: 61.48, Stop timestamp: 62.22
@@ -97,7 +97,7 @@ Narration: open bread
 ------
 ************
 Frame IDs in sequence: [3708, 3781, 3920, 3990, 4054]
-Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['take bread;61.48;62.22', 'cut bread;62.24;65.99', 'open bread;66.09;68.14']
 ************
 Start timestamp: 68.24, Stop timestamp: 69.94
@@ -111,7 +111,7 @@ Narration: cut cheese
 ------
 ************
 Frame IDs in sequence: [4112, 4174, 5413, 5501, 5596, 5652]
-Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'cheese (cheese)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (cheese)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down bread;68.24;69.94', 'put cheese in bread;89.33;92.63', 'cut cheese;92.72999999999999;94.74000000000001']
 ************
 Start timestamp: 94.89, Stop timestamp: 98.19
@@ -125,7 +125,7 @@ Narration: put cheese in bread
 ------
 ************
 Frame IDs in sequence: [5760, 5846, 5949, 5996, 6060, 6118]
-Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'cheese (cheese)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (cheese)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put cheese in bread;94.89;98.19', 'cut cheese;98.6;100.25', 'put cheese in bread;100.82;102.22']
 ************
 Start timestamp: 102.69, Stop timestamp: 103.89
@@ -139,7 +139,7 @@ Narration: put cheese in bread
 ------
 ************
 Frame IDs in sequence: [6186, 6226, 6430, 6504, 6631, 6730]
-Objects in sequence: ['board:chopping (chopping board)', 'bread (bread)', 'cheese (cheese)', 'knife (knife)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (cheese)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['close bread;102.69;103.89', 'cut cheese;106.61;109.47', 'put cheese in bread;109.97;112.97999999999999']
 ************
 Start timestamp: 112.78999999999999, Stop timestamp: 115.09
@@ -159,7 +159,7 @@ Narration: put cheese package in food container
 ------
 ************
 Frame IDs in sequence: [6999, 7069, 7207, 7601, 7631]
-Objects in sequence: ['bread (bread)', 'cheese (cheese)', 'container (food container)', 'knife (knife)', 'lid (lid)', 'package (cheese package)', 'plate (plate)']
+Objects in sequence: ['baked goods and grains (bread) (bread)', 'containers (container) (food container)', 'containers (lid) (lid)', 'containers (package) (cheese package)', 'crockery (plate) (plate)', 'cutlery (knife) (knife)', 'dairy and eggs (cheese) (cheese)']
 Verb-noun pairs in sequence: ['close bread;116.1;118.85', 'put down knife;119.81;120.45', 'put cheese package in food container;126.11;127.46']
 ************
 Start timestamp: 128.12, Stop timestamp: 128.89
@@ -173,7 +173,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [7690, 7718, 7778, 7841, 7992, 8045]
-Objects in sequence: ['container (food container)', 'fridge (fridge)', 'lid (lid)', 'package (cheese package)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (container) (food container)', 'containers (lid) (lid)', 'containers (package) (cheese package)']
 Verb-noun pairs in sequence: ['put lid;128.12;128.89', 'close lid;128.99;131.08', 'open fridge;132.81;134.31']
 ************
 Start timestamp: 134.41, Stop timestamp: 137.3
@@ -187,7 +187,7 @@ Narration: take oil and salt
 ------
 ************
 Frame IDs in sequence: [8126, 8199, 8259, 8298, 8490, 8537]
-Objects in sequence: ['container (food container)', 'fridge (fridge)', 'oil (oil)', 'salt (salt)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (container) (food container)', 'spices and herbs and sauces (oil) (oil)', 'spices and herbs and sauces (salt) (salt)']
 Verb-noun pairs in sequence: ['put food container in fridge;134.41;137.3', 'close fridge;137.57;138.81', 'take oil and salt;141.25;142.67000000000002']
 ************
 Start timestamp: 144.41, Stop timestamp: 145.22
@@ -201,7 +201,7 @@ Narration: put salt in cupboard
 ------
 ************
 Frame IDs in sequence: [8675, 8712, 8806, 8862, 8903, 8939]
-Objects in sequence: ['cupboard (cupboard)', 'oil (oil)', 'salt (salt)']
+Objects in sequence: ['spices and herbs and sauces (oil) (oil)', 'spices and herbs and sauces (salt) (salt)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open cupboard;144.41;145.22', 'put olive in cupboard;146.29;148.1', 'put salt in cupboard;148.28;149.09']
 ************
 Start timestamp: 149.07999999999998, Stop timestamp: 150.34
@@ -218,7 +218,7 @@ Narration: turn off tap
 ------
 ************
 Frame IDs in sequence: [9119, 9147, 9219, 9309, 9441, 9467]
-Objects in sequence: ['liquid:washing (dish washing liquid)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (dish washing liquid)', 'cleaning equipment and material (sponge) (sponge)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['turn on tap;151.67000000000002;152.78', 'rinse hands;152.92000000000002;156.44', 'turn off tap;157.25;158.18']
 ************
 Start timestamp: 159.51, Stop timestamp: 160.39
@@ -232,7 +232,7 @@ Narration: put dish washing liquid in sponge
 ------
 ************
 Frame IDs in sequence: [9590, 9668, 9713, 9896, 9942]
-Objects in sequence: ['liquid:washing (dish washing liquid)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (dish washing liquid)', 'cleaning equipment and material (sponge) (sponge)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['take sponge;159.51;160.39', 'take dish washing liquid;160.68;162.47', 'put dish washing liquid in sponge;164.54;166.18']
 ************
 Start timestamp: 166.63, Stop timestamp: 167.82
@@ -246,7 +246,7 @@ Narration: take knife
 ------
 ************
 Frame IDs in sequence: [10022, 10060, 10150, 10250, 10300]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'liquid:washing (dish washing liquid)', 'sink (sink)', 'sponge (sponge)', 'spoon (spoon)', 'tap (tap)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (liquid:washing) (dish washing liquid)', 'cleaning equipment and material (sponge) (sponge)', 'cutlery (knife) (knife)', 'cutlery (spoon) (spoon)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down dish washing liquid;166.63;167.82', 'soak sponge;168.15;171.51', 'take knife;171.62;172.34']
 ************
 Start timestamp: 172.3, Stop timestamp: 178.82
@@ -263,7 +263,7 @@ Narration: put down sponge
 ------
 ************
 Frame IDs in sequence: [10771, 10829, 10923, 11053, 11199, 11239]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'rack:drying (drainer)', 'sink (sink)', 'sponge (sponge)', 'spoon (spoon)', 'tap (tap)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cutlery (knife) (knife)', 'cutlery (spoon) (spoon)', 'furniture (sink) (sink)', 'storage (rack:drying) (drainer)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['take spoon;179.21;180.93', 'wash spoon;181.03;185.68', 'put down sponge;186.01;188.01']
 ************
 Start timestamp: 187.82, Stop timestamp: 189.59
@@ -283,7 +283,7 @@ Narration: take sponge
 ------
 ************
 Frame IDs in sequence: [11453, 11564, 11685, 11744, 11823]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'rack:drying (drainer)', 'sink (sink)', 'sponge (sponge)', 'spoon (spoon)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'cutlery (knife) (knife)', 'cutlery (spoon) (spoon)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (rack:drying) (drainer)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['rinse spoon and knife;189.27;194.33', 'turn off tap;194.4;196.15', 'take sponge;196.75;197.39']
 ************
 Start timestamp: 197.63, Stop timestamp: 199.14
@@ -303,7 +303,7 @@ Narration: put down sponge
 ------
 ************
 Frame IDs in sequence: [11880, 11922, 12192, 12338, 12482, 12877]
-Objects in sequence: ['board:chopping (chopping board)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['soak sponge;197.63;199.14', 'wash chopping board;201.19;210.31', 'put down sponge;214.12;215.37']
 ************
 Start timestamp: 215.47, Stop timestamp: 216.72
@@ -317,7 +317,7 @@ Narration: turn off tap
 ------
 ************
 Frame IDs in sequence: [12941, 12981, 13089, 13201, 13344, 13520, 13546]
-Objects in sequence: ['board:chopping (chopping board)', 'rack:drying (drainer)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'storage (rack:drying) (drainer)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['turn on tap;215.47;216.72', 'rinse chopping board;217.82;224.82', 'turn off tap;224.92000000000002;225.92000000000002']
 ************
 Start timestamp: 226.02, Stop timestamp: 228.29
@@ -334,7 +334,7 @@ Narration: clean counter
 ------
 ************
 Frame IDs in sequence: [13606, 13656, 13852, 13907, 14640, 14988]
-Objects in sequence: ['board:chopping (chopping board)', 'rack:drying (drainer)', 'sink (sink)', 'sponge (sponge)', 'tap (tap)', 'top (counter)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'furniture (sink) (sink)', 'furniture (top) (counter)', 'storage (rack:drying) (drainer)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put chopping board in drainer;226.02;228.29', 'take sponge;230.69;231.86', 'clean counter;239.55;254.58']
 ************
 Start timestamp: 254.8, Stop timestamp: 259.34
@@ -351,7 +351,7 @@ Narration: take towel
 ------
 ************
 Frame IDs in sequence: [15357, 15485, 15666, 15738, 15892, 15988]
-Objects in sequence: ['sink (sink)', 'sponge (sponge)', 'tap (tap)', 'top (counter)', 'towel (towel)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cleaning equipment and material (sponge) (sponge)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'furniture (top) (counter)', 'materials (towel) (towel)']
 Verb-noun pairs in sequence: ['soak sponge;254.8;259.34', 'put down sponge;260.89;262.64', 'take towel;264.39;267.39']
 ************
 Start timestamp: 266.9, Stop timestamp: 270.24

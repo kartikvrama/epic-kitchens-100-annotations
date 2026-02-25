@@ -7,8 +7,106 @@
     "end_frame": 1136,
     "objects_in_sequence": [
       {
+        "class_id": 70,
+        "category": "appliances",
+        "subclass_name": "dishwasher",
+        "name": "dishwasher",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000097.jpg",
+            "bbox": [
+              265.86,
+              877.43,
+              441.68,
+              202.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000000135.jpg",
+            "bbox": [
+              481.23,
+              818.85,
+              275.58,
+              261.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000000746.jpg",
+            "bbox": [
+              558.17,
+              121.15,
+              771.64,
+              644.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000001046.jpg",
+            "bbox": [
+              689.1,
+              327.37,
+              582.24,
+              490.98
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000135.jpg",
+            "bbox": [
+              0,
+              341.44,
+              284.07,
+              227.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000000353.jpg",
+            "bbox": [
+              807.21,
+              219.03,
+              329.78,
+              274.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000000497.jpg",
+            "bbox": [
+              889.4,
+              184.72,
+              333.07,
+              292.83
+            ]
+          },
+          {
+            "frame_path": "frame_0000000746.jpg",
+            "bbox": [
+              1837.61,
+              248.62,
+              82.39,
+              91.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000001046.jpg",
+            "bbox": [
+              1725.86,
+              66.51,
+              194.14,
+              115.86
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -68,51 +166,79 @@
         ]
       },
       {
-        "class_id": 70,
-        "class_name": "dishwasher",
-        "name": "dishwasher",
+        "class_id": 1,
+        "category": "cutlery",
+        "subclass_name": "spoon",
+        "name": "spoon",
         "image_crops": [
           {
             "frame_path": "frame_0000000097.jpg",
             "bbox": [
-              265.86,
-              877.43,
-              441.68,
-              202.57
+              1224.53,
+              588.58,
+              176.01,
+              163.7
             ]
           },
           {
             "frame_path": "frame_0000000135.jpg",
             "bbox": [
-              481.23,
-              818.85,
-              275.58,
-              261.15
+              1575.64,
+              1003.36,
+              72.68,
+              76.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000000353.jpg",
+            "bbox": [
+              1098.74,
+              493.61,
+              72.37,
+              101.06
             ]
           },
           {
             "frame_path": "frame_0000000746.jpg",
             "bbox": [
-              558.17,
-              121.15,
-              771.64,
-              644.77
+              1119.81,
+              633.79,
+              170.57,
+              66.0
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000353.jpg",
+            "bbox": [
+              962.83,
+              490.24,
+              133.79,
+              129.6
             ]
           },
           {
-            "frame_path": "frame_0000001046.jpg",
+            "frame_path": "frame_0000000497.jpg",
             "bbox": [
-              689.1,
-              327.37,
-              582.24,
-              490.98
+              1024.74,
+              538.24,
+              124.8,
+              138.7
             ]
           }
         ]
       },
       {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -170,126 +296,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 1,
-        "class_name": "spoon",
-        "name": "spoon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000097.jpg",
-            "bbox": [
-              1224.53,
-              588.58,
-              176.01,
-              163.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000000135.jpg",
-            "bbox": [
-              1575.64,
-              1003.36,
-              72.68,
-              76.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000000353.jpg",
-            "bbox": [
-              1098.74,
-              493.61,
-              72.37,
-              101.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000000746.jpg",
-            "bbox": [
-              1119.81,
-              633.79,
-              170.57,
-              66.0
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000135.jpg",
-            "bbox": [
-              0,
-              341.44,
-              284.07,
-              227.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000000353.jpg",
-            "bbox": [
-              807.21,
-              219.03,
-              329.78,
-              274.67
-            ]
-          },
-          {
-            "frame_path": "frame_0000000497.jpg",
-            "bbox": [
-              889.4,
-              184.72,
-              333.07,
-              292.83
-            ]
-          },
-          {
-            "frame_path": "frame_0000000746.jpg",
-            "bbox": [
-              1837.61,
-              248.62,
-              82.39,
-              91.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000001046.jpg",
-            "bbox": [
-              1725.86,
-              66.51,
-              194.14,
-              115.86
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000353.jpg",
-            "bbox": [
-              962.83,
-              490.24,
-              133.79,
-              129.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000000497.jpg",
-            "bbox": [
-              1024.74,
-              538.24,
-              124.8,
-              138.7
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -314,42 +320,9 @@
     "end_frame": 1681,
     "objects_in_sequence": [
       {
-        "class_id": 19,
-        "class_name": "bag",
-        "name": "bag",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001496.jpg",
-            "bbox": [
-              702.49,
-              602.81,
-              396.52,
-              257.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000001553.jpg",
-            "bbox": [
-              822.78,
-              349.56,
-              391.53,
-              521.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000001635.jpg",
-            "bbox": [
-              961.07,
-              574.36,
-              277.19,
-              317.76
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 70,
-        "class_name": "dishwasher",
+        "category": "appliances",
+        "subclass_name": "dishwasher",
         "name": "dishwasher",
         "image_crops": [
           {
@@ -398,6 +371,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 19,
+        "category": "containers",
+        "subclass_name": "bag",
+        "name": "bag",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001496.jpg",
+            "bbox": [
+              702.49,
+              602.81,
+              396.52,
+              257.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000001553.jpg",
+            "bbox": [
+              822.78,
+              349.56,
+              391.53,
+              521.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000001635.jpg",
+            "bbox": [
+              961.07,
+              574.36,
+              277.19,
+              317.76
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -423,7 +431,8 @@
     "objects_in_sequence": [
       {
         "class_id": 19,
-        "class_name": "bag",
+        "category": "containers",
+        "subclass_name": "bag",
         "name": "bag",
         "image_crops": [
           {
@@ -439,7 +448,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -482,7 +492,8 @@
       },
       {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -520,7 +531,8 @@
     "objects_in_sequence": [
       {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -581,7 +593,8 @@
       },
       {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -663,58 +676,9 @@
     "end_frame": 4651,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004610.jpg",
-            "bbox": [
-              458.59,
-              181.87,
-              361.05,
-              382.9
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003636.jpg",
-            "bbox": [
-              1041.14,
-              352.66,
-              196.27,
-              368.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000003676.jpg",
-            "bbox": [
-              1083.03,
-              486.38,
-              228.32,
-              336.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000004362.jpg",
-            "bbox": [
-              676.4,
-              475.9,
-              374.9,
-              229.07
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -765,8 +729,78 @@
         ]
       },
       {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003636.jpg",
+            "bbox": [
+              1041.14,
+              352.66,
+              196.27,
+              368.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000003676.jpg",
+            "bbox": [
+              1083.03,
+              486.38,
+              228.32,
+              336.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000004362.jpg",
+            "bbox": [
+              676.4,
+              475.9,
+              374.9,
+              229.07
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 110,
+        "category": "storage",
+        "subclass_name": "rack:drying",
+        "name": "drainer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004610.jpg",
+            "bbox": [
+              664.74,
+              321.99,
+              704.94,
+              463.05
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004610.jpg",
+            "bbox": [
+              458.59,
+              181.87,
+              361.05,
+              382.9
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 16,
-        "class_name": "onion",
+        "category": "vegetables",
+        "subclass_name": "onion",
         "name": "onion",
         "image_crops": [
           {
@@ -791,7 +825,8 @@
       },
       {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -822,22 +857,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 110,
-        "class_name": "rack:drying",
-        "name": "drainer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004610.jpg",
-            "bbox": [
-              664.74,
-              321.99,
-              704.94,
-              463.05
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -862,85 +881,9 @@
     "end_frame": 6215,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004930.jpg",
-            "bbox": [
-              899.45,
-              490.73,
-              388.96,
-              315.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000005086.jpg",
-            "bbox": [
-              914.99,
-              445.4,
-              399.55,
-              349.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000005166.jpg",
-            "bbox": [
-              876.16,
-              337.36,
-              409.37,
-              328.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000006145.jpg",
-            "bbox": [
-              1623.98,
-              433.03,
-              277.67,
-              247.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000006199.jpg",
-            "bbox": [
-              1452.11,
-              193.03,
-              295.75,
-              194.33
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006145.jpg",
-            "bbox": [
-              799.88,
-              337.7,
-              778.39,
-              315.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000006199.jpg",
-            "bbox": [
-              547.03,
-              280.41,
-              875.61,
-              436.82
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 4,
-        "class_name": "knife",
+        "category": "cutlery",
+        "subclass_name": "knife",
         "name": "knife",
         "image_crops": [
           {
@@ -991,8 +934,88 @@
         ]
       },
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006145.jpg",
+            "bbox": [
+              799.88,
+              337.7,
+              778.39,
+              315.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000006199.jpg",
+            "bbox": [
+              547.03,
+              280.41,
+              875.61,
+              436.82
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004930.jpg",
+            "bbox": [
+              899.45,
+              490.73,
+              388.96,
+              315.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000005086.jpg",
+            "bbox": [
+              914.99,
+              445.4,
+              399.55,
+              349.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000005166.jpg",
+            "bbox": [
+              876.16,
+              337.36,
+              409.37,
+              328.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000006145.jpg",
+            "bbox": [
+              1623.98,
+              433.03,
+              277.67,
+              247.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000006199.jpg",
+            "bbox": [
+              1452.11,
+              193.03,
+              295.75,
+              194.33
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -1065,8 +1088,88 @@
     "end_frame": 6888,
     "objects_in_sequence": [
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006241.jpg",
+            "bbox": [
+              426.28,
+              219.93,
+              888.99,
+              561.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000006343.jpg",
+            "bbox": [
+              274.71,
+              461.02,
+              788.81,
+              370.07
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 48,
+        "category": "rubbish",
+        "subclass_name": "skin",
+        "name": "potato peels",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006343.jpg",
+            "bbox": [
+              1260.85,
+              298.98,
+              18.1,
+              13.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000006621.jpg",
+            "bbox": [
+              1105.45,
+              528.4,
+              22.02,
+              24.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000006689.jpg",
+            "bbox": [
+              958.08,
+              462.11,
+              100.52,
+              63.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000006837.jpg",
+            "bbox": [
+              1063.19,
+              416.94,
+              81.21,
+              92.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000006865.jpg",
+            "bbox": [
+              1066.78,
+              425.44,
+              84.58,
+              109.02
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 18,
-        "class_name": "board:chopping",
+        "category": "utensils",
+        "subclass_name": "board:chopping",
         "name": "chopping board",
         "image_crops": [
           {
@@ -1126,33 +1229,9 @@
         ]
       },
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006241.jpg",
-            "bbox": [
-              426.28,
-              219.93,
-              888.99,
-              561.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000006343.jpg",
-            "bbox": [
-              274.71,
-              461.02,
-              788.81,
-              370.07
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 87,
-        "class_name": "peeler:potato",
+        "category": "utensils",
+        "subclass_name": "peeler:potato",
         "name": "peeler",
         "image_crops": [
           {
@@ -1204,7 +1283,8 @@
       },
       {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -1262,58 +1342,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 48,
-        "class_name": "skin",
-        "name": "potato peels",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006343.jpg",
-            "bbox": [
-              1260.85,
-              298.98,
-              18.1,
-              13.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000006621.jpg",
-            "bbox": [
-              1105.45,
-              528.4,
-              22.02,
-              24.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000006689.jpg",
-            "bbox": [
-              958.08,
-              462.11,
-              100.52,
-              63.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000006837.jpg",
-            "bbox": [
-              1063.19,
-              416.94,
-              81.21,
-              92.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000006865.jpg",
-            "bbox": [
-              1066.78,
-              425.44,
-              84.58,
-              109.02
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1338,8 +1366,140 @@
     "end_frame": 12532,
     "objects_in_sequence": [
       {
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009233.jpg",
+            "bbox": [
+              1203.44,
+              532.1,
+              138.16,
+              155.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000009294.jpg",
+            "bbox": [
+              1157.74,
+              575.29,
+              130.7,
+              154.32
+            ]
+          },
+          {
+            "frame_path": "frame_0000010481.jpg",
+            "bbox": [
+              1008.56,
+              558.39,
+              109.91,
+              90.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000011624.jpg",
+            "bbox": [
+              1079.04,
+              468.72,
+              60.43,
+              247.49
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 54,
+        "category": "rubbish",
+        "subclass_name": "rubbish",
+        "name": "trash",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012435.jpg",
+            "bbox": [
+              1072.4,
+              299.17,
+              148.82,
+              158.23
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 48,
+        "category": "rubbish",
+        "subclass_name": "skin",
+        "name": "potato peels",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009233.jpg",
+            "bbox": [
+              857.8,
+              472.76,
+              221.26,
+              254.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000009294.jpg",
+            "bbox": [
+              867.42,
+              494.31,
+              220.82,
+              246.11
+            ]
+          },
+          {
+            "frame_path": "frame_0000010481.jpg",
+            "bbox": [
+              954.78,
+              452.57,
+              256.18,
+              159.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000011624.jpg",
+            "bbox": [
+              997.0,
+              452.22,
+              125.85,
+              76.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000012073.jpg",
+            "bbox": [
+              906.24,
+              534.43,
+              287.32,
+              145.27
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000012435.jpg",
+            "bbox": [
+              365.34,
+              260.95,
+              998.1,
+              437.42
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 18,
-        "class_name": "board:chopping",
+        "category": "utensils",
+        "subclass_name": "board:chopping",
         "name": "chopping board",
         "image_crops": [
           {
@@ -1399,67 +1559,53 @@
         ]
       },
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012435.jpg",
-            "bbox": [
-              365.34,
-              260.95,
-              998.1,
-              437.42
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
+        "class_id": 87,
+        "category": "utensils",
+        "subclass_name": "peeler:potato",
+        "name": "peeler",
         "image_crops": [
           {
             "frame_path": "frame_0000009233.jpg",
             "bbox": [
-              1203.44,
-              532.1,
-              138.16,
-              155.9
+              1067.78,
+              635.42,
+              229.87,
+              113.76
             ]
           },
           {
             "frame_path": "frame_0000009294.jpg",
             "bbox": [
-              1157.74,
-              575.29,
-              130.7,
-              154.32
-            ]
-          },
-          {
-            "frame_path": "frame_0000010481.jpg",
-            "bbox": [
-              1008.56,
-              558.39,
-              109.91,
-              90.2
+              1056.57,
+              688.85,
+              229.54,
+              144.87
             ]
           },
           {
             "frame_path": "frame_0000011624.jpg",
             "bbox": [
-              1079.04,
-              468.72,
-              60.43,
-              247.49
+              1250.86,
+              721.86,
+              45.15,
+              53.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000012073.jpg",
+            "bbox": [
+              1334.21,
+              624.51,
+              97.97,
+              111.28
             ]
           }
         ]
       },
       {
         "class_id": 16,
-        "class_name": "onion",
+        "category": "vegetables",
+        "subclass_name": "onion",
         "name": "onion",
         "image_crops": [
           {
@@ -1510,51 +1656,9 @@
         ]
       },
       {
-        "class_id": 87,
-        "class_name": "peeler:potato",
-        "name": "peeler",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009233.jpg",
-            "bbox": [
-              1067.78,
-              635.42,
-              229.87,
-              113.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000009294.jpg",
-            "bbox": [
-              1056.57,
-              688.85,
-              229.54,
-              144.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000011624.jpg",
-            "bbox": [
-              1250.86,
-              721.86,
-              45.15,
-              53.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000012073.jpg",
-            "bbox": [
-              1334.21,
-              624.51,
-              97.97,
-              111.28
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -1564,74 +1668,6 @@
               363.98,
               597.96,
               220.85
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 54,
-        "class_name": "rubbish",
-        "name": "trash",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000012435.jpg",
-            "bbox": [
-              1072.4,
-              299.17,
-              148.82,
-              158.23
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 48,
-        "class_name": "skin",
-        "name": "potato peels",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009233.jpg",
-            "bbox": [
-              857.8,
-              472.76,
-              221.26,
-              254.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000009294.jpg",
-            "bbox": [
-              867.42,
-              494.31,
-              220.82,
-              246.11
-            ]
-          },
-          {
-            "frame_path": "frame_0000010481.jpg",
-            "bbox": [
-              954.78,
-              452.57,
-              256.18,
-              159.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000011624.jpg",
-            "bbox": [
-              997.0,
-              452.22,
-              125.85,
-              76.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000012073.jpg",
-            "bbox": [
-              906.24,
-              534.43,
-              287.32,
-              145.27
             ]
           }
         ]
@@ -1659,8 +1695,53 @@
     "end_frame": 14153,
     "objects_in_sequence": [
       {
+        "class_id": 24,
+        "category": "appliances",
+        "subclass_name": "hob",
+        "name": "hob/cooktop/stovetop",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000013298.jpg",
+            "bbox": [
+              825.49,
+              483.84,
+              871.88,
+              561.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000013621.jpg",
+            "bbox": [
+              834.85,
+              378.14,
+              877.22,
+              657.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000013909.jpg",
+            "bbox": [
+              830.17,
+              176.31,
+              898.41,
+              630.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000014095.jpg",
+            "bbox": [
+              826.13,
+              162.2,
+              904.49,
+              698.68
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "oil bottle",
         "image_crops": [
           {
@@ -1703,7 +1784,8 @@
       },
       {
         "class_id": 118,
-        "class_name": "cap",
+        "category": "containers",
+        "subclass_name": "cap",
         "name": "bottle cap",
         "image_crops": [
           {
@@ -1727,67 +1809,9 @@
         ]
       },
       {
-        "class_id": 24,
-        "class_name": "hob",
-        "name": "hob/cooktop/stovetop",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000013298.jpg",
-            "bbox": [
-              825.49,
-              483.84,
-              871.88,
-              561.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000013621.jpg",
-            "bbox": [
-              834.85,
-              378.14,
-              877.22,
-              657.53
-            ]
-          },
-          {
-            "frame_path": "frame_0000013909.jpg",
-            "bbox": [
-              830.17,
-              176.31,
-              898.41,
-              630.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000014095.jpg",
-            "bbox": [
-              826.13,
-              162.2,
-              904.49,
-              698.68
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 31,
-        "class_name": "oil",
-        "name": "oil",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000014095.jpg",
-            "bbox": [
-              1044.55,
-              487.52,
-              147.71,
-              173.35
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "frying pan",
         "image_crops": [
           {
@@ -1845,6 +1869,23 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 31,
+        "category": "spices and herbs and sauces",
+        "subclass_name": "oil",
+        "name": "oil",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000014095.jpg",
+            "bbox": [
+              1044.55,
+              487.52,
+              147.71,
+              173.35
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1869,33 +1910,9 @@
     "end_frame": 22812,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000021381.jpg",
-            "bbox": [
-              599.27,
-              435.81,
-              336.72,
-              396.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000021698.jpg",
-            "bbox": [
-              761.26,
-              420.53,
-              363.19,
-              438.51
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob/cooktop/stovetop",
         "image_crops": [
           {
@@ -1946,42 +1963,9 @@
         ]
       },
       {
-        "class_id": 31,
-        "class_name": "oil",
-        "name": "oil",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000021381.jpg",
-            "bbox": [
-              863.31,
-              385.33,
-              153.95,
-              176.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000022531.jpg",
-            "bbox": [
-              864.85,
-              359.57,
-              186.18,
-              203.66
-            ]
-          },
-          {
-            "frame_path": "frame_0000022701.jpg",
-            "bbox": [
-              956.05,
-              398.03,
-              150.15,
-              200.4
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "pan",
         "image_crops": [
           {
@@ -2032,8 +2016,114 @@
         ]
       },
       {
+        "class_id": 31,
+        "category": "spices and herbs and sauces",
+        "subclass_name": "oil",
+        "name": "oil",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000021381.jpg",
+            "bbox": [
+              863.31,
+              385.33,
+              153.95,
+              176.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000022531.jpg",
+            "bbox": [
+              864.85,
+              359.57,
+              186.18,
+              203.66
+            ]
+          },
+          {
+            "frame_path": "frame_0000022701.jpg",
+            "bbox": [
+              956.05,
+              398.03,
+              150.15,
+              200.4
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000021381.jpg",
+            "bbox": [
+              599.27,
+              435.81,
+              336.72,
+              396.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000021698.jpg",
+            "bbox": [
+              761.26,
+              420.53,
+              363.19,
+              438.51
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 20,
+        "category": "utensils",
+        "subclass_name": "spatula",
+        "name": "spatula",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000022342.jpg",
+            "bbox": [
+              432.63,
+              311.1,
+              83.19,
+              75.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000022388.jpg",
+            "bbox": [
+              408.2,
+              210.75,
+              320.27,
+              289.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000022531.jpg",
+            "bbox": [
+              988.99,
+              421.73,
+              244.79,
+              168.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000022701.jpg",
+            "bbox": [
+              1016.1,
+              441.54,
+              277.62,
+              174.7
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -2082,49 +2172,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 20,
-        "class_name": "spatula",
-        "name": "spatula",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000022342.jpg",
-            "bbox": [
-              432.63,
-              311.1,
-              83.19,
-              75.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000022388.jpg",
-            "bbox": [
-              408.2,
-              210.75,
-              320.27,
-              289.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000022531.jpg",
-            "bbox": [
-              988.99,
-              421.73,
-              244.79,
-              168.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000022701.jpg",
-            "bbox": [
-              1016.1,
-              441.54,
-              277.62,
-              174.7
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2149,94 +2196,9 @@
     "end_frame": 25913,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000023816.jpg",
-            "bbox": [
-              711.41,
-              362.18,
-              383.52,
-              257.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000024833.jpg",
-            "bbox": [
-              849.05,
-              358.03,
-              423.49,
-              349.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000025811.jpg",
-            "bbox": [
-              1365.94,
-              614.82,
-              316.99,
-              317.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000025875.jpg",
-            "bbox": [
-              1308.69,
-              590.83,
-              279.43,
-              311.88
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025402.jpg",
-            "bbox": [
-              784.41,
-              197.7,
-              159.03,
-              111.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000025464.jpg",
-            "bbox": [
-              782.37,
-              131.17,
-              182.44,
-              138.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000025811.jpg",
-            "bbox": [
-              1177.95,
-              577.34,
-              222.97,
-              196.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000025875.jpg",
-            "bbox": [
-              1122.17,
-              554.22,
-              211.13,
-              195.87
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "egg box",
         "image_crops": [
           {
@@ -2278,33 +2240,53 @@
         ]
       },
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
         "image_crops": [
           {
             "frame_path": "frame_0000025402.jpg",
             "bbox": [
-              0,
-              0,
-              1902.71,
-              884.18
+              784.41,
+              197.7,
+              159.03,
+              111.14
             ]
           },
           {
             "frame_path": "frame_0000025464.jpg",
             "bbox": [
-              0,
-              0,
-              1721.19,
-              860.57
+              782.37,
+              131.17,
+              182.44,
+              138.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000025811.jpg",
+            "bbox": [
+              1177.95,
+              577.34,
+              222.97,
+              196.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000025875.jpg",
+            "bbox": [
+              1122.17,
+              554.22,
+              211.13,
+              195.87
             ]
           }
         ]
       },
       {
         "class_id": 4,
-        "class_name": "knife",
+        "category": "cutlery",
+        "subclass_name": "knife",
         "name": "knife",
         "image_crops": [
           {
@@ -2346,8 +2328,79 @@
         ]
       },
       {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025402.jpg",
+            "bbox": [
+              0,
+              0,
+              1902.71,
+              884.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000025464.jpg",
+            "bbox": [
+              0,
+              0,
+              1721.19,
+              860.57
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000023816.jpg",
+            "bbox": [
+              711.41,
+              362.18,
+              383.52,
+              257.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000024833.jpg",
+            "bbox": [
+              849.05,
+              358.03,
+              423.49,
+              349.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000025811.jpg",
+            "bbox": [
+              1365.94,
+              614.82,
+              316.99,
+              317.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000025875.jpg",
+            "bbox": [
+              1308.69,
+              590.83,
+              279.43,
+              311.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 16,
-        "class_name": "onion",
+        "category": "vegetables",
+        "subclass_name": "onion",
         "name": "onion",
         "image_crops": [
           {
@@ -2411,110 +2464,9 @@
     "end_frame": 26592,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000026565.jpg",
-            "bbox": [
-              905.26,
-              264.38,
-              151.64,
-              125.34
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 23,
-        "class_name": "box",
-        "name": "egg box",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025957.jpg",
-            "bbox": [
-              814.03,
-              225.89,
-              439.83,
-              358.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000026019.jpg",
-            "bbox": [
-              791.67,
-              277.06,
-              425.51,
-              330.55
-            ]
-          },
-          {
-            "frame_path": "frame_0000026342.jpg",
-            "bbox": [
-              1111.65,
-              674.66,
-              198.14,
-              269.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000026374.jpg",
-            "bbox": [
-              1047.1,
-              704.34,
-              165.79,
-              236.26
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000025957.jpg",
-            "bbox": [
-              1034.47,
-              430.13,
-              122.72,
-              136.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000026019.jpg",
-            "bbox": [
-              861.12,
-              465.99,
-              220.87,
-              103.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000026342.jpg",
-            "bbox": [
-              1828.12,
-              1042.51,
-              84.28,
-              37.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000026565.jpg",
-            "bbox": [
-              1039.08,
-              210.02,
-              64.98,
-              45.26
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -2572,6 +2524,111 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 23,
+        "category": "containers",
+        "subclass_name": "box",
+        "name": "egg box",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025957.jpg",
+            "bbox": [
+              814.03,
+              225.89,
+              439.83,
+              358.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000026019.jpg",
+            "bbox": [
+              791.67,
+              277.06,
+              425.51,
+              330.55
+            ]
+          },
+          {
+            "frame_path": "frame_0000026342.jpg",
+            "bbox": [
+              1111.65,
+              674.66,
+              198.14,
+              269.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000026374.jpg",
+            "bbox": [
+              1047.1,
+              704.34,
+              165.79,
+              236.26
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026565.jpg",
+            "bbox": [
+              905.26,
+              264.38,
+              151.64,
+              125.34
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000025957.jpg",
+            "bbox": [
+              1034.47,
+              430.13,
+              122.72,
+              136.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000026019.jpg",
+            "bbox": [
+              861.12,
+              465.99,
+              220.87,
+              103.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000026342.jpg",
+            "bbox": [
+              1828.12,
+              1042.51,
+              84.28,
+              37.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000026565.jpg",
+            "bbox": [
+              1039.08,
+              210.02,
+              64.98,
+              45.26
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2596,8 +2653,53 @@
     "end_frame": 28041,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000027600.jpg",
+            "bbox": [
+              525.39,
+              0,
+              312.52,
+              101.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000027803.jpg",
+            "bbox": [
+              768.91,
+              348.99,
+              303.69,
+              248.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000028005.jpg",
+            "bbox": [
+              0,
+              548.66,
+              278.89,
+              130.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000028031.jpg",
+            "bbox": [
+              0,
+              688.0,
+              91.83,
+              65.7
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -2621,8 +2723,158 @@
         ]
       },
       {
+        "class_id": 10,
+        "category": "crockery",
+        "subclass_name": "glass",
+        "name": "glass",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026699.jpg",
+            "bbox": [
+              925.5,
+              324.59,
+              111.63,
+              128.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000026759.jpg",
+            "bbox": [
+              994.57,
+              339.73,
+              123.82,
+              124.37
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026699.jpg",
+            "bbox": [
+              994.45,
+              446.49,
+              272.02,
+              182.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000026759.jpg",
+            "bbox": [
+              972.46,
+              479.23,
+              328.1,
+              93.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000027600.jpg",
+            "bbox": [
+              1133.99,
+              767.29,
+              90.22,
+              59.95
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026699.jpg",
+            "bbox": [
+              935.88,
+              355.66,
+              85.11,
+              65.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000026759.jpg",
+            "bbox": [
+              1022.51,
+              365.09,
+              71.5,
+              62.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000027803.jpg",
+            "bbox": [
+              990.5,
+              588.96,
+              70.81,
+              86.39
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000026699.jpg",
+            "bbox": [
+              26.96,
+              1042.88,
+              129.24,
+              37.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000027600.jpg",
+            "bbox": [
+              492.76,
+              57.98,
+              585.28,
+              365.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000027803.jpg",
+            "bbox": [
+              607.8,
+              449.94,
+              625.99,
+              446.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000028005.jpg",
+            "bbox": [
+              39.76,
+              473.87,
+              651.52,
+              564.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000028031.jpg",
+            "bbox": [
+              15.34,
+              538.34,
+              497.69,
+              499.84
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -2680,194 +2932,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000026699.jpg",
-            "bbox": [
-              994.45,
-              446.49,
-              272.02,
-              182.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000026759.jpg",
-            "bbox": [
-              972.46,
-              479.23,
-              328.1,
-              93.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000027600.jpg",
-            "bbox": [
-              1133.99,
-              767.29,
-              90.22,
-              59.95
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 10,
-        "class_name": "glass",
-        "name": "glass",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000026699.jpg",
-            "bbox": [
-              925.5,
-              324.59,
-              111.63,
-              128.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000026759.jpg",
-            "bbox": [
-              994.57,
-              339.73,
-              123.82,
-              124.37
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000026699.jpg",
-            "bbox": [
-              26.96,
-              1042.88,
-              129.24,
-              37.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000027600.jpg",
-            "bbox": [
-              492.76,
-              57.98,
-              585.28,
-              365.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000027803.jpg",
-            "bbox": [
-              607.8,
-              449.94,
-              625.99,
-              446.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000028005.jpg",
-            "bbox": [
-              39.76,
-              473.87,
-              651.52,
-              564.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000028031.jpg",
-            "bbox": [
-              15.34,
-              538.34,
-              497.69,
-              499.84
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000027600.jpg",
-            "bbox": [
-              525.39,
-              0,
-              312.52,
-              101.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000027803.jpg",
-            "bbox": [
-              768.91,
-              348.99,
-              303.69,
-              248.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000028005.jpg",
-            "bbox": [
-              0,
-              548.66,
-              278.89,
-              130.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000028031.jpg",
-            "bbox": [
-              0,
-              688.0,
-              91.83,
-              65.7
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000026699.jpg",
-            "bbox": [
-              935.88,
-              355.66,
-              85.11,
-              65.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000026759.jpg",
-            "bbox": [
-              1022.51,
-              365.09,
-              71.5,
-              62.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000027803.jpg",
-            "bbox": [
-              990.5,
-              588.96,
-              70.81,
-              86.39
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2892,8 +2956,35 @@
     "end_frame": 30335,
     "objects_in_sequence": [
       {
+        "class_id": 5,
+        "category": "cookware",
+        "subclass_name": "pan",
+        "name": "pan",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000028560.jpg",
+            "bbox": [
+              870.63,
+              350.44,
+              348.14,
+              289.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000029074.jpg",
+            "bbox": [
+              837.53,
+              338.14,
+              552.1,
+              293.75
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -2936,7 +3027,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -2978,33 +3070,61 @@
         ]
       },
       {
-        "class_id": 5,
-        "class_name": "pan",
-        "name": "pan",
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000029786.jpg",
+            "bbox": [
+              939.77,
+              492.14,
+              80.52,
+              105.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000029926.jpg",
+            "bbox": [
+              1004.64,
+              524.42,
+              102.32,
+              104.71
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 20,
+        "category": "utensils",
+        "subclass_name": "spatula",
+        "name": "spatula",
         "image_crops": [
           {
             "frame_path": "frame_0000028560.jpg",
             "bbox": [
-              870.63,
-              350.44,
-              348.14,
-              289.78
+              957.99,
+              395.3,
+              172.47,
+              70.57
             ]
           },
           {
             "frame_path": "frame_0000029074.jpg",
             "bbox": [
-              837.53,
-              338.14,
-              552.1,
-              293.75
+              941.6,
+              415.51,
+              244.64,
+              126.85
             ]
           }
         ]
       },
       {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -3053,56 +3173,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 20,
-        "class_name": "spatula",
-        "name": "spatula",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000028560.jpg",
-            "bbox": [
-              957.99,
-              395.3,
-              172.47,
-              70.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000029074.jpg",
-            "bbox": [
-              941.6,
-              415.51,
-              244.64,
-              126.85
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000029786.jpg",
-            "bbox": [
-              939.77,
-              492.14,
-              80.52,
-              105.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000029926.jpg",
-            "bbox": [
-              1004.64,
-              524.42,
-              102.32,
-              104.71
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3128,7 +3198,8 @@
     "objects_in_sequence": [
       {
         "class_id": 7,
-        "class_name": "bowl",
+        "category": "crockery",
+        "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
           {
@@ -3188,51 +3259,53 @@
         ]
       },
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
+        "class_id": 14,
+        "category": "cutlery",
+        "subclass_name": "fork",
+        "name": "fork",
         "image_crops": [
-          {
-            "frame_path": "frame_0000030468.jpg",
-            "bbox": [
-              670.89,
-              367.39,
-              783.03,
-              245.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000030517.jpg",
-            "bbox": [
-              623.97,
-              279.61,
-              871.21,
-              650.32
-            ]
-          },
           {
             "frame_path": "frame_0000030585.jpg",
             "bbox": [
-              742.98,
-              319.32,
-              939.83,
-              722.52
+              1060.33,
+              370.88,
+              112.9,
+              142.05
             ]
           },
           {
             "frame_path": "frame_0000030753.jpg",
             "bbox": [
-              698.43,
-              272.89,
-              945.91,
-              744.69
+              1019.11,
+              333.56,
+              86.27,
+              89.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000031893.jpg",
+            "bbox": [
+              1152.65,
+              463.54,
+              50.87,
+              19.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000031995.jpg",
+            "bbox": [
+              1160.83,
+              452.16,
+              56.39,
+              23.83
             ]
           }
         ]
       },
       {
         "class_id": 53,
-        "class_name": "egg",
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
         "name": "egg",
         "image_crops": [
           {
@@ -3292,51 +3365,53 @@
         ]
       },
       {
-        "class_id": 14,
-        "class_name": "fork",
-        "name": "fork",
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
         "image_crops": [
+          {
+            "frame_path": "frame_0000030468.jpg",
+            "bbox": [
+              670.89,
+              367.39,
+              783.03,
+              245.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000030517.jpg",
+            "bbox": [
+              623.97,
+              279.61,
+              871.21,
+              650.32
+            ]
+          },
           {
             "frame_path": "frame_0000030585.jpg",
             "bbox": [
-              1060.33,
-              370.88,
-              112.9,
-              142.05
+              742.98,
+              319.32,
+              939.83,
+              722.52
             ]
           },
           {
             "frame_path": "frame_0000030753.jpg",
             "bbox": [
-              1019.11,
-              333.56,
-              86.27,
-              89.28
-            ]
-          },
-          {
-            "frame_path": "frame_0000031893.jpg",
-            "bbox": [
-              1152.65,
-              463.54,
-              50.87,
-              19.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000031995.jpg",
-            "bbox": [
-              1160.83,
-              452.16,
-              56.39,
-              23.83
+              698.43,
+              272.89,
+              945.91,
+              744.69
             ]
           }
         ]
       },
       {
         "class_id": 38,
-        "class_name": "salt",
+        "category": "spices and herbs and sauces",
+        "subclass_name": "salt",
         "name": "salt",
         "image_crops": [
           {
@@ -3382,83 +3457,9 @@
     "end_frame": 34618,
     "objects_in_sequence": [
       {
-        "class_id": 7,
-        "class_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000032825.jpg",
-            "bbox": [
-              961.16,
-              441.33,
-              233.83,
-              227.54
-            ]
-          },
-          {
-            "frame_path": "frame_0000033320.jpg",
-            "bbox": [
-              947.44,
-              434.44,
-              230.46,
-              225.26
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 53,
-        "class_name": "egg",
-        "name": "egg",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000032825.jpg",
-            "bbox": [
-              997.63,
-              499.21,
-              165.62,
-              148.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000033320.jpg",
-            "bbox": [
-              981.07,
-              492.9,
-              149.98,
-              142.68
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 14,
-        "class_name": "fork",
-        "name": "fork",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000032825.jpg",
-            "bbox": [
-              1144.05,
-              547.9,
-              60.87,
-              17.14
-            ]
-          },
-          {
-            "frame_path": "frame_0000033320.jpg",
-            "bbox": [
-              1126.38,
-              498.99,
-              107.57,
-              29.08
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob/cooktop/stovetop",
         "image_crops": [
           {
@@ -3501,7 +3502,8 @@
       },
       {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "pan",
         "image_crops": [
           {
@@ -3543,8 +3545,139 @@
         ]
       },
       {
+        "class_id": 7,
+        "category": "crockery",
+        "subclass_name": "bowl",
+        "name": "bowl",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000032825.jpg",
+            "bbox": [
+              961.16,
+              441.33,
+              233.83,
+              227.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000033320.jpg",
+            "bbox": [
+              947.44,
+              434.44,
+              230.46,
+              225.26
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 14,
+        "category": "cutlery",
+        "subclass_name": "fork",
+        "name": "fork",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000032825.jpg",
+            "bbox": [
+              1144.05,
+              547.9,
+              60.87,
+              17.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000033320.jpg",
+            "bbox": [
+              1126.38,
+              498.99,
+              107.57,
+              29.08
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 53,
+        "category": "dairy and eggs",
+        "subclass_name": "egg",
+        "name": "egg",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000032825.jpg",
+            "bbox": [
+              997.63,
+              499.21,
+              165.62,
+              148.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000033320.jpg",
+            "bbox": [
+              981.07,
+              492.9,
+              149.98,
+              142.68
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 38,
+        "category": "spices and herbs and sauces",
+        "subclass_name": "salt",
+        "name": "salt",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000032171.jpg",
+            "bbox": [
+              1141.44,
+              366.1,
+              256.75,
+              227.63
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 20,
+        "category": "utensils",
+        "subclass_name": "spatula",
+        "name": "spatula",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000032247.jpg",
+            "bbox": [
+              1230.11,
+              572.14,
+              112.37,
+              93.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000033863.jpg",
+            "bbox": [
+              1076.96,
+              526.08,
+              203.54,
+              125.71
+            ]
+          },
+          {
+            "frame_path": "frame_0000034349.jpg",
+            "bbox": [
+              1084.42,
+              485.39,
+              252.3,
+              132.69
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 30,
-        "class_name": "potato",
+        "category": "vegetables",
+        "subclass_name": "potato",
         "name": "potato",
         "image_crops": [
           {
@@ -3602,56 +3735,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 38,
-        "class_name": "salt",
-        "name": "salt",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000032171.jpg",
-            "bbox": [
-              1141.44,
-              366.1,
-              256.75,
-              227.63
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 20,
-        "class_name": "spatula",
-        "name": "spatula",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000032247.jpg",
-            "bbox": [
-              1230.11,
-              572.14,
-              112.37,
-              93.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000033863.jpg",
-            "bbox": [
-              1076.96,
-              526.08,
-              203.54,
-              125.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000034349.jpg",
-            "bbox": [
-              1084.42,
-              485.39,
-              252.3,
-              132.69
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3676,51 +3759,9 @@
     "end_frame": 38528,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              1030.7,
-              783.79,
-              325.72,
-              260.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              1045.24,
-              634.12,
-              412.22,
-              269.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              771.82,
-              490.43,
-              421.35,
-              262.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              661.42,
-              467.44,
-              453.19,
-              304.11
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 24,
-        "class_name": "hob",
+        "category": "appliances",
+        "subclass_name": "hob",
         "name": "hob/cooktop/stovetop",
         "image_crops": [
           {
@@ -3780,338 +3821,9 @@
         ]
       },
       {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              1031.11,
-              639.55,
-              55.77,
-              85.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              1024.02,
-              579.32,
-              88.53,
-              132.48
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              1039.45,
-              588.22,
-              193.16,
-              77.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              1104.76,
-              498.73,
-              178.43,
-              139.75
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 16,
-        "class_name": "onion",
-        "name": "onion",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              1645.63,
-              681.05,
-              232.23,
-              222.19
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              1626.66,
-              515.48,
-              206.93,
-              231.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              960.83,
-              474.47,
-              212.26,
-              138.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              992.99,
-              358.05,
-              223.75,
-              197.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000036021.jpg",
-            "bbox": [
-              950.41,
-              374.35,
-              259.53,
-              229.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000037186.jpg",
-            "bbox": [
-              968.4,
-              406.51,
-              234.87,
-              246.78
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 5,
-        "class_name": "pan",
-        "name": "pan",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              1554.22,
-              661.53,
-              365.78,
-              343.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              1526.35,
-              494.41,
-              355.22,
-              391.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              931.83,
-              358.07,
-              550.54,
-              323.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              942.63,
-              317.79,
-              545.77,
-              329.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000036021.jpg",
-            "bbox": [
-              934.76,
-              343.09,
-              379.35,
-              275.79
-            ]
-          },
-          {
-            "frame_path": "frame_0000037186.jpg",
-            "bbox": [
-              794.61,
-              387.93,
-              454.71,
-              343.65
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 30,
-        "class_name": "potato",
-        "name": "potato",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              1646.88,
-              689.59,
-              227.16,
-              203.34
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              1627.26,
-              524.58,
-              205.28,
-              214.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              969.38,
-              391.51,
-              226.74,
-              122.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              976.7,
-              349.66,
-              229.11,
-              222.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000036021.jpg",
-            "bbox": [
-              968.39,
-              366.04,
-              211.6,
-              230.29
-            ]
-          },
-          {
-            "frame_path": "frame_0000037186.jpg",
-            "bbox": [
-              985.63,
-              409.67,
-              226.34,
-              243.44
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000038161.jpg",
-            "bbox": [
-              694.12,
-              460.43,
-              622.15,
-              444.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000038373.jpg",
-            "bbox": [
-              673.24,
-              307.92,
-              657.21,
-              476.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              257.96,
-              73.17,
-              585.65,
-              351.79
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              248.84,
-              22.93,
-              612.26,
-              345.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000036021.jpg",
-            "bbox": [
-              247.45,
-              40.74,
-              610.47,
-              334.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000037186.jpg",
-            "bbox": [
-              186.09,
-              80.57,
-              653.05,
-              378.34
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 20,
-        "class_name": "spatula",
-        "name": "spatula",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000035006.jpg",
-            "bbox": [
-              1193.32,
-              449.18,
-              352.35,
-              120.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000035212.jpg",
-            "bbox": [
-              1205.99,
-              410.56,
-              339.32,
-              129.51
-            ]
-          },
-          {
-            "frame_path": "frame_0000036021.jpg",
-            "bbox": [
-              1059.94,
-              424.35,
-              223.9,
-              69.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000037186.jpg",
-            "bbox": [
-              1156.34,
-              536.16,
-              481.24,
-              150.63
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 0,
-        "class_name": "tap",
+        "category": "appliances",
+        "subclass_name": "tap",
         "name": "tap",
         "image_crops": [
           {
@@ -4171,8 +3883,115 @@
         ]
       },
       {
+        "class_id": 5,
+        "category": "cookware",
+        "subclass_name": "pan",
+        "name": "pan",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              1554.22,
+              661.53,
+              365.78,
+              343.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              1526.35,
+              494.41,
+              355.22,
+              391.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              931.83,
+              358.07,
+              550.54,
+              323.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              942.63,
+              317.79,
+              545.77,
+              329.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000036021.jpg",
+            "bbox": [
+              934.76,
+              343.09,
+              379.35,
+              275.79
+            ]
+          },
+          {
+            "frame_path": "frame_0000037186.jpg",
+            "bbox": [
+              794.61,
+              387.93,
+              454.71,
+              343.65
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              1031.11,
+              639.55,
+              55.77,
+              85.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              1024.02,
+              579.32,
+              88.53,
+              132.48
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              1039.45,
+              588.22,
+              193.16,
+              77.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              1104.76,
+              498.73,
+              178.43,
+              139.75
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -4191,6 +4010,280 @@
               446.03,
               37.56,
               113.64
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              694.12,
+              460.43,
+              622.15,
+              444.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              673.24,
+              307.92,
+              657.21,
+              476.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              257.96,
+              73.17,
+              585.65,
+              351.79
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              248.84,
+              22.93,
+              612.26,
+              345.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000036021.jpg",
+            "bbox": [
+              247.45,
+              40.74,
+              610.47,
+              334.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000037186.jpg",
+            "bbox": [
+              186.09,
+              80.57,
+              653.05,
+              378.34
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              1030.7,
+              783.79,
+              325.72,
+              260.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              1045.24,
+              634.12,
+              412.22,
+              269.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              771.82,
+              490.43,
+              421.35,
+              262.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              661.42,
+              467.44,
+              453.19,
+              304.11
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 20,
+        "category": "utensils",
+        "subclass_name": "spatula",
+        "name": "spatula",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              1193.32,
+              449.18,
+              352.35,
+              120.71
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              1205.99,
+              410.56,
+              339.32,
+              129.51
+            ]
+          },
+          {
+            "frame_path": "frame_0000036021.jpg",
+            "bbox": [
+              1059.94,
+              424.35,
+              223.9,
+              69.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000037186.jpg",
+            "bbox": [
+              1156.34,
+              536.16,
+              481.24,
+              150.63
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 16,
+        "category": "vegetables",
+        "subclass_name": "onion",
+        "name": "onion",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              1645.63,
+              681.05,
+              232.23,
+              222.19
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              1626.66,
+              515.48,
+              206.93,
+              231.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              960.83,
+              474.47,
+              212.26,
+              138.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              992.99,
+              358.05,
+              223.75,
+              197.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000036021.jpg",
+            "bbox": [
+              950.41,
+              374.35,
+              259.53,
+              229.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000037186.jpg",
+            "bbox": [
+              968.4,
+              406.51,
+              234.87,
+              246.78
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 30,
+        "category": "vegetables",
+        "subclass_name": "potato",
+        "name": "potato",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000038161.jpg",
+            "bbox": [
+              1646.88,
+              689.59,
+              227.16,
+              203.34
+            ]
+          },
+          {
+            "frame_path": "frame_0000038373.jpg",
+            "bbox": [
+              1627.26,
+              524.58,
+              205.28,
+              214.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000035006.jpg",
+            "bbox": [
+              969.38,
+              391.51,
+              226.74,
+              122.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000035212.jpg",
+            "bbox": [
+              976.7,
+              349.66,
+              229.11,
+              222.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000036021.jpg",
+            "bbox": [
+              968.39,
+              366.04,
+              211.6,
+              230.29
+            ]
+          },
+          {
+            "frame_path": "frame_0000037186.jpg",
+            "bbox": [
+              985.63,
+              409.67,
+              226.34,
+              243.44
             ]
           }
         ]
@@ -4218,146 +4311,9 @@
     "end_frame": 40272,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000039040.jpg",
-            "bbox": [
-              931.77,
-              498.33,
-              381.13,
-              253.54
-            ]
-          },
-          {
-            "frame_path": "frame_0000039338.jpg",
-            "bbox": [
-              856.27,
-              622.88,
-              289.2,
-              283.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000039637.jpg",
-            "bbox": [
-              1069.2,
-              509.24,
-              242.75,
-              252.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000039863.jpg",
-            "bbox": [
-              1064.29,
-              280.29,
-              293.47,
-              166.1
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 110,
-        "class_name": "rack:drying",
-        "name": "drainer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000039040.jpg",
-            "bbox": [
-              0.93,
-              601.27,
-              383.98,
-              416.51
-            ]
-          },
-          {
-            "frame_path": "frame_0000039338.jpg",
-            "bbox": [
-              0,
-              256.28,
-              524.09,
-              523.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000039637.jpg",
-            "bbox": [
-              0,
-              489.73,
-              417.07,
-              436.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000039863.jpg",
-            "bbox": [
-              1004.08,
-              340.01,
-              498.58,
-              597.49
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000039040.jpg",
-            "bbox": [
-              671.33,
-              412.75,
-              652.31,
-              480.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000039338.jpg",
-            "bbox": [
-              746.5,
-              393.71,
-              693.32,
-              548.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000039637.jpg",
-            "bbox": [
-              714.55,
-              408.13,
-              621.49,
-              432.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000040089.jpg",
-            "bbox": [
-              261.9,
-              359.85,
-              490.67,
-              422.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000040217.jpg",
-            "bbox": [
-              193.66,
-              281.18,
-              577.98,
-              466.99
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 0,
-        "class_name": "tap",
+        "category": "appliances",
+        "subclass_name": "tap",
         "name": "tap",
         "image_crops": [
           {
@@ -4417,8 +4373,88 @@
         ]
       },
       {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000039040.jpg",
+            "bbox": [
+              885.51,
+              525.34,
+              253.75,
+              200.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000039637.jpg",
+            "bbox": [
+              901.5,
+              534.69,
+              256.3,
+              227.05
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000039040.jpg",
+            "bbox": [
+              671.33,
+              412.75,
+              652.31,
+              480.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000039338.jpg",
+            "bbox": [
+              746.5,
+              393.71,
+              693.32,
+              548.1
+            ]
+          },
+          {
+            "frame_path": "frame_0000039637.jpg",
+            "bbox": [
+              714.55,
+              408.13,
+              621.49,
+              432.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000040089.jpg",
+            "bbox": [
+              261.9,
+              359.85,
+              490.67,
+              422.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000040217.jpg",
+            "bbox": [
+              193.66,
+              281.18,
+              577.98,
+              466.99
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 52,
-        "class_name": "towel",
+        "category": "materials",
+        "subclass_name": "towel",
         "name": "towel",
         "image_crops": [
           {
@@ -4469,26 +4505,89 @@
         ]
       },
       {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
+        "class_id": 110,
+        "category": "storage",
+        "subclass_name": "rack:drying",
+        "name": "drainer",
         "image_crops": [
           {
             "frame_path": "frame_0000039040.jpg",
             "bbox": [
-              885.51,
-              525.34,
-              253.75,
-              200.13
+              0.93,
+              601.27,
+              383.98,
+              416.51
+            ]
+          },
+          {
+            "frame_path": "frame_0000039338.jpg",
+            "bbox": [
+              0,
+              256.28,
+              524.09,
+              523.57
             ]
           },
           {
             "frame_path": "frame_0000039637.jpg",
             "bbox": [
-              901.5,
-              534.69,
-              256.3,
-              227.05
+              0,
+              489.73,
+              417.07,
+              436.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000039863.jpg",
+            "bbox": [
+              1004.08,
+              340.01,
+              498.58,
+              597.49
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000039040.jpg",
+            "bbox": [
+              931.77,
+              498.33,
+              381.13,
+              253.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000039338.jpg",
+            "bbox": [
+              856.27,
+              622.88,
+              289.2,
+              283.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000039637.jpg",
+            "bbox": [
+              1069.2,
+              509.24,
+              242.75,
+              252.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000039863.jpg",
+            "bbox": [
+              1064.29,
+              280.29,
+              293.47,
+              166.1
             ]
           }
         ]

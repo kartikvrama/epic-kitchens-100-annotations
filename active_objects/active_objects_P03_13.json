@@ -7,8 +7,53 @@
     "end_frame": 768,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000377.jpg",
+            "bbox": [
+              1635.54,
+              427.98,
+              284.46,
+              236.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000000543.jpg",
+            "bbox": [
+              536.52,
+              546.35,
+              492.89,
+              350.96
+            ]
+          },
+          {
+            "frame_path": "frame_0000000663.jpg",
+            "bbox": [
+              618.71,
+              464.14,
+              485.8,
+              331.0
+            ]
+          },
+          {
+            "frame_path": "frame_0000000738.jpg",
+            "bbox": [
+              1592.36,
+              445.36,
+              327.64,
+              308.96
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -68,8 +113,26 @@
         ]
       },
       {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000663.jpg",
+            "bbox": [
+              756.63,
+              790.75,
+              321.43,
+              175.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -127,65 +190,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000377.jpg",
-            "bbox": [
-              1635.54,
-              427.98,
-              284.46,
-              236.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000000543.jpg",
-            "bbox": [
-              536.52,
-              546.35,
-              492.89,
-              350.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000000663.jpg",
-            "bbox": [
-              618.71,
-              464.14,
-              485.8,
-              331.0
-            ]
-          },
-          {
-            "frame_path": "frame_0000000738.jpg",
-            "bbox": [
-              1592.36,
-              445.36,
-              327.64,
-              308.96
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000663.jpg",
-            "bbox": [
-              756.63,
-              790.75,
-              321.43,
-              175.88
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -211,7 +215,8 @@
     "objects_in_sequence": [
       {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -235,94 +240,9 @@
         ]
       },
       {
-        "class_id": 10,
-        "class_name": "glass",
-        "name": "glass",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000933.jpg",
-            "bbox": [
-              957.28,
-              858.97,
-              200.06,
-              221.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000001007.jpg",
-            "bbox": [
-              943.42,
-              780.7,
-              190.86,
-              192.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000001082.jpg",
-            "bbox": [
-              939.44,
-              818.0,
-              190.27,
-              194.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000001146.jpg",
-            "bbox": [
-              630.49,
-              817.17,
-              261.18,
-              221.88
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000933.jpg",
-            "bbox": [
-              -0.57,
-              485.07,
-              1267.13,
-              594.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000001007.jpg",
-            "bbox": [
-              0,
-              433.98,
-              1292.11,
-              646.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000001082.jpg",
-            "bbox": [
-              0,
-              428.87,
-              1302.33,
-              651.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000001146.jpg",
-            "bbox": [
-              767.52,
-              283.25,
-              1152.48,
-              796.75
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 0,
-        "class_name": "tap",
+        "category": "appliances",
+        "subclass_name": "tap",
         "name": "tap",
         "image_crops": [
           {
@@ -364,8 +284,53 @@
         ]
       },
       {
+        "class_id": 10,
+        "category": "crockery",
+        "subclass_name": "glass",
+        "name": "glass",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000933.jpg",
+            "bbox": [
+              957.28,
+              858.97,
+              200.06,
+              221.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000001007.jpg",
+            "bbox": [
+              943.42,
+              780.7,
+              190.86,
+              192.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000001082.jpg",
+            "bbox": [
+              939.44,
+              818.0,
+              190.27,
+              194.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000001146.jpg",
+            "bbox": [
+              630.49,
+              817.17,
+              261.18,
+              221.88
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -384,6 +349,50 @@
               789.23,
               163.23,
               180.08
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000933.jpg",
+            "bbox": [
+              -0.57,
+              485.07,
+              1267.13,
+              594.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000001007.jpg",
+            "bbox": [
+              0,
+              433.98,
+              1292.11,
+              646.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000001082.jpg",
+            "bbox": [
+              0,
+              428.87,
+              1302.33,
+              651.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000001146.jpg",
+            "bbox": [
+              767.52,
+              283.25,
+              1152.48,
+              796.75
             ]
           }
         ]
@@ -411,24 +420,9 @@
     "end_frame": 1757,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "squash bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001714.jpg",
-            "bbox": [
-              1107.5,
-              885.36,
-              138.98,
-              194.64
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -488,8 +482,26 @@
         ]
       },
       {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "squash bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001714.jpg",
+            "bbox": [
+              1107.5,
+              885.36,
+              138.98,
+              194.64
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "saucepan",
         "image_crops": [
           {
@@ -544,8 +556,35 @@
     "end_frame": 2292,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002253.jpg",
+            "bbox": [
+              0,
+              0,
+              1918.01,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000002283.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "squash bottle",
         "image_crops": [
           {
@@ -578,33 +617,26 @@
         ]
       },
       {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
         "image_crops": [
           {
-            "frame_path": "frame_0000002253.jpg",
+            "frame_path": "frame_0000002093.jpg",
             "bbox": [
-              0,
-              0,
-              1918.01,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000002283.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
+              891.29,
+              902.93,
+              71.89,
+              119.08
             ]
           }
         ]
       },
       {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -637,24 +669,9 @@
         ]
       },
       {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002093.jpg",
-            "bbox": [
-              891.29,
-              902.93,
-              71.89,
-              119.08
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -691,33 +708,9 @@
     "end_frame": 2609,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "squash bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002339.jpg",
-            "bbox": [
-              1354.04,
-              808.54,
-              167.31,
-              236.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000002370.jpg",
-            "bbox": [
-              1344.26,
-              986.95,
-              162.84,
-              93.05
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -759,8 +752,35 @@
         ]
       },
       {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "squash bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002339.jpg",
+            "bbox": [
+              1354.04,
+              808.54,
+              167.31,
+              236.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000002370.jpg",
+            "bbox": [
+              1344.26,
+              986.95,
+              162.84,
+              93.05
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -796,8 +816,53 @@
     "end_frame": 3252,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002683.jpg",
+            "bbox": [
+              569.85,
+              559.06,
+              373.82,
+              400.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000002837.jpg",
+            "bbox": [
+              605.69,
+              499.52,
+              384.9,
+              406.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000003034.jpg",
+            "bbox": [
+              1535.2,
+              649.53,
+              384.8,
+              430.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000003064.jpg",
+            "bbox": [
+              570.56,
+              445.75,
+              301.03,
+              293.05
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 10,
-        "class_name": "glass",
+        "category": "crockery",
+        "subclass_name": "glass",
         "name": "glass",
         "image_crops": [
           {
@@ -848,94 +913,9 @@
         ]
       },
       {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002683.jpg",
-            "bbox": [
-              0,
-              508.07,
-              1276.78,
-              571.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000002837.jpg",
-            "bbox": [
-              0,
-              450.52,
-              1351.01,
-              629.63
-            ]
-          },
-          {
-            "frame_path": "frame_0000003034.jpg",
-            "bbox": [
-              666.21,
-              500.4,
-              1253.79,
-              579.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000003064.jpg",
-            "bbox": [
-              0,
-              462.08,
-              1654.88,
-              617.92
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002683.jpg",
-            "bbox": [
-              569.85,
-              559.06,
-              373.82,
-              400.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000002837.jpg",
-            "bbox": [
-              605.69,
-              499.52,
-              384.9,
-              406.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000003034.jpg",
-            "bbox": [
-              1535.2,
-              649.53,
-              384.8,
-              430.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000003064.jpg",
-            "bbox": [
-              570.56,
-              445.75,
-              301.03,
-              293.05
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -981,6 +961,50 @@
               705.36,
               182.09,
               114.36
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002683.jpg",
+            "bbox": [
+              0,
+              508.07,
+              1276.78,
+              571.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000002837.jpg",
+            "bbox": [
+              0,
+              450.52,
+              1351.01,
+              629.63
+            ]
+          },
+          {
+            "frame_path": "frame_0000003034.jpg",
+            "bbox": [
+              666.21,
+              500.4,
+              1253.79,
+              579.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000003064.jpg",
+            "bbox": [
+              0,
+              462.08,
+              1654.88,
+              617.92
             ]
           }
         ]

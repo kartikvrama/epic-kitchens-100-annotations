@@ -8,7 +8,8 @@
     "objects_in_sequence": [
       {
         "class_id": 70,
-        "class_name": "dishwasher",
+        "category": "appliances",
+        "subclass_name": "dishwasher",
         "name": "dishwasher",
         "image_crops": [
           {
@@ -41,42 +42,9 @@
         ]
       },
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000459.jpg",
-            "bbox": [
-              318.21,
-              357.82,
-              1601.12,
-              78.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000000511.jpg",
-            "bbox": [
-              605.11,
-              46.63,
-              1314.89,
-              639.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000000592.jpg",
-            "bbox": [
-              203.18,
-              0,
-              1659.64,
-              894.63
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -101,7 +69,8 @@
       },
       {
         "class_id": 35,
-        "class_name": "tray",
+        "category": "cookware",
+        "subclass_name": "tray",
         "name": "tray",
         "image_crops": [
           {
@@ -132,6 +101,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000459.jpg",
+            "bbox": [
+              318.21,
+              357.82,
+              1601.12,
+              78.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000000511.jpg",
+            "bbox": [
+              605.11,
+              46.63,
+              1314.89,
+              639.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000000592.jpg",
+            "bbox": [
+              203.18,
+              0,
+              1659.64,
+              894.63
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -156,8 +160,113 @@
     "end_frame": 1395,
     "objects_in_sequence": [
       {
+        "class_id": 250,
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
+        "name": "sous vide machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000747.jpg",
+            "bbox": [
+              469.93,
+              646.67,
+              228.36,
+              158.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000001319.jpg",
+            "bbox": [
+              922.64,
+              667.28,
+              203.56,
+              412.72
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000703.jpg",
+            "bbox": [
+              439.72,
+              13.11,
+              105.65,
+              141.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000000747.jpg",
+            "bbox": [
+              727.36,
+              0,
+              262.34,
+              345.82
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 29,
+        "category": "cookware",
+        "subclass_name": "pot",
+        "name": "pot",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000703.jpg",
+            "bbox": [
+              811.46,
+              490.77,
+              704.41,
+              549.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000000747.jpg",
+            "bbox": [
+              817.17,
+              323.84,
+              398.82,
+              341.59
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000703.jpg",
+            "bbox": [
+              0,
+              0,
+              1115.88,
+              752.64
+            ]
+          },
+          {
+            "frame_path": "frame_0000000747.jpg",
+            "bbox": [
+              32.87,
+              179.23,
+              1344.6,
+              758.26
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -197,106 +306,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 250,
-        "class_name": "machine:sous:vide",
-        "name": "sous vide machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000747.jpg",
-            "bbox": [
-              469.93,
-              646.67,
-              228.36,
-              158.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000001319.jpg",
-            "bbox": [
-              922.64,
-              667.28,
-              203.56,
-              412.72
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 29,
-        "class_name": "pot",
-        "name": "pot",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000703.jpg",
-            "bbox": [
-              811.46,
-              490.77,
-              704.41,
-              549.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000000747.jpg",
-            "bbox": [
-              817.17,
-              323.84,
-              398.82,
-              341.59
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000703.jpg",
-            "bbox": [
-              0,
-              0,
-              1115.88,
-              752.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000000747.jpg",
-            "bbox": [
-              32.87,
-              179.23,
-              1344.6,
-              758.26
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000703.jpg",
-            "bbox": [
-              439.72,
-              13.11,
-              105.65,
-              141.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000000747.jpg",
-            "bbox": [
-              727.36,
-              0,
-              262.34,
-              345.82
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -322,7 +331,8 @@
     "objects_in_sequence": [
       {
         "class_id": 250,
-        "class_name": "machine:sous:vide",
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
         "name": "sous vide machine",
         "image_crops": [
           {
@@ -382,8 +392,44 @@
         ]
       },
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002751.jpg",
+            "bbox": [
+              427.8,
+              0,
+              275.8,
+              304.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000002836.jpg",
+            "bbox": [
+              524.24,
+              0,
+              304.83,
+              294.11
+            ]
+          },
+          {
+            "frame_path": "frame_0000002926.jpg",
+            "bbox": [
+              425.01,
+              277.09,
+              317.9,
+              285.52
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -443,94 +489,9 @@
         ]
       },
       {
-        "class_id": 63,
-        "class_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001512.jpg",
-            "bbox": [
-              0,
-              261.29,
-              255.54,
-              749.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000001576.jpg",
-            "bbox": [
-              0,
-              0,
-              395.55,
-              682.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000002751.jpg",
-            "bbox": [
-              0,
-              32.75,
-              1268.96,
-              937.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000002836.jpg",
-            "bbox": [
-              0,
-              71.46,
-              1320.32,
-              847.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000002926.jpg",
-            "bbox": [
-              0,
-              300.71,
-              1301.65,
-              779.29
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002751.jpg",
-            "bbox": [
-              427.8,
-              0,
-              275.8,
-              304.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000002836.jpg",
-            "bbox": [
-              524.24,
-              0,
-              304.83,
-              294.11
-            ]
-          },
-          {
-            "frame_path": "frame_0000002926.jpg",
-            "bbox": [
-              425.01,
-              277.09,
-              317.9,
-              285.52
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -579,6 +540,59 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001512.jpg",
+            "bbox": [
+              0,
+              261.29,
+              255.54,
+              749.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000001576.jpg",
+            "bbox": [
+              0,
+              0,
+              395.55,
+              682.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000002751.jpg",
+            "bbox": [
+              0,
+              32.75,
+              1268.96,
+              937.04
+            ]
+          },
+          {
+            "frame_path": "frame_0000002836.jpg",
+            "bbox": [
+              0,
+              71.46,
+              1320.32,
+              847.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000002926.jpg",
+            "bbox": [
+              0,
+              300.71,
+              1301.65,
+              779.29
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -604,7 +618,8 @@
     "objects_in_sequence": [
       {
         "class_id": 250,
-        "class_name": "machine:sous:vide",
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
         "name": "sous vide machine",
         "image_crops": [
           {
@@ -665,7 +680,8 @@
       },
       {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -726,7 +742,8 @@
       },
       {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -809,7 +826,8 @@
     "objects_in_sequence": [
       {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -834,7 +852,8 @@
       },
       {
         "class_id": 250,
-        "class_name": "machine:sous:vide",
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
         "name": "sous vide machine",
         "image_crops": [
           {
@@ -877,7 +896,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "salmon packaging",
         "image_crops": [
           {
@@ -893,7 +913,8 @@
       },
       {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -935,24 +956,9 @@
         ]
       },
       {
-        "class_id": 112,
-        "class_name": "salmon",
-        "name": "salmon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005515.jpg",
-            "bbox": [
-              584.36,
-              570.92,
-              139.08,
-              114.27
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -992,6 +998,23 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 112,
+        "category": "meat and substitute",
+        "subclass_name": "salmon",
+        "name": "salmon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005515.jpg",
+            "bbox": [
+              584.36,
+              570.92,
+              139.08,
+              114.27
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1017,7 +1040,8 @@
     "objects_in_sequence": [
       {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -1042,7 +1066,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "salmon packaging",
         "image_crops": [
           {
@@ -1103,7 +1128,8 @@
       },
       {
         "class_id": 112,
-        "class_name": "salmon",
+        "category": "meat and substitute",
+        "subclass_name": "salmon",
         "name": "salmon",
         "image_crops": [
           {
@@ -1185,33 +1211,53 @@
     "end_frame": 6534,
     "objects_in_sequence": [
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
         "image_crops": [
           {
-            "frame_path": "frame_0000006125.jpg",
+            "frame_path": "frame_0000006292.jpg",
             "bbox": [
-              457.69,
-              65.56,
-              1462.31,
-              466.68
+              1199.7,
+              45.05,
+              346.69,
+              244.33
             ]
           },
           {
-            "frame_path": "frame_0000006208.jpg",
+            "frame_path": "frame_0000006325.jpg",
             "bbox": [
-              383.23,
-              31.88,
-              1536.77,
-              1048.12
+              750.48,
+              106.43,
+              360.05,
+              311.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000006401.jpg",
+            "bbox": [
+              566.22,
+              52.95,
+              307.22,
+              359.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000006494.jpg",
+            "bbox": [
+              595.72,
+              68.76,
+              320.86,
+              354.94
             ]
           }
         ]
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "jug",
         "image_crops": [
           {
@@ -1262,8 +1308,70 @@
         ]
       },
       {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006325.jpg",
+            "bbox": [
+              1027.39,
+              310.91,
+              141.19,
+              258.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000006401.jpg",
+            "bbox": [
+              842.68,
+              243.8,
+              192.87,
+              208.65
+            ]
+          },
+          {
+            "frame_path": "frame_0000006494.jpg",
+            "bbox": [
+              882.56,
+              257.6,
+              181.7,
+              207.29
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006125.jpg",
+            "bbox": [
+              457.69,
+              65.56,
+              1462.31,
+              466.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000006208.jpg",
+            "bbox": [
+              383.23,
+              31.88,
+              1536.77,
+              1048.12
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -1303,83 +1411,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006292.jpg",
-            "bbox": [
-              1199.7,
-              45.05,
-              346.69,
-              244.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000006325.jpg",
-            "bbox": [
-              750.48,
-              106.43,
-              360.05,
-              311.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000006401.jpg",
-            "bbox": [
-              566.22,
-              52.95,
-              307.22,
-              359.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000006494.jpg",
-            "bbox": [
-              595.72,
-              68.76,
-              320.86,
-              354.94
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006325.jpg",
-            "bbox": [
-              1027.39,
-              310.91,
-              141.19,
-              258.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000006401.jpg",
-            "bbox": [
-              842.68,
-              243.8,
-              192.87,
-              208.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000006494.jpg",
-            "bbox": [
-              882.56,
-              257.6,
-              181.7,
-              207.29
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1404,42 +1435,79 @@
     "end_frame": 7009,
     "objects_in_sequence": [
       {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
+        "class_id": 250,
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
+        "name": "sous vide machine",
         "image_crops": [
           {
-            "frame_path": "frame_0000006895.jpg",
+            "frame_path": "frame_0000006611.jpg",
             "bbox": [
-              727.36,
-              489.51,
-              1074.62,
-              248.94
+              843.27,
+              0,
+              98.55,
+              117.87
             ]
           },
           {
-            "frame_path": "frame_0000006946.jpg",
+            "frame_path": "frame_0000006709.jpg",
             "bbox": [
-              708.73,
-              293.58,
-              1211.27,
-              786.42
+              524.57,
+              0,
+              298.89,
+              210.24
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 29,
+        "category": "cookware",
+        "subclass_name": "pot",
+        "name": "pot",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006611.jpg",
+            "bbox": [
+              768.1,
+              0,
+              384.66,
+              294.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000006709.jpg",
+            "bbox": [
+              583.99,
+              25.55,
+              493.55,
+              464.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000006802.jpg",
+            "bbox": [
+              1575.45,
+              306.69,
+              346.25,
+              465.96
             ]
           },
           {
             "frame_path": "frame_0000006984.jpg",
             "bbox": [
-              1072.33,
-              943.84,
-              711.66,
-              137.44
+              0,
+              52.23,
+              209.94,
+              333.15
             ]
           }
         ]
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "jug",
         "image_crops": [
           {
@@ -1490,76 +1558,9 @@
         ]
       },
       {
-        "class_id": 250,
-        "class_name": "machine:sous:vide",
-        "name": "sous vide machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006611.jpg",
-            "bbox": [
-              843.27,
-              0,
-              98.55,
-              117.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000006709.jpg",
-            "bbox": [
-              524.57,
-              0,
-              298.89,
-              210.24
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 29,
-        "class_name": "pot",
-        "name": "pot",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006611.jpg",
-            "bbox": [
-              768.1,
-              0,
-              384.66,
-              294.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000006709.jpg",
-            "bbox": [
-              583.99,
-              25.55,
-              493.55,
-              464.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000006802.jpg",
-            "bbox": [
-              1575.45,
-              306.69,
-              346.25,
-              465.96
-            ]
-          },
-          {
-            "frame_path": "frame_0000006984.jpg",
-            "bbox": [
-              0,
-              52.23,
-              209.94,
-              333.15
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -1590,6 +1591,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006895.jpg",
+            "bbox": [
+              727.36,
+              489.51,
+              1074.62,
+              248.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000006946.jpg",
+            "bbox": [
+              708.73,
+              293.58,
+              1211.27,
+              786.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000006984.jpg",
+            "bbox": [
+              1072.33,
+              943.84,
+              711.66,
+              137.44
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1615,7 +1651,8 @@
     "objects_in_sequence": [
       {
         "class_id": 250,
-        "class_name": "machine:sous:vide",
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
         "name": "sous vide machine",
         "image_crops": [
           {
@@ -1676,7 +1713,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "salmon packaging",
         "image_crops": [
           {
@@ -1737,7 +1775,8 @@
       },
       {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -1797,69 +1836,9 @@
         ]
       },
       {
-        "class_id": 112,
-        "class_name": "salmon",
-        "name": "salmon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007092.jpg",
-            "bbox": [
-              300.3,
-              319.53,
-              596.03,
-              179.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000007136.jpg",
-            "bbox": [
-              548.65,
-              211.78,
-              432.85,
-              461.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000007246.jpg",
-            "bbox": [
-              615.25,
-              417.96,
-              343.2,
-              321.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000007348.jpg",
-            "bbox": [
-              1043.47,
-              552.55,
-              137.45,
-              168.54
-            ]
-          },
-          {
-            "frame_path": "frame_0000007551.jpg",
-            "bbox": [
-              348.95,
-              640.46,
-              604.27,
-              283.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000007709.jpg",
-            "bbox": [
-              322.01,
-              700.2,
-              615.31,
-              281.87
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 27,
-        "class_name": "water",
+        "category": "drinks",
+        "subclass_name": "water",
         "name": "water",
         "image_crops": [
           {
@@ -1917,6 +1896,68 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 112,
+        "category": "meat and substitute",
+        "subclass_name": "salmon",
+        "name": "salmon",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007092.jpg",
+            "bbox": [
+              300.3,
+              319.53,
+              596.03,
+              179.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000007136.jpg",
+            "bbox": [
+              548.65,
+              211.78,
+              432.85,
+              461.06
+            ]
+          },
+          {
+            "frame_path": "frame_0000007246.jpg",
+            "bbox": [
+              615.25,
+              417.96,
+              343.2,
+              321.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000007348.jpg",
+            "bbox": [
+              1043.47,
+              552.55,
+              137.45,
+              168.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000007551.jpg",
+            "bbox": [
+              348.95,
+              640.46,
+              604.27,
+              283.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000007709.jpg",
+            "bbox": [
+              322.01,
+              700.2,
+              615.31,
+              281.87
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1941,24 +1982,9 @@
     "end_frame": 9029,
     "objects_in_sequence": [
       {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008930.jpg",
-            "bbox": [
-              928.04,
-              105.38,
-              422.0,
-              574.6
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 250,
-        "class_name": "machine:sous:vide",
+        "category": "appliances",
+        "subclass_name": "machine:sous:vide",
         "name": "sous vide machine",
         "image_crops": [
           {
@@ -2001,7 +2027,8 @@
       },
       {
         "class_id": 26,
-        "class_name": "package",
+        "category": "containers",
+        "subclass_name": "package",
         "name": "salmon packaging",
         "image_crops": [
           {
@@ -2053,7 +2080,8 @@
       },
       {
         "class_id": 29,
-        "class_name": "pot",
+        "category": "cookware",
+        "subclass_name": "pot",
         "name": "pot",
         "image_crops": [
           {
@@ -2095,8 +2123,53 @@
         ]
       },
       {
+        "class_id": 27,
+        "category": "drinks",
+        "subclass_name": "water",
+        "name": "water",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007959.jpg",
+            "bbox": [
+              852.81,
+              130.36,
+              397.81,
+              383.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000008138.jpg",
+            "bbox": [
+              824.91,
+              84.2,
+              420.79,
+              416.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000008305.jpg",
+            "bbox": [
+              910.94,
+              275.85,
+              245.04,
+              295.51
+            ]
+          },
+          {
+            "frame_path": "frame_0000008541.jpg",
+            "bbox": [
+              761.63,
+              55.35,
+              454.02,
+              473.19
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 112,
-        "class_name": "salmon",
+        "category": "meat and substitute",
+        "subclass_name": "salmon",
         "name": "salmon",
         "image_crops": [
           {
@@ -2138,44 +2211,18 @@
         ]
       },
       {
-        "class_id": 27,
-        "class_name": "water",
-        "name": "water",
+        "class_id": 36,
+        "category": "rubbish",
+        "subclass_name": "bin",
+        "name": "bin",
         "image_crops": [
           {
-            "frame_path": "frame_0000007959.jpg",
+            "frame_path": "frame_0000008930.jpg",
             "bbox": [
-              852.81,
-              130.36,
-              397.81,
-              383.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000008138.jpg",
-            "bbox": [
-              824.91,
-              84.2,
-              420.79,
-              416.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000008305.jpg",
-            "bbox": [
-              910.94,
-              275.85,
-              245.04,
-              295.51
-            ]
-          },
-          {
-            "frame_path": "frame_0000008541.jpg",
-            "bbox": [
-              761.63,
-              55.35,
-              454.02,
-              473.19
+              928.04,
+              105.38,
+              422.0,
+              574.6
             ]
           }
         ]

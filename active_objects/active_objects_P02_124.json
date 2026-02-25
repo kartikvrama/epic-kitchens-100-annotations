@@ -7,8 +7,53 @@
     "end_frame": 348,
     "objects_in_sequence": [
       {
+        "class_id": 124,
+        "category": "appliances",
+        "subclass_name": "machine:washing",
+        "name": "washing machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000144.jpg",
+            "bbox": [
+              332.78,
+              0,
+              545.12,
+              381.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000000184.jpg",
+            "bbox": [
+              0,
+              0,
+              992.88,
+              490.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000000276.jpg",
+            "bbox": [
+              0,
+              0,
+              372.4,
+              183.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000000321.jpg",
+            "bbox": [
+              0,
+              0,
+              836.92,
+              222.34
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 168,
-        "class_name": "basket",
+        "category": "containers",
+        "subclass_name": "basket",
         "name": "laundry basket",
         "image_crops": [
           {
@@ -51,7 +96,8 @@
       },
       {
         "class_id": 73,
-        "class_name": "clothes",
+        "category": "materials",
+        "subclass_name": "clothes",
         "name": "clothes",
         "image_crops": [
           {
@@ -91,49 +137,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 124,
-        "class_name": "machine:washing",
-        "name": "washing machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000144.jpg",
-            "bbox": [
-              332.78,
-              0,
-              545.12,
-              381.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000000184.jpg",
-            "bbox": [
-              0,
-              0,
-              992.88,
-              490.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000000276.jpg",
-            "bbox": [
-              0,
-              0,
-              372.4,
-              183.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000000321.jpg",
-            "bbox": [
-              0,
-              0,
-              836.92,
-              222.34
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -156,101 +159,9 @@
     "end_frame": 796,
     "objects_in_sequence": [
       {
-        "class_id": 168,
-        "class_name": "basket",
-        "name": "laundry basket",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000413.jpg",
-            "bbox": [
-              933.22,
-              232.3,
-              725.29,
-              672.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000000475.jpg",
-            "bbox": [
-              1123.37,
-              621.72,
-              274.81,
-              458.28
-            ]
-          },
-          {
-            "frame_path": "frame_0000000615.jpg",
-            "bbox": [
-              973.24,
-              210.38,
-              877.29,
-              726.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000000653.jpg",
-            "bbox": [
-              1231.32,
-              440.18,
-              688.68,
-              639.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000000730.jpg",
-            "bbox": [
-              908.17,
-              519.01,
-              599.09,
-              560.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000000776.jpg",
-            "bbox": [
-              1049.7,
-              736.53,
-              690.0,
-              343.47
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 73,
-        "class_name": "clothes",
-        "name": "clothes",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000413.jpg",
-            "bbox": [
-              688.31,
-              324.36,
-              737.57,
-              755.64
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000776.jpg",
-            "bbox": [
-              513.71,
-              222.02,
-              574.41,
-              489.57
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -310,8 +221,105 @@
         ]
       },
       {
+        "class_id": 168,
+        "category": "containers",
+        "subclass_name": "basket",
+        "name": "laundry basket",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000413.jpg",
+            "bbox": [
+              933.22,
+              232.3,
+              725.29,
+              672.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000000475.jpg",
+            "bbox": [
+              1123.37,
+              621.72,
+              274.81,
+              458.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000000615.jpg",
+            "bbox": [
+              973.24,
+              210.38,
+              877.29,
+              726.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000000653.jpg",
+            "bbox": [
+              1231.32,
+              440.18,
+              688.68,
+              639.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000000730.jpg",
+            "bbox": [
+              908.17,
+              519.01,
+              599.09,
+              560.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000000776.jpg",
+            "bbox": [
+              1049.7,
+              736.53,
+              690.0,
+              343.47
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000776.jpg",
+            "bbox": [
+              513.71,
+              222.02,
+              574.41,
+              489.57
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 73,
+        "category": "materials",
+        "subclass_name": "clothes",
+        "name": "clothes",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000413.jpg",
+            "bbox": [
+              688.31,
+              324.36,
+              737.57,
+              755.64
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 52,
-        "class_name": "towel",
+        "category": "materials",
+        "subclass_name": "towel",
         "name": "towel",
         "image_crops": [
           {
@@ -348,8 +356,97 @@
     "end_frame": 1153,
     "objects_in_sequence": [
       {
+        "class_id": 124,
+        "category": "appliances",
+        "subclass_name": "machine:washing",
+        "name": "washing machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000973.jpg",
+            "bbox": [
+              628.25,
+              498.64,
+              709.71,
+              338.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000001009.jpg",
+            "bbox": [
+              902.06,
+              658.02,
+              929.56,
+              421.98
+            ]
+          },
+          {
+            "frame_path": "frame_0000001122.jpg",
+            "bbox": [
+              955.19,
+              421.03,
+              942.72,
+              658.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000001147.jpg",
+            "bbox": [
+              867.36,
+              0,
+              910.29,
+              641.92
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 234,
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
+        "name": "washing powder",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000876.jpg",
+            "bbox": [
+              1053.23,
+              0,
+              124.1,
+              87.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000000904.jpg",
+            "bbox": [
+              1165.9,
+              0,
+              201.12,
+              105.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000001122.jpg",
+            "bbox": [
+              456.68,
+              634.19,
+              262.72,
+              208.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000001147.jpg",
+            "bbox": [
+              342.38,
+              514.21,
+              325.22,
+              203.09
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "washing powder box",
         "image_crops": [
           {
@@ -382,8 +479,53 @@
         ]
       },
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000973.jpg",
+            "bbox": [
+              678.44,
+              579.81,
+              318.17,
+              346.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000001009.jpg",
+            "bbox": [
+              1197.74,
+              809.59,
+              325.62,
+              270.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000001122.jpg",
+            "bbox": [
+              1044.42,
+              580.21,
+              474.93,
+              454.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000001147.jpg",
+            "bbox": [
+              912.44,
+              118.71,
+              381.3,
+              434.02
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -441,135 +583,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000973.jpg",
-            "bbox": [
-              678.44,
-              579.81,
-              318.17,
-              346.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000001009.jpg",
-            "bbox": [
-              1197.74,
-              809.59,
-              325.62,
-              270.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000001122.jpg",
-            "bbox": [
-              1044.42,
-              580.21,
-              474.93,
-              454.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000001147.jpg",
-            "bbox": [
-              912.44,
-              118.71,
-              381.3,
-              434.02
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 124,
-        "class_name": "machine:washing",
-        "name": "washing machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000973.jpg",
-            "bbox": [
-              628.25,
-              498.64,
-              709.71,
-              338.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000001009.jpg",
-            "bbox": [
-              902.06,
-              658.02,
-              929.56,
-              421.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000001122.jpg",
-            "bbox": [
-              955.19,
-              421.03,
-              942.72,
-              658.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000001147.jpg",
-            "bbox": [
-              867.36,
-              0,
-              910.29,
-              641.92
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 234,
-        "class_name": "powder:washing",
-        "name": "washing powder",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000876.jpg",
-            "bbox": [
-              1053.23,
-              0,
-              124.1,
-              87.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000000904.jpg",
-            "bbox": [
-              1165.9,
-              0,
-              201.12,
-              105.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000001122.jpg",
-            "bbox": [
-              456.68,
-              634.19,
-              262.72,
-              208.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000001147.jpg",
-            "bbox": [
-              342.38,
-              514.21,
-              325.22,
-              203.09
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -594,234 +607,9 @@
     "end_frame": 1991,
     "objects_in_sequence": [
       {
-        "class_id": 23,
-        "class_name": "box",
-        "name": "washing powder box",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001230.jpg",
-            "bbox": [
-              322.57,
-              416.81,
-              798.88,
-              618.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000001342.jpg",
-            "bbox": [
-              433.92,
-              374.18,
-              706.25,
-              600.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000001451.jpg",
-            "bbox": [
-              103.66,
-              260.98,
-              717.68,
-              734.77
-            ]
-          },
-          {
-            "frame_path": "frame_0000001501.jpg",
-            "bbox": [
-              121.86,
-              258.48,
-              708.44,
-              720.11
-            ]
-          },
-          {
-            "frame_path": "frame_0000001713.jpg",
-            "bbox": [
-              125.06,
-              316.83,
-              919.55,
-              719.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000001925.jpg",
-            "bbox": [
-              0,
-              355.07,
-              662.16,
-              724.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000001976.jpg",
-            "bbox": [
-              282.55,
-              179.73,
-              565.21,
-              686.31
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "cup",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001976.jpg",
-            "bbox": [
-              914.59,
-              277.42,
-              182.55,
-              151.91
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001230.jpg",
-            "bbox": [
-              0,
-              0,
-              947.88,
-              661.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000001342.jpg",
-            "bbox": [
-              0,
-              0,
-              890.55,
-              824.85
-            ]
-          },
-          {
-            "frame_path": "frame_0000001451.jpg",
-            "bbox": [
-              0,
-              23.94,
-              781.83,
-              821.55
-            ]
-          },
-          {
-            "frame_path": "frame_0000001501.jpg",
-            "bbox": [
-              0,
-              0,
-              811.18,
-              866.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000001713.jpg",
-            "bbox": [
-              0,
-              0,
-              875.12,
-              648.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000001925.jpg",
-            "bbox": [
-              0,
-              0,
-              808.97,
-              640.09
-            ]
-          },
-          {
-            "frame_path": "frame_0000001976.jpg",
-            "bbox": [
-              0,
-              0,
-              831.02,
-              904.22
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001230.jpg",
-            "bbox": [
-              958.75,
-              102.79,
-              346.75,
-              437.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000001342.jpg",
-            "bbox": [
-              964.59,
-              77.74,
-              306.78,
-              407.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000001451.jpg",
-            "bbox": [
-              820.8,
-              112.95,
-              328.39,
-              404.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000001501.jpg",
-            "bbox": [
-              854.52,
-              95.5,
-              348.27,
-              401.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000001713.jpg",
-            "bbox": [
-              913.35,
-              83.64,
-              368.64,
-              420.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000001925.jpg",
-            "bbox": [
-              853.89,
-              139.58,
-              330.86,
-              386.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000001976.jpg",
-            "bbox": [
-              868.91,
-              177.67,
-              332.81,
-              385.57
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -891,7 +679,8 @@
       },
       {
         "class_id": 234,
-        "class_name": "powder:washing",
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
         "name": "washing powder",
         "image_crops": [
           {
@@ -940,6 +729,236 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 23,
+        "category": "containers",
+        "subclass_name": "box",
+        "name": "washing powder box",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001230.jpg",
+            "bbox": [
+              322.57,
+              416.81,
+              798.88,
+              618.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000001342.jpg",
+            "bbox": [
+              433.92,
+              374.18,
+              706.25,
+              600.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000001451.jpg",
+            "bbox": [
+              103.66,
+              260.98,
+              717.68,
+              734.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000001501.jpg",
+            "bbox": [
+              121.86,
+              258.48,
+              708.44,
+              720.11
+            ]
+          },
+          {
+            "frame_path": "frame_0000001713.jpg",
+            "bbox": [
+              125.06,
+              316.83,
+              919.55,
+              719.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000001925.jpg",
+            "bbox": [
+              0,
+              355.07,
+              662.16,
+              724.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000001976.jpg",
+            "bbox": [
+              282.55,
+              179.73,
+              565.21,
+              686.31
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "cup",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001976.jpg",
+            "bbox": [
+              914.59,
+              277.42,
+              182.55,
+              151.91
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001230.jpg",
+            "bbox": [
+              958.75,
+              102.79,
+              346.75,
+              437.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000001342.jpg",
+            "bbox": [
+              964.59,
+              77.74,
+              306.78,
+              407.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000001451.jpg",
+            "bbox": [
+              820.8,
+              112.95,
+              328.39,
+              404.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000001501.jpg",
+            "bbox": [
+              854.52,
+              95.5,
+              348.27,
+              401.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000001713.jpg",
+            "bbox": [
+              913.35,
+              83.64,
+              368.64,
+              420.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000001925.jpg",
+            "bbox": [
+              853.89,
+              139.58,
+              330.86,
+              386.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000001976.jpg",
+            "bbox": [
+              868.91,
+              177.67,
+              332.81,
+              385.57
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001230.jpg",
+            "bbox": [
+              0,
+              0,
+              947.88,
+              661.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000001342.jpg",
+            "bbox": [
+              0,
+              0,
+              890.55,
+              824.85
+            ]
+          },
+          {
+            "frame_path": "frame_0000001451.jpg",
+            "bbox": [
+              0,
+              23.94,
+              781.83,
+              821.55
+            ]
+          },
+          {
+            "frame_path": "frame_0000001501.jpg",
+            "bbox": [
+              0,
+              0,
+              811.18,
+              866.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000001713.jpg",
+            "bbox": [
+              0,
+              0,
+              875.12,
+              648.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000001925.jpg",
+            "bbox": [
+              0,
+              0,
+              808.97,
+              640.09
+            ]
+          },
+          {
+            "frame_path": "frame_0000001976.jpg",
+            "bbox": [
+              0,
+              0,
+              831.02,
+              904.22
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -965,173 +984,9 @@
     "end_frame": 2422,
     "objects_in_sequence": [
       {
-        "class_id": 23,
-        "class_name": "box",
-        "name": "washing powder box",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002021.jpg",
-            "bbox": [
-              354.91,
-              318.04,
-              603.64,
-              529.79
-            ]
-          },
-          {
-            "frame_path": "frame_0000002201.jpg",
-            "bbox": [
-              988.85,
-              212.32,
-              217.12,
-              231.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000002248.jpg",
-            "bbox": [
-              516.24,
-              770.93,
-              510.88,
-              309.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000002296.jpg",
-            "bbox": [
-              541.43,
-              621.82,
-              243.13,
-              306.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000002376.jpg",
-            "bbox": [
-              464.19,
-              576.73,
-              319.67,
-              296.55
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002021.jpg",
-            "bbox": [
-              0,
-              0,
-              1022.84,
-              845.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000002126.jpg",
-            "bbox": [
-              131.0,
-              0,
-              1789.0,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000002201.jpg",
-            "bbox": [
-              0,
-              628.54,
-              452.9,
-              177.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000002296.jpg",
-            "bbox": [
-              0,
-              47.66,
-              660.15,
-              628.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000002376.jpg",
-            "bbox": [
-              0,
-              7.84,
-              623.92,
-              671.14
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002021.jpg",
-            "bbox": [
-              1054.79,
-              316.24,
-              275.98,
-              385.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000002126.jpg",
-            "bbox": [
-              1728.95,
-              944.38,
-              191.05,
-              135.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000002201.jpg",
-            "bbox": [
-              460.76,
-              639.78,
-              343.94,
-              411.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000002248.jpg",
-            "bbox": [
-              273.77,
-              506.76,
-              416.16,
-              379.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000002296.jpg",
-            "bbox": [
-              638.0,
-              387.67,
-              320.52,
-              293.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000002376.jpg",
-            "bbox": [
-              568.01,
-              297.73,
-              341.87,
-              365.97
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -1192,7 +1047,8 @@
       },
       {
         "class_id": 234,
-        "class_name": "powder:washing",
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
         "name": "washing powder",
         "image_crops": [
           {
@@ -1241,6 +1097,174 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 23,
+        "category": "containers",
+        "subclass_name": "box",
+        "name": "washing powder box",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002021.jpg",
+            "bbox": [
+              354.91,
+              318.04,
+              603.64,
+              529.79
+            ]
+          },
+          {
+            "frame_path": "frame_0000002201.jpg",
+            "bbox": [
+              988.85,
+              212.32,
+              217.12,
+              231.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000002248.jpg",
+            "bbox": [
+              516.24,
+              770.93,
+              510.88,
+              309.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000002296.jpg",
+            "bbox": [
+              541.43,
+              621.82,
+              243.13,
+              306.65
+            ]
+          },
+          {
+            "frame_path": "frame_0000002376.jpg",
+            "bbox": [
+              464.19,
+              576.73,
+              319.67,
+              296.55
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002021.jpg",
+            "bbox": [
+              1054.79,
+              316.24,
+              275.98,
+              385.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000002126.jpg",
+            "bbox": [
+              1728.95,
+              944.38,
+              191.05,
+              135.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000002201.jpg",
+            "bbox": [
+              460.76,
+              639.78,
+              343.94,
+              411.64
+            ]
+          },
+          {
+            "frame_path": "frame_0000002248.jpg",
+            "bbox": [
+              273.77,
+              506.76,
+              416.16,
+              379.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000002296.jpg",
+            "bbox": [
+              638.0,
+              387.67,
+              320.52,
+              293.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000002376.jpg",
+            "bbox": [
+              568.01,
+              297.73,
+              341.87,
+              365.97
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002021.jpg",
+            "bbox": [
+              0,
+              0,
+              1022.84,
+              845.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000002126.jpg",
+            "bbox": [
+              131.0,
+              0,
+              1789.0,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000002201.jpg",
+            "bbox": [
+              0,
+              628.54,
+              452.9,
+              177.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000002296.jpg",
+            "bbox": [
+              0,
+              47.66,
+              660.15,
+              628.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000002376.jpg",
+            "bbox": [
+              0,
+              7.84,
+              623.92,
+              671.14
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -1265,8 +1289,106 @@
     "end_frame": 2614,
     "objects_in_sequence": [
       {
+        "class_id": 124,
+        "category": "appliances",
+        "subclass_name": "machine:washing",
+        "name": "washing machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002496.jpg",
+            "bbox": [
+              662.69,
+              99.83,
+              903.13,
+              465.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000002521.jpg",
+            "bbox": [
+              563.76,
+              136.2,
+              821.24,
+              460.48
+            ]
+          },
+          {
+            "frame_path": "frame_0000002551.jpg",
+            "bbox": [
+              682.31,
+              225.96,
+              842.82,
+              516.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000002596.jpg",
+            "bbox": [
+              1057.72,
+              419.26,
+              862.28,
+              635.06
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 234,
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
+        "name": "washing powder",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002446.jpg",
+            "bbox": [
+              425.74,
+              339.44,
+              474.47,
+              428.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000002496.jpg",
+            "bbox": [
+              590.56,
+              332.69,
+              266.88,
+              361.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000002521.jpg",
+            "bbox": [
+              504.18,
+              369.53,
+              264.9,
+              382.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000002551.jpg",
+            "bbox": [
+              712.48,
+              455.17,
+              136.85,
+              208.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000002596.jpg",
+            "bbox": [
+              1348.67,
+              664.93,
+              102.93,
+              165.74
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "fabric conditioner bottle",
         "image_crops": [
           {
@@ -1282,7 +1404,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -1316,7 +1439,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "washing powder box",
         "image_crops": [
           {
@@ -1331,8 +1455,44 @@
         ]
       },
       {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002496.jpg",
+            "bbox": [
+              1408.31,
+              156.9,
+              179.21,
+              185.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000002521.jpg",
+            "bbox": [
+              1291.25,
+              190.31,
+              174.88,
+              173.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000002551.jpg",
+            "bbox": [
+              641.22,
+              893.26,
+              309.29,
+              186.74
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "cup",
         "image_crops": [
           {
@@ -1356,51 +1516,9 @@
         ]
       },
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002446.jpg",
-            "bbox": [
-              0,
-              0,
-              738.42,
-              687.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000002496.jpg",
-            "bbox": [
-              0,
-              0,
-              711.61,
-              593.64
-            ]
-          },
-          {
-            "frame_path": "frame_0000002521.jpg",
-            "bbox": [
-              0,
-              0,
-              634.36,
-              524.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000002596.jpg",
-            "bbox": [
-              96.17,
-              0,
-              1385.07,
-              520.52
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 8,
-        "class_name": "drawer",
+        "category": "furniture",
+        "subclass_name": "drawer",
         "name": "drawer",
         "image_crops": [
           {
@@ -1451,130 +1569,45 @@
         ]
       },
       {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002496.jpg",
-            "bbox": [
-              1408.31,
-              156.9,
-              179.21,
-              185.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000002521.jpg",
-            "bbox": [
-              1291.25,
-              190.31,
-              174.88,
-              173.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000002551.jpg",
-            "bbox": [
-              641.22,
-              893.26,
-              309.29,
-              186.74
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 124,
-        "class_name": "machine:washing",
-        "name": "washing machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002496.jpg",
-            "bbox": [
-              662.69,
-              99.83,
-              903.13,
-              465.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000002521.jpg",
-            "bbox": [
-              563.76,
-              136.2,
-              821.24,
-              460.48
-            ]
-          },
-          {
-            "frame_path": "frame_0000002551.jpg",
-            "bbox": [
-              682.31,
-              225.96,
-              842.82,
-              516.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000002596.jpg",
-            "bbox": [
-              1057.72,
-              419.26,
-              862.28,
-              635.06
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 234,
-        "class_name": "powder:washing",
-        "name": "washing powder",
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
         "image_crops": [
           {
             "frame_path": "frame_0000002446.jpg",
             "bbox": [
-              425.74,
-              339.44,
-              474.47,
-              428.16
+              0,
+              0,
+              738.42,
+              687.05
             ]
           },
           {
             "frame_path": "frame_0000002496.jpg",
             "bbox": [
-              590.56,
-              332.69,
-              266.88,
-              361.02
+              0,
+              0,
+              711.61,
+              593.64
             ]
           },
           {
             "frame_path": "frame_0000002521.jpg",
             "bbox": [
-              504.18,
-              369.53,
-              264.9,
-              382.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000002551.jpg",
-            "bbox": [
-              712.48,
-              455.17,
-              136.85,
-              208.69
+              0,
+              0,
+              634.36,
+              524.87
             ]
           },
           {
             "frame_path": "frame_0000002596.jpg",
             "bbox": [
-              1348.67,
-              664.93,
-              102.93,
-              165.74
+              96.17,
+              0,
+              1385.07,
+              520.52
             ]
           }
         ]
@@ -1601,8 +1634,97 @@
     "end_frame": 3208,
     "objects_in_sequence": [
       {
+        "class_id": 124,
+        "category": "appliances",
+        "subclass_name": "machine:washing",
+        "name": "washing machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002830.jpg",
+            "bbox": [
+              859.04,
+              319.61,
+              921.91,
+              463.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000002880.jpg",
+            "bbox": [
+              316.01,
+              218.71,
+              1063.5,
+              279.13
+            ]
+          },
+          {
+            "frame_path": "frame_0000003167.jpg",
+            "bbox": [
+              356.99,
+              0,
+              1184.41,
+              235.24
+            ]
+          },
+          {
+            "frame_path": "frame_0000003059.jpg",
+            "bbox": [
+              347.89,
+              85.81,
+              1151.19,
+              269.85
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 234,
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
+        "name": "washing powder",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002830.jpg",
+            "bbox": [
+              1212.18,
+              574.06,
+              70.3,
+              155.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000002880.jpg",
+            "bbox": [
+              560.98,
+              394.93,
+              100.37,
+              263.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000003167.jpg",
+            "bbox": [
+              680.11,
+              183.16,
+              113.55,
+              269.6
+            ]
+          },
+          {
+            "frame_path": "frame_0000003059.jpg",
+            "bbox": [
+              640.37,
+              284.54,
+              101.19,
+              259.91
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "fabric conditioner bottle",
         "image_crops": [
           {
@@ -1653,8 +1775,114 @@
         ]
       },
       {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002722.jpg",
+            "bbox": [
+              1205.27,
+              489.75,
+              99.69,
+              67.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000002880.jpg",
+            "bbox": [
+              944.63,
+              979.32,
+              111.58,
+              100.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000003167.jpg",
+            "bbox": [
+              666.98,
+              559.04,
+              143.58,
+              122.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000003059.jpg",
+            "bbox": [
+              576.53,
+              617.05,
+              166.37,
+              139.99
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002830.jpg",
+            "bbox": [
+              1076.19,
+              427.21,
+              345.59,
+              399.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000002880.jpg",
+            "bbox": [
+              391.55,
+              313.94,
+              389.49,
+              405.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000003167.jpg",
+            "bbox": [
+              535.53,
+              83.41,
+              398.08,
+              457.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000003059.jpg",
+            "bbox": [
+              506.14,
+              204.17,
+              363.84,
+              420.55
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 150,
+        "category": "other",
+        "subclass_name": "liquid",
+        "name": "liquid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003167.jpg",
+            "bbox": [
+              641.69,
+              602.26,
+              111.36,
+              121.5
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -1703,194 +1931,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002830.jpg",
-            "bbox": [
-              1076.19,
-              427.21,
-              345.59,
-              399.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000002880.jpg",
-            "bbox": [
-              391.55,
-              313.94,
-              389.49,
-              405.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000003167.jpg",
-            "bbox": [
-              535.53,
-              83.41,
-              398.08,
-              457.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000003059.jpg",
-            "bbox": [
-              506.14,
-              204.17,
-              363.84,
-              420.55
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002722.jpg",
-            "bbox": [
-              1205.27,
-              489.75,
-              99.69,
-              67.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000002880.jpg",
-            "bbox": [
-              944.63,
-              979.32,
-              111.58,
-              100.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000003167.jpg",
-            "bbox": [
-              666.98,
-              559.04,
-              143.58,
-              122.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000003059.jpg",
-            "bbox": [
-              576.53,
-              617.05,
-              166.37,
-              139.99
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 150,
-        "class_name": "liquid",
-        "name": "liquid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003167.jpg",
-            "bbox": [
-              641.69,
-              602.26,
-              111.36,
-              121.5
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 124,
-        "class_name": "machine:washing",
-        "name": "washing machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002830.jpg",
-            "bbox": [
-              859.04,
-              319.61,
-              921.91,
-              463.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000002880.jpg",
-            "bbox": [
-              316.01,
-              218.71,
-              1063.5,
-              279.13
-            ]
-          },
-          {
-            "frame_path": "frame_0000003167.jpg",
-            "bbox": [
-              356.99,
-              0,
-              1184.41,
-              235.24
-            ]
-          },
-          {
-            "frame_path": "frame_0000003059.jpg",
-            "bbox": [
-              347.89,
-              85.81,
-              1151.19,
-              269.85
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 234,
-        "class_name": "powder:washing",
-        "name": "washing powder",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002830.jpg",
-            "bbox": [
-              1212.18,
-              574.06,
-              70.3,
-              155.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000002880.jpg",
-            "bbox": [
-              560.98,
-              394.93,
-              100.37,
-              263.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000003167.jpg",
-            "bbox": [
-              680.11,
-              183.16,
-              113.55,
-              269.6
-            ]
-          },
-          {
-            "frame_path": "frame_0000003059.jpg",
-            "bbox": [
-              640.37,
-              284.54,
-              101.19,
-              259.91
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1915,320 +1955,9 @@
     "end_frame": 3559,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003359.jpg",
-            "bbox": [
-              0,
-              600.65,
-              666.8,
-              475.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000003401.jpg",
-            "bbox": [
-              72.93,
-              606.82,
-              628.91,
-              473.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000003463.jpg",
-            "bbox": [
-              468.4,
-              701.84,
-              220.1,
-              218.39
-            ]
-          },
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              552.44,
-              646.73,
-              207.91,
-              206.46
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "fabric conditioner bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003251.jpg",
-            "bbox": [
-              523.13,
-              683.51,
-              210.25,
-              208.67
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              521.28,
-              680.4,
-              214.08,
-              203.46
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003251.jpg",
-            "bbox": [
-              0,
-              222.02,
-              659.72,
-              172.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              0,
-              189.03,
-              658.45,
-              145.18
-            ]
-          },
-          {
-            "frame_path": "frame_0000003359.jpg",
-            "bbox": [
-              0,
-              163.21,
-              533.4,
-              146.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000003401.jpg",
-            "bbox": [
-              0,
-              169.25,
-              550.93,
-              163.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000003463.jpg",
-            "bbox": [
-              0,
-              196.35,
-              623.94,
-              145.53
-            ]
-          },
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              0,
-              107.41,
-              733.51,
-              197.4
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003251.jpg",
-            "bbox": [
-              640.52,
-              179.78,
-              351.14,
-              417.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              636.8,
-              181.81,
-              335.74,
-              399.3
-            ]
-          },
-          {
-            "frame_path": "frame_0000003359.jpg",
-            "bbox": [
-              511.13,
-              154.36,
-              359.71,
-              411.52
-            ]
-          },
-          {
-            "frame_path": "frame_0000003401.jpg",
-            "bbox": [
-              528.5,
-              138.92,
-              369.17,
-              426.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000003463.jpg",
-            "bbox": [
-              604.95,
-              184.32,
-              344.08,
-              406.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              682.61,
-              184.53,
-              347.09,
-              385.84
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003251.jpg",
-            "bbox": [
-              927.79,
-              359.69,
-              116.19,
-              94.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              904.84,
-              358.25,
-              106.86,
-              86.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000003359.jpg",
-            "bbox": [
-              613.5,
-              556.4,
-              142.11,
-              123.82
-            ]
-          },
-          {
-            "frame_path": "frame_0000003401.jpg",
-            "bbox": [
-              641.12,
-              553.13,
-              151.66,
-              125.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000003463.jpg",
-            "bbox": [
-              924.86,
-              367.59,
-              113.49,
-              103.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              958.87,
-              354.35,
-              129.16,
-              96.97
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 150,
-        "class_name": "liquid",
-        "name": "liquid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003251.jpg",
-            "bbox": [
-              595.88,
-              383.05,
-              378.63,
-              451.08
-            ]
-          },
-          {
-            "frame_path": "frame_0000003301.jpg",
-            "bbox": [
-              607.02,
-              712.64,
-              78.46,
-              111.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000003359.jpg",
-            "bbox": [
-              598.21,
-              641.05,
-              31.41,
-              39.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000003401.jpg",
-            "bbox": [
-              623.9,
-              586.49,
-              114.41,
-              114.46
-            ]
-          },
-          {
-            "frame_path": "frame_0000003463.jpg",
-            "bbox": [
-              538.88,
-              385.84,
-              438.31,
-              485.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              627.45,
-              440.44,
-              343.75,
-              362.78
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -2289,7 +2018,8 @@
       },
       {
         "class_id": 234,
-        "class_name": "powder:washing",
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
         "name": "washing powder",
         "image_crops": [
           {
@@ -2347,6 +2077,324 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003359.jpg",
+            "bbox": [
+              0,
+              600.65,
+              666.8,
+              475.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000003401.jpg",
+            "bbox": [
+              72.93,
+              606.82,
+              628.91,
+              473.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000003463.jpg",
+            "bbox": [
+              468.4,
+              701.84,
+              220.1,
+              218.39
+            ]
+          },
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              552.44,
+              646.73,
+              207.91,
+              206.46
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "fabric conditioner bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003251.jpg",
+            "bbox": [
+              523.13,
+              683.51,
+              210.25,
+              208.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              521.28,
+              680.4,
+              214.08,
+              203.46
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003251.jpg",
+            "bbox": [
+              927.79,
+              359.69,
+              116.19,
+              94.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              904.84,
+              358.25,
+              106.86,
+              86.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000003359.jpg",
+            "bbox": [
+              613.5,
+              556.4,
+              142.11,
+              123.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000003401.jpg",
+            "bbox": [
+              641.12,
+              553.13,
+              151.66,
+              125.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000003463.jpg",
+            "bbox": [
+              924.86,
+              367.59,
+              113.49,
+              103.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              958.87,
+              354.35,
+              129.16,
+              96.97
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003251.jpg",
+            "bbox": [
+              640.52,
+              179.78,
+              351.14,
+              417.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              636.8,
+              181.81,
+              335.74,
+              399.3
+            ]
+          },
+          {
+            "frame_path": "frame_0000003359.jpg",
+            "bbox": [
+              511.13,
+              154.36,
+              359.71,
+              411.52
+            ]
+          },
+          {
+            "frame_path": "frame_0000003401.jpg",
+            "bbox": [
+              528.5,
+              138.92,
+              369.17,
+              426.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000003463.jpg",
+            "bbox": [
+              604.95,
+              184.32,
+              344.08,
+              406.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              682.61,
+              184.53,
+              347.09,
+              385.84
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 150,
+        "category": "other",
+        "subclass_name": "liquid",
+        "name": "liquid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003251.jpg",
+            "bbox": [
+              595.88,
+              383.05,
+              378.63,
+              451.08
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              607.02,
+              712.64,
+              78.46,
+              111.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000003359.jpg",
+            "bbox": [
+              598.21,
+              641.05,
+              31.41,
+              39.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000003401.jpg",
+            "bbox": [
+              623.9,
+              586.49,
+              114.41,
+              114.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000003463.jpg",
+            "bbox": [
+              538.88,
+              385.84,
+              438.31,
+              485.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              627.45,
+              440.44,
+              343.75,
+              362.78
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003251.jpg",
+            "bbox": [
+              0,
+              222.02,
+              659.72,
+              172.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000003301.jpg",
+            "bbox": [
+              0,
+              189.03,
+              658.45,
+              145.18
+            ]
+          },
+          {
+            "frame_path": "frame_0000003359.jpg",
+            "bbox": [
+              0,
+              163.21,
+              533.4,
+              146.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000003401.jpg",
+            "bbox": [
+              0,
+              169.25,
+              550.93,
+              163.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000003463.jpg",
+            "bbox": [
+              0,
+              196.35,
+              623.94,
+              145.53
+            ]
+          },
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              0,
+              107.41,
+              733.51,
+              197.4
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2371,232 +2419,9 @@
     "end_frame": 3909,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003601.jpg",
-            "bbox": [
-              709.75,
-              515.17,
-              164.24,
-              186.47
-            ]
-          },
-          {
-            "frame_path": "frame_0000003692.jpg",
-            "bbox": [
-              703.54,
-              644.83,
-              126.67,
-              182.25
-            ]
-          },
-          {
-            "frame_path": "frame_0000003751.jpg",
-            "bbox": [
-              528.37,
-              719.49,
-              155.29,
-              183.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000003809.jpg",
-            "bbox": [
-              541.98,
-              739.72,
-              144.94,
-              174.85
-            ]
-          },
-          {
-            "frame_path": "frame_0000003884.jpg",
-            "bbox": [
-              970.28,
-              787.91,
-              163.69,
-              186.97
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003601.jpg",
-            "bbox": [
-              0,
-              72.21,
-              732.8,
-              283.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000003692.jpg",
-            "bbox": [
-              0,
-              179.9,
-              715.35,
-              234.0
-            ]
-          },
-          {
-            "frame_path": "frame_0000003751.jpg",
-            "bbox": [
-              0,
-              238.22,
-              723.36,
-              169.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000003809.jpg",
-            "bbox": [
-              0,
-              215.67,
-              741.19,
-              193.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000003884.jpg",
-            "bbox": [
-              0,
-              22.31,
-              917.0,
-              465.92
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003601.jpg",
-            "bbox": [
-              740.76,
-              225.15,
-              294.27,
-              293.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000003692.jpg",
-            "bbox": [
-              704.28,
-              290.02,
-              334.17,
-              366.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000003751.jpg",
-            "bbox": [
-              697.01,
-              314.14,
-              344.56,
-              338.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000003809.jpg",
-            "bbox": [
-              739.7,
-              338.27,
-              332.02,
-              122.09
-            ]
-          },
-          {
-            "frame_path": "frame_0000003884.jpg",
-            "bbox": [
-              972.15,
-              455.1,
-              380.96,
-              156.47
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003601.jpg",
-            "bbox": [
-              766.6,
-              484.25,
-              227.56,
-              181.26
-            ]
-          },
-          {
-            "frame_path": "frame_0000003692.jpg",
-            "bbox": [
-              755.97,
-              636.36,
-              182.45,
-              157.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000003751.jpg",
-            "bbox": [
-              568.31,
-              698.74,
-              167.05,
-              172.74
-            ]
-          },
-          {
-            "frame_path": "frame_0000003809.jpg",
-            "bbox": [
-              578.58,
-              718.86,
-              164.79,
-              165.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000003884.jpg",
-            "bbox": [
-              1051.08,
-              882.36,
-              109.98,
-              132.07
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 150,
-        "class_name": "liquid",
-        "name": "liquid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003692.jpg",
-            "bbox": [
-              947.78,
-              505.09,
-              36.07,
-              84.29
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -2648,7 +2473,8 @@
       },
       {
         "class_id": 234,
-        "class_name": "powder:washing",
+        "category": "cleaning equipment and material",
+        "subclass_name": "powder:washing",
         "name": "washing powder",
         "image_crops": [
           {
@@ -2667,6 +2493,235 @@
               364.64,
               90.73,
               236.59
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003601.jpg",
+            "bbox": [
+              709.75,
+              515.17,
+              164.24,
+              186.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000003692.jpg",
+            "bbox": [
+              703.54,
+              644.83,
+              126.67,
+              182.25
+            ]
+          },
+          {
+            "frame_path": "frame_0000003751.jpg",
+            "bbox": [
+              528.37,
+              719.49,
+              155.29,
+              183.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000003809.jpg",
+            "bbox": [
+              541.98,
+              739.72,
+              144.94,
+              174.85
+            ]
+          },
+          {
+            "frame_path": "frame_0000003884.jpg",
+            "bbox": [
+              970.28,
+              787.91,
+              163.69,
+              186.97
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003601.jpg",
+            "bbox": [
+              766.6,
+              484.25,
+              227.56,
+              181.26
+            ]
+          },
+          {
+            "frame_path": "frame_0000003692.jpg",
+            "bbox": [
+              755.97,
+              636.36,
+              182.45,
+              157.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000003751.jpg",
+            "bbox": [
+              568.31,
+              698.74,
+              167.05,
+              172.74
+            ]
+          },
+          {
+            "frame_path": "frame_0000003809.jpg",
+            "bbox": [
+              578.58,
+              718.86,
+              164.79,
+              165.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000003884.jpg",
+            "bbox": [
+              1051.08,
+              882.36,
+              109.98,
+              132.07
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003601.jpg",
+            "bbox": [
+              740.76,
+              225.15,
+              294.27,
+              293.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000003692.jpg",
+            "bbox": [
+              704.28,
+              290.02,
+              334.17,
+              366.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000003751.jpg",
+            "bbox": [
+              697.01,
+              314.14,
+              344.56,
+              338.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000003809.jpg",
+            "bbox": [
+              739.7,
+              338.27,
+              332.02,
+              122.09
+            ]
+          },
+          {
+            "frame_path": "frame_0000003884.jpg",
+            "bbox": [
+              972.15,
+              455.1,
+              380.96,
+              156.47
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 150,
+        "category": "other",
+        "subclass_name": "liquid",
+        "name": "liquid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003692.jpg",
+            "bbox": [
+              947.78,
+              505.09,
+              36.07,
+              84.29
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003601.jpg",
+            "bbox": [
+              0,
+              72.21,
+              732.8,
+              283.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000003692.jpg",
+            "bbox": [
+              0,
+              179.9,
+              715.35,
+              234.0
+            ]
+          },
+          {
+            "frame_path": "frame_0000003751.jpg",
+            "bbox": [
+              0,
+              238.22,
+              723.36,
+              169.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000003809.jpg",
+            "bbox": [
+              0,
+              215.67,
+              741.19,
+              193.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000003884.jpg",
+            "bbox": [
+              0,
+              22.31,
+              917.0,
+              465.92
             ]
           }
         ]
@@ -2693,40 +2748,9 @@
     "end_frame": 4229,
     "objects_in_sequence": [
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003996.jpg",
-            "bbox": [
-              0,
-              418.92,
-              477.07,
-              112.17
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003996.jpg",
-            "bbox": [
-              421.67,
-              483.54,
-              469.64,
-              62.34
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 190,
-        "class_name": "knob",
+        "category": "appliances",
+        "subclass_name": "knob",
         "name": "dial",
         "image_crops": [
           {
@@ -2778,7 +2802,8 @@
       },
       {
         "class_id": 124,
-        "class_name": "machine:washing",
+        "category": "appliances",
+        "subclass_name": "machine:washing",
         "name": "washing machine",
         "image_crops": [
           {
@@ -2836,6 +2861,40 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003996.jpg",
+            "bbox": [
+              421.67,
+              483.54,
+              469.64,
+              62.34
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003996.jpg",
+            "bbox": [
+              0,
+              418.92,
+              477.07,
+              112.17
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2860,8 +2919,77 @@
     "end_frame": 4751,
     "objects_in_sequence": [
       {
+        "class_id": 44,
+        "category": "appliances",
+        "subclass_name": "kettle",
+        "name": "kettle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004450.jpg",
+            "bbox": [
+              440.74,
+              0,
+              569.94,
+              627.2
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 190,
+        "category": "appliances",
+        "subclass_name": "knob",
+        "name": "dial",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004242.jpg",
+            "bbox": [
+              969.53,
+              469.83,
+              112.97,
+              33.27
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 124,
+        "category": "appliances",
+        "subclass_name": "machine:washing",
+        "name": "washing machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004242.jpg",
+            "bbox": [
+              354.24,
+              344.19,
+              965.9,
+              294.84
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004559.jpg",
+            "bbox": [
+              731.88,
+              0,
+              252.59,
+              306.25
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 168,
-        "class_name": "basket",
+        "category": "containers",
+        "subclass_name": "basket",
         "name": "laundry basket",
         "image_crops": [
           {
@@ -2904,7 +3032,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -2920,7 +3049,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -2951,70 +3081,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 44,
-        "class_name": "kettle",
-        "name": "kettle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004450.jpg",
-            "bbox": [
-              440.74,
-              0,
-              569.94,
-              627.2
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 190,
-        "class_name": "knob",
-        "name": "dial",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004242.jpg",
-            "bbox": [
-              969.53,
-              469.83,
-              112.97,
-              33.27
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 124,
-        "class_name": "machine:washing",
-        "name": "washing machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004242.jpg",
-            "bbox": [
-              354.24,
-              344.19,
-              965.9,
-              294.84
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004559.jpg",
-            "bbox": [
-              731.88,
-              0,
-              252.59,
-              306.25
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3038,24 +3104,53 @@
     "end_frame": 4997,
     "objects_in_sequence": [
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "capsule",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
+          {
+            "frame_path": "frame_0000004825.jpg",
+            "bbox": [
+              470.61,
+              103.75,
+              502.7,
+              643.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000004876.jpg",
+            "bbox": [
+              698.48,
+              317.79,
+              343.18,
+              453.76
+            ]
+          },
           {
             "frame_path": "frame_0000004921.jpg",
             "bbox": [
-              1336.66,
-              239.82,
-              119.14,
-              111.84
+              691.39,
+              301.3,
+              434.39,
+              439.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000004976.jpg",
+            "bbox": [
+              504.97,
+              0,
+              481.4,
+              553.64
             ]
           }
         ]
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -3098,7 +3193,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -3131,44 +3227,18 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "capsule",
         "image_crops": [
-          {
-            "frame_path": "frame_0000004825.jpg",
-            "bbox": [
-              470.61,
-              103.75,
-              502.7,
-              643.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000004876.jpg",
-            "bbox": [
-              698.48,
-              317.79,
-              343.18,
-              453.76
-            ]
-          },
           {
             "frame_path": "frame_0000004921.jpg",
             "bbox": [
-              691.39,
-              301.3,
-              434.39,
-              439.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000004976.jpg",
-            "bbox": [
-              504.97,
-              0,
-              481.4,
-              553.64
+              1336.66,
+              239.82,
+              119.14,
+              111.84
             ]
           }
         ]
@@ -3194,8 +3264,97 @@
     "end_frame": 5545,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005076.jpg",
+            "bbox": [
+              458.62,
+              185.23,
+              330.01,
+              527.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000005096.jpg",
+            "bbox": [
+              359.24,
+              103.24,
+              445.16,
+              621.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000005311.jpg",
+            "bbox": [
+              238.13,
+              0,
+              446.25,
+              647.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000005526.jpg",
+            "bbox": [
+              179.54,
+              204.97,
+              506.28,
+              653.47
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "coffee machine lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005076.jpg",
+            "bbox": [
+              702.61,
+              122.42,
+              65.36,
+              96.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000005096.jpg",
+            "bbox": [
+              646.49,
+              96.49,
+              126.27,
+              147.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000005311.jpg",
+            "bbox": [
+              448.04,
+              0,
+              208.87,
+              107.43
+            ]
+          },
+          {
+            "frame_path": "frame_0000005526.jpg",
+            "bbox": [
+              442.68,
+              113.15,
+              187.17,
+              196.09
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -3238,7 +3397,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -3278,92 +3438,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "coffee machine lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005076.jpg",
-            "bbox": [
-              702.61,
-              122.42,
-              65.36,
-              96.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000005096.jpg",
-            "bbox": [
-              646.49,
-              96.49,
-              126.27,
-              147.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000005311.jpg",
-            "bbox": [
-              448.04,
-              0,
-              208.87,
-              107.43
-            ]
-          },
-          {
-            "frame_path": "frame_0000005526.jpg",
-            "bbox": [
-              442.68,
-              113.15,
-              187.17,
-              196.09
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005076.jpg",
-            "bbox": [
-              458.62,
-              185.23,
-              330.01,
-              527.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000005096.jpg",
-            "bbox": [
-              359.24,
-              103.24,
-              445.16,
-              621.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000005311.jpg",
-            "bbox": [
-              238.13,
-              0,
-              446.25,
-              647.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000005526.jpg",
-            "bbox": [
-              179.54,
-              204.97,
-              506.28,
-              653.47
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3386,8 +3460,62 @@
     "end_frame": 6188,
     "objects_in_sequence": [
       {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005763.jpg",
+            "bbox": [
+              968.14,
+              433.21,
+              387.17,
+              245.09
+            ]
+          },
+          {
+            "frame_path": "frame_0000005800.jpg",
+            "bbox": [
+              877.59,
+              419.15,
+              424.53,
+              205.7
+            ]
+          },
+          {
+            "frame_path": "frame_0000005842.jpg",
+            "bbox": [
+              835.25,
+              380.34,
+              409.09,
+              184.48
+            ]
+          },
+          {
+            "frame_path": "frame_0000005926.jpg",
+            "bbox": [
+              817.4,
+              361.51,
+              409.84,
+              176.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000006029.jpg",
+            "bbox": [
+              0,
+              178.42,
+              499.78,
+              179.63
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -3403,7 +3531,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -3473,7 +3602,8 @@
       },
       {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -3522,58 +3652,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005763.jpg",
-            "bbox": [
-              968.14,
-              433.21,
-              387.17,
-              245.09
-            ]
-          },
-          {
-            "frame_path": "frame_0000005800.jpg",
-            "bbox": [
-              877.59,
-              419.15,
-              424.53,
-              205.7
-            ]
-          },
-          {
-            "frame_path": "frame_0000005842.jpg",
-            "bbox": [
-              835.25,
-              380.34,
-              409.09,
-              184.48
-            ]
-          },
-          {
-            "frame_path": "frame_0000005926.jpg",
-            "bbox": [
-              817.4,
-              361.51,
-              409.84,
-              176.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000006029.jpg",
-            "bbox": [
-              0,
-              178.42,
-              499.78,
-              179.63
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -3599,8 +3677,44 @@
     "end_frame": 6762,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006701.jpg",
+            "bbox": [
+              550.35,
+              0,
+              398.93,
+              459.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000006550.jpg",
+            "bbox": [
+              1344.95,
+              179.73,
+              178.81,
+              157.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000006626.jpg",
+            "bbox": [
+              797.01,
+              0,
+              283.52,
+              344.37
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -3634,7 +3748,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -3649,42 +3764,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006701.jpg",
-            "bbox": [
-              550.35,
-              0,
-              398.93,
-              459.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000006550.jpg",
-            "bbox": [
-              1344.95,
-              179.73,
-              178.81,
-              157.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000006626.jpg",
-            "bbox": [
-              797.01,
-              0,
-              283.52,
-              344.37
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -3756,110 +3838,9 @@
     "end_frame": 7133,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "milk bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007109.jpg",
-            "bbox": [
-              948.03,
-              0,
-              281.62,
-              371.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000007126.jpg",
-            "bbox": [
-              964.41,
-              99.18,
-              311.47,
-              462.81
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000006784.jpg",
-            "bbox": [
-              643.95,
-              345.34,
-              167.56,
-              229.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000006826.jpg",
-            "bbox": [
-              698.37,
-              402.71,
-              182.31,
-              231.66
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 8,
-        "class_name": "drawer",
-        "name": "drawer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007051.jpg",
-            "bbox": [
-              269.89,
-              548.98,
-              442.31,
-              531.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000007071.jpg",
-            "bbox": [
-              478.39,
-              832.64,
-              235.74,
-              247.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000007092.jpg",
-            "bbox": [
-              585.06,
-              863.98,
-              185.75,
-              216.02
-            ]
-          },
-          {
-            "frame_path": "frame_0000007109.jpg",
-            "bbox": [
-              580.57,
-              934.99,
-              180.94,
-              145.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000007126.jpg",
-            "bbox": [
-              304.12,
-              855.36,
-              232.88,
-              224.64
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -3911,7 +3892,8 @@
       },
       {
         "class_id": 50,
-        "class_name": "maker:coffee",
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
         "name": "coffee machine",
         "image_crops": [
           {
@@ -3935,8 +3917,114 @@
         ]
       },
       {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "milk bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007109.jpg",
+            "bbox": [
+              948.03,
+              0,
+              281.62,
+              371.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000007126.jpg",
+            "bbox": [
+              964.41,
+              99.18,
+              311.47,
+              462.81
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000006784.jpg",
+            "bbox": [
+              643.95,
+              345.34,
+              167.56,
+              229.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000006826.jpg",
+            "bbox": [
+              698.37,
+              402.71,
+              182.31,
+              231.66
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007051.jpg",
+            "bbox": [
+              269.89,
+              548.98,
+              442.31,
+              531.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000007071.jpg",
+            "bbox": [
+              478.39,
+              832.64,
+              235.74,
+              247.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000007092.jpg",
+            "bbox": [
+              585.06,
+              863.98,
+              185.75,
+              216.02
+            ]
+          },
+          {
+            "frame_path": "frame_0000007109.jpg",
+            "bbox": [
+              580.57,
+              934.99,
+              180.94,
+              145.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000007126.jpg",
+            "bbox": [
+              304.12,
+              855.36,
+              232.88,
+              224.64
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -3983,8 +4071,35 @@
     "end_frame": 7356,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007151.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000007200.jpg",
+            "bbox": [
+              838.97,
+              0,
+              1081.03,
+              1080
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -4035,83 +4150,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007301.jpg",
-            "bbox": [
-              975.89,
-              143.3,
-              29.37,
-              97.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000007351.jpg",
-            "bbox": [
-              917.3,
-              478.91,
-              144.17,
-              125.56
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007301.jpg",
-            "bbox": [
-              839.06,
-              155.65,
-              168.07,
-              172.15
-            ]
-          },
-          {
-            "frame_path": "frame_0000007351.jpg",
-            "bbox": [
-              844.35,
-              441.79,
-              232.11,
-              188.84
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007151.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1080
-            ]
-          },
-          {
-            "frame_path": "frame_0000007200.jpg",
-            "bbox": [
-              838.97,
-              0,
-              1081.03,
-              1080
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "lid",
         "image_crops": [
           {
@@ -4142,6 +4183,58 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007301.jpg",
+            "bbox": [
+              839.06,
+              155.65,
+              168.07,
+              172.15
+            ]
+          },
+          {
+            "frame_path": "frame_0000007351.jpg",
+            "bbox": [
+              844.35,
+              441.79,
+              232.11,
+              188.84
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007301.jpg",
+            "bbox": [
+              975.89,
+              143.3,
+              29.37,
+              97.05
+            ]
+          },
+          {
+            "frame_path": "frame_0000007351.jpg",
+            "bbox": [
+              917.3,
+              478.91,
+              144.17,
+              125.56
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -4165,8 +4258,61 @@
     "end_frame": 7722,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007630.jpg",
+            "bbox": [
+              950.55,
+              0,
+              236.42,
+              325.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000007684.jpg",
+            "bbox": [
+              3.75,
+              0,
+              1058.96,
+              820.95
+            ]
+          },
+          {
+            "frame_path": "frame_0000007717.jpg",
+            "bbox": [
+              0,
+              0,
+              1920,
+              1014.85
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007526.jpg",
+            "bbox": [
+              628.94,
+              0,
+              541.86,
+              485.67
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -4235,110 +4381,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007417.jpg",
-            "bbox": [
-              960.16,
-              440.4,
-              124.25,
-              128.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000007476.jpg",
-            "bbox": [
-              915.69,
-              409.02,
-              87.19,
-              128.77
-            ]
-          },
-          {
-            "frame_path": "frame_0000007526.jpg",
-            "bbox": [
-              639.94,
-              341.23,
-              132.21,
-              144.21
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007417.jpg",
-            "bbox": [
-              875.88,
-              400.18,
-              249.65,
-              208.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000007476.jpg",
-            "bbox": [
-              828.72,
-              371.28,
-              254.89,
-              208.31
-            ]
-          },
-          {
-            "frame_path": "frame_0000007526.jpg",
-            "bbox": [
-              586.15,
-              319.01,
-              217.38,
-              225.38
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007630.jpg",
-            "bbox": [
-              950.55,
-              0,
-              236.42,
-              325.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000007684.jpg",
-            "bbox": [
-              3.75,
-              0,
-              1058.96,
-              820.95
-            ]
-          },
-          {
-            "frame_path": "frame_0000007717.jpg",
-            "bbox": [
-              0,
-              0,
-              1920,
-              1014.85
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "lid",
         "image_crops": [
           {
@@ -4398,24 +4443,44 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
         "image_crops": [
+          {
+            "frame_path": "frame_0000007417.jpg",
+            "bbox": [
+              875.88,
+              400.18,
+              249.65,
+              208.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000007476.jpg",
+            "bbox": [
+              828.72,
+              371.28,
+              254.89,
+              208.31
+            ]
+          },
           {
             "frame_path": "frame_0000007526.jpg",
             "bbox": [
-              628.94,
-              0,
-              541.86,
-              485.67
+              586.15,
+              319.01,
+              217.38,
+              225.38
             ]
           }
         ]
       },
       {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -4425,6 +4490,41 @@
               467.23,
               132.47,
               57.33
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007417.jpg",
+            "bbox": [
+              960.16,
+              440.4,
+              124.25,
+              128.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000007476.jpg",
+            "bbox": [
+              915.69,
+              409.02,
+              87.19,
+              128.77
+            ]
+          },
+          {
+            "frame_path": "frame_0000007526.jpg",
+            "bbox": [
+              639.94,
+              341.23,
+              132.21,
+              144.21
             ]
           }
         ]
@@ -4453,67 +4553,9 @@
     "end_frame": 8580,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "milk bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007751.jpg",
-            "bbox": [
-              556.62,
-              216.06,
-              535.19,
-              380.27
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 23,
-        "class_name": "box",
-        "name": "box",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008301.jpg",
-            "bbox": [
-              974.29,
-              141.79,
-              341.52,
-              397.87
-            ]
-          },
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              984.91,
-              119.67,
-              340.79,
-              420.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              326.09,
-              0,
-              1338.48,
-              501.71
-            ]
-          },
-          {
-            "frame_path": "frame_0000008551.jpg",
-            "bbox": [
-              1307.13,
-              241.3,
-              533.55,
-              315.71
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 92,
-        "class_name": "button",
+        "category": "appliances",
+        "subclass_name": "button",
         "name": "button",
         "image_crops": [
           {
@@ -4555,94 +4597,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008301.jpg",
-            "bbox": [
-              440.75,
-              506.16,
-              115.48,
-              141.41
-            ]
-          },
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              490.02,
-              548.28,
-              119.46,
-              143.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              800.19,
-              465.05,
-              115.7,
-              103.58
-            ]
-          },
-          {
-            "frame_path": "frame_0000008551.jpg",
-            "bbox": [
-              886.41,
-              447.5,
-              113.45,
-              90.68
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000008301.jpg",
-            "bbox": [
-              372.81,
-              500.63,
-              212.12,
-              212.76
-            ]
-          },
-          {
-            "frame_path": "frame_0000008371.jpg",
-            "bbox": [
-              428.49,
-              543.45,
-              203.47,
-              218.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000008426.jpg",
-            "bbox": [
-              749.49,
-              430.63,
-              191.68,
-              198.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000008551.jpg",
-            "bbox": [
-              820.16,
-              401.35,
-              208.18,
-              186.58
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -4657,24 +4614,9 @@
         ]
       },
       {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007751.jpg",
-            "bbox": [
-              486.1,
-              242.51,
-              201.7,
-              217.74
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 50,
-        "class_name": "maker:coffee",
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
         "name": "coffee machine",
         "image_crops": [
           {
@@ -4716,8 +4658,131 @@
         ]
       },
       {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "milk bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007751.jpg",
+            "bbox": [
+              556.62,
+              216.06,
+              535.19,
+              380.27
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 23,
+        "category": "containers",
+        "subclass_name": "box",
+        "name": "box",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008301.jpg",
+            "bbox": [
+              974.29,
+              141.79,
+              341.52,
+              397.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000008371.jpg",
+            "bbox": [
+              984.91,
+              119.67,
+              340.79,
+              420.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              326.09,
+              0,
+              1338.48,
+              501.71
+            ]
+          },
+          {
+            "frame_path": "frame_0000008551.jpg",
+            "bbox": [
+              1307.13,
+              241.3,
+              533.55,
+              315.71
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007751.jpg",
+            "bbox": [
+              486.1,
+              242.51,
+              201.7,
+              217.74
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008301.jpg",
+            "bbox": [
+              372.81,
+              500.63,
+              212.12,
+              212.76
+            ]
+          },
+          {
+            "frame_path": "frame_0000008371.jpg",
+            "bbox": [
+              428.49,
+              543.45,
+              203.47,
+              218.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              749.49,
+              430.63,
+              191.68,
+              198.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000008551.jpg",
+            "bbox": [
+              820.16,
+              401.35,
+              208.18,
+              186.58
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "wooden stirrer",
         "image_crops": [
           {
@@ -4736,6 +4801,50 @@
               365.06,
               691.21,
               172.35
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000008301.jpg",
+            "bbox": [
+              440.75,
+              506.16,
+              115.48,
+              141.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000008371.jpg",
+            "bbox": [
+              490.02,
+              548.28,
+              119.46,
+              143.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000008426.jpg",
+            "bbox": [
+              800.19,
+              465.05,
+              115.7,
+              103.58
+            ]
+          },
+          {
+            "frame_path": "frame_0000008551.jpg",
+            "bbox": [
+              886.41,
+              447.5,
+              113.45,
+              90.68
             ]
           }
         ]
@@ -4763,7 +4872,8 @@
     "objects_in_sequence": [
       {
         "class_id": 82,
-        "class_name": "blender",
+        "category": "appliances",
+        "subclass_name": "blender",
         "name": "hand blender",
         "image_crops": [
           {
@@ -4787,8 +4897,69 @@
         ]
       },
       {
+        "class_id": 92,
+        "category": "appliances",
+        "subclass_name": "button",
+        "name": "button",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009705.jpg",
+            "bbox": [
+              1141.61,
+              92.85,
+              19.56,
+              24.12
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009705.jpg",
+            "bbox": [
+              778.02,
+              31.96,
+              466.24,
+              535.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000009759.jpg",
+            "bbox": [
+              -0.76,
+              0,
+              575.15,
+              631.93
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 153,
+        "category": "appliances",
+        "subclass_name": "plug",
+        "name": "electric plug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009976.jpg",
+            "bbox": [
+              799.05,
+              777.36,
+              152.14,
+              189.38
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -4839,49 +5010,9 @@
         ]
       },
       {
-        "class_id": 92,
-        "class_name": "button",
-        "name": "button",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009705.jpg",
-            "bbox": [
-              1141.61,
-              92.85,
-              19.56,
-              24.12
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009705.jpg",
-            "bbox": [
-              764.95,
-              448.31,
-              124.02,
-              99.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000009759.jpg",
-            "bbox": [
-              210.57,
-              536.34,
-              127.43,
-              135.8
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -4905,49 +5036,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009705.jpg",
-            "bbox": [
-              778.02,
-              31.96,
-              466.24,
-              535.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000009759.jpg",
-            "bbox": [
-              -0.76,
-              0,
-              575.15,
-              631.93
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 153,
-        "class_name": "plug",
-        "name": "electric plug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000009976.jpg",
-            "bbox": [
-              799.05,
-              777.36,
-              152.14,
-              189.38
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "wooden stirrer",
         "image_crops": [
           {
@@ -4957,6 +5048,32 @@
               256.13,
               706.12,
               344.34
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000009705.jpg",
+            "bbox": [
+              764.95,
+              448.31,
+              124.02,
+              99.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000009759.jpg",
+            "bbox": [
+              210.57,
+              536.34,
+              127.43,
+              135.8
             ]
           }
         ]
@@ -4984,7 +5101,8 @@
     "objects_in_sequence": [
       {
         "class_id": 82,
-        "class_name": "blender",
+        "category": "appliances",
+        "subclass_name": "blender",
         "name": "hand blender",
         "image_crops": [
           {
@@ -5027,7 +5145,8 @@
       },
       {
         "class_id": 82,
-        "class_name": "blender",
+        "category": "appliances",
+        "subclass_name": "blender",
         "name": "hand blender piece",
         "image_crops": [
           {
@@ -5052,7 +5171,8 @@
       },
       {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -5122,7 +5242,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "cup",
         "image_crops": [
           {
@@ -5147,7 +5268,8 @@
       },
       {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -5203,8 +5325,35 @@
     "end_frame": 11251,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011226.jpg",
+            "bbox": [
+              468.64,
+              0,
+              301.08,
+              469.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000011251.jpg",
+            "bbox": [
+              680.31,
+              0,
+              283.05,
+              531.74
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 23,
-        "class_name": "box",
+        "category": "containers",
+        "subclass_name": "box",
         "name": "box",
         "image_crops": [
           {
@@ -5255,33 +5404,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011226.jpg",
-            "bbox": [
-              570.17,
-              470.9,
-              148.34,
-              124.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000011251.jpg",
-            "bbox": [
-              653.68,
-              558.64,
-              155.82,
-              155.9
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -5305,8 +5430,61 @@
         ]
       },
       {
+        "class_id": 1,
+        "category": "cutlery",
+        "subclass_name": "spoon",
+        "name": "wooden stirrer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011226.jpg",
+            "bbox": [
+              653.67,
+              488.28,
+              93.49,
+              31.1
+            ]
+          },
+          {
+            "frame_path": "frame_0000011251.jpg",
+            "bbox": [
+              693.29,
+              554.61,
+              94.75,
+              69.96
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011226.jpg",
+            "bbox": [
+              570.17,
+              470.9,
+              148.34,
+              124.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000011251.jpg",
+            "bbox": [
+              653.68,
+              558.64,
+              155.82,
+              155.9
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 3,
-        "class_name": "cupboard",
+        "category": "storage",
+        "subclass_name": "cupboard",
         "name": "cupboard",
         "image_crops": [
           {
@@ -5337,56 +5515,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011226.jpg",
-            "bbox": [
-              468.64,
-              0,
-              301.08,
-              469.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000011251.jpg",
-            "bbox": [
-              680.31,
-              0,
-              283.05,
-              531.74
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 1,
-        "class_name": "spoon",
-        "name": "wooden stirrer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011226.jpg",
-            "bbox": [
-              653.67,
-              488.28,
-              93.49,
-              31.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000011251.jpg",
-            "bbox": [
-              693.29,
-              554.61,
-              94.75,
-              69.96
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -5410,40 +5538,9 @@
     "end_frame": 11528,
     "objects_in_sequence": [
       {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011476.jpg",
-            "bbox": [
-              466.61,
-              219.8,
-              494.21,
-              488.84
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000011476.jpg",
-            "bbox": [
-              344.38,
-              894.86,
-              229.63,
-              185.14
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -5459,7 +5556,8 @@
       },
       {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "wooden stirrer",
         "image_crops": [
           {
@@ -5469,6 +5567,40 @@
               551.75,
               234.9,
               125.19
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011476.jpg",
+            "bbox": [
+              344.38,
+              894.86,
+              229.63,
+              185.14
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 36,
+        "category": "rubbish",
+        "subclass_name": "bin",
+        "name": "bin",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000011476.jpg",
+            "bbox": [
+              466.61,
+              219.8,
+              494.21,
+              488.84
             ]
           }
         ]

@@ -7,24 +7,9 @@
     "end_frame": 338,
     "objects_in_sequence": [
       {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "door",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000070.jpg",
-            "bbox": [
-              1025.66,
-              0,
-              894.34,
-              1080
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -76,7 +61,8 @@
       },
       {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "pan",
         "image_crops": [
           {
@@ -101,7 +87,8 @@
       },
       {
         "class_id": 91,
-        "class_name": "pizza",
+        "category": "prepared food",
+        "subclass_name": "pizza",
         "name": "pizza",
         "image_crops": [
           {
@@ -111,6 +98,23 @@
               0,
               566.7,
               410.28
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "door",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000070.jpg",
+            "bbox": [
+              1025.66,
+              0,
+              894.34,
+              1080
             ]
           }
         ]
@@ -139,7 +143,8 @@
     "objects_in_sequence": [
       {
         "class_id": 46,
-        "class_name": "oven",
+        "category": "appliances",
+        "subclass_name": "oven",
         "name": "oven",
         "image_crops": [
           {
@@ -200,7 +205,8 @@
       },
       {
         "class_id": 5,
-        "class_name": "pan",
+        "category": "cookware",
+        "subclass_name": "pan",
         "name": "pan",
         "image_crops": [
           {
@@ -252,7 +258,8 @@
       },
       {
         "class_id": 91,
-        "class_name": "pizza",
+        "category": "prepared food",
+        "subclass_name": "pizza",
         "name": "pizza",
         "image_crops": [
           {
@@ -307,8 +314,158 @@
     "end_frame": 1441,
     "objects_in_sequence": [
       {
+        "class_id": 5,
+        "category": "cookware",
+        "subclass_name": "pan",
+        "name": "pan",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001205.jpg",
+            "bbox": [
+              894.37,
+              168.78,
+              460.21,
+              627.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000001278.jpg",
+            "bbox": [
+              792.7,
+              289.08,
+              676.5,
+              791.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000001344.jpg",
+            "bbox": [
+              728.52,
+              324.12,
+              600.95,
+              755.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000001405.jpg",
+            "bbox": [
+              599.47,
+              344.85,
+              616.34,
+              735.15
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "category": "cutlery",
+        "subclass_name": "knife",
+        "name": "knife",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001278.jpg",
+            "bbox": [
+              0,
+              286.52,
+              294.69,
+              152.06
+            ]
+          },
+          {
+            "frame_path": "frame_0000001344.jpg",
+            "bbox": [
+              295.2,
+              0.11,
+              398.42,
+              141.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000001405.jpg",
+            "bbox": [
+              190.92,
+              0,
+              389.14,
+              145.25
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 91,
+        "category": "prepared food",
+        "subclass_name": "pizza",
+        "name": "pizza",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001205.jpg",
+            "bbox": [
+              903.54,
+              207.54,
+              363.92,
+              351.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000001278.jpg",
+            "bbox": [
+              813.54,
+              320.56,
+              522.9,
+              542.9
+            ]
+          },
+          {
+            "frame_path": "frame_0000001344.jpg",
+            "bbox": [
+              727.57,
+              192.63,
+              453.85,
+              427.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000001405.jpg",
+            "bbox": [
+              603.49,
+              67.93,
+              451.87,
+              371.51
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "category": "storage",
+        "subclass_name": "cupboard",
+        "name": "cupboard",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001046.jpg",
+            "bbox": [
+              422.14,
+              0,
+              961.44,
+              413.37
+            ]
+          },
+          {
+            "frame_path": "frame_0000001126.jpg",
+            "bbox": [
+              1357.41,
+              0,
+              562.59,
+              475.27
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 18,
-        "class_name": "board:chopping",
+        "category": "utensils",
+        "subclass_name": "board:chopping",
         "name": "chopping board",
         "image_crops": [
           {
@@ -357,151 +514,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 3,
-        "class_name": "cupboard",
-        "name": "cupboard",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001046.jpg",
-            "bbox": [
-              422.14,
-              0,
-              961.44,
-              413.37
-            ]
-          },
-          {
-            "frame_path": "frame_0000001126.jpg",
-            "bbox": [
-              1357.41,
-              0,
-              562.59,
-              475.27
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 4,
-        "class_name": "knife",
-        "name": "knife",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001278.jpg",
-            "bbox": [
-              0,
-              286.52,
-              294.69,
-              152.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000001344.jpg",
-            "bbox": [
-              295.2,
-              0.11,
-              398.42,
-              141.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000001405.jpg",
-            "bbox": [
-              190.92,
-              0,
-              389.14,
-              145.25
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 5,
-        "class_name": "pan",
-        "name": "pan",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001205.jpg",
-            "bbox": [
-              894.37,
-              168.78,
-              460.21,
-              627.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000001278.jpg",
-            "bbox": [
-              792.7,
-              289.08,
-              676.5,
-              791.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000001344.jpg",
-            "bbox": [
-              728.52,
-              324.12,
-              600.95,
-              755.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000001405.jpg",
-            "bbox": [
-              599.47,
-              344.85,
-              616.34,
-              735.15
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 91,
-        "class_name": "pizza",
-        "name": "pizza",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001205.jpg",
-            "bbox": [
-              903.54,
-              207.54,
-              363.92,
-              351.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000001278.jpg",
-            "bbox": [
-              813.54,
-              320.56,
-              522.9,
-              542.9
-            ]
-          },
-          {
-            "frame_path": "frame_0000001344.jpg",
-            "bbox": [
-              727.57,
-              192.63,
-              453.85,
-              427.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000001405.jpg",
-            "bbox": [
-              603.49,
-              67.93,
-              451.87,
-              371.51
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -526,69 +538,44 @@
     "end_frame": 3465,
     "objects_in_sequence": [
       {
-        "class_id": 18,
-        "class_name": "board:chopping",
-        "name": "chopping board",
+        "class_id": 5,
+        "category": "cookware",
+        "subclass_name": "pan",
+        "name": "pan",
         "image_crops": [
           {
             "frame_path": "frame_0000001488.jpg",
             "bbox": [
-              0,
-              449.73,
-              295.92,
-              524.17
+              624.53,
+              177.12,
+              498.26,
+              657.05
             ]
           },
           {
             "frame_path": "frame_0000001532.jpg",
             "bbox": [
-              588.7,
-              301.14,
-              418.59,
-              329.72
-            ]
-          },
-          {
-            "frame_path": "frame_0000002126.jpg",
-            "bbox": [
-              741.55,
-              127.9,
-              597.21,
-              497.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000002594.jpg",
-            "bbox": [
-              660.73,
-              61.54,
-              604.2,
-              566.54
+              1452.64,
+              490.56,
+              467.36,
+              589.44
             ]
           },
           {
             "frame_path": "frame_0000003063.jpg",
             "bbox": [
-              444.33,
-              0,
-              754.67,
-              597.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000003440.jpg",
-            "bbox": [
-              821.61,
-              863.52,
-              491.13,
-              216.83
+              1535.96,
+              937.55,
+              384.71,
+              142.45
             ]
           }
         ]
       },
       {
         "class_id": 4,
-        "class_name": "knife",
+        "category": "cutlery",
+        "subclass_name": "knife",
         "name": "knife",
         "image_crops": [
           {
@@ -639,42 +626,9 @@
         ]
       },
       {
-        "class_id": 5,
-        "class_name": "pan",
-        "name": "pan",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001488.jpg",
-            "bbox": [
-              624.53,
-              177.12,
-              498.26,
-              657.05
-            ]
-          },
-          {
-            "frame_path": "frame_0000001532.jpg",
-            "bbox": [
-              1452.64,
-              490.56,
-              467.36,
-              589.44
-            ]
-          },
-          {
-            "frame_path": "frame_0000003063.jpg",
-            "bbox": [
-              1535.96,
-              937.55,
-              384.71,
-              142.45
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 91,
-        "class_name": "pizza",
+        "category": "prepared food",
+        "subclass_name": "pizza",
         "name": "pizza",
         "image_crops": [
           {
@@ -729,6 +683,68 @@
               866.63,
               427.75,
               213.37
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "category": "utensils",
+        "subclass_name": "board:chopping",
+        "name": "chopping board",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001488.jpg",
+            "bbox": [
+              0,
+              449.73,
+              295.92,
+              524.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000001532.jpg",
+            "bbox": [
+              588.7,
+              301.14,
+              418.59,
+              329.72
+            ]
+          },
+          {
+            "frame_path": "frame_0000002126.jpg",
+            "bbox": [
+              741.55,
+              127.9,
+              597.21,
+              497.05
+            ]
+          },
+          {
+            "frame_path": "frame_0000002594.jpg",
+            "bbox": [
+              660.73,
+              61.54,
+              604.2,
+              566.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000003063.jpg",
+            "bbox": [
+              444.33,
+              0,
+              754.67,
+              597.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000003440.jpg",
+            "bbox": [
+              821.61,
+              863.52,
+              491.13,
+              216.83
             ]
           }
         ]

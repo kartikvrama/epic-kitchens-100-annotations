@@ -7,42 +7,9 @@
     "end_frame": 406,
     "objects_in_sequence": [
       {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000201.jpg",
-            "bbox": [
-              554.13,
-              681.81,
-              42.21,
-              111.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000000351.jpg",
-            "bbox": [
-              796.01,
-              797.14,
-              163.19,
-              247.73
-            ]
-          },
-          {
-            "frame_path": "frame_0000000376.jpg",
-            "bbox": [
-              751.74,
-              772.03,
-              158.54,
-              232.39
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 50,
-        "class_name": "maker:coffee",
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
         "name": "coffee machine",
         "image_crops": [
           {
@@ -100,6 +67,41 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000201.jpg",
+            "bbox": [
+              554.13,
+              681.81,
+              42.21,
+              111.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000000351.jpg",
+            "bbox": [
+              796.01,
+              797.14,
+              163.19,
+              247.73
+            ]
+          },
+          {
+            "frame_path": "frame_0000000376.jpg",
+            "bbox": [
+              751.74,
+              772.03,
+              158.54,
+              232.39
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -124,8 +126,97 @@
     "end_frame": 944,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000651.jpg",
+            "bbox": [
+              270.58,
+              537.13,
+              529.63,
+              542.68
+            ]
+          },
+          {
+            "frame_path": "frame_0000000776.jpg",
+            "bbox": [
+              299.14,
+              443.25,
+              480.49,
+              633.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000000901.jpg",
+            "bbox": [
+              218.54,
+              478.62,
+              528.28,
+              601.38
+            ]
+          },
+          {
+            "frame_path": "frame_0000000926.jpg",
+            "bbox": [
+              272.51,
+              536.91,
+              461.06,
+              543.09
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "category": "containers",
+        "subclass_name": "lid",
+        "name": "coffee machine lid",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000651.jpg",
+            "bbox": [
+              654.99,
+              524.3,
+              109.59,
+              150.19
+            ]
+          },
+          {
+            "frame_path": "frame_0000000776.jpg",
+            "bbox": [
+              543.29,
+              460.01,
+              185.38,
+              109.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000000901.jpg",
+            "bbox": [
+              487.77,
+              479.32,
+              198.84,
+              133.36
+            ]
+          },
+          {
+            "frame_path": "frame_0000000926.jpg",
+            "bbox": [
+              579.72,
+              462.97,
+              122.31,
+              146.22
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -168,7 +259,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -208,92 +300,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 6,
-        "class_name": "lid",
-        "name": "coffee machine lid",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000651.jpg",
-            "bbox": [
-              654.99,
-              524.3,
-              109.59,
-              150.19
-            ]
-          },
-          {
-            "frame_path": "frame_0000000776.jpg",
-            "bbox": [
-              543.29,
-              460.01,
-              185.38,
-              109.49
-            ]
-          },
-          {
-            "frame_path": "frame_0000000901.jpg",
-            "bbox": [
-              487.77,
-              479.32,
-              198.84,
-              133.36
-            ]
-          },
-          {
-            "frame_path": "frame_0000000926.jpg",
-            "bbox": [
-              579.72,
-              462.97,
-              122.31,
-              146.22
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000651.jpg",
-            "bbox": [
-              270.58,
-              537.13,
-              529.63,
-              542.68
-            ]
-          },
-          {
-            "frame_path": "frame_0000000776.jpg",
-            "bbox": [
-              299.14,
-              443.25,
-              480.49,
-              633.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000000901.jpg",
-            "bbox": [
-              218.54,
-              478.62,
-              528.28,
-              601.38
-            ]
-          },
-          {
-            "frame_path": "frame_0000000926.jpg",
-            "bbox": [
-              272.51,
-              536.91,
-              461.06,
-              543.09
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -316,58 +322,9 @@
     "end_frame": 1374,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "milk bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001292.jpg",
-            "bbox": [
-              903.54,
-              597.14,
-              256.26,
-              443.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000001341.jpg",
-            "bbox": [
-              242.58,
-              1022.01,
-              262.07,
-              58.44
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000000955.jpg",
-            "bbox": [
-              338.31,
-              908.33,
-              222.81,
-              171.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000001001.jpg",
-            "bbox": [
-              789.64,
-              766.49,
-              156.71,
-              242.04
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -400,33 +357,61 @@
         ]
       },
       {
-        "class_id": 66,
-        "class_name": "jug",
-        "name": "water filter",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
           {
             "frame_path": "frame_0000000955.jpg",
             "bbox": [
-              599.17,
-              1025.5,
-              400.8,
-              54.5
+              284.53,
+              482.1,
+              542.13,
+              581.03
             ]
           },
           {
             "frame_path": "frame_0000001001.jpg",
             "bbox": [
-              250.53,
-              473.54,
-              420.3,
-              596.8
+              811.92,
+              460.67,
+              408.11,
+              461.78
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "milk bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001292.jpg",
+            "bbox": [
+              903.54,
+              597.14,
+              256.26,
+              443.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000001341.jpg",
+            "bbox": [
+              242.58,
+              1022.01,
+              262.07,
+              58.44
             ]
           }
         ]
       },
       {
         "class_id": 6,
-        "class_name": "lid",
+        "category": "containers",
+        "subclass_name": "lid",
         "name": "coffee machine lid",
         "image_crops": [
           {
@@ -450,26 +435,53 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
         "image_crops": [
           {
             "frame_path": "frame_0000000955.jpg",
             "bbox": [
-              284.53,
-              482.1,
-              542.13,
-              581.03
+              338.31,
+              908.33,
+              222.81,
+              171.4
             ]
           },
           {
             "frame_path": "frame_0000001001.jpg",
             "bbox": [
-              811.92,
-              460.67,
-              408.11,
-              461.78
+              789.64,
+              766.49,
+              156.71,
+              242.04
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 66,
+        "category": "crockery",
+        "subclass_name": "jug",
+        "name": "water filter",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000000955.jpg",
+            "bbox": [
+              599.17,
+              1025.5,
+              400.8,
+              54.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000001001.jpg",
+            "bbox": [
+              250.53,
+              473.54,
+              420.3,
+              596.8
             ]
           }
         ]
@@ -496,8 +508,80 @@
     "end_frame": 1937,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001521.jpg",
+            "bbox": [
+              890.94,
+              419.95,
+              464.75,
+              434.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000001626.jpg",
+            "bbox": [
+              816.51,
+              307.38,
+              476.73,
+              449.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000001676.jpg",
+            "bbox": [
+              613.6,
+              307.72,
+              494.25,
+              513.67
+            ]
+          },
+          {
+            "frame_path": "frame_0000001726.jpg",
+            "bbox": [
+              353.3,
+              246.68,
+              520.53,
+              596.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000001813.jpg",
+            "bbox": [
+              497.2,
+              270.47,
+              493.28,
+              592.01
+            ]
+          },
+          {
+            "frame_path": "frame_0000001901.jpg",
+            "bbox": [
+              458.14,
+              107.51,
+              501.1,
+              587.17
+            ]
+          },
+          {
+            "frame_path": "frame_0000001926.jpg",
+            "bbox": [
+              474.96,
+              108.18,
+              497.62,
+              587.45
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -567,7 +651,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -637,7 +722,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -706,78 +792,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001521.jpg",
-            "bbox": [
-              890.94,
-              419.95,
-              464.75,
-              434.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000001626.jpg",
-            "bbox": [
-              816.51,
-              307.38,
-              476.73,
-              449.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000001676.jpg",
-            "bbox": [
-              613.6,
-              307.72,
-              494.25,
-              513.67
-            ]
-          },
-          {
-            "frame_path": "frame_0000001726.jpg",
-            "bbox": [
-              353.3,
-              246.68,
-              520.53,
-              596.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000001813.jpg",
-            "bbox": [
-              497.2,
-              270.47,
-              493.28,
-              592.01
-            ]
-          },
-          {
-            "frame_path": "frame_0000001901.jpg",
-            "bbox": [
-              458.14,
-              107.51,
-              501.1,
-              587.17
-            ]
-          },
-          {
-            "frame_path": "frame_0000001926.jpg",
-            "bbox": [
-              474.96,
-              108.18,
-              497.62,
-              587.45
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -860,8 +877,71 @@
     "end_frame": 2096,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000001967.jpg",
+            "bbox": [
+              720.6,
+              241.72,
+              447.96,
+              540.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000002005.jpg",
+            "bbox": [
+              853.08,
+              474.29,
+              391.26,
+              452.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000002028.jpg",
+            "bbox": [
+              900.18,
+              548.69,
+              403.18,
+              458.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000002051.jpg",
+            "bbox": [
+              790.95,
+              541.61,
+              375.58,
+              414.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000002076.jpg",
+            "bbox": [
+              666.06,
+              343.56,
+              446.65,
+              556.88
+            ]
+          },
+          {
+            "frame_path": "frame_0000002096.jpg",
+            "bbox": [
+              611.11,
+              318.36,
+              466.98,
+              568.33
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -903,42 +983,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee pod",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002005.jpg",
-            "bbox": [
-              951.4,
-              373.93,
-              51.3,
-              55.29
-            ]
-          },
-          {
-            "frame_path": "frame_0000002076.jpg",
-            "bbox": [
-              1132.06,
-              894.91,
-              97.92,
-              91.28
-            ]
-          },
-          {
-            "frame_path": "frame_0000002096.jpg",
-            "bbox": [
-              943.17,
-              792.45,
-              90.29,
-              74.67
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -999,7 +1046,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -1059,69 +1107,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000001967.jpg",
-            "bbox": [
-              720.6,
-              241.72,
-              447.96,
-              540.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000002005.jpg",
-            "bbox": [
-              853.08,
-              474.29,
-              391.26,
-              452.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000002028.jpg",
-            "bbox": [
-              900.18,
-              548.69,
-              403.18,
-              458.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000002051.jpg",
-            "bbox": [
-              790.95,
-              541.61,
-              375.58,
-              414.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000002076.jpg",
-            "bbox": [
-              666.06,
-              343.56,
-              446.65,
-              556.88
-            ]
-          },
-          {
-            "frame_path": "frame_0000002096.jpg",
-            "bbox": [
-              611.11,
-              318.36,
-              466.98,
-              568.33
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 64,
-        "class_name": "milk",
+        "category": "dairy and eggs",
+        "subclass_name": "milk",
         "name": "milk",
         "image_crops": [
           {
@@ -1131,6 +1119,41 @@
               688.17,
               115.41,
               95.09
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee pod",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002005.jpg",
+            "bbox": [
+              951.4,
+              373.93,
+              51.3,
+              55.29
+            ]
+          },
+          {
+            "frame_path": "frame_0000002076.jpg",
+            "bbox": [
+              1132.06,
+              894.91,
+              97.92,
+              91.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000002096.jpg",
+            "bbox": [
+              943.17,
+              792.45,
+              90.29,
+              74.67
             ]
           }
         ]
@@ -1158,8 +1181,62 @@
     "end_frame": 2325,
     "objects_in_sequence": [
       {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002117.jpg",
+            "bbox": [
+              604.83,
+              308.52,
+              445.62,
+              572.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000002201.jpg",
+            "bbox": [
+              642.55,
+              295.04,
+              415.23,
+              592.45
+            ]
+          },
+          {
+            "frame_path": "frame_0000002251.jpg",
+            "bbox": [
+              781.34,
+              335.73,
+              443.42,
+              512.91
+            ]
+          },
+          {
+            "frame_path": "frame_0000002276.jpg",
+            "bbox": [
+              767.58,
+              295.67,
+              461.52,
+              512.61
+            ]
+          },
+          {
+            "frame_path": "frame_0000002301.jpg",
+            "bbox": [
+              708.88,
+              255.97,
+              522.98,
+              608.8
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -1211,7 +1288,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -1263,7 +1341,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -1312,58 +1391,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002117.jpg",
-            "bbox": [
-              604.83,
-              308.52,
-              445.62,
-              572.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000002201.jpg",
-            "bbox": [
-              642.55,
-              295.04,
-              415.23,
-              592.45
-            ]
-          },
-          {
-            "frame_path": "frame_0000002251.jpg",
-            "bbox": [
-              781.34,
-              335.73,
-              443.42,
-              512.91
-            ]
-          },
-          {
-            "frame_path": "frame_0000002276.jpg",
-            "bbox": [
-              767.58,
-              295.67,
-              461.52,
-              512.61
-            ]
-          },
-          {
-            "frame_path": "frame_0000002301.jpg",
-            "bbox": [
-              708.88,
-              255.97,
-              522.98,
-              608.8
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1387,42 +1414,35 @@
     "end_frame": 2718,
     "objects_in_sequence": [
       {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin/garbage can/recycling bin",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
           {
-            "frame_path": "frame_0000002505.jpg",
+            "frame_path": "frame_0000002646.jpg",
             "bbox": [
-              294.53,
-              566.55,
-              493.94,
-              484.04
+              810.1,
+              0,
+              323.1,
+              590.46
             ]
           },
           {
-            "frame_path": "frame_0000002551.jpg",
+            "frame_path": "frame_0000002700.jpg",
             "bbox": [
-              419.54,
-              563.55,
-              516.89,
-              516.48
-            ]
-          },
-          {
-            "frame_path": "frame_0000002598.jpg",
-            "bbox": [
-              30.71,
-              1020.71,
-              363.42,
-              59.29
+              502.14,
+              219.36,
+              575.47,
+              845.18
             ]
           }
         ]
       },
       {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -1446,24 +1466,9 @@
         ]
       },
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee pod",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002505.jpg",
-            "bbox": [
-              785.51,
-              785.94,
-              166.05,
-              134.61
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 21,
-        "class_name": "container",
+        "category": "containers",
+        "subclass_name": "container",
         "name": "pod container",
         "image_crops": [
           {
@@ -1515,7 +1520,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -1539,26 +1545,53 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee pod",
         "image_crops": [
           {
-            "frame_path": "frame_0000002646.jpg",
+            "frame_path": "frame_0000002505.jpg",
             "bbox": [
-              810.1,
-              0,
-              323.1,
-              590.46
+              785.51,
+              785.94,
+              166.05,
+              134.61
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 36,
+        "category": "rubbish",
+        "subclass_name": "bin",
+        "name": "bin/garbage can/recycling bin",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002505.jpg",
+            "bbox": [
+              294.53,
+              566.55,
+              493.94,
+              484.04
             ]
           },
           {
-            "frame_path": "frame_0000002700.jpg",
+            "frame_path": "frame_0000002551.jpg",
             "bbox": [
-              502.14,
-              219.36,
-              575.47,
-              845.18
+              419.54,
+              563.55,
+              516.89,
+              516.48
+            ]
+          },
+          {
+            "frame_path": "frame_0000002598.jpg",
+            "bbox": [
+              30.71,
+              1020.71,
+              363.42,
+              59.29
             ]
           }
         ]
@@ -1585,8 +1618,88 @@
     "end_frame": 3328,
     "objects_in_sequence": [
       {
+        "class_id": 12,
+        "category": "appliances",
+        "subclass_name": "fridge",
+        "name": "fridge",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003192.jpg",
+            "bbox": [
+              1408.86,
+              0,
+              511.14,
+              651.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000003276.jpg",
+            "bbox": [
+              0.26,
+              0,
+              1153.79,
+              1080.78
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000002767.jpg",
+            "bbox": [
+              703.63,
+              228.12,
+              494.06,
+              557.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000002826.jpg",
+            "bbox": [
+              743.01,
+              305.23,
+              522.91,
+              489.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000002905.jpg",
+            "bbox": [
+              669.15,
+              201.03,
+              498.07,
+              550.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000002946.jpg",
+            "bbox": [
+              781.77,
+              341.71,
+              414.02,
+              476.35
+            ]
+          },
+          {
+            "frame_path": "frame_0000003069.jpg",
+            "bbox": [
+              802.79,
+              236.79,
+              414.88,
+              521.75
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 15,
-        "class_name": "bottle",
+        "category": "containers",
+        "subclass_name": "bottle",
         "name": "milk bottle",
         "image_crops": [
           {
@@ -1638,7 +1751,8 @@
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -1689,33 +1803,9 @@
         ]
       },
       {
-        "class_id": 12,
-        "class_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003192.jpg",
-            "bbox": [
-              1408.86,
-              0,
-              511.14,
-              651.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000003276.jpg",
-            "bbox": [
-              0.26,
-              0,
-              1153.79,
-              1080.78
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -1746,58 +1836,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000002767.jpg",
-            "bbox": [
-              703.63,
-              228.12,
-              494.06,
-              557.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000002826.jpg",
-            "bbox": [
-              743.01,
-              305.23,
-              522.91,
-              489.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000002905.jpg",
-            "bbox": [
-              669.15,
-              201.03,
-              498.07,
-              550.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000002946.jpg",
-            "bbox": [
-              781.77,
-              341.71,
-              414.02,
-              476.35
-            ]
-          },
-          {
-            "frame_path": "frame_0000003069.jpg",
-            "bbox": [
-              802.79,
-              236.79,
-              414.88,
-              521.75
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -1823,110 +1861,9 @@
     "end_frame": 3901,
     "objects_in_sequence": [
       {
-        "class_id": 15,
-        "class_name": "bottle",
-        "name": "milk bottle",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003378.jpg",
-            "bbox": [
-              1545.66,
-              792.62,
-              308.93,
-              238.53
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              583.1,
-              783.66,
-              130.36,
-              118.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000003576.jpg",
-            "bbox": [
-              538.96,
-              703.61,
-              125.77,
-              114.2
-            ]
-          },
-          {
-            "frame_path": "frame_0000003676.jpg",
-            "bbox": [
-              846.91,
-              672.41,
-              136.65,
-              127.22
-            ]
-          },
-          {
-            "frame_path": "frame_0000003801.jpg",
-            "bbox": [
-              845.21,
-              686.99,
-              122.0,
-              110.19
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 13,
-        "class_name": "cup",
-        "name": "mug",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              544.74,
-              738.14,
-              180.23,
-              263.75
-            ]
-          },
-          {
-            "frame_path": "frame_0000003576.jpg",
-            "bbox": [
-              491.93,
-              657.25,
-              183.96,
-              260.4
-            ]
-          },
-          {
-            "frame_path": "frame_0000003676.jpg",
-            "bbox": [
-              829.6,
-              634.97,
-              173.92,
-              250.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000003801.jpg",
-            "bbox": [
-              831.37,
-              648.78,
-              167.91,
-              247.69
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 12,
-        "class_name": "fridge",
+        "category": "appliances",
+        "subclass_name": "fridge",
         "name": "fridge",
         "image_crops": [
           {
@@ -1941,51 +1878,9 @@
         ]
       },
       {
-        "class_id": 66,
-        "class_name": "jug",
-        "name": "water filter",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000003526.jpg",
-            "bbox": [
-              0,
-              351.55,
-              525.02,
-              535.93
-            ]
-          },
-          {
-            "frame_path": "frame_0000003576.jpg",
-            "bbox": [
-              0,
-              263.01,
-              480.74,
-              545.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000003676.jpg",
-            "bbox": [
-              176.52,
-              264.32,
-              572.95,
-              643.63
-            ]
-          },
-          {
-            "frame_path": "frame_0000003801.jpg",
-            "bbox": [
-              211.0,
-              289.37,
-              552.75,
-              611.99
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 50,
-        "class_name": "maker:coffee",
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
         "name": "coffee machine",
         "image_crops": [
           {
@@ -2027,8 +1922,114 @@
         ]
       },
       {
+        "class_id": 15,
+        "category": "containers",
+        "subclass_name": "bottle",
+        "name": "milk bottle",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003378.jpg",
+            "bbox": [
+              1545.66,
+              792.62,
+              308.93,
+              238.53
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 13,
+        "category": "crockery",
+        "subclass_name": "cup",
+        "name": "mug",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              544.74,
+              738.14,
+              180.23,
+              263.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000003576.jpg",
+            "bbox": [
+              491.93,
+              657.25,
+              183.96,
+              260.4
+            ]
+          },
+          {
+            "frame_path": "frame_0000003676.jpg",
+            "bbox": [
+              829.6,
+              634.97,
+              173.92,
+              250.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000003801.jpg",
+            "bbox": [
+              831.37,
+              648.78,
+              167.91,
+              247.69
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 66,
+        "category": "crockery",
+        "subclass_name": "jug",
+        "name": "water filter",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              0,
+              351.55,
+              525.02,
+              535.93
+            ]
+          },
+          {
+            "frame_path": "frame_0000003576.jpg",
+            "bbox": [
+              0,
+              263.01,
+              480.74,
+              545.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000003676.jpg",
+            "bbox": [
+              176.52,
+              264.32,
+              572.95,
+              643.63
+            ]
+          },
+          {
+            "frame_path": "frame_0000003801.jpg",
+            "bbox": [
+              211.0,
+              289.37,
+              552.75,
+              611.99
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "stirrer",
         "image_crops": [
           {
@@ -2059,6 +2060,50 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000003526.jpg",
+            "bbox": [
+              583.1,
+              783.66,
+              130.36,
+              118.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000003576.jpg",
+            "bbox": [
+              538.96,
+              703.61,
+              125.77,
+              114.2
+            ]
+          },
+          {
+            "frame_path": "frame_0000003676.jpg",
+            "bbox": [
+              846.91,
+              672.41,
+              136.65,
+              127.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000003801.jpg",
+            "bbox": [
+              845.21,
+              686.99,
+              122.0,
+              110.19
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2082,24 +2127,61 @@
     "end_frame": 4833,
     "objects_in_sequence": [
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
           {
             "frame_path": "frame_0000004496.jpg",
             "bbox": [
-              837.8,
-              740.96,
-              126.08,
-              109.8
+              829.75,
+              397.47,
+              471.93,
+              458.62
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004663.jpg",
+            "bbox": [
+              847.58,
+              648.72,
+              376.33,
+              159.81
+            ]
+          },
+          {
+            "frame_path": "frame_0000004701.jpg",
+            "bbox": [
+              790.84,
+              583.21,
+              371.98,
+              183.07
+            ]
+          },
+          {
+            "frame_path": "frame_0000004809.jpg",
+            "bbox": [
+              671.35,
+              569.09,
+              439.9,
+              228.23
             ]
           }
         ]
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -2115,7 +2197,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -2157,24 +2240,43 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
+        "class_id": 1,
+        "category": "cutlery",
+        "subclass_name": "spoon",
+        "name": "stirrer",
         "image_crops": [
           {
             "frame_path": "frame_0000004496.jpg",
             "bbox": [
-              829.75,
-              397.47,
-              471.93,
-              458.62
+              862.28,
+              789.44,
+              47.71,
+              128.59
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000004496.jpg",
+            "bbox": [
+              837.8,
+              740.96,
+              126.08,
+              109.8
             ]
           }
         ]
       },
       {
         "class_id": 63,
-        "class_name": "sink",
+        "category": "furniture",
+        "subclass_name": "sink",
         "name": "sink",
         "image_crops": [
           {
@@ -2205,56 +2307,6 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 1,
-        "class_name": "spoon",
-        "name": "stirrer",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004496.jpg",
-            "bbox": [
-              862.28,
-              789.44,
-              47.71,
-              128.59
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "class_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000004663.jpg",
-            "bbox": [
-              847.58,
-              648.72,
-              376.33,
-              159.81
-            ]
-          },
-          {
-            "frame_path": "frame_0000004701.jpg",
-            "bbox": [
-              790.84,
-              583.21,
-              371.98,
-              183.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000004809.jpg",
-            "bbox": [
-              671.35,
-              569.09,
-              439.9,
-              228.23
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
@@ -2277,60 +2329,62 @@
     "end_frame": 5690,
     "objects_in_sequence": [
       {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
           {
             "frame_path": "frame_0000005192.jpg",
             "bbox": [
-              742.42,
-              737.03,
-              132.73,
-              122.85
+              750.53,
+              417.19,
+              439.64,
+              444.06
             ]
           },
           {
             "frame_path": "frame_0000005421.jpg",
             "bbox": [
-              758.74,
-              682.42,
-              131.58,
-              120.75
+              760.09,
+              325.99,
+              475.41,
+              476.86
             ]
           },
           {
             "frame_path": "frame_0000005536.jpg",
             "bbox": [
-              771.22,
-              701.06,
-              132.26,
-              123.73
+              777.03,
+              366.89,
+              428.36,
+              456.77
             ]
           },
           {
             "frame_path": "frame_0000005651.jpg",
             "bbox": [
-              766.28,
-              694.85,
-              132.14,
-              118.85
+              771.96,
+              360.67,
+              405.15,
+              453.84
             ]
           },
           {
             "frame_path": "frame_0000005676.jpg",
             "bbox": [
-              794.0,
-              706.31,
-              130.33,
-              117.8
+              796.19,
+              362.57,
+              404.94,
+              460.83
             ]
           }
         ]
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -2382,7 +2436,8 @@
       },
       {
         "class_id": 66,
-        "class_name": "jug",
+        "category": "crockery",
+        "subclass_name": "jug",
         "name": "water filter",
         "image_crops": [
           {
@@ -2406,60 +2461,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005192.jpg",
-            "bbox": [
-              750.53,
-              417.19,
-              439.64,
-              444.06
-            ]
-          },
-          {
-            "frame_path": "frame_0000005421.jpg",
-            "bbox": [
-              760.09,
-              325.99,
-              475.41,
-              476.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000005536.jpg",
-            "bbox": [
-              777.03,
-              366.89,
-              428.36,
-              456.77
-            ]
-          },
-          {
-            "frame_path": "frame_0000005651.jpg",
-            "bbox": [
-              771.96,
-              360.67,
-              405.15,
-              453.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000005676.jpg",
-            "bbox": [
-              796.19,
-              362.57,
-              404.94,
-              460.83
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "stirrer",
         "image_crops": [
           {
@@ -2508,6 +2512,59 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005192.jpg",
+            "bbox": [
+              742.42,
+              737.03,
+              132.73,
+              122.85
+            ]
+          },
+          {
+            "frame_path": "frame_0000005421.jpg",
+            "bbox": [
+              758.74,
+              682.42,
+              131.58,
+              120.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000005536.jpg",
+            "bbox": [
+              771.22,
+              701.06,
+              132.26,
+              123.73
+            ]
+          },
+          {
+            "frame_path": "frame_0000005651.jpg",
+            "bbox": [
+              766.28,
+              694.85,
+              132.14,
+              118.85
+            ]
+          },
+          {
+            "frame_path": "frame_0000005676.jpg",
+            "bbox": [
+              794.0,
+              706.31,
+              130.33,
+              117.8
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
@@ -2533,67 +2590,44 @@
     "end_frame": 5880,
     "objects_in_sequence": [
       {
-        "class_id": 36,
-        "class_name": "bin",
-        "name": "bin/garbage can/recycling bin",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005867.jpg",
-            "bbox": [
-              96.55,
-              374.02,
-              493.93,
-              466.42
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 59,
-        "class_name": "coffee",
-        "name": "coffee",
+        "class_id": 50,
+        "category": "appliances",
+        "subclass_name": "maker:coffee",
+        "name": "coffee machine",
         "image_crops": [
           {
             "frame_path": "frame_0000005751.jpg",
             "bbox": [
-              721.82,
-              783.72,
-              146.36,
-              156.82
+              833.16,
+              376.17,
+              469.9,
+              477.98
             ]
           },
           {
             "frame_path": "frame_0000005780.jpg",
             "bbox": [
-              696.59,
-              814.02,
-              147.43,
-              180.21
+              997.49,
+              354.37,
+              638.83,
+              494.77
             ]
           },
           {
             "frame_path": "frame_0000005809.jpg",
             "bbox": [
-              727.41,
-              769.95,
-              170.59,
-              183.16
-            ]
-          },
-          {
-            "frame_path": "frame_0000005867.jpg",
-            "bbox": [
-              662.4,
-              877.65,
-              172.99,
-              187.76
+              1416.89,
+              547.73,
+              503.01,
+              348.82
             ]
           }
         ]
       },
       {
         "class_id": 13,
-        "class_name": "cup",
+        "category": "crockery",
+        "subclass_name": "cup",
         "name": "mug",
         "image_crops": [
           {
@@ -2635,42 +2669,9 @@
         ]
       },
       {
-        "class_id": 50,
-        "class_name": "maker:coffee",
-        "name": "coffee machine",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000005751.jpg",
-            "bbox": [
-              833.16,
-              376.17,
-              469.9,
-              477.98
-            ]
-          },
-          {
-            "frame_path": "frame_0000005780.jpg",
-            "bbox": [
-              997.49,
-              354.37,
-              638.83,
-              494.77
-            ]
-          },
-          {
-            "frame_path": "frame_0000005809.jpg",
-            "bbox": [
-              1416.89,
-              547.73,
-              503.01,
-              348.82
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 1,
-        "class_name": "spoon",
+        "category": "cutlery",
+        "subclass_name": "spoon",
         "name": "stirrer",
         "image_crops": [
           {
@@ -2707,6 +2708,67 @@
               922.64,
               459.55,
               125.18
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 59,
+        "category": "drinks",
+        "subclass_name": "coffee",
+        "name": "coffee",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005751.jpg",
+            "bbox": [
+              721.82,
+              783.72,
+              146.36,
+              156.82
+            ]
+          },
+          {
+            "frame_path": "frame_0000005780.jpg",
+            "bbox": [
+              696.59,
+              814.02,
+              147.43,
+              180.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000005809.jpg",
+            "bbox": [
+              727.41,
+              769.95,
+              170.59,
+              183.16
+            ]
+          },
+          {
+            "frame_path": "frame_0000005867.jpg",
+            "bbox": [
+              662.4,
+              877.65,
+              172.99,
+              187.76
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 36,
+        "category": "rubbish",
+        "subclass_name": "bin",
+        "name": "bin/garbage can/recycling bin",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000005867.jpg",
+            "bbox": [
+              96.55,
+              374.02,
+              493.93,
+              466.42
             ]
           }
         ]

@@ -12,7 +12,7 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [61, 91, 145, 205, 314, 421]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['take knife;0.71;1.81', 'turn on tap;1.89;3.95', 'take chopping board;6.65;7.67']
 ************
 Start timestamp: 8.09, Stop timestamp: 12.69
@@ -29,7 +29,7 @@ Narration: open fridge
 ------
 ************
 Frame IDs in sequence: [556, 669, 1084, 1136, 1352, 1412]
-Objects in sequence: ['board:chopping (chopping board)', 'fridge (fridge)', 'knife (knife)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'appliances (tap) (tap)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['rinse chopping board;8.09;12.69', 'put down chopping board and knife;17.2;19.93', 'open fridge;22.04;23.79']
 ************
 Start timestamp: 28.21, Stop timestamp: 29.57
@@ -43,7 +43,7 @@ Narration: read parsley package
 ------
 ************
 Frame IDs in sequence: [1710, 1753, 1804, 1849, 2103, 2284]
-Objects in sequence: ['fridge (fridge)', 'package (parsley package)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'containers (package) (parsley package)']
 Verb-noun pairs in sequence: ['take parsley package;28.21;29.57', 'close fridge;29.67;31.09', 'read parsley package;34.0;39.33']
 ************
 Start timestamp: 39.26, Stop timestamp: 44.05
@@ -60,7 +60,7 @@ Narration: put down scissors
 ------
 ************
 Frame IDs in sequence: [2685, 2725, 2837, 3003, 3121, 3187]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'package (parsley package)', 'scissors (scissors)']
+Objects in sequence: ['containers (package) (parsley package)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'utensils (scissors) (scissors)']
 Verb-noun pairs in sequence: ['take scissors;44.27;45.48', 'cut parsley package;45.57;51.57', 'put down scissors;51.67;53.42']
 ************
 Start timestamp: 53.75, Stop timestamp: 56.75
@@ -77,7 +77,7 @@ Narration: throw package
 ------
 ************
 Frame IDs in sequence: [3285, 3343, 3457, 3606, 4246, 4310]
-Objects in sequence: ['bin (bin/garbage can/recycling bin)', 'package (parsley package)']
+Objects in sequence: ['containers (package) (parsley package)', 'rubbish (bin) (bin/garbage can/recycling bin)']
 Verb-noun pairs in sequence: ['open parsley package;53.75;56.75', 'take parsley out of package;57.11;61.47', 'throw package;70.41;72.36']
 ************
 Start timestamp: 75.3, Stop timestamp: 76.22
@@ -91,7 +91,7 @@ Narration: pick up something from the floor
 ------
 ************
 Frame IDs in sequence: [4531, 4568, 4637, 4787, 4955, 4995]
-Objects in sequence: ['container (food container)', 'cupboard (cupboard)', 'floor (floor)']
+Objects in sequence: ['containers (container) (food container)', 'furniture (floor) (floor)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open cupboard;75.3;76.22', 'take out food container;76.45;80.65', 'pick up something from the floor;81.83;83.67']
 ************
 Start timestamp: 87.72, Stop timestamp: 88.49
@@ -108,7 +108,7 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [5281, 5327, 5373, 5465, 5495, 5540]
-Objects in sequence: ['board:chopping (chopping board)', 'container (food container)', 'lid (lid)', 'parsley (parsley)', 'sink (sink)', 'tap (tap)']
+Objects in sequence: ['appliances (tap) (tap)', 'containers (container) (food container)', 'containers (lid) (lid)', 'furniture (sink) (sink)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down food container;87.72;88.49', 'take parsley;90.63;91.77', 'turn on tap;92.24000000000001;92.89']
 ************
 Start timestamp: 92.99000000000001, Stop timestamp: 101.78999999999999
@@ -122,7 +122,7 @@ Narration: strain parsley
 ------
 ************
 Frame IDs in sequence: [5662, 5949, 6122, 6150, 6254, 6326]
-Objects in sequence: ['parsley (parsley)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'spices and herbs and sauces (parsley) (parsley)']
 Verb-noun pairs in sequence: ['rinse parsley;92.99000000000001;101.78999999999999', 'turn off tap;102.00999999999999;102.69', 'strain parsley;103.5;106.16']
 ************
 Start timestamp: 106.86, Stop timestamp: 107.82
@@ -145,7 +145,7 @@ Narration: continue chopping parsley
 ------
 ************
 Frame IDs in sequence: [6434, 7681, 8691, 9703, 10874, 10993]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'parsley (parsley)']
+Objects in sequence: ['cutlery (knife) (knife)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down parsley;106.86;107.82', 'chop parsley;119.6;174.86', 'continue chopping parsley;179.09;185.29']
 ************
 Start timestamp: 184.57, Stop timestamp: 188.72
@@ -162,7 +162,7 @@ Narration: take chopping board
 ------
 ************
 Frame IDs in sequence: [11381, 11425, 11514, 11604, 11775, 11936]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'parsley (parsley)']
+Objects in sequence: ['cutlery (knife) (knife)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put down knife;189.65;190.82', 'clean hands;191.1;198.57999999999998', 'take chopping board;198.68;199.79']
 ************
 Start timestamp: 201.34, Stop timestamp: 202.51
@@ -179,7 +179,7 @@ Narration: take parsley
 ------
 ************
 Frame IDs in sequence: [12096, 12140, 12841, 13185, 13872, 13902]
-Objects in sequence: ['board:chopping (chopping board)', 'parsley (parsley)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['put down chopping board;201.34;202.51', 'distribute vegetables in tray;212.04;221.21', 'take parsley;230.54;232.02']
 ************
 Start timestamp: 232.59, Stop timestamp: 240.23
@@ -193,7 +193,7 @@ Narration: put parsley in tray
 ------
 ************
 Frame IDs in sequence: [14036, 14324, 14537, 14567, 14717, 14849]
-Objects in sequence: ['parsley (parsley)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'spices and herbs and sauces (parsley) (parsley)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['put parsley in tray;232.59;240.23', 'take parsley;242.01;243.21', 'put parsley in tray;244.65;248.56']
 ************
 Start timestamp: 250.54, Stop timestamp: 252.64
@@ -207,7 +207,7 @@ Narration: clean hands
 ------
 ************
 Frame IDs in sequence: [15071, 15125, 15265, 15503, 16070, 16456]
-Objects in sequence: ['parsley (parsley)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'spices and herbs and sauces (parsley) (parsley)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['take parsley;250.54;252.64', 'put parsley in tray;253.42;259.77', 'clean hands;262.61;277.99']
 ************
 Start timestamp: 278.5, Stop timestamp: 280.06
@@ -221,7 +221,7 @@ Narration: gather parsley
 ------
 ************
 Frame IDs in sequence: [16735, 16779, 16831, 16877, 16967, 17029]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'parsley (parsley)']
+Objects in sequence: ['cutlery (knife) (knife)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['take chopping board;278.5;280.06', 'put down chopping board;280.33;281.43', 'gather parsley;282.17;284.61']
 ************
 Start timestamp: 283.94, Stop timestamp: 285.84000000000003
@@ -238,7 +238,7 @@ Narration: take parsley
 ------
 ************
 Frame IDs in sequence: [17185, 17237, 17405, 17530, 17674, 17720]
-Objects in sequence: ['board:chopping (chopping board)', 'container (food container)', 'parsley (parsley)']
+Objects in sequence: ['containers (container) (food container)', 'spices and herbs and sauces (parsley) (parsley)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['put parsley in food container;285.94;288.2', 'gather parsley;288.3;293.83', 'take parsley;293.93;295.71']
 ************
 Start timestamp: 295.7, Stop timestamp: 300.07
@@ -255,7 +255,7 @@ Narration: rinse chopping board
 ------
 ************
 Frame IDs in sequence: [18022, 18078, 18114, 18152, 18278, 18386]
-Objects in sequence: ['board:chopping (chopping board)', 'knife (knife)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cutlery (knife) (knife)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'utensils (board:chopping) (chopping board)']
 Verb-noun pairs in sequence: ['take chopping board;300.17;301.49', 'turn on tap;301.59;303.08', 'rinse chopping board;303.4;307.6']
 ************
 Start timestamp: 318.27, Stop timestamp: 319.11
@@ -269,7 +269,7 @@ Narration: put lid in food container
 ------
 ************
 Frame IDs in sequence: [19109, 19330, 19439, 19552, 19622, 19712]
-Objects in sequence: ['container (food container)', 'lid (lid)', 'sink (sink)', 'tap (tap)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'containers (container) (food container)', 'containers (lid) (lid)', 'drinks (water) (water)', 'furniture (sink) (sink)']
 Verb-noun pairs in sequence: ['turn off tap;318.27;319.11', 'take lid;325.53;326.34', 'put lid in food container;326.44;329.61']
 ************
 Start timestamp: 328.16, Stop timestamp: 331.81
@@ -289,7 +289,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [19928, 19976, 20151, 20194, 20283, 20342]
-Objects in sequence: ['fridge (fridge)', 'plate (plate)']
+Objects in sequence: ['appliances (fridge) (fridge)', 'crockery (plate) (plate)']
 Verb-noun pairs in sequence: ['move dish;331.4;333.48', 'open fridge;335.27;336.96', 'close fridge;338.01;339.15999999999997']
 ************
 Start timestamp: 342.34000000000003, Stop timestamp: 343.31
@@ -303,7 +303,7 @@ Narration: take out oil
 ------
 ************
 Frame IDs in sequence: [20552, 20581, 20684, 20724, 20851, 20907]
-Objects in sequence: ['bottle (oil bottle)', 'can (tin)', 'cupboard (cupboard)', 'oil (oil)']
+Objects in sequence: ['containers (bottle) (oil bottle)', 'containers (can) (tin)', 'spices and herbs and sauces (oil) (oil)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['open cupboard;342.34000000000003;343.31', 'take out tin;344.39;345.76', 'take out oil;347.4;348.69']
 ************
 Start timestamp: 354.44, Stop timestamp: 355.14
@@ -326,7 +326,7 @@ Narration: close lid
 ------
 ************
 Frame IDs in sequence: [21301, 21532, 21646, 21790, 21834]
-Objects in sequence: ['cupboard (cupboard)', 'jar (jar)', 'lid (lid)', 'paprika (paprika)', 'salt (salt)']
+Objects in sequence: ['containers (jar) (jar)', 'containers (lid) (lid)', 'spices and herbs and sauces (paprika) (paprika)', 'spices and herbs and sauces (salt) (salt)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['take out salt;354.44;355.14', 'open lid;358.07;361.59', 'close lid;362.59;364.24']
 ************
 Start timestamp: 365.9, Stop timestamp: 369.33
@@ -343,7 +343,7 @@ Narration: put down turmeric
 ------
 ************
 Frame IDs in sequence: [22030, 22110, 22186, 22346, 22428, 22508]
-Objects in sequence: ['cupboard (cupboard)', 'package (plastic)', 'turmeric (turmeric)']
+Objects in sequence: ['containers (package) (plastic)', 'spices and herbs and sauces (turmeric) (turmeric)', 'storage (cupboard) (cupboard)']
 Verb-noun pairs in sequence: ['take turmeric;365.9;369.33', 'put down turmeric;369.45;370.12', 'put down turmeric;375.08;375.71']
 ************
 Start timestamp: 378.49, Stop timestamp: 379.16
@@ -360,7 +360,7 @@ Narration: put sauce in tray
 ------
 ************
 Frame IDs in sequence: [22728, 22917, 23107, 23303, 23600, 23786]
-Objects in sequence: ['bin (bin)', 'can (tin)', 'lid (lid)', 'package (plastic)', 'sauce (sauce)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['containers (can) (tin)', 'containers (lid) (lid)', 'containers (package) (plastic)', 'cookware (tray) (tray)', 'rubbish (bin) (bin)', 'spices and herbs and sauces (sauce) (sauce)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['throw plastic;378.49;379.16', 'open tin;383.79;390.33', 'put sauce in tray;392.58;397.17']
 ************
 Start timestamp: 398.23, Stop timestamp: 399.56
@@ -377,7 +377,7 @@ Narration: fill tin with water
 ------
 ************
 Frame IDs in sequence: [23916, 23967, 24250, 24340, 24535, 24597]
-Objects in sequence: ['can (tin)', 'sink (sink)', 'tap (tap)', 'tray (tray)', 'vegetable (vegetable)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'containers (can) (tin)', 'cookware (tray) (tray)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['turn on tap;398.23;399.56', 'empty water in tray;403.96;406.21', 'fill tin with water;407.99;410.73']
 ************
 Start timestamp: 412.17, Stop timestamp: 414.75
@@ -397,7 +397,7 @@ Narration: throw lid and tin
 ------
 ************
 Frame IDs in sequence: [24785, 24835, 25477, 25558, 25693, 25766]
-Objects in sequence: ['bin (rubbish bin)', 'can (tin)', 'lid (lid)', 'tray (tray)', 'vegetable (vegetable)', 'water (water)']
+Objects in sequence: ['containers (can) (tin)', 'containers (lid) (lid)', 'cookware (tray) (tray)', 'drinks (water) (water)', 'rubbish (bin) (rubbish bin)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['empty water in tray;412.17;414.75', 'take lid and tin;424.11;426.7', 'throw lid and tin;427.3;430.3']
 ************
 Start timestamp: 432.77, Stop timestamp: 434.31
@@ -414,7 +414,7 @@ Narration: mix vegetables
 ------
 ************
 Frame IDs in sequence: [25992, 26052, 26126, 26156, 26456, 26913]
-Objects in sequence: ['drawer (drawer)', 'spoon (spoon)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'furniture (drawer) (drawer)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['open drawer;432.77;434.31', 'close drawer;435.4;436.0', 'mix vegetables;437.63;451.18']
 ************
 Start timestamp: 444.42, Stop timestamp: 458.61
@@ -434,7 +434,7 @@ Narration: close cap
 ------
 ************
 Frame IDs in sequence: [27939, 28712, 30240, 30396, 30480, 30528]
-Objects in sequence: ['cap (cap)', 'oil (oil)', 'spoon (spoon)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['containers (cap) (cap)', 'cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (oil) (oil)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['continue mixing vegetables;462.48;482.54', 'put oil in tray;503.0;507.5', 'close cap;507.74;508.97']
 ************
 Start timestamp: 509.06, Stop timestamp: 509.99
@@ -457,7 +457,7 @@ Narration: put salt in tray
 ------
 ************
 Frame IDs in sequence: [30561, 30655, 30693, 30820, 30945, 31171]
-Objects in sequence: ['cap (cap)', 'oil (oil)', 'salt (salt)', 'spoon (spoon)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['containers (cap) (cap)', 'cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (oil) (oil)', 'spices and herbs and sauces (salt) (salt)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['put down oil;509.06;509.99', 'open salt;510.7;511.94', 'put salt in tray;512.51;521.69']
 ************
 Start timestamp: 521.71, Stop timestamp: 522.43
@@ -471,7 +471,7 @@ Narration: take black pepper
 ------
 ************
 Frame IDs in sequence: [31303, 31331, 32042, 32753, 32781, 32835]
-Objects in sequence: ['paprika (paprika)', 'pepper (black pepper)', 'salt (salt)', 'spoon (spoon)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (paprika) (paprika)', 'spices and herbs and sauces (salt) (salt)', 'vegetables (pepper) (black pepper)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['put down salt;521.71;522.43', 'put down black pepper;545.83;546.43', 'take black pepper;546.6;547.41']
 ************
 Start timestamp: 547.4, Stop timestamp: 551.19
@@ -491,7 +491,7 @@ Narration: put down paprika
 ------
 ************
 Frame IDs in sequence: [32897, 33343, 33637, 33929]
-Objects in sequence: ['paprika (paprika)', 'pepper (black pepper)', 'spoon (spoon)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (paprika) (paprika)', 'vegetables (pepper) (black pepper)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['open black pepper;548.0;548.65', 'put black pepper in tray;548.66;566.74', 'put down paprika;570.05;572.52']
 ************
 Start timestamp: 572.49, Stop timestamp: 573.69
@@ -511,7 +511,7 @@ Narration: close turmeric
 ------
 ************
 Frame IDs in sequence: [34372, 34406, 34432, 34769, 34937, 35105]
-Objects in sequence: ['paprika (paprika)', 'pepper (black pepper)', 'spoon (spoon)', 'tray (tray)', 'turmeric (turmeric)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (paprika) (paprika)', 'spices and herbs and sauces (turmeric) (turmeric)', 'vegetables (pepper) (black pepper)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['take paprika;572.73;573.49', 'open turmeric;573.78;574.29', 'close turmeric;584.88;585.42']
 ************
 Start timestamp: 585.52, Stop timestamp: 586.38
@@ -525,7 +525,7 @@ Narration: put stuff in cupboard
 ------
 ************
 Frame IDs in sequence: [35133, 35165, 35235, 35265, 35370, 35441, 35513]
-Objects in sequence: ['cupboard (cupboard)', 'oil (oil)', 'paprika (paprika)', 'pepper (black pepper)', 'salt (salt)', 'tray (tray)', 'turmeric (turmeric)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'spices and herbs and sauces (oil) (oil)', 'spices and herbs and sauces (paprika) (paprika)', 'spices and herbs and sauces (salt) (salt)', 'spices and herbs and sauces (turmeric) (turmeric)', 'storage (cupboard) (cupboard)', 'vegetables (pepper) (black pepper)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['put down turmeric;585.52;586.38', 'open cupboard;587.15;587.93', 'put stuff in cupboard;588.49;593.15']
 ************
 Start timestamp: 593.25, Stop timestamp: 594.71
@@ -542,7 +542,7 @@ Narration: mix vegetables
 ------
 ************
 Frame IDs in sequence: [35628, 35926, 36008, 36186, 36302]
-Objects in sequence: ['cupboard (cupboard)', 'oil (oil)', 'paprika (paprika)', 'pepper (black pepper)', 'salt (salt)', 'spoon (spoon)', 'tray (tray)', 'turmeric (turmeric)', 'vegetable (vegetable)']
+Objects in sequence: ['cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'spices and herbs and sauces (oil) (oil)', 'spices and herbs and sauces (paprika) (paprika)', 'spices and herbs and sauces (salt) (salt)', 'spices and herbs and sauces (turmeric) (turmeric)', 'storage (cupboard) (cupboard)', 'vegetables (pepper) (black pepper)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['take oil;593.25;594.71', 'take spoon;597.95;601.07', 'mix vegetables;601.26;606.63']
 ************
 Start timestamp: 606.24, Stop timestamp: 627.91
@@ -565,7 +565,7 @@ Narration: put down spoon
 ------
 ************
 Frame IDs in sequence: [37237, 37796, 39159, 40621, 41141, 41171]
-Objects in sequence: ['sink (sink)', 'spoon (spoon)', 'tap (tap)', 'tray (tray)', 'vegetable (vegetable)']
+Objects in sequence: ['appliances (tap) (tap)', 'cookware (tray) (tray)', 'cutlery (spoon) (spoon)', 'furniture (sink) (sink)', 'vegetables (vegetable) (vegetable)']
 Verb-noun pairs in sequence: ['continue mixing vegetables;614.55;632.77', 'continue mixing vegetables;643.08;684.33', 'put down spoon;685.43;686.3']
 ************
 Start timestamp: 686.28, Stop timestamp: 687.72
@@ -582,7 +582,7 @@ Narration: take towel
 ------
 ************
 Frame IDs in sequence: [41291, 41381, 41453, 41493, 41620]
-Objects in sequence: ['sink (sink)', 'spoon (spoon)', 'tap (tap)', 'towel (towel)', 'water (water)']
+Objects in sequence: ['appliances (tap) (tap)', 'cutlery (spoon) (spoon)', 'drinks (water) (water)', 'furniture (sink) (sink)', 'materials (towel) (towel)']
 Verb-noun pairs in sequence: ['wash hands;687.63;690.38', 'turn off tap;690.47;691.98', 'take towel;693.43;694.18']
 ************
 Start timestamp: 694.28, Stop timestamp: 698.03
@@ -596,7 +596,7 @@ Narration: take oven glove
 ------
 ************
 Frame IDs in sequence: [41744, 41810, 42014, 42048, 42152, 42202]
-Objects in sequence: ['glove (glove)', 'glove:right (right glove)', 'hob (grill)', 'oven (oven)', 'towel (towel)']
+Objects in sequence: ['appliances (hob) (grill)', 'appliances (oven) (oven)', 'materials (glove) (glove)', 'materials (glove:right) (right glove)', 'materials (towel) (towel)']
 Verb-noun pairs in sequence: ['wipe hands;694.28;698.03', 'open oven;699.79;700.96', 'take oven glove;701.96;704.13']
 ************
 Start timestamp: 704.5, Stop timestamp: 705.56
@@ -610,7 +610,7 @@ Narration: put down oven glove
 ------
 ************
 Frame IDs in sequence: [42278, 42312, 42372, 42414, 42474, 42534]
-Objects in sequence: ['glove (glove)', 'glove:left (left glove)', 'hob (grill)', 'oven (oven)', 'tray (tray)']
+Objects in sequence: ['appliances (hob) (grill)', 'appliances (oven) (oven)', 'cookware (tray) (tray)', 'materials (glove) (glove)', 'materials (glove:left) (left glove)']
 Verb-noun pairs in sequence: ['take out grill;704.5;705.56', 'put grill in the lower part;705.58;707.32', 'put down oven glove;708.51;709.44']
 ************
 Start timestamp: 709.54, Stop timestamp: 711.78
@@ -624,7 +624,7 @@ Narration: close oven
 ------
 ************
 Frame IDs in sequence: [42609, 42671, 42797, 43015, 43175, 43244]
-Objects in sequence: ['glove (glove)', 'oven (oven)', 'tray (tray)']
+Objects in sequence: ['appliances (oven) (oven)', 'cookware (tray) (tray)', 'materials (glove) (glove)']
 Verb-noun pairs in sequence: ['take tray;709.54;711.78', 'put tray in oven;711.88;719.03', 'close oven;719.13;721.24']
 ************
 Start timestamp: 723.29, Stop timestamp: 724.46
