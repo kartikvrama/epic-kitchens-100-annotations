@@ -24,6 +24,13 @@ FIXED_ENTITY_KEYS = {
     "candle",
     "airer",
     "door:kitchen",
+    "fridge"
+}
+
+WASTE_KEYS = {
+    "peels",
+    "skin",
+    "rubbish"
 }
 
 # Liquids (section 3)
@@ -48,4 +55,4 @@ LIQUID_KEYS = {
 }
 
 # Combined: skip prompting the VLM for these object keys
-OBJECTS_TO_EXCLUDE_FROM_VLM = FIXED_ENTITY_KEYS | LIQUID_KEYS
+OBJECTS_TO_EXCLUDE_FROM_VLM = FIXED_ENTITY_KEYS | LIQUID_KEYS | WASTE_KEYS

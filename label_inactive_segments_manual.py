@@ -394,6 +394,9 @@ def main():
     # Mutable label state: key = (query_object, start_time, end_time), value = True (used) / False (not used) / None
     label_state = load_labels(labels_path)
 
+    # Sort so unlabeled segments come first (False < True)
+    items.sort(key=lambda x: (segment_key(x[0], x[2]) in label_state))
+
     current = [0]
     segment_cache = {}
     cap = cv2.VideoCapture(args.video_path)
