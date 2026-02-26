@@ -27,32 +27,6 @@ FIXED_ENTITY_KEYS = {
     "fridge",
 }
 
-SMALL_PARTS_KEYS = {
-    "lid",
-    "cover",
-    "button",
-    "alarm",
-    "light",
-    "cap",
-    "plug",
-    "knob",
-    "handle",
-    "wire",
-    "control:remote",
-    "battery",
-    "cork",
-    "watch",
-    "rest",
-    "filter",
-}
-
-WASTE_KEYS = {
-    "peels",
-    "skin",
-    "rubbish"
-}
-
-# Liquids (section 3)
 LIQUID_KEYS = {
     "liquid:washing",
     "water",
@@ -63,15 +37,28 @@ LIQUID_KEYS = {
     "tea",
     "vinegar",
     "liquid",
-    "juice",
-    "wine",
-    "drink",
-    "beer",
-    "gin",
     "syrup",
-    "soda",
-    "whiskey",
 }
 
-# Combined: skip prompting the VLM for these object keys
+SMALL_PARTS_KEYS = {
+    "lid",
+    "cover",
+    "button",
+    "alarm",
+    "cap",
+    "plug",
+    "knob",
+    "handle",
+    "wire",
+    "control:remote",
+    "battery",
+    "cork",
+}
+
+WASTE_KEYS = {
+    "peels",
+    "skin",
+    "rubbish"
+}
+
 OBJECTS_TO_EXCLUDE_FROM_VLM = FIXED_ENTITY_KEYS | LIQUID_KEYS | WASTE_KEYS | SMALL_PARTS_KEYS
