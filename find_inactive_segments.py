@@ -138,7 +138,7 @@ def main():
         object_active_segment_mapping = defaultdict(list)
         for idx, seg in enumerate(segments):
             for obj in seg.get("objects_in_sequence", []):
-                key = f"{obj['class_id']}/{obj['class_name']}/{obj['name']}"
+                key = f"{obj['class_id']}/{obj['subclass_name']}/{obj['name']}"
                 object_active_segment_mapping[key].append(idx)
 
         # Compute inactive segments >= min_duration per object (active segments are non-overlapping by design)
@@ -151,7 +151,7 @@ def main():
             object_crop_data = [
                 next(
                     (elem for elem in seg.get("objects_in_sequence", [])
-                     if obj_key == f"{elem['class_id']}/{elem['class_name']}/{elem['name']}"),
+                     if obj_key == f"{elem['class_id']}/{elem['subclass_name']}/{elem['name']}"),
                     None,
                 )
                 for seg in active
