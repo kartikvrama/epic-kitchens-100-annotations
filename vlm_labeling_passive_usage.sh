@@ -20,7 +20,7 @@ VIDEO_PATHS_CSV="${1:-video_paths_updated.csv}"
 
 MODEL_NAME="qwen3-vl:30b"
 
-MAX_IMAGES_INACTIVE=7
+MAX_IMAGES_INACTIVE=1
 MIN_SPACING_SEC=3
 
 # Skip header, use path_updated column (2nd field)
