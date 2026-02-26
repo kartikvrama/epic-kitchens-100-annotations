@@ -111,7 +111,6 @@ def extract_object_crops(video_path, crop_specs, cap=None):
     if not crop_specs:
         return []
     unique_frames = list({fid for fid, _ in crop_specs})
-    unique_frames = unique_frames[::2] ## For faster loading, only load every other frame
     full_res = extract_frames_full_res(video_path, unique_frames, cap=cap)
     return [crop_bbox_from_image(full_res.get(fid), bbox) for fid, bbox in crop_specs]
 
@@ -342,7 +341,10 @@ def load_labels(labels_path):
                 if "used" not in rec:
                     continue
                 key = (q, round(float(st), 2), round(float(et), 2))
-                labels[key] = bool(rec["used"])
+                if isinstance(rec["used"], bool):
+                    labels[key] = rec["used"]
+                else:
+                    labels[key] = None
             except (json.JSONDecodeError, TypeError, ValueError):
                 continue
     return labels
@@ -394,8 +396,24 @@ def main():
     # Mutable label state: key = (query_object, start_time, end_time), value = True (used) / False (not used) / None
     label_state = load_labels(labels_path)
 
+    # If all items in data have labels, return None
+    all_labeled = True
+    for obj, seg_idx, seg in items:
+        key = segment_key(obj, seg)
+        if key not in label_state:
+            all_labeled = False
+            break
+        if key in label_state and label_state[key] is None:
+            all_labeled = False
+            break    
+    if all_labeled:
+        print("All segments have been labeled. Nothing left to do.")
+        return None
+
     # Sort so unlabeled segments come first (False < True)
-    items.sort(key=lambda x: (segment_key(x[0], x[2]) in label_state))
+    items.sort(key=lambda x: (
+        segment_key(x[0], x[2]) in label_state and isinstance(label_state[segment_key(x[0], x[2])], bool)
+    ))
 
     current = [0]
     segment_cache = {}
