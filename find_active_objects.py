@@ -4,47 +4,11 @@ import csv
 import json
 import pandas as pd
 from math import floor, ceil
+from utils import load_noun_class_names, hhmmss_to_seconds, get_crop_for_object
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = ["EPIC_100_train.csv", "EPIC_100_validation.csv", "EPIC_100_test_timestamps.csv"]
-NOUN_CLASSES_FILE = "EPIC_100_noun_classes_v2.csv"
 
-def load_noun_class_names():
-    """Load class_id -> class name (key) from EPIC_100_noun_classes_v2.csv."""
-    with open(NOUN_CLASSES_FILE) as f:
-        reader = csv.DictReader(f)
-        return {int(row["id"]): {"key": row["key"], "category": row["category"]} for row in reader}
-
-def hhmmss_to_seconds(hhmmss):
-    h, m, s = hhmmss.split(":")
-    return int(h) * 3600 + int(m) * 60 + float(s)
-
-def bbox_from_segments(segments):
-    """Compute axis-aligned bounding box [x, y, w, h] from VISOR polygon segments."""
-    all_x, all_y = [], []
-    for polygon in segments:
-        for pt in polygon:
-            all_x.append(pt[0])
-            all_y.append(pt[1])
-    if not all_x:
-        return None
-    x = min(all_x)
-    y = min(all_y)
-    w = max(all_x) - x
-    h = max(all_y) - y
-    return [round(x, 2), round(y, 2), round(w, 2), round(h, 2)]
-
-def get_crop_for_object(frames_in_sequence, class_id, name):
-    """Return (frame_id, bbox, image_name) for first frame containing this object, or (None, None, None)."""
-    image_crops = []
-    for frame in frames_in_sequence:
-        for ann in frame["annotations"]:
-            if ann["class_id"] == class_id and ann["name"] == name:
-                bbox = bbox_from_segments(ann.get("segments", []))
-                if bbox is not None:
-                    image_name = frame["frame_path_adjusted"]
-                    image_crops.append({"frame_path": image_name, "bbox": bbox})
-    return image_crops
 
 def save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir="./"):
     visor_annotations_file = f"visor_annotations/train/{video_id}.json"

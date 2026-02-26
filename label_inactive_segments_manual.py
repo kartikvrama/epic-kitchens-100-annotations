@@ -375,11 +375,11 @@ def main():
 
     filtered_data = {}
     for obj_key in data.keys():
-        parts = obj_key.split("/")
+        parts = obj_key.split("/", maxsplit=2)
         if len(parts) < 3:
             continue
-        category, name = parts[1], parts[2]
-        if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
+        subclass_name = parts[1]
+        if subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM:
             continue
         filtered_data[obj_key] = [
             elem for elem in data[obj_key]

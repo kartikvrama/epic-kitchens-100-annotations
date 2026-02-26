@@ -62,7 +62,10 @@ def main():
             try:
                 if os.path.exists(path_original):
                     print(f"Copying {path_original} to {path_destination}...")
-                    shutil.copy2(path_original, path_destination)
+                    if not os.path.exists(path_destination):
+                        shutil.copy2(path_original, path_destination)
+                    else:
+                        print(f"File already exists: {path_destination}")
                     data_to_write.append({"video_id": video_id, "path_updated": path_destination, "path_original": path_original})
             except Exception as e:
                 print(f"Error copying {path_original} to {path_destination}: {e}")

@@ -23,6 +23,7 @@ import cv2
 import ollama
 import pdb
 
+from utils import load_noun_class_names
 from prompts_usage_labeling import system_prompt
 from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
 from label_inactive_segments_manual import (
@@ -37,7 +38,7 @@ MAX_NUM_PREDICT=2000
 NUM_TRIES=3
 
 # Inactive-segment image sampling for VLM
-MAX_IMAGES_INACTIVE = 5
+MAX_IMAGES_INACTIVE = 1
 MIN_SPACING_SEC = 3.0
 MIN_DURATION = 6.0  # Ignore inactive segments shorter than this (seconds)
 
@@ -45,6 +46,7 @@ MIN_DURATION = 6.0  # Ignore inactive segments shorter than this (seconds)
 # Upscale any smaller image so both height and width exceed this.
 OLLAMA_MIN_IMAGE_DIM = 33
 
+NOUN_CLASS_NAMES = {}
 
 def sample_frames(video_cap, start_time, end_time, fps, min_spacing_sec, max_images_inactive):
     """Uniformly sample frames between start time and end time, atleast min_spacing_sec apart.
@@ -121,13 +123,15 @@ def image_to_base64(rgb_array):
 
 
 def object_key_to_category_and_name(obj_key):
-    """From object key like '0/tap/tap' return (category, name). Uses last part as name, middle as category."""
-    parts = obj_key.split("/")
+    """From object key like '0/tap/tap' return (subclass_name, name). Uses last part as name, middle as subclass_name."""
+    global NOUN_CLASS_NAMES
+    parts = obj_key.split("/", maxsplit=2)
     if len(parts) >= 3:
-        return parts[1], parts[2]  # class_name, name
-    if len(parts) == 2:
-        return parts[1], parts[1]
-    return parts[0], parts[0] if parts else ("", "")
+        class_id = int(parts[0])
+        subclass_name = NOUN_CLASS_NAMES[class_id]["key"]
+        category = NOUN_CLASS_NAMES[class_id]["category"]
+        return category, subclass_name, parts[2]  # category, subclass_name, name
+    return "", "", ""
 
 
 def format_event_history(event_history, video_cap):
@@ -162,23 +166,25 @@ def format_event_history(event_history, video_cap):
     return event_lines, event_frame_images_base64
 
 
-def build_user_message(category, name):
+def build_user_message(category, subclass_name, name):
     """Build user message in required order: object category/name, then line about images, then event history (unchanged order)."""
     lines = [
         f"Object category: {category}",
-        f"Object name: {name}",
+        f"Sub-category: {subclass_name}",
+        f"Description: {name}",
         "",
         "Images of the object",
     ]
     return "\n".join(lines)
 
 
-def get_crop_images_base64(video_cap, segment):
-    """Extract sequence of object crops for segment and return list of base64 PNG strings."""
+def get_crop_images_base64(video_path, segment, video_cap=None):
+    """Extract sequence of object crops for segment and return list of base64 PNG strings.
+    video_path: path to video file (str). video_cap: optional open cv2.VideoCapture to reuse."""
     crop_specs = parse_crop_specs(segment.get("crop_from_previous_active"))
     if not crop_specs:
-        return []
-    crops = extract_object_crops(video_cap, crop_specs)
+        return [], []
+    crops = extract_object_crops(video_path, crop_specs, cap=video_cap)
     return [image_to_base64(c) for c in crops if image_to_base64(c) is not None], crop_specs
 
 
@@ -235,16 +241,16 @@ def query_ollama(
             "images": post_active_images_b64,
         })
 
-    # # DEBUGGING
-    # print("=== Messages to be sent to Ollama ===")
-    # for idx, msg in enumerate(messages):
-    #     content = msg.get("content")
-    #     images = msg.get("images", [])
-    #     images_len = len(images) if images is not None else 0
-    #     print(f"Message {idx}:")
-    #     print(f"  Content: {repr(content)}")
-    #     print(f"  Number of images: {images_len}")
-    # print("=== End of messages ===")
+    # DEBUGGING
+    print("=== Messages to be sent to Ollama ===")
+    for idx, msg in enumerate(messages):
+        content = msg.get("content")
+        images = msg.get("images", [])
+        images_len = len(images) if images is not None else 0
+        print(f"Message {idx}:")
+        print(f"  Content: {repr(content)}")
+        print(f"  Number of images: {images_len}")
+    print("=== End of messages ===")
 
     last_exception = None
     for attempt in range(num_tries):
@@ -312,6 +318,7 @@ def _ollama_response_metadata(response):
 
 
 def main():
+    global NOUN_CLASS_NAMES
     parser = argparse.ArgumentParser(
         description="Query VLM (Ollama) for passive usage labels on inactive segments."
     )
@@ -343,6 +350,8 @@ def main():
 
     ensure_ollama_model_loaded(args.model)
 
+    NOUN_CLASS_NAMES = load_noun_class_names()
+
     if not os.path.isfile(args.video_path):
         print(f"Error: Video file not found: {args.video_path}", file=sys.stderr)
         sys.exit(1)
@@ -363,7 +372,6 @@ def main():
     total_segments = sum([len(segments_data[k]) for k in segments_data])
 
     os.makedirs(args.output_dir, exist_ok=True)
-    # pdb.set_trace()
     output_path = os.path.join(args.output_dir, f"inactive_segments_{video_id}_labels.jsonl")
     input_prompt_jsonl_path = os.path.join(args.output_dir, f"input_prompt_{video_id}.jsonl")
     debug_jsonl_path = os.path.join(args.output_dir, f"debug_vlm_{video_id}.jsonl")
@@ -391,12 +399,12 @@ def main():
         sys.exit(1)
     for obj_key in sorted(segments_data.keys()):
         seg_list = segments_data[obj_key]
-        category, name = object_key_to_category_and_name(obj_key)
-        if category in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM:
-            print(f"Skipping excluded object (liquid/fixed): {obj_key} ({category}/{name})", flush=True)
+        category, subclass_name, name = object_key_to_category_and_name(obj_key)
+        if subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM:
+            print(f"Skipping excluded object (liquid/fixed): {obj_key} ({subclass_name}/{name})", flush=True)
             continue
 
-        print(f"Processing object: {obj_key} ({category}/{name})", flush=True)
+        print(f"Processing object: {obj_key} ({category}/{subclass_name}/{name})", flush=True)
 
         ## Get segments saved for this object (from previous runs)
         segments_saved_this_obj = []
@@ -440,9 +448,9 @@ def main():
 
             ## ------- PROMPT CONSTRUCTION -------
             ## Build user content
-            user_content = build_user_message(category, name)
+            user_content = build_user_message(category, subclass_name, name)
             ## Extract crop images
-            crop_images_base64, crop_specs = get_crop_images_base64(video_cap, seg)
+            crop_images_base64, crop_specs = get_crop_images_base64(args.video_path, seg, video_cap=video_cap)
             ## Format event history
             event_history_lines, event_frame_images_base64 = format_event_history(
                 seg.get("event_history", []), video_cap
@@ -496,9 +504,9 @@ def main():
                     reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
                     is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
 
-            ## DEBUGGING
-            # print(reasoning)
-            # print(is_passive_usage)
+            # DEBUGGING
+            print(reasoning)
+            print(is_passive_usage)
 
             ## ------- WRITE RESULT TO OUTPUT JSONL FILE -------
             try:
