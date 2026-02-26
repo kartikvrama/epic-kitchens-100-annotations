@@ -1,0 +1,87 @@
+False positives (P37_101) — manual label false and VLM label true
+Total: 21
+------------------------------------------------------------
+15/bottle/cooking wine bottle
+  Start: 00:04:49.560  End: 00:22:09.360
+  VLM reasoning: The target object is a cooking wine bottle. The user's last action was 'take bottle,' indicating they interacted with the bottle. In the final scene, the bottle is placed on a countertop alongside other cooking ingredients (e.g., cucumbers, garlic, onions). Since the bottle is temporarily resting in a location as part of an ongoing task sequence (preparing a meal), it meets the 'staged or temporarily rested as part of an ongoing task sequence' criterion for passive usage.
+
+15/bottle/cooking wine bottle
+  Start: 00:24:16.370  End: 00:27:55.180
+  VLM reasoning: The user placed the cooking wine bottle down as part of a cooking preparation sequence. After the user's last action (taking coriander), the bottle remains on the countertop as part of the ongoing task of preparing a dish. It is not undergoing a continuous active process but is temporarily resting as an integral component of the recipe sequence (waiting to be used in the cooking process). This aligns with the definition of passive usage where an object is staged as part of an ongoing task sequence.
+
+15/bottle/soy sauce bottle
+  Start: 00:04:23.540  End: 00:22:29.960
+  VLM reasoning: The user's last action was placing the soy sauce bottle on the table. In the final scene, the bottle is resting among other food items (e.g., cucumbers, garlic) on the table, which are part of a cooking or meal-prep task sequence. The bottle is temporarily staged as part of the ongoing process of preparing ingredients, fulfilling the criterion of being 'staged' or temporarily rested in a specific location as part of an ongoing task sequence. There is no continuous autonomous process (like cooking), but the staging within the task sequence qualifies it as passive usage.
+
+15/bottle/soy sauce bottle
+  Start: 00:23:20.360  End: 00:27:55.180
+  VLM reasoning: The user's last action was "shovel up smashed garlic." The soy sauce bottle, visible on the countertop in the final scene, is positioned near the prep area (chopping board, metal bowl) and is not currently being manipulated. However, in the context of cooking, the bottle is **staged as part of an ongoing task sequence**—it is resting in a location where it is expected to be used next (e.g., to add soy sauce to the prepared garlic). While the bottle itself is not undergoing an autonomous process, it fulfills the "staged" criterion of passive usage, as it is temporarily rested in a specific location to support the continuation of the cooking task.
+
+19/bag/bag
+  Start: 00:04:49.560  End: 00:27:55.180
+  VLM reasoning: The target object is 'bag'. The user's last action was 'take bottle', indicating active usage of bottles. In the final scene, the bag is placed on the table alongside other ingredients (e.g., cucumbers, garlic, containers). The bag is resting as part of the preparation process for a meal, meaning it is 'staged' as part of an ongoing task sequence. According to the definition, an object staged as part of an ongoing task sequence qualifies as passive usage. The bag is not undergoing an autonomous process but is temporarily positioned to support the cooking/prep workflow.
+
+19/bag/packing bag
+  Start: 00:24:28.200  End: 00:27:55.180
+  VLM reasoning: The user's last action was "turn off tap" after washing coriander. The target object is the "packing bag" (a container). After washing, the coriander is likely placed into the packing bag as part of the ongoing food preparation task sequence (e.g., storing or using the washed coriander in a subsequent step). Since the bag is temporarily holding the washed coriander as part of this task, it meets the criterion of being "staged or temporarily rested in a specific location as part of an ongoing task sequence." Therefore, it is in passive usage.
+
+19/bag/plastic bag
+  Start: 00:02:36.730  End: 00:27:55.180
+  VLM reasoning: The user's last action was "take plastic tray". The plastic bag was previously used to hold chicken (as inferred from the context of rinsing chicken thighs). In the final scene, the plastic bag is resting on the sink area (a prep surface) after the chicken was transferred out of it. This placement aligns with the "staged or temporarily rested in a specific location as part of an ongoing task sequence" criterion, as the bag remains part of the food preparation process (e.g., waiting for future use, or as a temporary resting place during the task). Since no continuous active process is occurring but it is staged for the ongoing task, it qualifies as passive usage.
+
+4/knife/knife
+  Start: 00:01:59.770  End: 00:05:06.780
+  VLM reasoning: The user performed actions including rinsing the knife, opening a plastic box, and taking a bowl. After the last action (taking a bowl), the knife is placed in the sink area. The knife is no longer being actively manipulated but is temporarily resting as part of the ongoing food preparation sequence (e.g., likely to be used again for cutting ingredients from the opened plastic box). This aligns with the 'staged or temporarily rested as part of an ongoing task sequence' criterion for passive usage.
+
+4/knife/knife
+  Start: 00:05:11.930  End: 00:05:19.140
+  VLM reasoning: The target object is a knife. The user's last action was rinsing bowls. In the final scene, the knife is resting on the sink. Prior to this, the knife was likely used for cutting (e.g., during food preparation), and after the user's active actions (taking a bowl, turning on the tap, rinsing), the knife is temporarily placed on the sink as part of the ongoing food preparation task sequence. It is not undergoing a continuous active process but is staged for potential future use in the same task. This aligns with the passive usage definition of being "temporarily rested in a specific location as part of an ongoing task sequence."
+
+4/knife/knife
+  Start: 00:09:53.740  End: 00:10:07.000
+  VLM reasoning: The user's last action was separating garlic cloves, which likely involved using the knife. In the final scene, the knife is resting on the cutting board. Since food preparation is an ongoing task (evidenced by prior steps like putting cucumbers in a bowl and handling garlic), the knife is temporarily staged on the cutting board as part of the ongoing task sequence. This satisfies the passive usage criterion of being "staged or temporarily rested in a specific location as part of an ongoing task sequence."
+
+4/knife/knife
+  Start: 00:11:16.490  End: 00:11:33.980
+  VLM reasoning: The user's last action was 'take bowl', indicating a transition from food preparation to another step. Prior actions included chopping (implied by the chopped items on the cutting board) and handling cucumbers. In the final scene, the knife is resting on the cutting board, which is serving as a prep surface for the chopped ingredients. Since the knife is temporarily staged as part of the ongoing food preparation task sequence (with chopped items still on the board), it meets the criterion of being "staged" or temporarily rested in a specific location as part of an ongoing task. It is not undergoing an autonomous process, but its placement aligns with the task workflow.
+
+4/knife/knife
+  Start: 00:11:54.620  End: 00:12:06.990
+  VLM reasoning: The user performed "smash garlic" as the last action. In the final scene, the knife is resting on the cutting board after use. The knife is temporarily staged on the cutting board as part of the ongoing food preparation sequence (e.g., the user may resume chopping or using it for other steps in the recipe). This aligns with the passive usage definition where an object is "staged" or temporarily rested in a specific location as part of an ongoing task sequence.
+
+4/knife/knife
+  Start: 00:20:28.220  End: 00:22:29.960
+  VLM reasoning: The target object is the knife. In the sequence of actions, the user first took the knife (implying active use for chopping), then took a spatula and a cooking pot. After these actions, the final scene shows the knife resting on the cutting board with chopped items. The knife is no longer being manipulated by the user but remains on the prep surface as part of the ongoing cooking task sequence (e.g., the chopped items were likely intended for use in the pot the user took). Since the knife is temporarily staged on the cutting board as part of the task’s workflow without requiring continuous human interaction, it meets the criteria for passive usage.
+
+51/garlic/garlic
+  Start: 00:04:49.560  End: 00:09:46.690
+  VLM reasoning: The user's last action was 'take bottle,' indicating they were handling bottles after placing garlic and other items on the table. In the final scene, the garlic is resting on the table alongside other ingredients (e.g., cucumbers, packaged greens). The garlic is staged as part of the ongoing meal-preparation task, fulfilling a preparatory role without requiring continuous physical manipulation. This aligns with the passive usage criterion of being temporarily rested in a specific location as part of an ongoing task sequence.
+
+57/chicken/chicken thigh
+  Start: 00:00:20.770  End: 00:01:29.270
+  VLM reasoning: The user opened the fridge, placed the chicken thigh container inside (implied by the action sequence), and closed the fridge. The chicken thigh is now stored in the refrigerator, which is an autonomous cooling process to preserve the meat. Since the refrigerator maintains a controlled environment without requiring continuous physical manipulation by the user, the chicken thigh is undergoing passive usage as part of the refrigeration process.
+
+7/bowl/bowl
+  Start: 00:03:41.590  End: 00:05:01.640
+  VLM reasoning: The user turned on the tap (likely to wash the bowl), turned off the tap, and then turned on a switch (possibly for a stove or oven). In the final scene, the bowl is placed in a location (e.g., on a sink or counter) after the user's active actions. Since the bowl is temporarily resting in a specific location as part of the ongoing cooking task sequence (awaiting use for the next step in the process), it meets the "staged" criterion for passive usage.
+
+7/bowl/bowl
+  Start: 00:05:11.930  End: 00:05:19.140
+  VLM reasoning: The user's last action was "rinse bowls," which involves actively using the bowl under running water. After this action, the bowl is no longer being actively manipulated; in the final scene, it is positioned in the sink area (implied by the context of dishwashing). Since the bowl is temporarily resting as part of the dishwashing process (e.g., waiting to be dried or stored), it meets the "staged or temporarily rested in a specific location as part of an ongoing task sequence" criterion for passive usage.
+
+7/bowl/bowl
+  Start: 00:14:59.120  End: 00:20:28.340
+  VLM reasoning: The target object is a bowl (crockery). The user's last action was peeling away garlic skins. In the sequence of actions, the bowl is present on the countertop and is positioned to receive peeled garlic (or other ingredients) as part of the ongoing cooking task. While the bowl itself is not undergoing a continuous active process, it is temporarily staged as part of the task sequence (waiting to be used for holding peeled garlic or other components). This aligns with the second criterion of passive usage: 'being "staged" or temporarily rested in a specific location as part of an ongoing task sequence.'
+
+7/bowl/bowl
+  Start: 00:20:38.450  End: 00:20:45.160
+  VLM reasoning: The user's last action was "put bowl down" after rinsing it. The bowl is now resting on the sink, which is part of an ongoing dishwashing task sequence. Since it is temporarily staged in a specific location (the sink) as part of the process of cleaning and organizing dishes, it meets the criteria for passive usage under the definition of being "staged or temporarily rested in a specific location as part of an ongoing task sequence."
+
+72/cucumber/cucumber
+  Start: 00:05:05.990  End: 00:05:19.140
+  VLM reasoning: The user's last action was "take cucumbers." Following this, the cucumbers are likely placed on the chopping board (a prep surface) as part of the ongoing task sequence (preparing to chop). The cucumbers are now temporarily resting in a specific location (on the chopping board) without requiring continuous physical manipulation, which aligns with the definition of passive usage as "staged or temporarily rested in a specific location as part of an ongoing task sequence."
+
+72/cucumber/cucumber
+  Start: 00:05:27.330  End: 00:05:33.710
+  VLM reasoning: The user performed actions related to cleaning and preparing bowls (rinsing, shaking, placing down). The target object, the cucumber, is now resting on the countertop within a kitchen workspace that includes other ingredients (e.g., garlic, onions) and prep tools (e.g., cutting board). Since the cucumber is temporarily positioned as part of an ongoing culinary task sequence (e.g., awaiting chopping, mixing, or cooking), it meets the criterion of being 'staged' or temporarily rested in a specific location as part of an ongoing task. It is not undergoing an autonomous process, but its placement is intentional for the next step in the task.
+
