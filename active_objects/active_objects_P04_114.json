@@ -4674,9 +4674,9 @@
   {
     "segment_id": "P04_114_ActiveUsage_0020",
     "start_time": 147.48,
-    "end_time": 149.87,
+    "end_time": 152.35,
     "start_frame": 7373,
-    "end_frame": 7493,
+    "end_frame": 7617,
     "objects_in_sequence": [
       {
         "class_id": 50,
@@ -4797,60 +4797,7 @@
               693.36,
               491.19
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 77,
-        "category": "utensils",
-        "subclass_name": "filter",
-        "name": "aeropress filter",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000007391.jpg",
-            "bbox": [
-              882.73,
-              553.56,
-              83.72,
-              94.47
-            ]
           },
-          {
-            "frame_path": "frame_0000007477.jpg",
-            "bbox": [
-              365.6,
-              694.03,
-              101.69,
-              123.85
-            ]
-          }
-        ]
-      }
-    ],
-    "frame_ids": [
-      7391,
-      7421,
-      7477
-    ],
-    "narrations": [
-      "turn off tap;147.48;148.41",
-      "shake filter;148.49;149.0",
-      "put filter on aeropress;149.0;149.87"
-    ]
-  },
-  {
-    "segment_id": "P04_114_ActiveUsage_0021",
-    "start_time": 150.15,
-    "end_time": 157.9,
-    "start_frame": 7507,
-    "end_frame": 7895,
-    "objects_in_sequence": [
-      {
-        "class_id": 63,
-        "category": "furniture",
-        "subclass_name": "sink",
-        "name": "sink",
-        "image_crops": [
           {
             "frame_path": "frame_0000007534.jpg",
             "bbox": [
@@ -4914,17 +4861,46 @@
             ]
           }
         ]
+      },
+      {
+        "class_id": 77,
+        "category": "utensils",
+        "subclass_name": "filter",
+        "name": "aeropress filter",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000007391.jpg",
+            "bbox": [
+              882.73,
+              553.56,
+              83.72,
+              94.47
+            ]
+          },
+          {
+            "frame_path": "frame_0000007477.jpg",
+            "bbox": [
+              365.6,
+              694.03,
+              101.69,
+              123.85
+            ]
+          }
+        ]
       }
     ],
     "frame_ids": [
+      7391,
+      7421,
+      7477,
       7534,
       7567,
       7601
     ],
     "narrations": [
-      "pick up tea towel;150.15;152.35",
-      "dry hands with tea towel;152.45;153.7",
-      "look in oven;154.3;157.9"
+      "turn off tap;147.48;148.41",
+      "shake filter;148.49;149.0",
+      "pick up tea towel;150.15;152.35"
     ]
   }
 ]

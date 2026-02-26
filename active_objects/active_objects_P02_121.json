@@ -2922,9 +2922,9 @@
   {
     "segment_id": "P02_121_ActiveUsage_0015",
     "start_time": 181.39,
-    "end_time": 206.47,
+    "end_time": 212.14,
     "start_frame": 9069,
-    "end_frame": 10323,
+    "end_frame": 10607,
     "objects_in_sequence": [
       {
         "class_id": 82,
@@ -2957,6 +2957,50 @@
               582.72,
               342.18,
               497.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000010534.jpg",
+            "bbox": [
+              713.08,
+              567.3,
+              323.87,
+              298.78
+            ]
+          },
+          {
+            "frame_path": "frame_0000010588.jpg",
+            "bbox": [
+              610.07,
+              550.54,
+              171.13,
+              144.36
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010534.jpg",
+            "bbox": [
+              1062.06,
+              0,
+              222.55,
+              312.73
+            ]
+          },
+          {
+            "frame_path": "frame_0000010588.jpg",
+            "bbox": [
+              840.44,
+              279.69,
+              438.61,
+              306.69
             ]
           }
         ]
@@ -3028,6 +3072,50 @@
               270.56,
               178.82
             ]
+          },
+          {
+            "frame_path": "frame_0000010534.jpg",
+            "bbox": [
+              984.96,
+              671.43,
+              75.42,
+              408.57
+            ]
+          },
+          {
+            "frame_path": "frame_0000010588.jpg",
+            "bbox": [
+              730.35,
+              514.3,
+              99.01,
+              182.12
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000010534.jpg",
+            "bbox": [
+              582.84,
+              0,
+              1337.16,
+              1080
+            ]
+          },
+          {
+            "frame_path": "frame_0000010588.jpg",
+            "bbox": [
+              215.96,
+              -0.42,
+              1704.04,
+              1080.42
+            ]
           }
         ]
       },
@@ -3096,73 +3184,23 @@
     "frame_ids": [
       9451,
       9751,
-      10051
+      10051,
+      10534,
+      10588
     ],
     "narrations": [
       "close drawer;181.39;181.78",
       "clear mixture of hand blender using spoon;182.87;204.86",
-      "shake spoon;204.86;206.47"
+      "put hand blender in sink;210.29;212.14"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0016",
-    "start_time": 210.29,
-    "end_time": 220.2,
-    "start_frame": 10514,
-    "end_frame": 11010,
+    "start_time": 214.09,
+    "end_time": 232.95,
+    "start_frame": 10704,
+    "end_frame": 11647,
     "objects_in_sequence": [
-      {
-        "class_id": 82,
-        "category": "appliances",
-        "subclass_name": "blender",
-        "name": "hand blender",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010534.jpg",
-            "bbox": [
-              713.08,
-              567.3,
-              323.87,
-              298.78
-            ]
-          },
-          {
-            "frame_path": "frame_0000010588.jpg",
-            "bbox": [
-              610.07,
-              550.54,
-              171.13,
-              144.36
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "category": "appliances",
-        "subclass_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000010534.jpg",
-            "bbox": [
-              1062.06,
-              0,
-              222.55,
-              312.73
-            ]
-          },
-          {
-            "frame_path": "frame_0000010588.jpg",
-            "bbox": [
-              840.44,
-              279.69,
-              438.61,
-              306.69
-            ]
-          }
-        ]
-      },
       {
         "class_id": 7,
         "category": "crockery",
@@ -3195,6 +3233,33 @@
               712.68,
               689.18
             ]
+          },
+          {
+            "frame_path": "frame_0000011176.jpg",
+            "bbox": [
+              155.34,
+              0,
+              784.06,
+              768.54
+            ]
+          },
+          {
+            "frame_path": "frame_0000011363.jpg",
+            "bbox": [
+              1.02,
+              0,
+              869.05,
+              741.12
+            ]
+          },
+          {
+            "frame_path": "frame_0000011551.jpg",
+            "bbox": [
+              108.73,
+              0,
+              913.29,
+              878.27
+            ]
           }
         ]
       },
@@ -3204,24 +3269,6 @@
         "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
-          {
-            "frame_path": "frame_0000010534.jpg",
-            "bbox": [
-              984.96,
-              671.43,
-              75.42,
-              408.57
-            ]
-          },
-          {
-            "frame_path": "frame_0000010588.jpg",
-            "bbox": [
-              730.35,
-              514.3,
-              99.01,
-              182.12
-            ]
-          },
           {
             "frame_path": "frame_0000010726.jpg",
             "bbox": [
@@ -3248,31 +3295,32 @@
               136.46,
               147.29
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "category": "furniture",
-        "subclass_name": "sink",
-        "name": "sink",
-        "image_crops": [
+          },
           {
-            "frame_path": "frame_0000010534.jpg",
+            "frame_path": "frame_0000011176.jpg",
             "bbox": [
-              582.84,
-              0,
-              1337.16,
-              1080
+              722.42,
+              203.8,
+              246.29,
+              53.07
             ]
           },
           {
-            "frame_path": "frame_0000010588.jpg",
+            "frame_path": "frame_0000011363.jpg",
             "bbox": [
-              215.96,
-              -0.42,
-              1704.04,
-              1080.42
+              631.1,
+              118.16,
+              271.77,
+              55.94
+            ]
+          },
+          {
+            "frame_path": "frame_0000011551.jpg",
+            "bbox": [
+              960.39,
+              235.61,
+              77.19,
+              24.77
             ]
           }
         ]
@@ -3309,6 +3357,33 @@
               589.63,
               589.9
             ]
+          },
+          {
+            "frame_path": "frame_0000011176.jpg",
+            "bbox": [
+              342.71,
+              86.49,
+              516.42,
+              572.97
+            ]
+          },
+          {
+            "frame_path": "frame_0000011363.jpg",
+            "bbox": [
+              267.4,
+              27.32,
+              685.6,
+              704.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000011551.jpg",
+            "bbox": [
+              613.3,
+              333.61,
+              324.95,
+              397.1
+            ]
           }
         ]
       },
@@ -3344,29 +3419,57 @@
               69.33,
               51.0
             ]
+          },
+          {
+            "frame_path": "frame_0000011176.jpg",
+            "bbox": [
+              810.39,
+              508.78,
+              153.59,
+              279.62
+            ]
+          },
+          {
+            "frame_path": "frame_0000011363.jpg",
+            "bbox": [
+              936.12,
+              532.39,
+              172.42,
+              275.84
+            ]
+          },
+          {
+            "frame_path": "frame_0000011551.jpg",
+            "bbox": [
+              858.21,
+              550.08,
+              102.96,
+              242.88
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      10534,
-      10588,
       10726,
       10784,
-      10992
+      10992,
+      11176,
+      11363,
+      11551
     ],
     "narrations": [
-      "put hand blender in sink;210.29;212.14",
       "move bowl;214.09;216.28",
-      "pick up bowl;219.6;220.2"
+      "pick up bowl;219.6;220.2",
+      "pour mixture from bowl into cake mould;220.3;232.95"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0017",
-    "start_time": 220.3,
-    "end_time": 242.06,
-    "start_frame": 11015,
-    "end_frame": 12103,
+    "start_time": 233.65,
+    "end_time": 246.26,
+    "start_frame": 11682,
+    "end_frame": 12313,
     "objects_in_sequence": [
       {
         "class_id": 7,
@@ -3374,33 +3477,6 @@
         "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011176.jpg",
-            "bbox": [
-              155.34,
-              0,
-              784.06,
-              768.54
-            ]
-          },
-          {
-            "frame_path": "frame_0000011363.jpg",
-            "bbox": [
-              1.02,
-              0,
-              869.05,
-              741.12
-            ]
-          },
-          {
-            "frame_path": "frame_0000011551.jpg",
-            "bbox": [
-              108.73,
-              0,
-              913.29,
-              878.27
-            ]
-          },
           {
             "frame_path": "frame_0000011726.jpg",
             "bbox": [
@@ -3436,6 +3512,24 @@
               692.54,
               591.84
             ]
+          },
+          {
+            "frame_path": "frame_0000012251.jpg",
+            "bbox": [
+              637.99,
+              171.11,
+              573.48,
+              597.59
+            ]
+          },
+          {
+            "frame_path": "frame_0000012284.jpg",
+            "bbox": [
+              471.13,
+              153.26,
+              613.49,
+              642.57
+            ]
           }
         ]
       },
@@ -3445,33 +3539,6 @@
         "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011176.jpg",
-            "bbox": [
-              722.42,
-              203.8,
-              246.29,
-              53.07
-            ]
-          },
-          {
-            "frame_path": "frame_0000011363.jpg",
-            "bbox": [
-              631.1,
-              118.16,
-              271.77,
-              55.94
-            ]
-          },
-          {
-            "frame_path": "frame_0000011551.jpg",
-            "bbox": [
-              960.39,
-              235.61,
-              77.19,
-              24.77
-            ]
-          },
           {
             "frame_path": "frame_0000011726.jpg",
             "bbox": [
@@ -3506,6 +3573,24 @@
               0,
               194.44,
               234.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000012251.jpg",
+            "bbox": [
+              828.42,
+              267.27,
+              28.73,
+              58.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000012284.jpg",
+            "bbox": [
+              886.99,
+              297.32,
+              111.58,
+              127.86
             ]
           }
         ]
@@ -3551,6 +3636,24 @@
               541.94,
               539.86
             ]
+          },
+          {
+            "frame_path": "frame_0000012251.jpg",
+            "bbox": [
+              920.31,
+              758.72,
+              400.85,
+              321.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000012284.jpg",
+            "bbox": [
+              772.6,
+              735.97,
+              490.22,
+              344.1
+            ]
           }
         ]
       },
@@ -3560,33 +3663,6 @@
         "subclass_name": "mixture",
         "name": "mixture",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011176.jpg",
-            "bbox": [
-              342.71,
-              86.49,
-              516.42,
-              572.97
-            ]
-          },
-          {
-            "frame_path": "frame_0000011363.jpg",
-            "bbox": [
-              267.4,
-              27.32,
-              685.6,
-              704.86
-            ]
-          },
-          {
-            "frame_path": "frame_0000011551.jpg",
-            "bbox": [
-              613.3,
-              333.61,
-              324.95,
-              397.1
-            ]
-          },
           {
             "frame_path": "frame_0000011726.jpg",
             "bbox": [
@@ -3622,6 +3698,24 @@
               995.89,
               836.41
             ]
+          },
+          {
+            "frame_path": "frame_0000012251.jpg",
+            "bbox": [
+              661.35,
+              224.49,
+              643.57,
+              822.65
+            ]
+          },
+          {
+            "frame_path": "frame_0000012284.jpg",
+            "bbox": [
+              506.52,
+              224.98,
+              725.51,
+              849.53
+            ]
           }
         ]
       },
@@ -3631,33 +3725,6 @@
         "subclass_name": "clip",
         "name": "clip",
         "image_crops": [
-          {
-            "frame_path": "frame_0000011176.jpg",
-            "bbox": [
-              810.39,
-              508.78,
-              153.59,
-              279.62
-            ]
-          },
-          {
-            "frame_path": "frame_0000011363.jpg",
-            "bbox": [
-              936.12,
-              532.39,
-              172.42,
-              275.84
-            ]
-          },
-          {
-            "frame_path": "frame_0000011551.jpg",
-            "bbox": [
-              858.21,
-              550.08,
-              102.96,
-              242.88
-            ]
-          },
           {
             "frame_path": "frame_0000011726.jpg",
             "bbox": [
@@ -3693,31 +3760,48 @@
               701.91,
               355.81
             ]
+          },
+          {
+            "frame_path": "frame_0000012251.jpg",
+            "bbox": [
+              942.72,
+              798.81,
+              51.65,
+              91.42
+            ]
+          },
+          {
+            "frame_path": "frame_0000012284.jpg",
+            "bbox": [
+              785.58,
+              679.99,
+              347.35,
+              237.47
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      11176,
-      11363,
-      11551,
       11726,
       11784,
       11938,
-      12026
+      12026,
+      12251,
+      12284
     ],
     "narrations": [
-      "pour mixture from bowl into cake mould;220.3;232.95",
       "put down bowl;233.65;236.59",
-      "adjust baking paper in cake mould;237.55;242.06"
+      "adjust baking paper in cake mould;237.55;242.06",
+      "pick up bowl;244.33;246.26"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0018",
-    "start_time": 244.33,
-    "end_time": 300.62,
-    "start_frame": 12216,
-    "end_frame": 15031,
+    "start_time": 267.24,
+    "end_time": 311.09,
+    "start_frame": 13362,
+    "end_frame": 15554,
     "objects_in_sequence": [
       {
         "class_id": 7,
@@ -3725,24 +3809,6 @@
         "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
-          {
-            "frame_path": "frame_0000012251.jpg",
-            "bbox": [
-              637.99,
-              171.11,
-              573.48,
-              597.59
-            ]
-          },
-          {
-            "frame_path": "frame_0000012284.jpg",
-            "bbox": [
-              471.13,
-              153.26,
-              613.49,
-              642.57
-            ]
-          },
           {
             "frame_path": "frame_0000013851.jpg",
             "bbox": [
@@ -3778,6 +3844,24 @@
               1052.71,
               647.95
             ]
+          },
+          {
+            "frame_path": "frame_0000015301.jpg",
+            "bbox": [
+              571.65,
+              155.83,
+              684.09,
+              715.21
+            ]
+          },
+          {
+            "frame_path": "frame_0000015501.jpg",
+            "bbox": [
+              457.12,
+              0,
+              803.99,
+              665.65
+            ]
           }
         ]
       },
@@ -3787,24 +3871,6 @@
         "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
-          {
-            "frame_path": "frame_0000012251.jpg",
-            "bbox": [
-              828.42,
-              267.27,
-              28.73,
-              58.56
-            ]
-          },
-          {
-            "frame_path": "frame_0000012284.jpg",
-            "bbox": [
-              886.99,
-              297.32,
-              111.58,
-              127.86
-            ]
-          },
           {
             "frame_path": "frame_0000013851.jpg",
             "bbox": [
@@ -3840,31 +3906,23 @@
               87.01,
               212.79
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 49,
-        "category": "materials",
-        "subclass_name": "paper",
-        "name": "baking paper",
-        "image_crops": [
+          },
           {
-            "frame_path": "frame_0000012251.jpg",
+            "frame_path": "frame_0000015301.jpg",
             "bbox": [
-              920.31,
-              758.72,
-              400.85,
-              321.28
+              801.86,
+              423.01,
+              204.98,
+              208.33
             ]
           },
           {
-            "frame_path": "frame_0000012284.jpg",
+            "frame_path": "frame_0000015501.jpg",
             "bbox": [
-              772.6,
-              735.97,
-              490.22,
-              344.1
+              733.15,
+              618.29,
+              140.27,
+              148.63
             ]
           }
         ]
@@ -3875,24 +3933,6 @@
         "subclass_name": "mixture",
         "name": "mixture",
         "image_crops": [
-          {
-            "frame_path": "frame_0000012251.jpg",
-            "bbox": [
-              661.35,
-              224.49,
-              643.57,
-              822.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000012284.jpg",
-            "bbox": [
-              506.52,
-              224.98,
-              725.51,
-              849.53
-            ]
-          },
           {
             "frame_path": "frame_0000013851.jpg",
             "bbox": [
@@ -3928,6 +3968,24 @@
               468.87,
               237.82
             ]
+          },
+          {
+            "frame_path": "frame_0000015301.jpg",
+            "bbox": [
+              581.56,
+              824.71,
+              373.8,
+              169.69
+            ]
+          },
+          {
+            "frame_path": "frame_0000015501.jpg",
+            "bbox": [
+              533.64,
+              455.16,
+              499.25,
+              391.5
+            ]
           }
         ]
       },
@@ -3937,24 +3995,6 @@
         "subclass_name": "clip",
         "name": "clip",
         "image_crops": [
-          {
-            "frame_path": "frame_0000012251.jpg",
-            "bbox": [
-              942.72,
-              798.81,
-              51.65,
-              91.42
-            ]
-          },
-          {
-            "frame_path": "frame_0000012284.jpg",
-            "bbox": [
-              785.58,
-              679.99,
-              347.35,
-              237.47
-            ]
-          },
           {
             "frame_path": "frame_0000013851.jpg",
             "bbox": [
@@ -3989,6 +4029,15 @@
               737.56,
               635.92,
               97.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000015301.jpg",
+            "bbox": [
+              544.49,
+              960.61,
+              494.44,
+              70.04
             ]
           }
         ]
@@ -4034,6 +4083,24 @@
               25.08,
               212.35
             ]
+          },
+          {
+            "frame_path": "frame_0000015301.jpg",
+            "bbox": [
+              1256.7,
+              1014.13,
+              26.08,
+              65.87
+            ]
+          },
+          {
+            "frame_path": "frame_0000015501.jpg",
+            "bbox": [
+              1191.25,
+              858.59,
+              31.59,
+              221.41
+            ]
           }
         ]
       },
@@ -4078,30 +4145,48 @@
               126.81,
               361.13
             ]
+          },
+          {
+            "frame_path": "frame_0000015301.jpg",
+            "bbox": [
+              1169.19,
+              819.11,
+              96.16,
+              245.8
+            ]
+          },
+          {
+            "frame_path": "frame_0000015501.jpg",
+            "bbox": [
+              1087.95,
+              662.08,
+              108.69,
+              300.1
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      12251,
-      12284,
       13851,
       14526,
       14951,
-      15009
+      15009,
+      15301,
+      15501
     ],
     "narrations": [
-      "pick up bowl;244.33;246.26",
       "scrape bowl using spoon;267.24;298.4",
-      "shake spoon;298.67;300.62"
+      "shake spoon;298.67;300.62",
+      "scrape bowl using spoon;303.84;311.09"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0019",
-    "start_time": 303.84,
-    "end_time": 314.49,
-    "start_frame": 15191,
-    "end_frame": 15724,
+    "start_time": 312.72,
+    "end_time": 315.01,
+    "start_frame": 15636,
+    "end_frame": 15750,
     "objects_in_sequence": [
       {
         "class_id": 7,
@@ -4109,33 +4194,6 @@
         "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              571.65,
-              155.83,
-              684.09,
-              715.21
-            ]
-          },
-          {
-            "frame_path": "frame_0000015501.jpg",
-            "bbox": [
-              457.12,
-              0,
-              803.99,
-              665.65
-            ]
-          },
-          {
-            "frame_path": "frame_0000015634.jpg",
-            "bbox": [
-              0,
-              141.58,
-              588.45,
-              604.87
-            ]
-          },
           {
             "frame_path": "frame_0000015655.jpg",
             "bbox": [
@@ -4171,6 +4229,15 @@
               626.04,
               651.37
             ]
+          },
+          {
+            "frame_path": "frame_0000015726.jpg",
+            "bbox": [
+              0,
+              0,
+              686.77,
+              708.52
+            ]
           }
         ]
       },
@@ -4180,33 +4247,6 @@
         "subclass_name": "spoon",
         "name": "spoon",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              801.86,
-              423.01,
-              204.98,
-              208.33
-            ]
-          },
-          {
-            "frame_path": "frame_0000015501.jpg",
-            "bbox": [
-              733.15,
-              618.29,
-              140.27,
-              148.63
-            ]
-          },
-          {
-            "frame_path": "frame_0000015634.jpg",
-            "bbox": [
-              904.54,
-              744.56,
-              106.61,
-              267.77
-            ]
-          },
           {
             "frame_path": "frame_0000015655.jpg",
             "bbox": [
@@ -4242,6 +4282,15 @@
               118.44,
               302.96
             ]
+          },
+          {
+            "frame_path": "frame_0000015726.jpg",
+            "bbox": [
+              437.18,
+              98.77,
+              77.81,
+              361.91
+            ]
           }
         ]
       },
@@ -4251,33 +4300,6 @@
         "subclass_name": "mixture",
         "name": "mixture",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              581.56,
-              824.71,
-              373.8,
-              169.69
-            ]
-          },
-          {
-            "frame_path": "frame_0000015501.jpg",
-            "bbox": [
-              533.64,
-              455.16,
-              499.25,
-              391.5
-            ]
-          },
-          {
-            "frame_path": "frame_0000015634.jpg",
-            "bbox": [
-              0,
-              202.61,
-              1034.36,
-              694.83
-            ]
-          },
           {
             "frame_path": "frame_0000015655.jpg",
             "bbox": [
@@ -4313,6 +4335,15 @@
               358.36,
               338.82
             ]
+          },
+          {
+            "frame_path": "frame_0000015726.jpg",
+            "bbox": [
+              669.86,
+              491.05,
+              463.58,
+              363.87
+            ]
           }
         ]
       },
@@ -4322,24 +4353,6 @@
         "subclass_name": "clip",
         "name": "clip",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              544.49,
-              960.61,
-              494.44,
-              70.04
-            ]
-          },
-          {
-            "frame_path": "frame_0000015634.jpg",
-            "bbox": [
-              527.41,
-              537.18,
-              560.35,
-              388.01
-            ]
-          },
           {
             "frame_path": "frame_0000015655.jpg",
             "bbox": [
@@ -4375,31 +4388,14 @@
               265.71,
               302.94
             ]
-          }
-        ]
-      },
-      {
-        "class_id": 291,
-        "category": "utensils",
-        "subclass_name": "pen",
-        "name": "pen",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              1256.7,
-              1014.13,
-              26.08,
-              65.87
-            ]
           },
           {
-            "frame_path": "frame_0000015501.jpg",
+            "frame_path": "frame_0000015726.jpg",
             "bbox": [
-              1191.25,
-              858.59,
-              31.59,
-              221.41
+              597.84,
+              639.86,
+              843.13,
+              288.96
             ]
           }
         ]
@@ -4410,33 +4406,6 @@
         "subclass_name": "scissors",
         "name": "scissors",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015301.jpg",
-            "bbox": [
-              1169.19,
-              819.11,
-              96.16,
-              245.8
-            ]
-          },
-          {
-            "frame_path": "frame_0000015501.jpg",
-            "bbox": [
-              1087.95,
-              662.08,
-              108.69,
-              300.1
-            ]
-          },
-          {
-            "frame_path": "frame_0000015634.jpg",
-            "bbox": [
-              1235.68,
-              750.7,
-              130.33,
-              329.3
-            ]
-          },
           {
             "frame_path": "frame_0000015655.jpg",
             "bbox": [
@@ -4472,31 +4441,38 @@
               65.67,
               182.79
             ]
+          },
+          {
+            "frame_path": "frame_0000015726.jpg",
+            "bbox": [
+              1269.71,
+              730.99,
+              136.9,
+              345.43
+            ]
           }
         ]
       }
     ],
     "frame_ids": [
-      15301,
-      15501,
-      15634,
       15655,
       15676,
       15688,
-      15701
+      15701,
+      15726
     ],
     "narrations": [
-      "scrape bowl using spoon;303.84;311.09",
       "put down bowl;312.72;313.59",
-      "remove clip;314.11;314.49"
+      "remove clip;314.11;314.49",
+      "put down clip;314.55;315.01"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0020",
-    "start_time": 314.55,
-    "end_time": 316.06,
-    "start_frame": 15727,
-    "end_frame": 15803,
+    "start_time": 315.11,
+    "end_time": 317.3,
+    "start_frame": 15755,
+    "end_frame": 15865,
     "objects_in_sequence": [
       {
         "class_id": 7,
@@ -4529,6 +4505,33 @@
               0,
               281.75,
               627.33
+            ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              0,
+              0,
+              269.95,
+              677.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              0,
+              0,
+              288.96,
+              689.86
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              0,
+              -0.29,
+              318.75,
+              673.63
             ]
           }
         ]
@@ -4565,6 +4568,33 @@
               127.43,
               241.01
             ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              0,
+              204.66,
+              116.54,
+              201.0
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              0,
+              171.71,
+              144.97,
+              254.44
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              0.04,
+              71.97,
+              184.24,
+              362.09
+            ]
           }
         ]
       },
@@ -4599,6 +4629,33 @@
               350.84,
               562.03,
               310.5
+            ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              389.66,
+              381.38,
+              565.41,
+              295.22
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              404.7,
+              364.44,
+              552.08,
+              320.41
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              422.97,
+              369.12,
+              525.63,
+              308.44
             ]
           }
         ]
@@ -4635,6 +4692,33 @@
               1034.33,
               154.36
             ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              214.56,
+              566.41,
+              1060.11,
+              234.28
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              207.41,
+              577.02,
+              1067.66,
+              373.31
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              622.71,
+              573.24,
+              636.8,
+              354.61
+            ]
           }
         ]
       },
@@ -4669,6 +4753,33 @@
               721.32,
               48.26,
               242.56
+            ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              1302.95,
+              720.74,
+              43.37,
+              248.92
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              1306.84,
+              728.74,
+              42.01,
+              247.49
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              1296.74,
+              724.37,
+              38.58,
+              243.74
             ]
           }
         ]
@@ -4705,6 +4816,33 @@
               120.71,
               312.07
             ]
+          },
+          {
+            "frame_path": "frame_0000015806.jpg",
+            "bbox": [
+              1202.49,
+              447.14,
+              131.57,
+              376.75
+            ]
+          },
+          {
+            "frame_path": "frame_0000015813.jpg",
+            "bbox": [
+              1196.34,
+              456.49,
+              139.83,
+              379.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000015821.jpg",
+            "bbox": [
+              1184.73,
+              459.15,
+              136.58,
+              370.28
+            ]
           }
         ]
       }
@@ -4712,20 +4850,23 @@
     "frame_ids": [
       15767,
       15779,
-      15792
+      15792,
+      15806,
+      15813,
+      15821
     ],
     "narrations": [
-      "put down clip;314.55;315.01",
       "remove clip;315.11;315.59",
-      "put down clip;315.69;316.06"
+      "put down clip;315.69;316.06",
+      "put down clip;316.38;317.3"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0021",
-    "start_time": 316.38,
-    "end_time": 323.51,
-    "start_frame": 15819,
-    "end_frame": 16175,
+    "start_time": 317.35,
+    "end_time": 324.19,
+    "start_frame": 15867,
+    "end_frame": 16209,
     "objects_in_sequence": [
       {
         "class_id": 7,
@@ -4733,15 +4874,6 @@
         "subclass_name": "bowl",
         "name": "bowl",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              0,
-              -0.29,
-              318.75,
-              673.63
-            ]
-          },
           {
             "frame_path": "frame_0000015876.jpg",
             "bbox": [
@@ -4805,15 +4937,6 @@
         "name": "spoon",
         "image_crops": [
           {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              0.04,
-              71.97,
-              184.24,
-              362.09
-            ]
-          },
-          {
             "frame_path": "frame_0000015876.jpg",
             "bbox": [
               676.06,
@@ -4875,15 +4998,6 @@
         "subclass_name": "mixture",
         "name": "mixture",
         "image_crops": [
-          {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              422.97,
-              369.12,
-              525.63,
-              308.44
-            ]
-          },
           {
             "frame_path": "frame_0000015876.jpg",
             "bbox": [
@@ -4947,15 +5061,6 @@
         "name": "clip",
         "image_crops": [
           {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              622.71,
-              573.24,
-              636.8,
-              354.61
-            ]
-          },
-          {
             "frame_path": "frame_0000015876.jpg",
             "bbox": [
               1481.53,
@@ -5009,15 +5114,6 @@
         "name": "pen",
         "image_crops": [
           {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              1296.74,
-              724.37,
-              38.58,
-              243.74
-            ]
-          },
-          {
             "frame_path": "frame_0000015876.jpg",
             "bbox": [
               1595.59,
@@ -5063,27 +5159,9 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 79,
-        "category": "utensils",
-        "subclass_name": "scissors",
-        "name": "scissors",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000015821.jpg",
-            "bbox": [
-              1184.73,
-              459.15,
-              136.58,
-              370.28
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
-      15821,
       15876,
       15901,
       15996,
@@ -5092,18 +5170,44 @@
       16176
     ],
     "narrations": [
-      "put down clip;316.38;317.3",
       "pick up spoon;317.35;318.33",
-      "flatten surface of mixture in cake mould;318.35;323.51"
+      "flatten surface of mixture in cake mould;318.35;323.51",
+      "put spoon in bowl;323.53;324.19"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0022",
-    "start_time": 323.53,
-    "end_time": 332.51,
-    "start_frame": 16176,
-    "end_frame": 16625,
+    "start_time": 324.33,
+    "end_time": 335.39,
+    "start_frame": 16216,
+    "end_frame": 16769,
     "objects_in_sequence": [
+      {
+        "class_id": 0,
+        "category": "appliances",
+        "subclass_name": "tap",
+        "name": "tap",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000016701.jpg",
+            "bbox": [
+              1397.73,
+              344.3,
+              259.69,
+              362.99
+            ]
+          },
+          {
+            "frame_path": "frame_0000016751.jpg",
+            "bbox": [
+              1303.41,
+              518.04,
+              337.36,
+              334.43
+            ]
+          }
+        ]
+      },
       {
         "class_id": 7,
         "category": "crockery",
@@ -5144,6 +5248,24 @@
               336.58,
               569.88,
               476.09
+            ]
+          },
+          {
+            "frame_path": "frame_0000016701.jpg",
+            "bbox": [
+              989.56,
+              388.56,
+              485.85,
+              419.89
+            ]
+          },
+          {
+            "frame_path": "frame_0000016751.jpg",
+            "bbox": [
+              954.57,
+              423.57,
+              409.89,
+              379.9
             ]
           }
         ]
@@ -5188,6 +5310,50 @@
               393.18,
               110.08,
               280.14
+            ]
+          },
+          {
+            "frame_path": "frame_0000016701.jpg",
+            "bbox": [
+              1110.9,
+              457.35,
+              129.77,
+              258.27
+            ]
+          },
+          {
+            "frame_path": "frame_0000016751.jpg",
+            "bbox": [
+              1045.88,
+              501.6,
+              153.16,
+              211.23
+            ]
+          }
+        ]
+      },
+      {
+        "class_id": 63,
+        "category": "furniture",
+        "subclass_name": "sink",
+        "name": "sink",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000016701.jpg",
+            "bbox": [
+              841.1,
+              223.97,
+              1078.9,
+              856.03
+            ]
+          },
+          {
+            "frame_path": "frame_0000016751.jpg",
+            "bbox": [
+              579.26,
+              281.99,
+              1340.74,
+              798.72
             ]
           }
         ]
@@ -5329,20 +5495,22 @@
       16242,
       16301,
       16563,
-      16594
+      16594,
+      16701,
+      16751
     ],
     "narrations": [
-      "put spoon in bowl;323.53;324.19",
       "shake cake mould;324.33;326.83",
-      "pick up bowl;330.68;332.51"
+      "pick up bowl;330.68;332.51",
+      "put bowl in sink;333.62;335.39"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0023",
-    "start_time": 333.62,
-    "end_time": 339.4,
-    "start_frame": 16681,
-    "end_frame": 16970,
+    "start_time": 337.40999999999997,
+    "end_time": 340.44,
+    "start_frame": 16870,
+    "end_frame": 17022,
     "objects_in_sequence": [
       {
         "class_id": 24,
@@ -5402,32 +5570,6 @@
               87.9,
               747.87,
               992.1
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 0,
-        "category": "appliances",
-        "subclass_name": "tap",
-        "name": "tap",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000016701.jpg",
-            "bbox": [
-              1397.73,
-              344.3,
-              259.69,
-              362.99
-            ]
-          },
-          {
-            "frame_path": "frame_0000016751.jpg",
-            "bbox": [
-              1303.41,
-              518.04,
-              337.36,
-              334.43
             ]
           }
         ]
@@ -5493,89 +5635,9 @@
             ]
           }
         ]
-      },
-      {
-        "class_id": 7,
-        "category": "crockery",
-        "subclass_name": "bowl",
-        "name": "bowl",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000016701.jpg",
-            "bbox": [
-              989.56,
-              388.56,
-              485.85,
-              419.89
-            ]
-          },
-          {
-            "frame_path": "frame_0000016751.jpg",
-            "bbox": [
-              954.57,
-              423.57,
-              409.89,
-              379.9
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 1,
-        "category": "cutlery",
-        "subclass_name": "spoon",
-        "name": "spoon",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000016701.jpg",
-            "bbox": [
-              1110.9,
-              457.35,
-              129.77,
-              258.27
-            ]
-          },
-          {
-            "frame_path": "frame_0000016751.jpg",
-            "bbox": [
-              1045.88,
-              501.6,
-              153.16,
-              211.23
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 63,
-        "category": "furniture",
-        "subclass_name": "sink",
-        "name": "sink",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000016701.jpg",
-            "bbox": [
-              841.1,
-              223.97,
-              1078.9,
-              856.03
-            ]
-          },
-          {
-            "frame_path": "frame_0000016751.jpg",
-            "bbox": [
-              579.26,
-              281.99,
-              1340.74,
-              798.72
-            ]
-          }
-        ]
       }
     ],
     "frame_ids": [
-      16701,
-      16751,
       16876,
       16888,
       16901,
@@ -5584,17 +5646,17 @@
       16969
     ],
     "narrations": [
-      "put bowl in sink;333.62;335.39",
       "pick up pan;337.40999999999997;337.89",
-      "put down pan;338.29;339.4"
+      "put down pan;338.29;339.4",
+      "open cupboard;339.46;340.44"
     ]
   },
   {
     "segment_id": "P02_121_ActiveUsage_0024",
-    "start_time": 339.46,
-    "end_time": 388.29,
-    "start_frame": 16973,
-    "end_frame": 19414,
+    "start_time": 341.25,
+    "end_time": 390.29,
+    "start_frame": 17062,
+    "end_frame": 19514,
     "objects_in_sequence": [
       {
         "class_id": 6,
@@ -5689,6 +5751,15 @@
               1920,
               1080
             ]
+          },
+          {
+            "frame_path": "frame_0000019480.jpg",
+            "bbox": [
+              525.07,
+              549.01,
+              745.71,
+              530.99
+            ]
           }
         ]
       }
@@ -5698,12 +5769,13 @@
       17767,
       18278,
       18789,
-      19134
+      19134,
+      19480
     ],
     "narrations": [
-      "open cupboard;339.46;340.44",
       "open cupboard;341.25;342.4",
-      "search cupboard;345.44;388.29"
+      "search cupboard;345.44;388.29",
+      "close cupboard;389.19;390.29"
     ]
   }
 ]

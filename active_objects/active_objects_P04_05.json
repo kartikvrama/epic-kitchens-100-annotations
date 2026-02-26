@@ -23549,9 +23549,9 @@
   {
     "segment_id": "P04_05_ActiveUsage_0083",
     "start_time": 2013.35,
-    "end_time": 2042.08,
+    "end_time": 2043.64,
     "start_frame": 120801,
-    "end_frame": 122524,
+    "end_frame": 122618,
     "objects_in_sequence": [
       {
         "class_id": 12,
@@ -23584,6 +23584,15 @@
               0,
               875.62,
               1052.51
+            ]
+          },
+          {
+            "frame_path": "frame_0000122587.jpg",
+            "bbox": [
+              950.77,
+              0,
+              969.23,
+              969.9
             ]
           },
           {
@@ -23631,6 +23640,15 @@
             ]
           },
           {
+            "frame_path": "frame_0000122587.jpg",
+            "bbox": [
+              0,
+              253.37,
+              611.59,
+              581.23
+            ]
+          },
+          {
             "frame_path": "frame_0000121054.jpg",
             "bbox": [
               961.26,
@@ -23663,6 +23681,15 @@
               758.77,
               350.83,
               321.23
+            ]
+          },
+          {
+            "frame_path": "frame_0000122587.jpg",
+            "bbox": [
+              666.57,
+              895.76,
+              252.62,
+              184.24
             ]
           },
           {
@@ -23719,6 +23746,15 @@
             ]
           },
           {
+            "frame_path": "frame_0000122587.jpg",
+            "bbox": [
+              235.86,
+              544.12,
+              377.98,
+              363.12
+            ]
+          },
+          {
             "frame_path": "frame_0000121054.jpg",
             "bbox": [
               917.06,
@@ -23772,6 +23808,15 @@
             ]
           },
           {
+            "frame_path": "frame_0000122587.jpg",
+            "bbox": [
+              269.55,
+              545.68,
+              271.85,
+              273.64
+            ]
+          },
+          {
             "frame_path": "frame_0000121054.jpg",
             "bbox": [
               1104.23,
@@ -23797,20 +23842,21 @@
       121337,
       121624,
       122050,
-      122474
+      122474,
+      122587
     ],
     "narrations": [
       "put tuna patties in sandwich bag;2013.35;2029.88",
-      "close sandwich bag;2029.88;2033.15",
-      "open fridge;2040.97;2042.08"
+      "open fridge;2040.97;2042.08",
+      "close fridge;2042.74;2043.64"
     ]
   },
   {
     "segment_id": "P04_05_ActiveUsage_0084",
-    "start_time": 2042.74,
-    "end_time": 2047.87,
-    "start_frame": 122564,
-    "end_frame": 122872,
+    "start_time": 2043.71,
+    "end_time": 2056.95,
+    "start_frame": 122622,
+    "end_frame": 123416,
     "objects_in_sequence": [
       {
         "class_id": 113,
@@ -23857,52 +23903,27 @@
         ]
       },
       {
-        "class_id": 12,
-        "category": "appliances",
-        "subclass_name": "fridge",
-        "name": "fridge",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000122587.jpg",
-            "bbox": [
-              950.77,
-              0,
-              969.23,
-              969.9
-            ]
-          }
-        ]
-      },
-      {
-        "class_id": 24,
-        "category": "appliances",
-        "subclass_name": "hob",
-        "name": "hob",
-        "image_crops": [
-          {
-            "frame_path": "frame_0000122587.jpg",
-            "bbox": [
-              0,
-              253.37,
-              611.59,
-              581.23
-            ]
-          }
-        ]
-      },
-      {
         "class_id": 19,
         "category": "containers",
         "subclass_name": "bag",
         "name": "sandwich bag",
         "image_crops": [
           {
-            "frame_path": "frame_0000122587.jpg",
+            "frame_path": "frame_0000123095.jpg",
             "bbox": [
-              666.57,
-              895.76,
-              252.62,
-              184.24
+              984.6,
+              537.39,
+              187.1,
+              134.29
+            ]
+          },
+          {
+            "frame_path": "frame_0000123316.jpg",
+            "bbox": [
+              728.55,
+              590.98,
+              382.28,
+              473.07
             ]
           }
         ]
@@ -23913,15 +23934,6 @@
         "subclass_name": "tray",
         "name": "tray",
         "image_crops": [
-          {
-            "frame_path": "frame_0000122587.jpg",
-            "bbox": [
-              235.86,
-              544.12,
-              377.98,
-              363.12
-            ]
-          },
           {
             "frame_path": "frame_0000122645.jpg",
             "bbox": [
@@ -23934,20 +23946,37 @@
         ]
       },
       {
+        "class_id": 8,
+        "category": "furniture",
+        "subclass_name": "drawer",
+        "name": "drawer",
+        "image_crops": [
+          {
+            "frame_path": "frame_0000123095.jpg",
+            "bbox": [
+              501.67,
+              336.54,
+              1014.37,
+              743.46
+            ]
+          },
+          {
+            "frame_path": "frame_0000123316.jpg",
+            "bbox": [
+              681.25,
+              304.89,
+              783.23,
+              704.25
+            ]
+          }
+        ]
+      },
+      {
         "class_id": 139,
         "category": "meat and substitute",
         "subclass_name": "burger",
         "name": "tuna patty",
         "image_crops": [
-          {
-            "frame_path": "frame_0000122587.jpg",
-            "bbox": [
-              269.55,
-              545.68,
-              271.85,
-              273.64
-            ]
-          },
           {
             "frame_path": "frame_0000122858.jpg",
             "bbox": [
@@ -23970,16 +23999,17 @@
       }
     ],
     "frame_ids": [
-      122587,
       122645,
       122678,
       122822,
-      122858
+      122858,
+      123095,
+      123316
     ],
     "narrations": [
-      "close fridge;2042.74;2043.64",
       "open freezer;2043.71;2044.65",
-      "put tuna patties away;2046.58;2047.87"
+      "put tuna patties away;2046.58;2047.87",
+      "pick up sandwich bag;2049.14;2056.95"
     ]
   }
 ]

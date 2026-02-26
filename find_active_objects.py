@@ -101,9 +101,10 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
     txt_path = f"{output_dir}/active_objects_{video_id}.txt"
     json_path = f"{output_dir}/active_objects_{video_id}.json"
 
+    total_num_narrations = len(narrations_low_level_filtered)
     with open(txt_path, "w") as txt_file:
         narrations = []
-        for _, row in narrations_low_level_filtered.iterrows():
+        for idx, row in narrations_low_level_filtered.iterrows():
             start_timestamp = hhmmss_to_seconds(row["start_timestamp"])
             stop_timestamp = hhmmss_to_seconds(row["stop_timestamp"])
             start_frame = row["start_frame"]
@@ -117,7 +118,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
             narration = f"{row['narration']};{start_timestamp};{stop_timestamp}"
 
             # Count non-overlapping narrations; each sequence = 3 non-overlapping actions
-            if prev_stop is None or start_timestamp >= prev_stop:
+            if prev_stop is None or start_timestamp > prev_stop:
                 if non_overlapping_count == 1:
                     sequence_start_time = start_timestamp
                     sequence_start_frame = start_frame
@@ -128,7 +129,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                 # Append current (non-overlapping) action before completing sequence so stored narrations has 3 entries
                 narrations.append(narration)
 
-                if non_overlapping_count > 3:
+                if non_overlapping_count > 3 or idx == total_num_narrations - 1:
                     # Sequence complete: [sequence_start_time, sequence_end_time] with 3 actions
                     txt_file.write("************\n")
                     # Frame filtering based on timestamp
@@ -162,11 +163,10 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
 
                     ## Frame id based check
                     if not all(sequence_start_frame <= frame_id <= sequence_end_frame for frame_id in frame_ids_in_sequence):
-                        num_out_of_range_frames = sum(
-                            not (sequence_start_frame <= frame_id <= sequence_end_frame)
-                            for frame_id in frame_ids_in_sequence
-                        )
-                        print(f"  - [FRAME CHECK] {sequence_index}: {num_out_of_range_frames}/{len(frame_ids_in_sequence)} frame(s) are not within the start and stop frame for {video_id}")
+                        out_of_range_frames = [frame_id for frame_id in frame_ids_in_sequence if not (sequence_start_frame <= frame_id <= sequence_end_frame)]
+                        max_out_of_range_frame = max(out_of_range_frames)
+                        print(f"  - [FRAME CHECK] {sequence_index}: {len(out_of_range_frames)} frame(s) are not within the start and stop frame for {video_id}")
+                        print(f"  - Latest out-of-range frame is {(max_out_of_range_frame - sequence_end_frame)/fps:.2f} seconds before the sequence end")
 
                     txt_file.write(f"Frame IDs in sequence: {frame_ids_in_sequence}\n")
                     obj_strs = [f"{o['category']} ({o['subclass_name']}) ({o['name']})" for o in objects_in_sequence]
