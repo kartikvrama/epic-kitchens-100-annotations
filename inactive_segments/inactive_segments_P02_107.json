@@ -1,19 +1,20 @@
 {
   "0/tap/tap": [
     {
-      "start_time": 96.67,
-      "end_time": 117.6,
-      "duration_sec": 20.93,
+      "start_time": 100.66,
+      "end_time": 119.05,
+      "duration_sec": 18.39,
       "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
         "narration:open tap",
         "frame_id:4648",
         "frame_id:4695",
         "narration:close tap",
-        "frame_id:4823"
+        "frame_id:4823",
+        "narration:put down water filter",
+        "frame_id:4944",
+        "frame_id:5004"
       ],
-      "frame_after_gap_start": 4834,
+      "frame_after_gap_start": 5033,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004663.jpg",
@@ -47,20 +48,20 @@
   ],
   "1/spoon/stirrer": [
     {
-      "start_time": 78.03999999999999,
-      "end_time": 89.68,
-      "duration_sec": 11.64,
+      "start_time": 90.6,
+      "end_time": 103.46000000000001,
+      "duration_sec": 12.86,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
         "narration:pick up stirrer",
         "frame_id:3518",
         "frame_id:3576",
         "narration:stir coffee",
         "frame_id:3689",
-        "frame_id:3831"
+        "frame_id:3831",
+        "narration:pick up water filter",
+        "frame_id:4507"
       ],
-      "frame_after_gap_start": 3952,
+      "frame_after_gap_start": 4580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003576.jpg",
@@ -88,24 +89,16 @@
             37.33,
             9.17
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 96.67,
-      "end_time": 98.28999999999999,
-      "duration_sec": 1.62,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
-        "narration:open tap",
-        "frame_id:4648",
-        "frame_id:4695",
-        "narration:close tap",
-        "frame_id:4823"
-      ],
-      "frame_after_gap_start": 4884,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004148.jpg",
+          "bbox": [
+            851.75,
+            693.95,
+            47.31,
+            143.76
+          ]
+        },
         {
           "frame_path": "frame_0000004496.jpg",
           "bbox": [
@@ -118,19 +111,18 @@
       ]
     },
     {
-      "start_time": 113.81,
-      "end_time": 114.11,
-      "duration_sec": 0.3,
+      "start_time": 114.91,
+      "end_time": 115.00999999999999,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:put down water filter",
-        "frame_id:4944",
-        "frame_id:5004",
         "narration:turn off coffee machine",
         "frame_id:5195",
         "narration:turn off coffee machine",
-        "frame_id:5665"
+        "frame_id:5665",
+        "narration:stir coffee",
+        "frame_id:5725"
       ],
-      "frame_after_gap_start": 5741,
+      "frame_after_gap_start": 5796,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005192.jpg",
@@ -176,33 +168,33 @@
             56.54,
             131.58
           ]
+        },
+        {
+          "frame_path": "frame_0000005705.jpg",
+          "bbox": [
+            776.12,
+            850.89,
+            23.03,
+            45.19
+          ]
         }
       ]
     },
     {
-      "start_time": 117.6,
-      "end_time": 117.6,
+      "start_time": 119.05,
+      "end_time": 119.05,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:stir coffee",
-        "frame_id:5725",
         "narration:pick up mug",
         "frame_id:5764",
         "narration:stir coffee",
         "frame_id:5807",
-        "frame_id:5856"
+        "frame_id:5856",
+        "narration:open bin",
+        "frame_id:5933"
       ],
-      "frame_after_gap_start": 5880,
+      "frame_after_gap_start": 5953,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005751.jpg",
-          "bbox": [
-            826.43,
-            894.53,
-            35.29,
-            13.8
-          ]
-        },
         {
           "frame_path": "frame_0000005780.jpg",
           "bbox": [
@@ -229,27 +221,45 @@
             459.55,
             125.18
           ]
+        },
+        {
+          "frame_path": "frame_0000005899.jpg",
+          "bbox": [
+            660.61,
+            820.82,
+            484.92,
+            187.67
+          ]
+        },
+        {
+          "frame_path": "frame_0000005932.jpg",
+          "bbox": [
+            664.3,
+            760.24,
+            245.32,
+            95.92
+          ]
         }
       ]
     }
   ],
   "12/fridge/fridge": [
     {
-      "start_time": 27.48,
-      "end_time": 55.07,
-      "duration_sec": 27.59,
+      "start_time": 32.91,
+      "end_time": 58.09,
+      "duration_sec": 25.18,
       "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
         "narration:open fridge",
         "frame_id:1248",
         "frame_id:1284",
         "narration:close fridge",
         "frame_id:1331",
-        "frame_id:1360"
+        "frame_id:1360",
+        "narration:pour milk into mug",
+        "frame_id:1528",
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1424,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001244.jpg",
@@ -281,20 +291,19 @@
       ]
     },
     {
-      "start_time": 66.56,
-      "end_time": 67.11,
-      "duration_sec": 0.55,
+      "start_time": 68.02,
+      "end_time": 119.05,
+      "duration_sec": 51.03,
       "event_history": [
-        "narration:close coffee machine",
-        "frame_id:2774",
-        "frame_id:2815",
         "narration:turn on coffee machine",
         "frame_id:2925",
         "narration:pick up milk bottle",
         "frame_id:3174",
-        "frame_id:3277"
+        "frame_id:3277",
+        "narration:close fridge",
+        "frame_id:3378"
       ],
-      "frame_after_gap_start": 3378,
+      "frame_after_gap_start": 3401,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003192.jpg",
@@ -313,25 +322,7 @@
             1153.79,
             1080.78
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.03999999999999,
-      "end_time": 117.6,
-      "duration_sec": 39.56,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
-        "narration:pick up stirrer",
-        "frame_id:3518",
-        "frame_id:3576",
-        "narration:stir coffee",
-        "frame_id:3689",
-        "frame_id:3831"
-      ],
-      "frame_after_gap_start": 3902,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003378.jpg",
           "bbox": [
@@ -391,20 +382,20 @@
       ]
     },
     {
-      "start_time": 18.89,
-      "end_time": 18.93,
-      "duration_sec": 0.04,
+      "start_time": 20.43,
+      "end_time": 24.59,
+      "duration_sec": 4.16,
       "event_history": [
         "narration:open coffee machine",
         "frame_id:658",
-        "narration:pour water from filter into coffee machine",
-        "frame_id:725",
-        "frame_id:832",
         "narration:close coffee machine lid",
         "frame_id:904",
-        "frame_id:931"
+        "frame_id:931",
+        "narration:put down water filter",
+        "frame_id:965",
+        "frame_id:1003"
       ],
-      "frame_after_gap_start": 995,
+      "frame_after_gap_start": 1072,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000651.jpg",
@@ -441,26 +432,7 @@
             198.13,
             117.49
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 27.48,
-      "end_time": 29.8,
-      "duration_sec": 2.32,
-      "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
-        "narration:open fridge",
-        "frame_id:1248",
-        "frame_id:1284",
-        "narration:close fridge",
-        "frame_id:1331",
-        "frame_id:1360"
-      ],
-      "frame_after_gap_start": 1424,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000955.jpg",
           "bbox": [
@@ -482,21 +454,21 @@
       ]
     },
     {
-      "start_time": 38.74,
-      "end_time": 39.1,
-      "duration_sec": 0.36,
+      "start_time": 32.91,
+      "end_time": 33.09,
+      "duration_sec": 0.18,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:1248",
+        "frame_id:1284",
+        "narration:close fridge",
+        "frame_id:1331",
+        "frame_id:1360",
         "narration:pour milk into mug",
         "frame_id:1528",
-        "frame_id:1607",
-        "narration:close milk bottle",
-        "frame_id:1676",
-        "frame_id:1718",
-        "narration:turn off coffee machine",
-        "frame_id:1895",
-        "frame_id:1924"
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1987,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001521.jpg",
@@ -515,7 +487,25 @@
             169.47,
             245.76
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 39.84,
+      "end_time": 39.91,
+      "duration_sec": 0.07,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:1676",
+        "frame_id:1718",
+        "narration:turn off coffee machine",
+        "frame_id:1895",
+        "frame_id:1924",
+        "narration:put down milk bottle",
+        "frame_id:1973"
+      ],
+      "frame_after_gap_start": 2043,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001676.jpg",
           "bbox": [
@@ -560,24 +550,7 @@
             182.88,
             237.35
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 41.92,
-      "end_time": 42.19,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
-        "narration:pick up coffee pod",
-        "frame_id:2011",
-        "frame_id:2042",
-        "narration:open coffee machine",
-        "frame_id:2080"
-      ],
-      "frame_after_gap_start": 2146,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001967.jpg",
           "bbox": [
@@ -586,7 +559,24 @@
             157.24,
             229.12
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 42.59,
+      "end_time": 43.85,
+      "duration_sec": 1.26,
+      "event_history": [
+        "narration:pick up coffee pod",
+        "frame_id:2011",
+        "frame_id:2042",
+        "narration:open coffee machine",
+        "frame_id:2080",
+        "narration:put coffee pod into machine",
+        "frame_id:2119"
+      ],
+      "frame_after_gap_start": 2180,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002005.jpg",
           "bbox": [
@@ -631,25 +621,7 @@
             171.58,
             208.95
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 46.51,
-      "end_time": 49.71,
-      "duration_sec": 3.2,
-      "event_history": [
-        "narration:put coffee pod into machine",
-        "frame_id:2119",
-        "narration:move mug",
-        "frame_id:2211",
-        "frame_id:2247",
-        "narration:open coffee machine drawer",
-        "frame_id:2281",
-        "frame_id:2311"
-      ],
-      "frame_after_gap_start": 2376,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002117.jpg",
           "bbox": [
@@ -658,7 +630,25 @@
             170.19,
             201.63
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 50.6,
+      "end_time": 50.62,
+      "duration_sec": 0.02,
+      "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
+        "narration:open bin",
+        "frame_id:2508"
+      ],
+      "frame_after_gap_start": 2580,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -694,24 +684,34 @@
             202.4,
             238.99
           ]
+        },
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            427.76,
+            748.37,
+            214.05,
+            264.25
+          ]
         }
       ]
     },
     {
-      "start_time": 54.36,
-      "end_time": 55.07,
-      "duration_sec": 0.71,
+      "start_time": 56.7,
+      "end_time": 58.09,
+      "duration_sec": 1.39,
       "event_history": [
-        "narration:open bin",
-        "frame_id:2508",
         "narration:empty pods into bin",
         "frame_id:2544",
         "frame_id:2573",
         "narration:return compartment into drawer of coffee machine",
         "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2695",
+        "narration:close coffee machine",
+        "frame_id:2774",
+        "frame_id:2815"
       ],
-      "frame_after_gap_start": 2768,
+      "frame_after_gap_start": 2885,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002646.jpg",
@@ -730,25 +730,7 @@
             266.88,
             215.79
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.56,
-      "end_time": 67.11,
-      "duration_sec": 0.55,
-      "event_history": [
-        "narration:close coffee machine",
-        "frame_id:2774",
-        "frame_id:2815",
-        "narration:turn on coffee machine",
-        "frame_id:2925",
-        "narration:pick up milk bottle",
-        "frame_id:3174",
-        "frame_id:3277"
-      ],
-      "frame_after_gap_start": 3378,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002767.jpg",
           "bbox": [
@@ -766,16 +748,24 @@
             217.49,
             258.65
           ]
-        },
-        {
-          "frame_path": "frame_0000002905.jpg",
-          "bbox": [
-            662.37,
-            597.56,
-            164.96,
-            241.25
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 68.02,
+      "end_time": 69.8,
+      "duration_sec": 1.78,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:2925",
+        "narration:pick up milk bottle",
+        "frame_id:3174",
+        "frame_id:3277",
+        "narration:close fridge",
+        "frame_id:3378"
+      ],
+      "frame_after_gap_start": 3451,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002946.jpg",
           "bbox": [
@@ -797,20 +787,20 @@
       ]
     },
     {
-      "start_time": 78.03999999999999,
-      "end_time": 89.68,
-      "duration_sec": 11.64,
+      "start_time": 90.6,
+      "end_time": 92.5,
+      "duration_sec": 1.9,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
         "narration:pick up stirrer",
         "frame_id:3518",
         "frame_id:3576",
         "narration:stir coffee",
         "frame_id:3689",
-        "frame_id:3831"
+        "frame_id:3831",
+        "narration:pick up water filter",
+        "frame_id:4507"
       ],
-      "frame_after_gap_start": 3952,
+      "frame_after_gap_start": 4580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003526.jpg",
@@ -847,24 +837,16 @@
             167.91,
             247.69
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 96.67,
-      "end_time": 98.28999999999999,
-      "duration_sec": 1.62,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
-        "narration:open tap",
-        "frame_id:4648",
-        "frame_id:4695",
-        "narration:close tap",
-        "frame_id:4823"
-      ],
-      "frame_after_gap_start": 4884,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004148.jpg",
+          "bbox": [
+            806.3,
+            619.97,
+            159.47,
+            238.76
+          ]
+        },
         {
           "frame_path": "frame_0000004496.jpg",
           "bbox": [
@@ -877,19 +859,45 @@
       ]
     },
     {
-      "start_time": 113.81,
-      "end_time": 114.11,
-      "duration_sec": 0.3,
+      "start_time": 100.66,
+      "end_time": 103.46000000000001,
+      "duration_sec": 2.8,
       "event_history": [
+        "narration:open tap",
+        "frame_id:4648",
+        "frame_id:4695",
+        "narration:close tap",
+        "frame_id:4823",
         "narration:put down water filter",
         "frame_id:4944",
-        "frame_id:5004",
+        "frame_id:5004"
+      ],
+      "frame_after_gap_start": 5083,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004873.jpg",
+          "bbox": [
+            659.25,
+            336.57,
+            144.21,
+            148.88
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 114.91,
+      "end_time": 115.00999999999999,
+      "duration_sec": 0.1,
+      "event_history": [
         "narration:turn off coffee machine",
         "frame_id:5195",
         "narration:turn off coffee machine",
-        "frame_id:5665"
+        "frame_id:5665",
+        "narration:stir coffee",
+        "frame_id:5725"
       ],
-      "frame_after_gap_start": 5741,
+      "frame_after_gap_start": 5796,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005192.jpg",
@@ -935,33 +943,33 @@
             158.6,
             241.59
           ]
+        },
+        {
+          "frame_path": "frame_0000005705.jpg",
+          "bbox": [
+            755.72,
+            671.97,
+            160.9,
+            113.6
+          ]
         }
       ]
     },
     {
-      "start_time": 117.6,
-      "end_time": 117.6,
+      "start_time": 119.05,
+      "end_time": 119.05,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:stir coffee",
-        "frame_id:5725",
         "narration:pick up mug",
         "frame_id:5764",
         "narration:stir coffee",
         "frame_id:5807",
-        "frame_id:5856"
+        "frame_id:5856",
+        "narration:open bin",
+        "frame_id:5933"
       ],
-      "frame_after_gap_start": 5880,
+      "frame_after_gap_start": 5953,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005751.jpg",
-          "bbox": [
-            705.16,
-            758.82,
-            182.05,
-            207.28
-          ]
-        },
         {
           "frame_path": "frame_0000005780.jpg",
           "bbox": [
@@ -988,27 +996,36 @@
             226.8,
             228.53
           ]
+        },
+        {
+          "frame_path": "frame_0000005899.jpg",
+          "bbox": [
+            565.19,
+            908.19,
+            226.31,
+            171.81
+          ]
         }
       ]
     }
   ],
   "15/bottle/milk bottle": [
     {
-      "start_time": 27.48,
-      "end_time": 29.8,
-      "duration_sec": 2.32,
+      "start_time": 32.91,
+      "end_time": 33.09,
+      "duration_sec": 0.18,
       "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
         "narration:open fridge",
         "frame_id:1248",
         "frame_id:1284",
         "narration:close fridge",
         "frame_id:1331",
-        "frame_id:1360"
+        "frame_id:1360",
+        "narration:pour milk into mug",
+        "frame_id:1528",
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1424,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001292.jpg",
@@ -1027,26 +1044,7 @@
             262.07,
             58.44
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 38.74,
-      "end_time": 39.1,
-      "duration_sec": 0.36,
-      "event_history": [
-        "narration:pour milk into mug",
-        "frame_id:1528",
-        "frame_id:1607",
-        "narration:close milk bottle",
-        "frame_id:1676",
-        "frame_id:1718",
-        "narration:turn off coffee machine",
-        "frame_id:1895",
-        "frame_id:1924"
-      ],
-      "frame_after_gap_start": 1987,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001521.jpg",
           "bbox": [
@@ -1064,7 +1062,25 @@
             492.03,
             327.04
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 39.84,
+      "end_time": 39.91,
+      "duration_sec": 0.07,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:1676",
+        "frame_id:1718",
+        "narration:turn off coffee machine",
+        "frame_id:1895",
+        "frame_id:1924",
+        "narration:put down milk bottle",
+        "frame_id:1973"
+      ],
+      "frame_after_gap_start": 2043,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001676.jpg",
           "bbox": [
@@ -1109,24 +1125,7 @@
             229.46,
             194.07
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 41.92,
-      "end_time": 42.19,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
-        "narration:pick up coffee pod",
-        "frame_id:2011",
-        "frame_id:2042",
-        "narration:open coffee machine",
-        "frame_id:2080"
-      ],
-      "frame_after_gap_start": 2146,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001967.jpg",
           "bbox": [
@@ -1135,7 +1134,24 @@
             279.85,
             212.16
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 42.59,
+      "end_time": 43.85,
+      "duration_sec": 1.26,
+      "event_history": [
+        "narration:pick up coffee pod",
+        "frame_id:2011",
+        "frame_id:2042",
+        "narration:open coffee machine",
+        "frame_id:2080",
+        "narration:put coffee pod into machine",
+        "frame_id:2119"
+      ],
+      "frame_after_gap_start": 2180,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002051.jpg",
           "bbox": [
@@ -1162,25 +1178,7 @@
             395.54,
             97.35
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 46.51,
-      "end_time": 49.71,
-      "duration_sec": 3.2,
-      "event_history": [
-        "narration:put coffee pod into machine",
-        "frame_id:2119",
-        "narration:move mug",
-        "frame_id:2211",
-        "frame_id:2247",
-        "narration:open coffee machine drawer",
-        "frame_id:2281",
-        "frame_id:2311"
-      ],
-      "frame_after_gap_start": 2376,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002117.jpg",
           "bbox": [
@@ -1189,7 +1187,25 @@
             406.8,
             85.25
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 50.6,
+      "end_time": 50.62,
+      "duration_sec": 0.02,
+      "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
+        "narration:open bin",
+        "frame_id:2508"
+      ],
+      "frame_after_gap_start": 2580,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -1225,24 +1241,34 @@
             436.67,
             219.3
           ]
+        },
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            25.22,
+            783.59,
+            464.01,
+            294.29
+          ]
         }
       ]
     },
     {
-      "start_time": 54.36,
-      "end_time": 55.07,
-      "duration_sec": 0.71,
+      "start_time": 56.7,
+      "end_time": 58.09,
+      "duration_sec": 1.39,
       "event_history": [
-        "narration:open bin",
-        "frame_id:2508",
         "narration:empty pods into bin",
         "frame_id:2544",
         "frame_id:2573",
         "narration:return compartment into drawer of coffee machine",
         "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2695",
+        "narration:close coffee machine",
+        "frame_id:2774",
+        "frame_id:2815"
       ],
-      "frame_after_gap_start": 2768,
+      "frame_after_gap_start": 2885,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002646.jpg",
@@ -1261,25 +1287,7 @@
             317.0,
             61.07
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.56,
-      "end_time": 67.11,
-      "duration_sec": 0.55,
-      "event_history": [
-        "narration:close coffee machine",
-        "frame_id:2774",
-        "frame_id:2815",
-        "narration:turn on coffee machine",
-        "frame_id:2925",
-        "narration:pick up milk bottle",
-        "frame_id:3174",
-        "frame_id:3277"
-      ],
-      "frame_after_gap_start": 3378,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002767.jpg",
           "bbox": [
@@ -1297,16 +1305,24 @@
             482.74,
             266.24
           ]
-        },
-        {
-          "frame_path": "frame_0000002905.jpg",
-          "bbox": [
-            0,
-            788.0,
-            448.44,
-            279.86
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 68.02,
+      "end_time": 119.05,
+      "duration_sec": 51.03,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:2925",
+        "narration:pick up milk bottle",
+        "frame_id:3174",
+        "frame_id:3277",
+        "narration:close fridge",
+        "frame_id:3378"
+      ],
+      "frame_after_gap_start": 3401,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002946.jpg",
           "bbox": [
@@ -1324,25 +1340,7 @@
             416.75,
             243.58
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.03999999999999,
-      "end_time": 117.6,
-      "duration_sec": 39.56,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
-        "narration:pick up stirrer",
-        "frame_id:3518",
-        "frame_id:3576",
-        "narration:stir coffee",
-        "frame_id:3689",
-        "frame_id:3831"
-      ],
-      "frame_after_gap_start": 3902,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003378.jpg",
           "bbox": [
@@ -1357,21 +1355,30 @@
   ],
   "21/container/pod container": [
     {
-      "start_time": 54.36,
-      "end_time": 117.6,
-      "duration_sec": 63.24,
+      "start_time": 50.6,
+      "end_time": 50.62,
+      "duration_sec": 0.02,
       "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
         "narration:open bin",
-        "frame_id:2508",
-        "narration:empty pods into bin",
-        "frame_id:2544",
-        "frame_id:2573",
-        "narration:return compartment into drawer of coffee machine",
-        "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2508"
       ],
-      "frame_after_gap_start": 2718,
+      "frame_after_gap_start": 2580,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            770.57,
+            685.84,
+            269.14,
+            256.65
+          ]
+        },
         {
           "frame_path": "frame_0000002505.jpg",
           "bbox": [
@@ -1380,7 +1387,26 @@
             214.84,
             179.66
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 56.7,
+      "end_time": 119.05,
+      "duration_sec": 62.35,
+      "event_history": [
+        "narration:empty pods into bin",
+        "frame_id:2544",
+        "frame_id:2573",
+        "narration:return compartment into drawer of coffee machine",
+        "frame_id:2647",
+        "frame_id:2695",
+        "narration:close coffee machine",
+        "frame_id:2774",
+        "frame_id:2815"
+      ],
+      "frame_after_gap_start": 2835,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002551.jpg",
           "bbox": [
@@ -1422,20 +1448,20 @@
   ],
   "36/bin/bin/garbage can/recycling bin": [
     {
-      "start_time": 54.36,
-      "end_time": 114.11,
-      "duration_sec": 59.75,
+      "start_time": 50.6,
+      "end_time": 50.62,
+      "duration_sec": 0.02,
       "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
         "narration:open bin",
-        "frame_id:2508",
-        "narration:empty pods into bin",
-        "frame_id:2544",
-        "frame_id:2573",
-        "narration:return compartment into drawer of coffee machine",
-        "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2508"
       ],
-      "frame_after_gap_start": 2768,
+      "frame_after_gap_start": 2580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002505.jpg",
@@ -1445,7 +1471,26 @@
             493.94,
             484.04
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 56.7,
+      "end_time": 115.00999999999999,
+      "duration_sec": 58.31,
+      "event_history": [
+        "narration:empty pods into bin",
+        "frame_id:2544",
+        "frame_id:2573",
+        "narration:return compartment into drawer of coffee machine",
+        "frame_id:2647",
+        "frame_id:2695",
+        "narration:close coffee machine",
+        "frame_id:2774",
+        "frame_id:2815"
+      ],
+      "frame_after_gap_start": 2885,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002551.jpg",
           "bbox": [
@@ -1467,19 +1512,19 @@
       ]
     },
     {
-      "start_time": 117.6,
-      "end_time": 117.6,
+      "start_time": 119.05,
+      "end_time": 119.05,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:stir coffee",
-        "frame_id:5725",
         "narration:pick up mug",
         "frame_id:5764",
         "narration:stir coffee",
         "frame_id:5807",
-        "frame_id:5856"
+        "frame_id:5856",
+        "narration:open bin",
+        "frame_id:5933"
       ],
-      "frame_after_gap_start": 5880,
+      "frame_after_gap_start": 5953,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005867.jpg",
@@ -1488,6 +1533,24 @@
             374.02,
             493.93,
             466.42
+          ]
+        },
+        {
+          "frame_path": "frame_0000005899.jpg",
+          "bbox": [
+            277.55,
+            415.55,
+            446.3,
+            440.93
+          ]
+        },
+        {
+          "frame_path": "frame_0000005932.jpg",
+          "bbox": [
+            543.53,
+            477.04,
+            445.92,
+            441.43
           ]
         }
       ]
@@ -1567,20 +1630,20 @@
       ]
     },
     {
-      "start_time": 18.89,
-      "end_time": 18.93,
-      "duration_sec": 0.04,
+      "start_time": 20.43,
+      "end_time": 24.59,
+      "duration_sec": 4.16,
       "event_history": [
         "narration:open coffee machine",
         "frame_id:658",
-        "narration:pour water from filter into coffee machine",
-        "frame_id:725",
-        "frame_id:832",
         "narration:close coffee machine lid",
         "frame_id:904",
-        "frame_id:931"
+        "frame_id:931",
+        "narration:put down water filter",
+        "frame_id:965",
+        "frame_id:1003"
       ],
-      "frame_after_gap_start": 995,
+      "frame_after_gap_start": 1072,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000651.jpg",
@@ -1617,26 +1680,7 @@
             461.06,
             543.09
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 27.48,
-      "end_time": 29.8,
-      "duration_sec": 2.32,
-      "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
-        "narration:open fridge",
-        "frame_id:1248",
-        "frame_id:1284",
-        "narration:close fridge",
-        "frame_id:1331",
-        "frame_id:1360"
-      ],
-      "frame_after_gap_start": 1424,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000955.jpg",
           "bbox": [
@@ -1658,21 +1702,21 @@
       ]
     },
     {
-      "start_time": 38.74,
-      "end_time": 39.1,
-      "duration_sec": 0.36,
+      "start_time": 32.91,
+      "end_time": 33.09,
+      "duration_sec": 0.18,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:1248",
+        "frame_id:1284",
+        "narration:close fridge",
+        "frame_id:1331",
+        "frame_id:1360",
         "narration:pour milk into mug",
         "frame_id:1528",
-        "frame_id:1607",
-        "narration:close milk bottle",
-        "frame_id:1676",
-        "frame_id:1718",
-        "narration:turn off coffee machine",
-        "frame_id:1895",
-        "frame_id:1924"
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1987,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001521.jpg",
@@ -1691,7 +1735,25 @@
             476.73,
             449.86
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 39.84,
+      "end_time": 39.91,
+      "duration_sec": 0.07,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:1676",
+        "frame_id:1718",
+        "narration:turn off coffee machine",
+        "frame_id:1895",
+        "frame_id:1924",
+        "narration:put down milk bottle",
+        "frame_id:1973"
+      ],
+      "frame_after_gap_start": 2043,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001676.jpg",
           "bbox": [
@@ -1736,24 +1798,7 @@
             497.62,
             587.45
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 41.92,
-      "end_time": 42.19,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
-        "narration:pick up coffee pod",
-        "frame_id:2011",
-        "frame_id:2042",
-        "narration:open coffee machine",
-        "frame_id:2080"
-      ],
-      "frame_after_gap_start": 2146,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001967.jpg",
           "bbox": [
@@ -1762,7 +1807,24 @@
             447.96,
             540.89
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 42.59,
+      "end_time": 43.85,
+      "duration_sec": 1.26,
+      "event_history": [
+        "narration:pick up coffee pod",
+        "frame_id:2011",
+        "frame_id:2042",
+        "narration:open coffee machine",
+        "frame_id:2080",
+        "narration:put coffee pod into machine",
+        "frame_id:2119"
+      ],
+      "frame_after_gap_start": 2180,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002005.jpg",
           "bbox": [
@@ -1807,25 +1869,7 @@
             466.98,
             568.33
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 46.51,
-      "end_time": 49.71,
-      "duration_sec": 3.2,
-      "event_history": [
-        "narration:put coffee pod into machine",
-        "frame_id:2119",
-        "narration:move mug",
-        "frame_id:2211",
-        "frame_id:2247",
-        "narration:open coffee machine drawer",
-        "frame_id:2281",
-        "frame_id:2311"
-      ],
-      "frame_after_gap_start": 2376,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002117.jpg",
           "bbox": [
@@ -1834,7 +1878,25 @@
             445.62,
             572.62
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 50.6,
+      "end_time": 50.62,
+      "duration_sec": 0.02,
+      "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
+        "narration:open bin",
+        "frame_id:2508"
+      ],
+      "frame_after_gap_start": 2580,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -1870,24 +1932,34 @@
             522.98,
             608.8
           ]
+        },
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            629.98,
+            304.74,
+            638.65,
+            673.36
+          ]
         }
       ]
     },
     {
-      "start_time": 54.36,
-      "end_time": 55.07,
-      "duration_sec": 0.71,
+      "start_time": 56.7,
+      "end_time": 58.09,
+      "duration_sec": 1.39,
       "event_history": [
-        "narration:open bin",
-        "frame_id:2508",
         "narration:empty pods into bin",
         "frame_id:2544",
         "frame_id:2573",
         "narration:return compartment into drawer of coffee machine",
         "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2695",
+        "narration:close coffee machine",
+        "frame_id:2774",
+        "frame_id:2815"
       ],
-      "frame_after_gap_start": 2768,
+      "frame_after_gap_start": 2885,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002646.jpg",
@@ -1906,25 +1978,7 @@
             575.47,
             845.18
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.56,
-      "end_time": 67.11,
-      "duration_sec": 0.55,
-      "event_history": [
-        "narration:close coffee machine",
-        "frame_id:2774",
-        "frame_id:2815",
-        "narration:turn on coffee machine",
-        "frame_id:2925",
-        "narration:pick up milk bottle",
-        "frame_id:3174",
-        "frame_id:3277"
-      ],
-      "frame_after_gap_start": 3378,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002767.jpg",
           "bbox": [
@@ -1942,16 +1996,24 @@
             522.91,
             489.89
           ]
-        },
-        {
-          "frame_path": "frame_0000002905.jpg",
-          "bbox": [
-            669.15,
-            201.03,
-            498.07,
-            550.84
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 68.02,
+      "end_time": 69.8,
+      "duration_sec": 1.78,
+      "event_history": [
+        "narration:turn on coffee machine",
+        "frame_id:2925",
+        "narration:pick up milk bottle",
+        "frame_id:3174",
+        "frame_id:3277",
+        "narration:close fridge",
+        "frame_id:3378"
+      ],
+      "frame_after_gap_start": 3451,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002946.jpg",
           "bbox": [
@@ -1973,20 +2035,20 @@
       ]
     },
     {
-      "start_time": 78.03999999999999,
-      "end_time": 89.68,
-      "duration_sec": 11.64,
+      "start_time": 90.6,
+      "end_time": 92.5,
+      "duration_sec": 1.9,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
         "narration:pick up stirrer",
         "frame_id:3518",
         "frame_id:3576",
         "narration:stir coffee",
         "frame_id:3689",
-        "frame_id:3831"
+        "frame_id:3831",
+        "narration:pick up water filter",
+        "frame_id:4507"
       ],
-      "frame_after_gap_start": 3952,
+      "frame_after_gap_start": 4580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003526.jpg",
@@ -2023,24 +2085,16 @@
             460.26,
             453.45
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 96.67,
-      "end_time": 98.28999999999999,
-      "duration_sec": 1.62,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
-        "narration:open tap",
-        "frame_id:4648",
-        "frame_id:4695",
-        "narration:close tap",
-        "frame_id:4823"
-      ],
-      "frame_after_gap_start": 4884,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004148.jpg",
+          "bbox": [
+            819.56,
+            292.64,
+            427.35,
+            481.41
+          ]
+        },
         {
           "frame_path": "frame_0000004496.jpg",
           "bbox": [
@@ -2053,19 +2107,45 @@
       ]
     },
     {
-      "start_time": 113.81,
-      "end_time": 114.11,
-      "duration_sec": 0.3,
+      "start_time": 100.66,
+      "end_time": 103.46000000000001,
+      "duration_sec": 2.8,
       "event_history": [
+        "narration:open tap",
+        "frame_id:4648",
+        "frame_id:4695",
+        "narration:close tap",
+        "frame_id:4823",
         "narration:put down water filter",
         "frame_id:4944",
-        "frame_id:5004",
+        "frame_id:5004"
+      ],
+      "frame_after_gap_start": 5083,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004873.jpg",
+          "bbox": [
+            440.08,
+            89.62,
+            300.05,
+            362.03
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 114.91,
+      "end_time": 115.00999999999999,
+      "duration_sec": 0.1,
+      "event_history": [
         "narration:turn off coffee machine",
         "frame_id:5195",
         "narration:turn off coffee machine",
-        "frame_id:5665"
+        "frame_id:5665",
+        "narration:stir coffee",
+        "frame_id:5725"
       ],
-      "frame_after_gap_start": 5741,
+      "frame_after_gap_start": 5796,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005192.jpg",
@@ -2111,33 +2191,33 @@
             404.94,
             460.83
           ]
+        },
+        {
+          "frame_path": "frame_0000005705.jpg",
+          "bbox": [
+            772.78,
+            375.86,
+            429.84,
+            417.74
+          ]
         }
       ]
     },
     {
-      "start_time": 117.6,
-      "end_time": 117.6,
+      "start_time": 119.05,
+      "end_time": 119.05,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:stir coffee",
-        "frame_id:5725",
         "narration:pick up mug",
         "frame_id:5764",
         "narration:stir coffee",
         "frame_id:5807",
-        "frame_id:5856"
+        "frame_id:5856",
+        "narration:open bin",
+        "frame_id:5933"
       ],
-      "frame_after_gap_start": 5880,
+      "frame_after_gap_start": 5953,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005751.jpg",
-          "bbox": [
-            833.16,
-            376.17,
-            469.9,
-            477.98
-          ]
-        },
         {
           "frame_path": "frame_0000005780.jpg",
           "bbox": [
@@ -2161,20 +2241,20 @@
   ],
   "59/coffee/coffee": [
     {
-      "start_time": 78.03999999999999,
-      "end_time": 89.68,
-      "duration_sec": 11.64,
+      "start_time": 90.6,
+      "end_time": 92.5,
+      "duration_sec": 1.9,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
         "narration:pick up stirrer",
         "frame_id:3518",
         "frame_id:3576",
         "narration:stir coffee",
         "frame_id:3689",
-        "frame_id:3831"
+        "frame_id:3831",
+        "narration:pick up water filter",
+        "frame_id:4507"
       ],
-      "frame_after_gap_start": 3952,
+      "frame_after_gap_start": 4580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003526.jpg",
@@ -2211,24 +2291,16 @@
             122.0,
             110.19
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 96.67,
-      "end_time": 98.28999999999999,
-      "duration_sec": 1.62,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
-        "narration:open tap",
-        "frame_id:4648",
-        "frame_id:4695",
-        "narration:close tap",
-        "frame_id:4823"
-      ],
-      "frame_after_gap_start": 4884,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004148.jpg",
+          "bbox": [
+            821.28,
+            660.31,
+            125.95,
+            109.89
+          ]
+        },
         {
           "frame_path": "frame_0000004496.jpg",
           "bbox": [
@@ -2241,19 +2313,45 @@
       ]
     },
     {
-      "start_time": 113.81,
-      "end_time": 114.11,
-      "duration_sec": 0.3,
+      "start_time": 100.66,
+      "end_time": 103.46000000000001,
+      "duration_sec": 2.8,
       "event_history": [
+        "narration:open tap",
+        "frame_id:4648",
+        "frame_id:4695",
+        "narration:close tap",
+        "frame_id:4823",
         "narration:put down water filter",
         "frame_id:4944",
-        "frame_id:5004",
+        "frame_id:5004"
+      ],
+      "frame_after_gap_start": 5083,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004873.jpg",
+          "bbox": [
+            688.64,
+            387.29,
+            44.88,
+            13.52
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 114.91,
+      "end_time": 115.00999999999999,
+      "duration_sec": 0.1,
+      "event_history": [
         "narration:turn off coffee machine",
         "frame_id:5195",
         "narration:turn off coffee machine",
-        "frame_id:5665"
+        "frame_id:5665",
+        "narration:stir coffee",
+        "frame_id:5725"
       ],
-      "frame_after_gap_start": 5741,
+      "frame_after_gap_start": 5796,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005192.jpg",
@@ -2299,33 +2397,33 @@
             130.33,
             117.8
           ]
+        },
+        {
+          "frame_path": "frame_0000005705.jpg",
+          "bbox": [
+            766.43,
+            706.22,
+            145.81,
+            99.61
+          ]
         }
       ]
     },
     {
-      "start_time": 117.6,
-      "end_time": 117.6,
+      "start_time": 119.05,
+      "end_time": 119.05,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:stir coffee",
-        "frame_id:5725",
         "narration:pick up mug",
         "frame_id:5764",
         "narration:stir coffee",
         "frame_id:5807",
-        "frame_id:5856"
+        "frame_id:5856",
+        "narration:open bin",
+        "frame_id:5933"
       ],
-      "frame_after_gap_start": 5880,
+      "frame_after_gap_start": 5953,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005751.jpg",
-          "bbox": [
-            721.82,
-            783.72,
-            146.36,
-            156.82
-          ]
-        },
         {
           "frame_path": "frame_0000005780.jpg",
           "bbox": [
@@ -2352,25 +2450,34 @@
             172.99,
             187.76
           ]
+        },
+        {
+          "frame_path": "frame_0000005899.jpg",
+          "bbox": [
+            596.82,
+            929.17,
+            178.24,
+            150.83
+          ]
         }
       ]
     }
   ],
   "59/coffee/coffee pod": [
     {
-      "start_time": 41.92,
-      "end_time": 49.71,
-      "duration_sec": 7.79,
+      "start_time": 42.59,
+      "end_time": 43.85,
+      "duration_sec": 1.26,
       "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
         "narration:pick up coffee pod",
         "frame_id:2011",
         "frame_id:2042",
         "narration:open coffee machine",
-        "frame_id:2080"
+        "frame_id:2080",
+        "narration:put coffee pod into machine",
+        "frame_id:2119"
       ],
-      "frame_after_gap_start": 2146,
+      "frame_after_gap_start": 2180,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002005.jpg",
@@ -2402,21 +2509,30 @@
       ]
     },
     {
-      "start_time": 54.36,
-      "end_time": 117.6,
-      "duration_sec": 63.24,
+      "start_time": 50.6,
+      "end_time": 119.05,
+      "duration_sec": 68.45,
       "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
         "narration:open bin",
-        "frame_id:2508",
-        "narration:empty pods into bin",
-        "frame_id:2544",
-        "frame_id:2573",
-        "narration:return compartment into drawer of coffee machine",
-        "frame_id:2647",
-        "frame_id:2695"
+        "frame_id:2508"
       ],
-      "frame_after_gap_start": 2718,
+      "frame_after_gap_start": 2530,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            800.05,
+            723.6,
+            211.11,
+            191.1
+          ]
+        },
         {
           "frame_path": "frame_0000002505.jpg",
           "bbox": [
@@ -2431,20 +2547,20 @@
   ],
   "6/lid/coffee machine lid": [
     {
-      "start_time": 18.89,
-      "end_time": 18.93,
-      "duration_sec": 0.04,
+      "start_time": 20.43,
+      "end_time": 119.05,
+      "duration_sec": 98.62,
       "event_history": [
         "narration:open coffee machine",
         "frame_id:658",
-        "narration:pour water from filter into coffee machine",
-        "frame_id:725",
-        "frame_id:832",
         "narration:close coffee machine lid",
         "frame_id:904",
-        "frame_id:931"
+        "frame_id:931",
+        "narration:put down water filter",
+        "frame_id:965",
+        "frame_id:1003"
       ],
-      "frame_after_gap_start": 995,
+      "frame_after_gap_start": 1022,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000651.jpg",
@@ -2481,26 +2597,7 @@
             122.31,
             146.22
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 27.48,
-      "end_time": 117.6,
-      "duration_sec": 90.12,
-      "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
-        "narration:open fridge",
-        "frame_id:1248",
-        "frame_id:1284",
-        "narration:close fridge",
-        "frame_id:1331",
-        "frame_id:1360"
-      ],
-      "frame_after_gap_start": 1374,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000955.jpg",
           "bbox": [
@@ -2524,19 +2621,20 @@
   ],
   "63/sink/sink": [
     {
-      "start_time": 96.67,
-      "end_time": 117.6,
-      "duration_sec": 20.93,
+      "start_time": 100.66,
+      "end_time": 119.05,
+      "duration_sec": 18.39,
       "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
         "narration:open tap",
         "frame_id:4648",
         "frame_id:4695",
         "narration:close tap",
-        "frame_id:4823"
+        "frame_id:4823",
+        "narration:put down water filter",
+        "frame_id:4944",
+        "frame_id:5004"
       ],
-      "frame_after_gap_start": 4834,
+      "frame_after_gap_start": 5033,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004663.jpg",
@@ -2570,21 +2668,21 @@
   ],
   "64/milk/milk": [
     {
-      "start_time": 38.74,
-      "end_time": 39.1,
-      "duration_sec": 0.36,
+      "start_time": 32.91,
+      "end_time": 33.09,
+      "duration_sec": 0.18,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:1248",
+        "frame_id:1284",
+        "narration:close fridge",
+        "frame_id:1331",
+        "frame_id:1360",
         "narration:pour milk into mug",
         "frame_id:1528",
-        "frame_id:1607",
-        "narration:close milk bottle",
-        "frame_id:1676",
-        "frame_id:1718",
-        "narration:turn off coffee machine",
-        "frame_id:1895",
-        "frame_id:1924"
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1987,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001626.jpg",
@@ -2594,7 +2692,25 @@
             135.97,
             109.38
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 39.84,
+      "end_time": 119.05,
+      "duration_sec": 79.21,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:1676",
+        "frame_id:1718",
+        "narration:turn off coffee machine",
+        "frame_id:1895",
+        "frame_id:1924",
+        "narration:put down milk bottle",
+        "frame_id:1973"
+      ],
+      "frame_after_gap_start": 1993,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001676.jpg",
           "bbox": [
@@ -2639,24 +2755,7 @@
             111.08,
             86.34
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 41.92,
-      "end_time": 117.6,
-      "duration_sec": 75.68,
-      "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
-        "narration:pick up coffee pod",
-        "frame_id:2011",
-        "frame_id:2042",
-        "narration:open coffee machine",
-        "frame_id:2080"
-      ],
-      "frame_after_gap_start": 2096,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001967.jpg",
           "bbox": [
@@ -2671,20 +2770,20 @@
   ],
   "66/jug/water filter": [
     {
-      "start_time": 18.89,
-      "end_time": 18.93,
-      "duration_sec": 0.04,
+      "start_time": 20.43,
+      "end_time": 24.59,
+      "duration_sec": 4.16,
       "event_history": [
         "narration:open coffee machine",
         "frame_id:658",
-        "narration:pour water from filter into coffee machine",
-        "frame_id:725",
-        "frame_id:832",
         "narration:close coffee machine lid",
         "frame_id:904",
-        "frame_id:931"
+        "frame_id:931",
+        "narration:put down water filter",
+        "frame_id:965",
+        "frame_id:1003"
       ],
-      "frame_after_gap_start": 995,
+      "frame_after_gap_start": 1072,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000651.jpg",
@@ -2721,26 +2820,7 @@
             740.56,
             510.45
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 27.48,
-      "end_time": 29.8,
-      "duration_sec": 2.32,
-      "event_history": [
-        "narration:put down water filter",
-        "frame_id:965",
-        "frame_id:1003",
-        "narration:open fridge",
-        "frame_id:1248",
-        "frame_id:1284",
-        "narration:close fridge",
-        "frame_id:1331",
-        "frame_id:1360"
-      ],
-      "frame_after_gap_start": 1424,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000955.jpg",
           "bbox": [
@@ -2762,21 +2842,21 @@
       ]
     },
     {
-      "start_time": 38.74,
-      "end_time": 39.1,
-      "duration_sec": 0.36,
+      "start_time": 32.91,
+      "end_time": 33.09,
+      "duration_sec": 0.18,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:1248",
+        "frame_id:1284",
+        "narration:close fridge",
+        "frame_id:1331",
+        "frame_id:1360",
         "narration:pour milk into mug",
         "frame_id:1528",
-        "frame_id:1607",
-        "narration:close milk bottle",
-        "frame_id:1676",
-        "frame_id:1718",
-        "narration:turn off coffee machine",
-        "frame_id:1895",
-        "frame_id:1924"
+        "frame_id:1607"
       ],
-      "frame_after_gap_start": 1987,
+      "frame_after_gap_start": 1696,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001521.jpg",
@@ -2795,7 +2875,25 @@
             530.92,
             638.86
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 39.84,
+      "end_time": 39.91,
+      "duration_sec": 0.07,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:1676",
+        "frame_id:1718",
+        "narration:turn off coffee machine",
+        "frame_id:1895",
+        "frame_id:1924",
+        "narration:put down milk bottle",
+        "frame_id:1973"
+      ],
+      "frame_after_gap_start": 2043,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001676.jpg",
           "bbox": [
@@ -2840,24 +2938,7 @@
             440.52,
             546.57
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 41.92,
-      "end_time": 42.19,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:put down milk bottle",
-        "frame_id:1973",
-        "narration:pick up coffee pod",
-        "frame_id:2011",
-        "frame_id:2042",
-        "narration:open coffee machine",
-        "frame_id:2080"
-      ],
-      "frame_after_gap_start": 2146,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001967.jpg",
           "bbox": [
@@ -2866,7 +2947,24 @@
             498.16,
             607.88
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 42.59,
+      "end_time": 43.85,
+      "duration_sec": 1.26,
+      "event_history": [
+        "narration:pick up coffee pod",
+        "frame_id:2011",
+        "frame_id:2042",
+        "narration:open coffee machine",
+        "frame_id:2080",
+        "narration:put coffee pod into machine",
+        "frame_id:2119"
+      ],
+      "frame_after_gap_start": 2180,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002005.jpg",
           "bbox": [
@@ -2911,25 +3009,7 @@
             534.92,
             533.38
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 46.51,
-      "end_time": 55.07,
-      "duration_sec": 8.56,
-      "event_history": [
-        "narration:put coffee pod into machine",
-        "frame_id:2119",
-        "narration:move mug",
-        "frame_id:2211",
-        "frame_id:2247",
-        "narration:open coffee machine drawer",
-        "frame_id:2281",
-        "frame_id:2311"
-      ],
-      "frame_after_gap_start": 2376,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002117.jpg",
           "bbox": [
@@ -2938,7 +3018,25 @@
             531.66,
             508.75
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 50.6,
+      "end_time": 58.09,
+      "duration_sec": 7.49,
+      "event_history": [
+        "narration:move mug",
+        "frame_id:2211",
+        "frame_id:2247",
+        "narration:open coffee machine drawer",
+        "frame_id:2281",
+        "frame_id:2311",
+        "narration:open bin",
+        "frame_id:2508"
+      ],
+      "frame_after_gap_start": 2580,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -2974,34 +3072,33 @@
             536.72,
             614.13
           ]
+        },
+        {
+          "frame_path": "frame_0000002403.jpg",
+          "bbox": [
+            93.04,
+            268.66,
+            576.78,
+            541.35
+          ]
         }
       ]
     },
     {
-      "start_time": 66.56,
-      "end_time": 67.11,
-      "duration_sec": 0.55,
+      "start_time": 68.02,
+      "end_time": 69.8,
+      "duration_sec": 1.78,
       "event_history": [
-        "narration:close coffee machine",
-        "frame_id:2774",
-        "frame_id:2815",
         "narration:turn on coffee machine",
         "frame_id:2925",
         "narration:pick up milk bottle",
         "frame_id:3174",
-        "frame_id:3277"
+        "frame_id:3277",
+        "narration:close fridge",
+        "frame_id:3378"
       ],
-      "frame_after_gap_start": 3378,
+      "frame_after_gap_start": 3451,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000002905.jpg",
-          "bbox": [
-            0.1,
-            239.1,
-            594.44,
-            568.57
-          ]
-        },
         {
           "frame_path": "frame_0000002946.jpg",
           "bbox": [
@@ -3023,20 +3120,20 @@
       ]
     },
     {
-      "start_time": 78.03999999999999,
-      "end_time": 89.68,
-      "duration_sec": 11.64,
+      "start_time": 90.6,
+      "end_time": 92.5,
+      "duration_sec": 1.9,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:3378",
         "narration:pick up stirrer",
         "frame_id:3518",
         "frame_id:3576",
         "narration:stir coffee",
         "frame_id:3689",
-        "frame_id:3831"
+        "frame_id:3831",
+        "narration:pick up water filter",
+        "frame_id:4507"
       ],
-      "frame_after_gap_start": 3952,
+      "frame_after_gap_start": 4580,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003526.jpg",
@@ -3073,24 +3170,16 @@
             552.75,
             611.99
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 96.67,
-      "end_time": 98.28999999999999,
-      "duration_sec": 1.62,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:4507",
-        "narration:open tap",
-        "frame_id:4648",
-        "frame_id:4695",
-        "narration:close tap",
-        "frame_id:4823"
-      ],
-      "frame_after_gap_start": 4884,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004148.jpg",
+          "bbox": [
+            211.48,
+            272.35,
+            522.59,
+            569.27
+          ]
+        },
         {
           "frame_path": "frame_0000004496.jpg",
           "bbox": [
@@ -3099,7 +3188,25 @@
             491.82,
             550.57
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 100.66,
+      "end_time": 119.05,
+      "duration_sec": 18.39,
+      "event_history": [
+        "narration:open tap",
+        "frame_id:4648",
+        "frame_id:4695",
+        "narration:close tap",
+        "frame_id:4823",
+        "narration:put down water filter",
+        "frame_id:4944",
+        "frame_id:5004"
+      ],
+      "frame_after_gap_start": 5033,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004663.jpg",
           "bbox": [
@@ -3126,24 +3233,16 @@
             405.11,
             381.6
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 113.81,
-      "end_time": 117.6,
-      "duration_sec": 3.79,
-      "event_history": [
-        "narration:put down water filter",
-        "frame_id:4944",
-        "frame_id:5004",
-        "narration:turn off coffee machine",
-        "frame_id:5195",
-        "narration:turn off coffee machine",
-        "frame_id:5665"
-      ],
-      "frame_after_gap_start": 5691,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000004873.jpg",
+          "bbox": [
+            0.22,
+            597.03,
+            865.41,
+            482.97
+          ]
+        },
         {
           "frame_path": "frame_0000004938.jpg",
           "bbox": [

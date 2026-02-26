@@ -1,20 +1,21 @@
 {
   "1/spoon/wooden stirrer": [
     {
-      "start_time": 73.74,
-      "end_time": 93.62,
-      "duration_sec": 19.88,
+      "start_time": 79.24,
+      "end_time": 95.74000000000001,
+      "duration_sec": 16.5,
       "event_history": [
-        "narration:press button",
-        "frame_id:3448",
         "narration:pick up wooden stirrer from box",
         "frame_id:3503",
         "frame_id:3538",
         "narration:stir coffee in mug using wooden stirrer",
         "frame_id:3611",
-        "frame_id:3662"
+        "frame_id:3662",
+        "narration:pick knife from stand",
+        "frame_id:3920",
+        "frame_id:3948"
       ],
-      "frame_after_gap_start": 3737,
+      "frame_after_gap_start": 4012,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003601.jpg",
@@ -33,23 +34,32 @@
             217.8,
             487.21
           ]
+        },
+        {
+          "frame_path": "frame_0000003788.jpg",
+          "bbox": [
+            267.5,
+            647.95,
+            25.92,
+            13.66
+          ]
         }
       ]
     },
     {
-      "start_time": 104.75999999999999,
-      "end_time": 107.65,
-      "duration_sec": 2.89,
+      "start_time": 108.28,
+      "end_time": 108.53,
+      "duration_sec": 0.25,
       "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
         "narration:pick up knife",
         "frame_id:4810",
         "narration:pick up mug",
         "frame_id:5180",
-        "frame_id:5219"
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 5288,
+      "frame_after_gap_start": 5464,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005205.jpg",
@@ -61,6 +71,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000005299.jpg",
+          "bbox": [
+            961.34,
+            879.87,
+            19.16,
+            10.58
+          ]
+        },
+        {
           "frame_path": "frame_0000005180.jpg",
           "bbox": [
             329.72,
@@ -68,23 +87,32 @@
             442.67,
             308.78
           ]
+        },
+        {
+          "frame_path": "frame_0000005394.jpg",
+          "bbox": [
+            727.85,
+            815.71,
+            239.47,
+            123.93
+          ]
         }
       ]
     },
     {
-      "start_time": 111.81,
-      "end_time": 111.91,
-      "duration_sec": 0.1,
+      "start_time": 112.85,
+      "end_time": 258.46,
+      "duration_sec": 145.61,
       "event_history": [
-        "narration:open bin",
-        "frame_id:5398",
         "narration:wooden stirrer falls on floor",
         "frame_id:5448",
         "narration:pick up wooden stirrer from floor",
         "frame_id:5521",
-        "frame_id:5567"
+        "frame_id:5567",
+        "narration:throw wooden stirrer in bin",
+        "frame_id:5619"
       ],
-      "frame_after_gap_start": 5641,
+      "frame_after_gap_start": 5643,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005536.jpg",
@@ -105,15 +133,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000005394.jpg",
-          "bbox": [
-            727.85,
-            815.71,
-            239.47,
-            123.93
-          ]
-        },
-        {
           "frame_path": "frame_0000005463.jpg",
           "bbox": [
             1058.49,
@@ -121,23 +140,7 @@
             37.19,
             139.64
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 118.35,
-      "end_time": 255.71,
-      "duration_sec": 137.36,
-      "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
-        "narration:put down mug",
-        "frame_id:5751",
-        "narration:open fridge",
-        "frame_id:5893"
-      ],
-      "frame_after_gap_start": 5918,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005613.jpg",
           "bbox": [
@@ -152,20 +155,47 @@
   ],
   "10/glass/glass": [
     {
-      "start_time": 158.32999999999998,
-      "end_time": 158.43,
-      "duration_sec": 0.1,
+      "start_time": 148.04,
+      "end_time": 155.57999999999998,
+      "duration_sec": 7.54,
       "event_history": [
+        "narration:pick up plate from cupboard",
+        "frame_id:6994",
+        "frame_id:7032",
+        "narration:close cupboard",
+        "frame_id:7160",
         "narration:move water filter",
         "frame_id:7345",
-        "frame_id:7384",
+        "frame_id:7384"
+      ],
+      "frame_after_gap_start": 7452,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007355.jpg",
+          "bbox": [
+            970.05,
+            394.34,
+            127.88,
+            180.19
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 160.69,
+      "end_time": 160.77,
+      "duration_sec": 0.08,
+      "event_history": [
         "narration:pick up glass from drainer",
         "frame_id:7803",
         "frame_id:7854",
         "narration:pick up water filter",
-        "frame_id:7901"
+        "frame_id:7901",
+        "narration:pour water from water filter into glass",
+        "frame_id:7950",
+        "frame_id:8006"
       ],
-      "frame_after_gap_start": 7967,
+      "frame_after_gap_start": 8085,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007805.jpg",
@@ -195,33 +225,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000007355.jpg",
-          "bbox": [
-            970.05,
-            394.34,
-            127.88,
-            180.19
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 168.21,
-      "end_time": 184.13,
-      "duration_sec": 15.92,
-      "event_history": [
-        "narration:pour water from water filter into glass",
-        "frame_id:7950",
-        "frame_id:8006",
-        "narration:put down water filter",
-        "frame_id:8057",
-        "narration:put down glass",
-        "frame_id:8341",
-        "frame_id:8388"
-      ],
-      "frame_after_gap_start": 8461,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000007951.jpg",
           "bbox": [
             975.36,
@@ -239,6 +242,33 @@
             227.94
           ]
         },
+        {
+          "frame_path": "frame_0000007976.jpg",
+          "bbox": [
+            973.28,
+            711.92,
+            193.28,
+            232.64
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 186.81,
+      "end_time": 205.36,
+      "duration_sec": 18.55,
+      "event_history": [
+        "narration:put down water filter",
+        "frame_id:8057",
+        "narration:put down glass",
+        "frame_id:8341",
+        "frame_id:8388",
+        "narration:pick up knife",
+        "frame_id:9240",
+        "frame_id:9307"
+      ],
+      "frame_after_gap_start": 9391,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008040.jpg",
           "bbox": [
@@ -267,34 +297,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000007976.jpg",
-          "bbox": [
-            973.28,
-            711.92,
-            193.28,
-            232.64
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 208.3,
-      "end_time": 255.71,
-      "duration_sec": 47.41,
-      "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
-        "narration:press button on toaster to release bagel",
-        "frame_id:10286",
-        "frame_id:10323",
-        "narration:stab bagel using knife",
-        "frame_id:10370",
-        "frame_id:10401"
-      ],
-      "frame_after_gap_start": 10415,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000009226.jpg",
           "bbox": [
             869.21,
@@ -311,7 +313,26 @@
             141.14,
             177.67
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 211.63,
+      "end_time": 258.46,
+      "duration_sec": 46.83,
+      "event_history": [
+        "narration:press button on toaster to release bagel",
+        "frame_id:10286",
+        "frame_id:10323",
+        "narration:stab bagel using knife",
+        "frame_id:10370",
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
+      ],
+      "frame_after_gap_start": 10582,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010292.jpg",
           "bbox": [
@@ -336,8 +357,8 @@
   "110/rack:drying/drainer": [
     {
       "start_time": 6.7,
-      "end_time": 146.54,
-      "duration_sec": 139.84,
+      "end_time": 155.57999999999998,
+      "duration_sec": 148.88,
       "event_history": [
         "narration:pick up mug from drainer",
         "frame_id:223",
@@ -396,20 +417,20 @@
       ]
     },
     {
-      "start_time": 158.32999999999998,
-      "end_time": 158.43,
-      "duration_sec": 0.1,
+      "start_time": 160.69,
+      "end_time": 160.77,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:move water filter",
-        "frame_id:7345",
-        "frame_id:7384",
         "narration:pick up glass from drainer",
         "frame_id:7803",
         "frame_id:7854",
         "narration:pick up water filter",
-        "frame_id:7901"
+        "frame_id:7901",
+        "narration:pour water from water filter into glass",
+        "frame_id:7950",
+        "frame_id:8006"
       ],
-      "frame_after_gap_start": 7967,
+      "frame_after_gap_start": 8085,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007805.jpg",
@@ -423,20 +444,20 @@
       ]
     },
     {
-      "start_time": 168.21,
-      "end_time": 255.71,
-      "duration_sec": 87.5,
+      "start_time": 186.81,
+      "end_time": 258.46,
+      "duration_sec": 71.65,
       "event_history": [
-        "narration:pour water from water filter into glass",
-        "frame_id:7950",
-        "frame_id:8006",
         "narration:put down water filter",
         "frame_id:8057",
         "narration:put down glass",
         "frame_id:8341",
-        "frame_id:8388"
+        "frame_id:8388",
+        "narration:pick up knife",
+        "frame_id:9240",
+        "frame_id:9307"
       ],
-      "frame_after_gap_start": 8411,
+      "frame_after_gap_start": 9341,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008075.jpg",
@@ -452,18 +473,20 @@
   ],
   "115/spreads/jam": [
     {
-      "start_time": 132.03,
-      "end_time": 184.13,
-      "duration_sec": 52.1,
+      "start_time": 127.6,
+      "end_time": 128.91,
+      "duration_sec": 1.31,
       "event_history": [
+        "narration:put down knife",
+        "frame_id:6225",
+        "frame_id:6268",
+        "narration:open jam jar",
+        "frame_id:6309",
+        "frame_id:6338",
         "narration:put down lid",
-        "frame_id:6367",
-        "narration:pick up mug",
-        "frame_id:6469",
-        "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6367"
       ],
-      "frame_after_gap_start": 6652,
+      "frame_after_gap_start": 6430,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006359.jpg",
@@ -473,25 +496,23 @@
             129.88,
             139.35
           ]
-        },
-        {
-          "frame_path": "frame_0000006382.jpg",
-          "bbox": [
-            948.99,
-            824.6,
-            125.33,
-            139.44
-          ]
-        },
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            1165.7,
-            849.59,
-            127.3,
-            130.19
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 132.81,
+      "end_time": 205.36,
+      "duration_sec": 72.55,
+      "event_history": [
+        "narration:pick up mug",
+        "frame_id:6469",
+        "narration:move lid",
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
+      ],
+      "frame_after_gap_start": 6691,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -513,21 +534,21 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
         "narration:press button on toaster to release bagel",
         "frame_id:10286",
         "frame_id:10323",
         "narration:stab bagel using knife",
         "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 10632,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010401.jpg",
@@ -537,26 +558,7 @@
             131.0,
             84.85
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
@@ -574,7 +576,26 @@
             135.82,
             141.86
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -603,40 +624,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010701.jpg",
-          "bbox": [
-            982.7,
-            402.0,
-            165.89,
-            341.6
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 229.51,
-      "end_time": 230.52,
-      "duration_sec": 1.01,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
-        "narration:pick up bagel from chopping board",
-        "frame_id:11177",
-        "frame_id:11278",
-        "narration:stab bagel using knife",
-        "frame_id:11383",
-        "frame_id:11445"
-      ],
-      "frame_after_gap_start": 11526,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010926.jpg",
           "bbox": [
             891.4,
             490.62,
             231.01,
             283.83
+          ]
+        },
+        {
+          "frame_path": "frame_0000010701.jpg",
+          "bbox": [
+            982.7,
+            402.0,
+            165.89,
+            341.6
           ]
         },
         {
@@ -647,7 +649,26 @@
             208.56,
             311.04
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 231.82,
+      "end_time": 234.66,
+      "duration_sec": 2.84,
+      "event_history": [
+        "narration:pick up bagel from chopping board",
+        "frame_id:11177",
+        "frame_id:11278",
+        "narration:stab bagel using knife",
+        "frame_id:11383",
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
+      ],
+      "frame_after_gap_start": 11641,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011151.jpg",
           "bbox": [
@@ -683,26 +704,7 @@
             531.89,
             239.81
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 238.09,
-      "end_time": 238.17000000000002,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:11542",
-        "frame_id:11575",
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11746",
-        "frame_id:11775",
-        "narration:spread jam on bagel using knife",
-        "frame_id:11820",
-        "frame_id:11877"
-      ],
-      "frame_after_gap_start": 11955,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011540.jpg",
           "bbox": [
@@ -720,16 +722,26 @@
             649.06,
             196.98
           ]
-        },
-        {
-          "frame_path": "frame_0000011663.jpg",
-          "bbox": [
-            341.14,
-            291.73,
-            798.0,
-            319.58
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 239.21,
+      "end_time": 239.57,
+      "duration_sec": 0.36,
+      "event_history": [
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11746",
+        "frame_id:11775",
+        "narration:spread jam on bagel using knife",
+        "frame_id:11820",
+        "frame_id:11877",
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11921",
+        "frame_id:11948"
+      ],
+      "frame_after_gap_start": 12011,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011751.jpg",
           "bbox": [
@@ -756,25 +768,7 @@
             807.59,
             351.62
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
-      "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
-        "narration:spread jam on bagel using knife",
-        "frame_id:12074",
-        "frame_id:12266",
-        "narration:pick up bagel from chopping board",
-        "frame_id:12375"
-      ],
-      "frame_after_gap_start": 12434,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011926.jpg",
           "bbox": [
@@ -792,7 +786,24 @@
             790.94,
             274.24
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
+      "event_history": [
+        "narration:spread jam on bagel using knife",
+        "frame_id:12074",
+        "frame_id:12266",
+        "narration:pick up bagel from chopping board",
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
+      ],
+      "frame_after_gap_start": 12515,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012051.jpg",
           "bbox": [
@@ -819,24 +830,25 @@
             759.8,
             339.76
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            524.64,
+            472.37,
+            705.85,
+            228.57
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            588.28,
+            523.25,
+            672.53,
+            228.84
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -854,7 +866,25 @@
             657.95,
             283.98
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 258.46,
+      "duration_sec": 4.81,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12683,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -904,20 +934,20 @@
       ]
     },
     {
-      "start_time": 49.63,
-      "end_time": 50.78,
-      "duration_sec": 1.15,
+      "start_time": 50.89,
+      "end_time": 51.9,
+      "duration_sec": 1.01,
       "event_history": [
         "narration:open drawer of fridge",
         "frame_id:2273",
         "narration:pick up oranges mesh",
         "frame_id:2340",
         "frame_id:2388",
-        "narration:put down oranges",
-        "frame_id:2430",
-        "frame_id:2464"
+        "narration:pick up orange",
+        "frame_id:2481",
+        "frame_id:2523"
       ],
-      "frame_after_gap_start": 2532,
+      "frame_after_gap_start": 2595,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002253.jpg",
@@ -954,22 +984,41 @@
             1920,
             1080
           ]
+        },
+        {
+          "frame_path": "frame_0000002487.jpg",
+          "bbox": [
+            654.16,
+            0,
+            1265.84,
+            1080
+          ]
+        },
+        {
+          "frame_path": "frame_0000002521.jpg",
+          "bbox": [
+            259.61,
+            0,
+            1660.39,
+            1080
+          ]
         }
       ]
     },
     {
-      "start_time": 53.75,
-      "end_time": 53.92,
-      "duration_sec": 0.17,
+      "start_time": 55.0,
+      "end_time": 64.05,
+      "duration_sec": 9.05,
       "event_history": [
-        "narration:put down orange",
-        "frame_id:2560",
         "narration:close drawer",
         "frame_id:2620",
         "narration:pick up milk from fridges door",
-        "frame_id:2674"
+        "frame_id:2674",
+        "narration:close fridge",
+        "frame_id:2709",
+        "frame_id:2737"
       ],
-      "frame_after_gap_start": 2738,
+      "frame_after_gap_start": 2800,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002613.jpg",
@@ -997,25 +1046,7 @@
             916.2,
             1080
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
-        "narration:open milk",
-        "frame_id:2868",
-        "narration:pour milk from bottle into mug",
-        "frame_id:2932",
-        "frame_id:2979"
-      ],
-      "frame_after_gap_start": 3053,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002700.jpg",
           "bbox": [
@@ -1046,29 +1077,19 @@
       ]
     },
     {
-      "start_time": 66.57,
-      "end_time": 111.91,
-      "duration_sec": 45.34,
+      "start_time": 69.25,
+      "end_time": 114.6,
+      "duration_sec": 45.35,
       "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
         "narration:open fridge",
         "frame_id:3219",
         "narration:close fridge",
-        "frame_id:3311"
+        "frame_id:3311",
+        "narration:press button",
+        "frame_id:3448"
       ],
-      "frame_after_gap_start": 3379,
+      "frame_after_gap_start": 3513,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000003201.jpg",
-          "bbox": [
-            134.01,
-            0,
-            1056.7,
-            1080
-          ]
-        },
         {
           "frame_path": "frame_0000003236.jpg",
           "bbox": [
@@ -1099,18 +1120,19 @@
       ]
     },
     {
-      "start_time": 118.35,
-      "end_time": 118.52000000000001,
-      "duration_sec": 0.17,
+      "start_time": 119.87,
+      "end_time": 120.08,
+      "duration_sec": 0.21,
       "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
         "narration:put down mug",
         "frame_id:5751",
         "narration:open fridge",
-        "frame_id:5893"
+        "frame_id:5893",
+        "narration:pick up jar of jam",
+        "frame_id:5943",
+        "frame_id:5977"
       ],
-      "frame_after_gap_start": 5968,
+      "frame_after_gap_start": 6044,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005905.jpg",
@@ -1121,32 +1143,6 @@
             1080
           ]
         },
-        {
-          "frame_path": "frame_0000005876.jpg",
-          "bbox": [
-            0,
-            0,
-            1346.12,
-            1080
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 121.78,
-      "end_time": 122.17,
-      "duration_sec": 0.39,
-      "event_history": [
-        "narration:pick up jar of jam",
-        "frame_id:5943",
-        "frame_id:5977",
-        "narration:close fridge",
-        "frame_id:6018",
-        "narration:open drawer",
-        "frame_id:6068"
-      ],
-      "frame_after_gap_start": 6139,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005946.jpg",
           "bbox": [
@@ -1166,14 +1162,30 @@
           ]
         },
         {
-          "frame_path": "frame_0000006001.jpg",
+          "frame_path": "frame_0000005876.jpg",
           "bbox": [
-            248.9,
             0,
-            1671.1,
+            0,
+            1346.12,
             1080
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 123.08,
+      "end_time": 249.44,
+      "duration_sec": 126.36,
+      "event_history": [
+        "narration:close fridge",
+        "frame_id:6018",
+        "narration:open drawer",
+        "frame_id:6068",
+        "narration:pick up knife",
+        "frame_id:6131"
+      ],
+      "frame_after_gap_start": 6204,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006051.jpg",
           "bbox": [
@@ -1181,6 +1193,15 @@
             0,
             802.67,
             768.79
+          ]
+        },
+        {
+          "frame_path": "frame_0000006121.jpg",
+          "bbox": [
+            1560.06,
+            0,
+            359.94,
+            842.7
           ]
         },
         {
@@ -1195,47 +1216,20 @@
       ]
     },
     {
-      "start_time": 127.05,
-      "end_time": 251.63,
-      "duration_sec": 124.58,
+      "start_time": 253.65,
+      "end_time": 253.75,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:6131",
-        "narration:put down knife",
-        "frame_id:6225",
-        "frame_id:6268",
-        "narration:open jam jar",
-        "frame_id:6309",
-        "frame_id:6338"
-      ],
-      "frame_after_gap_start": 6403,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006121.jpg",
-          "bbox": [
-            1560.06,
-            0,
-            359.94,
-            842.7
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 255.71,
-      "end_time": 255.71,
-      "duration_sec": 0.0,
-      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
         "narration:open fridge",
         "frame_id:12607",
-        "frame_id:12657",
-        "narration:put jam jar in fridge",
-        "frame_id:12702",
-        "frame_id:12733",
-        "narration:close fridge",
-        "frame_id:12766"
+        "frame_id:12657"
       ],
-      "frame_after_gap_start": 12786,
+      "frame_after_gap_start": 12733,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012607.jpg",
@@ -1254,7 +1248,25 @@
             1378.13,
             1080
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 258.46,
+      "end_time": 258.46,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put jam jar in fridge",
+        "frame_id:12702",
+        "frame_id:12733",
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
+      ],
+      "frame_after_gap_start": 12923,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012696.jpg",
           "bbox": [
@@ -1278,18 +1290,19 @@
   ],
   "12/fridge/fridge door": [
     {
-      "start_time": 53.75,
-      "end_time": 53.92,
-      "duration_sec": 0.17,
+      "start_time": 55.0,
+      "end_time": 64.05,
+      "duration_sec": 9.05,
       "event_history": [
-        "narration:put down orange",
-        "frame_id:2560",
         "narration:close drawer",
         "frame_id:2620",
         "narration:pick up milk from fridges door",
-        "frame_id:2674"
+        "frame_id:2674",
+        "narration:close fridge",
+        "frame_id:2709",
+        "frame_id:2737"
       ],
-      "frame_after_gap_start": 2738,
+      "frame_after_gap_start": 2800,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002613.jpg",
@@ -1317,25 +1330,7 @@
             1181.36,
             1080
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
-        "narration:open milk",
-        "frame_id:2868",
-        "narration:pour milk from bottle into mug",
-        "frame_id:2932",
-        "frame_id:2979"
-      ],
-      "frame_after_gap_start": 3053,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002700.jpg",
           "bbox": [
@@ -1366,29 +1361,19 @@
       ]
     },
     {
-      "start_time": 66.57,
-      "end_time": 255.71,
-      "duration_sec": 189.14,
+      "start_time": 69.25,
+      "end_time": 258.46,
+      "duration_sec": 189.21,
       "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
         "narration:open fridge",
         "frame_id:3219",
         "narration:close fridge",
-        "frame_id:3311"
+        "frame_id:3311",
+        "narration:press button",
+        "frame_id:3448"
       ],
-      "frame_after_gap_start": 3329,
+      "frame_after_gap_start": 3463,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000003201.jpg",
-          "bbox": [
-            565.93,
-            0,
-            714.49,
-            926.22
-          ]
-        },
         {
           "frame_path": "frame_0000003236.jpg",
           "bbox": [
@@ -1414,6 +1399,53 @@
             680.13,
             446.11,
             399.87
+          ]
+        }
+      ]
+    }
+  ],
+  "13/cup/coffee mug": [
+    {
+      "start_time": 258.46,
+      "end_time": 258.46,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put jam jar in fridge",
+        "frame_id:12702",
+        "frame_id:12733",
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
+      ],
+      "frame_after_gap_start": 12923,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000012809.jpg",
+          "bbox": [
+            1095.02,
+            512.73,
+            164.48,
+            155.37
+          ]
+        },
+        {
+          "frame_path": "frame_0000012846.jpg",
+          "bbox": [
+            1309.47,
+            910.35,
+            255.99,
+            169.65
+          ]
+        },
+        {
+          "frame_path": "frame_0000012901.jpg",
+          "bbox": [
+            1304.74,
+            904.22,
+            275.62,
+            175.78
           ]
         }
       ]
@@ -1564,8 +1596,8 @@
     },
     {
       "start_time": 44.87,
-      "end_time": 53.92,
-      "duration_sec": 9.05,
+      "end_time": 56.98,
+      "duration_sec": 12.11,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",
@@ -1598,20 +1630,20 @@
       ]
     },
     {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
+      "start_time": 61.93,
+      "end_time": 64.05,
+      "duration_sec": 2.12,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
         "narration:open milk",
         "frame_id:2868",
         "narration:pour milk from bottle into mug",
         "frame_id:2932",
-        "frame_id:2979"
+        "frame_id:2979",
+        "narration:close milk bottle",
+        "frame_id:3030",
+        "frame_id:3075"
       ],
-      "frame_after_gap_start": 3053,
+      "frame_after_gap_start": 3147,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002867.jpg",
@@ -1648,24 +1680,7 @@
             172.75,
             215.58
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.57,
-      "end_time": 68.67,
-      "duration_sec": 2.1,
-      "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
-        "narration:open fridge",
-        "frame_id:3219",
-        "narration:close fridge",
-        "frame_id:3311"
-      ],
-      "frame_after_gap_start": 3379,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003034.jpg",
           "bbox": [
@@ -1687,20 +1702,55 @@
       ]
     },
     {
-      "start_time": 73.74,
-      "end_time": 93.62,
-      "duration_sec": 19.88,
+      "start_time": 69.25,
+      "end_time": 69.73,
+      "duration_sec": 0.48,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:3219",
+        "narration:close fridge",
+        "frame_id:3311",
         "narration:press button",
-        "frame_id:3448",
+        "frame_id:3448"
+      ],
+      "frame_after_gap_start": 3513,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003376.jpg",
+          "bbox": [
+            769.37,
+            375.09,
+            92.16,
+            141.8
+          ]
+        },
+        {
+          "frame_path": "frame_0000003442.jpg",
+          "bbox": [
+            907.13,
+            800.58,
+            134.44,
+            217.91
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 79.24,
+      "end_time": 95.74000000000001,
+      "duration_sec": 16.5,
+      "event_history": [
         "narration:pick up wooden stirrer from box",
         "frame_id:3503",
         "frame_id:3538",
         "narration:stir coffee in mug using wooden stirrer",
         "frame_id:3611",
-        "frame_id:3662"
+        "frame_id:3662",
+        "narration:pick knife from stand",
+        "frame_id:3920",
+        "frame_id:3948"
       ],
-      "frame_after_gap_start": 3737,
+      "frame_after_gap_start": 4012,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003530.jpg",
@@ -1730,12 +1780,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000003442.jpg",
+          "frame_path": "frame_0000003788.jpg",
           "bbox": [
-            907.13,
-            800.58,
-            134.44,
-            217.91
+            203.57,
+            583.16,
+            181.66,
+            155.98
           ]
         },
         {
@@ -1750,19 +1800,19 @@
       ]
     },
     {
-      "start_time": 104.75999999999999,
-      "end_time": 107.65,
-      "duration_sec": 2.89,
+      "start_time": 108.28,
+      "end_time": 108.53,
+      "duration_sec": 0.25,
       "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
         "narration:pick up knife",
         "frame_id:4810",
         "narration:pick up mug",
         "frame_id:5180",
-        "frame_id:5219"
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 5288,
+      "frame_after_gap_start": 5464,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005205.jpg",
@@ -1771,6 +1821,15 @@
             676.7,
             139.37,
             169.77
+          ]
+        },
+        {
+          "frame_path": "frame_0000005299.jpg",
+          "bbox": [
+            889.04,
+            783.5,
+            171.76,
+            223.55
           ]
         },
         {
@@ -1785,19 +1844,19 @@
       ]
     },
     {
-      "start_time": 111.81,
-      "end_time": 111.91,
-      "duration_sec": 0.1,
+      "start_time": 112.85,
+      "end_time": 114.6,
+      "duration_sec": 1.75,
       "event_history": [
-        "narration:open bin",
-        "frame_id:5398",
         "narration:wooden stirrer falls on floor",
         "frame_id:5448",
         "narration:pick up wooden stirrer from floor",
         "frame_id:5521",
-        "frame_id:5567"
+        "frame_id:5567",
+        "narration:throw wooden stirrer in bin",
+        "frame_id:5619"
       ],
-      "frame_after_gap_start": 5641,
+      "frame_after_gap_start": 5693,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005536.jpg",
@@ -1829,28 +1888,20 @@
       ]
     },
     {
-      "start_time": 118.35,
-      "end_time": 122.17,
-      "duration_sec": 3.82,
+      "start_time": 119.87,
+      "end_time": 124.08,
+      "duration_sec": 4.21,
       "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
         "narration:put down mug",
         "frame_id:5751",
         "narration:open fridge",
-        "frame_id:5893"
+        "frame_id:5893",
+        "narration:pick up jar of jam",
+        "frame_id:5943",
+        "frame_id:5977"
       ],
-      "frame_after_gap_start": 5968,
+      "frame_after_gap_start": 6044,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005712.jpg",
-          "bbox": [
-            622.16,
-            960.36,
-            203.21,
-            119.64
-          ]
-        },
         {
           "frame_path": "frame_0000005746.jpg",
           "bbox": [
@@ -1863,20 +1914,20 @@
       ]
     },
     {
-      "start_time": 127.05,
-      "end_time": 127.08,
-      "duration_sec": 0.03,
+      "start_time": 127.6,
+      "end_time": 128.91,
+      "duration_sec": 1.31,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:6131",
         "narration:put down knife",
         "frame_id:6225",
         "frame_id:6268",
         "narration:open jam jar",
         "frame_id:6309",
-        "frame_id:6338"
+        "frame_id:6338",
+        "narration:put down lid",
+        "frame_id:6367"
       ],
-      "frame_after_gap_start": 6403,
+      "frame_after_gap_start": 6430,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006317.jpg",
@@ -1890,37 +1941,19 @@
       ]
     },
     {
-      "start_time": 132.03,
-      "end_time": 132.04,
-      "duration_sec": 0.01,
+      "start_time": 132.81,
+      "end_time": 258.46,
+      "duration_sec": 125.65,
       "event_history": [
-        "narration:put down lid",
-        "frame_id:6367",
         "narration:pick up mug",
         "frame_id:6469",
         "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
       ],
-      "frame_after_gap_start": 6652,
+      "frame_after_gap_start": 6641,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006382.jpg",
-          "bbox": [
-            37.55,
-            874.95,
-            83.19,
-            104.39
-          ]
-        },
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            366.65,
-            636.47,
-            148.07,
-            159.26
-          ]
-        },
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -1956,24 +1989,7 @@
             181.57,
             169.94
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 143.71,
-      "end_time": 255.71,
-      "duration_sec": 112.0,
-      "event_history": [
-        "narration:put down mug",
-        "frame_id:6621",
-        "narration:pick up plate from cupboard",
-        "frame_id:6994",
-        "frame_id:7032",
-        "narration:close cupboard",
-        "frame_id:7160"
-      ],
-      "frame_after_gap_start": 7186,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000006626.jpg",
           "bbox": [
@@ -1988,18 +2004,19 @@
   ],
   "15/bottle/milk bottle": [
     {
-      "start_time": 53.75,
-      "end_time": 53.92,
-      "duration_sec": 0.17,
+      "start_time": 55.0,
+      "end_time": 56.98,
+      "duration_sec": 1.98,
       "event_history": [
-        "narration:put down orange",
-        "frame_id:2560",
         "narration:close drawer",
         "frame_id:2620",
         "narration:pick up milk from fridges door",
-        "frame_id:2674"
+        "frame_id:2674",
+        "narration:close fridge",
+        "frame_id:2709",
+        "frame_id:2737"
       ],
-      "frame_after_gap_start": 2738,
+      "frame_after_gap_start": 2800,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002613.jpg",
@@ -2027,25 +2044,7 @@
             226.73,
             457.67
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
-        "narration:open milk",
-        "frame_id:2868",
-        "narration:pour milk from bottle into mug",
-        "frame_id:2932",
-        "frame_id:2979"
-      ],
-      "frame_after_gap_start": 3053,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002700.jpg",
           "bbox": [
@@ -2054,7 +2053,25 @@
             201.41,
             58.03
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 61.93,
+      "end_time": 64.05,
+      "duration_sec": 2.12,
+      "event_history": [
+        "narration:open milk",
+        "frame_id:2868",
+        "narration:pour milk from bottle into mug",
+        "frame_id:2932",
+        "frame_id:2979",
+        "narration:close milk bottle",
+        "frame_id:3030",
+        "frame_id:3075"
+      ],
+      "frame_after_gap_start": 3147,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002926.jpg",
           "bbox": [
@@ -2081,24 +2098,7 @@
             198.78,
             347.85
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.57,
-      "end_time": 255.71,
-      "duration_sec": 189.14,
-      "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
-        "narration:open fridge",
-        "frame_id:3219",
-        "narration:close fridge",
-        "frame_id:3311"
-      ],
-      "frame_after_gap_start": 3329,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003034.jpg",
           "bbox": [
@@ -2116,7 +2116,23 @@
             317.11,
             100.62
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 69.25,
+      "end_time": 258.46,
+      "duration_sec": 189.21,
+      "event_history": [
+        "narration:open fridge",
+        "frame_id:3219",
+        "narration:close fridge",
+        "frame_id:3311",
+        "narration:press button",
+        "frame_id:3448"
+      ],
+      "frame_after_gap_start": 3463,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003236.jpg",
           "bbox": [
@@ -2141,8 +2157,8 @@
   "18/board:chopping/chopping board": [
     {
       "start_time": 32.86,
-      "end_time": 78.14,
-      "duration_sec": 45.28,
+      "end_time": 82.59,
+      "duration_sec": 49.73,
       "event_history": [
         "narration:put down bag",
         "frame_id:1263",
@@ -2192,20 +2208,19 @@
       ]
     },
     {
-      "start_time": 90.53999999999999,
-      "end_time": 91.48,
-      "duration_sec": 0.94,
+      "start_time": 91.86,
+      "end_time": 120.08,
+      "duration_sec": 28.22,
       "event_history": [
-        "narration:pick knife from stand",
-        "frame_id:3920",
-        "frame_id:3948",
         "narration:turn bagel to its side",
         "frame_id:4146",
         "narration:cut bagel using knife",
         "frame_id:4259",
-        "frame_id:4438"
+        "frame_id:4438",
+        "narration:put down knife",
+        "frame_id:4583"
       ],
-      "frame_after_gap_start": 4577,
+      "frame_after_gap_start": 4643,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004138.jpg",
@@ -2242,49 +2257,31 @@
             624.8,
             439.41
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 93.52000000000001,
-      "end_time": 122.17,
-      "duration_sec": 28.65,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:4583",
-        "narration:put bagel in toaster",
-        "frame_id:4629",
-        "narration:pick up bagel half",
-        "frame_id:4662"
-      ],
-      "frame_after_gap_start": 4727,
-      "crop_from_previous_active": [
+        },
         {
-          "frame_path": "frame_0000004598.jpg",
+          "frame_path": "frame_0000004567.jpg",
           "bbox": [
-            789.66,
-            688.74,
-            587.0,
-            391.26
+            756.97,
+            523.37,
+            615.55,
+            443.43
           ]
         }
       ]
     },
     {
-      "start_time": 127.05,
-      "end_time": 127.08,
-      "duration_sec": 0.03,
+      "start_time": 123.08,
+      "end_time": 124.08,
+      "duration_sec": 1.0,
       "event_history": [
+        "narration:close fridge",
+        "frame_id:6018",
+        "narration:open drawer",
+        "frame_id:6068",
         "narration:pick up knife",
-        "frame_id:6131",
-        "narration:put down knife",
-        "frame_id:6225",
-        "frame_id:6268",
-        "narration:open jam jar",
-        "frame_id:6309",
-        "frame_id:6338"
+        "frame_id:6131"
       ],
-      "frame_after_gap_start": 6403,
+      "frame_after_gap_start": 6204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006121.jpg",
@@ -2302,6 +2299,33 @@
             262.95,
             452.78,
             250.74
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 127.6,
+      "end_time": 128.91,
+      "duration_sec": 1.31,
+      "event_history": [
+        "narration:put down knife",
+        "frame_id:6225",
+        "frame_id:6268",
+        "narration:open jam jar",
+        "frame_id:6309",
+        "frame_id:6338",
+        "narration:put down lid",
+        "frame_id:6367"
+      ],
+      "frame_after_gap_start": 6430,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006359.jpg",
+          "bbox": [
+            596.55,
+            670.42,
+            627.21,
+            409.58
           ]
         },
         {
@@ -2334,46 +2358,19 @@
       ]
     },
     {
-      "start_time": 132.03,
-      "end_time": 184.13,
-      "duration_sec": 52.1,
+      "start_time": 132.81,
+      "end_time": 205.36,
+      "duration_sec": 72.55,
       "event_history": [
-        "narration:put down lid",
-        "frame_id:6367",
         "narration:pick up mug",
         "frame_id:6469",
         "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
       ],
-      "frame_after_gap_start": 6652,
+      "frame_after_gap_start": 6691,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006359.jpg",
-          "bbox": [
-            596.55,
-            670.42,
-            627.21,
-            409.58
-          ]
-        },
-        {
-          "frame_path": "frame_0000006382.jpg",
-          "bbox": [
-            638.89,
-            751.74,
-            604.5,
-            328.26
-          ]
-        },
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            814.39,
-            716.61,
-            624.39,
-            363.39
-          ]
-        },
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -2395,21 +2392,21 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
         "narration:press button on toaster to release bagel",
         "frame_id:10286",
         "frame_id:10323",
         "narration:stab bagel using knife",
         "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 10632,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010401.jpg",
@@ -2420,34 +2417,6 @@
             178.85
           ]
         },
-        {
-          "frame_path": "frame_0000010376.jpg",
-          "bbox": [
-            695.74,
-            989.06,
-            563.12,
-            90.94
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
@@ -2466,6 +2435,34 @@
             482.73
           ]
         },
+        {
+          "frame_path": "frame_0000010376.jpg",
+          "bbox": [
+            695.74,
+            989.06,
+            563.12,
+            90.94
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -2494,40 +2491,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010701.jpg",
-          "bbox": [
-            843.12,
-            400.21,
-            627.81,
-            465.23
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 229.51,
-      "end_time": 230.52,
-      "duration_sec": 1.01,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
-        "narration:pick up bagel from chopping board",
-        "frame_id:11177",
-        "frame_id:11278",
-        "narration:stab bagel using knife",
-        "frame_id:11383",
-        "frame_id:11445"
-      ],
-      "frame_after_gap_start": 11526,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010926.jpg",
           "bbox": [
             735.82,
             421.54,
             667.25,
             486.58
+          ]
+        },
+        {
+          "frame_path": "frame_0000010701.jpg",
+          "bbox": [
+            843.12,
+            400.21,
+            627.81,
+            465.23
           ]
         },
         {
@@ -2538,7 +2516,26 @@
             653.2,
             497.43
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 231.82,
+      "end_time": 234.66,
+      "duration_sec": 2.84,
+      "event_history": [
+        "narration:pick up bagel from chopping board",
+        "frame_id:11177",
+        "frame_id:11278",
+        "narration:stab bagel using knife",
+        "frame_id:11383",
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
+      ],
+      "frame_after_gap_start": 11641,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011151.jpg",
           "bbox": [
@@ -2574,26 +2571,7 @@
             594.15,
             305.08
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 238.09,
-      "end_time": 238.17000000000002,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:11542",
-        "frame_id:11575",
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11746",
-        "frame_id:11775",
-        "narration:spread jam on bagel using knife",
-        "frame_id:11820",
-        "frame_id:11877"
-      ],
-      "frame_after_gap_start": 11955,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011540.jpg",
           "bbox": [
@@ -2611,16 +2589,26 @@
             671.57,
             481.55
           ]
-        },
-        {
-          "frame_path": "frame_0000011663.jpg",
-          "bbox": [
-            688.27,
-            269.07,
-            703.63,
-            508.95
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 239.21,
+      "end_time": 239.57,
+      "duration_sec": 0.36,
+      "event_history": [
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11746",
+        "frame_id:11775",
+        "narration:spread jam on bagel using knife",
+        "frame_id:11820",
+        "frame_id:11877",
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11921",
+        "frame_id:11948"
+      ],
+      "frame_after_gap_start": 12011,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011751.jpg",
           "bbox": [
@@ -2647,25 +2635,7 @@
             727.45,
             541.98
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
-      "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
-        "narration:spread jam on bagel using knife",
-        "frame_id:12074",
-        "frame_id:12266",
-        "narration:pick up bagel from chopping board",
-        "frame_id:12375"
-      ],
-      "frame_after_gap_start": 12434,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011926.jpg",
           "bbox": [
@@ -2683,7 +2653,24 @@
             669.55,
             491.76
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
+      "event_history": [
+        "narration:spread jam on bagel using knife",
+        "frame_id:12074",
+        "frame_id:12266",
+        "narration:pick up bagel from chopping board",
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
+      ],
+      "frame_after_gap_start": 12515,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012051.jpg",
           "bbox": [
@@ -2710,24 +2697,25 @@
             680.05,
             501.29
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            959.05,
+            484.58,
+            664.63,
+            464.67
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            969.27,
+            532.7,
+            683.8,
+            484.52
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -2745,7 +2733,25 @@
             642.92,
             489.93
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 258.46,
+      "duration_sec": 4.81,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12683,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -2760,18 +2766,18 @@
   ],
   "186/toaster/toaster": [
     {
-      "start_time": 93.52000000000001,
-      "end_time": 93.62,
-      "duration_sec": 0.1,
+      "start_time": 94.53999999999999,
+      "end_time": 95.74000000000001,
+      "duration_sec": 1.2,
       "event_history": [
-        "narration:put down knife",
-        "frame_id:4583",
         "narration:put bagel in toaster",
         "frame_id:4629",
         "narration:pick up bagel half",
-        "frame_id:4662"
+        "frame_id:4662",
+        "narration:put bagel half in toaster",
+        "frame_id:4704"
       ],
-      "frame_after_gap_start": 4727,
+      "frame_after_gap_start": 4777,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004626.jpg",
@@ -2790,24 +2796,7 @@
             441.89,
             331.18
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 104.75999999999999,
-      "end_time": 184.13,
-      "duration_sec": 79.37,
-      "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
-        "narration:pick up knife",
-        "frame_id:4810",
-        "narration:pick up mug",
-        "frame_id:5180",
-        "frame_id:5219"
-      ],
-      "frame_after_gap_start": 5288,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000004726.jpg",
           "bbox": [
@@ -2815,24 +2804,6 @@
             498.22,
             429.7,
             318.2
-          ]
-        },
-        {
-          "frame_path": "frame_0000004751.jpg",
-          "bbox": [
-            850.31,
-            484.84,
-            452.54,
-            349.33
-          ]
-        },
-        {
-          "frame_path": "frame_0000004801.jpg",
-          "bbox": [
-            814.55,
-            234.05,
-            479.18,
-            408.15
           ]
         },
         {
@@ -2847,21 +2818,46 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 108.28,
+      "end_time": 160.77,
+      "duration_sec": 52.49,
       "event_history": [
         "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
-        "narration:press button on toaster to release bagel",
-        "frame_id:10286",
-        "frame_id:10323",
-        "narration:stab bagel using knife",
-        "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:4810",
+        "narration:pick up mug",
+        "frame_id:5180",
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 5464,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004801.jpg",
+          "bbox": [
+            814.55,
+            234.05,
+            479.18,
+            408.15
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 186.81,
+      "end_time": 205.36,
+      "duration_sec": 18.55,
+      "event_history": [
+        "narration:put down water filter",
+        "frame_id:8057",
+        "narration:put down glass",
+        "frame_id:8341",
+        "frame_id:8388",
+        "narration:pick up knife",
+        "frame_id:9240",
+        "frame_id:9307"
+      ],
+      "frame_after_gap_start": 9391,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009226.jpg",
@@ -2880,7 +2876,26 @@
             415.89,
             335.14
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
+      "event_history": [
+        "narration:press button on toaster to release bagel",
+        "frame_id:10286",
+        "frame_id:10323",
+        "narration:stab bagel using knife",
+        "frame_id:10370",
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
+      ],
+      "frame_after_gap_start": 10632,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010292.jpg",
           "bbox": [
@@ -2909,34 +2924,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000010376.jpg",
-          "bbox": [
-            852.74,
-            391.18,
-            425.87,
-            341.54
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
             957.76,
@@ -2954,6 +2941,34 @@
             198.24
           ]
         },
+        {
+          "frame_path": "frame_0000010376.jpg",
+          "bbox": [
+            852.74,
+            391.18,
+            425.87,
+            341.54
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -2975,21 +2990,21 @@
       ]
     },
     {
-      "start_time": 229.51,
-      "end_time": 255.71,
-      "duration_sec": 26.2,
+      "start_time": 231.82,
+      "end_time": 258.46,
+      "duration_sec": 26.64,
       "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
         "narration:pick up bagel from chopping board",
         "frame_id:11177",
         "frame_id:11278",
         "narration:stab bagel using knife",
         "frame_id:11383",
-        "frame_id:11445"
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
       ],
-      "frame_after_gap_start": 11476,
+      "frame_after_gap_start": 11591,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011401.jpg",
@@ -3076,8 +3091,8 @@
     },
     {
       "start_time": 44.87,
-      "end_time": 255.71,
-      "duration_sec": 210.84,
+      "end_time": 258.46,
+      "duration_sec": 213.59,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",
@@ -3103,20 +3118,20 @@
   ],
   "19/bag/orange mesh": [
     {
-      "start_time": 49.63,
-      "end_time": 50.78,
-      "duration_sec": 1.15,
+      "start_time": 50.89,
+      "end_time": 51.9,
+      "duration_sec": 1.01,
       "event_history": [
         "narration:open drawer of fridge",
         "frame_id:2273",
         "narration:pick up oranges mesh",
         "frame_id:2340",
         "frame_id:2388",
-        "narration:put down oranges",
-        "frame_id:2430",
-        "frame_id:2464"
+        "narration:pick up orange",
+        "frame_id:2481",
+        "frame_id:2523"
       ],
-      "frame_after_gap_start": 2532,
+      "frame_after_gap_start": 2595,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002290.jpg",
@@ -3144,22 +3159,41 @@
             247.11,
             361.21
           ]
+        },
+        {
+          "frame_path": "frame_0000002487.jpg",
+          "bbox": [
+            230.76,
+            772.39,
+            398.98,
+            307.61
+          ]
+        },
+        {
+          "frame_path": "frame_0000002521.jpg",
+          "bbox": [
+            179.07,
+            873.24,
+            332.66,
+            206.76
+          ]
         }
       ]
     },
     {
-      "start_time": 53.75,
-      "end_time": 53.92,
-      "duration_sec": 0.17,
+      "start_time": 55.0,
+      "end_time": 258.46,
+      "duration_sec": 203.46,
       "event_history": [
-        "narration:put down orange",
-        "frame_id:2560",
         "narration:close drawer",
         "frame_id:2620",
         "narration:pick up milk from fridges door",
-        "frame_id:2674"
+        "frame_id:2674",
+        "narration:close fridge",
+        "frame_id:2709",
+        "frame_id:2737"
       ],
-      "frame_after_gap_start": 2738,
+      "frame_after_gap_start": 2750,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002613.jpg",
@@ -3169,25 +3203,7 @@
             369.16,
             95.59
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 60.05,
-      "end_time": 255.71,
-      "duration_sec": 195.66,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
-        "narration:open milk",
-        "frame_id:2868",
-        "narration:pour milk from bottle into mug",
-        "frame_id:2932",
-        "frame_id:2979"
-      ],
-      "frame_after_gap_start": 3003,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002723.jpg",
           "bbox": [
@@ -3211,20 +3227,30 @@
   ],
   "2/plate/plate": [
     {
-      "start_time": 143.71,
-      "end_time": 146.54,
-      "duration_sec": 2.83,
+      "start_time": 148.04,
+      "end_time": 239.57,
+      "duration_sec": 91.53,
       "event_history": [
-        "narration:put down mug",
-        "frame_id:6621",
         "narration:pick up plate from cupboard",
         "frame_id:6994",
         "frame_id:7032",
         "narration:close cupboard",
-        "frame_id:7160"
+        "frame_id:7160",
+        "narration:move water filter",
+        "frame_id:7345",
+        "frame_id:7384"
       ],
-      "frame_after_gap_start": 7236,
+      "frame_after_gap_start": 7452,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007392.jpg",
+          "bbox": [
+            794.43,
+            639.49,
+            366.19,
+            382.42
+          ]
+        },
         {
           "frame_path": "frame_0000006985.jpg",
           "bbox": [
@@ -3242,33 +3268,6 @@
             636.22,
             180.83
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 158.32999999999998,
-      "end_time": 238.17000000000002,
-      "duration_sec": 79.84,
-      "event_history": [
-        "narration:move water filter",
-        "frame_id:7345",
-        "frame_id:7384",
-        "narration:pick up glass from drainer",
-        "frame_id:7803",
-        "frame_id:7854",
-        "narration:pick up water filter",
-        "frame_id:7901"
-      ],
-      "frame_after_gap_start": 7967,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000007392.jpg",
-          "bbox": [
-            794.43,
-            639.49,
-            366.19,
-            382.42
-          ]
         },
         {
           "frame_path": "frame_0000007355.jpg",
@@ -3282,20 +3281,19 @@
       ]
     },
     {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
       "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
         "narration:spread jam on bagel using knife",
         "frame_id:12074",
         "frame_id:12266",
         "narration:pick up bagel from chopping board",
-        "frame_id:12375"
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
       ],
-      "frame_after_gap_start": 12434,
+      "frame_after_gap_start": 12515,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012363.jpg",
@@ -3305,24 +3303,25 @@
             392.82,
             407.99
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            572.48,
+            422.06,
+            348.98,
+            384.41
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            577.04,
+            466.66,
+            357.54,
+            400.85
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -3340,7 +3339,25 @@
             410.56,
             410.77
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 253.75,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12733,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -3351,24 +3368,79 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 258.46,
+      "end_time": 258.46,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put jam jar in fridge",
+        "frame_id:12702",
+        "frame_id:12733",
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
+      ],
+      "frame_after_gap_start": 12923,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000012809.jpg",
+          "bbox": [
+            468.08,
+            308.46,
+            251.29,
+            184.97
+          ]
+        },
+        {
+          "frame_path": "frame_0000012846.jpg",
+          "bbox": [
+            473.89,
+            477.01,
+            329.58,
+            304.24
+          ]
+        },
+        {
+          "frame_path": "frame_0000012871.jpg",
+          "bbox": [
+            655.73,
+            516.43,
+            334.9,
+            324.68
+          ]
+        },
+        {
+          "frame_path": "frame_0000012901.jpg",
+          "bbox": [
+            497.54,
+            720.47,
+            486.92,
+            359.53
+          ]
+        }
+      ]
     }
   ],
   "23/box/box": [
     {
-      "start_time": 73.74,
-      "end_time": 255.71,
-      "duration_sec": 181.97,
+      "start_time": 79.24,
+      "end_time": 258.46,
+      "duration_sec": 179.22,
       "event_history": [
-        "narration:press button",
-        "frame_id:3448",
         "narration:pick up wooden stirrer from box",
         "frame_id:3503",
         "frame_id:3538",
         "narration:stir coffee in mug using wooden stirrer",
         "frame_id:3611",
-        "frame_id:3662"
+        "frame_id:3662",
+        "narration:pick knife from stand",
+        "frame_id:3920",
+        "frame_id:3948"
       ],
-      "frame_after_gap_start": 3687,
+      "frame_after_gap_start": 3962,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003530.jpg",
@@ -3398,6 +3470,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000003788.jpg",
+          "bbox": [
+            0,
+            233.09,
+            233.47,
+            401.24
+          ]
+        },
+        {
           "frame_path": "frame_0000003501.jpg",
           "bbox": [
             434.56,
@@ -3411,20 +3492,20 @@
   ],
   "27/water/water": [
     {
-      "start_time": 168.21,
-      "end_time": 255.71,
-      "duration_sec": 87.5,
+      "start_time": 160.69,
+      "end_time": 160.77,
+      "duration_sec": 0.08,
       "event_history": [
+        "narration:pick up glass from drainer",
+        "frame_id:7803",
+        "frame_id:7854",
+        "narration:pick up water filter",
+        "frame_id:7901",
         "narration:pour water from water filter into glass",
         "frame_id:7950",
-        "frame_id:8006",
-        "narration:put down water filter",
-        "frame_id:8057",
-        "narration:put down glass",
-        "frame_id:8341",
-        "frame_id:8388"
+        "frame_id:8006"
       ],
-      "frame_after_gap_start": 8411,
+      "frame_after_gap_start": 8085,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008001.jpg",
@@ -3433,15 +3514,6 @@
             756.65,
             117.98,
             141.79
-          ]
-        },
-        {
-          "frame_path": "frame_0000008040.jpg",
-          "bbox": [
-            802.8,
-            858.25,
-            197.49,
-            200.77
           ]
         },
         {
@@ -3454,23 +3526,51 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 186.81,
+      "end_time": 258.46,
+      "duration_sec": 71.65,
+      "event_history": [
+        "narration:put down water filter",
+        "frame_id:8057",
+        "narration:put down glass",
+        "frame_id:8341",
+        "frame_id:8388",
+        "narration:pick up knife",
+        "frame_id:9240",
+        "frame_id:9307"
+      ],
+      "frame_after_gap_start": 9341,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000008040.jpg",
+          "bbox": [
+            802.8,
+            858.25,
+            197.49,
+            200.77
+          ]
+        }
+      ]
     }
   ],
   "3/cupboard/cupboard": [
     {
-      "start_time": 143.71,
-      "end_time": 255.71,
-      "duration_sec": 112.0,
+      "start_time": 148.04,
+      "end_time": 258.46,
+      "duration_sec": 110.42,
       "event_history": [
-        "narration:put down mug",
-        "frame_id:6621",
         "narration:pick up plate from cupboard",
         "frame_id:6994",
         "frame_id:7032",
         "narration:close cupboard",
-        "frame_id:7160"
+        "frame_id:7160",
+        "narration:move water filter",
+        "frame_id:7345",
+        "frame_id:7384"
       ],
-      "frame_after_gap_start": 7186,
+      "frame_after_gap_start": 7402,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007134.jpg",
@@ -3514,8 +3614,8 @@
   "33/bread/bagel": [
     {
       "start_time": 32.86,
-      "end_time": 78.14,
-      "duration_sec": 45.28,
+      "end_time": 69.73,
+      "duration_sec": 36.87,
       "event_history": [
         "narration:put down bag",
         "frame_id:1263",
@@ -3538,20 +3638,47 @@
       ]
     },
     {
-      "start_time": 90.53999999999999,
-      "end_time": 91.48,
-      "duration_sec": 0.94,
+      "start_time": 79.24,
+      "end_time": 82.59,
+      "duration_sec": 3.35,
       "event_history": [
+        "narration:pick up wooden stirrer from box",
+        "frame_id:3503",
+        "frame_id:3538",
+        "narration:stir coffee in mug using wooden stirrer",
+        "frame_id:3611",
+        "frame_id:3662",
         "narration:pick knife from stand",
         "frame_id:3920",
-        "frame_id:3948",
+        "frame_id:3948"
+      ],
+      "frame_after_gap_start": 4012,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003788.jpg",
+          "bbox": [
+            1293.12,
+            802.82,
+            200.89,
+            160.1
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 91.86,
+      "end_time": 92.22,
+      "duration_sec": 0.36,
+      "event_history": [
         "narration:turn bagel to its side",
         "frame_id:4146",
         "narration:cut bagel using knife",
         "frame_id:4259",
-        "frame_id:4438"
+        "frame_id:4438",
+        "narration:put down knife",
+        "frame_id:4583"
       ],
-      "frame_after_gap_start": 4577,
+      "frame_after_gap_start": 4643,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004138.jpg",
@@ -3588,32 +3715,32 @@
             102.76,
             63.92
           ]
+        },
+        {
+          "frame_path": "frame_0000004567.jpg",
+          "bbox": [
+            855.09,
+            634.7,
+            201.09,
+            200.17
+          ]
         }
       ]
     },
     {
-      "start_time": 93.52000000000001,
-      "end_time": 93.62,
-      "duration_sec": 0.1,
+      "start_time": 94.53999999999999,
+      "end_time": 95.74000000000001,
+      "duration_sec": 1.2,
       "event_history": [
-        "narration:put down knife",
-        "frame_id:4583",
         "narration:put bagel in toaster",
         "frame_id:4629",
         "narration:pick up bagel half",
-        "frame_id:4662"
+        "frame_id:4662",
+        "narration:put bagel half in toaster",
+        "frame_id:4704"
       ],
-      "frame_after_gap_start": 4727,
+      "frame_after_gap_start": 4777,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000004598.jpg",
-          "bbox": [
-            932.32,
-            86.76,
-            602.67,
-            920.28
-          ]
-        },
         {
           "frame_path": "frame_0000004626.jpg",
           "bbox": [
@@ -3631,24 +3758,7 @@
             302.83,
             372.22
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 104.75999999999999,
-      "end_time": 184.13,
-      "duration_sec": 79.37,
-      "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
-        "narration:pick up knife",
-        "frame_id:4810",
-        "narration:pick up mug",
-        "frame_id:5180",
-        "frame_id:5219"
-      ],
-      "frame_after_gap_start": 5288,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000004726.jpg",
           "bbox": [
@@ -3656,24 +3766,6 @@
             529.79,
             199.2,
             123.19
-          ]
-        },
-        {
-          "frame_path": "frame_0000004751.jpg",
-          "bbox": [
-            1008.92,
-            624.1,
-            170.51,
-            23.81
-          ]
-        },
-        {
-          "frame_path": "frame_0000004801.jpg",
-          "bbox": [
-            1000.36,
-            387.9,
-            117.07,
-            22.58
           ]
         },
         {
@@ -3688,21 +3780,47 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 108.28,
+      "end_time": 205.36,
+      "duration_sec": 97.08,
       "event_history": [
         "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
+        "frame_id:4810",
+        "narration:pick up mug",
+        "frame_id:5180",
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
+      ],
+      "frame_after_gap_start": 5464,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004801.jpg",
+          "bbox": [
+            1000.36,
+            387.9,
+            117.07,
+            22.58
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
+      "event_history": [
         "narration:press button on toaster to release bagel",
         "frame_id:10286",
         "frame_id:10323",
         "narration:stab bagel using knife",
         "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 10632,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010326.jpg",
@@ -3723,34 +3841,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000010376.jpg",
-          "bbox": [
-            992.6,
-            421.23,
-            186.99,
-            112.37
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
             955.74,
@@ -3768,6 +3858,34 @@
             174.25
           ]
         },
+        {
+          "frame_path": "frame_0000010376.jpg",
+          "bbox": [
+            992.6,
+            421.23,
+            186.99,
+            112.37
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -3796,40 +3914,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010701.jpg",
-          "bbox": [
-            929.75,
-            589.45,
-            224.85,
-            179.23
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 229.51,
-      "end_time": 230.52,
-      "duration_sec": 1.01,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
-        "narration:pick up bagel from chopping board",
-        "frame_id:11177",
-        "frame_id:11278",
-        "narration:stab bagel using knife",
-        "frame_id:11383",
-        "frame_id:11445"
-      ],
-      "frame_after_gap_start": 11526,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010926.jpg",
           "bbox": [
             907.84,
             616.08,
             241.7,
             177.62
+          ]
+        },
+        {
+          "frame_path": "frame_0000010701.jpg",
+          "bbox": [
+            929.75,
+            589.45,
+            224.85,
+            179.23
           ]
         },
         {
@@ -3840,7 +3939,26 @@
             228.2,
             174.58
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 231.82,
+      "end_time": 234.66,
+      "duration_sec": 2.84,
+      "event_history": [
+        "narration:pick up bagel from chopping board",
+        "frame_id:11177",
+        "frame_id:11278",
+        "narration:stab bagel using knife",
+        "frame_id:11383",
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
+      ],
+      "frame_after_gap_start": 11641,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011151.jpg",
           "bbox": [
@@ -3876,26 +3994,7 @@
             992.31,
             1022.63
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 238.09,
-      "end_time": 238.17000000000002,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:11542",
-        "frame_id:11575",
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11746",
-        "frame_id:11775",
-        "narration:spread jam on bagel using knife",
-        "frame_id:11820",
-        "frame_id:11877"
-      ],
-      "frame_after_gap_start": 11955,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011540.jpg",
           "bbox": [
@@ -3913,16 +4012,26 @@
             794.29,
             273.0
           ]
-        },
-        {
-          "frame_path": "frame_0000011663.jpg",
-          "bbox": [
-            336.5,
-            411.84,
-            803.18,
-            252.86
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 239.21,
+      "end_time": 239.57,
+      "duration_sec": 0.36,
+      "event_history": [
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11746",
+        "frame_id:11775",
+        "narration:spread jam on bagel using knife",
+        "frame_id:11820",
+        "frame_id:11877",
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11921",
+        "frame_id:11948"
+      ],
+      "frame_after_gap_start": 12011,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011751.jpg",
           "bbox": [
@@ -3949,25 +4058,7 @@
             830.17,
             225.05
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
-      "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
-        "narration:spread jam on bagel using knife",
-        "frame_id:12074",
-        "frame_id:12266",
-        "narration:pick up bagel from chopping board",
-        "frame_id:12375"
-      ],
-      "frame_after_gap_start": 12434,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011926.jpg",
           "bbox": [
@@ -3985,7 +4076,24 @@
             806.64,
             258.62
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
+      "event_history": [
+        "narration:spread jam on bagel using knife",
+        "frame_id:12074",
+        "frame_id:12266",
+        "narration:pick up bagel from chopping board",
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
+      ],
+      "frame_after_gap_start": 12515,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012051.jpg",
           "bbox": [
@@ -4012,24 +4120,25 @@
             759.93,
             233.36
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            543.55,
+            482.52,
+            305.79,
+            222.35
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            584.84,
+            531.32,
+            275.72,
+            222.29
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -4047,7 +4156,25 @@
             301.92,
             227.05
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 253.75,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12733,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -4055,6 +4182,60 @@
             618.54,
             340.31,
             250.48
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 258.46,
+      "end_time": 258.46,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put jam jar in fridge",
+        "frame_id:12702",
+        "frame_id:12733",
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
+      ],
+      "frame_after_gap_start": 12923,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000012809.jpg",
+          "bbox": [
+            507.53,
+            331.44,
+            161.96,
+            124.58
+          ]
+        },
+        {
+          "frame_path": "frame_0000012846.jpg",
+          "bbox": [
+            523.97,
+            513.77,
+            213.4,
+            187.65
+          ]
+        },
+        {
+          "frame_path": "frame_0000012871.jpg",
+          "bbox": [
+            713.66,
+            555.51,
+            203.67,
+            201.67
+          ]
+        },
+        {
+          "frame_path": "frame_0000012901.jpg",
+          "bbox": [
+            586.81,
+            782.52,
+            294.62,
+            297.48
           ]
         }
       ]
@@ -4124,8 +4305,8 @@
     },
     {
       "start_time": 44.87,
-      "end_time": 93.62,
-      "duration_sec": 48.75,
+      "end_time": 95.74000000000001,
+      "duration_sec": 50.87,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",
@@ -4158,19 +4339,19 @@
       ]
     },
     {
-      "start_time": 104.75999999999999,
-      "end_time": 107.65,
-      "duration_sec": 2.89,
+      "start_time": 108.28,
+      "end_time": 108.53,
+      "duration_sec": 0.25,
       "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
         "narration:pick up knife",
         "frame_id:4810",
         "narration:pick up mug",
         "frame_id:5180",
-        "frame_id:5219"
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 5288,
+      "frame_after_gap_start": 5464,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005180.jpg",
@@ -4180,24 +4361,7 @@
             64.24,
             196.54
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 111.81,
-      "end_time": 111.91,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:open bin",
-        "frame_id:5398",
-        "narration:wooden stirrer falls on floor",
-        "frame_id:5448",
-        "narration:pick up wooden stirrer from floor",
-        "frame_id:5521",
-        "frame_id:5567"
-      ],
-      "frame_after_gap_start": 5641,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005394.jpg",
           "bbox": [
@@ -4206,7 +4370,24 @@
             476.51,
             490.03
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 112.85,
+      "end_time": 114.6,
+      "duration_sec": 1.75,
+      "event_history": [
+        "narration:wooden stirrer falls on floor",
+        "frame_id:5448",
+        "narration:pick up wooden stirrer from floor",
+        "frame_id:5521",
+        "frame_id:5567",
+        "narration:throw wooden stirrer in bin",
+        "frame_id:5619"
+      ],
+      "frame_after_gap_start": 5693,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005433.jpg",
           "bbox": [
@@ -4224,31 +4405,6 @@
             506.4,
             517.54
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 118.35,
-      "end_time": 255.71,
-      "duration_sec": 137.36,
-      "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
-        "narration:put down mug",
-        "frame_id:5751",
-        "narration:open fridge",
-        "frame_id:5893"
-      ],
-      "frame_after_gap_start": 5918,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005746.jpg",
-          "bbox": [
-            1802.22,
-            205.34,
-            117.78,
-            327.02
-          ]
         },
         {
           "frame_path": "frame_0000005613.jpg",
@@ -4260,24 +4416,77 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 119.87,
+      "end_time": 258.46,
+      "duration_sec": 138.59,
+      "event_history": [
+        "narration:put down mug",
+        "frame_id:5751",
+        "narration:open fridge",
+        "frame_id:5893",
+        "narration:pick up jar of jam",
+        "frame_id:5943",
+        "frame_id:5977"
+      ],
+      "frame_after_gap_start": 5994,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000005746.jpg",
+          "bbox": [
+            1802.22,
+            205.34,
+            117.78,
+            327.02
+          ]
+        }
+      ]
     }
   ],
   "4/knife/knife": [
     {
-      "start_time": 90.53999999999999,
-      "end_time": 91.48,
-      "duration_sec": 0.94,
+      "start_time": 79.24,
+      "end_time": 82.59,
+      "duration_sec": 3.35,
       "event_history": [
+        "narration:pick up wooden stirrer from box",
+        "frame_id:3503",
+        "frame_id:3538",
+        "narration:stir coffee in mug using wooden stirrer",
+        "frame_id:3611",
+        "frame_id:3662",
         "narration:pick knife from stand",
         "frame_id:3920",
-        "frame_id:3948",
+        "frame_id:3948"
+      ],
+      "frame_after_gap_start": 4012,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003788.jpg",
+          "bbox": [
+            1500.48,
+            795.58,
+            222.65,
+            284.42
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 91.86,
+      "end_time": 120.08,
+      "duration_sec": 28.22,
+      "event_history": [
         "narration:turn bagel to its side",
         "frame_id:4146",
         "narration:cut bagel using knife",
         "frame_id:4259",
-        "frame_id:4438"
+        "frame_id:4438",
+        "narration:put down knife",
+        "frame_id:4583"
       ],
-      "frame_after_gap_start": 4577,
+      "frame_after_gap_start": 4643,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004138.jpg",
@@ -4314,48 +4523,31 @@
             64.6,
             52.28
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 93.52000000000001,
-      "end_time": 118.52000000000001,
-      "duration_sec": 25.0,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:4583",
-        "narration:put bagel in toaster",
-        "frame_id:4629",
-        "narration:pick up bagel half",
-        "frame_id:4662"
-      ],
-      "frame_after_gap_start": 4727,
-      "crop_from_previous_active": [
+        },
         {
-          "frame_path": "frame_0000004598.jpg",
+          "frame_path": "frame_0000004567.jpg",
           "bbox": [
-            1180.24,
-            623.31,
+            1178.06,
+            453.77,
             219.22,
-            456.69
+            516.49
           ]
         }
       ]
     },
     {
-      "start_time": 121.78,
-      "end_time": 122.17,
-      "duration_sec": 0.39,
+      "start_time": 123.08,
+      "end_time": 124.08,
+      "duration_sec": 1.0,
       "event_history": [
-        "narration:pick up jar of jam",
-        "frame_id:5943",
-        "frame_id:5977",
         "narration:close fridge",
         "frame_id:6018",
         "narration:open drawer",
-        "frame_id:6068"
+        "frame_id:6068",
+        "narration:pick up knife",
+        "frame_id:6131"
       ],
-      "frame_after_gap_start": 6139,
+      "frame_after_gap_start": 6204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006086.jpg",
@@ -4365,25 +4557,7 @@
             92.53,
             199.91
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 127.05,
-      "end_time": 184.13,
-      "duration_sec": 57.08,
-      "event_history": [
-        "narration:pick up knife",
-        "frame_id:6131",
-        "narration:put down knife",
-        "frame_id:6225",
-        "frame_id:6268",
-        "narration:open jam jar",
-        "frame_id:6309",
-        "frame_id:6338"
-      ],
-      "frame_after_gap_start": 6403,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000006121.jpg",
           "bbox": [
@@ -4392,7 +4566,25 @@
             23.81,
             190.45
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 127.6,
+      "end_time": 205.36,
+      "duration_sec": 77.76,
+      "event_history": [
+        "narration:put down knife",
+        "frame_id:6225",
+        "frame_id:6268",
+        "narration:open jam jar",
+        "frame_id:6309",
+        "frame_id:6338",
+        "narration:put down lid",
+        "frame_id:6367"
+      ],
+      "frame_after_gap_start": 6430,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006226.jpg",
           "bbox": [
@@ -4414,21 +4606,21 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
         "narration:press button on toaster to release bagel",
         "frame_id:10286",
         "frame_id:10323",
         "narration:stab bagel using knife",
         "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 10632,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010401.jpg",
@@ -4439,34 +4631,6 @@
             138.62
           ]
         },
-        {
-          "frame_path": "frame_0000010376.jpg",
-          "bbox": [
-            1098.05,
-            503.92,
-            129.12,
-            93.36
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
@@ -4485,6 +4649,34 @@
             161.28
           ]
         },
+        {
+          "frame_path": "frame_0000010376.jpg",
+          "bbox": [
+            1098.05,
+            503.92,
+            129.12,
+            93.36
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -4513,40 +4705,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010701.jpg",
-          "bbox": [
-            1021.08,
-            477.55,
-            108.82,
-            25.51
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 229.51,
-      "end_time": 230.52,
-      "duration_sec": 1.01,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
-        "narration:pick up bagel from chopping board",
-        "frame_id:11177",
-        "frame_id:11278",
-        "narration:stab bagel using knife",
-        "frame_id:11383",
-        "frame_id:11445"
-      ],
-      "frame_after_gap_start": 11526,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010926.jpg",
           "bbox": [
             931.37,
             580.38,
             208.94,
             143.84
+          ]
+        },
+        {
+          "frame_path": "frame_0000010701.jpg",
+          "bbox": [
+            1021.08,
+            477.55,
+            108.82,
+            25.51
           ]
         },
         {
@@ -4557,7 +4730,26 @@
             101.01,
             24.16
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 231.82,
+      "end_time": 234.66,
+      "duration_sec": 2.84,
+      "event_history": [
+        "narration:pick up bagel from chopping board",
+        "frame_id:11177",
+        "frame_id:11278",
+        "narration:stab bagel using knife",
+        "frame_id:11383",
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
+      ],
+      "frame_after_gap_start": 11641,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011151.jpg",
           "bbox": [
@@ -4593,26 +4785,7 @@
             190.84,
             299.85
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 238.09,
-      "end_time": 238.17000000000002,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:11542",
-        "frame_id:11575",
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11746",
-        "frame_id:11775",
-        "narration:spread jam on bagel using knife",
-        "frame_id:11820",
-        "frame_id:11877"
-      ],
-      "frame_after_gap_start": 11955,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011540.jpg",
           "bbox": [
@@ -4630,16 +4803,26 @@
             194.56,
             132.38
           ]
-        },
-        {
-          "frame_path": "frame_0000011663.jpg",
-          "bbox": [
-            1068.95,
-            518.93,
-            162.65,
-            256.3
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 239.21,
+      "end_time": 239.57,
+      "duration_sec": 0.36,
+      "event_history": [
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11746",
+        "frame_id:11775",
+        "narration:spread jam on bagel using knife",
+        "frame_id:11820",
+        "frame_id:11877",
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11921",
+        "frame_id:11948"
+      ],
+      "frame_after_gap_start": 12011,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011751.jpg",
           "bbox": [
@@ -4666,25 +4849,7 @@
             146.79,
             201.27
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
-      "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
-        "narration:spread jam on bagel using knife",
-        "frame_id:12074",
-        "frame_id:12266",
-        "narration:pick up bagel from chopping board",
-        "frame_id:12375"
-      ],
-      "frame_after_gap_start": 12434,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011926.jpg",
           "bbox": [
@@ -4702,7 +4867,24 @@
             229.22,
             42.16
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
+      "event_history": [
+        "narration:spread jam on bagel using knife",
+        "frame_id:12074",
+        "frame_id:12266",
+        "narration:pick up bagel from chopping board",
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
+      ],
+      "frame_after_gap_start": 12515,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012051.jpg",
           "bbox": [
@@ -4729,24 +4911,25 @@
             143.49,
             362.23
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            1465.19,
+            713.55,
+            119.38,
+            308.57
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            1416.15,
+            755.08,
+            126.37,
+            324.92
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -4764,7 +4947,25 @@
             60.45,
             360.92
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 258.46,
+      "duration_sec": 4.81,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12683,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -4779,18 +4980,19 @@
   ],
   "40/jar/jam jar": [
     {
-      "start_time": 118.35,
-      "end_time": 118.52000000000001,
-      "duration_sec": 0.17,
+      "start_time": 119.87,
+      "end_time": 120.08,
+      "duration_sec": 0.21,
       "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
         "narration:put down mug",
         "frame_id:5751",
         "narration:open fridge",
-        "frame_id:5893"
+        "frame_id:5893",
+        "narration:pick up jar of jam",
+        "frame_id:5943",
+        "frame_id:5977"
       ],
-      "frame_after_gap_start": 5968,
+      "frame_after_gap_start": 6044,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005905.jpg",
@@ -4800,24 +5002,7 @@
             190.32,
             226.17
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 121.78,
-      "end_time": 122.17,
-      "duration_sec": 0.39,
-      "event_history": [
-        "narration:pick up jar of jam",
-        "frame_id:5943",
-        "frame_id:5977",
-        "narration:close fridge",
-        "frame_id:6018",
-        "narration:open drawer",
-        "frame_id:6068"
-      ],
-      "frame_after_gap_start": 6139,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000005946.jpg",
           "bbox": [
@@ -4835,33 +5020,22 @@
             256.61,
             293.34
           ]
-        },
-        {
-          "frame_path": "frame_0000006001.jpg",
-          "bbox": [
-            589.48,
-            960.22,
-            343.9,
-            119.78
-          ]
         }
       ]
     },
     {
-      "start_time": 127.05,
-      "end_time": 127.08,
-      "duration_sec": 0.03,
+      "start_time": 123.08,
+      "end_time": 124.08,
+      "duration_sec": 1.0,
       "event_history": [
+        "narration:close fridge",
+        "frame_id:6018",
+        "narration:open drawer",
+        "frame_id:6068",
         "narration:pick up knife",
-        "frame_id:6131",
-        "narration:put down knife",
-        "frame_id:6225",
-        "frame_id:6268",
-        "narration:open jam jar",
-        "frame_id:6309",
-        "frame_id:6338"
+        "frame_id:6131"
       ],
-      "frame_after_gap_start": 6403,
+      "frame_after_gap_start": 6204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006151.jpg",
@@ -4870,6 +5044,33 @@
             1059.52,
             129.84,
             20.48
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 127.6,
+      "end_time": 128.91,
+      "duration_sec": 1.31,
+      "event_history": [
+        "narration:put down knife",
+        "frame_id:6225",
+        "frame_id:6268",
+        "narration:open jam jar",
+        "frame_id:6309",
+        "frame_id:6338",
+        "narration:put down lid",
+        "frame_id:6367"
+      ],
+      "frame_after_gap_start": 6430,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000006359.jpg",
+          "bbox": [
+            882.56,
+            749.24,
+            152.58,
+            164.03
           ]
         },
         {
@@ -4893,46 +5094,19 @@
       ]
     },
     {
-      "start_time": 132.03,
-      "end_time": 184.13,
-      "duration_sec": 52.1,
+      "start_time": 132.81,
+      "end_time": 205.36,
+      "duration_sec": 72.55,
       "event_history": [
-        "narration:put down lid",
-        "frame_id:6367",
         "narration:pick up mug",
         "frame_id:6469",
         "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
       ],
-      "frame_after_gap_start": 6652,
+      "frame_after_gap_start": 6691,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006359.jpg",
-          "bbox": [
-            882.56,
-            749.24,
-            152.58,
-            164.03
-          ]
-        },
-        {
-          "frame_path": "frame_0000006382.jpg",
-          "bbox": [
-            935.43,
-            816.8,
-            149.99,
-            161.84
-          ]
-        },
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            1147.54,
-            835.94,
-            158.35,
-            160.27
-          ]
-        },
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -4954,21 +5128,21 @@
       ]
     },
     {
-      "start_time": 208.3,
-      "end_time": 209.71,
-      "duration_sec": 1.41,
+      "start_time": 211.63,
+      "end_time": 213.66,
+      "duration_sec": 2.03,
       "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
         "narration:press button on toaster to release bagel",
         "frame_id:10286",
         "frame_id:10323",
         "narration:stab bagel using knife",
         "frame_id:10370",
-        "frame_id:10401"
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
       ],
-      "frame_after_gap_start": 10465,
+      "frame_after_gap_start": 10632,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010401.jpg",
@@ -4978,26 +5152,7 @@
             151.28,
             95.08
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 217.67000000000002,
-      "end_time": 217.74,
-      "duration_sec": 0.07,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10509",
-        "frame_id:10558",
-        "narration:scoop jam from jar using knife",
-        "frame_id:10702",
-        "frame_id:10743",
-        "narration:spread jam on bagel",
-        "frame_id:10796",
-        "frame_id:10855"
-      ],
-      "frame_after_gap_start": 10934,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000010501.jpg",
           "bbox": [
@@ -5015,7 +5170,26 @@
             174.89,
             195.53
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 219.2,
+      "end_time": 222.53,
+      "duration_sec": 3.33,
+      "event_history": [
+        "narration:scoop jam from jar using knife",
+        "frame_id:10702",
+        "frame_id:10743",
+        "narration:spread jam on bagel",
+        "frame_id:10796",
+        "frame_id:10855",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10905",
+        "frame_id:10942"
+      ],
+      "frame_after_gap_start": 11010,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010751.jpg",
           "bbox": [
@@ -5044,40 +5218,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000010701.jpg",
-          "bbox": [
-            969.17,
-            389.25,
-            170.84,
-            175.96
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 229.51,
-      "end_time": 230.52,
-      "duration_sec": 1.01,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:10905",
-        "frame_id:10942",
-        "narration:pick up bagel from chopping board",
-        "frame_id:11177",
-        "frame_id:11278",
-        "narration:stab bagel using knife",
-        "frame_id:11383",
-        "frame_id:11445"
-      ],
-      "frame_after_gap_start": 11526,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010926.jpg",
           "bbox": [
             859.64,
             476.31,
             197.05,
             183.95
+          ]
+        },
+        {
+          "frame_path": "frame_0000010701.jpg",
+          "bbox": [
+            969.17,
+            389.25,
+            170.84,
+            175.96
           ]
         },
         {
@@ -5088,7 +5243,26 @@
             175.97,
             176.02
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 231.82,
+      "end_time": 234.66,
+      "duration_sec": 2.84,
+      "event_history": [
+        "narration:pick up bagel from chopping board",
+        "frame_id:11177",
+        "frame_id:11278",
+        "narration:stab bagel using knife",
+        "frame_id:11383",
+        "frame_id:11445",
+        "narration:scoop jam from jar using knife",
+        "frame_id:11542",
+        "frame_id:11575"
+      ],
+      "frame_after_gap_start": 11641,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011151.jpg",
           "bbox": [
@@ -5124,26 +5298,7 @@
             150.16,
             160.99
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 238.09,
-      "end_time": 238.17000000000002,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:scoop jam from jar using knife",
-        "frame_id:11542",
-        "frame_id:11575",
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11746",
-        "frame_id:11775",
-        "narration:spread jam on bagel using knife",
-        "frame_id:11820",
-        "frame_id:11877"
-      ],
-      "frame_after_gap_start": 11955,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011540.jpg",
           "bbox": [
@@ -5161,16 +5316,26 @@
             184.07,
             196.64
           ]
-        },
-        {
-          "frame_path": "frame_0000011663.jpg",
-          "bbox": [
-            774.18,
-            277.5,
-            184.92,
-            191.57
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 239.21,
+      "end_time": 239.57,
+      "duration_sec": 0.36,
+      "event_history": [
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11746",
+        "frame_id:11775",
+        "narration:spread jam on bagel using knife",
+        "frame_id:11820",
+        "frame_id:11877",
+        "narration:scoop jam from bagel using knife",
+        "frame_id:11921",
+        "frame_id:11948"
+      ],
+      "frame_after_gap_start": 12011,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011751.jpg",
           "bbox": [
@@ -5197,25 +5362,7 @@
             190.61,
             195.96
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
-      "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
-        "narration:spread jam on bagel using knife",
-        "frame_id:12074",
-        "frame_id:12266",
-        "narration:pick up bagel from chopping board",
-        "frame_id:12375"
-      ],
-      "frame_after_gap_start": 12434,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000011926.jpg",
           "bbox": [
@@ -5233,7 +5380,24 @@
             178.71,
             199.9
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
+      "event_history": [
+        "narration:spread jam on bagel using knife",
+        "frame_id:12074",
+        "frame_id:12266",
+        "narration:pick up bagel from chopping board",
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
+      ],
+      "frame_after_gap_start": 12515,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012051.jpg",
           "bbox": [
@@ -5260,24 +5424,25 @@
             172.55,
             176.19
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 251.63,
-      "duration_sec": 0.13,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12625,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            1082.11,
+            456.52,
+            166.4,
+            169.63
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            1100.76,
+            512.45,
+            174.61,
+            172.53
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -5295,7 +5460,25 @@
             164.15,
             167.45
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 253.75,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12733,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -5326,20 +5509,20 @@
       ]
     },
     {
-      "start_time": 255.71,
-      "end_time": 255.71,
+      "start_time": 258.46,
+      "end_time": 258.46,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:open fridge",
-        "frame_id:12607",
-        "frame_id:12657",
         "narration:put jam jar in fridge",
         "frame_id:12702",
         "frame_id:12733",
-        "narration:close fridge",
-        "frame_id:12766"
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
       ],
-      "frame_after_gap_start": 12786,
+      "frame_after_gap_start": 12923,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012696.jpg",
@@ -5356,8 +5539,8 @@
   "50/maker:coffee/coffee blender": [
     {
       "start_time": 19.76,
-      "end_time": 255.71,
-      "duration_sec": 235.95,
+      "end_time": 258.46,
+      "duration_sec": 238.7,
       "event_history": [
         "narration:turn on coffee machine",
         "frame_id:355",
@@ -5563,8 +5746,8 @@
     },
     {
       "start_time": 44.87,
-      "end_time": 53.92,
-      "duration_sec": 9.05,
+      "end_time": 56.98,
+      "duration_sec": 12.11,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",
@@ -5597,20 +5780,20 @@
       ]
     },
     {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
+      "start_time": 61.93,
+      "end_time": 64.05,
+      "duration_sec": 2.12,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
         "narration:open milk",
         "frame_id:2868",
         "narration:pour milk from bottle into mug",
         "frame_id:2932",
-        "frame_id:2979"
+        "frame_id:2979",
+        "narration:close milk bottle",
+        "frame_id:3030",
+        "frame_id:3075"
       ],
-      "frame_after_gap_start": 3053,
+      "frame_after_gap_start": 3147,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002867.jpg",
@@ -5647,24 +5830,7 @@
             441.37,
             463.58
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.57,
-      "end_time": 68.67,
-      "duration_sec": 2.1,
-      "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
-        "narration:open fridge",
-        "frame_id:3219",
-        "narration:close fridge",
-        "frame_id:3311"
-      ],
-      "frame_after_gap_start": 3379,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003034.jpg",
           "bbox": [
@@ -5686,20 +5852,55 @@
       ]
     },
     {
-      "start_time": 73.74,
-      "end_time": 93.62,
-      "duration_sec": 19.88,
+      "start_time": 69.25,
+      "end_time": 69.73,
+      "duration_sec": 0.48,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:3219",
+        "narration:close fridge",
+        "frame_id:3311",
         "narration:press button",
-        "frame_id:3448",
+        "frame_id:3448"
+      ],
+      "frame_after_gap_start": 3513,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003376.jpg",
+          "bbox": [
+            781.31,
+            191.92,
+            281.38,
+            290.93
+          ]
+        },
+        {
+          "frame_path": "frame_0000003442.jpg",
+          "bbox": [
+            930.37,
+            472.18,
+            356.92,
+            466.78
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 79.24,
+      "end_time": 95.74000000000001,
+      "duration_sec": 16.5,
+      "event_history": [
         "narration:pick up wooden stirrer from box",
         "frame_id:3503",
         "frame_id:3538",
         "narration:stir coffee in mug using wooden stirrer",
         "frame_id:3611",
-        "frame_id:3662"
+        "frame_id:3662",
+        "narration:pick knife from stand",
+        "frame_id:3920",
+        "frame_id:3948"
       ],
-      "frame_after_gap_start": 3737,
+      "frame_after_gap_start": 4012,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003530.jpg",
@@ -5729,12 +5930,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000003442.jpg",
+          "frame_path": "frame_0000003788.jpg",
           "bbox": [
-            930.37,
-            472.18,
-            356.92,
-            466.78
+            137.11,
+            272.65,
+            392.63,
+            403.3
           ]
         },
         {
@@ -5749,19 +5950,19 @@
       ]
     },
     {
-      "start_time": 104.75999999999999,
-      "end_time": 255.71,
-      "duration_sec": 150.95,
+      "start_time": 108.28,
+      "end_time": 258.46,
+      "duration_sec": 150.18,
       "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
         "narration:pick up knife",
         "frame_id:4810",
         "narration:pick up mug",
         "frame_id:5180",
-        "frame_id:5219"
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 5238,
+      "frame_after_gap_start": 5414,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005205.jpg",
@@ -5787,8 +5988,8 @@
   "59/coffee/coffee": [
     {
       "start_time": 44.87,
-      "end_time": 53.92,
-      "duration_sec": 9.05,
+      "end_time": 56.98,
+      "duration_sec": 12.11,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",
@@ -5812,20 +6013,20 @@
       ]
     },
     {
-      "start_time": 60.05,
-      "end_time": 60.18,
-      "duration_sec": 0.13,
+      "start_time": 61.93,
+      "end_time": 64.05,
+      "duration_sec": 2.12,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
         "narration:open milk",
         "frame_id:2868",
         "narration:pour milk from bottle into mug",
         "frame_id:2932",
-        "frame_id:2979"
+        "frame_id:2979",
+        "narration:close milk bottle",
+        "frame_id:3030",
+        "frame_id:3075"
       ],
-      "frame_after_gap_start": 3053,
+      "frame_after_gap_start": 3147,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002867.jpg",
@@ -5862,24 +6063,7 @@
             99.22,
             112.79
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 66.57,
-      "end_time": 68.67,
-      "duration_sec": 2.1,
-      "event_history": [
-        "narration:close milk bottle",
-        "frame_id:3030",
-        "frame_id:3075",
-        "narration:open fridge",
-        "frame_id:3219",
-        "narration:close fridge",
-        "frame_id:3311"
-      ],
-      "frame_after_gap_start": 3379,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003034.jpg",
           "bbox": [
@@ -5901,20 +6085,55 @@
       ]
     },
     {
-      "start_time": 73.74,
-      "end_time": 93.62,
-      "duration_sec": 19.88,
+      "start_time": 69.25,
+      "end_time": 69.73,
+      "duration_sec": 0.48,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:3219",
+        "narration:close fridge",
+        "frame_id:3311",
         "narration:press button",
-        "frame_id:3448",
+        "frame_id:3448"
+      ],
+      "frame_after_gap_start": 3513,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000003376.jpg",
+          "bbox": [
+            791.68,
+            414.65,
+            46.97,
+            17.14
+          ]
+        },
+        {
+          "frame_path": "frame_0000003442.jpg",
+          "bbox": [
+            916.38,
+            831.86,
+            111.8,
+            100.43
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 79.24,
+      "end_time": 95.74000000000001,
+      "duration_sec": 16.5,
+      "event_history": [
         "narration:pick up wooden stirrer from box",
         "frame_id:3503",
         "frame_id:3538",
         "narration:stir coffee in mug using wooden stirrer",
         "frame_id:3611",
-        "frame_id:3662"
+        "frame_id:3662",
+        "narration:pick knife from stand",
+        "frame_id:3920",
+        "frame_id:3948"
       ],
-      "frame_after_gap_start": 3737,
+      "frame_after_gap_start": 4012,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003530.jpg",
@@ -5944,12 +6163,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000003442.jpg",
+          "frame_path": "frame_0000003788.jpg",
           "bbox": [
-            916.38,
-            831.86,
-            111.8,
-            100.43
+            243.28,
+            618.78,
+            69.23,
+            54.24
           ]
         },
         {
@@ -5964,19 +6183,19 @@
       ]
     },
     {
-      "start_time": 104.75999999999999,
-      "end_time": 107.65,
-      "duration_sec": 2.89,
+      "start_time": 108.28,
+      "end_time": 108.53,
+      "duration_sec": 0.25,
       "event_history": [
-        "narration:put bagel half in toaster",
-        "frame_id:4704",
         "narration:pick up knife",
         "frame_id:4810",
         "narration:pick up mug",
         "frame_id:5180",
-        "frame_id:5219"
+        "frame_id:5219",
+        "narration:open bin",
+        "frame_id:5398"
       ],
-      "frame_after_gap_start": 5288,
+      "frame_after_gap_start": 5464,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005205.jpg",
@@ -5985,6 +6204,15 @@
             702.3,
             113.92,
             100.66
+          ]
+        },
+        {
+          "frame_path": "frame_0000005299.jpg",
+          "bbox": [
+            900.85,
+            798.87,
+            141.72,
+            172.43
           ]
         },
         {
@@ -5999,19 +6227,19 @@
       ]
     },
     {
-      "start_time": 111.81,
-      "end_time": 111.91,
-      "duration_sec": 0.1,
+      "start_time": 112.85,
+      "end_time": 114.6,
+      "duration_sec": 1.75,
       "event_history": [
-        "narration:open bin",
-        "frame_id:5398",
         "narration:wooden stirrer falls on floor",
         "frame_id:5448",
         "narration:pick up wooden stirrer from floor",
         "frame_id:5521",
-        "frame_id:5567"
+        "frame_id:5567",
+        "narration:throw wooden stirrer in bin",
+        "frame_id:5619"
       ],
-      "frame_after_gap_start": 5641,
+      "frame_after_gap_start": 5693,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005536.jpg",
@@ -6043,28 +6271,20 @@
       ]
     },
     {
-      "start_time": 118.35,
-      "end_time": 127.08,
-      "duration_sec": 8.73,
+      "start_time": 119.87,
+      "end_time": 128.91,
+      "duration_sec": 9.04,
       "event_history": [
-        "narration:throw wooden stirrer in bin",
-        "frame_id:5619",
         "narration:put down mug",
         "frame_id:5751",
         "narration:open fridge",
-        "frame_id:5893"
+        "frame_id:5893",
+        "narration:pick up jar of jam",
+        "frame_id:5943",
+        "frame_id:5977"
       ],
-      "frame_after_gap_start": 5968,
+      "frame_after_gap_start": 6044,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000005712.jpg",
-          "bbox": [
-            653.11,
-            997.09,
-            150.01,
-            82.91
-          ]
-        },
         {
           "frame_path": "frame_0000005746.jpg",
           "bbox": [
@@ -6077,28 +6297,19 @@
       ]
     },
     {
-      "start_time": 132.03,
-      "end_time": 255.71,
-      "duration_sec": 123.68,
+      "start_time": 132.81,
+      "end_time": 253.75,
+      "duration_sec": 120.94,
       "event_history": [
-        "narration:put down lid",
-        "frame_id:6367",
         "narration:pick up mug",
         "frame_id:6469",
         "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
       ],
-      "frame_after_gap_start": 6602,
+      "frame_after_gap_start": 6691,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            433.84,
-            669.86,
-            59.8,
-            87.67
-          ]
-        },
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -6118,22 +6329,60 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 258.46,
+      "end_time": 258.46,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put jam jar in fridge",
+        "frame_id:12702",
+        "frame_id:12733",
+        "narration:pick up coffee mug",
+        "frame_id:12803",
+        "frame_id:12845",
+        "narration:pick up plate with bagels",
+        "frame_id:12897"
+      ],
+      "frame_after_gap_start": 12923,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000012809.jpg",
+          "bbox": [
+            1156.86,
+            544.36,
+            83.62,
+            55.51
+          ]
+        },
+        {
+          "frame_path": "frame_0000012901.jpg",
+          "bbox": [
+            1377.86,
+            923.46,
+            136.26,
+            156.54
+          ]
+        }
+      ]
     }
   ],
   "6/lid/lid": [
     {
-      "start_time": 132.03,
-      "end_time": 132.04,
-      "duration_sec": 0.01,
+      "start_time": 127.6,
+      "end_time": 128.91,
+      "duration_sec": 1.31,
       "event_history": [
+        "narration:put down knife",
+        "frame_id:6225",
+        "frame_id:6268",
+        "narration:open jam jar",
+        "frame_id:6309",
+        "frame_id:6338",
         "narration:put down lid",
-        "frame_id:6367",
-        "narration:pick up mug",
-        "frame_id:6469",
-        "narration:move lid",
-        "frame_id:6579"
+        "frame_id:6367"
       ],
-      "frame_after_gap_start": 6652,
+      "frame_after_gap_start": 6430,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006359.jpg",
@@ -6143,25 +6392,23 @@
             156.29,
             149.03
           ]
-        },
-        {
-          "frame_path": "frame_0000006382.jpg",
-          "bbox": [
-            1292.84,
-            922.74,
-            145.74,
-            157.26
-          ]
-        },
-        {
-          "frame_path": "frame_0000006405.jpg",
-          "bbox": [
-            1482.46,
-            1036.5,
-            133.78,
-            43.5
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 132.81,
+      "end_time": 239.57,
+      "duration_sec": 106.76,
+      "event_history": [
+        "narration:pick up mug",
+        "frame_id:6469",
+        "narration:move lid",
+        "frame_id:6579",
+        "narration:put down mug",
+        "frame_id:6621"
+      ],
+      "frame_after_gap_start": 6691,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006484.jpg",
           "bbox": [
@@ -6188,24 +6435,7 @@
             134.61,
             139.81
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 143.71,
-      "end_time": 238.17000000000002,
-      "duration_sec": 94.46,
-      "event_history": [
-        "narration:put down mug",
-        "frame_id:6621",
-        "narration:pick up plate from cupboard",
-        "frame_id:6994",
-        "frame_id:7032",
-        "narration:close cupboard",
-        "frame_id:7160"
-      ],
-      "frame_after_gap_start": 7236,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000006626.jpg",
           "bbox": [
@@ -6218,20 +6448,19 @@
       ]
     },
     {
-      "start_time": 247.67,
-      "end_time": 248.49,
-      "duration_sec": 0.82,
+      "start_time": 249.3,
+      "end_time": 249.44,
+      "duration_sec": 0.14,
       "event_history": [
-        "narration:scoop jam from bagel using knife",
-        "frame_id:11921",
-        "frame_id:11948",
         "narration:spread jam on bagel using knife",
         "frame_id:12074",
         "frame_id:12266",
         "narration:pick up bagel from chopping board",
-        "frame_id:12375"
+        "frame_id:12375",
+        "narration:put down knife",
+        "frame_id:12445"
       ],
-      "frame_after_gap_start": 12434,
+      "frame_after_gap_start": 12515,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012363.jpg",
@@ -6241,24 +6470,25 @@
             170.55,
             162.86
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 251.5,
-      "end_time": 255.71,
-      "duration_sec": 4.21,
-      "event_history": [
-        "narration:put down knife",
-        "frame_id:12445",
-        "narration:pick up lid",
-        "frame_id:12487",
-        "narration:close jar",
-        "frame_id:12533",
-        "frame_id:12562"
-      ],
-      "frame_after_gap_start": 12575,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000012401.jpg",
+          "bbox": [
+            1733.45,
+            768.53,
+            185.57,
+            162.35
+          ]
+        },
+        {
+          "frame_path": "frame_0000012420.jpg",
+          "bbox": [
+            1760.1,
+            828.79,
+            159.61,
+            169.06
+          ]
+        },
         {
           "frame_path": "frame_0000012440.jpg",
           "bbox": [
@@ -6276,7 +6506,25 @@
             153.05,
             150.37
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 253.65,
+      "end_time": 258.46,
+      "duration_sec": 4.81,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:12487",
+        "narration:close jar",
+        "frame_id:12533",
+        "frame_id:12562",
+        "narration:open fridge",
+        "frame_id:12607",
+        "frame_id:12657"
+      ],
+      "frame_after_gap_start": 12683,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000012484.jpg",
           "bbox": [
@@ -6300,20 +6548,20 @@
   ],
   "64/milk/milk": [
     {
-      "start_time": 60.05,
-      "end_time": 255.71,
-      "duration_sec": 195.66,
+      "start_time": 61.93,
+      "end_time": 258.46,
+      "duration_sec": 196.53,
       "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
         "narration:open milk",
         "frame_id:2868",
         "narration:pour milk from bottle into mug",
         "frame_id:2932",
-        "frame_id:2979"
+        "frame_id:2979",
+        "narration:close milk bottle",
+        "frame_id:3030",
+        "frame_id:3075"
       ],
-      "frame_after_gap_start": 3003,
+      "frame_after_gap_start": 3097,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002957.jpg",
@@ -6338,20 +6586,20 @@
   ],
   "66/jug/water filter": [
     {
-      "start_time": 158.32999999999998,
-      "end_time": 158.43,
-      "duration_sec": 0.1,
+      "start_time": 148.04,
+      "end_time": 155.57999999999998,
+      "duration_sec": 7.54,
       "event_history": [
+        "narration:pick up plate from cupboard",
+        "frame_id:6994",
+        "frame_id:7032",
+        "narration:close cupboard",
+        "frame_id:7160",
         "narration:move water filter",
         "frame_id:7345",
-        "frame_id:7384",
-        "narration:pick up glass from drainer",
-        "frame_id:7803",
-        "frame_id:7854",
-        "narration:pick up water filter",
-        "frame_id:7901"
+        "frame_id:7384"
       ],
-      "frame_after_gap_start": 7967,
+      "frame_after_gap_start": 7452,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007392.jpg",
@@ -6360,15 +6608,6 @@
             453.86,
             494.02,
             626.14
-          ]
-        },
-        {
-          "frame_path": "frame_0000007902.jpg",
-          "bbox": [
-            952.27,
-            401.03,
-            182.06,
-            481.69
           ]
         },
         {
@@ -6383,21 +6622,30 @@
       ]
     },
     {
-      "start_time": 168.21,
-      "end_time": 184.13,
-      "duration_sec": 15.92,
+      "start_time": 160.69,
+      "end_time": 160.77,
+      "duration_sec": 0.08,
       "event_history": [
+        "narration:pick up glass from drainer",
+        "frame_id:7803",
+        "frame_id:7854",
+        "narration:pick up water filter",
+        "frame_id:7901",
         "narration:pour water from water filter into glass",
         "frame_id:7950",
-        "frame_id:8006",
-        "narration:put down water filter",
-        "frame_id:8057",
-        "narration:put down glass",
-        "frame_id:8341",
-        "frame_id:8388"
+        "frame_id:8006"
       ],
-      "frame_after_gap_start": 8461,
+      "frame_after_gap_start": 8085,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000007902.jpg",
+          "bbox": [
+            952.27,
+            401.03,
+            182.06,
+            481.69
+          ]
+        },
         {
           "frame_path": "frame_0000007951.jpg",
           "bbox": [
@@ -6417,6 +6665,33 @@
           ]
         },
         {
+          "frame_path": "frame_0000007976.jpg",
+          "bbox": [
+            1085.54,
+            551.04,
+            771.38,
+            421.61
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 186.81,
+      "end_time": 205.36,
+      "duration_sec": 18.55,
+      "event_history": [
+        "narration:put down water filter",
+        "frame_id:8057",
+        "narration:put down glass",
+        "frame_id:8341",
+        "frame_id:8388",
+        "narration:pick up knife",
+        "frame_id:9240",
+        "frame_id:9307"
+      ],
+      "frame_after_gap_start": 9391,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000008040.jpg",
           "bbox": [
             1112.3,
@@ -6435,34 +6710,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000007976.jpg",
-          "bbox": [
-            1085.54,
-            551.04,
-            771.38,
-            421.61
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 208.3,
-      "end_time": 255.71,
-      "duration_sec": 47.41,
-      "event_history": [
-        "narration:pick up knife",
-        "frame_id:9240",
-        "frame_id:9307",
-        "narration:press button on toaster to release bagel",
-        "frame_id:10286",
-        "frame_id:10323",
-        "narration:stab bagel using knife",
-        "frame_id:10370",
-        "frame_id:10401"
-      ],
-      "frame_after_gap_start": 10415,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000009301.jpg",
           "bbox": [
             0,
@@ -6470,7 +6717,26 @@
             23.04,
             80.6
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 211.63,
+      "end_time": 258.46,
+      "duration_sec": 46.83,
+      "event_history": [
+        "narration:press button on toaster to release bagel",
+        "frame_id:10286",
+        "frame_id:10323",
+        "narration:stab bagel using knife",
+        "frame_id:10370",
+        "frame_id:10401",
+        "narration:scoop jam from jar using knife",
+        "frame_id:10509",
+        "frame_id:10558"
+      ],
+      "frame_after_gap_start": 10582,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010292.jpg",
           "bbox": [
@@ -6485,19 +6751,20 @@
   ],
   "7/bowl/bowl": [
     {
-      "start_time": 143.71,
-      "end_time": 255.71,
-      "duration_sec": 112.0,
+      "start_time": 148.04,
+      "end_time": 258.46,
+      "duration_sec": 110.42,
       "event_history": [
-        "narration:put down mug",
-        "frame_id:6621",
         "narration:pick up plate from cupboard",
         "frame_id:6994",
         "frame_id:7032",
         "narration:close cupboard",
-        "frame_id:7160"
+        "frame_id:7160",
+        "narration:move water filter",
+        "frame_id:7345",
+        "frame_id:7384"
       ],
-      "frame_after_gap_start": 7186,
+      "frame_after_gap_start": 7402,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006985.jpg",
@@ -6522,19 +6789,18 @@
   ],
   "8/drawer/drawer": [
     {
-      "start_time": 121.78,
-      "end_time": 122.17,
-      "duration_sec": 0.39,
+      "start_time": 123.08,
+      "end_time": 258.46,
+      "duration_sec": 135.38,
       "event_history": [
-        "narration:pick up jar of jam",
-        "frame_id:5943",
-        "frame_id:5977",
         "narration:close fridge",
         "frame_id:6018",
         "narration:open drawer",
-        "frame_id:6068"
+        "frame_id:6068",
+        "narration:pick up knife",
+        "frame_id:6131"
       ],
-      "frame_after_gap_start": 6139,
+      "frame_after_gap_start": 6154,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006051.jpg",
@@ -6553,25 +6819,7 @@
             907.22,
             545.68
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 127.05,
-      "end_time": 255.71,
-      "duration_sec": 128.66,
-      "event_history": [
-        "narration:pick up knife",
-        "frame_id:6131",
-        "narration:put down knife",
-        "frame_id:6225",
-        "frame_id:6268",
-        "narration:open jam jar",
-        "frame_id:6309",
-        "frame_id:6338"
-      ],
-      "frame_after_gap_start": 6353,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000006121.jpg",
           "bbox": [
@@ -6595,20 +6843,20 @@
   ],
   "8/drawer/fridge drawer": [
     {
-      "start_time": 49.63,
-      "end_time": 50.78,
-      "duration_sec": 1.15,
+      "start_time": 50.89,
+      "end_time": 51.9,
+      "duration_sec": 1.01,
       "event_history": [
         "narration:open drawer of fridge",
         "frame_id:2273",
         "narration:pick up oranges mesh",
         "frame_id:2340",
         "frame_id:2388",
-        "narration:put down oranges",
-        "frame_id:2430",
-        "frame_id:2464"
+        "narration:pick up orange",
+        "frame_id:2481",
+        "frame_id:2523"
       ],
-      "frame_after_gap_start": 2532,
+      "frame_after_gap_start": 2595,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002253.jpg",
@@ -6645,22 +6893,41 @@
             437.48,
             490.81
           ]
+        },
+        {
+          "frame_path": "frame_0000002487.jpg",
+          "bbox": [
+            993.34,
+            346.48,
+            690.04,
+            687.9
+          ]
+        },
+        {
+          "frame_path": "frame_0000002521.jpg",
+          "bbox": [
+            750.42,
+            349.49,
+            737.9,
+            730.51
+          ]
         }
       ]
     },
     {
-      "start_time": 53.75,
-      "end_time": 53.92,
-      "duration_sec": 0.17,
+      "start_time": 55.0,
+      "end_time": 258.46,
+      "duration_sec": 203.46,
       "event_history": [
-        "narration:put down orange",
-        "frame_id:2560",
         "narration:close drawer",
         "frame_id:2620",
         "narration:pick up milk from fridges door",
-        "frame_id:2674"
+        "frame_id:2674",
+        "narration:close fridge",
+        "frame_id:2709",
+        "frame_id:2737"
       ],
-      "frame_after_gap_start": 2738,
+      "frame_after_gap_start": 2750,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002613.jpg",
@@ -6688,25 +6955,7 @@
             423.5,
             406.14
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 60.05,
-      "end_time": 255.71,
-      "duration_sec": 195.66,
-      "event_history": [
-        "narration:close fridge",
-        "frame_id:2709",
-        "frame_id:2737",
-        "narration:open milk",
-        "frame_id:2868",
-        "narration:pour milk from bottle into mug",
-        "frame_id:2932",
-        "frame_id:2979"
-      ],
-      "frame_after_gap_start": 3003,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002700.jpg",
           "bbox": [
@@ -6731,8 +6980,8 @@
   "92/button/button": [
     {
       "start_time": 44.87,
-      "end_time": 255.71,
-      "duration_sec": 210.84,
+      "end_time": 258.46,
+      "duration_sec": 213.59,
       "event_history": [
         "narration:close bin",
         "frame_id:1689",

@@ -1,21 +1,20 @@
 {
   "0/tap/tap": [
     {
-      "start_time": 900.07,
-      "end_time": 900.86,
-      "duration_sec": 0.79,
+      "start_time": 901.5,
+      "end_time": 901.6,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:52481",
-        "frame_id:52836",
         "narration:put rubbish in bin",
         "frame_id:53113",
         "frame_id:53291",
         "narration:put rubbish in bin",
         "frame_id:53559",
-        "frame_id:53820"
+        "frame_id:53820",
+        "narration:turn on tap",
+        "frame_id:54016"
       ],
-      "frame_after_gap_start": 54011,
+      "frame_after_gap_start": 54096,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000053348.jpg",
@@ -25,25 +24,7 @@
             341.6,
             185.38
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 904.45,
-      "end_time": 1057.25,
-      "duration_sec": 152.8,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:54016",
-        "narration:wash hands",
-        "frame_id:54065",
-        "frame_id:54112",
-        "narration:turn off tap",
-        "frame_id:54156",
-        "frame_id:54194"
-      ],
-      "frame_after_gap_start": 54273,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000054055.jpg",
           "bbox": [
@@ -52,7 +33,26 @@
             274.13,
             418.9
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 933.03,
+      "end_time": 1046.91,
+      "duration_sec": 113.88,
+      "event_history": [
+        "narration:wash hands",
+        "frame_id:54065",
+        "frame_id:54112",
+        "narration:turn off tap",
+        "frame_id:54156",
+        "frame_id:54194",
+        "narration:stir pan",
+        "frame_id:54839",
+        "frame_id:55563"
+      ],
+      "frame_after_gap_start": 55986,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054126.jpg",
           "bbox": [
@@ -74,21 +74,21 @@
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1313.84,
-      "duration_sec": 246.28,
+      "start_time": 1058.22,
+      "end_time": 1335.85,
+      "duration_sec": 277.63,
       "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
         "narration:turn on tap",
         "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 63990,
+      "frame_after_gap_start": 63430,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063456.jpg",
@@ -113,21 +113,49 @@
   ],
   "1/spoon/spoon": [
     {
-      "start_time": 1085.44,
-      "end_time": 1087.0,
-      "duration_sec": 1.56,
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
       "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
         "narration:pick up spoon",
         "frame_id:64020",
-        "frame_id:64048",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            1549.92,
+            191.65,
+            342.03,
+            183.55
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
+      "event_history": [
         "narration:stir pan",
         "frame_id:64199",
         "frame_id:64445",
         "narration:scrape chicken into pan",
         "frame_id:64839",
-        "frame_id:64988"
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65122,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064208.jpg",
@@ -148,12 +176,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000064116.jpg",
+          "frame_path": "frame_0000065287.jpg",
           "bbox": [
-            1549.92,
-            191.65,
-            342.03,
-            183.55
+            962.44,
+            341.72,
+            206.51,
+            68.39
           ]
         },
         {
@@ -177,31 +205,22 @@
       ]
     },
     {
-      "start_time": 1096.66,
-      "end_time": 1098.89,
-      "duration_sec": 2.23,
+      "start_time": 1101.18,
+      "end_time": 1101.26,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:stir pan",
-        "frame_id:65261",
-        "frame_id:65475",
         "narration:pick up oil",
         "frame_id:65610",
         "frame_id:65645",
         "narration:take lid off oil",
         "frame_id:65683",
-        "frame_id:65717"
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
       ],
-      "frame_after_gap_start": 65794,
+      "frame_after_gap_start": 66065,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000065287.jpg",
-          "bbox": [
-            962.44,
-            341.72,
-            206.51,
-            68.39
-          ]
-        },
         {
           "frame_path": "frame_0000065688.jpg",
           "bbox": [
@@ -219,26 +238,7 @@
             416.82,
             112.45
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1122.3,
-      "end_time": 1142.02,
-      "duration_sec": 19.72,
-      "event_history": [
-        "narration:put lid on oil",
-        "frame_id:65902",
-        "frame_id:65970",
-        "narration:put down oil",
-        "frame_id:66030",
-        "frame_id:66072",
-        "narration:stir pan",
-        "frame_id:66409",
-        "frame_id:66983"
-      ],
-      "frame_after_gap_start": 67331,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000065978.jpg",
           "bbox": [
@@ -256,7 +256,26 @@
             395.19,
             79.52
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1124.76,
+      "end_time": 1149.18,
+      "duration_sec": 24.42,
+      "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
+        "narration:change cooker temperature",
+        "frame_id:67340",
+        "frame_id:67392"
+      ],
+      "frame_after_gap_start": 67479,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000066092.jpg",
           "bbox": [
@@ -287,21 +306,21 @@
       ]
     },
     {
-      "start_time": 1171.46,
-      "end_time": 1171.56,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:68472",
-        "frame_id:68513",
         "narration:stir pan",
         "frame_id:69009",
         "frame_id:69263",
         "narration:still stirring pan",
         "frame_id:69599",
-        "frame_id:70011"
+        "frame_id:70011",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70267",
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 70278,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000069360.jpg",
@@ -313,34 +332,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000069049.jpg",
-          "bbox": [
-            1016.19,
-            372.32,
-            222.87,
-            107.78
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up chopped tomatoes",
-        "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
-      ],
-      "frame_after_gap_start": 71041,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000070398.jpg",
           "bbox": [
             795.07,
@@ -349,6 +340,43 @@
             321.2
           ]
         },
+        {
+          "frame_path": "frame_0000069049.jpg",
+          "bbox": [
+            1016.19,
+            372.32,
+            222.87,
+            107.78
+          ]
+        },
+        {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            776.53,
+            119.58,
+            435.94,
+            324.83
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
@@ -359,12 +387,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            776.53,
-            119.58,
-            435.94,
-            324.83
+            959.41,
+            273.54,
+            368.88,
+            393.58
           ]
         },
         {
@@ -393,35 +421,35 @@
             298.74,
             266.74
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            1039.76,
+            198.58,
+            333.61,
+            257.49
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1238.66,
-      "duration_sec": 22.72,
+      "start_time": 1221.34,
+      "end_time": 1222.21,
+      "duration_sec": 0.87,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72944,
+      "frame_after_gap_start": 73268,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            959.41,
-            273.54,
-            368.88,
-            393.58
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -441,15 +469,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            1039.76,
-            198.58,
-            333.61,
-            257.49
-          ]
-        },
-        {
           "frame_path": "frame_0000071293.jpg",
           "bbox": [
             1075.67,
@@ -461,40 +480,22 @@
       ]
     },
     {
-      "start_time": 1269.94,
-      "end_time": 1288.32,
-      "duration_sec": 18.38,
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
       "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
         "narration:stir pan",
         "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "frame_id:75448"
       ],
-      "frame_after_gap_start": 76181,
+      "frame_after_gap_start": 75909,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000076089.jpg",
-          "bbox": [
-            1304.28,
-            333.26,
-            238.34,
-            341.12
-          ]
-        },
-        {
-          "frame_path": "frame_0000076147.jpg",
-          "bbox": [
-            1201.31,
-            177.55,
-            144.16,
-            37.24
-          ]
-        },
         {
           "frame_path": "frame_0000074591.jpg",
           "bbox": [
@@ -521,6 +522,43 @@
             184.99,
             86.19
           ]
+        }
+      ]
+    },
+    {
+      "start_time": 1273.95,
+      "end_time": 1275.74,
+      "duration_sec": 1.79,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
+        "narration:change oven temperature",
+        "frame_id:76198",
+        "frame_id:76306"
+      ],
+      "frame_after_gap_start": 76421,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000076089.jpg",
+          "bbox": [
+            1304.28,
+            333.26,
+            238.34,
+            341.12
+          ]
+        },
+        {
+          "frame_path": "frame_0000076147.jpg",
+          "bbox": [
+            1201.31,
+            177.55,
+            144.16,
+            37.24
+          ]
         },
         {
           "frame_path": "frame_0000076014.jpg",
@@ -534,21 +572,21 @@
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
-      "duration_sec": 0.0,
+      "start_time": 1291.77,
+      "end_time": 1302.99,
+      "duration_sec": 11.22,
       "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
         "narration:open cupboard",
         "frame_id:77273",
-        "frame_id:77377",
-        "narration:put potatoes on counter",
-        "frame_id:78192",
-        "frame_id:78374",
-        "narration:take lid off pan",
-        "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:77377"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 77489,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000077344.jpg",
@@ -558,7 +596,26 @@
             45.64,
             61.36
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1335.85,
+      "end_time": 1335.85,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put potatoes on counter",
+        "frame_id:78192",
+        "frame_id:78374",
+        "narration:take lid off pan",
+        "frame_id:78686",
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
+      ],
+      "frame_after_gap_start": 80071,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078490.jpg",
           "bbox": [
@@ -585,27 +642,45 @@
             183.46,
             58.23
           ]
+        },
+        {
+          "frame_path": "frame_0000079279.jpg",
+          "bbox": [
+            1147.18,
+            192.39,
+            213.29,
+            143.22
+          ]
+        },
+        {
+          "frame_path": "frame_0000079853.jpg",
+          "bbox": [
+            866.56,
+            25.43,
+            213.99,
+            151.83
+          ]
         }
       ]
     }
   ],
   "118/cap/oil bottle lid": [
     {
-      "start_time": 1096.66,
-      "end_time": 1098.89,
-      "duration_sec": 2.23,
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
       "event_history": [
         "narration:stir pan",
+        "frame_id:64199",
+        "frame_id:64445",
+        "narration:scrape chicken into pan",
+        "frame_id:64839",
+        "frame_id:64988",
+        "narration:stir pan",
         "frame_id:65261",
-        "frame_id:65475",
-        "narration:pick up oil",
-        "frame_id:65610",
-        "frame_id:65645",
-        "narration:take lid off oil",
-        "frame_id:65683",
-        "frame_id:65717"
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65794,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000065287.jpg",
@@ -624,7 +699,26 @@
             79.84,
             49.26
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1101.18,
+      "end_time": 1101.26,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:pick up oil",
+        "frame_id:65610",
+        "frame_id:65645",
+        "narration:take lid off oil",
+        "frame_id:65683",
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
+      ],
+      "frame_after_gap_start": 66065,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000065744.jpg",
           "bbox": [
@@ -632,34 +726,6 @@
             0.6,
             122.24,
             94.45
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1122.3,
-      "end_time": 1313.84,
-      "duration_sec": 191.54,
-      "event_history": [
-        "narration:put lid on oil",
-        "frame_id:65902",
-        "frame_id:65970",
-        "narration:put down oil",
-        "frame_id:66030",
-        "frame_id:66072",
-        "narration:stir pan",
-        "frame_id:66409",
-        "frame_id:66983"
-      ],
-      "frame_after_gap_start": 67271,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000066460.jpg",
-          "bbox": [
-            1761.78,
-            -0.1,
-            97.96,
-            60.39
           ]
         },
         {
@@ -669,6 +735,34 @@
             497.21,
             83.75,
             71.53
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1124.76,
+      "end_time": 1335.85,
+      "duration_sec": 211.09,
+      "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
+        "narration:change cooker temperature",
+        "frame_id:67340",
+        "frame_id:67392"
+      ],
+      "frame_after_gap_start": 67419,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000066460.jpg",
+          "bbox": [
+            1761.78,
+            -0.1,
+            97.96,
+            60.39
           ]
         }
       ]
@@ -732,8 +826,8 @@
     },
     {
       "start_time": 548.83,
-      "end_time": 941.33,
-      "duration_sec": 392.5,
+      "end_time": 944.09,
+      "duration_sec": 395.26,
       "event_history": [
         "narration:take chorizo",
         "frame_id:32087",
@@ -786,20 +880,19 @@
       ]
     },
     {
-      "start_time": 946.91,
-      "end_time": 1313.84,
-      "duration_sec": 366.93,
+      "start_time": 949.24,
+      "end_time": 1335.85,
+      "duration_sec": 386.61,
       "event_history": [
-        "narration:take chillies",
-        "frame_id:56452",
-        "frame_id:56510",
         "narration:open fridge",
         "frame_id:56613",
         "narration:close fridge",
         "frame_id:56715",
-        "frame_id:56744"
+        "frame_id:56744",
+        "narration:open cupboard",
+        "frame_id:56873"
       ],
-      "frame_after_gap_start": 56758,
+      "frame_after_gap_start": 56898,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000056774.jpg",
@@ -824,21 +917,21 @@
   ],
   "15/bottle/oil bottle": [
     {
-      "start_time": 1096.66,
-      "end_time": 1098.89,
-      "duration_sec": 2.23,
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
       "event_history": [
         "narration:stir pan",
+        "frame_id:64199",
+        "frame_id:64445",
+        "narration:scrape chicken into pan",
+        "frame_id:64839",
+        "frame_id:64988",
+        "narration:stir pan",
         "frame_id:65261",
-        "frame_id:65475",
-        "narration:pick up oil",
-        "frame_id:65610",
-        "frame_id:65645",
-        "narration:take lid off oil",
-        "frame_id:65683",
-        "frame_id:65717"
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65794,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000065287.jpg",
@@ -849,6 +942,34 @@
             273.53
           ]
         },
+        {
+          "frame_path": "frame_0000065499.jpg",
+          "bbox": [
+            1294.68,
+            7.05,
+            329.46,
+            251.44
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1101.18,
+      "end_time": 1101.26,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:pick up oil",
+        "frame_id:65610",
+        "frame_id:65645",
+        "narration:take lid off oil",
+        "frame_id:65683",
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
+      ],
+      "frame_after_gap_start": 66065,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000065688.jpg",
           "bbox": [
@@ -868,15 +989,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000065499.jpg",
-          "bbox": [
-            1294.68,
-            7.05,
-            329.46,
-            251.44
-          ]
-        },
-        {
           "frame_path": "frame_0000065714.jpg",
           "bbox": [
             845.04,
@@ -892,34 +1004,6 @@
             20.61,
             285.71,
             340.74
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1122.3,
-      "end_time": 1313.84,
-      "duration_sec": 191.54,
-      "event_history": [
-        "narration:put lid on oil",
-        "frame_id:65902",
-        "frame_id:65970",
-        "narration:put down oil",
-        "frame_id:66030",
-        "frame_id:66072",
-        "narration:stir pan",
-        "frame_id:66409",
-        "frame_id:66983"
-      ],
-      "frame_after_gap_start": 67271,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000066460.jpg",
-          "bbox": [
-            1411.85,
-            0,
-            396.74,
-            212.2
           ]
         },
         {
@@ -939,6 +1023,34 @@
             232.41,
             200.33
           ]
+        }
+      ]
+    },
+    {
+      "start_time": 1124.76,
+      "end_time": 1335.85,
+      "duration_sec": 211.09,
+      "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
+        "narration:change cooker temperature",
+        "frame_id:67340",
+        "frame_id:67392"
+      ],
+      "frame_after_gap_start": 67419,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000066460.jpg",
+          "bbox": [
+            1411.85,
+            0,
+            396.74,
+            212.2
+          ]
         },
         {
           "frame_path": "frame_0000066092.jpg",
@@ -955,8 +1067,8 @@
   "15/bottle/pepper bottle": [
     {
       "start_time": 825.95,
-      "end_time": 1313.84,
-      "duration_sec": 487.89,
+      "end_time": 1335.85,
+      "duration_sec": 509.9,
       "event_history": [
         "narration:put pepper into hand",
         "frame_id:49126",
@@ -1001,9 +1113,9 @@
   ],
   "15/bottle/salt bottle": [
     {
-      "start_time": 841.96,
-      "end_time": 1313.84,
-      "duration_sec": 471.88,
+      "start_time": 843.39,
+      "end_time": 1335.85,
+      "duration_sec": 492.46,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -1011,11 +1123,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50468,
+      "frame_after_gap_start": 50553,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049732.jpg",
@@ -1352,8 +1464,8 @@
     },
     {
       "start_time": 433.7,
-      "end_time": 1313.84,
-      "duration_sec": 880.14,
+      "end_time": 1335.85,
+      "duration_sec": 902.15,
       "event_history": [
         "narration:scrape pepper into pan",
         "frame_id:23757",
@@ -1418,8 +1530,8 @@
   "179/fan:extractor/extractor": [
     {
       "start_time": 309.3,
-      "end_time": 1313.84,
-      "duration_sec": 1004.54,
+      "end_time": 1335.85,
+      "duration_sec": 1026.55,
       "event_history": [
         "narration:turn on extractor fan",
         "frame_id:17015",
@@ -2672,8 +2784,8 @@
     },
     {
       "start_time": 800.75,
-      "end_time": 965.56,
-      "duration_sec": 164.81,
+      "end_time": 952.52,
+      "duration_sec": 151.77,
       "event_history": [
         "narration:scrape garlic into pan",
         "frame_id:46445",
@@ -2744,21 +2856,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1007.72,
-      "duration_sec": 19.47,
+      "start_time": 984.13,
+      "end_time": 984.68,
+      "duration_sec": 0.55,
       "event_history": [
+        "narration:put chopped tomatoes on canned",
+        "frame_id:57112",
+        "frame_id:57147",
+        "narration:open drawer",
+        "frame_id:57472",
+        "frame_id:57522",
         "narration:open chopped tomatoes",
         "frame_id:58154",
-        "frame_id:58710",
-        "narration:put rubbish in bin",
-        "frame_id:59035",
-        "frame_id:59064",
-        "narration:take chopped tomatoes",
-        "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:58710"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 59049,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000058782.jpg",
@@ -2779,6 +2891,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000058450.jpg",
+          "bbox": [
+            436.29,
+            354.78,
+            523.71,
+            424.08
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1009.26,
+      "end_time": 1010.27,
+      "duration_sec": 1.01,
+      "event_history": [
+        "narration:put rubbish in bin",
+        "frame_id:59035",
+        "frame_id:59064",
+        "narration:take chopped tomatoes",
+        "frame_id:59163",
+        "frame_id:59212",
+        "narration:take lid off pan",
+        "frame_id:60426",
+        "frame_id:60472"
+      ],
+      "frame_after_gap_start": 60556,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000059230.jpg",
           "bbox": [
             984.66,
@@ -2787,43 +2927,6 @@
             498.17
           ]
         },
-        {
-          "frame_path": "frame_0000058450.jpg",
-          "bbox": [
-            436.29,
-            354.78,
-            523.71,
-            424.08
-          ]
-        },
-        {
-          "frame_path": "frame_0000059282.jpg",
-          "bbox": [
-            1022.49,
-            544.41,
-            450.22,
-            324.25
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
-      "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
-        "narration:shake lid",
-        "frame_id:60576",
-        "frame_id:60618",
-        "narration:stir pan",
-        "frame_id:60878",
-        "frame_id:61252"
-      ],
-      "frame_after_gap_start": 61500,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000060545.jpg",
           "bbox": [
@@ -2834,6 +2937,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000059282.jpg",
+          "bbox": [
+            1022.49,
+            544.41,
+            450.22,
+            324.25
+          ]
+        },
+        {
           "frame_path": "frame_0000060497.jpg",
           "bbox": [
             1445.39,
@@ -2841,7 +2953,26 @@
             474.61,
             579.92
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
+      "event_history": [
+        "narration:shake lid",
+        "frame_id:60576",
+        "frame_id:60618",
+        "narration:stir pan",
+        "frame_id:60878",
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
+      ],
+      "frame_after_gap_start": 61643,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000060629.jpg",
           "bbox": [
@@ -2863,21 +2994,21 @@
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1032.0,
-      "duration_sec": 0.08,
+      "start_time": 1036.77,
+      "end_time": 1036.78,
+      "duration_sec": 0.01,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000061849.jpg",
@@ -2896,26 +3027,7 @@
             656.56,
             498.72
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1040.97,
-      "end_time": 1041.28,
-      "duration_sec": 0.31,
-      "event_history": [
-        "narration:open chicken with knife",
-        "frame_id:61930",
-        "frame_id:62073",
-        "narration:take chicken breast",
-        "frame_id:62176",
-        "frame_id:62238",
-        "narration:cut chicken breast",
-        "frame_id:62317",
-        "frame_id:62369"
-      ],
-      "frame_after_gap_start": 62456,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062018.jpg",
           "bbox": [
@@ -2933,7 +3045,26 @@
             620.35,
             444.52
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1043.44,
+      "end_time": 1046.91,
+      "duration_sec": 3.47,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62176",
+        "frame_id:62238",
+        "narration:cut chicken breast",
+        "frame_id:62317",
+        "frame_id:62369",
+        "narration:take chicken breast",
+        "frame_id:62447",
+        "frame_id:62511"
+      ],
+      "frame_after_gap_start": 62604,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062384.jpg",
           "bbox": [
@@ -2951,26 +3082,7 @@
             677.0,
             572.25
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1056.16,
-      "end_time": 1057.25,
-      "duration_sec": 1.09,
-      "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
-        "narration:take chicken breast",
-        "frame_id:62782",
-        "frame_id:62842",
-        "narration:put rubbish in bin",
-        "frame_id:63139",
-        "frame_id:63251"
-      ],
-      "frame_after_gap_start": 63367,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062511.jpg",
           "bbox": [
@@ -2988,7 +3100,26 @@
             625.9,
             490.5
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
+      ],
+      "frame_after_gap_start": 63490,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062842.jpg",
           "bbox": [
@@ -3006,26 +3137,7 @@
             614.59,
             470.07
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
-      ],
-      "frame_after_gap_start": 64050,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000063456.jpg",
           "bbox": [
@@ -3043,7 +3155,26 @@
             556.92,
             426.64
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -3051,6 +3182,15 @@
             221.94,
             561.14,
             533.93
+          ]
+        },
+        {
+          "frame_path": "frame_0000064076.jpg",
+          "bbox": [
+            926.79,
+            326.88,
+            547.87,
+            477.53
           ]
         },
         {
@@ -3079,43 +3219,6 @@
             623.35,
             475.17
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1085.44,
-      "end_time": 1171.56,
-      "duration_sec": 86.12,
-      "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
-        "narration:stir pan",
-        "frame_id:64199",
-        "frame_id:64445",
-        "narration:scrape chicken into pan",
-        "frame_id:64839",
-        "frame_id:64988"
-      ],
-      "frame_after_gap_start": 65122,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000064076.jpg",
-          "bbox": [
-            926.79,
-            326.88,
-            547.87,
-            477.53
-          ]
-        },
-        {
-          "frame_path": "frame_0000064532.jpg",
-          "bbox": [
-            1182.26,
-            444.2,
-            516.76,
-            408.75
-          ]
         },
         {
           "frame_path": "frame_0000064116.jpg",
@@ -3124,6 +3227,34 @@
             617.92,
             648.89,
             462.08
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1094.12,
+      "end_time": 1149.18,
+      "duration_sec": 55.06,
+      "event_history": [
+        "narration:stir pan",
+        "frame_id:64199",
+        "frame_id:64445",
+        "narration:scrape chicken into pan",
+        "frame_id:64839",
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
+      ],
+      "frame_after_gap_start": 65642,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000064532.jpg",
+          "bbox": [
+            1182.26,
+            444.2,
+            516.76,
+            408.75
           ]
         },
         {
@@ -3147,21 +3278,21 @@
       ]
     },
     {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
+        "narration:stir pan",
+        "frame_id:69009",
+        "frame_id:69263",
+        "narration:still stirring pan",
+        "frame_id:69599",
+        "frame_id:70011",
         "narration:pick up chopped tomatoes",
         "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 71041,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070398.jpg",
@@ -3173,6 +3304,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            1114.66,
+            405.1,
+            584.49,
+            424.36
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
             1309.99,
@@ -3182,12 +3341,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            1114.66,
-            405.1,
-            584.49,
-            424.36
+            1049.41,
+            613.25,
+            545.02,
+            466.75
           ]
         },
         {
@@ -3216,35 +3375,35 @@
             579.92,
             467.11
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            1146.49,
+            428.87,
+            473.42,
+            469.77
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1313.84,
-      "duration_sec": 97.9,
+      "start_time": 1221.34,
+      "end_time": 1335.85,
+      "duration_sec": 114.51,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72884,
+      "frame_after_gap_start": 73208,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            1049.41,
-            613.25,
-            545.02,
-            466.75
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -3264,15 +3423,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            1146.49,
-            428.87,
-            473.42,
-            469.77
-          ]
-        },
-        {
           "frame_path": "frame_0000071293.jpg",
           "bbox": [
             1202.7,
@@ -3287,8 +3437,8 @@
   "19/bag/bag": [
     {
       "start_time": 357.25,
-      "end_time": 1313.84,
-      "duration_sec": 956.59,
+      "end_time": 1335.85,
+      "duration_sec": 978.6,
       "event_history": [
         "narration:take out peppers",
         "frame_id:20237",
@@ -3353,8 +3503,8 @@
   "19/bag/chorizo bag": [
     {
       "start_time": 576.89,
-      "end_time": 1313.84,
-      "duration_sec": 736.95,
+      "end_time": 1335.85,
+      "duration_sec": 758.96,
       "event_history": [
         "narration:stir pan",
         "frame_id:33972",
@@ -3447,8 +3597,8 @@
     },
     {
       "start_time": 658.9,
-      "end_time": 872.61,
-      "duration_sec": 213.71,
+      "end_time": 861.75,
+      "duration_sec": 202.85,
       "event_history": [
         "narration:put rubbish in bin",
         "frame_id:38525",
@@ -3474,21 +3624,21 @@
       ]
     },
     {
-      "start_time": 900.07,
-      "end_time": 908.85,
-      "duration_sec": 8.78,
+      "start_time": 884.42,
+      "end_time": 884.63,
+      "duration_sec": 0.21,
       "event_history": [
+        "narration:put pepper in cupboard",
+        "frame_id:51710",
+        "frame_id:51825",
+        "narration:close cupboard",
+        "frame_id:52159",
+        "frame_id:52197",
         "narration:put rubbish in bin",
         "frame_id:52481",
-        "frame_id:52836",
-        "narration:put rubbish in bin",
-        "frame_id:53113",
-        "frame_id:53291",
-        "narration:put rubbish in bin",
-        "frame_id:53559",
-        "frame_id:53820"
+        "frame_id:52836"
       ],
-      "frame_after_gap_start": 54011,
+      "frame_after_gap_start": 53073,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000052514.jpg",
@@ -3516,7 +3666,25 @@
             494.48,
             473.01
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 901.5,
+      "end_time": 934.4,
+      "duration_sec": 32.9,
+      "event_history": [
+        "narration:put rubbish in bin",
+        "frame_id:53113",
+        "frame_id:53291",
+        "narration:put rubbish in bin",
+        "frame_id:53559",
+        "frame_id:53820",
+        "narration:turn on tap",
+        "frame_id:54016"
+      ],
+      "frame_after_gap_start": 54096,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000053348.jpg",
           "bbox": [
@@ -3529,21 +3697,21 @@
       ]
     },
     {
-      "start_time": 941.32,
-      "end_time": 941.33,
-      "duration_sec": 0.01,
+      "start_time": 943.25,
+      "end_time": 984.68,
+      "duration_sec": 41.43,
       "event_history": [
-        "narration:stir pan",
-        "frame_id:54839",
-        "frame_id:55563",
         "narration:put lid on pan",
         "frame_id:56045",
         "frame_id:56120",
         "narration:put rubbish in bin",
         "frame_id:56328",
-        "frame_id:56391"
+        "frame_id:56391",
+        "narration:take chillies",
+        "frame_id:56452",
+        "frame_id:56510"
       ],
-      "frame_after_gap_start": 56483,
+      "frame_after_gap_start": 56599,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000056439.jpg",
@@ -3553,25 +3721,7 @@
             431.39,
             568.41
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 946.91,
-      "end_time": 965.56,
-      "duration_sec": 18.65,
-      "event_history": [
-        "narration:take chillies",
-        "frame_id:56452",
-        "frame_id:56510",
-        "narration:open fridge",
-        "frame_id:56613",
-        "narration:close fridge",
-        "frame_id:56715",
-        "frame_id:56744"
-      ],
-      "frame_after_gap_start": 56818,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000056549.jpg",
           "bbox": [
@@ -3584,21 +3734,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1041.28,
-      "duration_sec": 53.03,
+      "start_time": 1009.26,
+      "end_time": 1046.91,
+      "duration_sec": 37.65,
       "event_history": [
-        "narration:open chopped tomatoes",
-        "frame_id:58154",
-        "frame_id:58710",
         "narration:put rubbish in bin",
         "frame_id:59035",
         "frame_id:59064",
         "narration:take chopped tomatoes",
         "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:59212",
+        "narration:take lid off pan",
+        "frame_id:60426",
+        "frame_id:60472"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 60556,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000059105.jpg",
@@ -3612,21 +3762,21 @@
       ]
     },
     {
-      "start_time": 1056.16,
-      "end_time": 1270.32,
-      "duration_sec": 214.16,
+      "start_time": 1058.22,
+      "end_time": 1275.74,
+      "duration_sec": 217.52,
       "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
         "narration:take chicken breast",
         "frame_id:62782",
         "frame_id:62842",
         "narration:put rubbish in bin",
         "frame_id:63139",
-        "frame_id:63251"
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 63367,
+      "frame_after_gap_start": 63490,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063292.jpg",
@@ -3649,21 +3799,21 @@
       ]
     },
     {
-      "start_time": 1282.1,
-      "end_time": 1313.84,
-      "duration_sec": 31.74,
+      "start_time": 1291.77,
+      "end_time": 1335.85,
+      "duration_sec": 44.08,
       "event_history": [
-        "narration:change oven temperature",
-        "frame_id:76198",
-        "frame_id:76306",
         "narration:pick up rubbish",
         "frame_id:76528",
         "frame_id:76651",
         "narration:put rubbish in bin",
         "frame_id:76790",
-        "frame_id:76830"
+        "frame_id:76830",
+        "narration:open cupboard",
+        "frame_id:77273",
+        "frame_id:77377"
       ],
-      "frame_after_gap_start": 76850,
+      "frame_after_gap_start": 77429,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000076880.jpg",
@@ -4493,9 +4643,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 852.72,
+      "duration_sec": 9.33,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -4503,11 +4653,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049839.jpg",
@@ -4526,26 +4676,7 @@
             223.95,
             153.39
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 860.45,
-      "end_time": 860.7,
-      "duration_sec": 0.25,
-      "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
-        "narration:put lid on pan",
-        "frame_id:51184",
-        "frame_id:51328",
-        "narration:close cupboard",
-        "frame_id:51508",
-        "frame_id:51553"
-      ],
-      "frame_after_gap_start": 51636,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000050536.jpg",
           "bbox": [
@@ -4555,6 +4686,34 @@
             194.06
           ]
         },
+        {
+          "frame_path": "frame_0000050585.jpg",
+          "bbox": [
+            1360.25,
+            207.26,
+            434.58,
+            175.92
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 861.68,
+      "end_time": 901.6,
+      "duration_sec": 39.92,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:51184",
+        "frame_id:51328",
+        "narration:close cupboard",
+        "frame_id:51508",
+        "frame_id:51553",
+        "narration:open cupboard",
+        "frame_id:51605",
+        "frame_id:51635"
+      ],
+      "frame_after_gap_start": 51710,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000051232.jpg",
           "bbox": [
@@ -4574,12 +4733,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000050585.jpg",
+          "frame_path": "frame_0000051697.jpg",
           "bbox": [
-            1360.25,
-            207.26,
-            434.58,
-            175.92
+            0,
+            656.24,
+            80.52,
+            252.92
           ]
         },
         {
@@ -4594,48 +4753,21 @@
       ]
     },
     {
-      "start_time": 871.15,
-      "end_time": 900.86,
-      "duration_sec": 29.71,
+      "start_time": 933.03,
+      "end_time": 984.68,
+      "duration_sec": 51.65,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
-        "narration:put pepper in cupboard",
-        "frame_id:51710",
-        "frame_id:51825",
-        "narration:close cupboard",
-        "frame_id:52159",
-        "frame_id:52197"
-      ],
-      "frame_after_gap_start": 52277,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000051697.jpg",
-          "bbox": [
-            0,
-            656.24,
-            80.52,
-            252.92
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 904.45,
-      "end_time": 908.85,
-      "duration_sec": 4.4,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:54016",
         "narration:wash hands",
         "frame_id:54065",
         "frame_id:54112",
         "narration:turn off tap",
         "frame_id:54156",
-        "frame_id:54194"
+        "frame_id:54194",
+        "narration:stir pan",
+        "frame_id:54839",
+        "frame_id:55563"
       ],
-      "frame_after_gap_start": 54273,
+      "frame_after_gap_start": 55986,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054201.jpg",
@@ -4654,26 +4786,7 @@
             262.22,
             156.94
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 941.32,
-      "end_time": 965.56,
-      "duration_sec": 24.24,
-      "event_history": [
-        "narration:stir pan",
-        "frame_id:54839",
-        "frame_id:55563",
-        "narration:put lid on pan",
-        "frame_id:56045",
-        "frame_id:56120",
-        "narration:put rubbish in bin",
-        "frame_id:56328",
-        "frame_id:56391"
-      ],
-      "frame_after_gap_start": 56483,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000054937.jpg",
           "bbox": [
@@ -4695,21 +4808,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1007.72,
-      "duration_sec": 19.47,
+      "start_time": 1009.26,
+      "end_time": 1010.27,
+      "duration_sec": 1.01,
       "event_history": [
-        "narration:open chopped tomatoes",
-        "frame_id:58154",
-        "frame_id:58710",
         "narration:put rubbish in bin",
         "frame_id:59035",
         "frame_id:59064",
         "narration:take chopped tomatoes",
         "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:59212",
+        "narration:take lid off pan",
+        "frame_id:60426",
+        "frame_id:60472"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 60556,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000059230.jpg",
@@ -4721,34 +4834,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000059282.jpg",
-          "bbox": [
-            971.8,
-            474.83,
-            233.57,
-            417.17
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
-      "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
-        "narration:shake lid",
-        "frame_id:60576",
-        "frame_id:60618",
-        "narration:stir pan",
-        "frame_id:60878",
-        "frame_id:61252"
-      ],
-      "frame_after_gap_start": 61500,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000060545.jpg",
           "bbox": [
             1384.55,
@@ -4758,12 +4843,49 @@
           ]
         },
         {
+          "frame_path": "frame_0000059282.jpg",
+          "bbox": [
+            971.8,
+            474.83,
+            233.57,
+            417.17
+          ]
+        },
+        {
           "frame_path": "frame_0000060497.jpg",
           "bbox": [
             1543.21,
             423.95,
             189.2,
             392.28
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
+      "event_history": [
+        "narration:shake lid",
+        "frame_id:60576",
+        "frame_id:60618",
+        "narration:stir pan",
+        "frame_id:60878",
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
+      ],
+      "frame_after_gap_start": 61643,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000061615.jpg",
+          "bbox": [
+            1206.99,
+            484.42,
+            174.95,
+            260.67
           ]
         },
         {
@@ -4792,35 +4914,35 @@
             183.59,
             118.11
           ]
+        },
+        {
+          "frame_path": "frame_0000061548.jpg",
+          "bbox": [
+            1017.81,
+            317.34,
+            193.85,
+            283.61
+          ]
         }
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1313.84,
-      "duration_sec": 281.92,
+      "start_time": 1036.77,
+      "end_time": 1335.85,
+      "duration_sec": 299.08,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61854,
+      "frame_after_gap_start": 62145,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000061615.jpg",
-          "bbox": [
-            1206.99,
-            484.42,
-            174.95,
-            260.67
-          ]
-        },
         {
           "frame_path": "frame_0000061703.jpg",
           "bbox": [
@@ -4838,36 +4960,27 @@
             347.14,
             179.53
           ]
-        },
-        {
-          "frame_path": "frame_0000061548.jpg",
-          "bbox": [
-            1017.81,
-            317.34,
-            193.85,
-            283.61
-          ]
         }
       ]
     }
   ],
   "23/box/chicken box": [
     {
-      "start_time": 1031.92,
-      "end_time": 1032.0,
-      "duration_sec": 0.08,
+      "start_time": 1036.77,
+      "end_time": 1036.78,
+      "duration_sec": 0.01,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000061849.jpg",
@@ -4886,26 +4999,7 @@
             378.38,
             384.88
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1040.97,
-      "end_time": 1041.28,
-      "duration_sec": 0.31,
-      "event_history": [
-        "narration:open chicken with knife",
-        "frame_id:61930",
-        "frame_id:62073",
-        "narration:take chicken breast",
-        "frame_id:62176",
-        "frame_id:62238",
-        "narration:cut chicken breast",
-        "frame_id:62317",
-        "frame_id:62369"
-      ],
-      "frame_after_gap_start": 62456,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062018.jpg",
           "bbox": [
@@ -4923,7 +5017,26 @@
             480.74,
             387.65
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1043.44,
+      "end_time": 1046.91,
+      "duration_sec": 3.47,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62176",
+        "frame_id:62238",
+        "narration:cut chicken breast",
+        "frame_id:62317",
+        "frame_id:62369",
+        "narration:take chicken breast",
+        "frame_id:62447",
+        "frame_id:62511"
+      ],
+      "frame_after_gap_start": 62604,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062384.jpg",
           "bbox": [
@@ -4941,26 +5054,7 @@
             397.97,
             414.81
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1056.16,
-      "end_time": 1313.84,
-      "duration_sec": 257.68,
-      "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
-        "narration:take chicken breast",
-        "frame_id:62782",
-        "frame_id:62842",
-        "narration:put rubbish in bin",
-        "frame_id:63139",
-        "frame_id:63251"
-      ],
-      "frame_after_gap_start": 63307,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062511.jpg",
           "bbox": [
@@ -4978,7 +5072,26 @@
             444.06,
             430.55
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1058.22,
+      "end_time": 1335.85,
+      "duration_sec": 277.63,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
+      ],
+      "frame_after_gap_start": 63430,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062842.jpg",
           "bbox": [
@@ -4993,21 +5106,21 @@
   ],
   "23/box/chopped tomato box": [
     {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
+        "narration:stir pan",
+        "frame_id:69009",
+        "frame_id:69263",
+        "narration:still stirring pan",
+        "frame_id:69599",
+        "frame_id:70011",
         "narration:pick up chopped tomatoes",
         "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 71041,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070398.jpg",
@@ -5019,6 +5132,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            1299.26,
+            89.32,
+            620.87,
+            197.6
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
             1051.84,
@@ -5028,12 +5169,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            1299.26,
-            89.32,
-            620.87,
-            197.6
+            1137.43,
+            214.51,
+            404.16,
+            360.57
           ]
         },
         {
@@ -5062,35 +5203,35 @@
             399.85,
             360.33
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            1017.51,
+            0,
+            701.53,
+            328.98
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1270.32,
-      "duration_sec": 54.38,
+      "start_time": 1221.34,
+      "end_time": 1266.3,
+      "duration_sec": 44.96,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72944,
+      "frame_after_gap_start": 73268,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            1137.43,
-            214.51,
-            404.16,
-            360.57
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -5110,15 +5251,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            1017.51,
-            0,
-            701.53,
-            328.98
-          ]
-        },
-        {
           "frame_path": "frame_0000071378.jpg",
           "bbox": [
             693.05,
@@ -5130,21 +5262,21 @@
       ]
     },
     {
-      "start_time": 1282.1,
-      "end_time": 1313.84,
-      "duration_sec": 31.74,
+      "start_time": 1273.95,
+      "end_time": 1275.74,
+      "duration_sec": 1.79,
       "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
         "narration:change oven temperature",
         "frame_id:76198",
-        "frame_id:76306",
-        "narration:pick up rubbish",
-        "frame_id:76528",
-        "frame_id:76651",
-        "narration:put rubbish in bin",
-        "frame_id:76790",
-        "frame_id:76830"
+        "frame_id:76306"
       ],
-      "frame_after_gap_start": 76850,
+      "frame_after_gap_start": 76421,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000076368.jpg",
@@ -5154,16 +5286,26 @@
             388.74,
             223.53
           ]
-        },
-        {
-          "frame_path": "frame_0000076485.jpg",
-          "bbox": [
-            1107.59,
-            0.31,
-            127.05,
-            192.98
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1291.77,
+      "end_time": 1335.85,
+      "duration_sec": 44.08,
+      "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
+        "narration:open cupboard",
+        "frame_id:77273",
+        "frame_id:77377"
+      ],
+      "frame_after_gap_start": 77429,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000076601.jpg",
           "bbox": [
@@ -5187,21 +5329,21 @@
   ],
   "23/box/gravy box": [
     {
-      "start_time": 1138.09,
-      "end_time": 1313.84,
-      "duration_sec": 175.75,
+      "start_time": 1143.35,
+      "end_time": 1335.85,
+      "duration_sec": 192.5,
       "event_history": [
-        "narration:change cooker temperature",
-        "frame_id:67340",
-        "frame_id:67392",
         "narration:take gravy cube",
         "frame_id:67543",
         "frame_id:67581",
         "narration:open gravy cube",
         "frame_id:67793",
-        "frame_id:68076"
+        "frame_id:68076",
+        "narration:open cupboard",
+        "frame_id:68472",
+        "frame_id:68513"
       ],
-      "frame_after_gap_start": 68218,
+      "frame_after_gap_start": 68533,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000067619.jpg",
@@ -5619,9 +5761,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 1010.27,
+      "duration_sec": 166.88,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -5629,11 +5771,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049630.jpg",
@@ -5670,26 +5812,7 @@
             859.21,
             898.94
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 860.45,
-      "end_time": 1007.72,
-      "duration_sec": 147.27,
-      "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
-        "narration:put lid on pan",
-        "frame_id:51184",
-        "frame_id:51328",
-        "narration:close cupboard",
-        "frame_id:51508",
-        "frame_id:51553"
-      ],
-      "frame_after_gap_start": 51636,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000050536.jpg",
           "bbox": [
@@ -5711,22 +5834,31 @@
       ]
     },
     {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
       "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
         "narration:shake lid",
         "frame_id:60576",
         "frame_id:60618",
         "narration:stir pan",
         "frame_id:60878",
-        "frame_id:61252"
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
       ],
-      "frame_after_gap_start": 61500,
+      "frame_after_gap_start": 61643,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000061615.jpg",
+          "bbox": [
+            443.95,
+            12.45,
+            725.54,
+            733.12
+          ]
+        },
         {
           "frame_path": "frame_0000060869.jpg",
           "bbox": [
@@ -5744,35 +5876,35 @@
             924.73,
             913.47
           ]
+        },
+        {
+          "frame_path": "frame_0000061548.jpg",
+          "bbox": [
+            247.24,
+            91.65,
+            761.3,
+            697.43
+          ]
         }
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1032.0,
-      "duration_sec": 0.08,
+      "start_time": 1036.77,
+      "end_time": 1036.78,
+      "duration_sec": 0.01,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000061615.jpg",
-          "bbox": [
-            443.95,
-            12.45,
-            725.54,
-            733.12
-          ]
-        },
         {
           "frame_path": "frame_0000061703.jpg",
           "bbox": [
@@ -5810,34 +5942,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000061548.jpg",
-          "bbox": [
-            247.24,
-            91.65,
-            761.3,
-            697.43
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1040.97,
-      "end_time": 1041.28,
-      "duration_sec": 0.31,
-      "event_history": [
-        "narration:open chicken with knife",
-        "frame_id:61930",
-        "frame_id:62073",
-        "narration:take chicken breast",
-        "frame_id:62176",
-        "frame_id:62238",
-        "narration:cut chicken breast",
-        "frame_id:62317",
-        "frame_id:62369"
-      ],
-      "frame_after_gap_start": 62456,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000062018.jpg",
           "bbox": [
             275.34,
@@ -5854,7 +5958,26 @@
             952.9,
             600.93
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1043.44,
+      "end_time": 1046.91,
+      "duration_sec": 3.47,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62176",
+        "frame_id:62238",
+        "narration:cut chicken breast",
+        "frame_id:62317",
+        "frame_id:62369",
+        "narration:take chicken breast",
+        "frame_id:62447",
+        "frame_id:62511"
+      ],
+      "frame_after_gap_start": 62604,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062384.jpg",
           "bbox": [
@@ -5872,26 +5995,7 @@
             626.86,
             763.54
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1056.16,
-      "end_time": 1123.02,
-      "duration_sec": 66.86,
-      "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
-        "narration:take chicken breast",
-        "frame_id:62782",
-        "frame_id:62842",
-        "narration:put rubbish in bin",
-        "frame_id:63139",
-        "frame_id:63251"
-      ],
-      "frame_after_gap_start": 63367,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062511.jpg",
           "bbox": [
@@ -5909,7 +6013,26 @@
             899.78,
             582.15
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1058.22,
+      "end_time": 1101.26,
+      "duration_sec": 43.04,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
+      ],
+      "frame_after_gap_start": 63490,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062842.jpg",
           "bbox": [
@@ -5931,40 +6054,22 @@
       ]
     },
     {
-      "start_time": 1138.09,
-      "end_time": 1238.66,
-      "duration_sec": 100.57,
+      "start_time": 1124.76,
+      "end_time": 1126.51,
+      "duration_sec": 1.75,
       "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
         "narration:change cooker temperature",
         "frame_id:67340",
-        "frame_id:67392",
-        "narration:take gravy cube",
-        "frame_id:67543",
-        "frame_id:67581",
-        "narration:open gravy cube",
-        "frame_id:67793",
-        "frame_id:68076"
+        "frame_id:67392"
       ],
-      "frame_after_gap_start": 68278,
+      "frame_after_gap_start": 67479,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000067811.jpg",
-          "bbox": [
-            0,
-            0,
-            265.12,
-            623.03
-          ]
-        },
-        {
-          "frame_path": "frame_0000068099.jpg",
-          "bbox": [
-            0,
-            0,
-            295.78,
-            694.56
-          ]
-        },
         {
           "frame_path": "frame_0000067451.jpg",
           "bbox": [
@@ -5986,40 +6091,59 @@
       ]
     },
     {
-      "start_time": 1269.94,
-      "end_time": 1270.32,
-      "duration_sec": 0.38,
+      "start_time": 1143.35,
+      "end_time": 1222.21,
+      "duration_sec": 78.86,
       "event_history": [
-        "narration:stir pan",
-        "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "narration:take gravy cube",
+        "frame_id:67543",
+        "frame_id:67581",
+        "narration:open gravy cube",
+        "frame_id:67793",
+        "frame_id:68076",
+        "narration:open cupboard",
+        "frame_id:68472",
+        "frame_id:68513"
       ],
-      "frame_after_gap_start": 76181,
+      "frame_after_gap_start": 68593,
       "crop_from_previous_active": [
         {
-          "frame_path": "frame_0000076089.jpg",
+          "frame_path": "frame_0000067811.jpg",
           "bbox": [
-            469.5,
-            48.22,
-            784.29,
-            819.24
+            0,
+            0,
+            265.12,
+            623.03
           ]
         },
         {
-          "frame_path": "frame_0000076147.jpg",
+          "frame_path": "frame_0000068099.jpg",
           "bbox": [
-            295.36,
-            76.82,
-            764.27,
-            768.47
+            0,
+            0,
+            295.78,
+            694.56
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
+      "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
+        "narration:stir pan",
+        "frame_id:74646",
+        "frame_id:75448"
+      ],
+      "frame_after_gap_start": 75909,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000074591.jpg",
           "bbox": [
@@ -6046,35 +6170,44 @@
             1098.68,
             840.18
           ]
-        },
-        {
-          "frame_path": "frame_0000076014.jpg",
-          "bbox": [
-            395.41,
-            0,
-            929.91,
-            747.21
-          ]
         }
       ]
     },
     {
-      "start_time": 1282.1,
-      "end_time": 1313.84,
-      "duration_sec": 31.74,
+      "start_time": 1273.95,
+      "end_time": 1275.74,
+      "duration_sec": 1.79,
       "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
         "narration:change oven temperature",
         "frame_id:76198",
-        "frame_id:76306",
-        "narration:pick up rubbish",
-        "frame_id:76528",
-        "frame_id:76651",
-        "narration:put rubbish in bin",
-        "frame_id:76790",
-        "frame_id:76830"
+        "frame_id:76306"
       ],
-      "frame_after_gap_start": 76850,
+      "frame_after_gap_start": 76421,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000076089.jpg",
+          "bbox": [
+            469.5,
+            48.22,
+            784.29,
+            819.24
+          ]
+        },
+        {
+          "frame_path": "frame_0000076147.jpg",
+          "bbox": [
+            295.36,
+            76.82,
+            764.27,
+            768.47
+          ]
+        },
         {
           "frame_path": "frame_0000076262.jpg",
           "bbox": [
@@ -6094,14 +6227,33 @@
           ]
         },
         {
-          "frame_path": "frame_0000076485.jpg",
+          "frame_path": "frame_0000076014.jpg",
           "bbox": [
-            101.62,
-            22.67,
-            671.89,
-            758.75
+            395.41,
+            0,
+            929.91,
+            747.21
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1291.77,
+      "end_time": 1335.85,
+      "duration_sec": 44.08,
+      "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
+        "narration:open cupboard",
+        "frame_id:77273",
+        "frame_id:77377"
+      ],
+      "frame_after_gap_start": 77429,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000076601.jpg",
           "bbox": [
@@ -6125,40 +6277,22 @@
   ],
   "26/package/pack": [
     {
-      "start_time": 1269.94,
-      "end_time": 1288.32,
-      "duration_sec": 18.38,
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
       "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
         "narration:stir pan",
         "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "frame_id:75448"
       ],
-      "frame_after_gap_start": 76181,
+      "frame_after_gap_start": 75909,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000076089.jpg",
-          "bbox": [
-            1336.98,
-            73.79,
-            184.85,
-            216.16
-          ]
-        },
-        {
-          "frame_path": "frame_0000076147.jpg",
-          "bbox": [
-            1169.49,
-            0,
-            466.3,
-            315.45
-          ]
-        },
         {
           "frame_path": "frame_0000074591.jpg",
           "bbox": [
@@ -6185,6 +6319,43 @@
             267.43,
             171.69
           ]
+        }
+      ]
+    },
+    {
+      "start_time": 1273.95,
+      "end_time": 1275.74,
+      "duration_sec": 1.79,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
+        "narration:change oven temperature",
+        "frame_id:76198",
+        "frame_id:76306"
+      ],
+      "frame_after_gap_start": 76421,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000076089.jpg",
+          "bbox": [
+            1336.98,
+            73.79,
+            184.85,
+            216.16
+          ]
+        },
+        {
+          "frame_path": "frame_0000076147.jpg",
+          "bbox": [
+            1169.49,
+            0,
+            466.3,
+            315.45
+          ]
         },
         {
           "frame_path": "frame_0000076014.jpg",
@@ -6198,21 +6369,21 @@
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
-      "duration_sec": 0.0,
+      "start_time": 1291.77,
+      "end_time": 1302.99,
+      "duration_sec": 11.22,
       "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
         "narration:open cupboard",
         "frame_id:77273",
-        "frame_id:77377",
-        "narration:put potatoes on counter",
-        "frame_id:78192",
-        "frame_id:78374",
-        "narration:take lid off pan",
-        "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:77377"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 77489,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000077344.jpg",
@@ -6222,7 +6393,26 @@
             131.85,
             159.95
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1335.85,
+      "end_time": 1335.85,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put potatoes on counter",
+        "frame_id:78192",
+        "frame_id:78374",
+        "narration:take lid off pan",
+        "frame_id:78686",
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
+      ],
+      "frame_after_gap_start": 80071,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078490.jpg",
           "bbox": [
@@ -6249,26 +6439,45 @@
             271.7,
             209.47
           ]
+        },
+        {
+          "frame_path": "frame_0000079279.jpg",
+          "bbox": [
+            1584.57,
+            235.16,
+            292.01,
+            189.59
+          ]
+        },
+        {
+          "frame_path": "frame_0000079853.jpg",
+          "bbox": [
+            1398.81,
+            97.84,
+            276.55,
+            206.59
+          ]
         }
       ]
     }
   ],
   "27/water/water": [
     {
-      "start_time": 904.45,
-      "end_time": 1057.25,
-      "duration_sec": 152.8,
+      "start_time": 933.03,
+      "end_time": 1046.91,
+      "duration_sec": 113.88,
       "event_history": [
-        "narration:turn on tap",
-        "frame_id:54016",
         "narration:wash hands",
         "frame_id:54065",
         "frame_id:54112",
         "narration:turn off tap",
         "frame_id:54156",
-        "frame_id:54194"
+        "frame_id:54194",
+        "narration:stir pan",
+        "frame_id:54839",
+        "frame_id:55563"
       ],
-      "frame_after_gap_start": 54273,
+      "frame_after_gap_start": 55986,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054126.jpg",
@@ -6291,21 +6500,21 @@
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1313.84,
-      "duration_sec": 246.28,
+      "start_time": 1058.22,
+      "end_time": 1335.85,
+      "duration_sec": 277.63,
       "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
         "narration:turn on tap",
         "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 63990,
+      "frame_after_gap_start": 63430,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063489.jpg",
@@ -7427,9 +7636,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 852.72,
+      "duration_sec": 9.33,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -7437,11 +7646,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049732.jpg",
@@ -7469,25 +7678,34 @@
             368.33,
             499.6
           ]
+        },
+        {
+          "frame_path": "frame_0000050585.jpg",
+          "bbox": [
+            1198.32,
+            -1.11,
+            445.87,
+            394.01
+          ]
         }
       ]
     },
     {
-      "start_time": 860.45,
-      "end_time": 860.7,
-      "duration_sec": 0.25,
+      "start_time": 861.68,
+      "end_time": 901.6,
+      "duration_sec": 39.92,
       "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
         "narration:put lid on pan",
         "frame_id:51184",
         "frame_id:51328",
         "narration:close cupboard",
         "frame_id:51508",
-        "frame_id:51553"
+        "frame_id:51553",
+        "narration:open cupboard",
+        "frame_id:51605",
+        "frame_id:51635"
       ],
-      "frame_after_gap_start": 51636,
+      "frame_after_gap_start": 51710,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000051232.jpg",
@@ -7508,12 +7726,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000050585.jpg",
+          "frame_path": "frame_0000051697.jpg",
           "bbox": [
-            1198.32,
-            -1.11,
-            445.87,
-            394.01
+            240.51,
+            202.13,
+            317.55,
+            326.21
           ]
         },
         {
@@ -7528,48 +7746,21 @@
       ]
     },
     {
-      "start_time": 871.15,
-      "end_time": 900.86,
-      "duration_sec": 29.71,
+      "start_time": 933.03,
+      "end_time": 934.4,
+      "duration_sec": 1.37,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
-        "narration:put pepper in cupboard",
-        "frame_id:51710",
-        "frame_id:51825",
-        "narration:close cupboard",
-        "frame_id:52159",
-        "frame_id:52197"
-      ],
-      "frame_after_gap_start": 52277,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000051697.jpg",
-          "bbox": [
-            240.51,
-            202.13,
-            317.55,
-            326.21
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 904.45,
-      "end_time": 908.85,
-      "duration_sec": 4.4,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:54016",
         "narration:wash hands",
         "frame_id:54065",
         "frame_id:54112",
         "narration:turn off tap",
         "frame_id:54156",
-        "frame_id:54194"
+        "frame_id:54194",
+        "narration:stir pan",
+        "frame_id:54839",
+        "frame_id:55563"
       ],
-      "frame_after_gap_start": 54273,
+      "frame_after_gap_start": 55986,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054126.jpg",
@@ -7588,26 +7779,7 @@
             382.21,
             225.61
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 941.32,
-      "end_time": 965.56,
-      "duration_sec": 24.24,
-      "event_history": [
-        "narration:stir pan",
-        "frame_id:54839",
-        "frame_id:55563",
-        "narration:put lid on pan",
-        "frame_id:56045",
-        "frame_id:56120",
-        "narration:put rubbish in bin",
-        "frame_id:56328",
-        "frame_id:56391"
-      ],
-      "frame_after_gap_start": 56483,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000054937.jpg",
           "bbox": [
@@ -7625,7 +7797,26 @@
             434.57,
             520.62
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 943.25,
+      "end_time": 984.68,
+      "duration_sec": 41.43,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:56045",
+        "frame_id:56120",
+        "narration:put rubbish in bin",
+        "frame_id:56328",
+        "frame_id:56391",
+        "narration:take chillies",
+        "frame_id:56452",
+        "frame_id:56510"
+      ],
+      "frame_after_gap_start": 56599,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000056112.jpg",
           "bbox": [
@@ -7647,21 +7838,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1007.72,
-      "duration_sec": 19.47,
+      "start_time": 1009.26,
+      "end_time": 1010.27,
+      "duration_sec": 1.01,
       "event_history": [
-        "narration:open chopped tomatoes",
-        "frame_id:58154",
-        "frame_id:58710",
         "narration:put rubbish in bin",
         "frame_id:59035",
         "frame_id:59064",
         "narration:take chopped tomatoes",
         "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:59212",
+        "narration:take lid off pan",
+        "frame_id:60426",
+        "frame_id:60472"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 60556,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000059230.jpg",
@@ -7680,26 +7871,7 @@
             349.57,
             310.51
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
-      "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
-        "narration:shake lid",
-        "frame_id:60576",
-        "frame_id:60618",
-        "narration:stir pan",
-        "frame_id:60878",
-        "frame_id:61252"
-      ],
-      "frame_after_gap_start": 61500,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000060497.jpg",
           "bbox": [
@@ -7707,6 +7879,34 @@
             124.8,
             344.09,
             160.32
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
+      "event_history": [
+        "narration:shake lid",
+        "frame_id:60576",
+        "frame_id:60618",
+        "narration:stir pan",
+        "frame_id:60878",
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
+      ],
+      "frame_after_gap_start": 61643,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000061615.jpg",
+          "bbox": [
+            793.69,
+            -0.36,
+            315.19,
+            431.85
           ]
         },
         {
@@ -7744,35 +7944,35 @@
             376.02,
             481.96
           ]
+        },
+        {
+          "frame_path": "frame_0000061548.jpg",
+          "bbox": [
+            623.75,
+            49.82,
+            329.95,
+            385.24
+          ]
         }
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1057.25,
-      "duration_sec": 25.33,
+      "start_time": 1036.77,
+      "end_time": 1046.91,
+      "duration_sec": 10.14,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000061615.jpg",
-          "bbox": [
-            793.69,
-            -0.36,
-            315.19,
-            431.85
-          ]
-        },
         {
           "frame_path": "frame_0000061703.jpg",
           "bbox": [
@@ -7790,34 +7990,25 @@
             319.43,
             451.02
           ]
-        },
-        {
-          "frame_path": "frame_0000061548.jpg",
-          "bbox": [
-            623.75,
-            49.82,
-            329.95,
-            385.24
-          ]
         }
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
       "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
         "narration:turn on tap",
         "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 64050,
+      "frame_after_gap_start": 63490,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063456.jpg",
@@ -7836,7 +8027,26 @@
             204.54,
             422.17
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -7844,6 +8054,15 @@
             -0.12,
             513.7,
             483.72
+          ]
+        },
+        {
+          "frame_path": "frame_0000064076.jpg",
+          "bbox": [
+            270.51,
+            0,
+            515.52,
+            481.04
           ]
         },
         {
@@ -7872,35 +8091,35 @@
             448.52,
             412.76
           ]
+        },
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            777.98,
+            0.25,
+            496.61,
+            479.55
+          ]
         }
       ]
     },
     {
-      "start_time": 1085.44,
-      "end_time": 1087.0,
-      "duration_sec": 1.56,
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
       "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
         "narration:stir pan",
         "frame_id:64199",
         "frame_id:64445",
         "narration:scrape chicken into pan",
         "frame_id:64839",
-        "frame_id:64988"
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65122,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000064076.jpg",
-          "bbox": [
-            270.51,
-            0,
-            515.52,
-            481.04
-          ]
-        },
         {
           "frame_path": "frame_0000064208.jpg",
           "bbox": [
@@ -7920,12 +8139,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000064116.jpg",
+          "frame_path": "frame_0000065287.jpg",
           "bbox": [
-            777.98,
-            0.25,
-            496.61,
-            479.55
+            903.02,
+            3.18,
+            410.46,
+            521.18
           ]
         },
         {
@@ -7945,35 +8164,35 @@
             156.75,
             164.17
           ]
+        },
+        {
+          "frame_path": "frame_0000065499.jpg",
+          "bbox": [
+            856.01,
+            62.01,
+            372.14,
+            458.47
+          ]
         }
       ]
     },
     {
-      "start_time": 1096.66,
-      "end_time": 1098.89,
-      "duration_sec": 2.23,
+      "start_time": 1101.18,
+      "end_time": 1101.26,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:stir pan",
-        "frame_id:65261",
-        "frame_id:65475",
         "narration:pick up oil",
         "frame_id:65610",
         "frame_id:65645",
         "narration:take lid off oil",
         "frame_id:65683",
-        "frame_id:65717"
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
       ],
-      "frame_after_gap_start": 65794,
+      "frame_after_gap_start": 66065,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000065287.jpg",
-          "bbox": [
-            903.02,
-            3.18,
-            410.46,
-            521.18
-          ]
-        },
         {
           "frame_path": "frame_0000065688.jpg",
           "bbox": [
@@ -7993,49 +8212,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000065499.jpg",
-          "bbox": [
-            856.01,
-            62.01,
-            372.14,
-            458.47
-          ]
-        },
-        {
           "frame_path": "frame_0000065744.jpg",
           "bbox": [
             864.55,
             0,
             411.89,
             364.01
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1122.3,
-      "end_time": 1142.02,
-      "duration_sec": 19.72,
-      "event_history": [
-        "narration:put lid on oil",
-        "frame_id:65902",
-        "frame_id:65970",
-        "narration:put down oil",
-        "frame_id:66030",
-        "frame_id:66072",
-        "narration:stir pan",
-        "frame_id:66409",
-        "frame_id:66983"
-      ],
-      "frame_after_gap_start": 67331,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000066460.jpg",
-          "bbox": [
-            795.26,
-            0,
-            433.75,
-            502.6
           ]
         },
         {
@@ -8054,6 +8236,34 @@
             2.01,
             406.55,
             390.57
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1124.76,
+      "end_time": 1149.18,
+      "duration_sec": 24.42,
+      "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
+        "narration:change cooker temperature",
+        "frame_id:67340",
+        "frame_id:67392"
+      ],
+      "frame_after_gap_start": 67479,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000066460.jpg",
+          "bbox": [
+            795.26,
+            0,
+            433.75,
+            502.6
           ]
         },
         {
@@ -8086,21 +8296,21 @@
       ]
     },
     {
-      "start_time": 1171.46,
-      "end_time": 1171.56,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:68472",
-        "frame_id:68513",
         "narration:stir pan",
         "frame_id:69009",
         "frame_id:69263",
         "narration:still stirring pan",
         "frame_id:69599",
-        "frame_id:70011"
+        "frame_id:70011",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70267",
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 70278,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000069360.jpg",
@@ -8130,34 +8340,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000069049.jpg",
-          "bbox": [
-            897.43,
-            97.23,
-            423.57,
-            512.41
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up chopped tomatoes",
-        "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
-      ],
-      "frame_after_gap_start": 71041,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000070398.jpg",
           "bbox": [
             664.76,
@@ -8166,6 +8348,43 @@
             491.96
           ]
         },
+        {
+          "frame_path": "frame_0000069049.jpg",
+          "bbox": [
+            897.43,
+            97.23,
+            423.57,
+            512.41
+          ]
+        },
+        {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            653.86,
+            -2.7,
+            483.39,
+            427.79
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
@@ -8176,12 +8395,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            653.86,
-            -2.7,
-            483.39,
-            427.79
+            897.46,
+            10.15,
+            438.22,
+            542.67
           ]
         },
         {
@@ -8210,35 +8429,35 @@
             373.32,
             493.15
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            836.77,
+            0,
+            418.31,
+            408.41
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1238.66,
-      "duration_sec": 22.72,
+      "start_time": 1221.34,
+      "end_time": 1222.21,
+      "duration_sec": 0.87,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72944,
+      "frame_after_gap_start": 73268,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            897.46,
-            10.15,
-            438.22,
-            542.67
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -8255,15 +8474,6 @@
             23.7,
             426.71,
             569.53
-          ]
-        },
-        {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            836.77,
-            0,
-            418.31,
-            408.41
           ]
         },
         {
@@ -8287,40 +8497,22 @@
       ]
     },
     {
-      "start_time": 1269.94,
-      "end_time": 1288.32,
-      "duration_sec": 18.38,
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
       "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
         "narration:stir pan",
         "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "frame_id:75448"
       ],
-      "frame_after_gap_start": 76181,
+      "frame_after_gap_start": 75909,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000076089.jpg",
-          "bbox": [
-            808.68,
-            23.6,
-            304.55,
-            523.31
-          ]
-        },
-        {
-          "frame_path": "frame_0000076147.jpg",
-          "bbox": [
-            695.52,
-            9.51,
-            269.68,
-            490.38
-          ]
-        },
         {
           "frame_path": "frame_0000074591.jpg",
           "bbox": [
@@ -8347,6 +8539,43 @@
             449.64,
             485.3
           ]
+        }
+      ]
+    },
+    {
+      "start_time": 1273.95,
+      "end_time": 1302.99,
+      "duration_sec": 29.04,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
+        "narration:change oven temperature",
+        "frame_id:76198",
+        "frame_id:76306"
+      ],
+      "frame_after_gap_start": 76421,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000076089.jpg",
+          "bbox": [
+            808.68,
+            23.6,
+            304.55,
+            523.31
+          ]
+        },
+        {
+          "frame_path": "frame_0000076147.jpg",
+          "bbox": [
+            695.52,
+            9.51,
+            269.68,
+            490.38
+          ]
         },
         {
           "frame_path": "frame_0000076014.jpg",
@@ -8360,21 +8589,21 @@
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
+      "start_time": 1335.85,
+      "end_time": 1335.85,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:77273",
-        "frame_id:77377",
         "narration:put potatoes on counter",
         "frame_id:78192",
         "frame_id:78374",
         "narration:take lid off pan",
         "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 80071,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078490.jpg",
@@ -8402,6 +8631,24 @@
             287.38,
             513.07
           ]
+        },
+        {
+          "frame_path": "frame_0000079279.jpg",
+          "bbox": [
+            959.72,
+            0,
+            448.76,
+            497.3
+          ]
+        },
+        {
+          "frame_path": "frame_0000079853.jpg",
+          "bbox": [
+            802.42,
+            -1.06,
+            532.45,
+            237.29
+          ]
         }
       ]
     }
@@ -8409,8 +8656,8 @@
   "3/cupboard/cupboard": [
     {
       "start_time": 332.57,
-      "end_time": 860.7,
-      "duration_sec": 528.13,
+      "end_time": 861.75,
+      "duration_sec": 529.18,
       "event_history": [
         "narration:open cupboard",
         "frame_id:18632",
@@ -8445,21 +8692,21 @@
       ]
     },
     {
-      "start_time": 871.15,
-      "end_time": 948.43,
-      "duration_sec": 77.28,
+      "start_time": 884.42,
+      "end_time": 944.09,
+      "duration_sec": 59.67,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
         "narration:put pepper in cupboard",
         "frame_id:51710",
         "frame_id:51825",
         "narration:close cupboard",
         "frame_id:52159",
-        "frame_id:52197"
+        "frame_id:52197",
+        "narration:put rubbish in bin",
+        "frame_id:52481",
+        "frame_id:52836"
       ],
-      "frame_after_gap_start": 52277,
+      "frame_after_gap_start": 53073,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000051883.jpg",
@@ -8473,20 +8720,19 @@
       ]
     },
     {
-      "start_time": 960.08,
-      "end_time": 1142.02,
-      "duration_sec": 181.94,
+      "start_time": 949.24,
+      "end_time": 1126.51,
+      "duration_sec": 177.27,
       "event_history": [
+        "narration:open fridge",
+        "frame_id:56613",
+        "narration:close fridge",
+        "frame_id:56715",
+        "frame_id:56744",
         "narration:open cupboard",
-        "frame_id:56873",
-        "narration:put chopped tomatoes on canned",
-        "frame_id:57112",
-        "frame_id:57147",
-        "narration:open drawer",
-        "frame_id:57472",
-        "frame_id:57522"
+        "frame_id:56873"
       ],
-      "frame_after_gap_start": 57608,
+      "frame_after_gap_start": 56958,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000056916.jpg",
@@ -8500,21 +8746,21 @@
       ]
     },
     {
-      "start_time": 1171.46,
-      "end_time": 1288.32,
-      "duration_sec": 116.86,
+      "start_time": 1143.35,
+      "end_time": 1275.74,
+      "duration_sec": 132.39,
       "event_history": [
+        "narration:take gravy cube",
+        "frame_id:67543",
+        "frame_id:67581",
+        "narration:open gravy cube",
+        "frame_id:67793",
+        "frame_id:68076",
         "narration:open cupboard",
         "frame_id:68472",
-        "frame_id:68513",
-        "narration:stir pan",
-        "frame_id:69009",
-        "frame_id:69263",
-        "narration:still stirring pan",
-        "frame_id:69599",
-        "frame_id:70011"
+        "frame_id:68513"
       ],
-      "frame_after_gap_start": 70278,
+      "frame_after_gap_start": 68593,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000068539.jpg",
@@ -8528,21 +8774,21 @@
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
-      "duration_sec": 0.0,
+      "start_time": 1291.77,
+      "end_time": 1335.85,
+      "duration_sec": 44.08,
       "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
         "narration:open cupboard",
         "frame_id:77273",
-        "frame_id:77377",
-        "narration:put potatoes on counter",
-        "frame_id:78192",
-        "frame_id:78374",
-        "narration:take lid off pan",
-        "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:77377"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 77429,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000077344.jpg",
@@ -8567,21 +8813,21 @@
   ],
   "30/potato/potato": [
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
+      "start_time": 1335.85,
+      "end_time": 1335.85,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:77273",
-        "frame_id:77377",
         "narration:put potatoes on counter",
         "frame_id:78192",
         "frame_id:78374",
         "narration:take lid off pan",
         "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 80071,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078245.jpg",
@@ -8624,31 +8870,22 @@
   ],
   "34/food/food": [
     {
-      "start_time": 1122.3,
-      "end_time": 1142.02,
-      "duration_sec": 19.72,
+      "start_time": 1101.18,
+      "end_time": 1101.26,
+      "duration_sec": 0.08,
       "event_history": [
+        "narration:pick up oil",
+        "frame_id:65610",
+        "frame_id:65645",
+        "narration:take lid off oil",
+        "frame_id:65683",
+        "frame_id:65717",
         "narration:put lid on oil",
         "frame_id:65902",
-        "frame_id:65970",
-        "narration:put down oil",
-        "frame_id:66030",
-        "frame_id:66072",
-        "narration:stir pan",
-        "frame_id:66409",
-        "frame_id:66983"
+        "frame_id:65970"
       ],
-      "frame_after_gap_start": 67331,
+      "frame_after_gap_start": 66065,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000066460.jpg",
-          "bbox": [
-            841.78,
-            32.22,
-            348.06,
-            366.31
-          ]
-        },
         {
           "frame_path": "frame_0000065978.jpg",
           "bbox": [
@@ -8665,6 +8902,34 @@
             0.58,
             347.14,
             300.2
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1124.76,
+      "end_time": 1149.18,
+      "duration_sec": 24.42,
+      "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
+        "narration:change cooker temperature",
+        "frame_id:67340",
+        "frame_id:67392"
+      ],
+      "frame_after_gap_start": 67479,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000066460.jpg",
+          "bbox": [
+            841.78,
+            32.22,
+            348.06,
+            366.31
           ]
         },
         {
@@ -8688,21 +8953,21 @@
       ]
     },
     {
-      "start_time": 1171.46,
-      "end_time": 1171.56,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:68472",
-        "frame_id:68513",
         "narration:stir pan",
         "frame_id:69009",
         "frame_id:69263",
         "narration:still stirring pan",
         "frame_id:69599",
-        "frame_id:70011"
+        "frame_id:70011",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70267",
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 70278,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000069360.jpg",
@@ -8732,34 +8997,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000069049.jpg",
-          "bbox": [
-            923.68,
-            152.76,
-            353.37,
-            361.12
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up chopped tomatoes",
-        "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
-      ],
-      "frame_after_gap_start": 71041,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000070398.jpg",
           "bbox": [
             690.03,
@@ -8768,6 +9005,43 @@
             377.05
           ]
         },
+        {
+          "frame_path": "frame_0000069049.jpg",
+          "bbox": [
+            923.68,
+            152.76,
+            353.37,
+            361.12
+          ]
+        },
+        {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            692.04,
+            0.48,
+            412.52,
+            317.54
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
@@ -8778,12 +9052,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            692.04,
-            0.48,
-            412.52,
-            317.54
+            913.75,
+            96.52,
+            354.3,
+            374.28
           ]
         },
         {
@@ -8812,35 +9086,35 @@
             320.02,
             302.14
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            911.69,
+            41.62,
+            117.29,
+            258.06
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1238.66,
-      "duration_sec": 22.72,
+      "start_time": 1221.34,
+      "end_time": 1222.21,
+      "duration_sec": 0.87,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72944,
+      "frame_after_gap_start": 73268,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            913.75,
-            96.52,
-            354.3,
-            374.28
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -8857,15 +9131,6 @@
             124.61,
             366.51,
             375.32
-          ]
-        },
-        {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            911.69,
-            41.62,
-            117.29,
-            258.06
           ]
         },
         {
@@ -8889,21 +9154,21 @@
       ]
     },
     {
-      "start_time": 1269.94,
-      "end_time": 1313.84,
-      "duration_sec": 43.9,
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
       "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
         "narration:stir pan",
         "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "frame_id:75448"
       ],
-      "frame_after_gap_start": 76121,
+      "frame_after_gap_start": 75909,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000074591.jpg",
@@ -8931,7 +9196,26 @@
             391.99,
             373.27
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1273.95,
+      "end_time": 1302.99,
+      "duration_sec": 29.04,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
+        "narration:change oven temperature",
+        "frame_id:76198",
+        "frame_id:76306"
+      ],
+      "frame_after_gap_start": 76421,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000076014.jpg",
           "bbox": [
@@ -8939,6 +9223,43 @@
             0.25,
             413.25,
             288.72
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1335.85,
+      "end_time": 1335.85,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put potatoes on counter",
+        "frame_id:78192",
+        "frame_id:78374",
+        "narration:take lid off pan",
+        "frame_id:78686",
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
+      ],
+      "frame_after_gap_start": 80071,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000079279.jpg",
+          "bbox": [
+            1001.24,
+            14.25,
+            372.55,
+            412.59
+          ]
+        },
+        {
+          "frame_path": "frame_0000079853.jpg",
+          "bbox": [
+            810.75,
+            0,
+            415.61,
+            362.48
           ]
         }
       ]
@@ -9304,8 +9625,8 @@
     },
     {
       "start_time": 825.95,
-      "end_time": 842.06,
-      "duration_sec": 16.11,
+      "end_time": 852.72,
+      "duration_sec": 26.77,
       "event_history": [
         "narration:put pepper into hand",
         "frame_id:49126",
@@ -9375,21 +9696,21 @@
       ]
     },
     {
-      "start_time": 860.45,
-      "end_time": 860.7,
-      "duration_sec": 0.25,
+      "start_time": 861.68,
+      "end_time": 861.75,
+      "duration_sec": 0.07,
       "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
         "narration:put lid on pan",
         "frame_id:51184",
         "frame_id:51328",
         "narration:close cupboard",
         "frame_id:51508",
-        "frame_id:51553"
+        "frame_id:51553",
+        "narration:open cupboard",
+        "frame_id:51605",
+        "frame_id:51635"
       ],
-      "frame_after_gap_start": 51636,
+      "frame_after_gap_start": 51710,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000051232.jpg",
@@ -9419,34 +9740,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000051397.jpg",
-          "bbox": [
-            1338.25,
-            602.53,
-            118.41,
-            132.64
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 871.15,
-      "end_time": 1313.84,
-      "duration_sec": 442.69,
-      "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
-        "narration:put pepper in cupboard",
-        "frame_id:51710",
-        "frame_id:51825",
-        "narration:close cupboard",
-        "frame_id:52159",
-        "frame_id:52197"
-      ],
-      "frame_after_gap_start": 52217,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000051671.jpg",
           "bbox": [
             861.53,
@@ -9465,6 +9758,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000051397.jpg",
+          "bbox": [
+            1338.25,
+            602.53,
+            118.41,
+            132.64
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 884.42,
+      "end_time": 1335.85,
+      "duration_sec": 451.43,
+      "event_history": [
+        "narration:put pepper in cupboard",
+        "frame_id:51710",
+        "frame_id:51825",
+        "narration:close cupboard",
+        "frame_id:52159",
+        "frame_id:52197",
+        "narration:put rubbish in bin",
+        "frame_id:52481",
+        "frame_id:52836"
+      ],
+      "frame_after_gap_start": 53013,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000051764.jpg",
           "bbox": [
             923.27,
@@ -9478,9 +9799,9 @@
   ],
   "38/salt/salt": [
     {
-      "start_time": 841.96,
-      "end_time": 1313.84,
-      "duration_sec": 471.88,
+      "start_time": 843.39,
+      "end_time": 1335.85,
+      "duration_sec": 492.46,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -9488,11 +9809,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50468,
+      "frame_after_gap_start": 50553,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049630.jpg",
@@ -10751,8 +11072,8 @@
     },
     {
       "start_time": 800.75,
-      "end_time": 965.56,
-      "duration_sec": 164.81,
+      "end_time": 952.52,
+      "duration_sec": 151.77,
       "event_history": [
         "narration:scrape garlic into pan",
         "frame_id:46445",
@@ -10823,21 +11144,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1025.37,
-      "duration_sec": 37.12,
+      "start_time": 984.13,
+      "end_time": 1027.72,
+      "duration_sec": 43.59,
       "event_history": [
+        "narration:put chopped tomatoes on canned",
+        "frame_id:57112",
+        "frame_id:57147",
+        "narration:open drawer",
+        "frame_id:57472",
+        "frame_id:57522",
         "narration:open chopped tomatoes",
         "frame_id:58154",
-        "frame_id:58710",
-        "narration:put rubbish in bin",
-        "frame_id:59035",
-        "frame_id:59064",
-        "narration:take chopped tomatoes",
-        "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:58710"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 59049,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000058119.jpg",
@@ -10860,21 +11181,21 @@
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1032.0,
-      "duration_sec": 0.08,
+      "start_time": 1036.77,
+      "end_time": 1036.78,
+      "duration_sec": 0.01,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000061849.jpg",
@@ -10893,26 +11214,7 @@
             228.65,
             414.87
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1040.97,
-      "end_time": 1041.28,
-      "duration_sec": 0.31,
-      "event_history": [
-        "narration:open chicken with knife",
-        "frame_id:61930",
-        "frame_id:62073",
-        "narration:take chicken breast",
-        "frame_id:62176",
-        "frame_id:62238",
-        "narration:cut chicken breast",
-        "frame_id:62317",
-        "frame_id:62369"
-      ],
-      "frame_after_gap_start": 62456,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062018.jpg",
           "bbox": [
@@ -10930,7 +11232,26 @@
             222.19,
             532.28
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1043.44,
+      "end_time": 1046.91,
+      "duration_sec": 3.47,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62176",
+        "frame_id:62238",
+        "narration:cut chicken breast",
+        "frame_id:62317",
+        "frame_id:62369",
+        "narration:take chicken breast",
+        "frame_id:62447",
+        "frame_id:62511"
+      ],
+      "frame_after_gap_start": 62604,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062384.jpg",
           "bbox": [
@@ -10948,26 +11269,7 @@
             174.81,
             94.11
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1056.16,
-      "end_time": 1057.25,
-      "duration_sec": 1.09,
-      "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
-        "narration:take chicken breast",
-        "frame_id:62782",
-        "frame_id:62842",
-        "narration:put rubbish in bin",
-        "frame_id:63139",
-        "frame_id:63251"
-      ],
-      "frame_after_gap_start": 63367,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062511.jpg",
           "bbox": [
@@ -10985,7 +11287,26 @@
             253.9,
             300.86
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
+      ],
+      "frame_after_gap_start": 63490,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062842.jpg",
           "bbox": [
@@ -11003,26 +11324,7 @@
             354.15,
             336.54
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
-      ],
-      "frame_after_gap_start": 64050,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000063456.jpg",
           "bbox": [
@@ -11040,7 +11342,26 @@
             92.7,
             545.2
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -11048,6 +11369,15 @@
             176.96,
             207.34,
             319.42
+          ]
+        },
+        {
+          "frame_path": "frame_0000064076.jpg",
+          "bbox": [
+            1301.98,
+            254.0,
+            194.26,
+            499.28
           ]
         },
         {
@@ -11076,35 +11406,35 @@
             269.87,
             491.77
           ]
+        },
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            1477.48,
+            689.13,
+            107.06,
+            392.45
+          ]
         }
       ]
     },
     {
-      "start_time": 1085.44,
-      "end_time": 1171.56,
-      "duration_sec": 86.12,
+      "start_time": 1094.12,
+      "end_time": 1149.18,
+      "duration_sec": 55.06,
       "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
         "narration:stir pan",
         "frame_id:64199",
         "frame_id:64445",
         "narration:scrape chicken into pan",
         "frame_id:64839",
-        "frame_id:64988"
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65122,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000064076.jpg",
-          "bbox": [
-            1301.98,
-            254.0,
-            194.26,
-            499.28
-          ]
-        },
         {
           "frame_path": "frame_0000064208.jpg",
           "bbox": [
@@ -11121,15 +11451,6 @@
             569.48,
             80.81,
             345.93
-          ]
-        },
-        {
-          "frame_path": "frame_0000064116.jpg",
-          "bbox": [
-            1477.48,
-            689.13,
-            107.06,
-            392.45
           ]
         },
         {
@@ -11153,21 +11474,21 @@
       ]
     },
     {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
+        "narration:stir pan",
+        "frame_id:69009",
+        "frame_id:69263",
+        "narration:still stirring pan",
+        "frame_id:69599",
+        "frame_id:70011",
         "narration:pick up chopped tomatoes",
         "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 71041,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070398.jpg",
@@ -11185,6 +11506,34 @@
             333.94,
             196.84,
             524.42
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1187.52,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71234,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000071107.jpg",
+          "bbox": [
+            1418.33,
+            617.46,
+            83.06,
+            462.65
           ]
         },
         {
@@ -11213,35 +11562,35 @@
             140.58,
             300.83
           ]
+        },
+        {
+          "frame_path": "frame_0000071203.jpg",
+          "bbox": [
+            1516.34,
+            594.98,
+            87.16,
+            315.37
+          ]
         }
       ]
     },
     {
-      "start_time": 1215.94,
-      "end_time": 1313.84,
-      "duration_sec": 97.9,
+      "start_time": 1221.34,
+      "end_time": 1335.85,
+      "duration_sec": 114.51,
       "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
         "narration:shake chopped tomatoes",
         "frame_id:71220",
         "frame_id:71299",
         "narration:stir pan",
         "frame_id:71765",
-        "frame_id:72511"
+        "frame_id:72511",
+        "narration:pick up gravy cube",
+        "frame_id:73162",
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 72884,
+      "frame_after_gap_start": 73208,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            1418.33,
-            617.46,
-            83.06,
-            462.65
-          ]
-        },
         {
           "frame_path": "frame_0000071876.jpg",
           "bbox": [
@@ -11258,15 +11607,6 @@
             682.33,
             88.87,
             397.67
-          ]
-        },
-        {
-          "frame_path": "frame_0000071203.jpg",
-          "bbox": [
-            1516.34,
-            594.98,
-            87.16,
-            315.37
           ]
         },
         {
@@ -11330,8 +11670,8 @@
     },
     {
       "start_time": 563.38,
-      "end_time": 1313.84,
-      "duration_sec": 750.46,
+      "end_time": 1335.85,
+      "duration_sec": 772.47,
       "event_history": [
         "narration:put chillies in pan",
         "frame_id:33161",
@@ -11404,21 +11744,21 @@
   ],
   "41/carrot/carrot": [
     {
-      "start_time": 871.15,
-      "end_time": 1313.84,
-      "duration_sec": 442.69,
+      "start_time": 884.42,
+      "end_time": 1335.85,
+      "duration_sec": 451.43,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
         "narration:put pepper in cupboard",
         "frame_id:51710",
         "frame_id:51825",
         "narration:close cupboard",
         "frame_id:52159",
-        "frame_id:52197"
+        "frame_id:52197",
+        "narration:put rubbish in bin",
+        "frame_id:52481",
+        "frame_id:52836"
       ],
-      "frame_after_gap_start": 52217,
+      "frame_after_gap_start": 53013,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000052220.jpg",
@@ -11434,22 +11774,31 @@
   ],
   "42/top/counter": [
     {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
       "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
         "narration:shake lid",
         "frame_id:60576",
         "frame_id:60618",
         "narration:stir pan",
         "frame_id:60878",
-        "frame_id:61252"
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
       ],
-      "frame_after_gap_start": 61500,
+      "frame_after_gap_start": 61643,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000061615.jpg",
+          "bbox": [
+            357.09,
+            0,
+            1562.91,
+            829.96
+          ]
+        },
         {
           "frame_path": "frame_0000060869.jpg",
           "bbox": [
@@ -11467,35 +11816,35 @@
             1920,
             1080
           ]
+        },
+        {
+          "frame_path": "frame_0000061548.jpg",
+          "bbox": [
+            40.31,
+            30.34,
+            1879.69,
+            965.68
+          ]
         }
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1288.32,
-      "duration_sec": 256.4,
+      "start_time": 1036.77,
+      "end_time": 1275.74,
+      "duration_sec": 238.97,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000061615.jpg",
-          "bbox": [
-            357.09,
-            0,
-            1562.91,
-            829.96
-          ]
-        },
         {
           "frame_path": "frame_0000061703.jpg",
           "bbox": [
@@ -11513,34 +11862,25 @@
             1887.36,
             924.8
           ]
-        },
-        {
-          "frame_path": "frame_0000061548.jpg",
-          "bbox": [
-            40.31,
-            30.34,
-            1879.69,
-            965.68
-          ]
         }
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
-      "duration_sec": 0.0,
+      "start_time": 1291.77,
+      "end_time": 1302.99,
+      "duration_sec": 11.22,
       "event_history": [
+        "narration:pick up rubbish",
+        "frame_id:76528",
+        "frame_id:76651",
+        "narration:put rubbish in bin",
+        "frame_id:76790",
+        "frame_id:76830",
         "narration:open cupboard",
         "frame_id:77273",
-        "frame_id:77377",
-        "narration:put potatoes on counter",
-        "frame_id:78192",
-        "frame_id:78374",
-        "narration:take lid off pan",
-        "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:77377"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 77489,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000077344.jpg",
@@ -11559,7 +11899,26 @@
             1060.85,
             239.82
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1335.85,
+      "end_time": 1335.85,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put potatoes on counter",
+        "frame_id:78192",
+        "frame_id:78374",
+        "narration:take lid off pan",
+        "frame_id:78686",
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
+      ],
+      "frame_after_gap_start": 80071,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078245.jpg",
           "bbox": [
@@ -11601,21 +11960,21 @@
   ],
   "43/tomato/chopped tomato": [
     {
-      "start_time": 1184.2,
-      "end_time": 1184.3,
+      "start_time": 1174.44,
+      "end_time": 1174.54,
       "duration_sec": 0.1,
       "event_history": [
+        "narration:stir pan",
+        "frame_id:69009",
+        "frame_id:69263",
+        "narration:still stirring pan",
+        "frame_id:69599",
+        "frame_id:70011",
         "narration:pick up chopped tomatoes",
         "frame_id:70267",
-        "frame_id:70353",
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:70478",
-        "frame_id:70630",
-        "narration:pick up chopped tomatoes",
-        "frame_id:70924",
-        "frame_id:70962"
+        "frame_id:70353"
       ],
-      "frame_after_gap_start": 71041,
+      "frame_after_gap_start": 70456,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000070398.jpg",
@@ -11627,6 +11986,34 @@
           ]
         },
         {
+          "frame_path": "frame_0000070353.jpg",
+          "bbox": [
+            1324.06,
+            88.45,
+            173.61,
+            137.63
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1187.42,
+      "end_time": 1335.85,
+      "duration_sec": 148.43,
+      "event_history": [
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:70478",
+        "frame_id:70630",
+        "narration:pick up chopped tomatoes",
+        "frame_id:70924",
+        "frame_id:70962",
+        "narration:pour chopped tomatoes into pan",
+        "frame_id:71034",
+        "frame_id:71128"
+      ],
+      "frame_after_gap_start": 71175,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000070707.jpg",
           "bbox": [
             1119.76,
@@ -11636,12 +12023,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000070353.jpg",
+          "frame_path": "frame_0000071107.jpg",
           "bbox": [
-            1324.06,
-            88.45,
-            173.61,
-            137.63
+            1031.21,
+            164.78,
+            174.29,
+            312.82
           ]
         },
         {
@@ -11669,34 +12056,6 @@
             239.38,
             755.53,
             391.49
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1215.94,
-      "end_time": 1313.84,
-      "duration_sec": 97.9,
-      "event_history": [
-        "narration:pour chopped tomatoes into pan",
-        "frame_id:71034",
-        "frame_id:71128",
-        "narration:shake chopped tomatoes",
-        "frame_id:71220",
-        "frame_id:71299",
-        "narration:stir pan",
-        "frame_id:71765",
-        "frame_id:72511"
-      ],
-      "frame_after_gap_start": 72884,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000071107.jpg",
-          "bbox": [
-            1031.21,
-            164.78,
-            174.29,
-            312.82
           ]
         },
         {
@@ -11760,8 +12119,8 @@
     },
     {
       "start_time": 265.49,
-      "end_time": 1313.84,
-      "duration_sec": 1048.35,
+      "end_time": 1335.85,
+      "duration_sec": 1070.36,
       "event_history": [
         "narration:stir onion",
         "frame_id:11834",
@@ -11891,8 +12250,8 @@
     },
     {
       "start_time": 771.39,
-      "end_time": 1313.84,
-      "duration_sec": 542.45,
+      "end_time": 1335.85,
+      "duration_sec": 564.46,
       "event_history": [
         "narration:peel garlic",
         "frame_id:43851",
@@ -12095,8 +12454,8 @@
     },
     {
       "start_time": 771.39,
-      "end_time": 1313.84,
-      "duration_sec": 542.45,
+      "end_time": 1335.85,
+      "duration_sec": 564.46,
       "event_history": [
         "narration:peel garlic",
         "frame_id:43851",
@@ -12170,8 +12529,8 @@
   "54/rubbish/rubbish": [
     {
       "start_time": 625.62,
-      "end_time": 1313.84,
-      "duration_sec": 688.22,
+      "end_time": 1335.85,
+      "duration_sec": 710.23,
       "event_history": [
         "narration:put rubbish in bin",
         "frame_id:34656",
@@ -12226,21 +12585,21 @@
   ],
   "54/rubbish/rubbish/trash": [
     {
-      "start_time": 871.15,
-      "end_time": 1313.84,
-      "duration_sec": 442.69,
+      "start_time": 884.42,
+      "end_time": 1335.85,
+      "duration_sec": 451.43,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
         "narration:put pepper in cupboard",
         "frame_id:51710",
         "frame_id:51825",
         "narration:close cupboard",
         "frame_id:52159",
-        "frame_id:52197"
+        "frame_id:52197",
+        "narration:put rubbish in bin",
+        "frame_id:52481",
+        "frame_id:52836"
       ],
-      "frame_after_gap_start": 52217,
+      "frame_after_gap_start": 53013,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000052220.jpg",
@@ -12585,9 +12944,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 1027.72,
+      "duration_sec": 184.33,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -12595,11 +12954,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049630.jpg",
@@ -12636,26 +12995,7 @@
             385.35,
             429.69
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 860.45,
-      "end_time": 1025.37,
-      "duration_sec": 164.92,
-      "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
-        "narration:put lid on pan",
-        "frame_id:51184",
-        "frame_id:51328",
-        "narration:close cupboard",
-        "frame_id:51508",
-        "frame_id:51553"
-      ],
-      "frame_after_gap_start": 51636,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000050536.jpg",
           "bbox": [
@@ -12677,21 +13017,21 @@
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1032.0,
-      "duration_sec": 0.08,
+      "start_time": 1036.77,
+      "end_time": 1036.78,
+      "duration_sec": 0.01,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000061849.jpg",
@@ -12710,26 +13050,7 @@
             206.69,
             195.09
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1040.97,
-      "end_time": 1041.28,
-      "duration_sec": 0.31,
-      "event_history": [
-        "narration:open chicken with knife",
-        "frame_id:61930",
-        "frame_id:62073",
-        "narration:take chicken breast",
-        "frame_id:62176",
-        "frame_id:62238",
-        "narration:cut chicken breast",
-        "frame_id:62317",
-        "frame_id:62369"
-      ],
-      "frame_after_gap_start": 62456,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062103.jpg",
           "bbox": [
@@ -12738,7 +13059,26 @@
             218.39,
             309.46
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1043.44,
+      "end_time": 1046.91,
+      "duration_sec": 3.47,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62176",
+        "frame_id:62238",
+        "narration:cut chicken breast",
+        "frame_id:62317",
+        "frame_id:62369",
+        "narration:take chicken breast",
+        "frame_id:62447",
+        "frame_id:62511"
+      ],
+      "frame_after_gap_start": 62604,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062384.jpg",
           "bbox": [
@@ -12756,26 +13096,7 @@
             750.88,
             339.77
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1056.16,
-      "end_time": 1057.25,
-      "duration_sec": 1.09,
-      "event_history": [
-        "narration:take chicken breast",
-        "frame_id:62447",
-        "frame_id:62511",
-        "narration:take chicken breast",
-        "frame_id:62782",
-        "frame_id:62842",
-        "narration:put rubbish in bin",
-        "frame_id:63139",
-        "frame_id:63251"
-      ],
-      "frame_after_gap_start": 63367,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000062511.jpg",
           "bbox": [
@@ -12793,7 +13114,26 @@
             792.72,
             272.72
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
+      "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
+        "narration:turn on tap",
+        "frame_id:63386",
+        "frame_id:63415"
+      ],
+      "frame_after_gap_start": 63490,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000062842.jpg",
           "bbox": [
@@ -12811,26 +13151,7 @@
             366.1,
             296.13
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
-      ],
-      "frame_after_gap_start": 64050,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000063456.jpg",
           "bbox": [
@@ -12848,7 +13169,26 @@
             307.74,
             341.47
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -12856,6 +13196,15 @@
             327.79,
             289.73,
             337.69
+          ]
+        },
+        {
+          "frame_path": "frame_0000064076.jpg",
+          "bbox": [
+            1126.08,
+            412.19,
+            282.87,
+            343.43
           ]
         },
         {
@@ -12884,35 +13233,35 @@
             210.66,
             337.98
           ]
+        },
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            1169.53,
+            734.68,
+            338.81,
+            316.18
+          ]
         }
       ]
     },
     {
-      "start_time": 1085.44,
-      "end_time": 1087.0,
-      "duration_sec": 1.56,
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
       "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
         "narration:stir pan",
         "frame_id:64199",
         "frame_id:64445",
         "narration:scrape chicken into pan",
         "frame_id:64839",
-        "frame_id:64988"
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65122,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000064076.jpg",
-          "bbox": [
-            1126.08,
-            412.19,
-            282.87,
-            343.43
-          ]
-        },
         {
           "frame_path": "frame_0000064208.jpg",
           "bbox": [
@@ -12932,12 +13281,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000064116.jpg",
+          "frame_path": "frame_0000065287.jpg",
           "bbox": [
-            1169.53,
-            734.68,
-            338.81,
-            316.18
+            915.94,
+            133.36,
+            333.36,
+            315.9
           ]
         },
         {
@@ -12957,43 +13306,6 @@
             249.63,
             212.77
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1096.66,
-      "end_time": 1313.84,
-      "duration_sec": 217.18,
-      "event_history": [
-        "narration:stir pan",
-        "frame_id:65261",
-        "frame_id:65475",
-        "narration:pick up oil",
-        "frame_id:65610",
-        "frame_id:65645",
-        "narration:take lid off oil",
-        "frame_id:65683",
-        "frame_id:65717"
-      ],
-      "frame_after_gap_start": 65734,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000065287.jpg",
-          "bbox": [
-            915.94,
-            133.36,
-            333.36,
-            315.9
-          ]
-        },
-        {
-          "frame_path": "frame_0000065688.jpg",
-          "bbox": [
-            863.41,
-            93.8,
-            285.09,
-            149.41
-          ]
         },
         {
           "frame_path": "frame_0000065499.jpg",
@@ -13005,13 +13317,41 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 1101.18,
+      "end_time": 1335.85,
+      "duration_sec": 234.67,
+      "event_history": [
+        "narration:pick up oil",
+        "frame_id:65610",
+        "frame_id:65645",
+        "narration:take lid off oil",
+        "frame_id:65683",
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
+      ],
+      "frame_after_gap_start": 66005,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000065688.jpg",
+          "bbox": [
+            863.41,
+            93.8,
+            285.09,
+            149.41
+          ]
+        }
+      ]
     }
   ],
   "6/lid/lid": [
     {
       "start_time": 563.38,
-      "end_time": 842.06,
-      "duration_sec": 278.68,
+      "end_time": 852.72,
+      "duration_sec": 289.34,
       "event_history": [
         "narration:put chillies in pan",
         "frame_id:33161",
@@ -13055,21 +13395,21 @@
       ]
     },
     {
-      "start_time": 860.45,
-      "end_time": 860.7,
-      "duration_sec": 0.25,
+      "start_time": 861.68,
+      "end_time": 934.4,
+      "duration_sec": 72.72,
       "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
         "narration:put lid on pan",
         "frame_id:51184",
         "frame_id:51328",
         "narration:close cupboard",
         "frame_id:51508",
-        "frame_id:51553"
+        "frame_id:51553",
+        "narration:open cupboard",
+        "frame_id:51605",
+        "frame_id:51635"
       ],
-      "frame_after_gap_start": 51636,
+      "frame_after_gap_start": 51710,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000051551.jpg",
@@ -13078,6 +13418,15 @@
             77.29,
             313.13,
             318.99
+          ]
+        },
+        {
+          "frame_path": "frame_0000051697.jpg",
+          "bbox": [
+            254.8,
+            219.21,
+            248.61,
+            241.33
           ]
         },
         {
@@ -13092,49 +13441,21 @@
       ]
     },
     {
-      "start_time": 871.15,
-      "end_time": 908.85,
-      "duration_sec": 37.7,
+      "start_time": 943.25,
+      "end_time": 984.68,
+      "duration_sec": 41.43,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:51605",
-        "frame_id:51635",
-        "narration:put pepper in cupboard",
-        "frame_id:51710",
-        "frame_id:51825",
-        "narration:close cupboard",
-        "frame_id:52159",
-        "frame_id:52197"
-      ],
-      "frame_after_gap_start": 52277,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000051697.jpg",
-          "bbox": [
-            254.8,
-            219.21,
-            248.61,
-            241.33
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 941.32,
-      "end_time": 965.56,
-      "duration_sec": 24.24,
-      "event_history": [
-        "narration:stir pan",
-        "frame_id:54839",
-        "frame_id:55563",
         "narration:put lid on pan",
         "frame_id:56045",
         "frame_id:56120",
         "narration:put rubbish in bin",
         "frame_id:56328",
-        "frame_id:56391"
+        "frame_id:56391",
+        "narration:take chillies",
+        "frame_id:56452",
+        "frame_id:56510"
       ],
-      "frame_after_gap_start": 56483,
+      "frame_after_gap_start": 56599,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000056112.jpg",
@@ -13157,21 +13478,21 @@
       ]
     },
     {
-      "start_time": 988.25,
-      "end_time": 1007.72,
-      "duration_sec": 19.47,
+      "start_time": 1009.26,
+      "end_time": 1010.27,
+      "duration_sec": 1.01,
       "event_history": [
-        "narration:open chopped tomatoes",
-        "frame_id:58154",
-        "frame_id:58710",
         "narration:put rubbish in bin",
         "frame_id:59035",
         "frame_id:59064",
         "narration:take chopped tomatoes",
         "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:59212",
+        "narration:take lid off pan",
+        "frame_id:60426",
+        "frame_id:60472"
       ],
-      "frame_after_gap_start": 59296,
+      "frame_after_gap_start": 60556,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000059230.jpg",
@@ -13183,34 +13504,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000059282.jpg",
-          "bbox": [
-            563.85,
-            0,
-            356.21,
-            334.77
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
-      "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
-        "narration:shake lid",
-        "frame_id:60576",
-        "frame_id:60618",
-        "narration:stir pan",
-        "frame_id:60878",
-        "frame_id:61252"
-      ],
-      "frame_after_gap_start": 61500,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000060545.jpg",
           "bbox": [
             817.54,
@@ -13220,12 +13513,49 @@
           ]
         },
         {
+          "frame_path": "frame_0000059282.jpg",
+          "bbox": [
+            563.85,
+            0,
+            356.21,
+            334.77
+          ]
+        },
+        {
           "frame_path": "frame_0000060497.jpg",
           "bbox": [
             1123.19,
             0,
             541.48,
             212.07
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1027.4,
+      "end_time": 1027.72,
+      "duration_sec": 0.32,
+      "event_history": [
+        "narration:shake lid",
+        "frame_id:60576",
+        "frame_id:60618",
+        "narration:stir pan",
+        "frame_id:60878",
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
+      ],
+      "frame_after_gap_start": 61643,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000061615.jpg",
+          "bbox": [
+            741.63,
+            5.47,
+            356.99,
+            353.23
           ]
         },
         {
@@ -13263,35 +13593,35 @@
             319.93,
             343.9
           ]
+        },
+        {
+          "frame_path": "frame_0000061548.jpg",
+          "bbox": [
+            773.23,
+            428.26,
+            321.43,
+            320.78
+          ]
         }
       ]
     },
     {
-      "start_time": 1031.92,
-      "end_time": 1057.25,
-      "duration_sec": 25.33,
+      "start_time": 1036.77,
+      "end_time": 1046.91,
+      "duration_sec": 10.14,
       "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
         "narration:put spoon on counter",
         "frame_id:61637",
         "frame_id:61708",
         "narration:take chicken",
         "frame_id:61790",
-        "frame_id:61832"
+        "frame_id:61832",
+        "narration:open chicken with knife",
+        "frame_id:61930",
+        "frame_id:62073"
       ],
-      "frame_after_gap_start": 61914,
+      "frame_after_gap_start": 62204,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000061615.jpg",
-          "bbox": [
-            741.63,
-            5.47,
-            356.99,
-            353.23
-          ]
-        },
         {
           "frame_path": "frame_0000061703.jpg",
           "bbox": [
@@ -13309,34 +13639,25 @@
             327.83,
             328.0
           ]
-        },
-        {
-          "frame_path": "frame_0000061548.jpg",
-          "bbox": [
-            773.23,
-            428.26,
-            321.43,
-            320.78
-          ]
         }
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
       "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
         "narration:turn on tap",
         "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 64050,
+      "frame_after_gap_start": 63490,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063456.jpg",
@@ -13346,7 +13667,26 @@
             330.77,
             288.67
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64123,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -13354,6 +13694,15 @@
             480.28,
             220.27,
             398.64
+          ]
+        },
+        {
+          "frame_path": "frame_0000064076.jpg",
+          "bbox": [
+            -0.26,
+            399.73,
+            182.77,
+            396.64
           ]
         },
         {
@@ -13382,35 +13731,35 @@
             324.12,
             383.55
           ]
+        },
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            82.87,
+            40.13,
+            404.82,
+            398.25
+          ]
         }
       ]
     },
     {
-      "start_time": 1085.44,
-      "end_time": 1238.66,
-      "duration_sec": 153.22,
+      "start_time": 1094.12,
+      "end_time": 1222.21,
+      "duration_sec": 128.09,
       "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
         "narration:stir pan",
         "frame_id:64199",
         "frame_id:64445",
         "narration:scrape chicken into pan",
         "frame_id:64839",
-        "frame_id:64988"
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
       ],
-      "frame_after_gap_start": 65122,
+      "frame_after_gap_start": 65642,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000064076.jpg",
-          "bbox": [
-            -0.26,
-            399.73,
-            182.77,
-            396.64
-          ]
-        },
         {
           "frame_path": "frame_0000064208.jpg",
           "bbox": [
@@ -13430,15 +13779,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000064116.jpg",
-          "bbox": [
-            82.87,
-            40.13,
-            404.82,
-            398.25
-          ]
-        },
-        {
           "frame_path": "frame_0000065063.jpg",
           "bbox": [
             168.57,
@@ -13450,40 +13790,22 @@
       ]
     },
     {
-      "start_time": 1269.94,
-      "end_time": 1288.32,
-      "duration_sec": 18.38,
+      "start_time": 1265.41,
+      "end_time": 1266.3,
+      "duration_sec": 0.89,
       "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
         "narration:stir pan",
         "frame_id:74646",
-        "frame_id:75448",
-        "narration:put lid on pan",
-        "frame_id:75938",
-        "frame_id:76008",
-        "narration:put wooden spoon in pack",
-        "frame_id:76068",
-        "frame_id:76103"
+        "frame_id:75448"
       ],
-      "frame_after_gap_start": 76181,
+      "frame_after_gap_start": 75909,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000076089.jpg",
-          "bbox": [
-            711.41,
-            81.79,
-            359.57,
-            391.54
-          ]
-        },
-        {
-          "frame_path": "frame_0000076147.jpg",
-          "bbox": [
-            594.56,
-            68.67,
-            341.5,
-            353.79
-          ]
-        },
         {
           "frame_path": "frame_0000074591.jpg",
           "bbox": [
@@ -13510,6 +13832,43 @@
             390.39,
             380.41
           ]
+        }
+      ]
+    },
+    {
+      "start_time": 1273.95,
+      "end_time": 1302.99,
+      "duration_sec": 29.04,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:75938",
+        "frame_id:76008",
+        "narration:put wooden spoon in pack",
+        "frame_id:76068",
+        "frame_id:76103",
+        "narration:change oven temperature",
+        "frame_id:76198",
+        "frame_id:76306"
+      ],
+      "frame_after_gap_start": 76421,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000076089.jpg",
+          "bbox": [
+            711.41,
+            81.79,
+            359.57,
+            391.54
+          ]
+        },
+        {
+          "frame_path": "frame_0000076147.jpg",
+          "bbox": [
+            594.56,
+            68.67,
+            341.5,
+            353.79
+          ]
         },
         {
           "frame_path": "frame_0000076014.jpg",
@@ -13523,21 +13882,21 @@
       ]
     },
     {
-      "start_time": 1313.84,
-      "end_time": 1313.84,
+      "start_time": 1335.85,
+      "end_time": 1335.85,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:77273",
-        "frame_id:77377",
         "narration:put potatoes on counter",
         "frame_id:78192",
         "frame_id:78374",
         "narration:take lid off pan",
         "frame_id:78686",
-        "frame_id:78730"
+        "frame_id:78730",
+        "narration:still stirring pan",
+        "frame_id:79100",
+        "frame_id:79747"
       ],
-      "frame_after_gap_start": 78752,
+      "frame_after_gap_start": 80071,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000078490.jpg",
@@ -13565,27 +13924,44 @@
             407.68,
             398.58
           ]
+        },
+        {
+          "frame_path": "frame_0000079279.jpg",
+          "bbox": [
+            651.54,
+            0,
+            379.07,
+            463.74
+          ]
+        },
+        {
+          "frame_path": "frame_0000079853.jpg",
+          "bbox": [
+            315.27,
+            -1.95,
+            558.4,
+            509.68
+          ]
         }
       ]
     }
   ],
   "63/sink/sink": [
     {
-      "start_time": 900.07,
-      "end_time": 900.86,
-      "duration_sec": 0.79,
+      "start_time": 901.5,
+      "end_time": 901.6,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:52481",
-        "frame_id:52836",
         "narration:put rubbish in bin",
         "frame_id:53113",
         "frame_id:53291",
         "narration:put rubbish in bin",
         "frame_id:53559",
-        "frame_id:53820"
+        "frame_id:53820",
+        "narration:turn on tap",
+        "frame_id:54016"
       ],
-      "frame_after_gap_start": 54011,
+      "frame_after_gap_start": 54096,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000053160.jpg",
@@ -13631,25 +14007,7 @@
             592.12,
             947.47
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 904.45,
-      "end_time": 1057.25,
-      "duration_sec": 152.8,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:54016",
-        "narration:wash hands",
-        "frame_id:54065",
-        "frame_id:54112",
-        "narration:turn off tap",
-        "frame_id:54156",
-        "frame_id:54194"
-      ],
-      "frame_after_gap_start": 54273,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000054055.jpg",
           "bbox": [
@@ -13658,7 +14016,26 @@
             567.12,
             590.14
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 933.03,
+      "end_time": 1046.91,
+      "duration_sec": 113.88,
+      "event_history": [
+        "narration:wash hands",
+        "frame_id:54065",
+        "frame_id:54112",
+        "narration:turn off tap",
+        "frame_id:54156",
+        "frame_id:54194",
+        "narration:stir pan",
+        "frame_id:54839",
+        "frame_id:55563"
+      ],
+      "frame_after_gap_start": 55986,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054126.jpg",
           "bbox": [
@@ -13698,21 +14075,21 @@
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1313.84,
-      "duration_sec": 246.28,
+      "start_time": 1058.22,
+      "end_time": 1063.6,
+      "duration_sec": 5.38,
       "event_history": [
+        "narration:take chicken breast",
+        "frame_id:62782",
+        "frame_id:62842",
+        "narration:put rubbish in bin",
+        "frame_id:63139",
+        "frame_id:63251",
         "narration:turn on tap",
         "frame_id:63386",
-        "frame_id:63415",
-        "narration:take lid off pan",
-        "frame_id:63773",
-        "frame_id:63816",
-        "narration:put lid down",
-        "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63415"
       ],
-      "frame_after_gap_start": 63990,
+      "frame_after_gap_start": 63490,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000063456.jpg",
@@ -13731,7 +14108,26 @@
             589.82,
             664.22
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1068.77,
+      "end_time": 1335.85,
+      "duration_sec": 267.08,
+      "event_history": [
+        "narration:take lid off pan",
+        "frame_id:63773",
+        "frame_id:63816",
+        "narration:put lid down",
+        "frame_id:63944",
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
+      ],
+      "frame_after_gap_start": 64063,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
           "bbox": [
@@ -13893,9 +14289,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 1101.26,
+      "duration_sec": 257.87,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -13903,11 +14299,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049630.jpg",
@@ -13935,26 +14331,7 @@
             194.16,
             140.79
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 860.45,
-      "end_time": 1123.02,
-      "duration_sec": 262.57,
-      "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
-        "narration:put lid on pan",
-        "frame_id:51184",
-        "frame_id:51328",
-        "narration:close cupboard",
-        "frame_id:51508",
-        "frame_id:51553"
-      ],
-      "frame_after_gap_start": 51636,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000050536.jpg",
           "bbox": [
@@ -13967,21 +14344,21 @@
       ]
     },
     {
-      "start_time": 1138.09,
-      "end_time": 1313.84,
-      "duration_sec": 175.75,
+      "start_time": 1124.76,
+      "end_time": 1335.85,
+      "duration_sec": 211.09,
       "event_history": [
+        "narration:put down oil",
+        "frame_id:66030",
+        "frame_id:66072",
+        "narration:stir pan",
+        "frame_id:66409",
+        "frame_id:66983",
         "narration:change cooker temperature",
         "frame_id:67340",
-        "frame_id:67392",
-        "narration:take gravy cube",
-        "frame_id:67543",
-        "frame_id:67581",
-        "narration:open gravy cube",
-        "frame_id:67793",
-        "frame_id:68076"
+        "frame_id:67392"
       ],
-      "frame_after_gap_start": 68218,
+      "frame_after_gap_start": 67419,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000067451.jpg",
@@ -14035,8 +14412,8 @@
     },
     {
       "start_time": 563.38,
-      "end_time": 1313.84,
-      "duration_sec": 750.46,
+      "end_time": 1335.85,
+      "duration_sec": 772.47,
       "event_history": [
         "narration:put chillies in pan",
         "frame_id:33161",
@@ -14667,9 +15044,9 @@
       ]
     },
     {
-      "start_time": 841.96,
-      "end_time": 842.06,
-      "duration_sec": 0.1,
+      "start_time": 843.39,
+      "end_time": 852.72,
+      "duration_sec": 9.33,
       "event_history": [
         "narration:pour salt into hand",
         "frame_id:49572",
@@ -14677,11 +15054,11 @@
         "narration:put salt in pan",
         "frame_id:49786",
         "frame_id:49832",
-        "narration:stir pan",
-        "frame_id:50008",
-        "frame_id:50315"
+        "narration:change oven temperature",
+        "frame_id:50493",
+        "frame_id:50533"
       ],
-      "frame_after_gap_start": 50528,
+      "frame_after_gap_start": 50613,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000049732.jpg",
@@ -14709,26 +15086,7 @@
             288.53,
             337.01
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 860.45,
-      "end_time": 908.85,
-      "duration_sec": 48.4,
-      "event_history": [
-        "narration:change oven temperature",
-        "frame_id:50493",
-        "frame_id:50533",
-        "narration:put lid on pan",
-        "frame_id:51184",
-        "frame_id:51328",
-        "narration:close cupboard",
-        "frame_id:51508",
-        "frame_id:51553"
-      ],
-      "frame_after_gap_start": 51636,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000050536.jpg",
           "bbox": [
@@ -14739,21 +15097,40 @@
           ]
         },
         {
-          "frame_path": "frame_0000051232.jpg",
-          "bbox": [
-            959.21,
-            530.91,
-            220.74,
-            147.91
-          ]
-        },
-        {
           "frame_path": "frame_0000050585.jpg",
           "bbox": [
             1248.56,
             25.44,
             321.94,
             289.69
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 861.68,
+      "end_time": 901.6,
+      "duration_sec": 39.92,
+      "event_history": [
+        "narration:put lid on pan",
+        "frame_id:51184",
+        "frame_id:51328",
+        "narration:close cupboard",
+        "frame_id:51508",
+        "frame_id:51553",
+        "narration:open cupboard",
+        "frame_id:51605",
+        "frame_id:51635"
+      ],
+      "frame_after_gap_start": 51710,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000051232.jpg",
+          "bbox": [
+            959.21,
+            530.91,
+            220.74,
+            147.91
           ]
         },
         {
@@ -14768,21 +15145,21 @@
       ]
     },
     {
-      "start_time": 941.32,
-      "end_time": 1007.72,
-      "duration_sec": 66.4,
+      "start_time": 933.03,
+      "end_time": 1010.27,
+      "duration_sec": 77.24,
       "event_history": [
+        "narration:wash hands",
+        "frame_id:54065",
+        "frame_id:54112",
+        "narration:turn off tap",
+        "frame_id:54156",
+        "frame_id:54194",
         "narration:stir pan",
         "frame_id:54839",
-        "frame_id:55563",
-        "narration:put lid on pan",
-        "frame_id:56045",
-        "frame_id:56120",
-        "narration:put rubbish in bin",
-        "frame_id:56328",
-        "frame_id:56391"
+        "frame_id:55563"
       ],
-      "frame_after_gap_start": 56483,
+      "frame_after_gap_start": 55986,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000054937.jpg",
@@ -14805,21 +15182,21 @@
       ]
     },
     {
-      "start_time": 1025.02,
-      "end_time": 1025.37,
-      "duration_sec": 0.35,
+      "start_time": 1027.4,
+      "end_time": 1063.6,
+      "duration_sec": 36.2,
       "event_history": [
-        "narration:take lid off pan",
-        "frame_id:60426",
-        "frame_id:60472",
         "narration:shake lid",
         "frame_id:60576",
         "frame_id:60618",
         "narration:stir pan",
         "frame_id:60878",
-        "frame_id:61252"
+        "frame_id:61252",
+        "narration:put lid on pan",
+        "frame_id:61491",
+        "frame_id:61552"
       ],
-      "frame_after_gap_start": 61500,
+      "frame_after_gap_start": 61643,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000060629.jpg",
@@ -14856,26 +15233,7 @@
             300.18,
             322.76
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 1031.92,
-      "end_time": 1057.25,
-      "duration_sec": 25.33,
-      "event_history": [
-        "narration:put lid on pan",
-        "frame_id:61491",
-        "frame_id:61552",
-        "narration:put spoon on counter",
-        "frame_id:61637",
-        "frame_id:61708",
-        "narration:take chicken",
-        "frame_id:61790",
-        "frame_id:61832"
-      ],
-      "frame_after_gap_start": 61914,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000061548.jpg",
           "bbox": [
@@ -14888,21 +15246,21 @@
       ]
     },
     {
-      "start_time": 1067.56,
-      "end_time": 1067.83,
-      "duration_sec": 0.27,
+      "start_time": 1068.77,
+      "end_time": 1068.99,
+      "duration_sec": 0.22,
       "event_history": [
-        "narration:turn on tap",
-        "frame_id:63386",
-        "frame_id:63415",
         "narration:take lid off pan",
         "frame_id:63773",
         "frame_id:63816",
         "narration:put lid down",
         "frame_id:63944",
-        "frame_id:63974"
+        "frame_id:63974",
+        "narration:pick up spoon",
+        "frame_id:64020",
+        "frame_id:64048"
       ],
-      "frame_after_gap_start": 64050,
+      "frame_after_gap_start": 64123,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064050.jpg",
@@ -14914,34 +15272,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000064016.jpg",
-          "bbox": [
-            651.42,
-            3.47,
-            392.0,
-            301.45
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1085.44,
-      "end_time": 1087.0,
-      "duration_sec": 1.56,
-      "event_history": [
-        "narration:pick up spoon",
-        "frame_id:64020",
-        "frame_id:64048",
-        "narration:stir pan",
-        "frame_id:64199",
-        "frame_id:64445",
-        "narration:scrape chicken into pan",
-        "frame_id:64839",
-        "frame_id:64988"
-      ],
-      "frame_after_gap_start": 65122,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000064076.jpg",
           "bbox": [
             328.19,
@@ -14950,6 +15280,43 @@
             370.61
           ]
         },
+        {
+          "frame_path": "frame_0000064016.jpg",
+          "bbox": [
+            651.42,
+            3.47,
+            392.0,
+            301.45
+          ]
+        },
+        {
+          "frame_path": "frame_0000064116.jpg",
+          "bbox": [
+            811.47,
+            35.91,
+            405.64,
+            376.8
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 1094.12,
+      "end_time": 1094.32,
+      "duration_sec": 0.2,
+      "event_history": [
+        "narration:stir pan",
+        "frame_id:64199",
+        "frame_id:64445",
+        "narration:scrape chicken into pan",
+        "frame_id:64839",
+        "frame_id:64988",
+        "narration:stir pan",
+        "frame_id:65261",
+        "frame_id:65475"
+      ],
+      "frame_after_gap_start": 65642,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000064208.jpg",
           "bbox": [
@@ -14969,49 +15336,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000064116.jpg",
-          "bbox": [
-            811.47,
-            35.91,
-            405.64,
-            376.8
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 1096.66,
-      "end_time": 1313.84,
-      "duration_sec": 217.18,
-      "event_history": [
-        "narration:stir pan",
-        "frame_id:65261",
-        "frame_id:65475",
-        "narration:pick up oil",
-        "frame_id:65610",
-        "frame_id:65645",
-        "narration:take lid off oil",
-        "frame_id:65683",
-        "frame_id:65717"
-      ],
-      "frame_after_gap_start": 65734,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000065287.jpg",
           "bbox": [
             911.53,
             111.75,
             341.93,
             341.75
-          ]
-        },
-        {
-          "frame_path": "frame_0000065688.jpg",
-          "bbox": [
-            813.57,
-            34.47,
-            340.08,
-            330.16
           ]
         },
         {
@@ -15024,25 +15354,53 @@
           ]
         }
       ]
+    },
+    {
+      "start_time": 1101.18,
+      "end_time": 1335.85,
+      "duration_sec": 234.67,
+      "event_history": [
+        "narration:pick up oil",
+        "frame_id:65610",
+        "frame_id:65645",
+        "narration:take lid off oil",
+        "frame_id:65683",
+        "frame_id:65717",
+        "narration:put lid on oil",
+        "frame_id:65902",
+        "frame_id:65970"
+      ],
+      "frame_after_gap_start": 66005,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000065688.jpg",
+          "bbox": [
+            813.57,
+            34.47,
+            340.08,
+            330.16
+          ]
+        }
+      ]
     }
   ],
   "79/scissors/scissors": [
     {
-      "start_time": 988.25,
-      "end_time": 1313.84,
-      "duration_sec": 325.59,
+      "start_time": 984.13,
+      "end_time": 1335.85,
+      "duration_sec": 351.72,
       "event_history": [
+        "narration:put chopped tomatoes on canned",
+        "frame_id:57112",
+        "frame_id:57147",
+        "narration:open drawer",
+        "frame_id:57472",
+        "frame_id:57522",
         "narration:open chopped tomatoes",
         "frame_id:58154",
-        "frame_id:58710",
-        "narration:put rubbish in bin",
-        "frame_id:59035",
-        "frame_id:59064",
-        "narration:take chopped tomatoes",
-        "frame_id:59163",
-        "frame_id:59212"
+        "frame_id:58710"
       ],
-      "frame_after_gap_start": 59236,
+      "frame_after_gap_start": 58989,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000058450.jpg",
@@ -15105,8 +15463,8 @@
     },
     {
       "start_time": 195.57,
-      "end_time": 948.43,
-      "duration_sec": 752.86,
+      "end_time": 952.52,
+      "duration_sec": 756.95,
       "event_history": [
         "narration:still chopping onion",
         "frame_id:8948",
@@ -15141,20 +15499,21 @@
       ]
     },
     {
-      "start_time": 960.08,
-      "end_time": 1313.84,
-      "duration_sec": 353.76,
+      "start_time": 984.13,
+      "end_time": 1335.85,
+      "duration_sec": 351.72,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:56873",
         "narration:put chopped tomatoes on canned",
         "frame_id:57112",
         "frame_id:57147",
         "narration:open drawer",
         "frame_id:57472",
-        "frame_id:57522"
+        "frame_id:57522",
+        "narration:open chopped tomatoes",
+        "frame_id:58154",
+        "frame_id:58710"
       ],
-      "frame_after_gap_start": 57548,
+      "frame_after_gap_start": 58989,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000057586.jpg",
@@ -15300,8 +15659,8 @@
     },
     {
       "start_time": 638.88,
-      "end_time": 1313.84,
-      "duration_sec": 674.96,
+      "end_time": 1335.85,
+      "duration_sec": 696.97,
       "event_history": [
         "narration:scrape chorizo into pan",
         "frame_id:37659",
@@ -15365,21 +15724,21 @@
   ],
   "95/stock/gravy cube": [
     {
-      "start_time": 1237.71,
-      "end_time": 1313.84,
-      "duration_sec": 76.13,
+      "start_time": 1221.34,
+      "end_time": 1222.21,
+      "duration_sec": 0.87,
       "event_history": [
+        "narration:shake chopped tomatoes",
+        "frame_id:71220",
+        "frame_id:71299",
+        "narration:stir pan",
+        "frame_id:71765",
+        "frame_id:72511",
         "narration:pick up gravy cube",
         "frame_id:73162",
-        "frame_id:73193",
-        "narration:open gravy cube",
-        "frame_id:73449",
-        "frame_id:73828",
-        "narration:break up gravy cube",
-        "frame_id:74143",
-        "frame_id:74174"
+        "frame_id:73193"
       ],
-      "frame_after_gap_start": 74189,
+      "frame_after_gap_start": 73268,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000073225.jpg",
@@ -15389,7 +15748,26 @@
             39.8,
             65.44
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 1265.41,
+      "end_time": 1335.85,
+      "duration_sec": 70.44,
+      "event_history": [
+        "narration:open gravy cube",
+        "frame_id:73449",
+        "frame_id:73828",
+        "narration:break up gravy cube",
+        "frame_id:74143",
+        "frame_id:74174",
+        "narration:stir pan",
+        "frame_id:74646",
+        "frame_id:75448"
+      ],
+      "frame_after_gap_start": 75849,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000073482.jpg",
           "bbox": [

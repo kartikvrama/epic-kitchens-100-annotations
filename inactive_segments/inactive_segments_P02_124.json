@@ -1,21 +1,19 @@
 {
   "0/tap/tap": [
     {
-      "start_time": 123.77,
-      "end_time": 230.56,
-      "duration_sec": 106.79,
+      "start_time": 116.11,
+      "end_time": 116.13,
+      "duration_sec": 0.02,
       "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
         "narration:open tap",
         "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
+        "frame_id:5792"
       ],
-      "frame_after_gap_start": 6189,
+      "frame_after_gap_start": 5856,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005763.jpg",
@@ -34,7 +32,26 @@
             424.53,
             205.7
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 126.86,
+      "end_time": 229.64,
+      "duration_sec": 102.78,
+      "event_history": [
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173",
+        "narration:pick up mug",
+        "frame_id:6292",
+        "frame_id:6326"
+      ],
+      "frame_after_gap_start": 6343,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -67,21 +84,20 @@
   ],
   "1/spoon/wooden stirrer": [
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 219.57999999999998,
+      "duration_sec": 25.15,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008426.jpg",
@@ -100,25 +116,16 @@
             691.21,
             172.35
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 218.7,
-      "duration_sec": 13.68,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10301,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000009676.jpg",
+          "bbox": [
+            818.97,
+            326.73,
+            740.3,
+            280.48
+          ]
+        },
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [
@@ -131,20 +138,38 @@
       ]
     },
     {
-      "start_time": 225.02,
-      "end_time": 228.82999999999998,
-      "duration_sec": 3.81,
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
         "narration:put box in cupboard",
         "frame_id:10996",
         "frame_id:11033",
         "narration:pick up mug",
-        "frame_id:11230"
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
       ],
-      "frame_after_gap_start": 11301,
+      "frame_after_gap_start": 11482,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011441.jpg",
+          "bbox": [
+            789.92,
+            479.7,
+            331.42,
+            70.04
+          ]
+        },
+        {
+          "frame_path": "frame_0000011476.jpg",
+          "bbox": [
+            690.11,
+            551.75,
+            234.9,
+            125.19
+          ]
+        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -164,50 +189,24 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 230.56,
-      "end_time": 230.56,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:open bin",
-        "frame_id:11462",
-        "narration:throw wooden stirrer",
-        "frame_id:11493",
-        "narration:close bin",
-        "frame_id:11517"
-      ],
-      "frame_after_gap_start": 11528,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            690.11,
-            551.75,
-            234.9,
-            125.19
-          ]
-        }
-      ]
     }
   ],
   "12/fridge/fridge": [
     {
-      "start_time": 142.67000000000002,
-      "end_time": 142.77,
-      "duration_sec": 0.1,
+      "start_time": 143.75,
+      "end_time": 143.77,
+      "duration_sec": 0.02,
       "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
         "narration:close drawer",
         "frame_id:7040",
         "frame_id:7066",
         "narration:open fridge",
         "frame_id:7094",
-        "frame_id:7121"
+        "frame_id:7121",
+        "narration:pick up milk bottle",
+        "frame_id:7163"
       ],
-      "frame_after_gap_start": 7184,
+      "frame_after_gap_start": 7238,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007051.jpg",
@@ -253,24 +252,7 @@
             1920,
             1055.71
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 147.14,
-      "end_time": 147.17000000000002,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
-        "narration:close fridge",
-        "frame_id:7205",
-        "narration:open milk bottle",
-        "frame_id:7298",
-        "frame_id:7337"
-      ],
-      "frame_after_gap_start": 7407,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007151.jpg",
           "bbox": [
@@ -279,7 +261,25 @@
             1920,
             1080
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 150.29,
+      "end_time": 150.37,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:close fridge",
+        "frame_id:7205",
+        "narration:open milk bottle",
+        "frame_id:7298",
+        "frame_id:7337",
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476"
+      ],
+      "frame_after_gap_start": 7565,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007200.jpg",
           "bbox": [
@@ -292,20 +292,20 @@
       ]
     },
     {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
+      "start_time": 156.01,
+      "end_time": 229.64,
+      "duration_sec": 73.63,
       "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
         "narration:close milk bottle",
         "frame_id:7540",
         "frame_id:7582",
         "narration:open fridge",
-        "frame_id:7703"
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
       ],
-      "frame_after_gap_start": 7772,
+      "frame_after_gap_start": 7801,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007630.jpg",
@@ -333,26 +333,7 @@
             1920,
             1014.85
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 171.61,
-      "end_time": 230.56,
-      "duration_sec": 58.95,
-      "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
-        "narration:pick up wooden stirrer from box",
-        "frame_id:8295",
-        "frame_id:8359",
-        "narration:stir coffee",
-        "frame_id:8442",
-        "frame_id:8534"
-      ],
-      "frame_after_gap_start": 8581,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007751.jpg",
           "bbox": [
@@ -367,21 +348,21 @@
   ],
   "124/machine:washing/washing machine": [
     {
-      "start_time": 6.97,
-      "end_time": 7.51,
-      "duration_sec": 0.54,
+      "start_time": 9.97,
+      "end_time": 11.99,
+      "duration_sec": 2.02,
       "event_history": [
         "narration:put down laundry basket",
         "frame_id:138",
         "frame_id:183",
-        "narration:open laundry basket",
-        "frame_id:218",
-        "frame_id:247",
         "narration:pick up clothes",
         "frame_id:286",
-        "frame_id:328"
+        "frame_id:328",
+        "narration:put clothes in washing machine",
+        "frame_id:406",
+        "frame_id:468"
       ],
-      "frame_after_gap_start": 399,
+      "frame_after_gap_start": 549,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000144.jpg",
@@ -418,26 +399,7 @@
             836.92,
             222.34
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 15.92,
-      "end_time": 17.12,
-      "duration_sec": 1.2,
-      "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
-        "narration:put towel in washing machine",
-        "frame_id:618",
-        "frame_id:657",
-        "narration:open drawer",
-        "frame_id:731",
-        "frame_id:775"
-      ],
-      "frame_after_gap_start": 847,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000413.jpg",
           "bbox": [
@@ -455,7 +417,26 @@
             1286.63,
             1078.44
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 18.61,
+      "end_time": 18.71,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:put towel in washing machine",
+        "frame_id:618",
+        "frame_id:657",
+        "narration:open drawer",
+        "frame_id:731",
+        "frame_id:775",
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912"
+      ],
+      "frame_after_gap_start": 981,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000615.jpg",
           "bbox": [
@@ -495,20 +476,20 @@
       ]
     },
     {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
+      "start_time": 28.43,
+      "end_time": 28.51,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up washing powder",
-        "frame_id:874",
-        "frame_id:912",
         "narration:put down washing powder",
         "frame_id:958",
         "frame_id:1005",
         "narration:open box",
-        "frame_id:1129"
+        "frame_id:1129",
+        "narration:scoop washing powder",
+        "frame_id:1223",
+        "frame_id:1355"
       ],
-      "frame_after_gap_start": 1204,
+      "frame_after_gap_start": 1472,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000973.jpg",
@@ -545,26 +526,7 @@
             910.29,
             641.92
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
-        "narration:put washing powder in drawer",
-        "frame_id:1456",
-        "frame_id:1517",
-        "narration:put washing powder in drawer",
-        "frame_id:1928",
-        "frame_id:1970"
-      ],
-      "frame_after_gap_start": 2042,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001230.jpg",
           "bbox": [
@@ -582,7 +544,26 @@
             1032.19,
             356.93
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
+      "event_history": [
+        "narration:put washing powder in drawer",
+        "frame_id:1456",
+        "frame_id:1517",
+        "narration:put washing powder in drawer",
+        "frame_id:1928",
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
+      ],
+      "frame_after_gap_start": 2103,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -627,26 +608,7 @@
             968.45,
             327.94
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002021.jpg",
           "bbox": [
@@ -655,7 +617,25 @@
             936.88,
             388.69
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 49.25,
+      "end_time": 49.67,
+      "duration_sec": 0.42,
+      "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
+        "narration:put washing powder in drawer",
+        "frame_id:2445"
+      ],
+      "frame_after_gap_start": 2513,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -704,20 +684,21 @@
       ]
     },
     {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
       "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
         "narration:pick up lid",
         "frame_id:2498",
         "frame_id:2527",
         "narration:close box",
         "frame_id:2561",
-        "frame_id:2597"
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
       ],
-      "frame_after_gap_start": 2664,
+      "frame_after_gap_start": 2807,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
@@ -758,21 +739,21 @@
       ]
     },
     {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
       "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
         "narration:close cupboard",
         "frame_id:2833",
         "frame_id:2873",
         "narration:pour liquid from bottle into cover",
         "frame_id:3080",
-        "frame_id:3166"
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
       ],
-      "frame_after_gap_start": 3259,
+      "frame_after_gap_start": 3383,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002830.jpg",
@@ -802,34 +783,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            347.89,
-            85.81,
-            1151.19,
-            269.85
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             489.0,
@@ -847,6 +800,34 @@
             249.96
           ]
         },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            347.89,
+            85.81,
+            1151.19,
+            269.85
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 74.35,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3763,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -882,25 +863,7 @@
             1067.4,
             263.73
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 79.34,
-      "duration_sec": 1.16,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -918,7 +881,24 @@
             932.72,
             279.01
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 79.97,
+      "end_time": 80.32,
+      "duration_sec": 0.35,
+      "event_history": [
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892",
+        "narration:close cupboard",
+        "frame_id:3982"
+      ],
+      "frame_after_gap_start": 4049,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -945,24 +925,51 @@
             1070.11,
             452.27
           ]
+        },
+        {
+          "frame_path": "frame_0000003923.jpg",
+          "bbox": [
+            985.47,
+            387.83,
+            934.53,
+            602.74
+          ]
+        },
+        {
+          "frame_path": "frame_0000003963.jpg",
+          "bbox": [
+            912.65,
+            365.35,
+            1007.35,
+            650.21
+          ]
+        },
+        {
+          "frame_path": "frame_0000003996.jpg",
+          "bbox": [
+            411.07,
+            419.19,
+            1058.69,
+            158.15
+          ]
         }
       ]
     },
     {
-      "start_time": 84.59,
-      "end_time": 84.68,
-      "duration_sec": 0.09,
+      "start_time": 85.03999999999999,
+      "end_time": 229.64,
+      "duration_sec": 144.6,
       "event_history": [
-        "narration:close cupboard",
-        "frame_id:3982",
         "narration:turn on dial",
         "frame_id:4052",
         "frame_id:4127",
         "narration:open washing machine door",
         "frame_id:4183",
-        "frame_id:4214"
+        "frame_id:4214",
+        "narration:close washing machine door",
+        "frame_id:4243"
       ],
-      "frame_after_gap_start": 4280,
+      "frame_after_gap_start": 4252,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004042.jpg",
@@ -1010,32 +1017,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003996.jpg",
-          "bbox": [
-            411.07,
-            419.19,
-            1058.69,
-            158.15
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 95.02000000000001,
-      "end_time": 230.56,
-      "duration_sec": 135.54,
-      "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
-        "narration:pick up mug",
-        "frame_id:4453",
-        "narration:move laundry basket",
-        "frame_id:4549",
-        "frame_id:4684"
-      ],
-      "frame_after_gap_start": 4752,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000004242.jpg",
           "bbox": [
             354.24,
@@ -1049,21 +1030,21 @@
   ],
   "13/cup/cup": [
     {
-      "start_time": 39.83,
-      "end_time": 48.55,
-      "duration_sec": 8.72,
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
       "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
         "narration:put washing powder in drawer",
         "frame_id:1456",
         "frame_id:1517",
         "narration:put washing powder in drawer",
         "frame_id:1928",
-        "frame_id:1970"
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
       ],
-      "frame_after_gap_start": 2042,
+      "frame_after_gap_start": 2103,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001976.jpg",
@@ -1077,20 +1058,20 @@
       ]
     },
     {
-      "start_time": 52.28,
-      "end_time": 205.1,
-      "duration_sec": 152.82,
+      "start_time": 49.25,
+      "end_time": 49.67,
+      "duration_sec": 0.42,
       "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
         "narration:put washing powder in drawer",
-        "frame_id:2445",
-        "narration:pick up lid",
-        "frame_id:2498",
-        "frame_id:2527",
-        "narration:close box",
-        "frame_id:2561",
-        "frame_id:2597"
+        "frame_id:2445"
       ],
-      "frame_after_gap_start": 2664,
+      "frame_after_gap_start": 2513,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002446.jpg",
@@ -1100,7 +1081,26 @@
             113.66,
             107.14
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 55.14,
+      "end_time": 194.49,
+      "duration_sec": 139.35,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:2498",
+        "frame_id:2527",
+        "narration:close box",
+        "frame_id:2561",
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
+      ],
+      "frame_after_gap_start": 2807,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -1113,21 +1113,21 @@
       ]
     },
     {
-      "start_time": 216.59,
-      "end_time": 230.56,
-      "duration_sec": 13.97,
+      "start_time": 207.0,
+      "end_time": 229.64,
+      "duration_sec": 22.64,
       "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
         "narration:pick up hand blender piece",
         "frame_id:10278",
-        "frame_id:10327",
-        "narration:fit wire inside box",
-        "frame_id:10448",
-        "frame_id:10566",
-        "narration:pick up box",
-        "frame_id:10777",
-        "frame_id:10812"
+        "frame_id:10327"
       ],
-      "frame_after_gap_start": 10830,
+      "frame_after_gap_start": 10350,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010276.jpg",
@@ -1152,19 +1152,20 @@
   ],
   "13/cup/mug": [
     {
-      "start_time": 95.02000000000001,
-      "end_time": 95.97,
-      "duration_sec": 0.95,
+      "start_time": 97.07,
+      "end_time": 97.5,
+      "duration_sec": 0.43,
       "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
         "narration:pick up mug",
         "frame_id:4453",
         "narration:move laundry basket",
         "frame_id:4549",
-        "frame_id:4684"
+        "frame_id:4684",
+        "narration:put mug down",
+        "frame_id:4812",
+        "frame_id:4840"
       ],
-      "frame_after_gap_start": 4802,
+      "frame_after_gap_start": 4904,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004692.jpg",
@@ -1173,6 +1174,24 @@
             1021.97,
             253.61,
             58.03
+          ]
+        },
+        {
+          "frame_path": "frame_0000004758.jpg",
+          "bbox": [
+            756.75,
+            1057.6,
+            126.72,
+            22.4
+          ]
+        },
+        {
+          "frame_path": "frame_0000004825.jpg",
+          "bbox": [
+            504.07,
+            597.14,
+            194.66,
+            196.73
           ]
         },
         {
@@ -1196,29 +1215,19 @@
       ]
     },
     {
-      "start_time": 99.95,
-      "end_time": 100.83,
-      "duration_sec": 0.88,
+      "start_time": 101.62,
+      "end_time": 101.64,
+      "duration_sec": 0.02,
       "event_history": [
-        "narration:put mug down",
-        "frame_id:4812",
-        "frame_id:4840",
         "narration:pick up capsule",
         "frame_id:4898",
         "narration:put capsule in coffee machine",
-        "frame_id:4978"
+        "frame_id:4978",
+        "narration:pick up water filter",
+        "frame_id:5061"
       ],
-      "frame_after_gap_start": 5048,
+      "frame_after_gap_start": 5131,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000004825.jpg",
-          "bbox": [
-            504.07,
-            597.14,
-            194.66,
-            196.73
-          ]
-        },
         {
           "frame_path": "frame_0000004876.jpg",
           "bbox": [
@@ -1245,23 +1254,25 @@
             217.66,
             184.83
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 110.9,
-      "end_time": 115.0,
-      "duration_sec": 4.1,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
-      ],
-      "frame_after_gap_start": 5595,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000005007.jpg",
+          "bbox": [
+            130.63,
+            493.95,
+            318.05,
+            203.82
+          ]
+        },
+        {
+          "frame_path": "frame_0000005039.jpg",
+          "bbox": [
+            0,
+            559.42,
+            283.19,
+            202.96
+          ]
+        },
         {
           "frame_path": "frame_0000005076.jpg",
           "bbox": [
@@ -1270,7 +1281,24 @@
             194.14,
             199.76
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 116.11,
+      "end_time": 116.13,
+      "duration_sec": 0.02,
+      "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792"
+      ],
+      "frame_after_gap_start": 5856,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -1297,25 +1325,34 @@
             280.12,
             201.6
           ]
+        },
+        {
+          "frame_path": "frame_0000005644.jpg",
+          "bbox": [
+            766.18,
+            643.41,
+            159.66,
+            219.05
+          ]
         }
       ]
     },
     {
-      "start_time": 123.77,
-      "end_time": 125.49,
-      "duration_sec": 1.72,
+      "start_time": 126.86,
+      "end_time": 129.8,
+      "duration_sec": 2.94,
       "event_history": [
-        "narration:open tap",
-        "frame_id:5763",
-        "frame_id:5792",
         "narration:fill water filter",
         "frame_id:5843",
         "frame_id:5918",
         "narration:put down water filter",
         "frame_id:6140",
-        "frame_id:6173"
+        "frame_id:6173",
+        "narration:pick up mug",
+        "frame_id:6292",
+        "frame_id:6326"
       ],
-      "frame_after_gap_start": 6239,
+      "frame_after_gap_start": 6393,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006176.jpg",
@@ -1325,26 +1362,7 @@
             249.28,
             219.29
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 135.24,
-      "end_time": 135.41,
-      "duration_sec": 0.17,
-      "event_history": [
-        "narration:pick up mug",
-        "frame_id:6292",
-        "frame_id:6326",
-        "narration:empty mug in sink",
-        "frame_id:6506",
-        "frame_id:6537",
-        "narration:put down mug",
-        "frame_id:6621",
-        "frame_id:6715"
-      ],
-      "frame_after_gap_start": 6812,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000006301.jpg",
           "bbox": [
@@ -1353,7 +1371,26 @@
             192.08,
             210.43
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 136.77,
+      "end_time": 143.77,
+      "duration_sec": 7.0,
+      "event_history": [
+        "narration:empty mug in sink",
+        "frame_id:6506",
+        "frame_id:6537",
+        "narration:put down mug",
+        "frame_id:6621",
+        "frame_id:6715",
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822"
+      ],
+      "frame_after_gap_start": 6889,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006701.jpg",
           "bbox": [
@@ -1363,34 +1400,6 @@
             228.76
           ]
         },
-        {
-          "frame_path": "frame_0000006626.jpg",
-          "bbox": [
-            664.02,
-            562.34,
-            188.26,
-            209.67
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 142.67000000000002,
-      "end_time": 142.77,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
-        "narration:close drawer",
-        "frame_id:7040",
-        "frame_id:7066",
-        "narration:open fridge",
-        "frame_id:7094",
-        "frame_id:7121"
-      ],
-      "frame_after_gap_start": 7184,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006784.jpg",
           "bbox": [
@@ -1408,23 +1417,33 @@
             182.31,
             231.66
           ]
+        },
+        {
+          "frame_path": "frame_0000006626.jpg",
+          "bbox": [
+            664.02,
+            562.34,
+            188.26,
+            209.67
+          ]
         }
       ]
     },
     {
-      "start_time": 147.14,
-      "end_time": 147.17000000000002,
-      "duration_sec": 0.03,
+      "start_time": 150.29,
+      "end_time": 150.37,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
         "narration:close fridge",
         "frame_id:7205",
         "narration:open milk bottle",
         "frame_id:7298",
-        "frame_id:7337"
+        "frame_id:7337",
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476"
       ],
-      "frame_after_gap_start": 7407,
+      "frame_after_gap_start": 7565,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007301.jpg",
@@ -1443,25 +1462,7 @@
             232.11,
             188.84
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
-      "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
-        "narration:close milk bottle",
-        "frame_id:7540",
-        "frame_id:7582",
-        "narration:open fridge",
-        "frame_id:7703"
-      ],
-      "frame_after_gap_start": 7772,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007417.jpg",
           "bbox": [
@@ -1479,7 +1480,25 @@
             254.89,
             208.31
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 156.01,
+      "end_time": 165.28,
+      "duration_sec": 9.27,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:7540",
+        "frame_id:7582",
+        "narration:open fridge",
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
+      ],
+      "frame_after_gap_start": 7851,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007526.jpg",
           "bbox": [
@@ -1492,21 +1511,20 @@
       ]
     },
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 194.49,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -1543,25 +1561,16 @@
             208.18,
             186.58
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 218.7,
-      "duration_sec": 13.68,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10301,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000009676.jpg",
+          "bbox": [
+            735.02,
+            422.56,
+            196.9,
+            185.16
+          ]
+        },
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [
@@ -1570,7 +1579,26 @@
             190.88,
             190.57
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 207.0,
+      "end_time": 219.57999999999998,
+      "duration_sec": 12.58,
+      "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
+      ],
+      "frame_after_gap_start": 10400,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
@@ -1583,20 +1611,38 @@
       ]
     },
     {
-      "start_time": 225.02,
-      "end_time": 228.82999999999998,
-      "duration_sec": 3.81,
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
         "narration:put box in cupboard",
         "frame_id:10996",
         "frame_id:11033",
         "narration:pick up mug",
-        "frame_id:11230"
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
       ],
-      "frame_after_gap_start": 11301,
+      "frame_after_gap_start": 11482,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011441.jpg",
+          "bbox": [
+            527.03,
+            631.81,
+            233.21,
+            233.79
+          ]
+        },
+        {
+          "frame_path": "frame_0000011476.jpg",
+          "bbox": [
+            296.36,
+            833.3,
+            304.93,
+            246.7
+          ]
+        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -1616,50 +1662,25 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 230.56,
-      "end_time": 230.56,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:open bin",
-        "frame_id:11462",
-        "narration:throw wooden stirrer",
-        "frame_id:11493",
-        "narration:close bin",
-        "frame_id:11517"
-      ],
-      "frame_after_gap_start": 11528,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            296.36,
-            833.3,
-            304.93,
-            246.7
-          ]
-        }
-      ]
     }
   ],
   "15/bottle/bottle": [
     {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
+      "start_time": 74.25,
+      "end_time": 74.35,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
         "narration:pour liquid from bottle into cover",
         "frame_id:3357",
         "frame_id:3404",
         "narration:pour liquid from cover into compartment",
         "frame_id:3464",
-        "frame_id:3528"
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
       ],
-      "frame_after_gap_start": 3610,
+      "frame_after_gap_start": 3763,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
@@ -1696,25 +1717,7 @@
             207.91,
             206.46
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 230.56,
-      "duration_sec": 152.38,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3910,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -1732,7 +1735,24 @@
             126.67,
             182.25
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 79.97,
+      "end_time": 229.64,
+      "duration_sec": 149.67,
+      "event_history": [
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892",
+        "narration:close cupboard",
+        "frame_id:3982"
+      ],
+      "frame_after_gap_start": 3999,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -1759,26 +1779,45 @@
             163.69,
             186.97
           ]
+        },
+        {
+          "frame_path": "frame_0000003923.jpg",
+          "bbox": [
+            978.7,
+            292.85,
+            149.54,
+            139.68
+          ]
+        },
+        {
+          "frame_path": "frame_0000003963.jpg",
+          "bbox": [
+            932.17,
+            238.08,
+            147.55,
+            115.11
+          ]
         }
       ]
     }
   ],
   "15/bottle/fabric conditioner bottle": [
     {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
       "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
         "narration:pick up lid",
         "frame_id:2498",
         "frame_id:2527",
         "narration:close box",
         "frame_id:2561",
-        "frame_id:2597"
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
       ],
-      "frame_after_gap_start": 2664,
+      "frame_after_gap_start": 2807,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002596.jpg",
@@ -1788,26 +1827,7 @@
             149.2,
             89.54
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
-        "narration:close cupboard",
-        "frame_id:2833",
-        "frame_id:2873",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3080",
-        "frame_id:3166"
-      ],
-      "frame_after_gap_start": 3259,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002722.jpg",
           "bbox": [
@@ -1816,7 +1836,26 @@
             129.3,
             64.78
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 66.65,
+      "end_time": 229.64,
+      "duration_sec": 162.99,
+      "event_history": [
+        "narration:close cupboard",
+        "frame_id:2833",
+        "frame_id:2873",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3080",
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
+      ],
+      "frame_after_gap_start": 3333,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002830.jpg",
           "bbox": [
@@ -1845,34 +1884,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            7.66,
-            692.7,
-            621.35,
-            387.3
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 230.56,
-      "duration_sec": 159.38,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3560,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             523.13,
@@ -1889,27 +1900,35 @@
             214.08,
             203.46
           ]
+        },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            7.66,
+            692.7,
+            621.35,
+            387.3
+          ]
         }
       ]
     }
   ],
   "15/bottle/milk bottle": [
     {
-      "start_time": 142.67000000000002,
-      "end_time": 142.77,
-      "duration_sec": 0.1,
+      "start_time": 143.75,
+      "end_time": 143.77,
+      "duration_sec": 0.02,
       "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
         "narration:close drawer",
         "frame_id:7040",
         "frame_id:7066",
         "narration:open fridge",
         "frame_id:7094",
-        "frame_id:7121"
+        "frame_id:7121",
+        "narration:pick up milk bottle",
+        "frame_id:7163"
       ],
-      "frame_after_gap_start": 7184,
+      "frame_after_gap_start": 7238,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007109.jpg",
@@ -1928,24 +1947,7 @@
             311.47,
             462.81
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 147.14,
-      "end_time": 147.17000000000002,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
-        "narration:close fridge",
-        "frame_id:7205",
-        "narration:open milk bottle",
-        "frame_id:7298",
-        "frame_id:7337"
-      ],
-      "frame_after_gap_start": 7407,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007151.jpg",
           "bbox": [
@@ -1954,7 +1956,25 @@
             277.2,
             474.78
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 150.29,
+      "end_time": 150.37,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:close fridge",
+        "frame_id:7205",
+        "narration:open milk bottle",
+        "frame_id:7298",
+        "frame_id:7337",
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476"
+      ],
+      "frame_after_gap_start": 7565,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007200.jpg",
           "bbox": [
@@ -1990,25 +2010,7 @@
             221.94,
             371.11
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
-      "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
-        "narration:close milk bottle",
-        "frame_id:7540",
-        "frame_id:7582",
-        "narration:open fridge",
-        "frame_id:7703"
-      ],
-      "frame_after_gap_start": 7772,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007417.jpg",
           "bbox": [
@@ -2018,6 +2020,33 @@
             493.15
           ]
         },
+        {
+          "frame_path": "frame_0000007476.jpg",
+          "bbox": [
+            1021.57,
+            475.07,
+            494.9,
+            468.0
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 156.01,
+      "end_time": 229.64,
+      "duration_sec": 73.63,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:7540",
+        "frame_id:7582",
+        "narration:open fridge",
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
+      ],
+      "frame_after_gap_start": 7801,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007576.jpg",
           "bbox": [
@@ -2055,12 +2084,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000007476.jpg",
+          "frame_path": "frame_0000007751.jpg",
           "bbox": [
-            1021.57,
-            475.07,
-            494.9,
-            468.0
+            556.62,
+            216.06,
+            535.19,
+            380.27
           ]
         },
         {
@@ -2073,53 +2102,25 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 171.61,
-      "end_time": 230.56,
-      "duration_sec": 58.95,
-      "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
-        "narration:pick up wooden stirrer from box",
-        "frame_id:8295",
-        "frame_id:8359",
-        "narration:stir coffee",
-        "frame_id:8442",
-        "frame_id:8534"
-      ],
-      "frame_after_gap_start": 8581,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000007751.jpg",
-          "bbox": [
-            556.62,
-            216.06,
-            535.19,
-            380.27
-          ]
-        }
-      ]
     }
   ],
   "150/liquid/liquid": [
     {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
       "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
         "narration:close cupboard",
         "frame_id:2833",
         "frame_id:2873",
         "narration:pour liquid from bottle into cover",
         "frame_id:3080",
-        "frame_id:3166"
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
       ],
-      "frame_after_gap_start": 3259,
+      "frame_after_gap_start": 3383,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003167.jpg",
@@ -2129,26 +2130,7 @@
             111.36,
             121.5
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
@@ -2166,7 +2148,26 @@
             78.46,
             111.25
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 229.64,
+      "duration_sec": 155.39,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3713,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -2202,25 +2203,7 @@
             343.75,
             362.78
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 230.56,
-      "duration_sec": 152.38,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3910,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003692.jpg",
           "bbox": [
@@ -2235,20 +2218,21 @@
   ],
   "153/plug/electric plug": [
     {
-      "start_time": 205.02,
-      "end_time": 230.56,
-      "duration_sec": 25.54,
+      "start_time": 207.0,
+      "end_time": 229.64,
+      "duration_sec": 22.64,
       "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
         "narration:pick up hand blender motor",
         "frame_id:9756",
         "frame_id:9818",
         "narration:put hand blender in box",
         "frame_id:9993",
-        "frame_id:10166"
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
       ],
-      "frame_after_gap_start": 10251,
+      "frame_after_gap_start": 10350,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009976.jpg",
@@ -2264,21 +2248,21 @@
   ],
   "168/basket/laundry basket": [
     {
-      "start_time": 6.97,
-      "end_time": 7.51,
-      "duration_sec": 0.54,
+      "start_time": 9.97,
+      "end_time": 11.99,
+      "duration_sec": 2.02,
       "event_history": [
         "narration:put down laundry basket",
         "frame_id:138",
         "frame_id:183",
-        "narration:open laundry basket",
-        "frame_id:218",
-        "frame_id:247",
         "narration:pick up clothes",
         "frame_id:286",
-        "frame_id:328"
+        "frame_id:328",
+        "narration:put clothes in washing machine",
+        "frame_id:406",
+        "frame_id:468"
       ],
-      "frame_after_gap_start": 399,
+      "frame_after_gap_start": 549,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000144.jpg",
@@ -2315,26 +2299,7 @@
             942.88,
             865.45
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 15.92,
-      "end_time": 84.68,
-      "duration_sec": 68.76,
-      "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
-        "narration:put towel in washing machine",
-        "frame_id:618",
-        "frame_id:657",
-        "narration:open drawer",
-        "frame_id:731",
-        "frame_id:775"
-      ],
-      "frame_after_gap_start": 847,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000413.jpg",
           "bbox": [
@@ -2352,7 +2317,26 @@
             274.81,
             458.28
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 18.61,
+      "end_time": 88.59,
+      "duration_sec": 69.98,
+      "event_history": [
+        "narration:put towel in washing machine",
+        "frame_id:618",
+        "frame_id:657",
+        "narration:open drawer",
+        "frame_id:731",
+        "frame_id:775",
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912"
+      ],
+      "frame_after_gap_start": 981,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000615.jpg",
           "bbox": [
@@ -2392,19 +2376,20 @@
       ]
     },
     {
-      "start_time": 95.02000000000001,
-      "end_time": 230.56,
-      "duration_sec": 135.54,
+      "start_time": 97.07,
+      "end_time": 229.64,
+      "duration_sec": 132.57,
       "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
         "narration:pick up mug",
         "frame_id:4453",
         "narration:move laundry basket",
         "frame_id:4549",
-        "frame_id:4684"
+        "frame_id:4684",
+        "narration:put mug down",
+        "frame_id:4812",
+        "frame_id:4840"
       ],
-      "frame_after_gap_start": 4752,
+      "frame_after_gap_start": 4854,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004625.jpg",
@@ -2447,20 +2432,20 @@
   ],
   "190/knob/dial": [
     {
-      "start_time": 84.59,
-      "end_time": 84.68,
-      "duration_sec": 0.09,
+      "start_time": 85.03999999999999,
+      "end_time": 229.64,
+      "duration_sec": 144.6,
       "event_history": [
-        "narration:close cupboard",
-        "frame_id:3982",
         "narration:turn on dial",
         "frame_id:4052",
         "frame_id:4127",
         "narration:open washing machine door",
         "frame_id:4183",
-        "frame_id:4214"
+        "frame_id:4214",
+        "narration:close washing machine door",
+        "frame_id:4243"
       ],
-      "frame_after_gap_start": 4280,
+      "frame_after_gap_start": 4252,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004042.jpg",
@@ -2506,24 +2491,7 @@
             116.02,
             39.74
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 95.02000000000001,
-      "end_time": 230.56,
-      "duration_sec": 135.54,
-      "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
-        "narration:pick up mug",
-        "frame_id:4453",
-        "narration:move laundry basket",
-        "frame_id:4549",
-        "frame_id:4684"
-      ],
-      "frame_after_gap_start": 4752,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000004242.jpg",
           "bbox": [
@@ -2538,20 +2506,21 @@
   ],
   "23/box/box": [
     {
-      "start_time": 52.28,
-      "end_time": 84.68,
-      "duration_sec": 32.4,
+      "start_time": 55.14,
+      "end_time": 88.59,
+      "duration_sec": 33.45,
       "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
         "narration:pick up lid",
         "frame_id:2498",
         "frame_id:2527",
         "narration:close box",
         "frame_id:2561",
-        "frame_id:2597"
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
       ],
-      "frame_after_gap_start": 2664,
+      "frame_after_gap_start": 2807,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
@@ -2583,19 +2552,20 @@
       ]
     },
     {
-      "start_time": 95.02000000000001,
-      "end_time": 154.46,
-      "duration_sec": 59.44,
+      "start_time": 97.07,
+      "end_time": 165.28,
+      "duration_sec": 68.21,
       "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
         "narration:pick up mug",
         "frame_id:4453",
         "narration:move laundry basket",
         "frame_id:4549",
-        "frame_id:4684"
+        "frame_id:4684",
+        "narration:put mug down",
+        "frame_id:4812",
+        "frame_id:4840"
       ],
-      "frame_after_gap_start": 4802,
+      "frame_after_gap_start": 4904,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004559.jpg",
@@ -2609,21 +2579,20 @@
       ]
     },
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 194.49,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -2660,32 +2629,14 @@
             533.55,
             315.71
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 205.1,
-      "duration_sec": 0.08,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10301,
-      "crop_from_previous_active": [
+        },
         {
-          "frame_path": "frame_0000009826.jpg",
+          "frame_path": "frame_0000009676.jpg",
           "bbox": [
-            0,
-            0.55,
-            441.74,
-            618.42
+            1388.03,
+            190.61,
+            339.47,
+            310.83
           ]
         },
         {
@@ -2695,6 +2646,34 @@
             106.93,
             452.41,
             381.2
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 207.0,
+      "end_time": 207.8,
+      "duration_sec": 0.8,
+      "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
+      ],
+      "frame_after_gap_start": 10400,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000009826.jpg",
+          "bbox": [
+            0,
+            0.55,
+            441.74,
+            618.42
           ]
         },
         {
@@ -2723,25 +2702,42 @@
             777.88,
             616.83
           ]
+        },
+        {
+          "frame_path": "frame_0000010276.jpg",
+          "bbox": [
+            761.33,
+            511.03,
+            694.35,
+            568.97
+          ]
+        },
+        {
+          "frame_path": "frame_0000010313.jpg",
+          "bbox": [
+            736.76,
+            495.79,
+            1163.2,
+            572.19
+          ]
         }
       ]
     },
     {
-      "start_time": 216.59,
-      "end_time": 218.7,
-      "duration_sec": 2.11,
+      "start_time": 219.48,
+      "end_time": 219.57999999999998,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:pick up hand blender piece",
-        "frame_id:10278",
-        "frame_id:10327",
         "narration:fit wire inside box",
         "frame_id:10448",
         "frame_id:10566",
         "narration:pick up box",
         "frame_id:10777",
-        "frame_id:10812"
+        "frame_id:10812",
+        "narration:open cupboard",
+        "frame_id:10954"
       ],
-      "frame_after_gap_start": 10880,
+      "frame_after_gap_start": 11024,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010457.jpg",
@@ -2789,41 +2785,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000010276.jpg",
-          "bbox": [
-            761.33,
-            511.03,
-            694.35,
-            568.97
-          ]
-        },
-        {
-          "frame_path": "frame_0000010313.jpg",
-          "bbox": [
-            736.76,
-            495.79,
-            1163.2,
-            572.19
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
-      "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
-        "narration:put box in cupboard",
-        "frame_id:10996",
-        "frame_id:11033",
-        "narration:pick up mug",
-        "frame_id:11230"
-      ],
-      "frame_after_gap_start": 11251,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000010955.jpg",
           "bbox": [
             802.11,
@@ -2831,7 +2792,24 @@
             791.55,
             534.12
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put box in cupboard",
+        "frame_id:10996",
+        "frame_id:11033",
+        "narration:pick up mug",
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
+      ],
+      "frame_after_gap_start": 11482,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010981.jpg",
           "bbox": [
@@ -2873,20 +2851,20 @@
   ],
   "23/box/washing powder box": [
     {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
+      "start_time": 28.43,
+      "end_time": 28.51,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up washing powder",
-        "frame_id:874",
-        "frame_id:912",
         "narration:put down washing powder",
         "frame_id:958",
         "frame_id:1005",
         "narration:open box",
-        "frame_id:1129"
+        "frame_id:1129",
+        "narration:scoop washing powder",
+        "frame_id:1223",
+        "frame_id:1355"
       ],
-      "frame_after_gap_start": 1204,
+      "frame_after_gap_start": 1472,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000973.jpg",
@@ -2914,26 +2892,7 @@
             952.89,
             770.9
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
-        "narration:put washing powder in drawer",
-        "frame_id:1456",
-        "frame_id:1517",
-        "narration:put washing powder in drawer",
-        "frame_id:1928",
-        "frame_id:1970"
-      ],
-      "frame_after_gap_start": 2042,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001230.jpg",
           "bbox": [
@@ -2951,7 +2910,26 @@
             706.25,
             600.9
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
+      "event_history": [
+        "narration:put washing powder in drawer",
+        "frame_id:1456",
+        "frame_id:1517",
+        "narration:put washing powder in drawer",
+        "frame_id:1928",
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
+      ],
+      "frame_after_gap_start": 2103,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -2996,26 +2974,7 @@
             565.21,
             686.31
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002021.jpg",
           "bbox": [
@@ -3024,7 +2983,25 @@
             603.64,
             529.79
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 49.25,
+      "end_time": 229.64,
+      "duration_sec": 180.39,
+      "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
+        "narration:put washing powder in drawer",
+        "frame_id:2445"
+      ],
+      "frame_after_gap_start": 2463,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -3060,25 +3037,7 @@
             319.67,
             296.55
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 52.28,
-      "end_time": 230.56,
-      "duration_sec": 178.28,
-      "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
-        "narration:pick up lid",
-        "frame_id:2498",
-        "frame_id:2527",
-        "narration:close box",
-        "frame_id:2561",
-        "frame_id:2597"
-      ],
-      "frame_after_gap_start": 2614,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002446.jpg",
           "bbox": [
@@ -3093,20 +3052,21 @@
   ],
   "234/powder:washing/washing powder": [
     {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
+      "start_time": 18.61,
+      "end_time": 18.71,
+      "duration_sec": 0.1,
       "event_history": [
+        "narration:put towel in washing machine",
+        "frame_id:618",
+        "frame_id:657",
+        "narration:open drawer",
+        "frame_id:731",
+        "frame_id:775",
         "narration:pick up washing powder",
         "frame_id:874",
-        "frame_id:912",
-        "narration:put down washing powder",
-        "frame_id:958",
-        "frame_id:1005",
-        "narration:open box",
-        "frame_id:1129"
+        "frame_id:912"
       ],
-      "frame_after_gap_start": 1204,
+      "frame_after_gap_start": 981,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000876.jpg",
@@ -3125,7 +3085,25 @@
             201.12,
             105.91
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 28.43,
+      "end_time": 28.51,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:put down washing powder",
+        "frame_id:958",
+        "frame_id:1005",
+        "narration:open box",
+        "frame_id:1129",
+        "narration:scoop washing powder",
+        "frame_id:1223",
+        "frame_id:1355"
+      ],
+      "frame_after_gap_start": 1472,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001122.jpg",
           "bbox": [
@@ -3147,21 +3125,21 @@
       ]
     },
     {
-      "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
       "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
         "narration:put washing powder in drawer",
         "frame_id:1456",
         "frame_id:1517",
         "narration:put washing powder in drawer",
         "frame_id:1928",
-        "frame_id:1970"
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
       ],
-      "frame_after_gap_start": 2042,
+      "frame_after_gap_start": 2103,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001451.jpg",
@@ -3207,26 +3185,7 @@
             426.14,
             200.84
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002021.jpg",
           "bbox": [
@@ -3235,7 +3194,25 @@
             79.81,
             209.33
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 49.25,
+      "end_time": 49.67,
+      "duration_sec": 0.42,
+      "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
+        "narration:put washing powder in drawer",
+        "frame_id:2445"
+      ],
+      "frame_after_gap_start": 2513,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002201.jpg",
           "bbox": [
@@ -3271,25 +3248,7 @@
             99.98,
             199.56
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
-      "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
-        "narration:pick up lid",
-        "frame_id:2498",
-        "frame_id:2527",
-        "narration:close box",
-        "frame_id:2561",
-        "frame_id:2597"
-      ],
-      "frame_after_gap_start": 2664,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002446.jpg",
           "bbox": [
@@ -3298,7 +3257,26 @@
             474.47,
             428.16
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:2498",
+        "frame_id:2527",
+        "narration:close box",
+        "frame_id:2561",
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
+      ],
+      "frame_after_gap_start": 2807,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -3338,21 +3316,21 @@
       ]
     },
     {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
       "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
         "narration:close cupboard",
         "frame_id:2833",
         "frame_id:2873",
         "narration:pour liquid from bottle into cover",
         "frame_id:3080",
-        "frame_id:3166"
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
       ],
-      "frame_after_gap_start": 3259,
+      "frame_after_gap_start": 3383,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002830.jpg",
@@ -3382,34 +3360,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            640.37,
-            284.54,
-            101.19,
-            259.91
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             763.42,
@@ -3427,6 +3377,34 @@
             250.97
           ]
         },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            640.37,
+            284.54,
+            101.19,
+            259.91
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 229.64,
+      "duration_sec": 155.39,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3713,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -3462,25 +3440,7 @@
             90.63,
             252.19
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 230.56,
-      "duration_sec": 152.38,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3910,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -3504,20 +3464,21 @@
   ],
   "3/cupboard/cupboard": [
     {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
+      "start_time": 18.61,
+      "end_time": 18.71,
+      "duration_sec": 0.1,
       "event_history": [
+        "narration:put towel in washing machine",
+        "frame_id:618",
+        "frame_id:657",
+        "narration:open drawer",
+        "frame_id:731",
+        "frame_id:775",
         "narration:pick up washing powder",
         "frame_id:874",
-        "frame_id:912",
-        "narration:put down washing powder",
-        "frame_id:958",
-        "frame_id:1005",
-        "narration:open box",
-        "frame_id:1129"
+        "frame_id:912"
       ],
-      "frame_after_gap_start": 1204,
+      "frame_after_gap_start": 981,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000876.jpg",
@@ -3536,7 +3497,25 @@
             1513.46,
             804.01
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 28.43,
+      "end_time": 28.51,
+      "duration_sec": 0.08,
+      "event_history": [
+        "narration:put down washing powder",
+        "frame_id:958",
+        "frame_id:1005",
+        "narration:open box",
+        "frame_id:1129",
+        "narration:scoop washing powder",
+        "frame_id:1223",
+        "frame_id:1355"
+      ],
+      "frame_after_gap_start": 1472,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000973.jpg",
           "bbox": [
@@ -3572,26 +3551,7 @@
             1019.14,
             317.26
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
-        "narration:put washing powder in drawer",
-        "frame_id:1456",
-        "frame_id:1517",
-        "narration:put washing powder in drawer",
-        "frame_id:1928",
-        "frame_id:1970"
-      ],
-      "frame_after_gap_start": 2042,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001230.jpg",
           "bbox": [
@@ -3609,7 +3569,26 @@
             890.55,
             824.85
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
+      "event_history": [
+        "narration:put washing powder in drawer",
+        "frame_id:1456",
+        "frame_id:1517",
+        "narration:put washing powder in drawer",
+        "frame_id:1928",
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
+      ],
+      "frame_after_gap_start": 2103,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -3654,26 +3633,7 @@
             831.02,
             904.22
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002021.jpg",
           "bbox": [
@@ -3682,7 +3642,25 @@
             1022.84,
             845.02
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 49.25,
+      "end_time": 49.67,
+      "duration_sec": 0.42,
+      "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
+        "narration:put washing powder in drawer",
+        "frame_id:2445"
+      ],
+      "frame_after_gap_start": 2513,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -3718,25 +3696,7 @@
             623.92,
             671.14
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
-      "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
-        "narration:pick up lid",
-        "frame_id:2498",
-        "frame_id:2527",
-        "narration:close box",
-        "frame_id:2561",
-        "frame_id:2597"
-      ],
-      "frame_after_gap_start": 2664,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002446.jpg",
           "bbox": [
@@ -3745,7 +3705,26 @@
             738.42,
             687.05
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:2498",
+        "frame_id:2527",
+        "narration:close box",
+        "frame_id:2561",
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
+      ],
+      "frame_after_gap_start": 2807,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -3772,26 +3751,7 @@
             1385.07,
             520.52
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
-        "narration:close cupboard",
-        "frame_id:2833",
-        "frame_id:2873",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3080",
-        "frame_id:3166"
-      ],
-      "frame_after_gap_start": 3259,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002689.jpg",
           "bbox": [
@@ -3800,7 +3760,26 @@
             757.89,
             1006.28
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
+      "event_history": [
+        "narration:close cupboard",
+        "frame_id:2833",
+        "frame_id:2873",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3080",
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
+      ],
+      "frame_after_gap_start": 3383,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002830.jpg",
           "bbox": [
@@ -3829,34 +3808,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            3.27,
-            217.97,
-            525.92,
-            158.5
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             0,
@@ -3874,6 +3825,34 @@
             145.18
           ]
         },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            3.27,
+            217.97,
+            525.92,
+            158.5
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 74.35,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3763,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -3909,25 +3888,7 @@
             733.51,
             197.4
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 79.34,
-      "duration_sec": 1.16,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -3945,7 +3906,24 @@
             715.35,
             234.0
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 79.97,
+      "end_time": 207.8,
+      "duration_sec": 127.83,
+      "event_history": [
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892",
+        "narration:close cupboard",
+        "frame_id:3982"
+      ],
+      "frame_after_gap_start": 4049,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -3972,25 +3950,25 @@
             917.0,
             465.92
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 84.59,
-      "end_time": 205.1,
-      "duration_sec": 120.51,
-      "event_history": [
-        "narration:close cupboard",
-        "frame_id:3982",
-        "narration:turn on dial",
-        "frame_id:4052",
-        "frame_id:4127",
-        "narration:open washing machine door",
-        "frame_id:4183",
-        "frame_id:4214"
-      ],
-      "frame_after_gap_start": 4280,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000003923.jpg",
+          "bbox": [
+            205.03,
+            0,
+            1156.11,
+            1068.99
+          ]
+        },
+        {
+          "frame_path": "frame_0000003963.jpg",
+          "bbox": [
+            0,
+            0,
+            1308.64,
+            1080
+          ]
+        },
         {
           "frame_path": "frame_0000003996.jpg",
           "bbox": [
@@ -4003,21 +3981,20 @@
       ]
     },
     {
-      "start_time": 216.59,
-      "end_time": 218.7,
-      "duration_sec": 2.11,
+      "start_time": 219.48,
+      "end_time": 219.57999999999998,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:pick up hand blender piece",
-        "frame_id:10278",
-        "frame_id:10327",
         "narration:fit wire inside box",
         "frame_id:10448",
         "frame_id:10566",
         "narration:pick up box",
         "frame_id:10777",
-        "frame_id:10812"
+        "frame_id:10812",
+        "narration:open cupboard",
+        "frame_id:10954"
       ],
-      "frame_after_gap_start": 10880,
+      "frame_after_gap_start": 11024,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010457.jpg",
@@ -4045,24 +4022,7 @@
             586.82,
             592.59
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
-      "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
-        "narration:put box in cupboard",
-        "frame_id:10996",
-        "frame_id:11033",
-        "narration:pick up mug",
-        "frame_id:11230"
-      ],
-      "frame_after_gap_start": 11251,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000010955.jpg",
           "bbox": [
@@ -4071,7 +4031,24 @@
             831.19,
             861.12
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put box in cupboard",
+        "frame_id:10996",
+        "frame_id:11033",
+        "narration:pick up mug",
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
+      ],
+      "frame_after_gap_start": 11482,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010981.jpg",
           "bbox": [
@@ -4095,19 +4072,29 @@
   ],
   "36/bin/bin": [
     {
-      "start_time": 230.56,
-      "end_time": 230.56,
+      "start_time": 229.64,
+      "end_time": 229.64,
       "duration_sec": 0.0,
       "event_history": [
+        "narration:put box in cupboard",
+        "frame_id:10996",
+        "frame_id:11033",
+        "narration:pick up mug",
+        "frame_id:11230",
         "narration:open bin",
-        "frame_id:11462",
-        "narration:throw wooden stirrer",
-        "frame_id:11493",
-        "narration:close bin",
-        "frame_id:11517"
+        "frame_id:11462"
       ],
-      "frame_after_gap_start": 11528,
+      "frame_after_gap_start": 11482,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011441.jpg",
+          "bbox": [
+            341.87,
+            99.03,
+            471.34,
+            476.12
+          ]
+        },
         {
           "frame_path": "frame_0000011476.jpg",
           "bbox": [
@@ -4122,19 +4109,20 @@
   ],
   "44/kettle/kettle": [
     {
-      "start_time": 95.02000000000001,
-      "end_time": 230.56,
-      "duration_sec": 135.54,
+      "start_time": 97.07,
+      "end_time": 229.64,
+      "duration_sec": 132.57,
       "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
         "narration:pick up mug",
         "frame_id:4453",
         "narration:move laundry basket",
         "frame_id:4549",
-        "frame_id:4684"
+        "frame_id:4684",
+        "narration:put mug down",
+        "frame_id:4812",
+        "frame_id:4840"
       ],
-      "frame_after_gap_start": 4752,
+      "frame_after_gap_start": 4854,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004450.jpg",
@@ -4150,20 +4138,39 @@
   ],
   "50/maker:coffee/coffee machine": [
     {
-      "start_time": 95.02000000000001,
-      "end_time": 95.97,
-      "duration_sec": 0.95,
+      "start_time": 97.07,
+      "end_time": 97.5,
+      "duration_sec": 0.43,
       "event_history": [
-        "narration:close washing machine door",
-        "frame_id:4243",
         "narration:pick up mug",
         "frame_id:4453",
         "narration:move laundry basket",
         "frame_id:4549",
-        "frame_id:4684"
+        "frame_id:4684",
+        "narration:put mug down",
+        "frame_id:4812",
+        "frame_id:4840"
       ],
-      "frame_after_gap_start": 4802,
+      "frame_after_gap_start": 4904,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000004758.jpg",
+          "bbox": [
+            39.88,
+            0,
+            404.13,
+            279.98
+          ]
+        },
+        {
+          "frame_path": "frame_0000004825.jpg",
+          "bbox": [
+            470.61,
+            103.75,
+            502.7,
+            643.58
+          ]
+        },
         {
           "frame_path": "frame_0000004559.jpg",
           "bbox": [
@@ -4176,29 +4183,19 @@
       ]
     },
     {
-      "start_time": 99.95,
-      "end_time": 100.83,
-      "duration_sec": 0.88,
+      "start_time": 101.62,
+      "end_time": 101.64,
+      "duration_sec": 0.02,
       "event_history": [
-        "narration:put mug down",
-        "frame_id:4812",
-        "frame_id:4840",
         "narration:pick up capsule",
         "frame_id:4898",
         "narration:put capsule in coffee machine",
-        "frame_id:4978"
+        "frame_id:4978",
+        "narration:pick up water filter",
+        "frame_id:5061"
       ],
-      "frame_after_gap_start": 5048,
+      "frame_after_gap_start": 5131,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000004825.jpg",
-          "bbox": [
-            470.61,
-            103.75,
-            502.7,
-            643.58
-          ]
-        },
         {
           "frame_path": "frame_0000004876.jpg",
           "bbox": [
@@ -4225,23 +4222,25 @@
             481.4,
             553.64
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 110.9,
-      "end_time": 125.49,
-      "duration_sec": 14.59,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
-      ],
-      "frame_after_gap_start": 5595,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000005007.jpg",
+          "bbox": [
+            0,
+            0,
+            606.37,
+            621.3
+          ]
+        },
+        {
+          "frame_path": "frame_0000005039.jpg",
+          "bbox": [
+            0,
+            0,
+            438.18,
+            682.75
+          ]
+        },
         {
           "frame_path": "frame_0000005076.jpg",
           "bbox": [
@@ -4250,7 +4249,24 @@
             330.01,
             527.62
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 116.11,
+      "end_time": 129.8,
+      "duration_sec": 13.69,
+      "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792"
+      ],
+      "frame_after_gap_start": 5856,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -4277,25 +4293,34 @@
             506.28,
             653.47
           ]
+        },
+        {
+          "frame_path": "frame_0000005644.jpg",
+          "bbox": [
+            778.52,
+            303.97,
+            421.07,
+            491.4
+          ]
         }
       ]
     },
     {
-      "start_time": 135.24,
-      "end_time": 135.41,
-      "duration_sec": 0.17,
+      "start_time": 136.77,
+      "end_time": 150.37,
+      "duration_sec": 13.6,
       "event_history": [
-        "narration:pick up mug",
-        "frame_id:6292",
-        "frame_id:6326",
         "narration:empty mug in sink",
         "frame_id:6506",
         "frame_id:6537",
         "narration:put down mug",
         "frame_id:6621",
-        "frame_id:6715"
+        "frame_id:6715",
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822"
       ],
-      "frame_after_gap_start": 6812,
+      "frame_after_gap_start": 6889,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000006701.jpg",
@@ -4304,6 +4329,24 @@
             0,
             398.93,
             459.45
+          ]
+        },
+        {
+          "frame_path": "frame_0000006784.jpg",
+          "bbox": [
+            617.35,
+            0,
+            404.31,
+            487.71
+          ]
+        },
+        {
+          "frame_path": "frame_0000006826.jpg",
+          "bbox": [
+            706.58,
+            0,
+            453.35,
+            551.68
           ]
         },
         {
@@ -4327,57 +4370,20 @@
       ]
     },
     {
-      "start_time": 142.67000000000002,
-      "end_time": 147.17000000000002,
-      "duration_sec": 4.5,
+      "start_time": 156.01,
+      "end_time": 165.28,
+      "duration_sec": 9.27,
       "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
-        "narration:close drawer",
-        "frame_id:7040",
-        "frame_id:7066",
-        "narration:open fridge",
-        "frame_id:7094",
-        "frame_id:7121"
-      ],
-      "frame_after_gap_start": 7184,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006784.jpg",
-          "bbox": [
-            617.35,
-            0,
-            404.31,
-            487.71
-          ]
-        },
-        {
-          "frame_path": "frame_0000006826.jpg",
-          "bbox": [
-            706.58,
-            0,
-            453.35,
-            551.68
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
-      "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
         "narration:close milk bottle",
         "frame_id:7540",
         "frame_id:7582",
         "narration:open fridge",
-        "frame_id:7703"
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
       ],
-      "frame_after_gap_start": 7772,
+      "frame_after_gap_start": 7851,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007526.jpg",
@@ -4391,21 +4397,20 @@
       ]
     },
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 194.49,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -4442,25 +4447,16 @@
             532.48,
             450.17
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 218.7,
-      "duration_sec": 13.68,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10301,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000009676.jpg",
+          "bbox": [
+            816.91,
+            76.24,
+            508.51,
+            505.37
+          ]
+        },
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [
@@ -4469,7 +4465,26 @@
             466.24,
             535.36
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 207.0,
+      "end_time": 219.57999999999998,
+      "duration_sec": 12.58,
+      "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
+      ],
+      "frame_after_gap_start": 10400,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
@@ -4482,19 +4497,19 @@
       ]
     },
     {
-      "start_time": 225.02,
-      "end_time": 230.56,
-      "duration_sec": 5.54,
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
         "narration:put box in cupboard",
         "frame_id:10996",
         "frame_id:11033",
         "narration:pick up mug",
-        "frame_id:11230"
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
       ],
-      "frame_after_gap_start": 11251,
+      "frame_after_gap_start": 11482,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000011226.jpg",
@@ -4519,21 +4534,21 @@
   ],
   "52/towel/towel": [
     {
-      "start_time": 15.92,
-      "end_time": 230.56,
-      "duration_sec": 214.64,
+      "start_time": 18.61,
+      "end_time": 229.64,
+      "duration_sec": 211.03,
       "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
         "narration:put towel in washing machine",
         "frame_id:618",
         "frame_id:657",
         "narration:open drawer",
         "frame_id:731",
-        "frame_id:775"
+        "frame_id:775",
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912"
       ],
-      "frame_after_gap_start": 796,
+      "frame_after_gap_start": 931,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000615.jpg",
@@ -4549,19 +4564,18 @@
   ],
   "59/coffee/capsule": [
     {
-      "start_time": 99.95,
-      "end_time": 230.56,
-      "duration_sec": 130.61,
+      "start_time": 101.62,
+      "end_time": 229.64,
+      "duration_sec": 128.02,
       "event_history": [
-        "narration:put mug down",
-        "frame_id:4812",
-        "frame_id:4840",
         "narration:pick up capsule",
         "frame_id:4898",
         "narration:put capsule in coffee machine",
-        "frame_id:4978"
+        "frame_id:4978",
+        "narration:pick up water filter",
+        "frame_id:5061"
       ],
-      "frame_after_gap_start": 4998,
+      "frame_after_gap_start": 5081,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004921.jpg",
@@ -4577,19 +4591,20 @@
   ],
   "59/coffee/coffee": [
     {
-      "start_time": 147.14,
-      "end_time": 147.17000000000002,
-      "duration_sec": 0.03,
+      "start_time": 150.29,
+      "end_time": 150.37,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
         "narration:close fridge",
         "frame_id:7205",
         "narration:open milk bottle",
         "frame_id:7298",
-        "frame_id:7337"
+        "frame_id:7337",
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476"
       ],
-      "frame_after_gap_start": 7407,
+      "frame_after_gap_start": 7565,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007301.jpg",
@@ -4608,25 +4623,7 @@
             144.17,
             125.56
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
-      "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
-        "narration:close milk bottle",
-        "frame_id:7540",
-        "frame_id:7582",
-        "narration:open fridge",
-        "frame_id:7703"
-      ],
-      "frame_after_gap_start": 7772,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007417.jpg",
           "bbox": [
@@ -4644,7 +4641,25 @@
             87.19,
             128.77
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 156.01,
+      "end_time": 165.28,
+      "duration_sec": 9.27,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:7540",
+        "frame_id:7582",
+        "narration:open fridge",
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
+      ],
+      "frame_after_gap_start": 7851,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007526.jpg",
           "bbox": [
@@ -4657,21 +4672,20 @@
       ]
     },
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 194.49,
+      "duration_sec": 0.06,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9772,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -4708,25 +4722,16 @@
             113.45,
             90.68
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 218.7,
-      "duration_sec": 13.68,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10301,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000009676.jpg",
+          "bbox": [
+            792.78,
+            457.79,
+            124.16,
+            99.06
+          ]
+        },
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [
@@ -4735,7 +4740,26 @@
             124.02,
             99.68
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 207.0,
+      "end_time": 219.57999999999998,
+      "duration_sec": 12.58,
+      "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
+      ],
+      "frame_after_gap_start": 10400,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009759.jpg",
           "bbox": [
@@ -4748,20 +4772,38 @@
       ]
     },
     {
-      "start_time": 225.02,
-      "end_time": 228.82999999999998,
-      "duration_sec": 3.81,
+      "start_time": 229.64,
+      "end_time": 229.64,
+      "duration_sec": 0.0,
       "event_history": [
-        "narration:open cupboard",
-        "frame_id:10954",
         "narration:put box in cupboard",
         "frame_id:10996",
         "frame_id:11033",
         "narration:pick up mug",
-        "frame_id:11230"
+        "frame_id:11230",
+        "narration:open bin",
+        "frame_id:11462"
       ],
-      "frame_after_gap_start": 11301,
+      "frame_after_gap_start": 11482,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000011441.jpg",
+          "bbox": [
+            552.27,
+            648.21,
+            193.33,
+            193.33
+          ]
+        },
+        {
+          "frame_path": "frame_0000011476.jpg",
+          "bbox": [
+            344.38,
+            894.86,
+            229.63,
+            185.14
+          ]
+        },
         {
           "frame_path": "frame_0000011226.jpg",
           "bbox": [
@@ -4781,47 +4823,22 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 230.56,
-      "end_time": 230.56,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:open bin",
-        "frame_id:11462",
-        "narration:throw wooden stirrer",
-        "frame_id:11493",
-        "narration:close bin",
-        "frame_id:11517"
-      ],
-      "frame_after_gap_start": 11528,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000011476.jpg",
-          "bbox": [
-            344.38,
-            894.86,
-            229.63,
-            185.14
-          ]
-        }
-      ]
     }
   ],
   "6/lid/coffee machine lid": [
     {
-      "start_time": 110.9,
-      "end_time": 230.56,
-      "duration_sec": 119.66,
+      "start_time": 101.62,
+      "end_time": 101.64,
+      "duration_sec": 0.02,
       "event_history": [
+        "narration:pick up capsule",
+        "frame_id:4898",
+        "narration:put capsule in coffee machine",
+        "frame_id:4978",
         "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
+        "frame_id:5061"
       ],
-      "frame_after_gap_start": 5545,
+      "frame_after_gap_start": 5131,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005076.jpg",
@@ -4831,7 +4848,24 @@
             65.36,
             96.38
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 116.11,
+      "end_time": 229.64,
+      "duration_sec": 113.53,
+      "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792"
+      ],
+      "frame_after_gap_start": 5806,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -4858,26 +4892,36 @@
             187.17,
             196.09
           ]
+        },
+        {
+          "frame_path": "frame_0000005644.jpg",
+          "bbox": [
+            1133.66,
+            266.81,
+            96.87,
+            134.82
+          ]
         }
       ]
     }
   ],
   "6/lid/lid": [
     {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
       "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
         "narration:pick up lid",
         "frame_id:2498",
         "frame_id:2527",
         "narration:close box",
         "frame_id:2561",
-        "frame_id:2597"
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
       ],
-      "frame_after_gap_start": 2664,
+      "frame_after_gap_start": 2807,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
@@ -4905,26 +4949,7 @@
             309.29,
             186.74
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
-        "narration:close cupboard",
-        "frame_id:2833",
-        "frame_id:2873",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3080",
-        "frame_id:3166"
-      ],
-      "frame_after_gap_start": 3259,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002722.jpg",
           "bbox": [
@@ -4933,7 +4958,26 @@
             99.69,
             67.21
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
+      "event_history": [
+        "narration:close cupboard",
+        "frame_id:2833",
+        "frame_id:2873",
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3080",
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
+      ],
+      "frame_after_gap_start": 3383,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002880.jpg",
           "bbox": [
@@ -4953,34 +4997,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            576.53,
-            617.05,
-            166.37,
-            139.99
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             927.79,
@@ -4998,6 +5014,34 @@
             86.94
           ]
         },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            576.53,
+            617.05,
+            166.37,
+            139.99
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 74.35,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3763,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -5033,25 +5077,7 @@
             129.16,
             96.97
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 142.77,
-      "duration_sec": 64.59,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -5069,7 +5095,24 @@
             182.45,
             157.75
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 79.97,
+      "end_time": 143.77,
+      "duration_sec": 63.8,
+      "event_history": [
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892",
+        "narration:close cupboard",
+        "frame_id:3982"
+      ],
+      "frame_after_gap_start": 4049,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -5096,23 +5139,42 @@
             109.98,
             132.07
           ]
+        },
+        {
+          "frame_path": "frame_0000003923.jpg",
+          "bbox": [
+            1052.89,
+            354.06,
+            83.99,
+            84.79
+          ]
+        },
+        {
+          "frame_path": "frame_0000003963.jpg",
+          "bbox": [
+            1025.34,
+            239.74,
+            97.4,
+            89.68
+          ]
         }
       ]
     },
     {
-      "start_time": 147.14,
-      "end_time": 147.17000000000002,
-      "duration_sec": 0.03,
+      "start_time": 150.29,
+      "end_time": 150.37,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up milk bottle",
-        "frame_id:7163",
         "narration:close fridge",
         "frame_id:7205",
         "narration:open milk bottle",
         "frame_id:7298",
-        "frame_id:7337"
+        "frame_id:7337",
+        "narration:pour milk from bottle into mug",
+        "frame_id:7397",
+        "frame_id:7476"
       ],
-      "frame_after_gap_start": 7407,
+      "frame_after_gap_start": 7565,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007200.jpg",
@@ -5140,25 +5202,7 @@
             83.16,
             113.7
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 154.44,
-      "end_time": 154.46,
-      "duration_sec": 0.02,
-      "event_history": [
-        "narration:pour milk from bottle into mug",
-        "frame_id:7397",
-        "frame_id:7476",
-        "narration:close milk bottle",
-        "frame_id:7540",
-        "frame_id:7582",
-        "narration:open fridge",
-        "frame_id:7703"
-      ],
-      "frame_after_gap_start": 7772,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000007417.jpg",
           "bbox": [
@@ -5168,6 +5212,33 @@
             99.51
           ]
         },
+        {
+          "frame_path": "frame_0000007476.jpg",
+          "bbox": [
+            526.11,
+            736.05,
+            91.91,
+            97.83
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 156.01,
+      "end_time": 229.64,
+      "duration_sec": 73.63,
+      "event_history": [
+        "narration:close milk bottle",
+        "frame_id:7540",
+        "frame_id:7582",
+        "narration:open fridge",
+        "frame_id:7703",
+        "narration:put milk bottle in fridge door",
+        "frame_id:7742",
+        "frame_id:7781"
+      ],
+      "frame_after_gap_start": 7801,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007630.jpg",
           "bbox": [
@@ -5196,12 +5267,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000007476.jpg",
+          "frame_path": "frame_0000007751.jpg",
           "bbox": [
-            526.11,
-            736.05,
-            91.91,
-            97.83
+            486.1,
+            242.51,
+            201.7,
+            217.74
           ]
         },
         {
@@ -5214,53 +5285,23 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 171.61,
-      "end_time": 230.56,
-      "duration_sec": 58.95,
-      "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
-        "narration:pick up wooden stirrer from box",
-        "frame_id:8295",
-        "frame_id:8359",
-        "narration:stir coffee",
-        "frame_id:8442",
-        "frame_id:8534"
-      ],
-      "frame_after_gap_start": 8581,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000007751.jpg",
-          "bbox": [
-            486.1,
-            242.51,
-            201.7,
-            217.74
-          ]
-        }
-      ]
     }
   ],
   "63/sink/sink": [
     {
-      "start_time": 123.77,
-      "end_time": 125.49,
-      "duration_sec": 1.72,
+      "start_time": 116.11,
+      "end_time": 116.13,
+      "duration_sec": 0.02,
       "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
         "narration:open tap",
         "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
+        "frame_id:5792"
       ],
-      "frame_after_gap_start": 6239,
+      "frame_after_gap_start": 5856,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005763.jpg",
@@ -5279,7 +5320,26 @@
             1451.08,
             784.19
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 126.86,
+      "end_time": 129.8,
+      "duration_sec": 2.94,
+      "event_history": [
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173",
+        "narration:pick up mug",
+        "frame_id:6292",
+        "frame_id:6326"
+      ],
+      "frame_after_gap_start": 6393,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -5299,6 +5359,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000006301.jpg",
+          "bbox": [
+            0,
+            0,
+            396.82,
+            474.38
+          ]
+        },
+        {
           "frame_path": "frame_0000006029.jpg",
           "bbox": [
             0,
@@ -5310,31 +5379,22 @@
       ]
     },
     {
-      "start_time": 135.24,
-      "end_time": 135.41,
-      "duration_sec": 0.17,
+      "start_time": 136.77,
+      "end_time": 229.64,
+      "duration_sec": 92.87,
       "event_history": [
-        "narration:pick up mug",
-        "frame_id:6292",
-        "frame_id:6326",
         "narration:empty mug in sink",
         "frame_id:6506",
         "frame_id:6537",
         "narration:put down mug",
         "frame_id:6621",
-        "frame_id:6715"
+        "frame_id:6715",
+        "narration:turn on coffee machine",
+        "frame_id:6787",
+        "frame_id:6822"
       ],
-      "frame_after_gap_start": 6812,
+      "frame_after_gap_start": 6839,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006301.jpg",
-          "bbox": [
-            0,
-            0,
-            396.82,
-            474.38
-          ]
-        },
         {
           "frame_path": "frame_0000006701.jpg",
           "bbox": [
@@ -5342,6 +5402,24 @@
             357.37,
             245.03,
             408.38
+          ]
+        },
+        {
+          "frame_path": "frame_0000006784.jpg",
+          "bbox": [
+            0,
+            204.87,
+            340.74,
+            497.44
+          ]
+        },
+        {
+          "frame_path": "frame_0000006826.jpg",
+          "bbox": [
+            0,
+            316.46,
+            394.35,
+            416.1
           ]
         },
         {
@@ -5372,61 +5450,24 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 142.67000000000002,
-      "end_time": 230.56,
-      "duration_sec": 87.89,
-      "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
-        "narration:close drawer",
-        "frame_id:7040",
-        "frame_id:7066",
-        "narration:open fridge",
-        "frame_id:7094",
-        "frame_id:7121"
-      ],
-      "frame_after_gap_start": 7134,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006784.jpg",
-          "bbox": [
-            0,
-            204.87,
-            340.74,
-            497.44
-          ]
-        },
-        {
-          "frame_path": "frame_0000006826.jpg",
-          "bbox": [
-            0,
-            316.46,
-            394.35,
-            416.1
-          ]
-        }
-      ]
     }
   ],
   "64/milk/milk": [
     {
-      "start_time": 154.44,
-      "end_time": 230.56,
-      "duration_sec": 76.12,
+      "start_time": 150.29,
+      "end_time": 229.64,
+      "duration_sec": 79.35,
       "event_history": [
+        "narration:close fridge",
+        "frame_id:7205",
+        "narration:open milk bottle",
+        "frame_id:7298",
+        "frame_id:7337",
         "narration:pour milk from bottle into mug",
         "frame_id:7397",
-        "frame_id:7476",
-        "narration:close milk bottle",
-        "frame_id:7540",
-        "frame_id:7582",
-        "narration:open fridge",
-        "frame_id:7703"
+        "frame_id:7476"
       ],
-      "frame_after_gap_start": 7722,
+      "frame_after_gap_start": 7515,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007476.jpg",
@@ -5442,19 +5483,18 @@
   ],
   "66/jug/water filter": [
     {
-      "start_time": 99.95,
-      "end_time": 100.83,
-      "duration_sec": 0.88,
+      "start_time": 101.62,
+      "end_time": 101.64,
+      "duration_sec": 0.02,
       "event_history": [
-        "narration:put mug down",
-        "frame_id:4812",
-        "frame_id:4840",
         "narration:pick up capsule",
         "frame_id:4898",
         "narration:put capsule in coffee machine",
-        "frame_id:4978"
+        "frame_id:4978",
+        "narration:pick up water filter",
+        "frame_id:5061"
       ],
-      "frame_after_gap_start": 5048,
+      "frame_after_gap_start": 5131,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000004876.jpg",
@@ -5482,23 +5522,25 @@
             416.44,
             502.26
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 110.9,
-      "end_time": 115.0,
-      "duration_sec": 4.1,
-      "event_history": [
-        "narration:pick up water filter",
-        "frame_id:5061",
-        "narration:open coffee machine lid",
-        "frame_id:5095",
-        "narration:close cover",
-        "frame_id:5529"
-      ],
-      "frame_after_gap_start": 5595,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000005007.jpg",
+          "bbox": [
+            1331.38,
+            327.28,
+            574.92,
+            516.41
+          ]
+        },
+        {
+          "frame_path": "frame_0000005039.jpg",
+          "bbox": [
+            1203.29,
+            308.33,
+            521.48,
+            494.67
+          ]
+        },
         {
           "frame_path": "frame_0000005076.jpg",
           "bbox": [
@@ -5507,7 +5549,24 @@
             641.69,
             544.72
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 116.11,
+      "end_time": 116.13,
+      "duration_sec": 0.02,
+      "event_history": [
+        "narration:open coffee machine lid",
+        "frame_id:5095",
+        "narration:close cover",
+        "frame_id:5529",
+        "narration:open tap",
+        "frame_id:5763",
+        "frame_id:5792"
+      ],
+      "frame_after_gap_start": 5856,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005096.jpg",
           "bbox": [
@@ -5534,26 +5593,16 @@
             603.77,
             534.42
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 123.77,
-      "end_time": 125.49,
-      "duration_sec": 1.72,
-      "event_history": [
-        "narration:open tap",
-        "frame_id:5763",
-        "frame_id:5792",
-        "narration:fill water filter",
-        "frame_id:5843",
-        "frame_id:5918",
-        "narration:put down water filter",
-        "frame_id:6140",
-        "frame_id:6173"
-      ],
-      "frame_after_gap_start": 6239,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000005644.jpg",
+          "bbox": [
+            1211.79,
+            535.54,
+            571.43,
+            544.48
+          ]
+        },
         {
           "frame_path": "frame_0000005763.jpg",
           "bbox": [
@@ -5571,7 +5620,26 @@
             328.45,
             491.38
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 126.86,
+      "end_time": 229.64,
+      "duration_sec": 102.78,
+      "event_history": [
+        "narration:fill water filter",
+        "frame_id:5843",
+        "frame_id:5918",
+        "narration:put down water filter",
+        "frame_id:6140",
+        "frame_id:6173",
+        "narration:pick up mug",
+        "frame_id:6292",
+        "frame_id:6326"
+      ],
+      "frame_after_gap_start": 6343,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000005842.jpg",
           "bbox": [
@@ -5609,6 +5677,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000006301.jpg",
+          "bbox": [
+            1471.51,
+            972.72,
+            448.49,
+            107.28
+          ]
+        },
+        {
           "frame_path": "frame_0000006029.jpg",
           "bbox": [
             0,
@@ -5618,53 +5695,25 @@
           ]
         }
       ]
-    },
-    {
-      "start_time": 135.24,
-      "end_time": 230.56,
-      "duration_sec": 95.32,
-      "event_history": [
-        "narration:pick up mug",
-        "frame_id:6292",
-        "frame_id:6326",
-        "narration:empty mug in sink",
-        "frame_id:6506",
-        "frame_id:6537",
-        "narration:put down mug",
-        "frame_id:6621",
-        "frame_id:6715"
-      ],
-      "frame_after_gap_start": 6762,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000006301.jpg",
-          "bbox": [
-            1471.51,
-            972.72,
-            448.49,
-            107.28
-          ]
-        }
-      ]
     }
   ],
   "73/clothes/clothes": [
     {
-      "start_time": 6.97,
-      "end_time": 7.51,
-      "duration_sec": 0.54,
+      "start_time": 9.97,
+      "end_time": 229.64,
+      "duration_sec": 219.67,
       "event_history": [
         "narration:put down laundry basket",
         "frame_id:138",
         "frame_id:183",
-        "narration:open laundry basket",
-        "frame_id:218",
-        "frame_id:247",
         "narration:pick up clothes",
         "frame_id:286",
-        "frame_id:328"
+        "frame_id:328",
+        "narration:put clothes in washing machine",
+        "frame_id:406",
+        "frame_id:468"
       ],
-      "frame_after_gap_start": 399,
+      "frame_after_gap_start": 499,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000144.jpg",
@@ -5701,26 +5750,7 @@
             556.95,
             703.18
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 15.92,
-      "end_time": 230.56,
-      "duration_sec": 214.64,
-      "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
-        "narration:put towel in washing machine",
-        "frame_id:618",
-        "frame_id:657",
-        "narration:open drawer",
-        "frame_id:731",
-        "frame_id:775"
-      ],
-      "frame_after_gap_start": 796,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000000413.jpg",
           "bbox": [
@@ -5735,21 +5765,21 @@
   ],
   "8/drawer/drawer": [
     {
-      "start_time": 15.92,
-      "end_time": 17.12,
-      "duration_sec": 1.2,
+      "start_time": 18.61,
+      "end_time": 18.71,
+      "duration_sec": 0.1,
       "event_history": [
-        "narration:put clothes in washing machine",
-        "frame_id:406",
-        "frame_id:468",
         "narration:put towel in washing machine",
         "frame_id:618",
         "frame_id:657",
         "narration:open drawer",
         "frame_id:731",
-        "frame_id:775"
+        "frame_id:775",
+        "narration:pick up washing powder",
+        "frame_id:874",
+        "frame_id:912"
       ],
-      "frame_after_gap_start": 847,
+      "frame_after_gap_start": 981,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000776.jpg",
@@ -5763,20 +5793,20 @@
       ]
     },
     {
-      "start_time": 23.07,
-      "end_time": 23.13,
-      "duration_sec": 0.06,
+      "start_time": 28.43,
+      "end_time": 28.51,
+      "duration_sec": 0.08,
       "event_history": [
-        "narration:pick up washing powder",
-        "frame_id:874",
-        "frame_id:912",
         "narration:put down washing powder",
         "frame_id:958",
         "frame_id:1005",
         "narration:open box",
-        "frame_id:1129"
+        "frame_id:1129",
+        "narration:scoop washing powder",
+        "frame_id:1223",
+        "frame_id:1355"
       ],
-      "frame_after_gap_start": 1204,
+      "frame_after_gap_start": 1472,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000000973.jpg",
@@ -5813,26 +5843,7 @@
             381.3,
             434.02
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 39.83,
-      "end_time": 39.86,
-      "duration_sec": 0.03,
-      "event_history": [
-        "narration:scoop washing powder",
-        "frame_id:1223",
-        "frame_id:1355",
-        "narration:put washing powder in drawer",
-        "frame_id:1456",
-        "frame_id:1517",
-        "narration:put washing powder in drawer",
-        "frame_id:1928",
-        "frame_id:1970"
-      ],
-      "frame_after_gap_start": 2042,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000001230.jpg",
           "bbox": [
@@ -5850,7 +5861,26 @@
             306.78,
             407.99
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 41.06,
+      "end_time": 41.95,
+      "duration_sec": 0.89,
+      "event_history": [
+        "narration:put washing powder in drawer",
+        "frame_id:1456",
+        "frame_id:1517",
+        "narration:put washing powder in drawer",
+        "frame_id:1928",
+        "frame_id:1970",
+        "narration:close box",
+        "frame_id:2008",
+        "frame_id:2038"
+      ],
+      "frame_after_gap_start": 2103,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000001451.jpg",
           "bbox": [
@@ -5895,26 +5925,7 @@
             332.81,
             385.57
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 48.45,
-      "end_time": 48.55,
-      "duration_sec": 0.1,
-      "event_history": [
-        "narration:close box",
-        "frame_id:2008",
-        "frame_id:2038",
-        "narration:pick up box",
-        "frame_id:2133",
-        "frame_id:2205",
-        "narration:scoop washing powder",
-        "frame_id:2293",
-        "frame_id:2379"
-      ],
-      "frame_after_gap_start": 2473,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002021.jpg",
           "bbox": [
@@ -5923,7 +5934,25 @@
             275.98,
             385.58
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 49.25,
+      "end_time": 49.67,
+      "duration_sec": 0.42,
+      "event_history": [
+        "narration:pick up box",
+        "frame_id:2133",
+        "frame_id:2205",
+        "narration:scoop washing powder",
+        "frame_id:2293",
+        "frame_id:2379",
+        "narration:put washing powder in drawer",
+        "frame_id:2445"
+      ],
+      "frame_after_gap_start": 2513,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002126.jpg",
           "bbox": [
@@ -5968,25 +5997,7 @@
             341.87,
             365.97
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 52.28,
-      "end_time": 53.22,
-      "duration_sec": 0.94,
-      "event_history": [
-        "narration:put washing powder in drawer",
-        "frame_id:2445",
-        "narration:pick up lid",
-        "frame_id:2498",
-        "frame_id:2527",
-        "narration:close box",
-        "frame_id:2561",
-        "frame_id:2597"
-      ],
-      "frame_after_gap_start": 2664,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000002446.jpg",
           "bbox": [
@@ -5995,7 +6006,26 @@
             412.48,
             427.05
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 55.14,
+      "end_time": 56.27,
+      "duration_sec": 1.13,
+      "event_history": [
+        "narration:pick up lid",
+        "frame_id:2498",
+        "frame_id:2527",
+        "narration:close box",
+        "frame_id:2561",
+        "frame_id:2597",
+        "narration:pick up fabric conditioner bottle",
+        "frame_id:2685",
+        "frame_id:2733"
+      ],
+      "frame_after_gap_start": 2807,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002496.jpg",
           "bbox": [
@@ -6035,21 +6065,21 @@
       ]
     },
     {
-      "start_time": 64.17,
-      "end_time": 64.27,
-      "duration_sec": 0.1,
+      "start_time": 66.65,
+      "end_time": 66.69,
+      "duration_sec": 0.04,
       "event_history": [
-        "narration:pick up fabric conditioner bottle",
-        "frame_id:2685",
-        "frame_id:2733",
         "narration:close cupboard",
         "frame_id:2833",
         "frame_id:2873",
         "narration:pour liquid from bottle into cover",
         "frame_id:3080",
-        "frame_id:3166"
+        "frame_id:3166",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3243",
+        "frame_id:3303"
       ],
-      "frame_after_gap_start": 3259,
+      "frame_after_gap_start": 3383,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000002830.jpg",
@@ -6079,34 +6109,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000003059.jpg",
-          "bbox": [
-            506.14,
-            204.17,
-            363.84,
-            420.55
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 71.18,
-      "end_time": 71.34,
-      "duration_sec": 0.16,
-      "event_history": [
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3243",
-        "frame_id:3303",
-        "narration:pour liquid from bottle into cover",
-        "frame_id:3357",
-        "frame_id:3404",
-        "narration:pour liquid from cover into compartment",
-        "frame_id:3464",
-        "frame_id:3528"
-      ],
-      "frame_after_gap_start": 3610,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000003251.jpg",
           "bbox": [
             640.52,
@@ -6124,6 +6126,34 @@
             399.3
           ]
         },
+        {
+          "frame_path": "frame_0000003059.jpg",
+          "bbox": [
+            506.14,
+            204.17,
+            363.84,
+            420.55
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 74.25,
+      "end_time": 74.35,
+      "duration_sec": 0.1,
+      "event_history": [
+        "narration:pour liquid from bottle into cover",
+        "frame_id:3357",
+        "frame_id:3404",
+        "narration:pour liquid from cover into compartment",
+        "frame_id:3464",
+        "frame_id:3528",
+        "narration:close bottle",
+        "frame_id:3603",
+        "frame_id:3676"
+      ],
+      "frame_after_gap_start": 3763,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003359.jpg",
           "bbox": [
@@ -6159,25 +6189,7 @@
             347.09,
             385.84
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 78.18,
-      "end_time": 79.34,
-      "duration_sec": 1.16,
-      "event_history": [
-        "narration:close bottle",
-        "frame_id:3603",
-        "frame_id:3676",
-        "narration:close drawer",
-        "frame_id:3748",
-        "frame_id:3810",
-        "narration:open cupboard",
-        "frame_id:3892"
-      ],
-      "frame_after_gap_start": 3960,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000003601.jpg",
           "bbox": [
@@ -6195,7 +6207,24 @@
             334.17,
             366.91
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 79.97,
+      "end_time": 140.53,
+      "duration_sec": 60.56,
+      "event_history": [
+        "narration:close drawer",
+        "frame_id:3748",
+        "frame_id:3810",
+        "narration:open cupboard",
+        "frame_id:3892",
+        "narration:close cupboard",
+        "frame_id:3982"
+      ],
+      "frame_after_gap_start": 4049,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000003751.jpg",
           "bbox": [
@@ -6222,25 +6251,25 @@
             380.96,
             156.47
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 84.59,
-      "end_time": 135.41,
-      "duration_sec": 50.82,
-      "event_history": [
-        "narration:close cupboard",
-        "frame_id:3982",
-        "narration:turn on dial",
-        "frame_id:4052",
-        "frame_id:4127",
-        "narration:open washing machine door",
-        "frame_id:4183",
-        "frame_id:4214"
-      ],
-      "frame_after_gap_start": 4280,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000003923.jpg",
+          "bbox": [
+            1386.84,
+            562.68,
+            481.04,
+            266.21
+          ]
+        },
+        {
+          "frame_path": "frame_0000003963.jpg",
+          "bbox": [
+            1370.6,
+            612.0,
+            455.7,
+            242.64
+          ]
+        },
         {
           "frame_path": "frame_0000003996.jpg",
           "bbox": [
@@ -6253,21 +6282,20 @@
       ]
     },
     {
-      "start_time": 142.67000000000002,
-      "end_time": 230.56,
-      "duration_sec": 87.89,
+      "start_time": 143.75,
+      "end_time": 229.64,
+      "duration_sec": 85.89,
       "event_history": [
-        "narration:turn on coffee machine",
-        "frame_id:6787",
-        "frame_id:6822",
         "narration:close drawer",
         "frame_id:7040",
         "frame_id:7066",
         "narration:open fridge",
         "frame_id:7094",
-        "frame_id:7121"
+        "frame_id:7121",
+        "narration:pick up milk bottle",
+        "frame_id:7163"
       ],
-      "frame_after_gap_start": 7134,
+      "frame_after_gap_start": 7188,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000007051.jpg",
@@ -6319,20 +6347,21 @@
   ],
   "82/blender/hand blender": [
     {
-      "start_time": 205.02,
-      "end_time": 205.1,
-      "duration_sec": 0.08,
+      "start_time": 207.0,
+      "end_time": 207.8,
+      "duration_sec": 0.8,
       "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
         "narration:pick up hand blender motor",
         "frame_id:9756",
         "frame_id:9818",
         "narration:put hand blender in box",
         "frame_id:9993",
-        "frame_id:10166"
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
       ],
-      "frame_after_gap_start": 10301,
+      "frame_after_gap_start": 10400,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000009826.jpg",
@@ -6350,43 +6379,6 @@
             858.99,
             430.29,
             221.01
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 216.59,
-      "end_time": 230.56,
-      "duration_sec": 13.97,
-      "event_history": [
-        "narration:pick up hand blender piece",
-        "frame_id:10278",
-        "frame_id:10327",
-        "narration:fit wire inside box",
-        "frame_id:10448",
-        "frame_id:10566",
-        "narration:pick up box",
-        "frame_id:10777",
-        "frame_id:10812"
-      ],
-      "frame_after_gap_start": 10830,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000010457.jpg",
-          "bbox": [
-            763.82,
-            449.6,
-            127.36,
-            138.94
-          ]
-        },
-        {
-          "frame_path": "frame_0000010576.jpg",
-          "bbox": [
-            753.21,
-            492.86,
-            155.35,
-            160.16
           ]
         },
         {
@@ -6408,25 +6400,61 @@
           ]
         }
       ]
-    }
-  ],
-  "82/blender/hand blender piece": [
+    },
     {
-      "start_time": 216.59,
-      "end_time": 230.56,
-      "duration_sec": 13.97,
+      "start_time": 219.48,
+      "end_time": 229.64,
+      "duration_sec": 10.16,
       "event_history": [
-        "narration:pick up hand blender piece",
-        "frame_id:10278",
-        "frame_id:10327",
         "narration:fit wire inside box",
         "frame_id:10448",
         "frame_id:10566",
         "narration:pick up box",
         "frame_id:10777",
-        "frame_id:10812"
+        "frame_id:10812",
+        "narration:open cupboard",
+        "frame_id:10954"
       ],
-      "frame_after_gap_start": 10830,
+      "frame_after_gap_start": 10974,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000010457.jpg",
+          "bbox": [
+            763.82,
+            449.6,
+            127.36,
+            138.94
+          ]
+        },
+        {
+          "frame_path": "frame_0000010576.jpg",
+          "bbox": [
+            753.21,
+            492.86,
+            155.35,
+            160.16
+          ]
+        }
+      ]
+    }
+  ],
+  "82/blender/hand blender piece": [
+    {
+      "start_time": 207.0,
+      "end_time": 229.64,
+      "duration_sec": 22.64,
+      "event_history": [
+        "narration:pick up hand blender motor",
+        "frame_id:9756",
+        "frame_id:9818",
+        "narration:put hand blender in box",
+        "frame_id:9993",
+        "frame_id:10166",
+        "narration:pick up hand blender piece",
+        "frame_id:10278",
+        "frame_id:10327"
+      ],
+      "frame_after_gap_start": 10350,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000010276.jpg",
@@ -6451,21 +6479,20 @@
   ],
   "92/button/button": [
     {
-      "start_time": 171.61,
-      "end_time": 193.55,
-      "duration_sec": 21.94,
+      "start_time": 194.43,
+      "end_time": 229.64,
+      "duration_sec": 35.21,
       "event_history": [
-        "narration:put milk bottle in fridge door",
-        "frame_id:7742",
-        "frame_id:7781",
         "narration:pick up wooden stirrer from box",
         "frame_id:8295",
         "frame_id:8359",
         "narration:stir coffee",
         "frame_id:8442",
-        "frame_id:8534"
+        "frame_id:8534",
+        "narration:press button on coffee machine",
+        "frame_id:9699"
       ],
-      "frame_after_gap_start": 8631,
+      "frame_after_gap_start": 9722,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000008301.jpg",
@@ -6502,25 +6529,16 @@
             47.87,
             50.9
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 205.02,
-      "end_time": 230.56,
-      "duration_sec": 25.54,
-      "event_history": [
-        "narration:press button on coffee machine",
-        "frame_id:9699",
-        "narration:pick up hand blender motor",
-        "frame_id:9756",
-        "frame_id:9818",
-        "narration:put hand blender in box",
-        "frame_id:9993",
-        "frame_id:10166"
-      ],
-      "frame_after_gap_start": 10251,
-      "crop_from_previous_active": [
+        },
+        {
+          "frame_path": "frame_0000009676.jpg",
+          "bbox": [
+            1181.04,
+            114.09,
+            45.42,
+            43.6
+          ]
+        },
         {
           "frame_path": "frame_0000009705.jpg",
           "bbox": [

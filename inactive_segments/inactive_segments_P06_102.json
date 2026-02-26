@@ -56,8 +56,8 @@
     },
     {
       "start_time": 275.9,
-      "end_time": 588.21,
-      "duration_sec": 312.31,
+      "end_time": 516.86,
+      "duration_sec": 240.96,
       "event_history": [
         "narration:fill kettle",
         "frame_id:13483",
@@ -127,19 +127,21 @@
       ]
     },
     {
-      "start_time": 607.9,
-      "end_time": 608.55,
-      "duration_sec": 0.65,
+      "start_time": 591.05,
+      "end_time": 606.85,
+      "duration_sec": 15.8,
       "event_history": [
+        "narration:pour water into bowl",
+        "frame_id:25880",
+        "frame_id:25956",
+        "narration:knead dough",
+        "frame_id:26703",
+        "frame_id:28117",
         "narration:turn on tap",
         "frame_id:29446",
-        "frame_id:29517",
-        "narration:turn off tap",
-        "frame_id:30352",
-        "narration:shake hands",
-        "frame_id:30385"
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 30445,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000029538.jpg",
@@ -151,6 +153,32 @@
           ]
         },
         {
+          "frame_path": "frame_0000029442.jpg",
+          "bbox": [
+            689.34,
+            247.73,
+            327.95,
+            257.6
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 610.09,
+      "end_time": 611.36,
+      "duration_sec": 1.27,
+      "event_history": [
+        "narration:turn off tap",
+        "frame_id:30352",
+        "narration:shake hands",
+        "frame_id:30385",
+        "narration:squeeze sponge",
+        "frame_id:30447",
+        "frame_id:30485"
+      ],
+      "frame_after_gap_start": 30555,
+      "crop_from_previous_active": [
+        {
           "frame_path": "frame_0000030381.jpg",
           "bbox": [
             0,
@@ -160,42 +188,14 @@
           ]
         },
         {
-          "frame_path": "frame_0000029442.jpg",
+          "frame_path": "frame_0000030420.jpg",
           "bbox": [
-            689.34,
-            247.73,
-            327.95,
-            257.6
+            0.32,
+            651.53,
+            289.81,
+            102.5
           ]
         },
-        {
-          "frame_path": "frame_0000030356.jpg",
-          "bbox": [
-            105.24,
-            594.0,
-            437.96,
-            102.58
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
-      "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
-        "narration:put down kettle",
-        "frame_id:30581",
-        "frame_id:30607",
-        "narration:pick up yeast",
-        "frame_id:30670",
-        "frame_id:30758"
-      ],
-      "frame_after_gap_start": 30852,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030460.jpg",
           "bbox": [
@@ -206,12 +206,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000030613.jpg",
+          "frame_path": "frame_0000030356.jpg",
           "bbox": [
-            1863.21,
-            828.98,
-            56.87,
-            89.86
+            105.24,
+            594.0,
+            437.96,
+            102.58
+          ]
+        },
+        {
+          "frame_path": "frame_0000030400.jpg",
+          "bbox": [
+            0,
+            603.81,
+            400.22,
+            129.38
           ]
         },
         {
@@ -226,22 +235,31 @@
       ]
     },
     {
-      "start_time": 633.15,
-      "end_time": 640.96,
-      "duration_sec": 7.81,
+      "start_time": 622.21,
+      "end_time": 623.45,
+      "duration_sec": 1.24,
       "event_history": [
+        "narration:put down kettle",
+        "frame_id:30581",
+        "frame_id:30607",
+        "narration:pick up yeast",
+        "frame_id:30670",
+        "frame_id:30758",
         "narration:rinse sieve",
         "frame_id:30990",
-        "frame_id:31070",
-        "narration:wash sieve",
-        "frame_id:31220",
-        "frame_id:31317",
-        "narration:wipe counter",
-        "frame_id:31594",
-        "frame_id:31637"
+        "frame_id:31070"
       ],
-      "frame_after_gap_start": 31708,
+      "frame_after_gap_start": 31161,
       "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000030613.jpg",
+          "bbox": [
+            1863.21,
+            828.98,
+            56.87,
+            89.86
+          ]
+        },
         {
           "frame_path": "frame_0000031050.jpg",
           "bbox": [
@@ -252,21 +270,39 @@
           ]
         },
         {
-          "frame_path": "frame_0000031313.jpg",
-          "bbox": [
-            380.93,
-            203.33,
-            542.59,
-            332.19
-          ]
-        },
-        {
           "frame_path": "frame_0000031007.jpg",
           "bbox": [
             641.67,
             16.78,
             206.62,
             165.72
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 634.57,
+      "end_time": 658.21,
+      "duration_sec": 23.64,
+      "event_history": [
+        "narration:wash sieve",
+        "frame_id:31220",
+        "frame_id:31317",
+        "narration:wipe counter",
+        "frame_id:31594",
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
+      ],
+      "frame_after_gap_start": 31779,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000031313.jpg",
+          "bbox": [
+            380.93,
+            203.33,
+            542.59,
+            332.19
           ]
         },
         {
@@ -281,46 +317,20 @@
       ]
     },
     {
-      "start_time": 652.95,
-      "end_time": 657.1,
-      "duration_sec": 4.15,
+      "start_time": 668.04,
+      "end_time": 668.3,
+      "duration_sec": 0.26,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
-        "narration:turn off tap",
-        "frame_id:32184",
-        "narration:wipe counter",
-        "frame_id:32332",
-        "frame_id:32543"
-      ],
-      "frame_after_gap_start": 32698,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000032164.jpg",
-          "bbox": [
-            202.7,
-            2.07,
-            365.98,
-            317.38
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 661.89,
-      "end_time": 663.04,
-      "duration_sec": 1.15,
-      "event_history": [
-        "narration:close cupboard",
-        "frame_id:32867",
         "narration:pick up sponge",
         "frame_id:32928",
         "narration:wipe counter",
         "frame_id:32986",
-        "frame_id:33059"
+        "frame_id:33059",
+        "narration:rinse sponge",
+        "frame_id:33214",
+        "frame_id:33340"
       ],
-      "frame_after_gap_start": 33145,
+      "frame_after_gap_start": 33452,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033001.jpg",
@@ -329,6 +339,24 @@
             0,
             88.06,
             37.69
+          ]
+        },
+        {
+          "frame_path": "frame_0000033150.jpg",
+          "bbox": [
+            544.27,
+            158.5,
+            477.36,
+            312.04
+          ]
+        },
+        {
+          "frame_path": "frame_0000033331.jpg",
+          "bbox": [
+            0,
+            699.75,
+            176.1,
+            95.51
           ]
         },
         {
@@ -348,42 +376,6 @@
             306.63,
             97.01
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 671.64,
-      "end_time": 721.39,
-      "duration_sec": 49.75,
-      "event_history": [
-        "narration:rinse sponge",
-        "frame_id:33214",
-        "frame_id:33340",
-        "narration:turn off tap",
-        "frame_id:33426",
-        "narration:dry hands",
-        "frame_id:33522",
-        "frame_id:33563"
-      ],
-      "frame_after_gap_start": 33582,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000033331.jpg",
-          "bbox": [
-            0,
-            699.75,
-            176.1,
-            95.51
-          ]
-        },
-        {
-          "frame_path": "frame_0000033448.jpg",
-          "bbox": [
-            1640.74,
-            856.99,
-            233.28,
-            223.01
-          ]
         },
         {
           "frame_path": "frame_0000033242.jpg",
@@ -392,6 +384,32 @@
             280.55,
             518.95,
             329.61
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 672.39,
+      "end_time": 725.08,
+      "duration_sec": 52.69,
+      "event_history": [
+        "narration:turn off tap",
+        "frame_id:33426",
+        "narration:dry hands",
+        "frame_id:33522",
+        "frame_id:33563",
+        "narration:put down towel",
+        "frame_id:33603"
+      ],
+      "frame_after_gap_start": 33620,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000033448.jpg",
+          "bbox": [
+            1640.74,
+            856.99,
+            233.28,
+            223.01
           ]
         },
         {
@@ -481,8 +499,8 @@
     },
     {
       "start_time": 47.85,
-      "end_time": 721.39,
-      "duration_sec": 673.54,
+      "end_time": 725.08,
+      "duration_sec": 677.23,
       "event_history": [
         "narration:put lid on pan",
         "frame_id:2132",
@@ -547,8 +565,8 @@
   "10/glass/glass": [
     {
       "start_time": 282.72,
-      "end_time": 721.39,
-      "duration_sec": 438.67,
+      "end_time": 725.08,
+      "duration_sec": 442.36,
       "event_history": [
         "narration:move glass",
         "frame_id:13863",
@@ -602,20 +620,20 @@
   ],
   "100/wrap:plastic/cling film": [
     {
-      "start_time": 710.5,
-      "end_time": 710.57,
-      "duration_sec": 0.07,
+      "start_time": 712.48,
+      "end_time": 713.94,
+      "duration_sec": 1.46,
       "event_history": [
-        "narration:close drawer",
-        "frame_id:33976",
-        "frame_id:34007",
         "narration:put cling film over bowl",
         "frame_id:34394",
         "frame_id:34519",
         "narration:pick up knife",
-        "frame_id:35505"
+        "frame_id:35505",
+        "narration:cut cling film",
+        "frame_id:35552",
+        "frame_id:35601"
       ],
-      "frame_after_gap_start": 35575,
+      "frame_after_gap_start": 35674,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000034513.jpg",
@@ -636,6 +654,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000035609.jpg",
+          "bbox": [
+            298.15,
+            364.45,
+            751.85,
+            428.59
+          ]
+        },
+        {
           "frame_path": "frame_0000034384.jpg",
           "bbox": [
             400.45,
@@ -652,42 +679,6 @@
             595.92,
             430.88
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 721.39,
-      "end_time": 721.39,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:cut cling film",
-        "frame_id:35552",
-        "frame_id:35601",
-        "narration:put down cling film",
-        "frame_id:35721",
-        "narration:pick up bowl",
-        "frame_id:35949",
-        "frame_id:36029"
-      ],
-      "frame_after_gap_start": 36070,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000035609.jpg",
-          "bbox": [
-            298.15,
-            364.45,
-            751.85,
-            428.59
-          ]
-        },
-        {
-          "frame_path": "frame_0000035728.jpg",
-          "bbox": [
-            744.53,
-            328.12,
-            511.48,
-            397.37
-          ]
         },
         {
           "frame_path": "frame_0000035548.jpg",
@@ -696,6 +687,32 @@
             385.54,
             687.01,
             459.62
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 725.08,
+      "end_time": 725.08,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put down cling film",
+        "frame_id:35721",
+        "narration:pick up bowl",
+        "frame_id:35949",
+        "frame_id:36029",
+        "narration:pick up cling film",
+        "frame_id:36230"
+      ],
+      "frame_after_gap_start": 36254,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000035728.jpg",
+          "bbox": [
+            744.53,
+            328.12,
+            511.48,
+            397.37
           ]
         },
         {
@@ -896,8 +913,8 @@
     },
     {
       "start_time": 415.90999999999997,
-      "end_time": 619.0,
-      "duration_sec": 203.09,
+      "end_time": 623.45,
+      "duration_sec": 207.54,
       "event_history": [
         "narration:pour water into bowl",
         "frame_id:19447",
@@ -968,21 +985,20 @@
       ]
     },
     {
-      "start_time": 633.15,
-      "end_time": 633.6,
-      "duration_sec": 0.45,
+      "start_time": 634.57,
+      "end_time": 643.36,
+      "duration_sec": 8.79,
       "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
         "narration:wash sieve",
         "frame_id:31220",
         "frame_id:31317",
         "narration:wipe counter",
         "frame_id:31594",
-        "frame_id:31637"
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
       ],
-      "frame_after_gap_start": 31708,
+      "frame_after_gap_start": 31779,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031630.jpg",
@@ -994,32 +1010,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000031590.jpg",
-          "bbox": [
-            607.64,
-            267.78,
-            402.71,
-            331.49
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 639.81,
-      "end_time": 640.96,
-      "duration_sec": 1.15,
-      "event_history": [
-        "narration:pick up yeast",
-        "frame_id:31704",
-        "narration:pick up knife",
-        "frame_id:31803",
-        "frame_id:31903",
-        "narration:put down knife",
-        "frame_id:31974"
-      ],
-      "frame_after_gap_start": 32041,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000031715.jpg",
           "bbox": [
             502.1,
@@ -1027,24 +1017,41 @@
             295.44,
             153.94
           ]
+        },
+        {
+          "frame_path": "frame_0000031590.jpg",
+          "bbox": [
+            607.64,
+            267.78,
+            402.71,
+            331.49
+          ]
+        },
+        {
+          "frame_path": "frame_0000031678.jpg",
+          "bbox": [
+            877.44,
+            476.37,
+            375.13,
+            384.51
+          ]
         }
       ]
     },
     {
-      "start_time": 652.95,
-      "end_time": 653.95,
-      "duration_sec": 1.0,
+      "start_time": 654.56,
+      "end_time": 654.98,
+      "duration_sec": 0.42,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
         "narration:turn off tap",
         "frame_id:32184",
         "narration:wipe counter",
         "frame_id:32332",
-        "frame_id:32543"
+        "frame_id:32543",
+        "narration:pick up scales",
+        "frame_id:32712"
       ],
-      "frame_after_gap_start": 32698,
+      "frame_after_gap_start": 32778,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000032201.jpg",
@@ -1065,12 +1072,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000032164.jpg",
+          "frame_path": "frame_0000032700.jpg",
           "bbox": [
-            1862.69,
-            784.53,
-            57.31,
-            164.87
+            563.9,
+            188.74,
+            335.41,
+            311.69
           ]
         },
         {
@@ -1094,28 +1101,19 @@
       ]
     },
     {
-      "start_time": 656.92,
-      "end_time": 721.39,
-      "duration_sec": 64.47,
+      "start_time": 657.6,
+      "end_time": 725.08,
+      "duration_sec": 67.48,
       "event_history": [
-        "narration:pick up scales",
-        "frame_id:32712",
         "narration:open cupboard",
         "frame_id:32769",
         "narration:put scales in cupboard",
-        "frame_id:32826"
+        "frame_id:32826",
+        "narration:close cupboard",
+        "frame_id:32867"
       ],
-      "frame_after_gap_start": 32846,
+      "frame_after_gap_start": 32880,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000032700.jpg",
-          "bbox": [
-            563.9,
-            188.74,
-            335.41,
-            311.69
-          ]
-        },
         {
           "frame_path": "frame_0000032767.jpg",
           "bbox": [
@@ -1167,8 +1165,8 @@
   "19/bag/bag": [
     {
       "start_time": 137.88,
-      "end_time": 721.39,
-      "duration_sec": 583.51,
+      "end_time": 725.08,
+      "duration_sec": 587.2,
       "event_history": [
         "narration:sieve flour",
         "frame_id:5539",
@@ -1297,8 +1295,8 @@
     },
     {
       "start_time": 106.75,
-      "end_time": 721.39,
-      "duration_sec": 614.64,
+      "end_time": 725.08,
+      "duration_sec": 618.33,
       "event_history": [
         "narration:open flour",
         "frame_id:3066",
@@ -1445,8 +1443,8 @@
     },
     {
       "start_time": 252.68,
-      "end_time": 721.39,
-      "duration_sec": 468.71,
+      "end_time": 725.08,
+      "duration_sec": 472.4,
       "event_history": [
         "narration:cut sachet",
         "frame_id:11288",
@@ -1627,8 +1625,8 @@
     },
     {
       "start_time": 320.08,
-      "end_time": 633.6,
-      "duration_sec": 313.52,
+      "end_time": 623.45,
+      "duration_sec": 303.37,
       "event_history": [
         "narration:pour water into bowl",
         "frame_id:14224",
@@ -1654,19 +1652,20 @@
       ]
     },
     {
-      "start_time": 639.81,
-      "end_time": 721.39,
-      "duration_sec": 81.58,
+      "start_time": 634.57,
+      "end_time": 725.08,
+      "duration_sec": 90.51,
       "event_history": [
+        "narration:wash sieve",
+        "frame_id:31220",
+        "frame_id:31317",
+        "narration:wipe counter",
+        "frame_id:31594",
+        "frame_id:31637",
         "narration:pick up yeast",
-        "frame_id:31704",
-        "narration:pick up knife",
-        "frame_id:31803",
-        "frame_id:31903",
-        "narration:put down knife",
-        "frame_id:31974"
+        "frame_id:31704"
       ],
-      "frame_after_gap_start": 31991,
+      "frame_after_gap_start": 31729,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031715.jpg",
@@ -1675,6 +1674,15 @@
             407.91,
             444.72,
             465.12
+          ]
+        },
+        {
+          "frame_path": "frame_0000031678.jpg",
+          "bbox": [
+            658.82,
+            483.77,
+            210.91,
+            240.09
           ]
         }
       ]
@@ -1720,8 +1728,8 @@
     },
     {
       "start_time": 200.1,
-      "end_time": 721.39,
-      "duration_sec": 521.29,
+      "end_time": 725.08,
+      "duration_sec": 524.98,
       "event_history": [
         "narration:pour salt into bowl",
         "frame_id:9307",
@@ -1776,20 +1784,21 @@
   ],
   "227/roll/cling film roll": [
     {
-      "start_time": 679.2,
-      "end_time": 679.21,
-      "duration_sec": 0.01,
+      "start_time": 680.44,
+      "end_time": 686.66,
+      "duration_sec": 6.22,
       "event_history": [
-        "narration:put down towel",
-        "frame_id:33603",
         "narration:open drawer",
         "frame_id:33664",
         "frame_id:33715",
         "narration:pick up cling film",
         "frame_id:33809",
-        "frame_id:33910"
+        "frame_id:33910",
+        "narration:close drawer",
+        "frame_id:33976",
+        "frame_id:34007"
       ],
-      "frame_after_gap_start": 34010,
+      "frame_after_gap_start": 34072,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033901.jpg",
@@ -1812,30 +1821,21 @@
       ]
     },
     {
-      "start_time": 710.5,
-      "end_time": 710.57,
-      "duration_sec": 0.07,
+      "start_time": 712.48,
+      "end_time": 713.94,
+      "duration_sec": 1.46,
       "event_history": [
-        "narration:close drawer",
-        "frame_id:33976",
-        "frame_id:34007",
         "narration:put cling film over bowl",
         "frame_id:34394",
         "frame_id:34519",
         "narration:pick up knife",
-        "frame_id:35505"
+        "frame_id:35505",
+        "narration:cut cling film",
+        "frame_id:35552",
+        "frame_id:35601"
       ],
-      "frame_after_gap_start": 35575,
+      "frame_after_gap_start": 35674,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000034209.jpg",
-          "bbox": [
-            292.16,
-            0,
-            582.14,
-            866.5
-          ]
-        },
         {
           "frame_path": "frame_0000034513.jpg",
           "bbox": [
@@ -1855,12 +1855,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000034044.jpg",
+          "frame_path": "frame_0000035609.jpg",
           "bbox": [
-            616.62,
-            783.23,
-            634.31,
-            197.51
+            150.83,
+            491.09,
+            865.52,
+            287.21
           ]
         },
         {
@@ -1880,34 +1880,33 @@
             629.43,
             190.72
           ]
+        },
+        {
+          "frame_path": "frame_0000035548.jpg",
+          "bbox": [
+            417.59,
+            549.54,
+            756.67,
+            277.8
+          ]
         }
       ]
     },
     {
-      "start_time": 721.39,
-      "end_time": 721.39,
+      "start_time": 725.08,
+      "end_time": 725.08,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:cut cling film",
-        "frame_id:35552",
-        "frame_id:35601",
         "narration:put down cling film",
         "frame_id:35721",
         "narration:pick up bowl",
         "frame_id:35949",
-        "frame_id:36029"
+        "frame_id:36029",
+        "narration:pick up cling film",
+        "frame_id:36230"
       ],
-      "frame_after_gap_start": 36070,
+      "frame_after_gap_start": 36254,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000035609.jpg",
-          "bbox": [
-            150.83,
-            491.09,
-            865.52,
-            287.21
-          ]
-        },
         {
           "frame_path": "frame_0000035728.jpg",
           "bbox": [
@@ -1918,12 +1917,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000035548.jpg",
+          "frame_path": "frame_0000036250.jpg",
           "bbox": [
-            417.59,
-            549.54,
-            756.67,
-            277.8
+            1053.65,
+            834.58,
+            172.9,
+            245.42
           ]
         },
         {
@@ -1933,6 +1932,15 @@
             548.18,
             250.98,
             531.8
+          ]
+        },
+        {
+          "frame_path": "frame_0000036217.jpg",
+          "bbox": [
+            1209.71,
+            489.74,
+            47.84,
+            301.69
           ]
         }
       ]
@@ -2024,8 +2032,8 @@
     },
     {
       "start_time": 442.07,
-      "end_time": 608.55,
-      "duration_sec": 166.48,
+      "end_time": 611.36,
+      "duration_sec": 169.29,
       "event_history": [
         "narration:move yeast",
         "frame_id:20816",
@@ -2096,21 +2104,21 @@
       ]
     },
     {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
+      "start_time": 622.21,
+      "end_time": 725.08,
+      "duration_sec": 102.87,
       "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
         "narration:put down kettle",
         "frame_id:30581",
         "frame_id:30607",
         "narration:pick up yeast",
         "frame_id:30670",
-        "frame_id:30758"
+        "frame_id:30758",
+        "narration:rinse sieve",
+        "frame_id:30990",
+        "frame_id:31070"
       ],
-      "frame_after_gap_start": 30852,
+      "frame_after_gap_start": 31111,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030755.jpg",
@@ -2129,26 +2137,7 @@
             124.97,
             135.47
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 633.15,
-      "end_time": 721.39,
-      "duration_sec": 88.24,
-      "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
-        "narration:wash sieve",
-        "frame_id:31220",
-        "frame_id:31317",
-        "narration:wipe counter",
-        "frame_id:31594",
-        "frame_id:31637"
-      ],
-      "frame_after_gap_start": 31658,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000031007.jpg",
           "bbox": [
@@ -2164,8 +2153,8 @@
   "24/hob/hob": [
     {
       "start_time": 34.95,
-      "end_time": 721.39,
-      "duration_sec": 686.44,
+      "end_time": 725.08,
+      "duration_sec": 690.13,
       "event_history": [
         "narration:close cupboard",
         "frame_id:989",
@@ -2521,8 +2510,8 @@
     },
     {
       "start_time": 511.67,
-      "end_time": 511.67,
-      "duration_sec": 0.0,
+      "end_time": 516.86,
+      "duration_sec": 5.19,
       "event_history": [
         "narration:mix dough",
         "frame_id:22640",
@@ -2593,21 +2582,21 @@
       ]
     },
     {
-      "start_time": 576.46,
-      "end_time": 679.21,
-      "duration_sec": 102.75,
+      "start_time": 591.05,
+      "end_time": 686.66,
+      "duration_sec": 95.61,
       "event_history": [
-        "narration:knead dough",
-        "frame_id:25648",
-        "frame_id:25777",
         "narration:pour water into bowl",
         "frame_id:25880",
         "frame_id:25956",
         "narration:knead dough",
         "frame_id:26703",
-        "frame_id:28117"
+        "frame_id:28117",
+        "narration:turn on tap",
+        "frame_id:29446",
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 28873,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000025951.jpg",
@@ -2648,30 +2637,21 @@
       ]
     },
     {
-      "start_time": 710.5,
-      "end_time": 710.57,
-      "duration_sec": 0.07,
+      "start_time": 712.48,
+      "end_time": 713.94,
+      "duration_sec": 1.46,
       "event_history": [
-        "narration:close drawer",
-        "frame_id:33976",
-        "frame_id:34007",
         "narration:put cling film over bowl",
         "frame_id:34394",
         "frame_id:34519",
         "narration:pick up knife",
-        "frame_id:35505"
+        "frame_id:35505",
+        "narration:cut cling film",
+        "frame_id:35552",
+        "frame_id:35601"
       ],
-      "frame_after_gap_start": 35575,
+      "frame_after_gap_start": 35674,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000034209.jpg",
-          "bbox": [
-            902.33,
-            -0.14,
-            295.31,
-            112.87
-          ]
-        },
         {
           "frame_path": "frame_0000034513.jpg",
           "bbox": [
@@ -2691,33 +2671,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000035484.jpg",
-          "bbox": [
-            630.54,
-            472.22,
-            276.4,
-            273.06
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 721.39,
-      "end_time": 721.39,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:cut cling film",
-        "frame_id:35552",
-        "frame_id:35601",
-        "narration:put down cling film",
-        "frame_id:35721",
-        "narration:pick up bowl",
-        "frame_id:35949",
-        "frame_id:36029"
-      ],
-      "frame_after_gap_start": 36070,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000035609.jpg",
           "bbox": [
             615.64,
@@ -2726,6 +2679,41 @@
             256.54
           ]
         },
+        {
+          "frame_path": "frame_0000035484.jpg",
+          "bbox": [
+            630.54,
+            472.22,
+            276.4,
+            273.06
+          ]
+        },
+        {
+          "frame_path": "frame_0000035548.jpg",
+          "bbox": [
+            737.04,
+            463.94,
+            294.19,
+            296.02
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 725.08,
+      "end_time": 725.08,
+      "duration_sec": 0.0,
+      "event_history": [
+        "narration:put down cling film",
+        "frame_id:35721",
+        "narration:pick up bowl",
+        "frame_id:35949",
+        "frame_id:36029",
+        "narration:pick up cling film",
+        "frame_id:36230"
+      ],
+      "frame_after_gap_start": 36254,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000035728.jpg",
           "bbox": [
@@ -2742,15 +2730,6 @@
             735.98,
             396.94,
             344.02
-          ]
-        },
-        {
-          "frame_path": "frame_0000035548.jpg",
-          "bbox": [
-            737.04,
-            463.94,
-            294.19,
-            296.02
           ]
         },
         {
@@ -2941,8 +2920,8 @@
     },
     {
       "start_time": 442.07,
-      "end_time": 511.67,
-      "duration_sec": 69.6,
+      "end_time": 516.86,
+      "duration_sec": 74.79,
       "event_history": [
         "narration:move yeast",
         "frame_id:20816",
@@ -2968,21 +2947,21 @@
       ]
     },
     {
-      "start_time": 576.46,
-      "end_time": 588.21,
-      "duration_sec": 11.75,
+      "start_time": 591.05,
+      "end_time": 606.85,
+      "duration_sec": 15.8,
       "event_history": [
-        "narration:knead dough",
-        "frame_id:25648",
-        "frame_id:25777",
         "narration:pour water into bowl",
         "frame_id:25880",
         "frame_id:25956",
         "narration:knead dough",
         "frame_id:26703",
-        "frame_id:28117"
+        "frame_id:28117",
+        "narration:turn on tap",
+        "frame_id:29446",
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 28873,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000025951.jpg",
@@ -2992,24 +2971,7 @@
             215.74,
             108.31
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 607.9,
-      "end_time": 608.55,
-      "duration_sec": 0.65,
-      "event_history": [
-        "narration:turn on tap",
-        "frame_id:29446",
-        "frame_id:29517",
-        "narration:turn off tap",
-        "frame_id:30352",
-        "narration:shake hands",
-        "frame_id:30385"
-      ],
-      "frame_after_gap_start": 30445,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000029538.jpg",
           "bbox": [
@@ -3018,7 +2980,24 @@
             318.26,
             239.72
           ]
-        },
+        }
+      ]
+    },
+    {
+      "start_time": 610.09,
+      "end_time": 623.45,
+      "duration_sec": 13.36,
+      "event_history": [
+        "narration:turn off tap",
+        "frame_id:30352",
+        "narration:shake hands",
+        "frame_id:30385",
+        "narration:squeeze sponge",
+        "frame_id:30447",
+        "frame_id:30485"
+      ],
+      "frame_after_gap_start": 30555,
+      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030381.jpg",
           "bbox": [
@@ -3029,6 +3008,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000030460.jpg",
+          "bbox": [
+            414.03,
+            715.07,
+            172.51,
+            213.1
+          ]
+        },
+        {
           "frame_path": "frame_0000030356.jpg",
           "bbox": [
             440.65,
@@ -3036,33 +3024,14 @@
             406.97,
             401.53
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
-      "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
-        "narration:put down kettle",
-        "frame_id:30581",
-        "frame_id:30607",
-        "narration:pick up yeast",
-        "frame_id:30670",
-        "frame_id:30758"
-      ],
-      "frame_after_gap_start": 30852,
-      "crop_from_previous_active": [
+        },
         {
-          "frame_path": "frame_0000030460.jpg",
+          "frame_path": "frame_0000030400.jpg",
           "bbox": [
-            414.03,
-            715.07,
-            172.51,
-            213.1
+            373.82,
+            710.28,
+            230.22,
+            273.15
           ]
         },
         {
@@ -3077,21 +3046,20 @@
       ]
     },
     {
-      "start_time": 633.15,
-      "end_time": 640.96,
-      "duration_sec": 7.81,
+      "start_time": 634.57,
+      "end_time": 643.36,
+      "duration_sec": 8.79,
       "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
         "narration:wash sieve",
         "frame_id:31220",
         "frame_id:31317",
         "narration:wipe counter",
         "frame_id:31594",
-        "frame_id:31637"
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
       ],
-      "frame_after_gap_start": 31708,
+      "frame_after_gap_start": 31779,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031313.jpg",
@@ -3114,20 +3082,19 @@
       ]
     },
     {
-      "start_time": 652.95,
-      "end_time": 663.04,
-      "duration_sec": 10.09,
+      "start_time": 654.56,
+      "end_time": 658.21,
+      "duration_sec": 3.65,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
         "narration:turn off tap",
         "frame_id:32184",
         "narration:wipe counter",
         "frame_id:32332",
-        "frame_id:32543"
+        "frame_id:32543",
+        "narration:pick up scales",
+        "frame_id:32712"
       ],
-      "frame_after_gap_start": 32698,
+      "frame_after_gap_start": 32778,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000032201.jpg",
@@ -3146,33 +3113,24 @@
             280.66,
             461.04
           ]
-        },
-        {
-          "frame_path": "frame_0000032164.jpg",
-          "bbox": [
-            344.99,
-            293.81,
-            506.56,
-            515.66
-          ]
         }
       ]
     },
     {
-      "start_time": 671.64,
-      "end_time": 721.39,
-      "duration_sec": 49.75,
+      "start_time": 668.04,
+      "end_time": 725.08,
+      "duration_sec": 57.04,
       "event_history": [
+        "narration:pick up sponge",
+        "frame_id:32928",
+        "narration:wipe counter",
+        "frame_id:32986",
+        "frame_id:33059",
         "narration:rinse sponge",
         "frame_id:33214",
-        "frame_id:33340",
-        "narration:turn off tap",
-        "frame_id:33426",
-        "narration:dry hands",
-        "frame_id:33522",
-        "frame_id:33563"
+        "frame_id:33340"
       ],
-      "frame_after_gap_start": 33582,
+      "frame_after_gap_start": 33402,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033331.jpg",
@@ -3270,8 +3228,8 @@
     },
     {
       "start_time": 47.85,
-      "end_time": 721.39,
-      "duration_sec": 673.54,
+      "end_time": 725.08,
+      "duration_sec": 677.23,
       "event_history": [
         "narration:put lid on pan",
         "frame_id:2132",
@@ -3683,8 +3641,8 @@
     },
     {
       "start_time": 211.07,
-      "end_time": 653.95,
-      "duration_sec": 442.88,
+      "end_time": 654.98,
+      "duration_sec": 443.91,
       "event_history": [
         "narration:put down scales",
         "frame_id:10034",
@@ -3710,18 +3668,18 @@
       ]
     },
     {
-      "start_time": 656.92,
-      "end_time": 721.39,
-      "duration_sec": 64.47,
+      "start_time": 657.6,
+      "end_time": 725.08,
+      "duration_sec": 67.48,
       "event_history": [
-        "narration:pick up scales",
-        "frame_id:32712",
         "narration:open cupboard",
         "frame_id:32769",
         "narration:put scales in cupboard",
-        "frame_id:32826"
+        "frame_id:32826",
+        "narration:close cupboard",
+        "frame_id:32867"
       ],
-      "frame_after_gap_start": 32846,
+      "frame_after_gap_start": 32880,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000032767.jpg",
@@ -3819,8 +3777,8 @@
     },
     {
       "start_time": 47.85,
-      "end_time": 721.39,
-      "duration_sec": 673.54,
+      "end_time": 725.08,
+      "duration_sec": 677.23,
       "event_history": [
         "narration:put lid on pan",
         "frame_id:2132",
@@ -4123,8 +4081,8 @@
     },
     {
       "start_time": 171.81,
-      "end_time": 608.55,
-      "duration_sec": 436.74,
+      "end_time": 611.36,
+      "duration_sec": 439.55,
       "event_history": [
         "narration:sieve flour",
         "frame_id:7279",
@@ -4195,21 +4153,21 @@
       ]
     },
     {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
+      "start_time": 622.21,
+      "end_time": 623.45,
+      "duration_sec": 1.24,
       "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
         "narration:put down kettle",
         "frame_id:30581",
         "frame_id:30607",
         "narration:pick up yeast",
         "frame_id:30670",
-        "frame_id:30758"
+        "frame_id:30758",
+        "narration:rinse sieve",
+        "frame_id:30990",
+        "frame_id:31070"
       ],
-      "frame_after_gap_start": 30852,
+      "frame_after_gap_start": 31161,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030755.jpg",
@@ -4221,34 +4179,6 @@
           ]
         },
         {
-          "frame_path": "frame_0000030684.jpg",
-          "bbox": [
-            1018.06,
-            120.01,
-            301.28,
-            198.37
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 633.15,
-      "end_time": 721.39,
-      "duration_sec": 88.24,
-      "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
-        "narration:wash sieve",
-        "frame_id:31220",
-        "frame_id:31317",
-        "narration:wipe counter",
-        "frame_id:31594",
-        "frame_id:31637"
-      ],
-      "frame_after_gap_start": 31658,
-      "crop_from_previous_active": [
-        {
           "frame_path": "frame_0000031050.jpg",
           "bbox": [
             785.26,
@@ -4258,12 +4188,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000031313.jpg",
+          "frame_path": "frame_0000030684.jpg",
           "bbox": [
-            656.81,
-            355.83,
-            473.09,
-            569.83
+            1018.06,
+            120.01,
+            301.28,
+            198.37
           ]
         },
         {
@@ -4273,6 +4203,33 @@
             429.47,
             317.17,
             596.07
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 634.57,
+      "end_time": 725.08,
+      "duration_sec": 90.51,
+      "event_history": [
+        "narration:wash sieve",
+        "frame_id:31220",
+        "frame_id:31317",
+        "narration:wipe counter",
+        "frame_id:31594",
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
+      ],
+      "frame_after_gap_start": 31729,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000031313.jpg",
+          "bbox": [
+            656.81,
+            355.83,
+            473.09,
+            569.83
           ]
         },
         {
@@ -4354,8 +4311,8 @@
     },
     {
       "start_time": 252.68,
-      "end_time": 633.6,
-      "duration_sec": 380.92,
+      "end_time": 635.05,
+      "duration_sec": 382.37,
       "event_history": [
         "narration:cut sachet",
         "frame_id:11288",
@@ -4425,19 +4382,20 @@
       ]
     },
     {
-      "start_time": 639.81,
-      "end_time": 679.21,
-      "duration_sec": 39.4,
+      "start_time": 642.93,
+      "end_time": 686.66,
+      "duration_sec": 43.73,
       "event_history": [
-        "narration:pick up yeast",
-        "frame_id:31704",
         "narration:pick up knife",
         "frame_id:31803",
         "frame_id:31903",
         "narration:put down knife",
-        "frame_id:31974"
+        "frame_id:31974",
+        "narration:put rubbish in bin",
+        "frame_id:32072",
+        "frame_id:32122"
       ],
-      "frame_after_gap_start": 32041,
+      "frame_after_gap_start": 32197,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031959.jpg",
@@ -4460,20 +4418,20 @@
       ]
     },
     {
-      "start_time": 710.5,
-      "end_time": 710.57,
-      "duration_sec": 0.07,
+      "start_time": 712.48,
+      "end_time": 725.08,
+      "duration_sec": 12.6,
       "event_history": [
-        "narration:close drawer",
-        "frame_id:33976",
-        "frame_id:34007",
         "narration:put cling film over bowl",
         "frame_id:34394",
         "frame_id:34519",
         "narration:pick up knife",
-        "frame_id:35505"
+        "frame_id:35505",
+        "narration:cut cling film",
+        "frame_id:35552",
+        "frame_id:35601"
       ],
-      "frame_after_gap_start": 35575,
+      "frame_after_gap_start": 35624,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000034513.jpg",
@@ -4510,25 +4468,7 @@
             101.6,
             220.28
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 721.39,
-      "end_time": 721.39,
-      "duration_sec": 0.0,
-      "event_history": [
-        "narration:cut cling film",
-        "frame_id:35552",
-        "frame_id:35601",
-        "narration:put down cling film",
-        "frame_id:35721",
-        "narration:pick up bowl",
-        "frame_id:35949",
-        "frame_id:36029"
-      ],
-      "frame_after_gap_start": 36070,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000035548.jpg",
           "bbox": [
@@ -4543,21 +4483,20 @@
   ],
   "42/top/counter": [
     {
-      "start_time": 633.15,
-      "end_time": 640.96,
-      "duration_sec": 7.81,
+      "start_time": 634.57,
+      "end_time": 643.36,
+      "duration_sec": 8.79,
       "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
         "narration:wash sieve",
         "frame_id:31220",
         "frame_id:31317",
         "narration:wipe counter",
         "frame_id:31594",
-        "frame_id:31637"
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
       ],
-      "frame_after_gap_start": 31708,
+      "frame_after_gap_start": 31779,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031630.jpg",
@@ -4576,24 +4515,32 @@
             53.07,
             31.11
           ]
+        },
+        {
+          "frame_path": "frame_0000031678.jpg",
+          "bbox": [
+            1073.43,
+            735.95,
+            67.17,
+            73.53
+          ]
         }
       ]
     },
     {
-      "start_time": 652.95,
-      "end_time": 653.95,
-      "duration_sec": 1.0,
+      "start_time": 654.56,
+      "end_time": 725.08,
+      "duration_sec": 70.52,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
         "narration:turn off tap",
         "frame_id:32184",
         "narration:wipe counter",
         "frame_id:32332",
-        "frame_id:32543"
+        "frame_id:32543",
+        "narration:pick up scales",
+        "frame_id:32712"
       ],
-      "frame_after_gap_start": 32698,
+      "frame_after_gap_start": 32728,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000032201.jpg",
@@ -4614,6 +4561,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000032700.jpg",
+          "bbox": [
+            787.35,
+            408.89,
+            14.22,
+            40.02
+          ]
+        },
+        {
           "frame_path": "frame_0000032361.jpg",
           "bbox": [
             1645.64,
@@ -4629,31 +4585,6 @@
             548.55,
             73.07,
             67.85
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 656.92,
-      "end_time": 721.39,
-      "duration_sec": 64.47,
-      "event_history": [
-        "narration:pick up scales",
-        "frame_id:32712",
-        "narration:open cupboard",
-        "frame_id:32769",
-        "narration:put scales in cupboard",
-        "frame_id:32826"
-      ],
-      "frame_after_gap_start": 32846,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000032700.jpg",
-          "bbox": [
-            787.35,
-            408.89,
-            14.22,
-            40.02
           ]
         }
       ]
@@ -5089,8 +5020,8 @@
     },
     {
       "start_time": 511.67,
-      "end_time": 511.67,
-      "duration_sec": 0.0,
+      "end_time": 516.86,
+      "duration_sec": 5.19,
       "event_history": [
         "narration:mix dough",
         "frame_id:22640",
@@ -5161,21 +5092,21 @@
       ]
     },
     {
-      "start_time": 576.46,
-      "end_time": 608.55,
-      "duration_sec": 32.09,
+      "start_time": 591.05,
+      "end_time": 611.36,
+      "duration_sec": 20.31,
       "event_history": [
-        "narration:knead dough",
-        "frame_id:25648",
-        "frame_id:25777",
         "narration:pour water into bowl",
         "frame_id:25880",
         "frame_id:25956",
         "narration:knead dough",
         "frame_id:26703",
-        "frame_id:28117"
+        "frame_id:28117",
+        "narration:turn on tap",
+        "frame_id:29446",
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 28873,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000025951.jpg",
@@ -5216,21 +5147,21 @@
       ]
     },
     {
-      "start_time": 616.04,
-      "end_time": 721.39,
-      "duration_sec": 105.35,
+      "start_time": 622.21,
+      "end_time": 725.08,
+      "duration_sec": 102.87,
       "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
         "narration:put down kettle",
         "frame_id:30581",
         "frame_id:30607",
         "narration:pick up yeast",
         "frame_id:30670",
-        "frame_id:30758"
+        "frame_id:30758",
+        "narration:rinse sieve",
+        "frame_id:30990",
+        "frame_id:31070"
       ],
-      "frame_after_gap_start": 30802,
+      "frame_after_gap_start": 31111,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030613.jpg",
@@ -5255,20 +5186,19 @@
   ],
   "52/towel/towel": [
     {
-      "start_time": 671.64,
-      "end_time": 671.73,
-      "duration_sec": 0.09,
+      "start_time": 672.39,
+      "end_time": 725.08,
+      "duration_sec": 52.69,
       "event_history": [
-        "narration:rinse sponge",
-        "frame_id:33214",
-        "frame_id:33340",
         "narration:turn off tap",
         "frame_id:33426",
         "narration:dry hands",
         "frame_id:33522",
-        "frame_id:33563"
+        "frame_id:33563",
+        "narration:put down towel",
+        "frame_id:33603"
       ],
-      "frame_after_gap_start": 33632,
+      "frame_after_gap_start": 33620,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033535.jpg",
@@ -5277,6 +5207,15 @@
             672.88,
             341.09,
             407.12
+          ]
+        },
+        {
+          "frame_path": "frame_0000033594.jpg",
+          "bbox": [
+            211.21,
+            843.85,
+            265.93,
+            236.13
           ]
         },
         {
@@ -5295,33 +5234,6 @@
             927.23,
             138.73,
             152.77
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 679.2,
-      "end_time": 721.39,
-      "duration_sec": 42.19,
-      "event_history": [
-        "narration:put down towel",
-        "frame_id:33603",
-        "narration:open drawer",
-        "frame_id:33664",
-        "frame_id:33715",
-        "narration:pick up cling film",
-        "frame_id:33809",
-        "frame_id:33910"
-      ],
-      "frame_after_gap_start": 33960,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000033594.jpg",
-          "bbox": [
-            211.21,
-            843.85,
-            265.93,
-            236.13
           ]
         }
       ]
@@ -5402,8 +5314,8 @@
     },
     {
       "start_time": 47.85,
-      "end_time": 721.39,
-      "duration_sec": 673.54,
+      "end_time": 725.08,
+      "duration_sec": 677.23,
       "event_history": [
         "narration:put lid on pan",
         "frame_id:2132",
@@ -5549,8 +5461,8 @@
     },
     {
       "start_time": 275.9,
-      "end_time": 511.67,
-      "duration_sec": 235.77,
+      "end_time": 516.86,
+      "duration_sec": 240.96,
       "event_history": [
         "narration:fill kettle",
         "frame_id:13483",
@@ -5620,21 +5532,21 @@
       ]
     },
     {
-      "start_time": 576.46,
-      "end_time": 588.21,
-      "duration_sec": 11.75,
+      "start_time": 591.05,
+      "end_time": 606.85,
+      "duration_sec": 15.8,
       "event_history": [
-        "narration:knead dough",
-        "frame_id:25648",
-        "frame_id:25777",
         "narration:pour water into bowl",
         "frame_id:25880",
         "frame_id:25956",
         "narration:knead dough",
         "frame_id:26703",
-        "frame_id:28117"
+        "frame_id:28117",
+        "narration:turn on tap",
+        "frame_id:29446",
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 28873,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000025951.jpg",
@@ -5655,6 +5567,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000029538.jpg",
+          "bbox": [
+            29.57,
+            275.8,
+            1337.8,
+            804.08
+          ]
+        },
+        {
           "frame_path": "frame_0000025901.jpg",
           "bbox": [
             0.01,
@@ -5671,33 +5592,33 @@
             524.19,
             693.95
           ]
+        },
+        {
+          "frame_path": "frame_0000029442.jpg",
+          "bbox": [
+            0,
+            175.96,
+            1332.42,
+            904.04
+          ]
         }
       ]
     },
     {
-      "start_time": 607.9,
-      "end_time": 608.55,
-      "duration_sec": 0.65,
+      "start_time": 610.09,
+      "end_time": 611.36,
+      "duration_sec": 1.27,
       "event_history": [
-        "narration:turn on tap",
-        "frame_id:29446",
-        "frame_id:29517",
         "narration:turn off tap",
         "frame_id:30352",
         "narration:shake hands",
-        "frame_id:30385"
+        "frame_id:30385",
+        "narration:squeeze sponge",
+        "frame_id:30447",
+        "frame_id:30485"
       ],
-      "frame_after_gap_start": 30445,
+      "frame_after_gap_start": 30555,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000029538.jpg",
-          "bbox": [
-            29.57,
-            275.8,
-            1337.8,
-            804.08
-          ]
-        },
         {
           "frame_path": "frame_0000030381.jpg",
           "bbox": [
@@ -5708,42 +5629,14 @@
           ]
         },
         {
-          "frame_path": "frame_0000029442.jpg",
+          "frame_path": "frame_0000030420.jpg",
           "bbox": [
             0,
-            175.96,
-            1332.42,
-            904.04
+            380.2,
+            909.62,
+            699.51
           ]
         },
-        {
-          "frame_path": "frame_0000030356.jpg",
-          "bbox": [
-            0,
-            449.62,
-            1038.71,
-            630.68
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
-      "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
-        "narration:put down kettle",
-        "frame_id:30581",
-        "frame_id:30607",
-        "narration:pick up yeast",
-        "frame_id:30670",
-        "frame_id:30758"
-      ],
-      "frame_after_gap_start": 30852,
-      "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030460.jpg",
           "bbox": [
@@ -5754,12 +5647,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000030613.jpg",
+          "frame_path": "frame_0000030356.jpg",
           "bbox": [
-            827.31,
-            433.8,
-            1092.69,
-            646.2
+            0,
+            449.62,
+            1038.71,
+            630.68
+          ]
+        },
+        {
+          "frame_path": "frame_0000030400.jpg",
+          "bbox": [
+            0.59,
+            372.7,
+            990.74,
+            707.18
           ]
         },
         {
@@ -5769,6 +5671,43 @@
             377.14,
             940.3,
             702.86
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 622.21,
+      "end_time": 623.45,
+      "duration_sec": 1.24,
+      "event_history": [
+        "narration:put down kettle",
+        "frame_id:30581",
+        "frame_id:30607",
+        "narration:pick up yeast",
+        "frame_id:30670",
+        "frame_id:30758",
+        "narration:rinse sieve",
+        "frame_id:30990",
+        "frame_id:31070"
+      ],
+      "frame_after_gap_start": 31161,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000030613.jpg",
+          "bbox": [
+            827.31,
+            433.8,
+            1092.69,
+            646.2
+          ]
+        },
+        {
+          "frame_path": "frame_0000031050.jpg",
+          "bbox": [
+            0,
+            61.72,
+            1399.49,
+            1018.28
           ]
         },
         {
@@ -5788,43 +5727,6 @@
             684.75,
             534.1
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 633.15,
-      "end_time": 640.96,
-      "duration_sec": 7.81,
-      "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
-        "narration:wash sieve",
-        "frame_id:31220",
-        "frame_id:31317",
-        "narration:wipe counter",
-        "frame_id:31594",
-        "frame_id:31637"
-      ],
-      "frame_after_gap_start": 31708,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000031050.jpg",
-          "bbox": [
-            0,
-            61.72,
-            1399.49,
-            1018.28
-          ]
-        },
-        {
-          "frame_path": "frame_0000031313.jpg",
-          "bbox": [
-            0,
-            170.65,
-            1321.52,
-            909.35
-          ]
         },
         {
           "frame_path": "frame_0000031007.jpg",
@@ -5833,6 +5735,33 @@
             0,
             1141.39,
             770.6
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 634.57,
+      "end_time": 643.36,
+      "duration_sec": 8.79,
+      "event_history": [
+        "narration:wash sieve",
+        "frame_id:31220",
+        "frame_id:31317",
+        "narration:wipe counter",
+        "frame_id:31594",
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
+      ],
+      "frame_after_gap_start": 31779,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000031313.jpg",
+          "bbox": [
+            0,
+            170.65,
+            1321.52,
+            909.35
           ]
         },
         {
@@ -5847,20 +5776,19 @@
       ]
     },
     {
-      "start_time": 652.95,
-      "end_time": 657.1,
-      "duration_sec": 4.15,
+      "start_time": 654.56,
+      "end_time": 658.21,
+      "duration_sec": 3.65,
       "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
         "narration:turn off tap",
         "frame_id:32184",
         "narration:wipe counter",
         "frame_id:32332",
-        "frame_id:32543"
+        "frame_id:32543",
+        "narration:pick up scales",
+        "frame_id:32712"
       ],
-      "frame_after_gap_start": 32698,
+      "frame_after_gap_start": 32778,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000032201.jpg",
@@ -5878,15 +5806,6 @@
             1.2,
             370.75,
             916.65
-          ]
-        },
-        {
-          "frame_path": "frame_0000032164.jpg",
-          "bbox": [
-            0,
-            0,
-            998.02,
-            1025.63
           ]
         },
         {
@@ -5910,19 +5829,20 @@
       ]
     },
     {
-      "start_time": 661.89,
-      "end_time": 663.04,
-      "duration_sec": 1.15,
+      "start_time": 668.04,
+      "end_time": 668.3,
+      "duration_sec": 0.26,
       "event_history": [
-        "narration:close cupboard",
-        "frame_id:32867",
         "narration:pick up sponge",
         "frame_id:32928",
         "narration:wipe counter",
         "frame_id:32986",
-        "frame_id:33059"
+        "frame_id:33059",
+        "narration:rinse sponge",
+        "frame_id:33214",
+        "frame_id:33340"
       ],
-      "frame_after_gap_start": 33145,
+      "frame_after_gap_start": 33452,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033001.jpg",
@@ -5931,6 +5851,24 @@
             0,
             1043.38,
             732.57
+          ]
+        },
+        {
+          "frame_path": "frame_0000033150.jpg",
+          "bbox": [
+            91.64,
+            99.21,
+            1273.01,
+            956.25
+          ]
+        },
+        {
+          "frame_path": "frame_0000033331.jpg",
+          "bbox": [
+            0,
+            374.15,
+            842.75,
+            705.85
           ]
         },
         {
@@ -5950,34 +5888,33 @@
             1129.23,
             774.11
           ]
+        },
+        {
+          "frame_path": "frame_0000033242.jpg",
+          "bbox": [
+            0,
+            226.81,
+            1351.72,
+            853.19
+          ]
         }
       ]
     },
     {
-      "start_time": 671.64,
-      "end_time": 671.73,
-      "duration_sec": 0.09,
+      "start_time": 672.39,
+      "end_time": 725.08,
+      "duration_sec": 52.69,
       "event_history": [
-        "narration:rinse sponge",
-        "frame_id:33214",
-        "frame_id:33340",
         "narration:turn off tap",
         "frame_id:33426",
         "narration:dry hands",
         "frame_id:33522",
-        "frame_id:33563"
+        "frame_id:33563",
+        "narration:put down towel",
+        "frame_id:33603"
       ],
-      "frame_after_gap_start": 33632,
+      "frame_after_gap_start": 33620,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000033331.jpg",
-          "bbox": [
-            0,
-            374.15,
-            842.75,
-            705.85
-          ]
-        },
         {
           "frame_path": "frame_0000033448.jpg",
           "bbox": [
@@ -5997,12 +5934,12 @@
           ]
         },
         {
-          "frame_path": "frame_0000033242.jpg",
+          "frame_path": "frame_0000033594.jpg",
           "bbox": [
-            0,
-            226.81,
-            1351.72,
-            853.19
+            1636.67,
+            696.26,
+            283.33,
+            383.74
           ]
         },
         {
@@ -6030,33 +5967,6 @@
             621.09,
             638.92,
             458.91
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 679.2,
-      "end_time": 721.39,
-      "duration_sec": 42.19,
-      "event_history": [
-        "narration:put down towel",
-        "frame_id:33603",
-        "narration:open drawer",
-        "frame_id:33664",
-        "frame_id:33715",
-        "narration:pick up cling film",
-        "frame_id:33809",
-        "frame_id:33910"
-      ],
-      "frame_after_gap_start": 33960,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000033594.jpg",
-          "bbox": [
-            1636.67,
-            696.26,
-            283.33,
-            383.74
           ]
         }
       ]
@@ -6995,8 +6905,8 @@
     },
     {
       "start_time": 511.67,
-      "end_time": 511.67,
-      "duration_sec": 0.0,
+      "end_time": 516.86,
+      "duration_sec": 5.19,
       "event_history": [
         "narration:mix dough",
         "frame_id:22640",
@@ -7067,21 +6977,21 @@
       ]
     },
     {
-      "start_time": 576.46,
-      "end_time": 679.21,
-      "duration_sec": 102.75,
+      "start_time": 591.05,
+      "end_time": 686.66,
+      "duration_sec": 95.61,
       "event_history": [
-        "narration:knead dough",
-        "frame_id:25648",
-        "frame_id:25777",
         "narration:pour water into bowl",
         "frame_id:25880",
         "frame_id:25956",
         "narration:knead dough",
         "frame_id:26703",
-        "frame_id:28117"
+        "frame_id:28117",
+        "narration:turn on tap",
+        "frame_id:29446",
+        "frame_id:29517"
       ],
-      "frame_after_gap_start": 28873,
+      "frame_after_gap_start": 29603,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000025951.jpg",
@@ -7122,30 +7032,21 @@
       ]
     },
     {
-      "start_time": 710.5,
-      "end_time": 710.57,
-      "duration_sec": 0.07,
+      "start_time": 712.48,
+      "end_time": 713.94,
+      "duration_sec": 1.46,
       "event_history": [
-        "narration:close drawer",
-        "frame_id:33976",
-        "frame_id:34007",
         "narration:put cling film over bowl",
         "frame_id:34394",
         "frame_id:34519",
         "narration:pick up knife",
-        "frame_id:35505"
+        "frame_id:35505",
+        "narration:cut cling film",
+        "frame_id:35552",
+        "frame_id:35601"
       ],
-      "frame_after_gap_start": 35575,
+      "frame_after_gap_start": 35674,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000034209.jpg",
-          "bbox": [
-            824.78,
-            0,
-            433.06,
-            145.35
-          ]
-        },
         {
           "frame_path": "frame_0000034513.jpg",
           "bbox": [
@@ -7165,6 +7066,15 @@
           ]
         },
         {
+          "frame_path": "frame_0000035609.jpg",
+          "bbox": [
+            478.12,
+            344.08,
+            514.97,
+            452.5
+          ]
+        },
+        {
           "frame_path": "frame_0000034384.jpg",
           "bbox": [
             629.49,
@@ -7181,34 +7091,33 @@
             456.88,
             409.34
           ]
+        },
+        {
+          "frame_path": "frame_0000035548.jpg",
+          "bbox": [
+            619.91,
+            398.1,
+            487.79,
+            442.95
+          ]
         }
       ]
     },
     {
-      "start_time": 721.39,
-      "end_time": 721.39,
+      "start_time": 725.08,
+      "end_time": 725.08,
       "duration_sec": 0.0,
       "event_history": [
-        "narration:cut cling film",
-        "frame_id:35552",
-        "frame_id:35601",
         "narration:put down cling film",
         "frame_id:35721",
         "narration:pick up bowl",
         "frame_id:35949",
-        "frame_id:36029"
+        "frame_id:36029",
+        "narration:pick up cling film",
+        "frame_id:36230"
       ],
-      "frame_after_gap_start": 36070,
+      "frame_after_gap_start": 36254,
       "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000035609.jpg",
-          "bbox": [
-            478.12,
-            344.08,
-            514.97,
-            452.5
-          ]
-        },
         {
           "frame_path": "frame_0000035728.jpg",
           "bbox": [
@@ -7225,15 +7134,6 @@
             614.08,
             620.99,
             465.92
-          ]
-        },
-        {
-          "frame_path": "frame_0000035548.jpg",
-          "bbox": [
-            619.91,
-            398.1,
-            487.79,
-            442.95
           ]
         },
         {
@@ -7743,8 +7643,8 @@
     },
     {
       "start_time": 320.08,
-      "end_time": 721.39,
-      "duration_sec": 401.31,
+      "end_time": 725.08,
+      "duration_sec": 405.0,
       "event_history": [
         "narration:pour water into bowl",
         "frame_id:14224",
@@ -7828,8 +7728,8 @@
     },
     {
       "start_time": 252.68,
-      "end_time": 671.73,
-      "duration_sec": 419.05,
+      "end_time": 672.77,
+      "duration_sec": 420.09,
       "event_history": [
         "narration:cut sachet",
         "frame_id:11288",
@@ -7872,20 +7772,21 @@
       ]
     },
     {
-      "start_time": 679.2,
-      "end_time": 721.39,
-      "duration_sec": 42.19,
+      "start_time": 680.44,
+      "end_time": 725.08,
+      "duration_sec": 44.64,
       "event_history": [
-        "narration:put down towel",
-        "frame_id:33603",
         "narration:open drawer",
         "frame_id:33664",
         "frame_id:33715",
         "narration:pick up cling film",
         "frame_id:33809",
-        "frame_id:33910"
+        "frame_id:33910",
+        "narration:close drawer",
+        "frame_id:33976",
+        "frame_id:34007"
       ],
-      "frame_after_gap_start": 33960,
+      "frame_after_gap_start": 34022,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033712.jpg",
@@ -7928,19 +7829,19 @@
   ],
   "9/sponge/sponge": [
     {
-      "start_time": 607.9,
-      "end_time": 608.55,
-      "duration_sec": 0.65,
+      "start_time": 610.09,
+      "end_time": 611.36,
+      "duration_sec": 1.27,
       "event_history": [
-        "narration:turn on tap",
-        "frame_id:29446",
-        "frame_id:29517",
         "narration:turn off tap",
         "frame_id:30352",
         "narration:shake hands",
-        "frame_id:30385"
+        "frame_id:30385",
+        "narration:squeeze sponge",
+        "frame_id:30447",
+        "frame_id:30485"
       ],
-      "frame_after_gap_start": 30445,
+      "frame_after_gap_start": 30555,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000030381.jpg",
@@ -7952,33 +7853,14 @@
           ]
         },
         {
-          "frame_path": "frame_0000030356.jpg",
+          "frame_path": "frame_0000030420.jpg",
           "bbox": [
-            651.97,
-            851.9,
-            133.3,
-            127.7
+            550.08,
+            959.13,
+            85.54,
+            45.7
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 616.04,
-      "end_time": 619.0,
-      "duration_sec": 2.96,
-      "event_history": [
-        "narration:squeeze sponge",
-        "frame_id:30447",
-        "frame_id:30485",
-        "narration:put down kettle",
-        "frame_id:30581",
-        "frame_id:30607",
-        "narration:pick up yeast",
-        "frame_id:30670",
-        "frame_id:30758"
-      ],
-      "frame_after_gap_start": 30852,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000030460.jpg",
           "bbox": [
@@ -7989,12 +7871,21 @@
           ]
         },
         {
-          "frame_path": "frame_0000030755.jpg",
+          "frame_path": "frame_0000030356.jpg",
           "bbox": [
-            596.63,
-            935.02,
-            147.85,
-            135.16
+            651.97,
+            851.9,
+            133.3,
+            127.7
+          ]
+        },
+        {
+          "frame_path": "frame_0000030400.jpg",
+          "bbox": [
+            638.68,
+            794.22,
+            82.03,
+            62.12
           ]
         },
         {
@@ -8004,6 +7895,34 @@
             807.86,
             39.67,
             37.16
+          ]
+        }
+      ]
+    },
+    {
+      "start_time": 622.21,
+      "end_time": 623.45,
+      "duration_sec": 1.24,
+      "event_history": [
+        "narration:put down kettle",
+        "frame_id:30581",
+        "frame_id:30607",
+        "narration:pick up yeast",
+        "frame_id:30670",
+        "frame_id:30758",
+        "narration:rinse sieve",
+        "frame_id:30990",
+        "frame_id:31070"
+      ],
+      "frame_after_gap_start": 31161,
+      "crop_from_previous_active": [
+        {
+          "frame_path": "frame_0000030755.jpg",
+          "bbox": [
+            596.63,
+            935.02,
+            147.85,
+            135.16
           ]
         },
         {
@@ -8018,21 +7937,20 @@
       ]
     },
     {
-      "start_time": 633.15,
-      "end_time": 633.6,
-      "duration_sec": 0.45,
+      "start_time": 634.57,
+      "end_time": 635.05,
+      "duration_sec": 0.48,
       "event_history": [
-        "narration:rinse sieve",
-        "frame_id:30990",
-        "frame_id:31070",
         "narration:wash sieve",
         "frame_id:31220",
         "frame_id:31317",
         "narration:wipe counter",
         "frame_id:31594",
-        "frame_id:31637"
+        "frame_id:31637",
+        "narration:pick up yeast",
+        "frame_id:31704"
       ],
-      "frame_after_gap_start": 31708,
+      "frame_after_gap_start": 31779,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031313.jpg",
@@ -8069,23 +7987,33 @@
             93.87,
             95.76
           ]
+        },
+        {
+          "frame_path": "frame_0000031678.jpg",
+          "bbox": [
+            1132.19,
+            840.43,
+            73.88,
+            186.63
+          ]
         }
       ]
     },
     {
-      "start_time": 639.81,
-      "end_time": 640.96,
-      "duration_sec": 1.15,
+      "start_time": 642.93,
+      "end_time": 658.21,
+      "duration_sec": 15.28,
       "event_history": [
-        "narration:pick up yeast",
-        "frame_id:31704",
         "narration:pick up knife",
         "frame_id:31803",
         "frame_id:31903",
         "narration:put down knife",
-        "frame_id:31974"
+        "frame_id:31974",
+        "narration:put rubbish in bin",
+        "frame_id:32072",
+        "frame_id:32122"
       ],
-      "frame_after_gap_start": 32041,
+      "frame_after_gap_start": 32197,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000031959.jpg",
@@ -8104,25 +8032,7 @@
             99.29,
             198.49
           ]
-        }
-      ]
-    },
-    {
-      "start_time": 652.95,
-      "end_time": 657.1,
-      "duration_sec": 4.15,
-      "event_history": [
-        "narration:put rubbish in bin",
-        "frame_id:32072",
-        "frame_id:32122",
-        "narration:turn off tap",
-        "frame_id:32184",
-        "narration:wipe counter",
-        "frame_id:32332",
-        "frame_id:32543"
-      ],
-      "frame_after_gap_start": 32698,
-      "crop_from_previous_active": [
+        },
         {
           "frame_path": "frame_0000032059.jpg",
           "bbox": [
@@ -8135,19 +8045,20 @@
       ]
     },
     {
-      "start_time": 661.89,
-      "end_time": 663.04,
-      "duration_sec": 1.15,
+      "start_time": 668.04,
+      "end_time": 725.08,
+      "duration_sec": 57.04,
       "event_history": [
-        "narration:close cupboard",
-        "frame_id:32867",
         "narration:pick up sponge",
         "frame_id:32928",
         "narration:wipe counter",
         "frame_id:32986",
-        "frame_id:33059"
+        "frame_id:33059",
+        "narration:rinse sponge",
+        "frame_id:33214",
+        "frame_id:33340"
       ],
-      "frame_after_gap_start": 33145,
+      "frame_after_gap_start": 33402,
       "crop_from_previous_active": [
         {
           "frame_path": "frame_0000033001.jpg",
@@ -8156,6 +8067,24 @@
             544.31,
             107.51,
             99.43
+          ]
+        },
+        {
+          "frame_path": "frame_0000033150.jpg",
+          "bbox": [
+            925.5,
+            442.12,
+            106.75,
+            148.33
+          ]
+        },
+        {
+          "frame_path": "frame_0000033331.jpg",
+          "bbox": [
+            296.23,
+            689.7,
+            106.48,
+            76.56
           ]
         },
         {
@@ -8174,33 +8103,6 @@
             625.02,
             82.44,
             120.86
-          ]
-        }
-      ]
-    },
-    {
-      "start_time": 671.64,
-      "end_time": 721.39,
-      "duration_sec": 49.75,
-      "event_history": [
-        "narration:rinse sponge",
-        "frame_id:33214",
-        "frame_id:33340",
-        "narration:turn off tap",
-        "frame_id:33426",
-        "narration:dry hands",
-        "frame_id:33522",
-        "frame_id:33563"
-      ],
-      "frame_after_gap_start": 33582,
-      "crop_from_previous_active": [
-        {
-          "frame_path": "frame_0000033331.jpg",
-          "bbox": [
-            296.23,
-            689.7,
-            106.48,
-            76.56
           ]
         },
         {
