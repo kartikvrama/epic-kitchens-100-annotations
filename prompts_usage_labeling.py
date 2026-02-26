@@ -8,7 +8,7 @@ An object is in "passive usage" if it meets any of the following criteria withou
 
 **Input:**
 - Actions: A sequence of recent actions performed by the user while the object was in active use, along with before/after images.
-- Final Scene: An image of the scene immediately following the period of active usage.
+- Final Scene: An sequence of images of the scene following the period of active usage.
 - Target Object: The name and image of the object you need to evaluate.
 
 **Examples of Reasoning:**

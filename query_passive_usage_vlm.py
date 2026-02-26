@@ -9,20 +9,23 @@ Usage:
     python query_passive_usage_vlm.py --video-path /path/to/P01_01.MP4 [options]
 """
 
+import csv
 import os
 import sys
 import argparse
 import base64
 import json
+from math import ceil, floor
+import numpy as np
 from datetime import datetime
 import cv2
 
 import ollama
 import pdb
 
-from label_passive_usage_vlm import system_prompt
+from prompts_usage_labeling import system_prompt
 from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
-from visualize_inactive_segments import (
+from label_inactive_segments_manual import (
     extract_frames_full_res,
     extract_object_crops,
     parse_crop_specs,
@@ -33,9 +36,49 @@ TEMPERATURE=0.8
 MAX_NUM_PREDICT=2000
 NUM_TRIES=3
 
+# Inactive-segment image sampling for VLM
+MAX_IMAGES_INACTIVE = 5
+MIN_SPACING_SEC = 3.0
+MIN_DURATION = 6.0  # Ignore inactive segments shorter than this (seconds)
+
 # Qwen3 VL (and some other VLMs) require image dimensions > 32 (e.g. "factor:32").
 # Upscale any smaller image so both height and width exceed this.
 OLLAMA_MIN_IMAGE_DIM = 33
+
+
+def sample_frames(video_cap, start_time, end_time, fps, min_spacing_sec, max_images_inactive):
+    """Uniformly sample frames between start time and end time, atleast min_spacing_sec apart.
+    """
+    start_frame = ceil(start_time * fps)
+    end_frame = floor(end_time * fps)
+    segment_length_frames = end_frame - start_frame
+
+    if segment_length_frames < MIN_SPACING_SEC * fps:
+        frame_ids = [start_frame, end_frame]
+    else:
+        frame_ids = list(range(start_frame, end_frame, int(min_spacing_sec * fps)))
+    if len(frame_ids) > max_images_inactive:
+        frame_ids = frame_ids[:max_images_inactive]
+    frames = extract_frames_full_res(frame_ids, cap=video_cap)
+    return frame_ids, [image_to_base64(frames[fid]) for fid in sorted(frames.keys())]
+
+
+def load_video_fps(video_info_csv_path, video_id):
+    """
+    Load FPS for the given video_id from EPIC_100_video_info.csv.
+    Returns float FPS or None if not found. CSV columns: video_id, duration, fps, resolution.
+    """
+    if not video_info_csv_path or not os.path.isfile(video_info_csv_path):
+        return None
+    with open(video_info_csv_path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get("video_id") == video_id:
+                try:
+                    return float(row["fps"])
+                except (ValueError, KeyError):
+                    return None
+    return None
 
 
 def ensure_ollama_model_loaded(model_name):
@@ -87,7 +130,7 @@ def object_key_to_category_and_name(obj_key):
     return parts[0], parts[0] if parts else ("", "")
 
 
-def format_event_history(event_history, video_path):
+def format_event_history(event_history, video_cap):
     """
     Format event_history for the VLM, preserving order.
     - Items starting with "narration:" -> "Action: {narration text}".
@@ -100,7 +143,7 @@ def format_event_history(event_history, video_path):
     if not event_history:
         return event_lines, event_frame_images_base64
     frame_ids = [int(item.split("frame_id:", 1)[1]) for item in event_history if item.startswith("frame_id:")]
-    frames_dict = extract_frames_full_res(video_path, frame_ids) if frame_ids else {}
+    frames_dict = extract_frames_full_res(frame_ids, cap=video_cap) if frame_ids else {}
     for item in event_history:
         if item.startswith("narration:"):
             action = item.split("narration:", 1)[1].strip()
@@ -130,12 +173,12 @@ def build_user_message(category, name):
     return "\n".join(lines)
 
 
-def get_crop_images_base64(video_path, segment):
+def get_crop_images_base64(video_cap, segment):
     """Extract sequence of object crops for segment and return list of base64 PNG strings."""
     crop_specs = parse_crop_specs(segment.get("crop_from_previous_active"))
     if not crop_specs:
         return []
-    crops = extract_object_crops(video_path, crop_specs)
+    crops = extract_object_crops(video_cap, crop_specs)
     return [image_to_base64(c) for c in crops if image_to_base64(c) is not None], crop_specs
 
 
@@ -145,6 +188,8 @@ def query_ollama(
     crop_images_base64,
     event_history_lines,
     event_frame_images_base64,
+    post_active_content=None,
+    post_active_images_b64=[],
     num_tries=NUM_TRIES
 ):
     """
@@ -183,6 +228,24 @@ def query_ollama(
                 "content": content,
             })
 
+    if post_active_content and post_active_images_b64:
+        messages.append({
+            "role": "user",
+            "content": post_active_content,
+            "images": post_active_images_b64,
+        })
+
+    # # DEBUGGING
+    # print("=== Messages to be sent to Ollama ===")
+    # for idx, msg in enumerate(messages):
+    #     content = msg.get("content")
+    #     images = msg.get("images", [])
+    #     images_len = len(images) if images is not None else 0
+    #     print(f"Message {idx}:")
+    #     print(f"  Content: {repr(content)}")
+    #     print(f"  Number of images: {images_len}")
+    # print("=== End of messages ===")
+
     last_exception = None
     for attempt in range(num_tries):
         try:
@@ -205,6 +268,7 @@ def query_ollama(
     # All attempts failed
     if last_exception is not None:
         raise last_exception
+    
     return None
 
 
@@ -263,21 +327,32 @@ def main():
         default="inactive_segments",
         help="Directory containing inactive_segments_{video_id}.json (default: inactive_segments)",
     )
+    parser.add_argument("--max-images-inactive", type=int, default=MAX_IMAGES_INACTIVE, help="Maximum number of images to sample per segment (default: 5)")
+    parser.add_argument("--min-spacing-sec", type=float, default=MIN_SPACING_SEC, help="Minimum spacing between images in seconds (default: 3.0)")
     parser.add_argument(
         "--output-dir",
         default="vlm_annotations",
         help="Directory to write labels JSON (default: vlm_passive_usage_labels)",
     )
+    parser.add_argument(
+        "--video-info-csv",
+        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "EPIC_100_video_info.csv"),
+        help="Path to EPIC_100_video_info.csv for video FPS",
+    )
     args = parser.parse_args()
 
     ensure_ollama_model_loaded(args.model)
 
-    video_path = os.path.abspath(args.video_path)
-    if not os.path.isfile(video_path):
-        print(f"Error: Video file not found: {video_path}", file=sys.stderr)
+    if not os.path.isfile(args.video_path):
+        print(f"Error: Video file not found: {args.video_path}", file=sys.stderr)
         sys.exit(1)
 
-    video_id = os.path.splitext(os.path.basename(video_path))[0]
+    video_id = os.path.splitext(os.path.basename(args.video_path))[0]
+    fps = load_video_fps(args.video_info_csv, video_id)
+    if fps is None:
+        print(f"Warning: FPS not found for {video_id} in {args.video_info_csv}; will use single frame per segment.", file=sys.stderr)
+    else:
+        print(f"Using FPS={fps} for {video_id} (from {args.video_info_csv})")
     segments_file = os.path.join(args.segments_dir, f"inactive_segments_{video_id}.json")
     if not os.path.isfile(segments_file):
         print(f"Error: Segments file not found: {segments_file}", file=sys.stderr)
@@ -308,6 +383,12 @@ def main():
         input_prompt_jsonl.write(json.dumps({"date_time": date_time_str}) + "\n")
 
     done = len(segments_saved)
+
+    try:
+        video_cap = cv2.VideoCapture(str(args.video_path)) ## Open video file
+    except Exception as e:
+        print(f"Error: Failed to open video file: {args.video_path} - {e}", file=sys.stderr)
+        sys.exit(1)
     for obj_key in sorted(segments_data.keys()):
         seg_list = segments_data[obj_key]
         category, name = object_key_to_category_and_name(obj_key)
@@ -323,6 +404,13 @@ def main():
             segments_saved_this_obj = [seg_saved for seg_saved in segments_saved if seg_saved.get("query_object", "") == obj_key]
 
         for seg in seg_list:
+            ## Skip segments shorter than MIN_DURATION
+            duration_sec = seg.get("duration_sec")
+            if duration_sec is None:
+                duration_sec = seg.get("end_time", 0.0) - seg.get("start_time", 0.0)
+            if duration_sec < MIN_DURATION:
+                print(f"Skipping short segment {seg.get('start_time')}-{seg.get('end_time')} for {obj_key} (duration={duration_sec:.2f}s < {MIN_DURATION}s)", flush=True)
+                continue
             ## Skip if already processed
             if segments_saved_this_obj:
                 matched_segments = [
@@ -349,24 +437,32 @@ def main():
             start_time = seg.get("start_time")
             end_time = seg.get("end_time")
             print(f"[{done}/{total_segments}] {obj_key} segment {start_time}-{end_time}", flush=True)
-            ## Format event history
-            event_history_lines, event_frame_images_base64 = format_event_history(
-                seg.get("event_history", []), video_path
-            )
-            ## Extract crop images
-            crop_images_base64, crop_specs = get_crop_images_base64(video_path, seg)
+
+            ## ------- PROMPT CONSTRUCTION -------
             ## Build user content
             user_content = build_user_message(category, name)
-            ## Write input prompt to JSONL file
+            ## Extract crop images
+            crop_images_base64, crop_specs = get_crop_images_base64(video_cap, seg)
+            ## Format event history
+            event_history_lines, event_frame_images_base64 = format_event_history(
+                seg.get("event_history", []), video_cap
+            )
+            ## Sample MAX_IMAGES_INACTIVE images between start time and end time, MIN_SPACING_SEC apart
+            post_active_content = "Sequence of images following the period of active usage (after the user's last action)"
+            post_active_frame_ids, post_active_images_b64 = sample_frames(video_cap, start_time, end_time, fps, args.min_spacing_sec, args.max_images_inactive)
+
+            ## ------- WRITE INPUT PROMPT TO JSONL FILE -------
             with open(input_prompt_jsonl_path, "a") as input_prompt_jsonl:
                 input_prompt_jsonl.write(json.dumps({
                     "query_object": obj_key,
                     "start_time": start_time,
                     "end_time": end_time,
                     "user_content": user_content,
-                    "video_path": video_path,
+                    "video_path": args.video_path,
                     "crop_specs": json.dumps(crop_specs),
                     "event_history": seg.get("event_history", []),
+                    "post_active_content": post_active_content,
+                    "post_active_frame_ids": post_active_frame_ids
                 }) + "\n")
             ## Skip if no crops extracted
             if not crop_images_base64:
@@ -379,8 +475,9 @@ def main():
                         "llm_response": None,
                     }) + "\n")
                 continue
-            ## Query Ollama
-            out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64)
+
+            ## ------- QUERY OLLAMA -------
+            out = query_ollama(args.model, user_content, crop_images_base64, event_history_lines, event_frame_images_base64, post_active_content, post_active_images_b64)
             # Parse message.content when format=json (Ollama returns content in message.content)
             reasoning, is_passive_usage = None, None
             raw_content = None
@@ -398,7 +495,12 @@ def main():
                 if reasoning is None and is_passive_usage is None:
                     reasoning = out.get("reasoning") if isinstance(out, dict) else getattr(out, "reasoning", None)
                     is_passive_usage = out.get("is_passive_usage") if isinstance(out, dict) else getattr(out, "is_passive_usage", None)
-            ## Write result to output JSONL file
+
+            ## DEBUGGING
+            # print(reasoning)
+            # print(is_passive_usage)
+
+            ## ------- WRITE RESULT TO OUTPUT JSONL FILE -------
             try:
                 result = {
                     "query_object": obj_key,
@@ -432,13 +534,15 @@ def main():
                     **_ollama_response_metadata(out),
                 }
 
-            ## Write output and debug record to JSONL files
+            ## ------- WRITE OUTPUT AND DEBUG RECORD TO JSONL FILES -------
             with open(debug_jsonl_path, "a") as debug_jsonl:
                 debug_jsonl.write(json.dumps(debug_record) + "\n")
             with open(output_path, "a") as output_jsonl:
                 output_jsonl.write(json.dumps(result) + "\n")
             print(f"Finished processing {obj_key} segment {start_time}-{end_time}")
             done += 1
+
+    video_cap.release()
 
 
 if __name__ == "__main__":

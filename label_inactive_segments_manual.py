@@ -55,12 +55,15 @@ def extract_frames(video_path, frame_numbers, max_size=400, cap=None):
     return results
 
 
-def extract_frames_full_res(video_path, frame_numbers, cap=None):
+def extract_frames_full_res(frame_numbers, video_path=None, cap=None):
     """Extract frames at original resolution, returned as {frame_number: rgb_array}.
     If cap is provided, it is used and not released; otherwise a new capture is opened and released."""
     own_cap = cap is None
     if own_cap:
-        cap = cv2.VideoCapture(video_path)
+        if video_path is not None:
+            cap = cv2.VideoCapture(video_path)
+        else:
+            raise ValueError("video_path must be provided if cap is not provided")
     results = {}
     for fn in sorted(set(frame_numbers)):
         cap.set(cv2.CAP_PROP_POS_FRAMES, fn)
@@ -111,7 +114,7 @@ def extract_object_crops(video_path, crop_specs, cap=None):
     if not crop_specs:
         return []
     unique_frames = list({fid for fid, _ in crop_specs})
-    full_res = extract_frames_full_res(video_path, unique_frames, cap=cap)
+    full_res = extract_frames_full_res(unique_frames, video_path=video_path, cap=cap)
     return [crop_bbox_from_image(full_res.get(fid), bbox) for fid, bbox in crop_specs]
 
 

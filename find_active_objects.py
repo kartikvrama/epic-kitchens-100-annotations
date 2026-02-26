@@ -81,7 +81,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
     fps = float([v for v in video_info if v["video_id"] == video_id][0]["fps"])
     # Use only narrations from the same split as visor (train/val) so sequence count matches visor
     narrations_low_level_filtered = narration_low_level_df[
-        (narration_low_level_df["video_id"] == video_id) & (narration_low_level_df["_source"] == split)
+        narration_low_level_df["video_id"] == video_id
     ]
     ## Sort by start_timestamp
     narrations_low_level_filtered = narrations_low_level_filtered.sort_values(by="start_timestamp")
