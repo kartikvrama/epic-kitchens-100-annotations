@@ -1,3 +1,10 @@
+# Object usage annotations for EK-VISOR
+
+To copy annotations from skynet:
+```bash
+rsync -av kvr6@sky2.cc.gatech.edu:/coc/flash5/kvr6/repos/epic-kitchen-repos/epic-kitchens-100-annotations/vlm_annotations_maxImages1_minSpacing3/ vlm_annotations_maxImages1_minSpacing3_20260226/
+```
+
 # EPIC KITCHENS-100 Dataset
 
 <!-- start badges -->
