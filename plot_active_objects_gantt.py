@@ -10,6 +10,10 @@ matplotlib.use("Agg")  # no display needed when saving to file
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+try:
+    from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
+except ImportError:
+    OBJECTS_TO_EXCLUDE_FROM_VLM = set()
 
 import argparse
 
@@ -18,14 +22,96 @@ def load_active_objects(path: str) -> list:
         return json.load(f)
 
 
+def object_key_from_obj(obj: dict) -> str:
+    """Canonical key for an object, matching inactive/VLM annotations (class_id/subclass/name)."""
+    subclass = obj.get("subclass_name") or obj.get("class_name") or ""
+    return f"{obj.get('class_id')}/{subclass}/{obj.get('name')}"
+
+
+def _parse_key(key: str):
+    """Return (class_id, subclass_name, name) from key 'class_id/subclass_name/name'."""
+    parts = key.split("/", 2)
+    if len(parts) < 3:
+        return None, None, None
+    try:
+        class_id = int(parts[0])
+    except ValueError:
+        return None, None, None
+    return class_id, parts[1], parts[2]
+
+
+def _should_exclude(key: str) -> bool:
+    """True if subclass_name or instance name is in OBJECTS_TO_EXCLUDE_FROM_VLM."""
+    _, subclass_name, name = _parse_key(key)
+    if subclass_name is None:
+        return True
+    return subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM
+
+
 def build_object_intervals(segments: list) -> dict[str, list[tuple[float, float]]]:
-    """For each object, collect all (start, end) time intervals where it appears."""
+    """For each object, collect all (start, end) time intervals of ACTIVE usage."""
     obj_intervals: dict[str, list[tuple[float, float]]] = {}
     for seg in segments:
         start, end = seg["start_time"], seg["end_time"]
-        for obj in seg["objects_in_sequence"]:
-            obj_intervals.setdefault(obj, []).append((start, end))
+        for obj in seg.get("objects_in_sequence", []):
+            # Older JSON may store bare strings; newer uses dicts with class/name info.
+            if isinstance(obj, str):
+                key = obj
+            else:
+                key = object_key_from_obj(obj)
+            if not key:
+                continue
+            if isinstance(key, str) and _should_exclude(key):
+                continue
+            obj_intervals.setdefault(key, []).append((start, end))
     return obj_intervals
+
+
+def load_vlm_passive_intervals(
+    video_id: str,
+    vlm_dir: str,
+) -> dict[str, list[tuple[float, float]]]:
+    """
+    Load VLM annotations and return dict object_key -> list of (start, end) intervals
+    where is_passive_usage is True.
+    """
+    from pathlib import Path as _Path
+
+    path = _Path(vlm_dir) / f"inactive_segments_{video_id}_labels.jsonl"
+    intervals: dict[str, list[tuple[float, float]]] = {}
+    if not path.is_file():
+        return intervals
+
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            # Skip bookkeeping lines that don't have query_object
+            if "date_time" in rec and "query_object" not in rec:
+                continue
+            if not isinstance(rec.get("is_passive_usage"), bool):
+                continue
+            if not rec["is_passive_usage"]:
+                continue
+            q = rec.get("query_object")
+            if not isinstance(q, str) or _should_exclude(q):
+                continue
+            st = rec.get("start_time")
+            et = rec.get("end_time")
+            if q is None or st is None or et is None:
+                continue
+            try:
+                st_f = float(st)
+                et_f = float(et)
+            except (TypeError, ValueError):
+                continue
+            intervals.setdefault(q, []).append((st_f, et_f))
+    return intervals
 
 
 def sample_frames_from_video(video_path: str, times_sec: list[float]) -> list[np.ndarray] | None:
@@ -63,32 +149,79 @@ def segments_in_window(segments: list, window_start: float, window_end: float) -
     return out
 
 
+def intervals_in_window(
+    intervals_by_obj: dict[str, list[tuple[float, float]]],
+    window_start: float,
+    window_end: float,
+) -> dict[str, list[tuple[float, float]]]:
+    """Clip object intervals to a time window, shifting them so window_start -> 0."""
+    width = window_end - window_start
+    out: dict[str, list[tuple[float, float]]] = {}
+    for obj, intervals in intervals_by_obj.items():
+        for s, e in intervals:
+            if e <= window_start or s >= window_end:
+                continue
+            s_clip = max(0.0, s - window_start)
+            e_clip = min(width, e - window_start)
+            out.setdefault(obj, []).append((s_clip, e_clip))
+    return out
+
+
 def _draw_gantt_ax(
     ax,
     segments: list,
     title: str,
     xlim: tuple[float, float] | None = None,
     video_id: str = "",
+    passive_intervals_by_obj: dict[str, list[tuple[float, float]]] | None = None,
 ) -> None:
-    """Draw Gantt chart on an existing axes. If xlim is None, use full extent of segments."""
-    obj_intervals = build_object_intervals(segments)
-    if not obj_intervals:
+    """Draw Gantt chart on an existing axes.
+
+    Active usage comes from segments; passive usage (VLM) comes from passive_intervals_by_obj.
+    If xlim is None, use full extent of all intervals.
+    """
+    active_intervals = build_object_intervals(segments)
+    passive_intervals_by_obj = passive_intervals_by_obj or {}
+    if not active_intervals and not passive_intervals_by_obj:
         ax.set_title(title)
-        ax.text(0.5, 0.5, "No active objects in this window", ha="center", va="center", transform=ax.transAxes)
+        ax.text(
+            0.5,
+            0.5,
+            "No usage segments in this window",
+            ha="center",
+            va="center",
+            transform=ax.transAxes,
+        )
         return
 
     def first_time(obj: str) -> float:
-        return min(s for s, e in obj_intervals[obj])
+        times = [s for s, _ in active_intervals.get(obj, [])] + [s for s, _ in passive_intervals_by_obj.get(obj, [])]
+        return min(times) if times else 0.0
 
-    objects = sorted(obj_intervals.keys(), key=lambda o: (first_time(o), o))
+    objects_set = set(active_intervals.keys()) | set(passive_intervals_by_obj.keys())
+    objects = sorted(objects_set, key=lambda o: (first_time(o), o))
     colors = plt.cm.tab20(np.linspace(0, 1, 20))
     np.random.seed(42)
     np.random.shuffle(colors)
 
     for i, obj in enumerate(objects):
-        for start, end in obj_intervals[obj]:
+        # Active usage: solid bars
+        for start, end in active_intervals.get(obj, []):
             width = end - start
             ax.barh(i, width, left=start, height=0.7, color=colors[i % 20], edgecolor="white", linewidth=0.5)
+        # Passive usage: hatched bars (outline only) to distinguish from active
+        for start, end in passive_intervals_by_obj.get(obj, []):
+            width = end - start
+            ax.barh(
+                i,
+                width,
+                left=start,
+                height=0.7,
+                facecolor="none",
+                edgecolor=colors[i % 20],
+                linewidth=1.2,
+                hatch="///",
+            )
 
     ax.set_yticks(range(len(objects)))
     ax.set_yticklabels(objects, fontsize=8)
@@ -97,25 +230,60 @@ def _draw_gantt_ax(
     if xlim is not None:
         ax.set_xlim(xlim[0], xlim[1] * 1.02 if xlim[1] > 0 else 1)
     else:
-        max_time = max(e for intervals in obj_intervals.values() for s, e in intervals) or 1
+        max_time = 0.0
+        for intervals in list(active_intervals.values()) + list(passive_intervals_by_obj.values()):
+            for _, e in intervals:
+                if e > max_time:
+                    max_time = e
+        if max_time <= 0:
+            max_time = 1.0
         ax.set_xlim(0, max_time * 1.02)
     ax.invert_yaxis()
 
+    # Simple legend (only if there is at least one passive interval)
+    has_passive = any(passive_intervals_by_obj.values())
+    if has_passive:
+        active_patch = mpatches.Patch(facecolor=colors[0], edgecolor="white", label="Active usage")
+        passive_patch = mpatches.Patch(
+            facecolor="none",
+            edgecolor="black",
+            hatch="///",
+            label="Passive usage (VLM)",
+        )
+        ax.legend(handles=[active_patch, passive_patch], loc="upper right", fontsize=8)
 
-def plot_gantt(segments: list, out_path: str | None = None, video_id: str = "") -> None:
-    obj_intervals = build_object_intervals(segments)
-    if not obj_intervals:
+
+def plot_gantt(
+    segments: list,
+    out_path: str | None = None,
+    video_id: str = "",
+    passive_intervals_by_obj: dict[str, list[tuple[float, float]]] | None = None,
+) -> None:
+    active_intervals = build_object_intervals(segments)
+    passive_intervals_by_obj = passive_intervals_by_obj or {}
+    if not active_intervals and not passive_intervals_by_obj:
         print("No objects found.")
         return
 
     def first_time(obj: str) -> float:
-        return min(s for s, e in obj_intervals[obj])
+        times = [s for s, _ in active_intervals.get(obj, [])] + [s for s, _ in passive_intervals_by_obj.get(obj, [])]
+        return min(times) if times else 0.0
 
-    objects = sorted(obj_intervals.keys(), key=lambda o: (first_time(o), o))
+    objects_set = set(active_intervals.keys()) | set(passive_intervals_by_obj.keys())
+    objects = sorted(objects_set, key=lambda o: (first_time(o), o))
     fig, ax = plt.subplots(figsize=(14, max(6, len(objects) * 0.35)))
-    _draw_gantt_ax(ax, segments, f"Active object usage ({video_id})" if video_id else "Active object usage", video_id=video_id)
+    _draw_gantt_ax(
+        ax,
+        segments,
+        f"Active + passive object usage ({video_id})" if video_id else "Active + passive object usage",
+        video_id=video_id,
+        passive_intervals_by_obj=passive_intervals_by_obj,
+    )
 
-    max_time = max(e for intervals in obj_intervals.values() for s, e in intervals)
+    max_times = [e for intervals in active_intervals.values() for _, e in intervals]
+    if passive_intervals_by_obj:
+        max_times.extend(e for intervals in passive_intervals_by_obj.values() for _, e in intervals)
+    max_time = max(max_times) if max_times else 0.0
     xticks = np.arange(0, max_time + 1e-6, 30)
     ax.set_xticks(xticks)
  
@@ -139,12 +307,16 @@ def plot_minute_frames_and_gantt(
     video_id: str,
     out_dir: str | Path,
     num_frames: int = 8,
+    passive_intervals_by_obj: dict[str, list[tuple[float, float]]] | None = None,
 ) -> None:
     """For each full minute, create a 2x1 plot: top = uniformly sampled frames, bottom = Gantt for that minute."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    max_time = max(seg["end_time"] for seg in segments) if segments else 0
+    max_times = [seg["end_time"] for seg in segments] if segments else []
+    if passive_intervals_by_obj:
+        max_times.extend(e for intervals in passive_intervals_by_obj.values() for _, e in intervals)
+    max_time = max(max_times) if max_times else 0
     num_minutes = max(1, int(max_time // 60) + 1)
 
     for minute_idx in range(num_minutes):
@@ -165,6 +337,7 @@ def plot_minute_frames_and_gantt(
             frames.append(np.zeros_like(frames[0]) if frames else np.zeros((480, 640, 3), dtype=np.uint8))
 
         window_segments = segments_in_window(segments, window_start, window_end)
+        window_passive = intervals_in_window(passive_intervals_by_obj, window_start, window_end) if passive_intervals_by_obj else None
 
         max_cols = 4
         n_rows = (num_frames + max_cols - 1) // max_cols
@@ -185,6 +358,7 @@ def plot_minute_frames_and_gantt(
             window_segments,
             title=f"Minute {minute_idx} ({window_start:.0f}s–{window_end:.0f}s)",
             xlim=(0, 60),
+            passive_intervals_by_obj=window_passive,
         )
 
         fig.suptitle(f"{video_id} — minute {minute_idx}", fontsize=12)
@@ -227,6 +401,17 @@ def main():
         default=8,
         help="Number of frames to sample per minute (default: 8)",
     )
+    parser.add_argument(
+        "--vlm-dir",
+        type=str,
+        default="vlm_annotations_maxImages1_minSpacing3_20260226",
+        help="Directory containing VLM labels inactive_segments_<video_id>_labels.jsonl",
+    )
+    parser.add_argument(
+        "--no-passive",
+        action="store_true",
+        help="Disable plotting passive (VLM-labeled) segments",
+    )
     args = parser.parse_args()
 
     json_path = Path(args.active_objects_dir) / f"active_objects_{args.video_id}.json"
@@ -235,6 +420,10 @@ def main():
         return
 
     segments = load_active_objects(str(json_path))
+
+    passive_intervals_by_obj: dict[str, list[tuple[float, float]]] | None = None
+    if not args.no_passive and args.vlm_dir:
+        passive_intervals_by_obj = load_vlm_passive_intervals(args.video_id, args.vlm_dir)
 
     if args.minute_plots:
         if not args.video_path or not Path(args.video_path).exists():
@@ -247,12 +436,13 @@ def main():
             args.video_id,
             out_dir,
             num_frames=args.num_frames,
+            passive_intervals_by_obj=passive_intervals_by_obj,
         )
     else:
         out_path = args.out or Path(args.active_objects_dir) / f"plots/active_objects_{args.video_id}.png"
         ## Create directory if it doesn't exist
         os.makedirs(out_path.parent, exist_ok=True)
-        plot_gantt(segments, out_path=out_path, video_id=args.video_id)
+        plot_gantt(segments, out_path=out_path, video_id=args.video_id, passive_intervals_by_obj=passive_intervals_by_obj)
 
 
 if __name__ == "__main__":
