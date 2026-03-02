@@ -4,6 +4,10 @@ import csv
 import statistics
 from math import ceil, floor
 from collections import defaultdict
+import matplotlib
+matplotlib.use("Agg")  # no display needed when saving to file
+import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
 from utils import load_noun_class_names, load_inactive_segments, load_inactive_annotations
@@ -11,7 +15,7 @@ from utils import MIN_DURATION_INACTIVE_SEGMENT, ACTIVE_OBJECTS_DIR, VIDEO_ID_FI
 
 WINDOW_SIZE = 12 # seconds
 STEP_SIZE = 3 # seconds
-OVERLAP_TOL = 0.25 # minimum overlap between segment and window to be considered
+OVERLAP_TOL = 0. # minimum overlap between segment and window to be considered "used"
 
 INACTIVE_ANNOTATIONS_DIR = "vlm_annotations_maxImages1_minSpacing3_20260226"
 NOUN_CLASS_NAMES = load_noun_class_names()
@@ -31,11 +35,10 @@ def main():
     output_dir = "data_stats"
     os.makedirs(output_dir, exist_ok=True)
 
-
     all_video_stats = defaultdict(dict)
     all_object_stats = defaultdict(dict)
 
-    for video_id in video_ids:
+    for video_id in tqdm(video_ids):
         video_info_row = next((v for v in video_info if v['video_id'] == video_id), None)
         if not video_info_row:
             print(f"Video {video_id} not found in video_info")
@@ -56,21 +59,18 @@ def main():
 
             with open(os.path.join(ACTIVE_OBJECTS_DIR, f"active_objects_{video_id}.json"), "r") as f:
                 annotations_active_per_segment = json.load(f)
-
-            segments_inactive = load_inactive_segments(
-                video_id,
-                object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM,
-                min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT
-            )
-
             annotations_path= os.path.join(INACTIVE_ANNOTATIONS_DIR, f"inactive_segments_{video_id}_labels.jsonl")
 
-            annotations_inactive_per_object = load_inactive_annotations(
-                annotations_path,
-                segments_inactive,
+            annotations_inactive_per_object, keys_missing, keys_null = load_inactive_annotations(
+                video_id,
+                annotations_filepath=annotations_path,
                 object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM,
                 min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT
             )
+
+            if keys_missing:
+                print(f"Video {video_id}: {len(keys_missing)} missing keys in VLM annotations, skipping video...")
+                continue
 
             # Find overlapping active segments between window_start and window_end
             for seg in annotations_active_per_segment:
@@ -108,7 +108,10 @@ def main():
                 ann_start = ann.get("start_time")
                 ann_end = ann.get("end_time")
                 # Check for overlap
-                if not all(isinstance(x, float) or isinstance(x, int) for x in [ann_start, ann_end, window_start, window_end]):
+                if not all(
+                    isinstance(x, float) or isinstance(x, int)
+                    for x in [ann_start, ann_end, window_start, window_end]
+                ):
                     print(f"Invalid annotation: {ann}")
                     pdb.set_trace()
                     raise ValueError(f"Invalid annotation: {ann}")
@@ -121,33 +124,30 @@ def main():
                     if ann_duration == 0:  # avoid division by zero
                         continue
                     overlap_frac = overlap / ann_duration
-                    if overlap_frac < OVERLAP_TOL: ## TODO: Is this correct?
-                        continue
                     obj_id, subclass, name = ann.get("query_object").split("/", maxsplit=2)
                     category = NOUN_CLASS_NAMES[int(obj_id)]["category"]
                     key = f"{category}/{subclass}/{name}"
                     if usage_label is True:
-                        segments_per_object_passive[key].append(
-                            {
-                                "segment_idx": segment_idx,
-                                "overlap_frac": overlap_frac,
-                                "overlap_start": overlap_start,
-                                "overlap_end": overlap_end,
-                            }
-                        )
-                    else:
-                        segments_per_object_unused[key].append(
-                            {
-                                "segment_idx": segment_idx,
-                                "overlap_frac": overlap_frac,
-                                "overlap_start": overlap_start,
-                                "overlap_end": overlap_end,
-                            }
-                        )
+                        if overlap_frac>= OVERLAP_TOL:
+                            segments_per_object_passive[key].append(
+                                {
+                                    "segment_idx": segment_idx,
+                                    "overlap_frac": overlap_frac,
+                                    "overlap_start": overlap_start,
+                                    "overlap_end": overlap_end,
+                                }
+                            )
+
+            for key in segments_per_object_active.keys():
+                if key not in segments_per_object_passive:
+                    segments_per_object_unused[key].append(
+                        {
+                            "segment_idx": segment_idx,
+                            ##TODO: Add anything else?
+                        }
+                    )
 
             segment_idx += 1
-
-
 
         all_keys = set(
             list(segments_per_object_active.keys())
@@ -155,12 +155,14 @@ def main():
             + list(segments_per_object_unused.keys())
         )
 
+        ## Calculate video-level stats
         all_video_stats[video_id] = {
             "total_objects": len(appearance_time_per_object),
             "video_length": video_length,
             "total_segments": ceil(video_length / STEP_SIZE),
         }
 
+        ## Calculate object-level stats
         for key in all_keys:
             active_segments = set([seg["segment_idx"] for seg in segments_per_object_active.get(key, [])])
             passive_segments = set([seg["segment_idx"] for seg in segments_per_object_passive.get(key, [])])
@@ -179,8 +181,22 @@ def main():
             # Segments not in use
             not_in_use_segments = unused_segments
 
-            key_global = f"{video_id}/{key}"
+            ## Overlap fraction mean and std for active and passive segments
+            if len(active_segments) > 0:
+                active_overlap_frac_mean = statistics.mean([seg.get("overlap_frac") for seg in segments_per_object_active.get(key, [])])
+                active_overlap_frac_std = statistics.stdev([seg.get("overlap_frac") for seg in segments_per_object_active.get(key, [])])
+            else:
+                active_overlap_frac_mean = None
+                active_overlap_frac_std = None
+            if len(passive_segments) > 0:
+                passive_overlap_frac_mean = statistics.mean([seg.get("overlap_frac") for seg in segments_per_object_passive.get(key, [])])
+                passive_overlap_frac_std = statistics.stdev([seg.get("overlap_frac") for seg in segments_per_object_passive.get(key, [])])
+            else:
+                passive_overlap_frac_mean = None
+                passive_overlap_frac_std = None
 
+            ## Add to all_object_stats
+            key_global = f"{video_id}/{key}"
             all_object_stats[key_global] = {
                 "total_segments": len(all_segments),
                 "in_use_segments": len(in_use_segments),
@@ -188,11 +204,15 @@ def main():
                 "only_passive_segments": len(only_passive_segments),
                 "both_active_and_passive_segments": len(both_active_passive_segments),
                 "not_in_use_segments": len(not_in_use_segments),
+                "active_overlap_fraction_mean": active_overlap_frac_mean,
+                "active_overlap_fraction_std": active_overlap_frac_std,
+                "passive_overlap_fraction_mean": passive_overlap_frac_mean,
+                "passive_overlap_fraction_std": passive_overlap_frac_std,
             }
-
 
     # Usage stats: mean ± std, min, max per stat
     def agg(values):
+        values = [v for v in values if v is not None]
         if not values:
             return {"mean": None, "std": None, "min": None, "max": None}
         return {
@@ -207,6 +227,13 @@ def main():
 
     object_stat_names = list(all_object_stats.values())[0].keys() if all_object_stats else []
     usage_per_object = {name: agg([d[name] for d in all_object_stats.values()]) for name in object_stat_names}
+
+    # Save all_object_stats and all_video_stats as JSON files
+    with open(os.path.join(output_dir, "all_object_stats.json"), "w") as f:
+        json.dump(all_object_stats, f, indent=2)
+
+    with open(os.path.join(output_dir, "all_video_stats.json"), "w") as f:
+        json.dump(all_video_stats, f, indent=2)
 
     summary = {
         "per_video": {name: {"mean_std": f"{u['mean']:.4f} ± {u['std']:.4f}", "min": u["min"], "max": u["max"]} for name, u in usage_global.items()},
@@ -231,6 +258,30 @@ def main():
             f.write(f"Mean: {u['mean']:.4f} ± {u['std']:.4f}\n")
             f.write(f"Min: {u['min']:.4f}\n")
             f.write(f"Max: {u['max']:.4f}\n")
+
+    # Plot histograms for each usage_per_object metric, 3 per row
+    n_metrics = len(usage_per_object)
+    n_cols = 3
+    n_rows = (n_metrics + n_cols - 1) // n_cols
+
+    fig, axs = plt.subplots(n_rows, n_cols, figsize=(8 * n_cols, 4 * n_rows), constrained_layout=True)
+    axs = axs.flatten() if n_metrics > 1 else [axs]
+
+    for i, (name, u) in enumerate(usage_per_object.items()):
+        # Gather all values for this metric across all objects
+        values = [d[name] for d in all_object_stats.values() if d[name] is not None]
+        axs[i].hist(values, bins=30, alpha=0.7, color="skyblue", edgecolor="black")
+        axs[i].set_title(f"Histogram of {name} (per object per video)")
+        axs[i].set_xlabel(name)
+        axs[i].set_ylabel("Count")
+
+    # Hide any remaining subplots if n_metrics is not a multiple of n_cols
+    for j in range(i + 1, len(axs)):
+        axs[j].axis("off")
+
+    plt.suptitle("Histograms of Per Object Per Video Usage Metrics")
+    plt.savefig(os.path.join(output_dir, "usage_stats_histograms.png"))
+
 
 if __name__ == "__main__":
     main()

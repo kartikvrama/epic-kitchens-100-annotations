@@ -57,9 +57,14 @@ def main():
         inactive = load_inactive_segments(video_id, object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM, min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT)
         if not video_id or not inactive:
             continue
-        anns = load_inactive_annotations(os.path.join(vlm_dir, fname), inactive, object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM, min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT)
-        if not anns:
-            print(f"No annotations found for video {video_id}")
+        anns, keys_missing, _ = load_inactive_annotations(
+            video_id,
+            annotations_filepath=os.path.join(vlm_dir, fname),
+            object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM,
+            min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT
+        )
+        if keys_missing:
+            print(f"Video {video_id}: {len(keys_missing)} missing keys in VLM annotations, skipping video...")
             continue
 
         sub_name_list = defaultdict(list)
@@ -98,40 +103,57 @@ def main():
             "by_len": {k: pct_yes(v) for k, v in by_len.items()},
         })
 
+    # Write results to a markdown file in data_stats
+    md_lines = []
+
     # Per-video
-    print("Per-video: % of responses labeled yes (is_passive_usage=True)")
-    print("-" * 60)
+    md_lines.append("# Per-video: % of responses labeled yes (is_passive_usage=True)\n")
+    md_lines.append("---\n")
     for r in per_video:
         p = lambda x: f"{x:.2f}" if not np.isnan(x) else "—"
-        print(f"\n  Video {r['video_id']}  ({r['n']} segments)")
-        print(f"    Overall:                              {p(r['overall'])}")
-        print(f"    One instance per subclass:              {p(r['one_inst'])}")
-        print(f"    More than one instance per subclass:    {p(r['more_inst'])}")
-        print(f"    One crop per frame:                    {p(r['one_crop'])}")
-        print(f"    More than one crop per frame:         {p(r['more_crop'])}")
-        print(f"    Subclasses with more than one crop:    {', '.join(subs_with_more_crops)}")
-        print(f"    Subclasses with more than one instance: {', '.join([sub for sub, v in sub_count.items() if v > 1])}")
-        print(f"    By segment length:  ", "  ".join(f"{k}={p(v)}" for k, v in sorted(r["by_len"].items())))
+        md_lines.append(f"### Video {r['video_id']}  ({r['n']} segments)")
+        md_lines.append("")
+        md_lines.append(f"- **Overall:**                              {p(r['overall'])}")
+        md_lines.append(f"- **One instance per subclass:**              {p(r['one_inst'])}")
+        md_lines.append(f"- **More than one instance per subclass:**    {p(r['more_inst'])}")
+        md_lines.append(f"- **One crop per frame:**                    {p(r['one_crop'])}")
+        md_lines.append(f"- **More than one crop per frame:**          {p(r['more_crop'])}")
+        md_lines.append(f"- **Subclasses with more than one crop:**    {', '.join(subs_with_more_crops) if subs_with_more_crops else 'None'}")
+        md_lines.append(f"- **Subclasses with more than one instance:** {', '.join([sub for sub, v in sub_count.items() if v > 1])}")
+        md_lines.append(
+            f"- **By segment length:**  " +
+            "  ".join(f"{k}={p(v)}" for k, v in sorted(r["by_len"].items()))
+        )
+        md_lines.append("")
 
     # Summary
     def fmt(s):
         return f"Mean {s['mean']:.2f}   Std {s['std']:.2f}   Min {s['min']:.2f}   Max {s['max']:.2f}   ({s['n']} videos)"
-
-    print("\n" + "=" * 60)
-    print("Summary across videos (mean, min, max, std)")
-    print("=" * 60)
-    print("\n  Overall yes (is_passive_usage=True):                    ", fmt(stats([r["overall"] for r in per_video])))
-    print("  One instance per subclass:          ", fmt(stats([r["one_inst"] for r in per_video])))
-    print("  More than one instance per subclass:", fmt(stats([r["more_inst"] for r in per_video])))
-    print("  One crop per frame:                ", fmt(stats([r["one_crop"] for r in per_video])))
-    print("  More than one crop per frame:     ", fmt(stats([r["more_crop"] for r in per_video])))
-    print("\n  By segment length:")
+    
+    md_lines.append("\n---\n")
+    md_lines.append("# Summary across videos (mean, min, max, std)")
+    md_lines.append("---\n")
+    md_lines.append(f"- **Overall yes (is_passive_usage=True):** {fmt(stats([r['overall'] for r in per_video]))}")
+    md_lines.append(f"- **One instance per subclass:** {fmt(stats([r['one_inst'] for r in per_video]))}")
+    md_lines.append(f"- **More than one instance per subclass:** {fmt(stats([r['more_inst'] for r in per_video]))}")
+    md_lines.append(f"- **One crop per frame:** {fmt(stats([r['one_crop'] for r in per_video]))}")
+    md_lines.append(f"- **More than one crop per frame:** {fmt(stats([r['more_crop'] for r in per_video]))}")
+    md_lines.append("")
+    md_lines.append("## By segment length:")
     for label in [lb for _, _, lb in LENGTH_BINS] + ["other"]:
         vals = [r["by_len"][label] for r in per_video if label in r["by_len"]]
         vals = [v for v in vals if not np.isnan(v)]
         s = stats(vals)
         if s["n"]:
-            print(f"    {label:10}  ", fmt(s))
+            md_lines.append(f"- **{label:10}:** {fmt(s)}")
+
+    # Ensure data_stats directory exists
+    os.makedirs("data_stats", exist_ok=True)
+    md_fname = os.path.join("data_stats", "vlm_segment_annotation_stats.md")
+    with open(md_fname, "w") as f_md:
+        f_md.write("\n".join(md_lines))
+    print(f"Wrote stats to {md_fname}")
+
 
 
 if __name__ == "__main__":

@@ -48,62 +48,56 @@ def load_inactive_segments(
     return out
 
 
-def load_inactive_annotations(filepath, inactive, object_exclusion_list=[], min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT):
+def load_inactive_annotations(
+    video_id,
+    annotations_filepath,
+    object_exclusion_list=[],
+    min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT
+):
     """Load VLM generated annotations for inactive segments."""
-    fname = os.path.basename(filepath)
+    inactive = load_inactive_segments(video_id, object_exclusion_list=object_exclusion_list, min_duration_inactive_segment=min_duration_inactive_segment)
+    fname = os.path.basename(annotations_filepath)
     if not fname.startswith("inactive_segments_") or not fname.endswith("_labels.jsonl"):
         return []
-    anns, seen = [], set()
-    with open(filepath) as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                d = json.loads(line)
-            except json.JSONDecodeError:
-                continue
-            if "query_object" not in d:
-                continue
-            if d.get("is_passive_usage") is None:
-                continue
-            subclass = d["query_object"].split("/", maxsplit=2)[1]
-            ## Object exclusion
-            if subclass in object_exclusion_list:
-                continue
-            ## Minimum duration exclusion
-            if (float(d["end_time"]) - float(d["start_time"])) < min_duration_inactive_segment:
-                continue
-            key = (d["query_object"], d["start_time"], d["end_time"])
-            if key in seen:
-                continue
-            seen.add(key)
-            anns.append(d)
+    with open(annotations_filepath) as f:
+        annotations_raw = [json.loads(line) for line in f if line.strip()]
+
+    annotations_filtered = []
+    keys_null, keys_missing = set(), set()
+    for seg_key, seg in inactive.items():
+        object_key, start_time, end_time = seg_key
+        matching_annotations = [
+            ann for ann in annotations_raw if ann.get("query_object") == object_key and ann.get("start_time") == start_time and ann.get("end_time") == end_time
+        ]
+        if not matching_annotations:
+            keys_missing.add(seg_key)
+            continue
+        if all(ann.get("is_passive_usage") is None for ann in matching_annotations):
+            keys_null.add(seg_key)
+            continue
+        valid_annotations = [ann for ann in matching_annotations if ann.get("is_passive_usage") is not None]
+        if len(valid_annotations) !=1:
+            print(f"{len(valid_annotations)} valid annotations for segment {object_key} {start_time}-{end_time}")
+            import pdb; pdb.set_trace()
+        valid_annotation = valid_annotations[0]
+        annotations_filtered.append(valid_annotation)
+
     # For all segments in the inactive annotation file not present in 'seen', generate a "vlm negative" annotation with is_passive_usage=False
     for seg_key, seg in inactive.items():
         if not isinstance(seg, dict):
             import pdb; pdb.set_trace()
             raise ValueError(f"Inactive segments must be flattened before calling load_inactive_annotations, refer to load_inactive_segments()")
         object_key, start_time, end_time = seg_key
-        subclass = object_key.split("/", maxsplit=2)[1]
-        ## Object exclusion
-        if subclass in object_exclusion_list:
-            continue
-        ## Minimum duration exclusion
-        if (float(seg.get("end_time")) - float(seg.get("start_time"))) < min_duration_inactive_segment:
-            continue
-        search_key = (object_key, seg.get("start_time"), seg.get("end_time"))
-        if search_key in seen:
-            continue
-        # Synthesize negative annotation, trying to match VLM fields
-        anns.append({
-            "query_object": object_key,
-            "start_time": seg["start_time"],
-            "end_time": seg["end_time"],
-            "is_passive_usage": False,
-            "synthesized": True
-        })
-    return anns
+        if seg_key in keys_null or seg_key in keys_missing:
+            # Synthesize negative annotation, trying to match VLM fields
+            annotations_filtered.append({
+                "query_object": object_key,
+                "start_time": start_time,
+                "end_time": end_time,
+                "is_passive_usage": False,
+                "synthesized": True
+            })
+    return annotations_filtered, keys_missing, keys_null
 
 
 

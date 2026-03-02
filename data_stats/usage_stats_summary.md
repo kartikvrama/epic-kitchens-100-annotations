@@ -1,8 +1,8 @@
 # Usage Stats Summary
 ## Per Video
 ### total_objects
-Mean: 40.7674 ± 12.8838
-Min: 15.0000
+Mean: 36.4419 ± 17.9633
+Min: 0.0000
 Max: 79.0000
 ### video_length
 Mean: 1699.2558 ± 638.5076
@@ -14,26 +14,42 @@ Min: 304.0000
 Max: 1191.0000
 ## Per Object per Video
 ### total_segments
-Mean: 50.3908 ± 72.4465
-Min: 2.0000
-Max: 580.0000
+Mean: 330.4933 ± 211.6185
+Min: 6.0000
+Max: 1191.0000
 ### in_use_segments
-Mean: 48.2065 ± 69.6889
-Min: 2.0000
-Max: 580.0000
+Mean: 217.7996 ± 216.5413
+Min: 3.0000
+Max: 1154.0000
 ### only_active_segments
-Mean: 41.7633 ± 57.8637
-Min: 2.0000
-Max: 480.0000
+Mean: 44.1646 ± 61.2843
+Min: 0.0000
+Max: 510.0000
 ### only_passive_segments
-Mean: 4.4604 ± 10.3950
+Mean: 158.9866 ± 190.5355
 Min: 0.0000
-Max: 84.0000
+Max: 1082.0000
 ### both_active_and_passive_segments
-Mean: 1.9829 ± 4.7202
+Mean: 14.6484 ± 23.1309
 Min: 0.0000
-Max: 49.0000
+Max: 157.0000
 ### not_in_use_segments
-Mean: 3.0702 ± 7.8274
+Mean: 130.1991 ± 193.7954
 Min: 0.0000
-Max: 94.0000
+Max: 1191.0000
+### active_overlap_fraction_mean
+Mean: 0.4832 ± 0.1278
+Min: 0.0800
+Max: 0.8993
+### active_overlap_fraction_std
+Mean: 0.2855 ± 0.0595
+Min: 0.0166
+Max: 0.4348
+### passive_overlap_fraction_mean
+Mean: 0.0958 ± 0.1176
+Min: 0.0039
+Max: 0.6667
+### passive_overlap_fraction_std
+Mean: 0.0803 ± 0.0845
+Min: 0.0002
+Max: 0.3689
