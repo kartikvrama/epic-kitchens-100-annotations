@@ -29,7 +29,7 @@ tail -n +2 "$VIDEO_PATHS_CSV" | cut -d',' -f2 | while read -r VIDEO_PATH; do
     [ -z "$VIDEO_PATH" ] && continue
     echo "Current time: $(date +%H:%M:%S)"
     echo "Processing video: $VIDEO_PATH"
-    CMD="$PYTHONPATH -u query_passive_usage_vlm.py \
+    CMD="$PYTHONPATH -u label_inactive_segments_vlm.py \
         --video-path \"$VIDEO_PATH\" \
         --model $MODEL_NAME \
         --segments-dir inactive_segments \
