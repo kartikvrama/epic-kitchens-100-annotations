@@ -10,7 +10,11 @@ VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 ACTIVE_OBJECTS_DIR = "active_objects"
 INACTIVE_SEGMENTS_DIR = "inactive_segments"
 
+VISOR_FRAMES_TO_TIMESTAMPS_FILE = "visor-frames_to_timestamps.json"
+
 MIN_DURATION_INACTIVE_SEGMENT = 6 # seconds
+
+
 
 
 def load_inactive_segments(
@@ -141,4 +145,66 @@ def get_crop_for_object(frames_in_sequence, class_id, name):
                     image_name = frame["frame_path_adjusted"]
                     image_crops.append({"frame_path": image_name, "bbox": bbox})
     return image_crops
+
+
+def get_visor_object_appearance_times(video_id, frames_to_timestamps_path=None):
+    """Get per-object appearance times for a video from VISOR annotations.
+
+    For the given video_id, loads VISOR annotations, collects all unique objects
+    (by object key class_id/subclass/name), and for each object the list of
+    timestamps (in seconds) at which it appears. Frame indices are converted to
+    timestamps using visor-frames_to_timestamps.json.
+
+    Args:
+        video_id: Video ID (e.g. 'P01_01').
+        frames_to_timestamps_path: Path to visor-frames_to_timestamps.json.
+            Defaults to VISOR_FRAMES_TO_TIMESTAMPS_FILE.
+
+    Returns:
+        List of dicts, one per unique object: [{"object_key": str, "timestamps": [float]}, ...].
+        Timestamps are in seconds, sorted ascending. Returns [] if VISOR annotations
+        or the frames-to-timestamps file are missing.
+    """
+    frames_to_timestamps_path = frames_to_timestamps_path or VISOR_FRAMES_TO_TIMESTAMPS_FILE
+    if not os.path.isfile(frames_to_timestamps_path):
+        return []
+
+    visor_path = os.path.join("visor_annotations", "train", f"{video_id}.json")
+    if not os.path.isfile(visor_path):
+        visor_path = os.path.join("visor_annotations", "val", f"{video_id}.json")
+    if not os.path.isfile(visor_path):
+        return []
+
+    with open(frames_to_timestamps_path) as f:
+        frame_to_ts = json.load(f).get("timestamps") or {}
+    with open(visor_path) as f:
+        visor_data = json.load(f)
+    video_annotations = visor_data.get("video_annotations") or []
+    noun_class_names = load_noun_class_names()
+
+    # object_key -> set of timestamps (seconds)
+    appearance_times = {}
+    for frame in video_annotations:
+        image_path = frame.get("image") or {}
+        image_path_str = image_path.get("image_path") or ""
+        visor_frame_path = image_path_str.split("/")[-1]
+        timestamp = frame_to_ts.get(visor_frame_path)
+        if timestamp is None:
+            continue
+        for ann in frame.get("annotations") or []:
+            class_id = ann.get("class_id")
+            name = ann.get("name")
+            if class_id is None or name is None:
+                continue
+            info = noun_class_names.get(class_id, {})
+            subclass = info.get("key", "unknown")
+            object_key = f"{class_id}/{subclass}/{name}"
+            if object_key not in appearance_times:
+                appearance_times[object_key] = set()
+            appearance_times[object_key].add(float(timestamp))
+
+    return [
+        {"object_key": key, "timestamps": sorted(timestamps)}
+        for key, timestamps in sorted(appearance_times.items())
+    ]
 
