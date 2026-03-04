@@ -1,6 +1,7 @@
 """
 Generate sliding-window segment assignments per video and per object.
-Writes data_stats/sliding_window_results.json for consumption by stats_sliding_window.py.
+Writes data_stats/sliding_window_results.json (labels_per_object with behind/ahead/within).
+Consumed by stats_sliding_window_labels.py for per-video per-object label counts.
 """
 import os
 import json
@@ -25,8 +26,7 @@ from utils import (
 
 WINDOW_SIZE = 12  # seconds
 STEP_SIZE = 3  # seconds
-OVERLAP_TOL = 0.0  # minimum overlap between segment and window to be considered "used"
-
+HISTORY_SIZE = 3 * WINDOW_SIZE  # seconds
 WINDOW_BEHIND = 3 * WINDOW_SIZE  # seconds
 WINDOW_AHEAD = 3 * WINDOW_SIZE  # seconds
 
@@ -37,10 +37,79 @@ SLIDING_WINDOW_RESULTS_FILE = "sliding_window_results.json"
 NOUN_CLASS_NAMES = load_noun_class_names()
 
 
+import pdb
+
 def _object_appears_in_range(key, t_low, t_high, object_appearance_times_by_key):
     """Return True if the object has at least one VISOR appearance in [t_low, t_high]."""
     timestamps = object_appearance_times_by_key.get(key, [])
     return any(t_low <= t <= t_high for t in timestamps)
+
+
+def _object_status_in_interval(
+    obj_key,
+    t_low,
+    t_high,
+    annotations_active_per_segment,
+    annotations_inactive_per_object,
+):
+    """
+    Return one of "active", "passive", "both", "unused" for obj_key (category/subclass/name)
+    over the time interval [t_low, t_high], based on overlapping active and inactive annotations.
+    Non-zero overlap is required.
+    """
+    has_active = False
+    has_passive = False
+    for seg in annotations_active_per_segment:
+        seg_start = seg.get("start_time")
+        seg_end = seg.get("end_time")
+        if seg_start is None or seg_end is None:
+            continue
+        if seg_start >= t_high or seg_end <= t_low:
+            continue
+        overlap = min(seg_end, t_high) - max(seg_start, t_low)
+        if overlap <= 0:
+            continue
+        for obj in seg.get("objects_in_sequence", []):
+            if obj.get("subclass_name") in OBJECTS_TO_EXCLUDE_FROM_VLM:
+                continue
+            key = f"{obj.get('category')}/{obj.get('subclass_name')}/{obj.get('name')}"
+            if key == obj_key:
+                has_active = True
+                break
+        if has_active:
+            break
+    for ann in annotations_inactive_per_object:
+        if ann.get("is_passive_usage") is not True:
+            continue
+        if "query_object" not in ann:
+            continue
+        ann_start = ann.get("start_time")
+        ann_end = ann.get("end_time")
+        if ann_start is None or ann_end is None:
+            continue
+        if ann_start >= t_high or ann_end <= t_low:
+            continue
+        overlap = min(ann_end, t_high) - max(ann_start, t_low)
+        if overlap <= 0:
+            continue
+        try:
+            obj_id, subclass, name = ann.get("query_object").split("/", maxsplit=2)
+            category = NOUN_CLASS_NAMES[int(obj_id)]["category"]
+            key = f"{category}/{subclass}/{name}"
+        except (ValueError, KeyError, TypeError):
+            print(f"Error parsing query_object: {ann.get('query_object')}")
+            pdb.set_trace()
+            continue
+        if key == obj_key:
+            has_passive = True
+            break
+    if has_active and has_passive:
+        return "both"
+    if has_active:
+        return "active"
+    if has_passive:
+        return "passive"
+    return "unused"
 
 
 def main():
@@ -73,21 +142,20 @@ def main():
                     try:
                         class_id = int(parts[0])
                         subclass, name = parts[1], parts[2]
+                        if subclass in OBJECTS_TO_EXCLUDE_FROM_VLM:
+                            continue
                         category = NOUN_CLASS_NAMES[class_id]["category"]
                         key = f"{category}/{subclass}/{name}"
                         object_appearance_times_by_key[key] = item["timestamps"]
                     except (ValueError, KeyError):
+                        print(f"Error parsing object_key: {obj_key}")
+                        pdb.set_trace()
                         pass
         if not object_appearance_times_by_key:
             raise ValueError(
                 f"object_appearance_times_by_key is empty for video_id={video_id} "
                 "(missing VISOR annotations or visor-frames_to_timestamps.json)"
             )
-
-        segments_per_object_active = defaultdict(list)
-        segments_per_object_passive = defaultdict(list)
-        segments_per_object_unused = defaultdict(list)
-        appearance_time_per_object = defaultdict(float)
 
         annotations_path = os.path.join(
             INACTIVE_ANNOTATIONS_DIR, f"inactive_segments_{video_id}_labels.jsonl"
@@ -109,102 +177,46 @@ def main():
         ) as f:
             annotations_active_per_segment = json.load(f)
 
-        segment_idx = 0
-        for window_start in range(0, video_length, STEP_SIZE):
+        total_segments = ceil(video_length / STEP_SIZE)
+        all_object_keys = set(object_appearance_times_by_key.keys())
+        labels_per_object = {
+            key: {
+                "labels_behind_to_seg": {},
+                "labels_ahead_of_seg": {},
+            }
+            for key in all_object_keys
+        }
+        # Recompute labels for each valid (object, segment_idx)
+        for segment_idx in range(total_segments):
+            window_start = segment_idx * STEP_SIZE
             window_end = min(window_start + WINDOW_SIZE, video_length)
-            if window_end > video_length:
-                break
-
-            # Find overlapping active segments between window_start and window_end
-            for seg in annotations_active_per_segment:
-                seg_start = seg.get("start_time")
-                seg_end = seg.get("end_time")
-                if seg_start < window_end and seg_end > window_start:
-                    overlap_start = max(seg_start, window_start)
-                    overlap_end = min(seg_end, window_end)
-                    overlap = max(0, overlap_end - overlap_start)
-                    seg_duration = seg_end - seg_start
-                    if seg_duration == 0:
-                        continue
-                    overlap_frac = overlap / seg_duration
-                    if overlap_frac < OVERLAP_TOL:
-                        continue
-                    for obj in seg.get("objects_in_sequence", []):
-                        if obj["subclass_name"] in OBJECTS_TO_EXCLUDE_FROM_VLM:
-                            continue
-                        key = f"{obj['category']}/{obj['subclass_name']}/{obj['name']}"
-                        t_low = seg_start - WINDOW_BEHIND
-                        t_high = seg_end
-                        if key not in object_appearance_times_by_key or not _object_appears_in_range(
-                            key, t_low, t_high, object_appearance_times_by_key
-                        ):
-                            continue
-                        segments_per_object_active[key].append({
-                            "segment_idx": segment_idx,
-                            "overlap_frac": overlap_frac,
-                            "overlap_start": overlap_start,
-                            "overlap_end": overlap_end,
-                        })
-                        if key not in appearance_time_per_object:
-                            appearance_time_per_object[key] = seg_start
-
-            for ann in annotations_inactive_per_object:
-                if "query_object" not in ann:
+            t = window_end
+            t_history = t - HISTORY_SIZE
+            t_behind = t - WINDOW_BEHIND ## t - N
+            t_ahead = t + WINDOW_AHEAD ## t + N
+            for key in all_object_keys:
+                subclass_name = key.split("/")[1]
+                if subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM:
                     continue
-                usage_label = ann.get("is_passive_usage")
-                ann_start = ann.get("start_time")
-                ann_end = ann.get("end_time")
-                if not all(
-                    isinstance(x, (float, int))
-                    for x in [ann_start, ann_end, window_start, window_end]
+                if _object_appears_in_range(
+                    key, t_history, t, object_appearance_times_by_key
                 ):
-                    raise ValueError(f"Invalid annotation: {ann}")
-                if ann_start < window_end and ann_end > window_start:
-                    overlap_start = max(ann_start, window_start)
-                    overlap_end = min(ann_end, window_end)
-                    overlap = max(0, overlap_end - overlap_start)
-                    ann_duration = ann_end - ann_start
-                    if ann_duration == 0:
-                        continue
-                    overlap_frac = overlap / ann_duration
-                    obj_id, subclass, name = ann.get("query_object").split("/", maxsplit=2)
-                    category = NOUN_CLASS_NAMES[int(obj_id)]["category"]
-                    key = f"{category}/{subclass}/{name}"
-                    t_low = ann_start - WINDOW_BEHIND
-                    t_high = ann_end
-                    if usage_label is True:
-                        if overlap_frac >= OVERLAP_TOL:
-                            if key in object_appearance_times_by_key and _object_appears_in_range(
-                                key, t_low, t_high, object_appearance_times_by_key
-                            ):
-                                segments_per_object_passive[key].append({
-                                    "segment_idx": segment_idx,
-                                    "overlap_frac": overlap_frac,
-                                    "overlap_start": overlap_start,
-                                    "overlap_end": overlap_end,
-                                })
-                    elif usage_label is False:
-                        if overlap_frac >= OVERLAP_TOL:
-                            if key in object_appearance_times_by_key and _object_appears_in_range(
-                                key, t_low, t_high, object_appearance_times_by_key
-                            ):
-                                active_segment_indices = {
-                                    seg["segment_idx"]
-                                    for seg in segments_per_object_active.get(key, [])
-                                }
-                                if segment_idx not in active_segment_indices:
-                                    segments_per_object_unused[key].append({
-                                        "segment_idx": segment_idx
-                                    })
-            segment_idx += 1
+                    label_behind = _object_status_in_interval(
+                        key, t_behind, t,
+                        annotations_active_per_segment, annotations_inactive_per_object,
+                    )
+                    label_ahead = _object_status_in_interval(
+                        key, t, t_ahead,
+                        annotations_active_per_segment, annotations_inactive_per_object,
+                    )
+                    labels_per_object[key]["labels_behind_to_seg"][segment_idx] = label_behind
+                    labels_per_object[key]["labels_ahead_of_seg"][segment_idx] = label_ahead
 
+        num_objects = len(labels_per_object)
         results[video_id] = {
             "video_length": video_length,
-            "total_segments": ceil(video_length / STEP_SIZE),
-            "segments_per_object_active": dict(segments_per_object_active),
-            "segments_per_object_passive": dict(segments_per_object_passive),
-            "segments_per_object_unused": dict(segments_per_object_unused),
-            "appearance_time_per_object": dict(appearance_time_per_object),
+            "num_objects": num_objects,
+            "labels_per_object": labels_per_object,
         }
 
     out_path = os.path.join(OUTPUT_DIR, SLIDING_WINDOW_RESULTS_FILE)

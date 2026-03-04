@@ -15,8 +15,6 @@ VISOR_FRAMES_TO_TIMESTAMPS_FILE = "visor-frames_to_timestamps.json"
 MIN_DURATION_INACTIVE_SEGMENT = 6 # seconds
 
 
-
-
 def load_inactive_segments(
     video_id,
     object_exclusion_list=[],
@@ -196,8 +194,8 @@ def get_visor_object_appearance_times(video_id, frames_to_timestamps_path=None):
             name = ann.get("name")
             if class_id is None or name is None:
                 continue
-            info = noun_class_names.get(class_id, {})
-            subclass = info.get("key", "unknown")
+            info = noun_class_names.get(class_id)
+            subclass = info.get("key")
             object_key = f"{class_id}/{subclass}/{name}"
             if object_key not in appearance_times:
                 appearance_times[object_key] = set()
