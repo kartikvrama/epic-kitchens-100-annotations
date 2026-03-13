@@ -6,6 +6,8 @@ import pandas as pd
 from math import floor, ceil
 from utils import load_noun_class_names, hhmmss_to_seconds, get_crop_for_object
 
+from object_filtering import CATEGORIES_INCLUDED, SUBCLASSES_EXCLUDED
+
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = ["EPIC_100_train.csv", "EPIC_100_validation.csv", "EPIC_100_test_timestamps.csv"]
 
@@ -108,6 +110,10 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                         object_info = noun_class_names.get(class_id, {})
                         subclass_name = object_info.get("key", "unknown")
                         category = object_info.get("category", "unknown")
+                        if category not in CATEGORIES_INCLUDED:
+                            continue
+                        if subclass_name in SUBCLASSES_EXCLUDED:
+                            continue
                         # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
                         if class_id in (11, 300, 301) or name in ("hand:left", "hand:right") or category == "hand":
                             continue
@@ -287,9 +293,14 @@ def main():
     print("Loading noun class names")
     noun_class_names = load_noun_class_names()
 
-    for row in video_info:
+
+    with open("video_paths_updated.csv", "r") as f:
+        reader = csv.reader(f)
+        video_paths = [row for row in reader]
+
+    for video_id, _, _ in video_paths:
         # print(f"Processing video {row['video_id']}")
-        save_active_objects(row["video_id"], video_info, narration_low_level_df, noun_class_names, output_dir=args.output_dir)
+        save_active_objects(video_id, video_info, narration_low_level_df, noun_class_names, output_dir=args.output_dir)
 
 
 if __name__ == "__main__":
