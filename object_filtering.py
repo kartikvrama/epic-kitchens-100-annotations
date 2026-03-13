@@ -7,7 +7,6 @@ LIQUID_SUBCLASSES = {
     "milk",
     "tea",
     "vinegar",
-    "liquid",
     "syrup",
     "soup",
     "curry",
@@ -30,6 +29,11 @@ GRANULAR_SUBCLASSES = {
 
 PART_SUBCLASSES = {
     "handle",
+    "end",
+    "bit",
+    "piece",
+    "slice",
+    "minced",   
 }
 
 SUBCLASSES_EXCLUDED = LIQUID_SUBCLASSES | GRANULAR_SUBCLASSES | PART_SUBCLASSES

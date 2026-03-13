@@ -13,7 +13,7 @@ Your job is to analyze a sequence of actions and visual scenes to determine the 
 - Last Action: The narration of the last action performed on the object, with up to three images sampled during the action.
 - Image After: An image of the scene immediately after the last action.
 
-**Examples of easy scenarios:**
+**Examples of scenarios:**
 - Action: "put the fruits in a bowl" -- Target Object: "bowl" -- The bowl is holding fruits; removing it would disrupt the fruits. (**in_use**)
 - Action: "put mug away in cupboard" -- Target Object: "mug" -- The mug is stored in its proper place inside the cupboard. (**tidied**)
 - Action: "put olive oil bottle on countertop" -- Target Object: "olive oil bottle" -- The bottle is on the counter, not part of an active process, and could be stored. (**idle**)
@@ -25,8 +25,6 @@ Your job is to analyze a sequence of actions and visual scenes to determine the 
 - Action: "put chopped vegetables on cutting board" -- Target Object: "cutting board" -- The board is holding chopped vegetables as a prep surface; removing it would disrupt the task. (**in_use**)
 - Action: "leave spatula on table" -- Target Object: "spatula" -- The spatula is left on the table with no ongoing task depending on it. (**idle**)
 - Action: "get plate from dishwasher" -- Target Object: "plate" -- The plate is retrieved from the dishwasher and is not part of an active task. (**idle**)
-
-**Examples of challenging scenarios:**
 - Action: "put pan on induction hob" -- Target Object: "pan" -- If food was cooking in the pan in the past few actions, then pan is **in_use**. Otherwise, if the pan is empty and the hob is off, pan is **idle**.
 
 **Task:**

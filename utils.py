@@ -21,7 +21,8 @@ def include_object(cat, subcat, name):
     if cat not in CATEGORIES_INCLUDED:
         return False
     subcat_prefix = subcat.split(":")[0]
-    if subcat_prefix in SUBCLASSES_EXCLUDED:
+    subcat_suffix = subcat.split(":")[-1]
+    if subcat_prefix in SUBCLASSES_EXCLUDED or subcat_suffix in SUBCLASSES_EXCLUDED:
         return False
     return True
 
