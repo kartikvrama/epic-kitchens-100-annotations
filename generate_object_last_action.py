@@ -2,7 +2,7 @@
 For every video_id and each object in active_objects, find the last action (narration)
 done by the user on that object from NARRATION_LOW_LEVEL_FILES. Output a list of
 final narrations with timestamps and the corresponding active segment.
-Objects in objects_to_exclude_vlm.OBJECTS_TO_EXCLUDE_FROM_VLM are skipped.
+Objects in objects_to_exclude_vlm.SUBCLASSES_EXCLUDED are skipped.
 """
 import argparse
 import json
@@ -11,8 +11,7 @@ from collections import Counter
 
 import pandas as pd
 from utils import hhmmss_to_seconds
-from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
-from objects_to_include import CATEGORIES_TO_INCLUDE
+from object_filtering import CATEGORIES_INCLUDED, SUBCLASSES_EXCLUDED
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = [
@@ -22,6 +21,11 @@ NARRATION_LOW_LEVEL_FILES = [
 ]
 ACTIVE_OBJECTS_DIR = "active_objects"
 OUTPUT_DIR = "object_last_action"
+
+
+def get_tidy_label(verb, all_noun_classes):
+    """Get the tidy label for a verb and a list of noun classes."""
+    raise NotImplementedError()
 
 
 def load_narration_df():
@@ -115,8 +119,8 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
 
     unique_objects = get_unique_objects_from_active(
         segments,
-        exclude_keys=OBJECTS_TO_EXCLUDE_FROM_VLM,
-        include_categories=CATEGORIES_TO_INCLUDE,
+        exclude_keys=SUBCLASSES_EXCLUDED,
+        include_categories=CATEGORIES_INCLUDED,
     )
     results = []
 
@@ -128,6 +132,8 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         # Last action = row with maximum stop_timestamp
         last_row = obj_narrations.loc[obj_narrations["stop_sec"].idxmax()]
         narration_text = last_row.get("narration", "")
+        all_nouns =last_row.get("all_nouns", [])
+        all_noun_classes = last_row.get("all_noun_classes", [])
         if pd.isna(narration_text):
             narration_text = ""
         start_ts = float(last_row["start_sec"])
@@ -160,12 +166,13 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
                 "narration": narration_text,
                 "verb": _safe(last_row.get("verb")),
                 "verb_class": int(last_row["verb_class"]) if not pd.isna(last_row.get("verb_class")) else None,
-                "noun": _safe(last_row.get("noun")),
-                "noun_class": int(last_row["noun_class"]) if not pd.isna(last_row.get("noun_class")) else None,
+                "all_nouns": all_nouns,
+                "all_noun_classes": all_noun_classes,
                 "start_timestamp": start_ts,
                 "stop_timestamp": stop_ts,
                 "start_timestamp_str": last_row["start_timestamp"],
                 "stop_timestamp_str": last_row["stop_timestamp"],
+                "tidy_label": None
             },
             "active_segment": segment,
         })
