@@ -11,7 +11,7 @@ from collections import Counter
 
 import pandas as pd
 from utils import hhmmss_to_seconds
-from object_filtering import CATEGORIES_INCLUDED, SUBCLASSES_EXCLUDED
+from utils import include_object
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = [
@@ -47,21 +47,16 @@ def load_narration_df():
     return out
 
 
-def get_unique_objects_from_active(segments, exclude_keys=None, include_categories=None):
-    """Return unique objects (class_id, name, subclass_name, category) from all segments.
-    Objects whose subclass_name is in exclude_keys are skipped.
-    If include_categories is non-empty, only objects whose category is in that set are kept."""
-    exclude_keys = exclude_keys or set()
-    include_categories = include_categories or set()
+def get_unique_objects_from_active(segments):
+    """Return unique objects (class_id, name, subclass_name, category) from all segments."""
     seen = set()
     unique = []
     for seg in segments:
         for obj in seg.get("objects_in_sequence", []):
-            subclass = obj.get("subclass_name", "")
-            if subclass in exclude_keys:
-                continue
-            category = obj.get("category", "")
-            if include_categories and category not in include_categories:
+            category = obj.get("category")
+            subclass = obj.get("subclass_name")
+            name = obj.get("name")
+            if not include_object(category, subclass, name):
                 continue
             key = (obj["class_id"], obj["name"])
             if key in seen:
@@ -117,11 +112,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
     video_narrations["start_sec"] = video_narrations["start_timestamp"].apply(hhmmss_to_seconds)
     video_narrations["stop_sec"] = video_narrations["stop_timestamp"].apply(hhmmss_to_seconds)
 
-    unique_objects = get_unique_objects_from_active(
-        segments,
-        exclude_keys=SUBCLASSES_EXCLUDED,
-        include_categories=CATEGORIES_INCLUDED,
-    )
+    unique_objects = get_unique_objects_from_active(segments)
     results = []
 
     for obj in unique_objects:

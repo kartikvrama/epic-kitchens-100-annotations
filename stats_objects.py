@@ -4,7 +4,7 @@ import json
 import numpy as np
 from utils import load_noun_class_names
 from utils import ACTIVE_OBJECTS_DIR
-from object_filtering import SUBCLASSES_EXCLUDED
+from utils import include_object
 from collections import defaultdict
 
 NOUN_CLASS_NAMES = load_noun_class_names()
@@ -30,9 +30,12 @@ for file in os.listdir(ACTIVE_OBJECTS_DIR):
         data = json.load(f)
         for segment in data:
             for object in segment['objects_in_sequence']:
-                if object['subclass_name'] in SUBCLASSES_EXCLUDED:
+                category = object.get("category")
+                subclass_name = object.get("subclass_name")
+                name = object.get("name")
+                if not include_object(category, subclass_name, name):
                     continue
-                sub_name_dict[object['subclass_name']].add(object['name'])
+                sub_name_dict[subclass_name].add(name)
 
 
     # # Get number of unique names per subclass

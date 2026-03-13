@@ -8,7 +8,7 @@ import random
 from collections import defaultdict
 
 OBJECT_LAST_ACTION_DIR = "object_last_action"
-NUM_SAMPLES_PER_VERB = 20
+NUM_SAMPLES_PER_VERB = 10
 SEED = 42
 
 
@@ -35,13 +35,13 @@ def load_all_entries_with_source(data_dir):
             if not verb:
                 continue
             narration = (last.get("narration") or "").strip()
-            noun_class = last.get("noun_class")
-            noun_name = (last.get("noun") or "").strip()
+            all_noun_classes = last.get("all_noun_classes")
+            all_nouns = last.get("all_nouns")
             seg = entry.get("active_segment") or {}
             segment_id = seg.get("segment_id") or ""
-            if narration and noun_class is not None and segment_id:
+            if narration and all_noun_classes is not None and all_nouns is not None and segment_id:
                 source = os.path.basename(path)
-                entries.append((source, segment_id, noun_class, narration, noun_name, verb))
+                entries.append((source, segment_id, all_noun_classes, all_nouns, narration, verb))
     return entries
 
 

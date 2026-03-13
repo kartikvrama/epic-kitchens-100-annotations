@@ -1,6 +1,7 @@
 import os
 import json
 import csv
+from object_filtering import CATEGORIES_INCLUDED, SUBCLASSES_EXCLUDED
 
 NOUN_CLASSES_FILE = "EPIC_100_noun_classes_v2.csv"
 
@@ -13,6 +14,16 @@ INACTIVE_SEGMENTS_DIR = "inactive_segments"
 VISOR_FRAMES_TO_TIMESTAMPS_FILE = "visor-frames_to_timestamps.json"
 
 MIN_DURATION_INACTIVE_SEGMENT = 6 # seconds
+
+
+def include_object(cat, subcat, name):
+    """Return True if the object (category, subclass, name) should be included in the dataset."""
+    if cat not in CATEGORIES_INCLUDED:
+        return False
+    subcat_prefix = subcat.split(":")[0]
+    if subcat_prefix in SUBCLASSES_EXCLUDED:
+        return False
+    return True
 
 
 def load_inactive_segments(

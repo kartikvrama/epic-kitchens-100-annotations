@@ -1,34 +1,5 @@
-"""
-Objects to exclude from VLM prompting (liquids and fixed entities only).
-Derived from nouns_to_ignore_fixed_large_liquids_parts.md sections 1 and 3.
-"""
-
-# Fixed entities (section 1)
-FIXED_ENTITY_KEYS = {
-    "bin",
-    "hob",
-    "tap",
-    "cupboard",
-    "drawer",
-    "top",
-    "sink",
-    "rack:drying",
-    "kitchen",
-    "floor",
-    "chair",
-    "ladder",
-    "wall",
-    "shelf",
-    "stand",
-    "window",
-    "candle",
-    "airer",
-    "door:kitchen",
-    "fridge",
-}
-
-LIQUID_KEYS = {
-    "liquid:washing",
+LIQUID_SUBCLASSES = {
+    "liquid",
     "water",
     "oil",
     "sauce",
@@ -38,30 +9,30 @@ LIQUID_KEYS = {
     "vinegar",
     "liquid",
     "syrup",
+    "soup",
+    "curry",
+    "mixture",
+    "spreads",
+    "extract",
 }
 
-SMALL_PARTS_KEYS = {
-    "lid",
-    "cover",
-    "button",
-    "alarm",
-    "cap",
-    "plug",
-    "knob",
+GRANULAR_SUBCLASSES = {
+    "flour",
+    "rice",
+    "cereal",
+    "oatmeal",
+    "breadcrumb",
+    "lentil",
+    "yeast",
+    "seed",
+    "powder",
+}
+
+PART_SUBCLASSES = {
     "handle",
-    "wire",
-    "control:remote",
-    "battery",
-    "cork",
 }
 
-WASTE_KEYS = {
-    "peels",
-    "skin",
-    "rubbish"
-}
-
-SUBCLASSES_EXCLUDED = FIXED_ENTITY_KEYS | LIQUID_KEYS | WASTE_KEYS | SMALL_PARTS_KEYS
+SUBCLASSES_EXCLUDED = LIQUID_SUBCLASSES | GRANULAR_SUBCLASSES | PART_SUBCLASSES
 
 
 CATEGORIES_INCLUDED = {
@@ -69,8 +40,12 @@ CATEGORIES_INCLUDED = {
     "crockery",
     "cutlery",
     "utensils",
-    "appliances",
     "cookware",
     "materials",
     "cleaning equipment and material",
+    "vegetables",
+    "fruits and nuts",
+    "meat and substitute",
+    "dairy and eggs",
+    "baked goods and grains",
 }

@@ -4,9 +4,7 @@ import csv
 import json
 import pandas as pd
 from math import floor, ceil
-from utils import load_noun_class_names, hhmmss_to_seconds, get_crop_for_object
-
-from object_filtering import CATEGORIES_INCLUDED, SUBCLASSES_EXCLUDED
+from utils import load_noun_class_names, hhmmss_to_seconds, get_crop_for_object, include_object
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = ["EPIC_100_train.csv", "EPIC_100_validation.csv", "EPIC_100_test_timestamps.csv"]
@@ -110,9 +108,7 @@ def save_active_objects(video_id, video_info, narration_low_level_df, noun_class
                         object_info = noun_class_names.get(class_id, {})
                         subclass_name = object_info.get("key", "unknown")
                         category = object_info.get("category", "unknown")
-                        if category not in CATEGORIES_INCLUDED:
-                            continue
-                        if subclass_name in SUBCLASSES_EXCLUDED:
+                        if not include_object(category, subclass_name, name):
                             continue
                         # Exclude left/right hand (class_id 300, 301 or hand:left, hand:right)
                         if class_id in (11, 300, 301) or name in ("hand:left", "hand:right") or category == "hand":
