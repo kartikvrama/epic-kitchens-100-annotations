@@ -1,33 +1,6 @@
 [
   {
     "object": {
-      "class_id": 179,
-      "name": "extractor fan",
-      "subclass_name": "fan:extractor",
-      "category": "appliances"
-    },
-    "last_narration": {
-      "narration": "turn off extractor fan",
-      "verb": "turn-off",
-      "verb_class": 8,
-      "all_nouns": "['fan:extractor']",
-      "all_noun_classes": "[179]",
-      "start_timestamp": 74.05,
-      "stop_timestamp": 74.97,
-      "start_timestamp_str": "00:01:14.05",
-      "stop_timestamp_str": "00:01:14.97",
-      "tidy_label": null
-    },
-    "active_segment": {
-      "segment_id": "P06_07_ActiveUsage_0006",
-      "start_time": 71.26,
-      "end_time": 76.98,
-      "start_frame": 4275,
-      "end_frame": 4618
-    }
-  },
-  {
-    "object": {
       "class_id": 60,
       "name": "glove",
       "subclass_name": "glove",
@@ -109,33 +82,6 @@
   },
   {
     "object": {
-      "class_id": 46,
-      "name": "oven",
-      "subclass_name": "oven",
-      "category": "appliances"
-    },
-    "last_narration": {
-      "narration": "wipe cooker",
-      "verb": "wipe",
-      "verb_class": 2,
-      "all_nouns": "['cooker']",
-      "all_noun_classes": "[46]",
-      "start_timestamp": 1044.36,
-      "stop_timestamp": 1046.36,
-      "start_timestamp_str": "00:17:24.36",
-      "stop_timestamp_str": "00:17:26.36",
-      "tidy_label": null
-    },
-    "active_segment": {
-      "segment_id": "P06_07_ActiveUsage_0064",
-      "start_time": 1035.91,
-      "end_time": 1050.37,
-      "start_frame": 62154,
-      "end_frame": 63022
-    }
-  },
-  {
-    "object": {
       "class_id": 35,
       "name": "tray",
       "subclass_name": "tray",
@@ -186,6 +132,60 @@
       "end_time": 81.45,
       "start_frame": 4642,
       "end_frame": 4887
+    }
+  },
+  {
+    "object": {
+      "class_id": 25,
+      "name": "dough",
+      "subclass_name": "dough",
+      "category": "baked goods and grains"
+    },
+    "last_narration": {
+      "narration": "put dough in pan",
+      "verb": "put-in",
+      "verb_class": 5,
+      "all_nouns": "['dough', 'pan']",
+      "all_noun_classes": "[25, 5]",
+      "start_timestamp": 404.96,
+      "stop_timestamp": 405.63,
+      "start_timestamp_str": "00:06:44.96",
+      "stop_timestamp_str": "00:06:45.63",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0028",
+      "start_time": 401.44,
+      "end_time": 409.7,
+      "start_frame": 24086,
+      "end_frame": 24582
+    }
+  },
+  {
+    "object": {
+      "class_id": 6,
+      "name": "lid",
+      "subclass_name": "lid",
+      "category": "containers"
+    },
+    "last_narration": {
+      "narration": "put lid on sun-dried tomatoes",
+      "verb": "put-on",
+      "verb_class": 1,
+      "all_nouns": "['lid', 'tomato:sun:dried']",
+      "all_noun_classes": "[6, 43]",
+      "start_timestamp": 714.4,
+      "stop_timestamp": 717.18,
+      "start_timestamp_str": "00:11:54.40",
+      "stop_timestamp_str": "00:11:57.18",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0044",
+      "start_time": 706.34,
+      "end_time": 717.18,
+      "start_frame": 42380,
+      "end_frame": 43030
     }
   },
   {
@@ -325,6 +325,60 @@
   },
   {
     "object": {
+      "class_id": 43,
+      "name": "tomato",
+      "subclass_name": "tomato",
+      "category": "vegetables"
+    },
+    "last_narration": {
+      "narration": "pick up tomatoes",
+      "verb": "pick-up",
+      "verb_class": 0,
+      "all_nouns": "['tomato']",
+      "all_noun_classes": "[43]",
+      "start_timestamp": 871.36,
+      "stop_timestamp": 872.33,
+      "start_timestamp_str": "00:14:31.36",
+      "stop_timestamp_str": "00:14:32.33",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0053",
+      "start_time": 869.35,
+      "end_time": 872.33,
+      "start_frame": 52161,
+      "end_frame": 52339
+    }
+  },
+  {
+    "object": {
+      "class_id": 125,
+      "name": "sweetcorn",
+      "subclass_name": "corn",
+      "category": "vegetables"
+    },
+    "last_narration": {
+      "narration": "put down sweetcorn",
+      "verb": "put-down",
+      "verb_class": 1,
+      "all_nouns": "['sweetcorn']",
+      "all_noun_classes": "[125]",
+      "start_timestamp": 520.65,
+      "stop_timestamp": 521.84,
+      "start_timestamp_str": "00:08:40.65",
+      "stop_timestamp_str": "00:08:41.84",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0034",
+      "start_time": 513.47,
+      "end_time": 521.84,
+      "start_frame": 30808,
+      "end_frame": 31310
+    }
+  },
+  {
+    "object": {
       "class_id": 7,
       "name": "bowl",
       "subclass_name": "bowl",
@@ -348,6 +402,33 @@
       "end_time": 882.63,
       "start_frame": 52468,
       "end_frame": 52957
+    }
+  },
+  {
+    "object": {
+      "class_id": 16,
+      "name": "onion",
+      "subclass_name": "onion",
+      "category": "vegetables"
+    },
+    "last_narration": {
+      "narration": "sprinkle onion",
+      "verb": "sprinkle",
+      "verb_class": 42,
+      "all_nouns": "['onion']",
+      "all_noun_classes": "[16]",
+      "start_timestamp": 548.07,
+      "stop_timestamp": 554.08,
+      "start_timestamp_str": "00:09:08.07",
+      "stop_timestamp_str": "00:09:14.08",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0036",
+      "start_time": 536.26,
+      "end_time": 554.08,
+      "start_frame": 32175,
+      "end_frame": 33244
     }
   },
   {
@@ -406,6 +487,33 @@
   },
   {
     "object": {
+      "class_id": 43,
+      "name": "sun dried tomato",
+      "subclass_name": "tomato",
+      "category": "vegetables"
+    },
+    "last_narration": {
+      "narration": "pick up tomatoes",
+      "verb": "pick-up",
+      "verb_class": 0,
+      "all_nouns": "['tomato']",
+      "all_noun_classes": "[43]",
+      "start_timestamp": 871.36,
+      "stop_timestamp": 872.33,
+      "start_timestamp_str": "00:14:31.36",
+      "stop_timestamp_str": "00:14:32.33",
+      "tidy_label": null
+    },
+    "active_segment": {
+      "segment_id": "P06_07_ActiveUsage_0053",
+      "start_time": 869.35,
+      "end_time": 872.33,
+      "start_frame": 52161,
+      "end_frame": 52339
+    }
+  },
+  {
+    "object": {
       "class_id": 19,
       "name": "cheese bag",
       "subclass_name": "bag",
@@ -433,29 +541,29 @@
   },
   {
     "object": {
-      "class_id": 70,
-      "name": "dishwasher",
-      "subclass_name": "dishwasher",
-      "category": "appliances"
+      "class_id": 32,
+      "name": "cheese",
+      "subclass_name": "cheese",
+      "category": "dairy and eggs"
     },
     "last_narration": {
-      "narration": "close dishwasher",
-      "verb": "close",
-      "verb_class": 4,
-      "all_nouns": "['dishwasher']",
-      "all_noun_classes": "[70]",
-      "start_timestamp": 898.66,
-      "stop_timestamp": 899.63,
-      "start_timestamp_str": "00:14:58.66",
-      "stop_timestamp_str": "00:14:59.63",
+      "narration": "sprinkle cheese",
+      "verb": "sprinkle",
+      "verb_class": 42,
+      "all_nouns": "['cheese']",
+      "all_noun_classes": "[32]",
+      "start_timestamp": 760.5,
+      "stop_timestamp": 793.51,
+      "start_timestamp_str": "00:12:40.50",
+      "stop_timestamp_str": "00:13:13.51",
       "tidy_label": null
     },
     "active_segment": {
-      "segment_id": "P06_07_ActiveUsage_0056",
-      "start_time": 896.86,
-      "end_time": 899.63,
-      "start_frame": 53811,
-      "end_frame": 53977
+      "segment_id": "P06_07_ActiveUsage_0046",
+      "start_time": 730.8,
+      "end_time": 798.11,
+      "start_frame": 43848,
+      "end_frame": 47886
     }
   },
   {

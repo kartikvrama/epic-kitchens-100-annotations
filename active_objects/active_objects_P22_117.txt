@@ -23,7 +23,7 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [326, 351, 376, 413, 451, 488]
-Objects in sequence: []
+Objects in sequence: ['containers (lid) (lid)']
 Verb-noun pairs in sequence: ['pick up lid;6.31;7.21', 'put down lid;7.31;8.41', 'close drawer;8.96;9.77']
 ************
 Start timestamp: 10.21, Stop timestamp: 10.96
@@ -68,7 +68,7 @@ Narration: put down bowl
 ------
 ************
 Frame IDs in sequence: [1015, 1051, 1111, 1171, 1208, 1246]
-Objects in sequence: ['appliances (maker:coffee) (coffee machine)', 'crockery (cup) (cup)', 'utensils (holder) (coffee holder)']
+Objects in sequence: ['crockery (cup) (cup)', 'utensils (holder) (coffee holder)']
 Verb-noun pairs in sequence: ['insert coffee holder;19.93;21.35', 'pick up bowl;23.35;23.9', 'put down bowl;24.6;25.3']
 ************
 Start timestamp: 26.16, Stop timestamp: 26.8
@@ -184,7 +184,7 @@ Narration: close fridge
 ------
 ************
 Frame IDs in sequence: [3335, 3371, 3406, 3458, 3484, 3511]
-Objects in sequence: ['containers (container) (container)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (container lid)']
 Verb-noun pairs in sequence: ['open cupboard;66.43;67.28', 'open fridge;67.33;68.59', 'close fridge;69.82;71.21000000000001']
 ************
 Start timestamp: 71.09, Stop timestamp: 74.5
@@ -201,7 +201,7 @@ Narration: pick up ladle
 ------
 ************
 Frame IDs in sequence: [3766, 3791, 3816, 3851, 3901]
-Objects in sequence: ['containers (container) (container)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (container lid)']
 Verb-noun pairs in sequence: ['put down lid;74.71000000000001;75.22', 'open drawer;76.24;77.03999999999999', 'pick up ladle;77.14;78.1']
 ************
 Start timestamp: 78.2, Stop timestamp: 78.82
@@ -215,7 +215,7 @@ Narration: pour chickpeas
 ------
 ************
 Frame IDs in sequence: [3917, 3986, 4021, 4184, 4339, 4494]
-Objects in sequence: ['containers (container) (container)', 'cookware (pan) (saucepan)', 'utensils (ladle) (ladle)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (container lid)', 'cookware (pan) (saucepan)', 'utensils (ladle) (ladle)']
 Verb-noun pairs in sequence: ['close drawer;78.2;78.82', 'pick up container;79.42;80.46000000000001', 'pour chickpeas;80.72;93.96000000000001']
 ************
 Start timestamp: 96.19, Stop timestamp: 96.64
@@ -229,7 +229,7 @@ Narration: turn on hob
 ------
 ************
 Frame IDs in sequence: [4815, 4858, 4929, 5001, 5125, 5250]
-Objects in sequence: ['containers (container) (container)', 'utensils (ladle) (ladle)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (container lid)', 'utensils (ladle) (ladle)']
 Verb-noun pairs in sequence: ['put down ladle;96.19;96.64', 'put down lid;96.9;97.24000000000001', 'turn on hob;97.46000000000001;107.1']
 ************
 Start timestamp: 107.99000000000001, Stop timestamp: 109.50999999999999
@@ -246,7 +246,7 @@ Narration: put down lid
 ------
 ************
 Frame IDs in sequence: [5414, 5450, 5504, 5559, 5611, 5663]
-Objects in sequence: ['cookware (pan) (saucepan)']
+Objects in sequence: ['containers (lid) (saucepan lid)', 'cookware (pan) (saucepan)']
 Verb-noun pairs in sequence: ['open drawer;107.99000000000001;109.50999999999999', 'close drawer;110.8;111.63', 'put down lid;112.84;114.28']
 ************
 Start timestamp: 114.52000000000001, Stop timestamp: 115.43
@@ -260,7 +260,7 @@ Narration: open bag
 ------
 ************
 Frame IDs in sequence: [5730, 5763, 5902, 6010, 6119, 6163]
-Objects in sequence: ['containers (bag) (bag)', 'containers (container) (container)', 'cookware (pan) (saucepan)']
+Objects in sequence: ['containers (bag) (bag)', 'containers (container) (container)', 'containers (lid) (container lid)', 'cookware (pan) (saucepan)']
 Verb-noun pairs in sequence: ['pick up lid and container;114.52000000000001;115.43', 'put down lid and container;117.69;118.78999999999999', 'open bag;121.62;123.75']
 ************
 Start timestamp: 123.89, Stop timestamp: 124.89
@@ -393,7 +393,7 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [8746, 8836, 8926, 9058, 9124, 9191]
-Objects in sequence: ['cleaning equipment and material (sponge) (sponge)', 'containers (container) (container)']
+Objects in sequence: ['cleaning equipment and material (sponge) (sponge)', 'containers (container) (container)', 'containers (lid) (lid)']
 Verb-noun pairs in sequence: ['pick up lid;174.56;175.46', 'put down lid;178.45;179.01', 'turn on tap;183.65;184.53']
 ************
 Start timestamp: 184.63, Stop timestamp: 186.27
@@ -410,7 +410,7 @@ Narration: turn off tap
 ------
 ************
 Frame IDs in sequence: [9251, 9284, 9383, 9483, 9682, 9726]
-Objects in sequence: ['cleaning equipment and material (sponge) (sponge)', 'containers (container) (container)']
+Objects in sequence: ['cleaning equipment and material (sponge) (sponge)', 'containers (container) (container)', 'containers (lid) (lid)']
 Verb-noun pairs in sequence: ['rinse lid;184.63;186.27', 'put down lid;193.53;194.32', 'turn off tap;194.4;195.16']
 ************
 Start timestamp: 194.79, Stop timestamp: 195.39
@@ -450,7 +450,7 @@ Narration: put down lid
 ------
 ************
 Frame IDs in sequence: [10751, 11046, 11317, 11363, 11625, 11655]
-Objects in sequence: ['containers (container) (container)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (lid)']
 Verb-noun pairs in sequence: ['rinse container;211.35;224.85', 'pick up lid;226.29;227.29', 'put down lid;232.24;233.49']
 ************
 Start timestamp: 234.09, Stop timestamp: 234.84
@@ -467,7 +467,7 @@ Narration: pick up container
 ------
 ************
 Frame IDs in sequence: [11709, 11767, 11826, 11876, 11917, 11959]
-Objects in sequence: ['containers (container) (container)']
+Objects in sequence: ['containers (container) (container)', 'containers (lid) (lid)']
 Verb-noun pairs in sequence: ['pick up lid;234.09;234.84', 'rinse lid;235.95;237.94', 'pick up container;238.95;239.28']
 ************
 Start timestamp: 239.38, Stop timestamp: 244.19
@@ -564,7 +564,7 @@ Narration: put down courgette
 ------
 ************
 Frame IDs in sequence: [13891, 13943, 13996, 14101, 14126, 14206]
-Objects in sequence: ['utensils (board:chopping) (chopping board)']
+Objects in sequence: ['utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette)']
 Verb-noun pairs in sequence: ['turn on tap;277.5;278.09000000000003', 'turn off tap;282.03;282.72', 'put down courgette;283.82;284.54']
 ************
 Start timestamp: 285.09000000000003, Stop timestamp: 285.84000000000003
@@ -578,7 +578,7 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [14264, 14307, 14351, 14417, 14484, 14551]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick up knife;285.09000000000003;285.84000000000003', 'cut courgette;286.12;290.7', 'put down knife;291.03;291.54']
 ************
 Start timestamp: 291.89, Stop timestamp: 292.74
@@ -592,7 +592,7 @@ Narration: pick up peeler
 ------
 ************
 Frame IDs in sequence: [14613, 14731, 14850, 15026, 15146, 15185]
-Objects in sequence: ['utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)']
+Objects in sequence: ['utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)', 'vegetables (courgette) (courgette)']
 Verb-noun pairs in sequence: ['open drawer;291.89;292.74', 'search for peeler;294.77;302.79', 'pick up peeler;302.89;303.79']
 ************
 Start timestamp: 303.71, Stop timestamp: 304.43
@@ -609,7 +609,7 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [15663, 16188, 16713, 17346, 17376, 17500]
-Objects in sequence: ['utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)']
+Objects in sequence: ['utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)', 'vegetables (courgette) (courgette)']
 Verb-noun pairs in sequence: ['peel courgette;305.03;346.8', 'put down peeler;346.9;347.54', 'turn on tap;349.71;350.43']
 ************
 Start timestamp: 350.53, Stop timestamp: 353.68
@@ -623,7 +623,7 @@ Narration: put down courgette
 ------
 ************
 Frame IDs in sequence: [17560, 17605, 17651, 17684, 17716, 17768]
-Objects in sequence: ['utensils (board:chopping) (chopping board)']
+Objects in sequence: ['utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette)']
 Verb-noun pairs in sequence: ['rinse courgette;350.53;353.68', 'turn off tap;353.78;354.22', 'put down courgette;354.98;355.78']
 ************
 Start timestamp: 357.37, Stop timestamp: 364.11
@@ -646,7 +646,7 @@ Narration: throw courgette skin
 ------
 ************
 Frame IDs in sequence: [17961, 18101, 18242, 18384, 18438, 18676]
-Objects in sequence: ['containers (bag) (bag)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)']
+Objects in sequence: ['containers (bag) (bag)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)', 'vegetables (courgette) (courgette)']
 Verb-noun pairs in sequence: ['pick up courgette skin;357.37;364.11', 'throw courgette skin;367.06;369.3', 'throw courgette skin;373.29;374.28']
 ************
 Start timestamp: 374.38, Stop timestamp: 375.26
@@ -703,7 +703,7 @@ Narration: cut courgette
 ------
 ************
 Frame IDs in sequence: [19065, 19109, 19226, 19726, 20263, 20801]
-Objects in sequence: ['cleaning equipment and material (cloth) (cloth)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)']
+Objects in sequence: ['cleaning equipment and material (cloth) (cloth)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['dry hands;380.74;382.78', 'move peeler;384.16;385.01', 'cut courgette;385.59;422.87']
 ************
 Start timestamp: 422.77, Stop timestamp: 423.16
@@ -723,7 +723,7 @@ Narration: turn off tap
 ------
 ************
 Frame IDs in sequence: [21231, 21264, 21298, 21333, 21371, 21409]
-Objects in sequence: []
+Objects in sequence: ['vegetables (courgette) (courgette bit)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick courgettes;423.67;426.16', 'turn on tap;426.38;426.79', 'turn off tap;427.85;428.44']
 ************
 Start timestamp: 429.61, Stop timestamp: 430.49
@@ -740,7 +740,7 @@ Narration: put down courgettes
 ------
 ************
 Frame IDs in sequence: [21490, 21521, 21542, 21564, 21590, 21621]
-Objects in sequence: ['utensils (board:chopping) (chopping board)']
+Objects in sequence: ['utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['put down courgettes;429.61;430.49', 'move courgettes;431.35;431.99', 'put down courgettes;432.09;433.32']
 ************
 Start timestamp: 433.4, Stop timestamp: 433.98
@@ -754,7 +754,7 @@ Narration: move courgettes
 ------
 ************
 Frame IDs in sequence: [21676, 21726, 21801, 21851, 21901, 21930]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick up knife;433.4;433.98', 'cut courgettes;434.08;436.67', 'move courgettes;437.77;438.94']
 ************
 Start timestamp: 446.74, Stop timestamp: 447.32
@@ -768,7 +768,7 @@ Narration: cut courgettes
 ------
 ************
 Frame IDs in sequence: [22338, 22405, 22438, 22502, 22567, 22644]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['move courgettes;446.74;447.32', 'pick courgettes;448.02;448.77', 'cut courgettes;450.55;453.97']
 ************
 Start timestamp: 454.07, Stop timestamp: 455.01
@@ -782,7 +782,7 @@ Narration: cut courgettes
 ------
 ************
 Frame IDs in sequence: [22717, 22755, 22797, 22840, 22888, 22936]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['move courgettes;454.07;455.01', 'pick courgettes;455.03;455.45', 'cut courgettes;455.89;460.14']
 ************
 Start timestamp: 460.75, Stop timestamp: 461.75
@@ -799,7 +799,7 @@ Narration: cut courgettes
 ------
 ************
 Frame IDs in sequence: [23055, 23084, 23151, 23251, 23392, 23463]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['move courgettes;460.75;461.75', 'cut courgettes;462.36;465.86', 'cut courgettes;467.26;469.83']
 ************
 Start timestamp: 470.46, Stop timestamp: 472.28
@@ -813,7 +813,7 @@ Narration: turn on tap
 ------
 ************
 Frame IDs in sequence: [23559, 23588, 23616, 23644, 23662, 23680]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['cut courgettes;470.46;472.28', 'put down knife;472.82;473.19', 'turn on tap;473.67;473.97']
 ************
 Start timestamp: 473.97, Stop timestamp: 474.87
@@ -875,7 +875,7 @@ Narration: open oil
 ------
 ************
 Frame IDs in sequence: [24838, 24882, 24926, 25005, 25084, 25132]
-Objects in sequence: ['containers (bottle) (oil bottle)', 'cookware (pan) (pan)']
+Objects in sequence: ['containers (bottle) (oil bottle)', 'containers (lid) (lid)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['put down pan;496.26;498.02', 'pick up oil;498.12;498.93', 'open oil;501.3;503.04']
 ************
 Start timestamp: 503.45, Stop timestamp: 505.33
@@ -889,7 +889,7 @@ Narration: put down oil
 ------
 ************
 Frame IDs in sequence: [25209, 25246, 25330, 25392, 25438, 25484]
-Objects in sequence: ['containers (bottle) (oil bottle)', 'cookware (pan) (pan)']
+Objects in sequence: ['containers (bottle) (oil bottle)', 'containers (lid) (lid)', 'cookware (pan) (pan)']
 Verb-noun pairs in sequence: ['pour oil;503.45;505.33', 'close oil bottle;505.65;509.1', 'put down oil;509.52;510.06']
 ************
 Start timestamp: 509.98, Stop timestamp: 511.79
@@ -909,7 +909,7 @@ Narration: put down cutting board
 ------
 ************
 Frame IDs in sequence: [25686, 25747, 25838, 25901, 26205, 26509]
-Objects in sequence: ['cookware (pan) (pan)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)']
+Objects in sequence: ['cookware (pan) (pan)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'utensils (peeler:potato) (peeler)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['move peeler;513.0;515.49', 'pick up cutting board;515.56;518.84', 'put down cutting board;529.82;531.0']
 ************
 Start timestamp: 530.89, Stop timestamp: 531.74
@@ -929,7 +929,7 @@ Narration: pick up onion
 ------
 ************
 Frame IDs in sequence: [26609, 26637, 26665, 26721, 26776, 26817]
-Objects in sequence: ['containers (bag) (bag)', 'cookware (pan) (pan)']
+Objects in sequence: ['containers (bag) (bag)', 'cookware (pan) (pan)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick courgettes;531.84;532.79', 'close bag;533.94;536.04', 'pick up onion;536.34;537.15']
 ************
 Start timestamp: 536.99, Stop timestamp: 548.49
@@ -946,7 +946,7 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [27092, 27159, 27226, 27272, 27319, 27396]
-Objects in sequence: ['cutlery (knife) (knife)', 'materials (paper) (paper)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'materials (paper) (paper)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put down onion;541.33;542.83', 'cut onion;542.93;547.82', 'put down knife;547.89;548.48']
 ************
 Start timestamp: 550.84, Stop timestamp: 551.17
@@ -963,7 +963,7 @@ Narration: pick up onion
 ------
 ************
 Frame IDs in sequence: [27688, 27815, 27942, 28101, 28226]
-Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['pick up knife;550.84;551.17', 'cut onion;551.6;560.93', 'pick up onion;561.37;565.64']
 ************
 Start timestamp: 565.74, Stop timestamp: 567.02
@@ -983,7 +983,7 @@ Narration: put down knife
 ------
 ************
 Frame IDs in sequence: [28313, 28396, 28546, 28696, 28846, 28996]
-Objects in sequence: ['cookware (pan) (pan)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['cookware (pan) (pan)', 'cutlery (knife) (knife)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put down onion;565.74;567.02', 'pick up knife;567.71;568.49', 'put down knife;579.97;580.6']
 ************
 Start timestamp: 580.13, Stop timestamp: 581.69
@@ -1000,7 +1000,7 @@ Narration: open bag
 ------
 ************
 Frame IDs in sequence: [29115, 29141, 29196, 29280, 29319, 29351]
-Objects in sequence: ['containers (bag) (bag)', 'cookware (pan) (pan)', 'utensils (board:chopping) (chopping board)']
+Objects in sequence: ['containers (bag) (bag)', 'cookware (pan) (pan)', 'utensils (board:chopping) (chopping board)', 'vegetables (courgette) (courgette pieces)', 'vegetables (onion) (onion)']
 Verb-noun pairs in sequence: ['put down onion;581.91;582.96', 'pick up onion;583.06;586.04', 'open bag;586.14;587.25']
 ************
 Start timestamp: 587.35, Stop timestamp: 588.53
@@ -1096,7 +1096,7 @@ Narration: pick up glass
 ------
 ************
 Frame IDs in sequence: [30665, 30785, 30906, 30977, 31048, 31101]
-Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['stir courgettes;609.61;620.5', 'put down spatula;620.64;621.19', 'pick up glass;621.44;622.02']
 ************
 Start timestamp: 622.29, Stop timestamp: 624.04
@@ -1110,7 +1110,7 @@ Narration: pick up spatula
 ------
 ************
 Frame IDs in sequence: [31134, 31163, 31192, 31219, 31246, 31273]
-Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pour water;622.29;624.04', 'put down glass;624.2;625.15', 'pick up spatula;625.24;625.86']
 ************
 Start timestamp: 625.96, Stop timestamp: 630.88
@@ -1127,7 +1127,7 @@ Narration: pick up jar
 ------
 ************
 Frame IDs in sequence: [31370, 31427, 31484, 31575, 31666, 31726]
-Objects in sequence: ['containers (container) (salt container)', 'cookware (pan) (pan)', 'cutlery (spoon) (spoon)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['containers (container) (salt container)', 'cookware (pan) (pan)', 'cutlery (spoon) (spoon)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['stir courgettes;625.96;630.88', 'open jar;633.08;633.71', 'pick up jar;634.31;634.88']
 ************
 Start timestamp: 635.17, Stop timestamp: 636.64
@@ -1141,7 +1141,7 @@ Narration: pick up lid
 ------
 ************
 Frame IDs in sequence: [31784, 31826, 31880, 31992, 32048, 32105]
-Objects in sequence: ['containers (container) (salt container)', 'cutlery (spoon) (spoon)']
+Objects in sequence: ['containers (container) (salt container)', 'containers (lid) (lid)', 'cutlery (spoon) (spoon)']
 Verb-noun pairs in sequence: ['pick up salt;635.17;636.64', 'pour salt;636.69;637.9', 'pick up lid;642.06;642.5']
 ************
 Start timestamp: 642.29, Stop timestamp: 642.69
@@ -1161,7 +1161,7 @@ Narration: rinse hands
 ------
 ************
 Frame IDs in sequence: [32199, 32237, 32275, 32313, 32359]
-Objects in sequence: ['containers (container) (salt container)']
+Objects in sequence: ['containers (container) (salt container)', 'containers (lid) (lid)']
 Verb-noun pairs in sequence: ['close lid;643.21;643.68', 'turn on tap;646.08;646.6', 'rinse hands;646.64;647.71']
 ************
 Start timestamp: 647.68, Stop timestamp: 648.12
@@ -1257,7 +1257,7 @@ Narration: turn on scale
 ------
 ************
 Frame IDs in sequence: [33571, 33581, 33592, 33613, 33629, 33645]
-Objects in sequence: ['appliances (scale) (scale)', 'crockery (bowl) (bowl)']
+Objects in sequence: ['crockery (bowl) (bowl)']
 Verb-noun pairs in sequence: ['put down bowl;671.26;671.92', 'put down scale;671.99;672.6', 'turn on scale;672.7;673.31']
 ************
 Start timestamp: 673.11, Stop timestamp: 674.59
@@ -1274,7 +1274,7 @@ Narration: press button
 ------
 ************
 Frame IDs in sequence: [33801, 33836, 33871, 33897, 33940, 33984]
-Objects in sequence: ['appliances (scale) (scale)', 'containers (jar) (jar)', 'crockery (bowl) (bowl)']
+Objects in sequence: ['containers (jar) (jar)', 'containers (lid) (jar lid)', 'crockery (bowl) (bowl)']
 Verb-noun pairs in sequence: ['move bowl;675.83;676.47', 'press button;677.01;678.19', 'press button;679.38;680.17']
 ************
 Start timestamp: 680.77, Stop timestamp: 682.37
@@ -1288,7 +1288,7 @@ Narration: pour rice
 ------
 ************
 Frame IDs in sequence: [34051, 34109, 34142, 34173, 34480, 34801]
-Objects in sequence: ['appliances (scale) (scale)', 'containers (jar) (jar)', 'crockery (bowl) (bowl)']
+Objects in sequence: ['containers (jar) (jar)', 'containers (lid) (jar lid)', 'crockery (bowl) (bowl)']
 Verb-noun pairs in sequence: ['open jar;680.77;682.37', 'pick up jar;682.5;683.5', 'pour rice;683.6;701.65']
 ************
 Start timestamp: 701.87, Stop timestamp: 702.38
@@ -1305,7 +1305,7 @@ Narration: open cupboard
 ------
 ************
 Frame IDs in sequence: [35101, 35128, 35156, 35211, 35264, 35293]
-Objects in sequence: ['containers (jar) (jar)', 'crockery (bowl) (bowl)']
+Objects in sequence: ['containers (jar) (jar)', 'containers (lid) (jar lid)', 'crockery (bowl) (bowl)']
 Verb-noun pairs in sequence: ['put down jar;701.87;702.38', 'pick up jar;704.29;704.82', 'open cupboard;705.22;706.28']
 ************
 Start timestamp: 706.3, Stop timestamp: 707.05
@@ -1319,7 +1319,7 @@ Narration: move bowl
 ------
 ************
 Frame IDs in sequence: [35332, 35363, 35401, 35428, 35455, 35490]
-Objects in sequence: ['appliances (scale) (scale)', 'containers (jar) (jar)', 'crockery (bowl) (bowl)']
+Objects in sequence: ['containers (jar) (jar)', 'containers (lid) (jar lid)', 'crockery (bowl) (bowl)']
 Verb-noun pairs in sequence: ['put down jar;706.3;707.05', 'close cupboard;707.15;708.13', 'move bowl;708.8;710.05']
 ************
 Start timestamp: 710.15, Stop timestamp: 711.4
@@ -1336,7 +1336,7 @@ Narration: stir courgettes
 ------
 ************
 Frame IDs in sequence: [35521, 35555, 35659, 35782, 35889, 35996]
-Objects in sequence: ['appliances (scale) (scale)', 'cookware (pan) (pan)', 'crockery (bowl) (bowl)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'crockery (bowl) (bowl)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick up scale;710.15;711.4', 'pick up spatula;713.25;713.7', 'stir courgettes;713.96;721.85']
 ************
 Start timestamp: 722.0, Stop timestamp: 728.2
@@ -1350,7 +1350,7 @@ Narration: put down spatula
 ------
 ************
 Frame IDs in sequence: [36193, 36272, 36351, 36483, 36575, 36634]
-Objects in sequence: ['cookware (pan) (pan)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['adjust hob;722.0;728.2', 'stir courgettes;728.3;732.34', 'put down spatula;732.45;733.0']
 ************
 Start timestamp: 734.71, Stop timestamp: 735.29
@@ -1562,7 +1562,7 @@ Narration: pick up spatula
 ------
 ************
 Frame IDs in sequence: [40526, 40568, 40601, 40638, 40664, 40690]
-Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pour water;810.17;811.54', 'put down glass;811.9;812.77', 'pick up spatula;812.87;814.21']
 ************
 Start timestamp: 814.54, Stop timestamp: 820.69
@@ -1576,7 +1576,7 @@ Narration: pick up pepper
 ------
 ************
 Frame IDs in sequence: [40798, 40887, 40976, 41058, 41084, 41132]
-Objects in sequence: ['cookware (pan) (pan)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['stir courgettes;814.54;820.69', 'put down spatula;821.19;821.7', 'pick up pepper;822.56;823.49']
 ************
 Start timestamp: 823.66, Stop timestamp: 824.46
@@ -1593,7 +1593,7 @@ Narration: put down pepper
 ------
 ************
 Frame IDs in sequence: [41200, 41261, 41312, 41363, 41434, 41480]
-Objects in sequence: ['cookware (pan) (pan)']
+Objects in sequence: ['cookware (pan) (pan)', 'vegetables (courgette) (courgette pieces)', 'vegetables (pepper) (pepper)']
 Verb-noun pairs in sequence: ['open pepper;823.66;824.46', 'pour pepper;824.62;827.98', 'put down pepper;828.56;829.85']
 ************
 Start timestamp: 829.44, Stop timestamp: 830.45
@@ -1616,7 +1616,7 @@ Narration: close drawer
 ------
 ************
 Frame IDs in sequence: [41592, 41709, 41807, 41905, 41994, 42096]
-Objects in sequence: ['materials (mat) (place mat)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['materials (mat) (place mat)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['stir courgettes;830.52;835.83', 'open drawer;837.75;838.5', 'close drawer;839.2;842.2']
 ************
 Start timestamp: 841.8, Stop timestamp: 846.55
@@ -1752,7 +1752,7 @@ Narration: move cutlery
 ------
 ************
 Frame IDs in sequence: [44784, 44840, 44951, 45123, 45209, 45296]
-Objects in sequence: ['cookware (pan) (saucepan)', 'crockery (plate) (plate)', 'utensils (board:chopping) (chopping board)', 'utensils (ladle) (ladle)']
+Objects in sequence: ['containers (lid) (saucepan lid)', 'cookware (pan) (saucepan)', 'crockery (plate) (plate)', 'utensils (board:chopping) (chopping board)', 'utensils (ladle) (ladle)']
 Verb-noun pairs in sequence: ['remove lid;895.51;896.09', 'put down lid;896.14;900.44', 'move cutlery;905.24;906.82']
 ************
 Start timestamp: 907.0, Stop timestamp: 908.87
@@ -1865,7 +1865,7 @@ Narration: pick up glass
 ------
 ************
 Frame IDs in sequence: [47859, 47934, 47989, 48044, 48095, 48146]
-Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)']
+Objects in sequence: ['cookware (pan) (pan)', 'crockery (glass) (glass)', 'utensils (spatula) (spatula)', 'vegetables (courgette) (courgette pieces)']
 Verb-noun pairs in sequence: ['pick up spatula;956.95;957.45', 'stir courgettes;957.55;962.05', 'pick up glass;962.99;963.5']
 ************
 Start timestamp: 964.6, Stop timestamp: 965.0
