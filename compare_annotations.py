@@ -2,7 +2,7 @@ import os
 import json
 from collections import defaultdict
 from utils import load_noun_class_names
-from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
+from object_filtering import SUBCLASSES_EXCLUDED
 import argparse
 
 
@@ -44,7 +44,7 @@ def build_filtered_flat_segments(inactive_segments_data, video_id, objects_skip)
         if len(parts) < 3:
             continue
         subclass_name = parts[1]
-        if subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM:
+        if subclass_name in SUBCLASSES_EXCLUDED:
             continue
         for seg in inactive_segments_data[obj_key]:
             items.append((obj_key, seg["start_time"], seg["end_time"]))
@@ -127,7 +127,7 @@ def main():
 
     # Build filtered flat list of segments (object skip list applied)
     flat_segments = build_filtered_flat_segments(
-        inactive_segments_data, video_id, OBJECTS_TO_EXCLUDE_FROM_VLM
+        inactive_segments_data, video_id, SUBCLASSES_EXCLUDED
     )
 
     # Load manual labels as dict
