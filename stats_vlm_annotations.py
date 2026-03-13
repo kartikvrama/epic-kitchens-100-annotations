@@ -5,7 +5,7 @@ from collections import defaultdict
 from utils import load_inactive_segments, load_inactive_annotations
 from utils import MIN_DURATION_INACTIVE_SEGMENT
 
-from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
+from object_filtering import SUBCLASSES_EXCLUDED
 
 INACTIVE_ANNOTATIONS_DIR = "vlm_annotations_maxImages1_minSpacing3_20260226"
 LENGTH_BINS = [(0, 10, "0-10s"), (10, 60, "10-60s"), (60, 300, "60-300s"), (300, float("inf"), "300s+")]
@@ -54,13 +54,13 @@ def main():
         if not fname.endswith("_labels.jsonl"):
             continue
         video_id = fname.replace("inactive_segments_", "").replace("_labels.jsonl", "")
-        inactive = load_inactive_segments(video_id, object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM, min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT)
+        inactive = load_inactive_segments(video_id, object_exclusion_list=SUBCLASSES_EXCLUDED, min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT)
         if not video_id or not inactive:
             continue
         anns, keys_missing, _ = load_inactive_annotations(
             video_id,
             annotations_filepath=os.path.join(vlm_dir, fname),
-            object_exclusion_list=OBJECTS_TO_EXCLUDE_FROM_VLM,
+            object_exclusion_list=SUBCLASSES_EXCLUDED,
             min_duration_inactive_segment=MIN_DURATION_INACTIVE_SEGMENT
         )
         if keys_missing:
@@ -71,7 +71,7 @@ def main():
         for a in anns:
             subclass = a["query_object"].split("/", maxsplit=2)[1]
             name = a["query_object"].split("/", maxsplit=2)[2]
-            if subclass in OBJECTS_TO_EXCLUDE_FROM_VLM:
+            if subclass in SUBCLASSES_EXCLUDED:
                 continue
             sub_name_list[subclass].append(name)
         sub_count = {sub: len(names) for sub, names in sub_name_list.items()}

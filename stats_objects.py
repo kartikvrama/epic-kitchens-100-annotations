@@ -4,7 +4,7 @@ import json
 import numpy as np
 from utils import load_noun_class_names
 from utils import ACTIVE_OBJECTS_DIR
-from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
+from object_filtering import SUBCLASSES_EXCLUDED
 from collections import defaultdict
 
 NOUN_CLASS_NAMES = load_noun_class_names()
@@ -30,7 +30,7 @@ for file in os.listdir(ACTIVE_OBJECTS_DIR):
         data = json.load(f)
         for segment in data:
             for object in segment['objects_in_sequence']:
-                if object['subclass_name'] in OBJECTS_TO_EXCLUDE_FROM_VLM:
+                if object['subclass_name'] in SUBCLASSES_EXCLUDED:
                     continue
                 sub_name_dict[object['subclass_name']].add(object['name'])
 

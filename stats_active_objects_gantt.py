@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 try:
-    from objects_to_exclude_vlm import OBJECTS_TO_EXCLUDE_FROM_VLM
+    from object_filtering import SUBCLASSES_EXCLUDED
 except ImportError:
-    OBJECTS_TO_EXCLUDE_FROM_VLM = set()
+    SUBCLASSES_EXCLUDED = set()
 
 import argparse
 
@@ -41,11 +41,11 @@ def _parse_key(key: str):
 
 
 def _should_exclude(key: str) -> bool:
-    """True if subclass_name or instance name is in OBJECTS_TO_EXCLUDE_FROM_VLM."""
+    """True if subclass_name or instance name is in SUBCLASSES_EXCLUDED."""
     _, subclass_name, name = _parse_key(key)
     if subclass_name is None:
         return True
-    return subclass_name in OBJECTS_TO_EXCLUDE_FROM_VLM or name in OBJECTS_TO_EXCLUDE_FROM_VLM
+    return subclass_name in SUBCLASSES_EXCLUDED or name in SUBCLASSES_EXCLUDED
 
 
 def build_object_intervals(segments: list) -> dict[str, list[tuple[float, float]]]:
