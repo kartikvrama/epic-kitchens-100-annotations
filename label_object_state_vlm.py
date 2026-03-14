@@ -20,6 +20,7 @@ import argparse
 import base64
 import json
 from math import ceil, floor
+from ast import literal_eval
 from datetime import datetime
 import cv2
 
@@ -281,6 +282,110 @@ def parse_vlm_response(response):
     return reasoning, object_state
 
 
+def safe_print_str(s):
+    """Return a string safe for printing on latin-1/ASCII consoles (e.g. replace em dash)."""
+    if s is None:
+        return None
+    if not isinstance(s, str):
+        return str(s)
+    return s.encode("ascii", errors="replace").decode("ascii")
+
+
+def save_debug_visualization(
+    obj_key,
+    obj,
+    before_b64,
+    during_b64,
+    after_b64,
+    during_frame_ids,
+    narration_text,
+    start_ts,
+    stop_ts,
+    past_actions,
+    output_dir,
+    video_path,
+    video_id,
+    count,
+):
+    """Create and save a debug image with before/during/after frames and text info."""
+    try:
+        import matplotlib.pyplot as plt
+        import numpy as np
+
+        ncols = max(2, 2 + max(len(during_frame_ids), 1))
+        fig, axes = plt.subplots(nrows=2, ncols=ncols, figsize=(3 * (2 + max(len(during_frame_ids), 1)), 6))
+        if axes.ndim == 1:
+            axes = axes.reshape(2, -1)
+
+        titles = []
+        imgs = []
+
+        if before_b64:
+            before_img = cv2.imdecode(np.frombuffer(base64.b64decode(before_b64), np.uint8), cv2.IMREAD_COLOR)
+            imgs.append(before_img)
+            titles.append("Before")
+        else:
+            imgs.append(None)
+            titles.append("Before (None)")
+
+        for i, db64 in enumerate(during_b64):
+            if db64:
+                dur_img = cv2.imdecode(np.frombuffer(base64.b64decode(db64), np.uint8), cv2.IMREAD_COLOR)
+                imgs.append(dur_img)
+                titles.append(f"During {i+1}")
+            else:
+                imgs.append(None)
+                titles.append(f"During {i+1} (None)")
+
+        if after_b64:
+            after_img = cv2.imdecode(np.frombuffer(base64.b64decode(after_b64), np.uint8), cv2.IMREAD_COLOR)
+            imgs.append(after_img)
+            titles.append("After")
+        else:
+            imgs.append(None)
+            titles.append("After (None)")
+
+        for ax, img, title in zip(axes[0], imgs, titles):
+            ax.axis("off")
+            ax.set_title(title)
+            if img is not None:
+                ax.imshow(img)
+            else:
+                ax.text(0.5, 0.5, "N/A", ha="center", va="center")
+
+        text_lines = [
+            f"Object: {obj.get('name', '')}",
+            f"Video: {os.path.basename(video_path)}",
+            f"Object key: {obj_key}",
+            f"Last action:\n  \"{narration_text}\"",
+            f"Start: {start_ts} | Stop: {stop_ts}",
+        ]
+        if past_actions:
+            text_lines.append("Past actions:")
+            for i, act in enumerate(past_actions):
+                text_lines.append(f"  {i + 1}. {act}")
+        else:
+            text_lines.append("No prior actions")
+        text_block = "\n".join(text_lines)
+        for ax in axes[1]:
+            ax.axis("off")
+        axes[1, 0].text(0, 1, text_block, va="top", ha="left", fontsize=10, wrap=True, family="monospace")
+        for idx in range(len(imgs), axes.shape[1]):
+            axes[0, idx].axis("off")
+            axes[1, idx].axis("off")
+
+        fig.tight_layout()
+        debug_image_dir = os.path.join(output_dir, "debug_images")
+        os.makedirs(debug_image_dir, exist_ok=True)
+        debug_image_path = os.path.join(
+            debug_image_dir, f"{video_id}_{count:05d}_{obj_key.replace('/', '_')}_viz.png"
+        )
+        fig.savefig(debug_image_path, dpi=125)
+        plt.close(fig)
+    except Exception as e:
+        print(f"Failed to generate debug visualization for {obj_key}: {e}", flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Query VLM (Ollama) for object state labels after last action."
@@ -315,10 +420,25 @@ def main():
         sys.exit(1)
     with open(last_action_file) as f:
         entries = json.load(f)
-    filtered_entries = {
-        entry for entry in entries if label_verb_noun(entry["last_narration"]["verb"], entry["last_narration"]["noun_categories"]) == "unknown"
-    }
-    total_entries = len(entries)
+    filtered_entries = []
+    for entry in entries:
+        try:
+            if label_verb_noun(
+                verb=entry["last_narration"]["verb"],
+                noun_classes=literal_eval(entry["last_narration"]["all_noun_classes"])
+            ) == "unknown":
+                filtered_entries.append(entry)
+        except Exception as e:
+            print(f"Error: {e} for entry {entry}", file=sys.stderr)
+            continue
+    # filtered_entries = {
+    #     entry for entry in entries
+    #     if label_verb_noun(
+    #         verb=entry["last_narration"]["verb"],
+    #         noun_classes=literal_eval(entry["last_narration"]["all_noun_classes"])
+    #     ) == "unknown"
+    # }
+    total_entries = len(filtered_entries)
     print(f"Loaded {total_entries} object entries from {last_action_file}")
 
     # Load narrations for context (past 3 actions)
@@ -360,7 +480,7 @@ def main():
         print(f"Error: Failed to open video file: {args.video_path} - {e}", file=sys.stderr)
         sys.exit(1)
 
-    for entry in filtered_entries:
+    for count, entry in enumerate(filtered_entries):
         obj = entry["object"]
         obj_key = get_object_key(entry)
         last_narr = entry["last_narration"]
@@ -385,8 +505,8 @@ def main():
         past_actions = get_past_actions(video_narrations, start_ts, NUM_CONTEXT_ACTIONS)
 
         # --- FRAME EXTRACTION ---
-        before_frame_id = max(0, ceil(start_ts * fps) - 1)
-        after_frame_id = floor(stop_ts * fps)
+        before_frame_id = max(0, ceil(start_ts * fps) - fps)
+        after_frame_id = floor(stop_ts * fps) + fps
         if active_seg:
             if active_seg.get("start_frame") is not None:
                 before_frame_id = max(0, active_seg["start_frame"] - 1)
@@ -452,6 +572,24 @@ def main():
                 "after_frame_id": after_frame_id,
                 "video_path": args.video_path,
             }) + "\n")
+        
+        # --- CREATE DEBUG VISUALIZATION IMAGE ---
+        save_debug_visualization(
+            obj_key=obj_key,
+            obj=obj,
+            before_b64=before_b64,
+            during_b64=during_b64,
+            after_b64=after_b64,
+            during_frame_ids=during_frame_ids,
+            narration_text=narration_text,
+            start_ts=start_ts,
+            stop_ts=stop_ts,
+            past_actions=past_actions,
+            output_dir=args.output_dir,
+            video_path=args.video_path,
+            video_id=video_id,
+            count=count,
+        )
 
         # Skip if no images could be extracted at all
         has_any_image = before_b64 or during_b64 or after_b64
@@ -471,8 +609,8 @@ def main():
         response = query_ollama(args.model, messages)
         reasoning, object_state = parse_vlm_response(response)
 
-        print(f"  Reasoning: {reasoning}")
-        print(f"  Object state: {object_state}")
+        print(f"  Reasoning: {safe_print_str(reasoning)}")
+        print(f"  Object state: {safe_print_str(object_state)}")
 
         # --- WRITE RESULTS ---
         try:

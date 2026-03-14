@@ -32,6 +32,7 @@ PART_SUBCLASSES = {
     "end",
     "bit",
     "piece",
+    "pieces",
     "slice",
     "minced",   
 }
