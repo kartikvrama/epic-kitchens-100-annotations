@@ -8,7 +8,6 @@
 #SBATCH --qos=long
 #SBATCH --output=logs_slurm/R-%x.%j.out
 #SBATCH --error=logs_slurm/R-%x.%j.err
-#SBATCH --exclude=crushinator
 
 cd /coc/flash5/kvr6/repos
 
