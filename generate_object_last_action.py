@@ -24,6 +24,60 @@ OUTPUT_DIR = "object_last_action"
 
 NOUN_CLASS_NAMES = load_noun_class_names()
 
+
+def _noun_token_bag(s):
+    """Bag of lowercase tokens from EPIC/Visor noun strings (handles `base:qualifier`, `/`, spaces)."""
+    if not s:
+        return frozenset()
+    tokens = []
+    for part in str(s).lower().replace(",", " ").split("/"):
+        part = part.strip()
+        for w in part.split():
+            for t in w.split(":"):
+                t = t.strip()
+                if t:
+                    tokens.append(t)
+    return frozenset(tokens)
+
+
+def narration_noun_matches_active_name(noun_csv, active_name):
+    """True if CSV narration noun refers to the same instance label as Visor active object name.
+
+    EPIC nouns often use ``head:modifier`` (e.g. ``container:tofu``) while Visor uses English NP order
+    (``tofu container``). Comparing token bags makes these align without requiring 1:1 string equality.
+    """
+    if not noun_csv or not active_name:
+        return False
+    if noun_csv == active_name:
+        return True
+    bag_n = _noun_token_bag(noun_csv)
+    if not bag_n:
+        return False
+    for variant in str(active_name).split("/"):
+        bag_a = _noun_token_bag(variant.strip())
+        if bag_n == bag_a:
+            return True
+    return False
+
+
+def disambiguate_narration_keys(matching_keys, active_name):
+    """Narrow ``matching_keys`` (full 4-tuples) using exact then token-bag match to ``active_name``."""
+    if len(matching_keys) <= 1:
+        return matching_keys
+    exact = [k for k in matching_keys if k[2] == active_name]
+    if len(exact) == 1:
+        return exact
+    if len(exact) > 1:
+        return exact
+    token_hits = [k for k in matching_keys if narration_noun_matches_active_name(k[2], active_name)]
+    if len(token_hits) == 1:
+        return token_hits
+    if len(token_hits) > 1:
+        token_hits.sort(key=lambda k: (-len(k[2]), k[2]))
+        return [token_hits[0]]
+    return []
+
+
 def get_tidy_label(verb, all_noun_classes):
     """Get the tidy label for a verb and a list of noun classes."""
     raise NotImplementedError()
@@ -75,9 +129,6 @@ def get_object_last_narrations(video_narrations, object_list):
     object_last_narrations = {}
     ## Read narrations in descending order of start_frame to get the last narration for each object
     for _, video_narration in video_narrations.sort_values("start_frame", ascending=False).iterrows():
-        if len(object_last_narrations) >= len(object_list):
-            print(f"Found {len(object_last_narrations)} last narrations for {len(object_list)} objects")
-            break
         narration_str = video_narration["narration"]
         start_ts = video_narration["start_sec"]
         stop_ts = video_narration["stop_sec"]
@@ -87,18 +138,15 @@ def get_object_last_narrations(video_narrations, object_list):
         category = noun_dict["category"]
         subclass_name = noun_dict["key"]
         key = (class_id, subclass_name, noun_name, category)
-        if any(obj_key[0] == class_id and obj_key[1] == subclass_name and obj_key[3] == category for obj_key in object_list):
-            if key not in object_last_narrations:
-                object_last_narrations[key] = {
-                    "segment_id": None,
-                    "start_time": start_ts,
-                    "stop_time": stop_ts,
-                    "start_frame": video_narration["start_frame"],
-                    "stop_frame": video_narration["stop_frame"],
-                    "narrations": [narration_str],
-                }
-    if len(object_last_narrations) != len(object_list):
-        print(f"Warning: only found {len(object_last_narrations)} last narrations for {len(object_list)} objects")
+        if key not in object_last_narrations:
+            object_last_narrations[key] = {
+                "segment_id": None,
+                "start_time": start_ts,
+                "stop_time": stop_ts,
+                "start_frame": video_narration["start_frame"],
+                "stop_frame": video_narration["stop_frame"],
+                "narrations": [narration_str],
+            }
     return object_last_narrations
 
 
@@ -153,27 +201,29 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         last_active_segment = object_last_active_segments[obj_key]
         last_segment_stop_timestamp = last_active_segment["end_time"]
         matching_arr = [k for k in object_last_narrations.keys() if k[0] == class_id and k[1] == subclass_name and k[3] == category]
-        if len(matching_arr) != 1:
-            matching_arr = [k for k in matching_arr if k[2] == name]
-            if not matching_arr:
-                ## Use last active segment as last action
-                print(f"Warning: no last narration found for object {obj_key}")
-                results.append({
-                    "object": {
-                        "class_id": class_id,
-                        "subclass_name": subclass_name,
-                        "name": name,
-                        "category": category,
-                    },
-                    "last_active_segment": {
-                        **last_active_segment,
-                        "tidy_label": None
-                    },
-                })
-                continue
-            elif len(matching_arr) > 1:
-                print(f"Warning: {len(matching_arr)} last narrations found for object {obj_key}")
-                import pdb; pdb.set_trace()
+        # EPIC CSV `noun` uses colon-separated qualifiers (e.g. ``container:tofu``); Visor ``name`` is often
+        # plain English order (e.g. ``tofu container``). So many objects share the same
+        # (class_id, subclass_name, category) with several last-narration keys — not 1:1 until disambiguated.
+        matching_arr = disambiguate_narration_keys(matching_arr, name)
+        if not matching_arr:
+            ## Use last active segment as last action
+            print(f"Warning: no last narration found for object {obj_key}")
+            results.append({
+                "object": {
+                    "class_id": class_id,
+                    "subclass_name": subclass_name,
+                    "name": name,
+                    "category": category,
+                },
+                "last_active_segment": {
+                    **last_active_segment,
+                    "tidy_label": None
+                },
+            })
+            continue
+        if len(matching_arr) > 1:
+            print(f"Warning: {len(matching_arr)} last narrations found for object {obj_key}")
+            matching_arr = [matching_arr[0]]
         matching_key_narr = matching_arr[0]
         last_narration = object_last_narrations[matching_key_narr]
         last_narration_stop_time = last_narration["stop_time"]
