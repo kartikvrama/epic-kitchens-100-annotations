@@ -5,13 +5,13 @@ final narrations with timestamps and the corresponding active segment.
 Objects in objects_to_exclude_vlm.SUBCLASSES_EXCLUDED are skipped.
 """
 import argparse
+from ast import literal_eval
 import json
 import os
 from collections import Counter
 
 import pandas as pd
-from utils import hhmmss_to_seconds
-from utils import include_object
+from utils import hhmmss_to_seconds, include_object, load_noun_class_names
 
 VIDEO_INFO_FILE = "EPIC_100_video_info.csv"
 NARRATION_LOW_LEVEL_FILES = [
@@ -22,6 +22,7 @@ NARRATION_LOW_LEVEL_FILES = [
 ACTIVE_OBJECTS_DIR = "active_objects"
 OUTPUT_DIR = "object_last_action"
 
+NOUN_CLASS_NAMES = load_noun_class_names()
 
 def get_tidy_label(verb, all_noun_classes):
     """Get the tidy label for a verb and a list of noun classes."""
@@ -47,10 +48,9 @@ def load_narration_df():
     return out
 
 
-def get_unique_objects_from_active(segments):
+def get_object_last_usage(segments):
     """Return unique objects (class_id, name, subclass_name, category) from all segments."""
-    seen = set()
-    unique = []
+    object_last_usage = {}
     for seg in segments:
         for obj in seg.get("objects_in_sequence", []):
             category = obj.get("category")
@@ -58,17 +58,48 @@ def get_unique_objects_from_active(segments):
             name = obj.get("name")
             if not include_object(category, subclass, name):
                 continue
-            key = (obj["class_id"], obj["name"])
-            if key in seen:
-                continue
-            seen.add(key)
-            unique.append({
-                "class_id": obj["class_id"],
-                "name": obj["name"],
-                "subclass_name": subclass,
-                "category": category,
-            })
-    return unique
+            key = (int(obj["class_id"]), obj["subclass_name"], obj["name"], category)
+            object_last_usage[key] = {
+                "segment_id": seg.get("segment_id"),
+                "start_time": seg.get("start_time"),
+                "end_time": seg.get("end_time"),
+                "start_frame": seg.get("start_frame"),
+                "stop_frame": seg.get("end_frame"),
+                "narrations": seg.get("narrations", []),
+            }
+    return object_last_usage
+
+
+def get_object_last_narrations(video_narrations, object_list):
+    """Return the last narration for each object in object_last_usage."""
+    object_last_narrations = {}
+    ## Read narrations in descending order of start_frame to get the last narration for each object
+    for _, video_narration in video_narrations.sort_values("start_frame", ascending=False).iterrows():
+        if len(object_last_narrations) >= len(object_list):
+            print(f"Found {len(object_last_narrations)} last narrations for {len(object_list)} objects")
+            break
+        narration_str = video_narration["narration"]
+        start_ts = video_narration["start_sec"]
+        stop_ts = video_narration["stop_sec"]
+        noun_name = video_narration["noun"]
+        class_id = int(video_narration["noun_class"])
+        noun_dict = NOUN_CLASS_NAMES[class_id]
+        category = noun_dict["category"]
+        subclass_name = noun_dict["key"]
+        key = (class_id, subclass_name, noun_name, category)
+        if any(obj_key[0] == class_id and obj_key[1] == subclass_name and obj_key[3] == category for obj_key in object_list):
+            if key not in object_last_narrations:
+                object_last_narrations[key] = {
+                    "segment_id": None,
+                    "start_time": start_ts,
+                    "stop_time": stop_ts,
+                    "start_frame": video_narration["start_frame"],
+                    "stop_frame": video_narration["stop_frame"],
+                    "narrations": [narration_str],
+                }
+    if len(object_last_narrations) != len(object_list):
+        print(f"Warning: only found {len(object_last_narrations)} last narrations for {len(object_list)} objects")
+    return object_last_narrations
 
 
 def find_segment_for_narration(segments, start_ts, stop_ts, narration_str):
@@ -98,6 +129,7 @@ def find_segment_for_narration(segments, start_ts, stop_ts, narration_str):
 
 def process_video(video_id, narration_df, active_objects_path, output_dir):
     """For one video: compute last action per object and corresponding segment; save JSON."""
+
     if not os.path.isfile(active_objects_path):
         return False
     with open(active_objects_path) as f:
@@ -112,62 +144,57 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
     video_narrations["start_sec"] = video_narrations["start_timestamp"].apply(hhmmss_to_seconds)
     video_narrations["stop_sec"] = video_narrations["stop_timestamp"].apply(hhmmss_to_seconds)
 
-    unique_objects = get_unique_objects_from_active(segments)
+    object_last_active_segments = get_object_last_usage(segments)
+    object_last_narrations = get_object_last_narrations(video_narrations, list(object_last_active_segments.keys()))
     results = []
+    for obj_key in object_last_active_segments.keys():
+        class_id, subclass_name, name, category = obj_key
+        ## Find last active segment that uses this object
+        last_active_segment = object_last_active_segments[obj_key]
+        last_segment_stop_timestamp = last_active_segment["end_time"]
+        matching_arr = [k for k in object_last_narrations.keys() if k[0] == class_id and k[1] == subclass_name and k[3] == category]
+        if len(matching_arr) != 1:
+            matching_arr = [k for k in matching_arr if k[2] == name]
+            if not matching_arr:
+                ## Use last active segment as last action
+                print(f"Warning: no last narration found for object {obj_key}")
+                results.append({
+                    "object": {
+                        "class_id": class_id,
+                        "subclass_name": subclass_name,
+                        "name": name,
+                        "category": category,
+                    },
+                    "last_active_segment": {
+                        **last_active_segment,
+                        "tidy_label": None
+                    },
+                })
+                continue
+            elif len(matching_arr) > 1:
+                print(f"Warning: {len(matching_arr)} last narrations found for object {obj_key}")
+                import pdb; pdb.set_trace()
+        matching_key_narr = matching_arr[0]
+        last_narration = object_last_narrations[matching_key_narr]
+        last_narration_stop_time = last_narration["stop_time"]
 
-    for obj in unique_objects:
-        class_id = obj["class_id"]
-        obj_narrations = video_narrations[video_narrations["noun_class"] == class_id]
-        if obj_narrations.empty:
-            continue
-        # Last action = row with maximum stop_timestamp
-        last_row = obj_narrations.loc[obj_narrations["stop_sec"].idxmax()]
-        narration_text = last_row.get("narration", "")
-        all_nouns =last_row.get("all_nouns", [])
-        all_noun_classes = last_row.get("all_noun_classes", [])
-        if pd.isna(narration_text):
-            narration_text = ""
-        start_ts = float(last_row["start_sec"])
-        stop_ts = float(last_row["stop_sec"])
-
-        segment = find_segment_for_narration(
-            segments, start_ts, stop_ts, narration_text
-        )
-        if segment is None:
-            segment = None
+        if last_narration_stop_time > last_segment_stop_timestamp:
+            obj_data = last_narration
         else:
-            segment = {
-                "segment_id": segment["segment_id"],
-                "start_time": segment["start_time"],
-                "end_time": segment["end_time"],
-                "start_frame": segment.get("start_frame"),
-                "end_frame": segment.get("end_frame"),
-            }
-
-        def _safe(val):
-            if pd.isna(val):
-                return None
-            if hasattr(val, "item"):  # numpy scalar
-                return val.item()
-            return val
-
+            obj_data = last_active_segment
+        
         results.append({
-            "object": obj,
-            "last_narration": {
-                "narration": narration_text,
-                "verb": _safe(last_row.get("verb")),
-                "verb_class": int(last_row["verb_class"]) if not pd.isna(last_row.get("verb_class")) else None,
-                "all_nouns": all_nouns,
-                "all_noun_classes": all_noun_classes,
-                "start_timestamp": start_ts,
-                "stop_timestamp": stop_ts,
-                "start_timestamp_str": last_row["start_timestamp"],
-                "stop_timestamp_str": last_row["stop_timestamp"],
+            "object": {
+                "class_id": class_id,
+                "subclass_name": subclass_name,
+                "name": name,
+                "category": category,
+            },
+            "last_active_segment": {
+                **obj_data,
                 "tidy_label": None
             },
-            "active_segment": segment,
         })
-
     os.makedirs(output_dir, exist_ok=True)
     out_path = os.path.join(output_dir, f"object_last_action_{video_id}.json")
     with open(out_path, "w") as f:
