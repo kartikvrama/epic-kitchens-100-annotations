@@ -2,12 +2,18 @@
 """
 Query a VLM (via Ollama) to label object state after its last action.
 
-For each object entry in object_last_action_{video_id}.json, sends the VLM:
+For each object entry in object_last_action_{video_id}.json (e.g. under
+object_last_action_combined/), sends the VLM:
   - past 3 actions (context narrations preceding the last action)
   - 1 image before the last action
   - up to 3 uniformly sampled images during the last action
   - 1 image after the last action
 and classifies the object state as "idle", "tidied", or "in_use".
+
+Each entry uses ``last_active_segment``: the last narration in ``narrations`` supplies
+the action text and (when present) ``narration;start_sec;stop_sec`` timestamps; otherwise
+segment ``start_time`` and ``end_time`` / ``stop_time`` are used. Frame anchors use
+``start_frame`` and ``stop_frame`` when present.
 
 Usage:
     python label_object_state_vlm.py --video-path /path/to/P01_01.MP4 [options]
@@ -42,6 +48,58 @@ NUM_CONTEXT_ACTIONS = 3
 OLLAMA_MIN_IMAGE_DIM = 33
 
 VALID_OBJECT_STATES = {"idle", "tidied", "in_use"}
+
+# Max |Δstart| and |Δstop| (seconds) when matching a narration line to EPIC CSV rows
+NARRATION_TIME_MATCH_TOL = 0.35
+
+
+def parse_last_action_from_segment(seg):
+    """From ``last_active_segment``, return (narration_text, start_sec, stop_sec) for the last line.
+
+    Narration lines are either ``text`` or ``text;start;stop``. If times are missing on the line,
+    uses segment ``start_time`` and ``end_time`` or ``stop_time``.
+    """
+    if not seg:
+        return None
+    narrations = seg.get("narrations") or []
+    if not narrations:
+        return None
+    last_line = str(narrations[-1]).strip()
+    parts = last_line.split(";")
+    narration_text = parts[0].strip() if parts else last_line
+    if len(parts) >= 3:
+        try:
+            start_ts = float(parts[1])
+            stop_ts = float(parts[2])
+            return narration_text, start_ts, stop_ts
+        except ValueError:
+            pass
+    start_ts = seg.get("start_time")
+    stop_ts = seg.get("stop_time")
+    if stop_ts is None:
+        stop_ts = seg.get("end_time")
+    try:
+        start_ts = float(start_ts)
+        stop_ts = float(stop_ts)
+    except (TypeError, ValueError):
+        return None
+    return narration_text, start_ts, stop_ts
+
+
+def lookup_narration_row(video_narrations, narration_text, start_ts, stop_ts, tol=NARRATION_TIME_MATCH_TOL):
+    """Find the EPIC CSV row for this narration text and time span (seconds)."""
+    nar_norm = (narration_text or "").strip()
+    if not nar_norm:
+        return None
+    cand = video_narrations[video_narrations["narration"].astype(str).str.strip() == nar_norm]
+    if cand.empty:
+        return None
+    for _, row in cand.iterrows():
+        if abs(row["start_sec"] - start_ts) <= tol and abs(row["stop_sec"] - stop_ts) <= tol:
+            return row
+    if len(cand) == 1:
+        return cand.iloc[0]
+    return None
 
 
 def extract_frames_full_res(frame_numbers, video_path=None, cap=None):
@@ -392,7 +450,7 @@ def main():
     )
     parser.add_argument("--model", type=str, default=MODEL_NAME, help="Ollama model name")
     parser.add_argument("--video-path", required=True, help="Path to the video file (e.g. P01_01.MP4)")
-    parser.add_argument("--last-action-dir", default="object_last_action",
+    parser.add_argument("--last-action-dir", default="object_last_action_combined",
                         help="Directory containing object_last_action_{video_id}.json")
     parser.add_argument("--output-dir", default="vlm_object_state_labels",
                         help="Directory to write output JSONL files")
@@ -420,28 +478,8 @@ def main():
         sys.exit(1)
     with open(last_action_file) as f:
         entries = json.load(f)
-    filtered_entries = []
-    for entry in entries:
-        try:
-            if label_verb_noun(
-                verb=entry["last_narration"]["verb"],
-                noun_classes=literal_eval(entry["last_narration"]["all_noun_classes"])
-            ) == "unknown":
-                filtered_entries.append(entry)
-        except Exception as e:
-            print(f"Error: {e} for entry {entry}", file=sys.stderr)
-            continue
-    # filtered_entries = {
-    #     entry for entry in entries
-    #     if label_verb_noun(
-    #         verb=entry["last_narration"]["verb"],
-    #         noun_classes=literal_eval(entry["last_narration"]["all_noun_classes"])
-    #     ) == "unknown"
-    # }
-    total_entries = len(filtered_entries)
-    print(f"Loaded {total_entries} object entries from {last_action_file}")
 
-    # Load narrations for context (past 3 actions)
+    # Load narrations for context (past 3 actions) and verb/noun filtering
     print("Loading narration files for context actions...")
     narration_df = load_narration_df()
     video_narrations = narration_df[narration_df["video_id"] == video_id].copy()
@@ -453,6 +491,32 @@ def main():
     )
     video_narrations = video_narrations.sort_values("start_sec").reset_index(drop=True)
     print(f"Loaded {len(video_narrations)} narrations for {video_id}")
+
+    filtered_entries = []
+    for entry in entries:
+        seg = entry.get("last_active_segment")
+        parsed = parse_last_action_from_segment(seg) if seg else None
+        if not parsed:
+            print(f"Warning: skip entry (no parsable last action): {entry.get('object')}", file=sys.stderr)
+            continue
+        narration_text, start_ts, stop_ts = parsed
+        skip_vlm = False
+        try:
+            row = lookup_narration_row(video_narrations, narration_text, start_ts, stop_ts)
+            if row is not None:
+                verb = row["verb"]
+                noun_classes = literal_eval(str(row["all_noun_classes"]))
+                if label_verb_noun(verb=verb, noun_classes=noun_classes) != "unknown":
+                    skip_vlm = True
+        except Exception as e:
+            print(f"Error: {e} for entry object={entry.get('object')}", file=sys.stderr)
+        if skip_vlm:
+            continue
+        filtered_entries.append(
+            {"entry": entry, "narration_text": narration_text, "start_ts": start_ts, "stop_ts": stop_ts}
+        )
+    total_entries = len(filtered_entries)
+    print(f"Loaded {len(entries)} rows from {last_action_file}; {total_entries} after verb/noun filter (unknown only)")
 
     # Output paths
     os.makedirs(args.output_dir, exist_ok=True)
@@ -480,18 +544,18 @@ def main():
         print(f"Error: Failed to open video file: {args.video_path} - {e}", file=sys.stderr)
         sys.exit(1)
 
-    for count, entry in enumerate(filtered_entries):
+    for count, item in enumerate(filtered_entries):
+        entry = item["entry"]
         obj = entry["object"]
         obj_key = get_object_key(entry)
-        last_narr = entry["last_narration"]
-        active_seg = entry.get("active_segment")
+        las = entry.get("last_active_segment") or {}
 
         if not include_object(obj["category"], obj["subclass_name"], obj["name"]):
             continue
 
-        narration_text = last_narr.get("narration", "")
-        start_ts = last_narr["start_timestamp"]
-        stop_ts = last_narr["stop_timestamp"]
+        narration_text = item["narration_text"]
+        start_ts = item["start_ts"]
+        stop_ts = item["stop_ts"]
 
         # Check if already processed
         if _is_already_processed(saved_results, obj_key, start_ts, stop_ts):
@@ -507,11 +571,10 @@ def main():
         # --- FRAME EXTRACTION ---
         before_frame_id = max(0, ceil(start_ts * fps) - fps)
         after_frame_id = floor(stop_ts * fps) + fps
-        if active_seg:
-            if active_seg.get("start_frame") is not None:
-                before_frame_id = max(0, active_seg["start_frame"] - 1)
-            if active_seg.get("end_frame") is not None:
-                after_frame_id = active_seg["end_frame"]
+        if las.get("start_frame") is not None:
+            before_frame_id = max(0, int(las["start_frame"]) - 1)
+        if las.get("stop_frame") is not None:
+            after_frame_id = int(las["stop_frame"])
 
         before_b64 = extract_single_frame_b64(video_cap, before_frame_id)
         during_frame_ids, during_b64 = sample_frames_during_action(

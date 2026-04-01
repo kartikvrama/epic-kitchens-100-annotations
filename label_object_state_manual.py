@@ -1,7 +1,10 @@
 """
 Label last-action narrations as "tidy" or "not tidy".
-Loads samples for a single video, shows each narration, and saves labels to a JSON file.
-Shows matplotlib: last 3 actions, 1 image 1s before, 3 during, 1 image 1s after the last action.
+Loads samples for a single video from object_last_action_{video_id}.json (e.g. under
+object_last_action_combined/), shows each narration, and saves labels to
+labels_tidy_{video_id}.json (by default beside those files). Use --labels-path to override.
+Expects combined format (last_active_segment + narrations).
+Shows matplotlib: last 3 actions, frames before/during/after the last action.
 Resumes from existing labels if present.
 """
 import argparse
@@ -18,13 +21,36 @@ from generate_object_last_action import load_narration_df
 from utils import VIDEO_INFO_FILE
 from utils import hhmmss_to_seconds
 
-OBJECT_LAST_ACTION_DIR = "object_last_action"
-LABELS_PATH = "object_last_action/labels_tidy.json"
+OBJECT_LAST_ACTION_DIR = "object_last_action_combined"
+NARRATION_TIME_MATCH_TOL = 0.35
 NUM_PAST_ACTIONS = 3
 NUM_FUTURE_ACTIONS = 3
 NUM_IMAGES_DURING = 3
 SEC_BEFORE = 5.0
 SEC_AFTER = 5.0
+
+
+def make_object_key(obj):
+    """Stable dict identity for an entry's object (matches combined JSON object fields)."""
+    obj = obj or {}
+    return {
+        "class_id": obj.get("class_id"),
+        "subclass_name": (obj.get("subclass_name") or "").strip(),
+        "name": (obj.get("name") or "").strip(),
+        "category": (obj.get("category") or "").strip(),
+    }
+
+
+def object_key_identity(ok):
+    """Hashable tuple for resume keys (ok is a make_object_key dict or loaded JSON object_key)."""
+    if not isinstance(ok, dict):
+        return None
+    return (
+        ok.get("class_id"),
+        ok.get("subclass_name") or "",
+        ok.get("name") or "",
+        ok.get("category") or "",
+    )
 
 
 def load_existing_labels_and_records(labels_path):
@@ -39,46 +65,63 @@ def load_existing_labels_and_records(labels_path):
     except (json.JSONDecodeError, OSError):
         return existing, labeled_records
     if isinstance(data, list):
-        labeled_records = data
-        existing = {(r["source"], r["segment_id"], r["noun_class"]): r["label"] for r in data}
+        for r in data:
+            if object_key_identity(r.get("object_key")) is None:
+                continue
+            rec = {k: v for k, v in r.items() if k != "source"}
+            labeled_records.append(rec)
+            oid = object_key_identity(rec["object_key"])
+            key = (oid, rec.get("segment_id") or "", rec["noun_class"], rec.get("narration", ""))
+            existing[key] = rec["label"]
     return existing, labeled_records
 
 
 def save_labels(labels_path, labeled_records):
-    """Save labeled records to JSON (list of dicts with source, segment_id, noun_class, narration, label)."""
+    """Save labeled records to JSON (object_key, segment_id, noun_class, narration, verb, label)."""
     os.makedirs(os.path.dirname(labels_path) or ".", exist_ok=True)
     with open(labels_path, "w") as f:
         json.dump(labeled_records, f, indent=2)
 
 
-def load_last_action_samples_for_video(data_dir, video_id):
-    """
-    Load object_last_action JSON for a given video_id; return list of
-    (source_basename, segment_id, noun_class, narration, noun_name, verb).
-    The video_id is assumed to be part of the file name.
-    """
-    entries = []
-    json_file_name = f"object_last_action_{video_id}.json"
-    if not os.path.isfile(os.path.join(data_dir, json_file_name)):
-        raise FileNotFoundError(f"File {json_file_name} not found in {data_dir}")
-    with open(os.path.join(data_dir, json_file_name)) as f:
-        data = json.load(f)
-    if not isinstance(data, list):
-        raise ValueError(f"File {json_file_name} is not a list")
-    for entry in data:
-        obj = entry.get("object") or {}
-        noun_class = obj.get("class_id")
-        noun_name = (obj.get("name") or "").strip()
-        last = entry.get("last_narration") or {}
-        verb = (last.get("verb") or "").strip()
-        if not verb:
-            continue
-        narration = (last.get("narration") or "").strip()
-        seg = entry.get("active_segment") or {}
-        segment_id = seg.get("segment_id") or ""
-        if narration and segment_id and noun_class is not None:
-            entries.append((json_file_name, segment_id, noun_class, narration, noun_name, verb))
-    return entries
+# def parse_last_action_from_segment(seg):
+#     """From last_active_segment, return (narration_text, start_sec, stop_sec) for the last line."""
+#     if not seg:
+#         return None
+#     narrations = seg.get("narrations") or []
+#     if not narrations:
+#         return None
+#     last_line = str(narrations[-1]).strip()
+#     parts = last_line.split(";")
+#     narration_text = parts[0].strip() if parts else last_line
+#     if len(parts) >= 3:
+#         try:
+#             start_ts = float(parts[1])
+#             stop_ts = float(parts[2])
+#             return narration_text, start_ts, stop_ts
+#         except ValueError:
+#             pass
+#     start_ts = seg.get("start_time")
+#     stop_ts = seg.get("stop_time")
+#     if stop_ts is None:
+#         stop_ts = seg.get("end_time")
+#     try:
+#         start_ts = float(start_ts)
+#         stop_ts = float(stop_ts)
+#     except (TypeError, ValueError):
+#         return None
+#     return narration_text, start_ts, stop_ts
+
+
+def lookup_narration_row(video_narrations, narrations, start_ts, stop_ts, tol=NARRATION_TIME_MATCH_TOL):
+    """Find the EPIC CSV row for this narration text and time span (seconds)."""
+    cand = video_narrations[
+        video_narrations["narration"].astype(str).str.strip().isin(narrations) &
+        (video_narrations["start_sec"] >= start_ts - tol) &
+        (video_narrations["stop_sec"] <= stop_ts + tol)
+    ]
+    if cand.empty:
+        return None
+    return cand.to_dict(orient="records")
 
 
 def load_video_fps(video_info_csv_path, video_id):
@@ -146,7 +189,7 @@ def get_context_frame_ids(start_ts, stop_ts, fps, active_segment=None):
     return before_frame_id, during_ids, after_frame_id
 
 
-def show_context_plot(past_actions, future_actions, narration, before_rgb, during_rgbs, after_rgb, noun_name, verb):
+def show_context_plot(past_actions, future_actions, narrations, before_rgb, during_rgbs, after_rgb, noun_name, verbs):
     """Show matplotlib figure: past 3 actions text, then row of 5 images (before, 3 during, after)."""
     ncols = 5  # before, during1, during2, during3, after
     # Pad to exactly 3 during-images
@@ -163,7 +206,7 @@ def show_context_plot(past_actions, future_actions, narration, before_rgb, durin
         else:
             ax.text(0.5, 0.5, "N/A", ha="center", va="center")
     text_lines = [
-        f"Object: {noun_name}  |  verb: {verb}",
+        f"Object: {noun_name}  |  verbs: {verbs}",
         "",
         "Last 3 actions before:",
     ]
@@ -173,7 +216,9 @@ def show_context_plot(past_actions, future_actions, narration, before_rgb, durin
     else:
         text_lines.append("  (none)")
     text_lines.append("")
-    text_lines.append(f"Last action (TO LABEL): \"{narration}\"")
+    text_lines.append("Last active segment (TO LABEL):")
+    for i, n in enumerate(narrations, 1):
+        text_lines.append(f"  {i}. {n}")
     text_lines.append("")
     text_lines.append("Future actions:")
     if future_actions:
@@ -206,13 +251,29 @@ def main():
     )
     parser.add_argument(
         "--data-dir",
+        "--last-action-dir",
+        dest="last_action_dir",
         default=OBJECT_LAST_ACTION_DIR,
-        help=f"Directory containing object_last_action_*.json files (default: {OBJECT_LAST_ACTION_DIR})",
+        help=(
+            "Directory with object_last_action_*.json (e.g. object_last_action_combined; "
+            f"default: {OBJECT_LAST_ACTION_DIR})"
+        ),
+    )
+    parser.add_argument(
+        "--labels-dir",
+        default=OBJECT_LAST_ACTION_DIR,
+        help=(
+            "Directory for per-video labels (default: same as --last-action-dir default). "
+            "Ignored if --labels-path is set."
+        ),
     )
     parser.add_argument(
         "--labels-path",
-        default=LABELS_PATH,
-        help=f"Path to labels JSON output (default: {LABELS_PATH})",
+        default=None,
+        help=(
+            "Full path to labels JSON for this run. "
+            "Default: <labels-dir>/labels_tidy_<video_id>.json"
+        ),
     )
     args = parser.parse_args()
 
@@ -228,8 +289,8 @@ def main():
         print(f"Error: FPS not found for {args.video_id} in {VIDEO_INFO_FILE}", file=sys.stderr)
         raise SystemExit(1)
 
-    # Load full raw entries to get timestamps and active_segment
-    json_path = os.path.join(args.data_dir, f"object_last_action_{args.video_id}.json")
+    # Load full raw entries (combined: last_active_segment; legacy: last_narration + active_segment)
+    json_path = os.path.join(args.last_action_dir, f"object_last_action_{args.video_id}.json")
     if not os.path.isfile(json_path):
         raise FileNotFoundError(f"Not found: {json_path}")
     with open(json_path) as f:
@@ -237,54 +298,6 @@ def main():
     if not isinstance(raw_entries, list):
         raise ValueError(f"{json_path} is not a list")
 
-    to_label = []
-    seen = set()
-    json_file_name = os.path.basename(json_path)
-    for entry in raw_entries:
-        obj = entry.get("object") or {}
-        last = entry.get("last_narration") or {}
-        seg = entry.get("active_segment") or {}
-        segment_id = seg.get("segment_id") or ""
-        noun_class = obj.get("class_id")
-        narration = (last.get("narration") or "").strip()
-        verb = (last.get("verb") or "").strip()
-        if not verb or not narration or not segment_id or noun_class is None:
-            continue
-        key = (segment_id, noun_class, narration)
-        if key in seen:
-            continue
-        seen.add(key)
-        start_ts = last.get("start_timestamp")
-        stop_ts = last.get("stop_timestamp")
-        if start_ts is None or stop_ts is None:
-            continue
-        to_label.append({
-            "source": json_file_name,
-            "segment_id": segment_id,
-            "noun_class": noun_class,
-            "narration": narration,
-            "noun_name": (obj.get("name") or "").strip(),
-            "verb": verb,
-            "start_ts": float(start_ts),
-            "stop_ts": float(stop_ts),
-            "active_segment": seg,
-        })
-
-    labels_path = os.path.join(script_dir, args.labels_path)
-    existing, labeled_records = load_existing_labels_and_records(labels_path)
-
-    def record_key(r):
-        return (r["source"], r["segment_id"], r["noun_class"])
-
-    pending = [r for r in to_label if record_key(r) not in existing]
-    already_done = len(to_label) - len(pending)
-
-    print(f"Last-action narration labeling for video {args.video_id}: tidy or idle / in use")
-    print("Commands: t = tidy/idle, u = in use, s = skip, q = quit & save")
-    print(f"Already labeled: {already_done}. Remaining: {len(pending)}")
-    print()
-
-    # Load narrations for past-actions context
     narration_df = load_narration_df()
     video_narrations = narration_df[narration_df["video_id"] == args.video_id].copy()
     video_narrations["start_sec"] = video_narrations["start_timestamp"].apply(
@@ -294,6 +307,87 @@ def main():
         lambda ts: hhmmss_to_seconds(ts) if isinstance(ts, str) else float(ts)
     )
     video_narrations = video_narrations.sort_values("start_sec").reset_index(drop=True)
+
+    to_label = []
+    seen = set()
+    for entry in raw_entries:
+        obj = entry.get("object") or {}
+        noun_class = obj.get("class_id")
+        if noun_class is None:
+            continue
+        object_key = make_object_key(obj)
+        oid = object_key_identity(object_key)
+
+        seg_combined = entry.get("last_active_segment")
+        if seg_combined is None:
+            raise ValueError(f"Legacy format not supported: {entry}")
+
+        segment_id = seg_combined.get("segment_id", "None")
+        narrations = [n.strip().split(";")[0] for n in seg_combined.get("narrations", [])]
+        start_ts = seg_combined.get("start_time")
+        stop_ts = seg_combined.get("end_time") or seg_combined.get("stop_time")
+
+        if not start_ts or not stop_ts:
+            print(f"Warning: skip entry (no start or stop time): {entry}")
+            import pdb; pdb.set_trace()
+        # seg_for_entry = None
+
+        # parsed = parse_last_action_from_segment(seg_combined)
+        # if not parsed:
+        #     continue
+        # narration, start_ts, stop_ts = parsed
+        # narration = narration.strip()
+        # if not narration:
+        #     continue
+        # segment_id = seg_combined.get("segment_id") or ""
+        # seg_for_entry = seg_combined
+        rows = lookup_narration_row(video_narrations, narrations, start_ts, stop_ts)
+        # import pdb; pdb.set_trace()
+        narration_nouns = []
+        narration_verbs = []
+        if rows is not None:
+            for r in rows:
+                narration_nouns.append(str(r["noun"]).strip())
+                narration_verbs.append(str(r["verb"]).strip())
+
+        key = ("-".join([str(v) for v in oid]), segment_id, noun_class, "-".join(narrations), start_ts, stop_ts)
+        print(key)
+        if key in seen:
+            continue
+        seen.add(key)
+        to_label.append({
+            "object_key": object_key,
+            "segment_id": segment_id,
+            "noun_class": noun_class,
+            "narrations": narrations,
+            "noun_name": obj.get("name"),
+            "narration_nouns": narration_nouns,
+            "narration_verbs": narration_verbs,
+            "start_ts": float(start_ts),
+            "stop_ts": float(stop_ts),
+            "active_segment": seg_combined,
+        })
+
+    if args.labels_path is not None:
+        labels_rel = args.labels_path
+    else:
+        labels_rel = os.path.join(args.labels_dir, f"labels_tidy_{args.video_id}.json")
+    labels_path = os.path.join(script_dir, labels_rel)
+
+    existing, labeled_records = load_existing_labels_and_records(labels_path)
+
+    def record_key(r):
+        oid = object_key_identity(r["object_key"])
+        return ("-".join([str(v) for v in oid]), r.get("segment_id") or "", r["noun_class"], "-".join(r["narrations"]))
+
+    pending = [r for r in to_label if record_key(r) not in existing]
+    already_done = len(to_label) - len(pending)
+
+    print(f"Last-action narration labeling for video {args.video_id}: tidy or idle / in use")
+    print(f"Labels file: {labels_path}")
+    print("Commands: t = tidy/idle, u = in use, s = skip, q = quit & save")
+    print(f"Already labeled: {already_done}. Remaining: {len(pending)}")
+    print()
 
     cap = cv2.VideoCapture(args.video_path)
     try:
@@ -311,17 +405,24 @@ def main():
             show_context_plot(
                 past_actions,
                 future_actions,
-                r["narration"],
+                r["narrations"],
                 before_rgb,
                 during_rgbs,
                 after_rgb,
                 r["noun_name"],
-                r["verb"],
+                r["narration_verbs"],
             )
-            source, segment_id, noun_class = r["source"], r["segment_id"], r["noun_class"]
-            narration, noun_name, verb = r["narration"], r["noun_name"], r["verb"]
-            print(f"[{i + 1}/{len(pending)}] verb={verb} noun_class={noun_class} ({noun_name})")
-            print(f"  \"{narration}\"")
+            segment_id, noun_class = r["segment_id"], r["noun_class"]
+            narrations, noun_name, narration_nouns, narration_verbs = r["narrations"], r["noun_name"], r["narration_nouns"], r["narration_verbs"]
+            object_key = r["object_key"]
+            print(
+                f"[{i + 1}/{len(pending)}] noun_class={noun_class} ({noun_name}) | "
+                f"object_key={object_key}"
+            )
+            print("Last segment narrations:")
+            for n, nn, nv, i in zip(narrations, narration_nouns, narration_verbs, range(1, len(narrations) + 1)):
+                print(f"  {i}. \"{n}\" ({nn} {nv})")
+            print()
             while True:
                 reply = input("  Label (t/u/s/q): ").strip().lower()
                 if reply in ("t"):
@@ -337,16 +438,17 @@ def main():
                     print("Quitting and saving...")
                     save_labels(labels_path, labeled_records)
                     return
-                print("  Invalid. Use t (tidy), n (not tidy), s (skip), q (quit).")
+                print("  Invalid. Use t (tidy/idle), u (in use), s (skip), q (quit).")
             if label:
                 existing[record_key(r)] = label
                 labeled_records.append({
-                    "source": source,
+                    "record_key": record_key(r),
+                    "object_key": object_key,
                     "segment_id": segment_id,
                     "noun_class": noun_class,
-                    "narration": narration,
-                    "noun_name": noun_name,
-                    "verb": verb,
+                    "narrations": narrations,
+                    "narration_nouns": narration_nouns,
+                    "narration_verbs": narration_verbs,
                     "label": label,
                 })
                 save_labels(labels_path, labeled_records)

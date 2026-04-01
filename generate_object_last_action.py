@@ -4,6 +4,7 @@ done by the user on that object from NARRATION_LOW_LEVEL_FILES. Output a list of
 final narrations with timestamps and the corresponding active segment.
 Objects in objects_to_exclude_vlm.SUBCLASSES_EXCLUDED are skipped.
 """
+import numpy as np
 import argparse
 from ast import literal_eval
 import json
@@ -195,6 +196,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
     object_last_active_segments = get_object_last_usage(segments)
     object_last_narrations = get_object_last_narrations(video_narrations, list(object_last_active_segments.keys()))
     results = []
+    _delta_narration_active_segment = []
     for obj_key in object_last_active_segments.keys():
         class_id, subclass_name, name, category = obj_key
         ## Find last active segment that uses this object
@@ -207,7 +209,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         matching_arr = disambiguate_narration_keys(matching_arr, name)
         if not matching_arr:
             ## Use last active segment as last action
-            print(f"Warning: no last narration found for object {obj_key}")
+            # print(f"Warning: no last narration found for object {obj_key}")
             results.append({
                 "object": {
                     "class_id": class_id,
@@ -222,12 +224,14 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
             })
             continue
         if len(matching_arr) > 1:
-            print(f"Warning: {len(matching_arr)} last narrations found for object {obj_key}")
+            # print(f"Warning: {len(matching_arr)} last narrations found for object {obj_key}")
             matching_arr = [matching_arr[0]]
         matching_key_narr = matching_arr[0]
         last_narration = object_last_narrations[matching_key_narr]
         last_narration_stop_time = last_narration["stop_time"]
 
+
+        _delta_narration_active_segment.append(abs(last_narration_stop_time - last_segment_stop_timestamp))
         if last_narration_stop_time > last_segment_stop_timestamp:
             obj_data = last_narration
         else:
@@ -247,6 +251,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         })
     os.makedirs(output_dir, exist_ok=True)
     out_path = os.path.join(output_dir, f"object_last_action_{video_id}.json")
+    print(f"{video_id}: Delta narration active segment: {np.mean(_delta_narration_active_segment)/60:.2f} +/- {np.std(_delta_narration_active_segment)/60:.2f}")
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2)
     return True
