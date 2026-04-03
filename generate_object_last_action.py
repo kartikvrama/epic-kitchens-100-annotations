@@ -4,6 +4,7 @@ done by the user on that object from NARRATION_LOW_LEVEL_FILES. Output a list of
 final narrations with timestamps and the corresponding active segment.
 Objects in objects_to_exclude_vlm.SUBCLASSES_EXCLUDED are skipped.
 """
+import re
 import numpy as np
 import argparse
 from ast import literal_eval
@@ -24,59 +25,6 @@ ACTIVE_OBJECTS_DIR = "active_objects"
 OUTPUT_DIR = "object_last_action"
 
 NOUN_CLASS_NAMES = load_noun_class_names()
-
-
-def _noun_token_bag(s):
-    """Bag of lowercase tokens from EPIC/Visor noun strings (handles `base:qualifier`, `/`, spaces)."""
-    if not s:
-        return frozenset()
-    tokens = []
-    for part in str(s).lower().replace(",", " ").split("/"):
-        part = part.strip()
-        for w in part.split():
-            for t in w.split(":"):
-                t = t.strip()
-                if t:
-                    tokens.append(t)
-    return frozenset(tokens)
-
-
-def narration_noun_matches_active_name(noun_csv, active_name):
-    """True if CSV narration noun refers to the same instance label as Visor active object name.
-
-    EPIC nouns often use ``head:modifier`` (e.g. ``container:tofu``) while Visor uses English NP order
-    (``tofu container``). Comparing token bags makes these align without requiring 1:1 string equality.
-    """
-    if not noun_csv or not active_name:
-        return False
-    if noun_csv == active_name:
-        return True
-    bag_n = _noun_token_bag(noun_csv)
-    if not bag_n:
-        return False
-    for variant in str(active_name).split("/"):
-        bag_a = _noun_token_bag(variant.strip())
-        if bag_n == bag_a:
-            return True
-    return False
-
-
-def disambiguate_narration_keys(matching_keys, active_name):
-    """Narrow ``matching_keys`` (full 4-tuples) using exact then token-bag match to ``active_name``."""
-    if len(matching_keys) <= 1:
-        return matching_keys
-    exact = [k for k in matching_keys if k[2] == active_name]
-    if len(exact) == 1:
-        return exact
-    if len(exact) > 1:
-        return exact
-    token_hits = [k for k in matching_keys if narration_noun_matches_active_name(k[2], active_name)]
-    if len(token_hits) == 1:
-        return token_hits
-    if len(token_hits) > 1:
-        token_hits.sort(key=lambda k: (-len(k[2]), k[2]))
-        return [token_hits[0]]
-    return []
 
 
 def get_tidy_label(verb, all_noun_classes):
@@ -125,7 +73,19 @@ def get_object_last_usage(segments):
     return object_last_usage
 
 
-def get_object_last_narrations(video_narrations, object_list):
+def match_noun_names(name1, name2):
+    ## Split both names by : and space
+    parts1 = re.split(r"[:| ]", name1)
+    parts2 = re.split(r"[:| ]", name2)
+    ## Remove empty parts
+    parts1 = set([p for p in parts1 if p])
+    parts2 = set([p for p in parts2 if p])
+    ## return true if parts1 is subset of parts2 or vice versa
+    iou = len(parts1 & parts2) / len(parts1 | parts2)
+    return iou >= 0.25
+
+
+def get_object_last_narrations(video_narrations):
     """Return the last narration for each object in object_last_usage."""
     object_last_narrations = {}
     ## Read narrations in descending order of start_frame to get the last narration for each object
@@ -194,7 +154,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
     video_narrations["stop_sec"] = video_narrations["stop_timestamp"].apply(hhmmss_to_seconds)
 
     object_last_active_segments = get_object_last_usage(segments)
-    object_last_narrations = get_object_last_narrations(video_narrations, list(object_last_active_segments.keys()))
+    object_last_narrations = get_object_last_narrations(video_narrations)
     results = []
     _delta_narration_active_segment = []
     for obj_key in object_last_active_segments.keys():
@@ -202,14 +162,13 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         ## Find last active segment that uses this object
         last_active_segment = object_last_active_segments[obj_key]
         last_segment_stop_timestamp = last_active_segment["end_time"]
-        matching_arr = [k for k in object_last_narrations.keys() if k[0] == class_id and k[1] == subclass_name and k[3] == category]
-        # EPIC CSV `noun` uses colon-separated qualifiers (e.g. ``container:tofu``); Visor ``name`` is often
-        # plain English order (e.g. ``tofu container``). So many objects share the same
-        # (class_id, subclass_name, category) with several last-narration keys — not 1:1 until disambiguated.
-        matching_arr = disambiguate_narration_keys(matching_arr, name)
+        matching_arr = [
+            k for k in object_last_narrations.keys()
+            if match_noun_names(k[2], name) and k[0] == class_id
+        ]
         if not matching_arr:
             ## Use last active segment as last action
-            # print(f"Warning: no last narration found for object {obj_key}")
+            print(f"Warning: no last narration found for object {obj_key}")
             results.append({
                 "object": {
                     "class_id": class_id,
@@ -221,6 +180,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
                     **last_active_segment,
                     "tidy_label": None
                 },
+                "_narration_found": False
             })
             continue
         if len(matching_arr) > 1:
@@ -229,7 +189,6 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
         matching_key_narr = matching_arr[0]
         last_narration = object_last_narrations[matching_key_narr]
         last_narration_stop_time = last_narration["stop_time"]
-
 
         _delta_narration_active_segment.append(abs(last_narration_stop_time - last_segment_stop_timestamp))
         if last_narration_stop_time > last_segment_stop_timestamp:
@@ -248,6 +207,7 @@ def process_video(video_id, narration_df, active_objects_path, output_dir):
                 **obj_data,
                 "tidy_label": None
             },
+            "_narration_found": True
         })
     os.makedirs(output_dir, exist_ok=True)
     out_path = os.path.join(output_dir, f"object_last_action_{video_id}.json")
@@ -262,7 +222,7 @@ def main():
         description="Find last action per object from narrations and link to active segments."
     )
     parser.add_argument(
-        "--active-objects-dir",
+        "--input-dir",
         default=ACTIVE_OBJECTS_DIR,
         help="Directory containing active_objects_<video_id>.json files",
     )
@@ -278,11 +238,11 @@ def main():
     print(f"Loaded {len(narration_df)} narrations with noun_class")
 
     count = 0
-    for fname in sorted(os.listdir(args.active_objects_dir)):
+    for fname in sorted(os.listdir(args.input_dir)):
         if not fname.endswith(".json") or not fname.startswith("active_objects_"):
             continue
         video_id = fname.replace("active_objects_", "").replace(".json", "")
-        active_path = os.path.join(args.active_objects_dir, fname)
+        active_path = os.path.join(args.input_dir, fname)
         if process_video(video_id, narration_df, active_path, args.output_dir):
             count += 1
             print(f"Wrote object_last_action for {video_id}")
