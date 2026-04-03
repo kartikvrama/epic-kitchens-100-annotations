@@ -20,10 +20,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from generate_object_last_action import load_narration_df, narration_noun_matches_active_name
+from generate_object_last_action import load_narration_df, match_noun_names
 from utils import hhmmss_to_seconds
 
-DEFAULT_INPUT_DIR = "object_last_action_combined"
+DEFAULT_INPUT_DIR = "object_last_action_deduped"
 DEFAULT_TIME_TOL = 1
 
 VERBS_TIDY_IDLE = {}
@@ -100,94 +100,64 @@ def normalize_verb(v) -> str | None:
     return s if s else None
 
 
-# def _match_noun_names(name1, name2):
-#     ## Split both names by : and space
-#     parts1 = re.split(r"[:| ]", name1)
-#     parts2 = re.split(r"[:| ]", name2)
-#     ## Remove empty parts
-#     parts1 = set([p for p in parts1 if p])
-#     parts2 = set([p for p in parts2 if p])
-#     ## return true if parts1 is subset of parts2 or vice versa
-#     iou = len(parts1 & parts2) / len(parts1 | parts2)
-#     return iou >= 0.25
-
-
-# def _find_last_narration_verb(obj: dict, vn: pd.DataFrame) -> str:
-#     class_id = obj.get("class_id")
-#     name = (obj.get("name") or "").strip()
-#     matching_arr = [
-#         (row["start_sec"], row["stop_sec"], row["verb"], row["narration"])
-#         for _, row in vn.iterrows()
-#         if class_id in literal_eval(row["all_noun_classes"])
-#         and any([_match_noun_names(name, noun_item) for noun_item in literal_eval(row["all_nouns"])])
-#     ]
-#     if not matching_arr:
-#         print(f"No matching narrations found for object={obj}")
-#         import pdb; pdb.set_trace()
-#         return None, None, None, None
-#     matching_arr.sort(key=lambda x: x[0], reverse=True)
-#     return matching_arr[0]
-
-
 def categorize_verb(verb: str) -> str:
     if verb in VERBS_TIDY_IDLE:
         return True
     if verb in VERBS_IN_USE:
         return False
     # raise ValueError(f"Unknown verb: {verb}")
-    return True ## TODO: temporary fix
+    return "unknown" ## TODO: temporary fix
+
+
+def _get_last_verb(vn: pd.DataFrame, obj: dict) -> str:
+    """Get the last verb for an object from the narration dataframe."""
+    hits = [
+        r
+        for r in vn.to_dict(orient="records")
+        if match_noun_names(r.get("noun"), obj["name"]) and obj["class_id"] in literal_eval(r.get("all_noun_classes"))
+    ]
+    hits.sort(key=lambda r: (r["start_sec"] is None, r["start_sec"] or 0.0))
+    if not hits:
+        import pdb; pdb.set_trace()
+        raise ValueError(f"No hits for object {obj}")
+    return "_action_b4_active | " + hits[-1]["verb"], hits[-1]["verb_class"]
 
 
 def label_verb(
     entry: dict,
     vn: pd.DataFrame,
-    tol: float,
 ) -> str:
     global rejected_objects
     """Last matching narration's verb, else 'unknown'."""
     obj = entry.get("object") or {}
     name = (obj.get("name") or "").strip()
     seg = entry.get("last_active_segment") or {}
+    _narration_found = entry.get("_narration_found")
 
     seg_start, seg_end = segment_time_bounds(seg)
     narrations = vn[(vn["start_sec"] >= seg_start) & (vn["start_sec"] <= seg_end)]
 
-    chosen_verb: str | None = None
-    for line in narrations:
-        text, t0, t1 = parse_narration_line(line)
-        rows = csv_rows_for_narration_line(vn, text, t0, t1, tol, seg_start, seg_end)
-        hits = [
-            r
-            for r in rows
-            if narration_noun_matches_active_name(r.get("noun"), name)
-        ]
-        if not hits:
-            continue
-        hits.sort(key=lambda r: (r.get("start_sec") is None, r.get("start_sec") or 0.0))
-        row = hits[-1]
-        v = normalize_verb(row.get("verb"))
-        chosen_verb = v if v is not None else "(no verb)"
+    ## Object is tidy if it does not exist in any of the narrations
+    ## TODO: This can potentially be more nuanced.
+    if not _narration_found:
+        return True, "_narration_not_found | None", None
 
-    if chosen_verb: 
-        return categorize_verb(chosen_verb), chosen_verb
-    
-    else:
-        start_sec_last, stop_sec_last, verb, narration_last = _find_last_narration_verb(obj, vn)
-        if verb:
-            if not start_sec_last < seg_end:
-                print(f"Warning: last narration occuring after end of active segment: {obj}")
-                import pdb; pdb.set_trace()
-            return False, verb
-        else:
-            rejected_objects.append({
-                "video_id": vn["video_id"].iloc[0],
-                "segment_id": seg["segment_id"],
-                "class_id": obj["class_id"],
-                "name": obj["name"],
-                "reason": "No narrations found for this object"
-            })
-            ## TODO: this can potentially be true.
-            return None, None
+    chosen_verb: str | None = None
+    hits = [
+        r
+        for r in narrations.to_dict(orient="records")
+        if match_noun_names(r.get("noun"), name) and obj["class_id"] in literal_eval(r.get("all_noun_classes"))
+    ]
+
+    ## Object is not tidy if narration (action) occurs before the active segment
+    if not hits:
+        return False, *_get_last_verb(vn, obj)
+
+    hits.sort(key=lambda r: (r["start_sec"] is None, r["start_sec"] or 0.0))
+    row = hits[-1]
+    chosen_verb = row.get("verb")
+    chosen_verb_class = row.get("verb_class")
+    return categorize_verb(chosen_verb), chosen_verb, chosen_verb_class
 
 
 def main():
@@ -196,17 +166,6 @@ def main():
         "--input-dir",
         default=DEFAULT_INPUT_DIR,
         help="Directory with object_last_action_<video_id>.json",
-    )
-    parser.add_argument(
-        "--time-tol",
-        type=float,
-        default=DEFAULT_TIME_TOL,
-        help="Seconds tolerance when matching narration timestamps to CSV rows",
-    )
-    parser.add_argument(
-        "--json-summary",
-        default="",
-        help="If set, write verb counts as JSON to this path",
     )
     args = parser.parse_args()
 
@@ -235,7 +194,7 @@ def main():
             continue
         for entry in entries:
             n_rows += 1
-            is_tidy_at_end, verb = label_verb(entry, vn, args.time_tol)
+            is_tidy_at_end, verb, verb_class = label_verb(entry, vn)
             labels.append({
                 "video_id": video_id,
                 "segment_id": entry["last_active_segment"]["segment_id"],
@@ -243,62 +202,26 @@ def main():
                 "name": entry["object"]["name"],
                 "is_tidy_at_end": is_tidy_at_end,
                 "last_action_verb": verb,
+                "last_action_verb_class": verb_class,
             })
 
-    import matplotlib.pyplot as plt
+    tidy_labels = [x["is_tidy_at_end"] for x in labels]
+    verbs = [x["last_action_verb"] for x in labels]
 
-    # Bubble plot: x-axis = verbs, y-axis = is_tidy_at_end (True/False), bubble size = frequency, frequency inside bubble
-    import numpy as np
-    # Count frequencies for each (verb, is_tidy_at_end) combination
-    from collections import defaultdict
+    # Save labels to a JSON file inside the input-dir
+    out_json_path = root / "object_last_action_labels.json"
+    with open(out_json_path, "w") as fout:
+        json.dump(labels, fout, indent=2)
+    print(f"Saved {len(labels)} labels to {out_json_path}")
 
-    bubble_counts = defaultdict(int)
-    all_verbs = set()
-    for label in labels:
-        verb = label["last_action_verb"]
-        is_tidy = label["is_tidy_at_end"]
-        bubble_counts[(verb, is_tidy)] += 1
-        all_verbs.add(verb)
 
-    # Sort verbs for x axis
-    verbs_sorted = sorted(all_verbs, key=lambda v: (v is None, str(v)))
-    y_states = [True, False]
-
-    # Positions for plotting
-    x_positions = np.arange(len(verbs_sorted))
-    y_position_map = {True: 1, False: 0}
-
-    fig, ax = plt.subplots(figsize=(max(7, len(verbs_sorted) * 0.7), 5))
-
-    # Scatter bubbles
-    for xi, verb in enumerate(verbs_sorted):
-        for yi, is_tidy in enumerate(y_states):
-            freq = bubble_counts.get((verb, is_tidy), 0)
-            if freq > 0:
-                # Bubble area proportional to freq
-                ax.scatter(
-                    xi, y_position_map[is_tidy],
-                    s=400 + freq * 200,  # base size + scaled by freq
-                    alpha=0.6,
-                    color='skyblue',
-                    edgecolor='k'
-                )
-                ax.text(
-                    xi, y_position_map[is_tidy],
-                    str(freq),
-                    va="center", ha="center", fontsize=10, fontweight="bold"
-                )
-
-    ax.set_xticks(x_positions)
-    ax.set_xticklabels(verbs_sorted, rotation=45, ha='right')
-    ax.set_yticks([y_position_map[True], y_position_map[False]])
-    ax.set_yticklabels(['True', 'False'])
-    ax.set_xlabel('Verb')
-    ax.set_ylabel('is_tidy_at_end')
-    ax.set_title("Verb vs is_tidy_at_end Bubble Plot (Bubble Size = Frequency)")
-    ax.grid(True, axis='y', linestyle='--', alpha=0.4)
-    plt.tight_layout()
-    plt.show()
+    # Count each unique verb
+    verb_counts = Counter(verbs)
+    print("\nCounts for each unique verb:")
+    for verb, count in sorted(verb_counts.items(), key=lambda x: (-x[1], x[0])):
+        print(f"  {repr(verb)}: {count}")
+    print("-" * 40)
+    print(f"  Total: {sum(verb_counts.values())}")
 
 
 if __name__ == "__main__":
